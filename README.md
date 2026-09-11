@@ -6,7 +6,7 @@ This repository stores official or explicitly approved examination materials use
 
 The repository is deliberately separate from the main SyllabAI application, curriculum/knowledge-graph repositories, and revision-note corpus.
 
-> **Status:** first corpus ingested 2026-09-11 (operator-collected PhysicsAndMathsTutor.com material, IGCSE + IAL scope): 2,708 PDFs examined → 2,512 files across 1,361 paper-variant directories, 196 quarantined — see `INGESTION_REPORT.md`. All artifacts `AI-IDENTIFIED`, operator ratification pending. Next: PMT bulk-download backfill per `PMT-BULK-DOWNLOAD-PLAN.md` (planned, operator-approved).
+> **Status:** first corpus ingested 2026-09-11 (operator-collected PhysicsAndMathsTutor.com material, IGCSE + IAL scope): 2,708 PDFs examined → 2,512 files across 1,361 paper-variant directories, 196 quarantined — see `INGESTION_REPORT.md`. All artifacts `AI-IDENTIFIED`, operator ratification pending. Next: PMT bulk-download backfill per `PMT-BULK-DOWNLOAD-PLAN.md` (RATIFIED 2026-09-11 — owner decisions D1–D5; execution gated per plan §8.1: no PDF fetch before the baseline ratification pass, P0 closed before P1 opens).
 
 ---
 

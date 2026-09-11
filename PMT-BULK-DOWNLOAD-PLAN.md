@@ -1,12 +1,13 @@
 # PMT Bulk-Download Plan — backfill execution brief for the next session
 
-> **Status: PLANNED — operator-approved 2026-09-11, NOT yet executed.**
+> **Status: RATIFIED — owner decisions D1–D5 recorded 2026-09-11 (§8); NOT yet executed.**
 > This is the operational plan for bulk-downloading the missing Edexcel IGCSE / IAL assessment
 > materials from [Physics & Maths Tutor](https://www.physicsandmathstutor.com/) (PMT) into this
 > repository, and for repairing the provenance gap (`source_url: null`) left by the 2026-09-11
 > baseline ingestion. Everything here is subordinate to the charter
 > ([README.md](README.md)); charter sections are cited throughout. Registered in the master pack
-> as **T-C12** (`syllabai/TODO.md`, Content-ops track).
+> as **T-C12** (`syllabai/TODO.md`, Content-ops track); execution is gated per §8.1
+> (Gate A: baseline ratification · Gate B: P0 closure before P1).
 
 ---
 
@@ -41,7 +42,7 @@ From `INGESTION_REPORT.md` (2026-09-11, commit `d37bf6d4`):
 |---|---|
 | PDFs examined / placed | 2,708 → 2,512 files in 1,361 paper-variant dirs |
 | Quarantined | 196 (`duplicate-artifact` 140 · `nonstandard-artifact` 35 · `unresolved-identity` 21) |
-| Verification status | every file `AI-IDENTIFIED` — **operator ratification still pending** |
+| Verification status | every file `AI-IDENTIFIED` — **operator ratification still pending** (→ Gate A, §8.1) |
 | Provenance | `source_url` is **null on all 2,512 files** (operator collected before ingestion; only the archive name "PhysicsAndMathsTutor.com" is recorded) |
 | IGCSE families present | chemistry (4ch0, 4ch1), computer-science (4cp0), english-language-b (4eb0, 4eb1), further-pure-mathematics (4pm0, 4pm1), mathematics-a (4ma0, 4ma1), mathematics-b (4mb0, 4mb1), physics (4ph0, 4ph1) |
 | IAL families present | mathematics (2018-spec, wma01, wma02), physics (wph01–06 legacy, wph11–16 current) |
@@ -52,6 +53,11 @@ From `INGESTION_REPORT.md` (2026-09-11, commit `d37bf6d4`):
 including `(R)` variants) plus a `specimen/` shelf.
 
 ## 3. Gap matrix — what to acquire from PMT (priority order)
+
+> **Session scope (owner decision D3, 2026-09-11):** for every IAL family below, **October/November
+> sessions are fetched wherever PMT lists them** (PMT labeling varies; the series month normalizes
+> to `10`, and label quirks are resolved at Identify). IGCSE families remain Jan/June — anything
+> PMT lists beyond that for IGCSE is verified during Identify before fetching.
 
 ### P0 — Cycle-1 critical: complete IGCSE Chemistry 4CH1
 
@@ -64,8 +70,10 @@ including `(R)` variants) plus a `specimen/` shelf.
 
 ### P1 — IAL Chemistry: zero coverage today
 
-- Current spec (2018): **WCH11–WCH16**, Jan + June, 2019-01 → latest
-- Legacy spec (2009): **WCH01–WCH06**, Jan + June, 2009-06 → final sittings (~2018/19)
+- Current spec (2018): **WCH11–WCH16**, Jan + June + Oct/Nov wherever PMT lists them (D3),
+  2019-01 → latest
+- Legacy spec (2009): **WCH01–WCH06**, Jan + June + Oct/Nov wherever PMT lists them (D3),
+  2009-06 → final sittings (~2018/19)
 - Each unit code gets its own spec-version folder under
   `international-a-level/chemistry/` — never merged with IGCSE chemistry (charter §4/§5)
 
@@ -77,20 +85,24 @@ including `(R)` variants) plus a `specimen/` shelf.
 
 ### P3 — IAL Physics & Mathematics completeness
 
-- WPH11–16 / WMA11-14 (2018 spec) and WPH01–06 / WMA01/02 (legacy): series-completeness sweep
+- WPH11–16 / WMA11-14 (2018 spec) and WPH01–06 / WMA01/02 (legacy): series-completeness sweep,
+  incl. Oct/Nov sessions wherever PMT lists them (D3)
 - Already-placed artifacts are protected by SHA-256 dedupe (charter §19) — re-checking is safe
   and cheap; nothing is re-fetched or overwritten
 
 ### P4 — Biology (zero coverage today)
 
-- IGCSE Biology **4BI1** (+ legacy 4BI0), IAL Biology **WBI11–16** (+ legacy WBI01–06)
+- IGCSE Biology **4BI1** (+ legacy 4BI0), IAL Biology **WBI11–16** (+ legacy WBI01–06) —
+  IAL sessions incl. Oct/Nov wherever PMT lists them (D3)
 
 ### P5 — stretch (only if session capacity remains)
 
 - Further Pure Mathematics 4PM1 series gaps · Human Biology 4HB1 · Science Double Award 4SD0 ·
   Computer Science 4CP1 · English Language B · Commerce/Economics/Business/Accounting
   (confirm with operator — currently not platform subjects)
-- **ER sweep**: examiner reports for specs already in the tree (charter §24 reserves `er.pdf`)
+- **ER sweep** — **deferred per owner decision D2 (2026-09-11): this run is QP/MS only.**
+  Examiner reports need a separate future go-ahead; charter §24 still reserves `er.pdf`, unused
+  this run.
 - **Provenance backfill** (separate, safe pass): match the existing 2,512 files to PMT index
   pages via `original_filename` + canonical identity and patch `source_url` into the manifests —
   manifest-only changes, PDFs byte-identical, batch-committed, validator-checked
@@ -113,7 +125,7 @@ the table above is a priority order, not a code authority.
 3. Add `_staging/` to `.gitignore` (first commit of the session).
 4. Build the per-subject **download ledger** (`docs/ledger/<subject>.csv`):
    `board, qualification, subject, spec_slug, series(YYYY-MM), paper_ref, variant,
-   material_type(qp|ms|er), source_page_url, source_file_url, expected_identity,
+   material_type(qp|ms), source_page_url, source_file_url, expected_identity,
    status(planned→fetched→verified→normalized→committed|quarantined)`.
    Rows already satisfied by the corpus are pre-marked (identity match) — the ledger is the
    single source of truth for what to fetch.
@@ -153,7 +165,7 @@ the table above is a priority order, not a code authority.
 
 - Canonical path (§24):
   `past-papers/pearson-edexcel/<qualification>/<subject>/<spec-slug>/past-papers/<YYYY-MM>/<PAPER-REF>/`
-  containing `qp.pdf` / `ms.pdf` / (`er.pdf`) + `manifest.yaml`.
+  containing `qp.pdf` / `ms.pdf` / (`er.pdf` — unused this run, D2) + `manifest.yaml`.
 - Spec-version slugs follow the ingested convention (plain code family: `4ch1`, `wch11`, …).
   When the 2024 modular IGCSE-science material is first encountered, decide its slug per
   charter §4 — one slug never carries two live spec editions (the charter's
@@ -217,29 +229,51 @@ SHA-256), and a second run over a finished batch produces zero changes.
 - Charter red lines honored throughout: no blind search-result downloads (§13); specimen never
   in `past-papers/` (§12); no overwrite on hash conflicts (§19); quarantine with reasons (§20);
   no speculative folders (§21); identity-first, filename-last (§29).
-- Visibility note: this repo is currently **public** (like `Past-Papers`). Backfilling it grows
-  the public footprint of Pearson-copyrighted PDFs — the operator should consciously re-confirm
-  visibility before the bulk run (§8, question 1).
+- Visibility (owner decision D1, 2026-09-11): the repo **stays public** through the backfill —
+  the operator consciously accepts the enlarged public footprint of Pearson-copyrighted QP/MS
+  PDFs. Standing takedown policy: a rights-holder notice moves flagged artifacts to
+  `_quarantine/removed/` (with `REASON.txt`) or deletes them within 72 h; the corpus stays
+  limited to Edexcel IGCSE/IAL QP/MS, stored unmodified, with per-file provenance.
 
-## 8. Open questions for the operator (answer before / early next session)
+## 8. Ratified owner decisions (2026-09-11) — D1–D5
 
-1. **Visibility** — keep `syllabai-pastpapers` public with Pearson-copyrighted QP/MS PDFs, or
-   flip it private before the backfill grows it?
-2. **ER scope** — include the examiner-report sweep this session, or QP/MS only?
-3. **November IAL series** — fetch wherever PMT lists them, or Jan/June only?
-4. **Priority order** — confirm P0→P5, in particular: must P0 (4CH1 completion) finish before
-   P1 (IAL Chemistry) starts, or may they interleave?
-5. **Baseline ratification** — the 1,361 `AI-IDENTIFIED` dirs still await the operator's
-   human-validation pass. Should the backfill interleave with that review, or run strictly
-   after it (ratification first is the charter-safe default)?
+The five open questions this plan originally carried were answered by the operator on
+2026-09-11. They are now binding execution parameters, not preferences.
+
+| # | Question | Ruling | Consequences |
+|---|---|---|---|
+| D1 | Visibility | **Keep `syllabai-pastpapers` public** with the Pearson-copyrighted QP/MS PDFs | No visibility flip before or after the run; §7 takedown policy is standing policy |
+| D2 | ER scope | **QP/MS only** — no examiner reports this run | ER sweep removed from P5 (deferred, needs a separate go-ahead); ledger enum narrowed to `qp\|ms`; `er.pdf` stays charter-reserved but unused |
+| D3 | November IAL series | **Fetch Oct/Nov sessions wherever PMT lists them** | §3 scope note; series month normalized to `10`; label quirks resolved at Identify, never guessed |
+| D4 | Priority order | **P0→P5 confirmed; P0 must close before P1 starts** | Strict sequencing — Gate B below; no interleaved fetch rows across priorities |
+| D5 | Baseline ratification | **Ratification first** — the backfill runs strictly after the operator's human-validation pass on the baseline | Gate A below; recon/ledger/script prep may proceed while it is shut |
+
+### 8.1 Execution gates (binding)
+
+- **Gate A — baseline ratification (blocks every PMT PDF fetch).** The 1,361 `AI-IDENTIFIED`
+  baseline directories (commit `d37bf6d4`) are not yet human-validated. The operator completes
+  the SUGGESTED → HUMAN_VALIDATED ratification pass over the baseline — or issues a written
+  waiver of it — **before** the first `pmt.physicsandmathstutor.com/download/…` request.
+  - Permitted while Gate A is shut: read-only recon (robots.txt, PMT index pages),
+    download-ledger skeletons, script development, the `_staging/` gitignore commit.
+    Prohibited: any PDF fetch.
+- **Gate B — P0 closure (opens P1).** P1 (IAL Chemistry) may not open until every P0 ledger
+  row is `committed` or explicitly `N/A` with a recorded reason. No interleaving of fetch rows
+  across priorities; read-only, index-page-only P1 recon may be prepared during P0's tail.
+- Both gates are checked and their state recorded in `BACKFILL-REPORT.md` at session start.
 
 ## 9. Definition of done (session exit criteria)
 
 - [ ] Ledger + coverage matrix committed for every touched subject
 - [ ] Every fetched artifact either normalized into the canonical tree (manifest-complete,
       real `source_url`, SHA-256, `AI-IDENTIFIED`) or in `_quarantine/` with a `REASON.txt`
-- [ ] P0 (4CH1 completion) done; P1 (IAL Chemistry) started or explicitly rolled over with
-      reasons in `BACKFILL-REPORT.md`
+- [ ] Gates honored and their state recorded at session start in `BACKFILL-REPORT.md`: zero PDF
+      fetches before Gate A (baseline ratification or written waiver — D5); P0 closed before the
+      first P1 fetch row (D4 — strict sequencing, no interleave)
+- [ ] P0 (4CH1 completion) closed; P1 (IAL Chemistry) started after Gate B, or explicitly rolled
+      over with reasons in `BACKFILL-REPORT.md`
+- [ ] Scope honored (D2/D3): QP/MS only — zero ER rows, zero specimen in `past-papers/`;
+      Oct/Nov IAL sessions fetched wherever PMT listed them
 - [ ] Zero `_staging/` files committed; zero filename-similarity pairings; zero identity guesses
 - [ ] All scripts proven rerun-safe (second run over a finished batch = zero new rows)
 - [ ] Master-pack `WORKLOG.md` session entry records counts, gaps and next steps; `TODO.md`
