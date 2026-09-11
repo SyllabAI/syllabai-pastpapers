@@ -45,12 +45,59 @@ placement, zero `_staging/` bytes ever committed.
 
 ## 4. Gate B record
 
-(filled when P0 closes)
+**CLOSED 2026-09-11 — P1 opening authorized.** Evidence: every row of
+`docs/ledger/igcse-chemistry.csv` is terminal:
+
+| status | rows | meaning |
+|---|---|---|
+| `corpus` | 140 | identity already satisfied by the baseline (diff computed against the local corpus tree) |
+| `na:duplicate-of-corpus` | 20 | fetched from PMT and proven **byte-identical (SHA-256)** to existing artifacts (charter §19) — see `igcse-chemistry-duplicates.csv` |
+| `na:specimen` | 28 | specimen files (charter §12 — never in `past-papers/`) |
+| `na:grade-boundaries` / `na:data-booklet` | 2 / 2 | not QP/MS (D2) |
+| `planned` | **0** | — |
+
+Zero new artifacts for P0: the operator-collected baseline already contains everything
+PMT lists for 4CH1 and 4CH0. The expected post-baseline sessions (2024-01, 2025-01,
+2025-06; the 2019-01 probe) are **not listed by PMT at all** — see §6.
 
 ## 5. Batch results
 
-(filled per committed batch)
+### P0 — IGCSE Chemistry (4CH1 + 4CH0) — committed, zero placements
+
+- Fetch run: 20/20 rows fetched OK, 0 failures, 0 re-fetches (single pass, ≥3.2 s + jitter).
+- All 20 planned rows resolved `na:duplicate-of-corpus` with full SHA-256 evidence
+  (`docs/ledger/igcse-chemistry-duplicates.csv`). Two distinct findings:
+  1. **4CH0 (R) rows are byte-identical to the base papers** (2013-06, 2014-06, 2016-06,
+     2017-06): PMT's "(R)" IGCSE files carry no new data — consistent with the baseline's
+     PDF-verified finding that 4CH0 R files print as the base papers.
+  2. **4CH1 June-2020 (R) rows expose a PMT mislabel + a baseline review flag** — see §6.
+- Tooling committed under `scripts/` (recon / ledger / fetch / coverage), ledgers + link
+  inventory + coverage matrix under `docs/`.
 
 ## 6. Rollover / gaps PMT cannot fill
 
-(filled at session end)
+### Gaps (P0)
+
+- **4CH1 2024-01, 2025-01, 2025-06 and the 2019-01 probe: not listed by PMT** as of recon
+  (2026-09-11). PMT's 4CH1 pages end at June 2024 (QP list: Jun 2019 → Jun 2024, Jan 2020 →
+  Jan 2023, Nov 2021). These sessions remain open acquisition targets for a future pass from
+  a different source tier (charter §13) — they are NOT fetchable from the ratified source.
+
+### Baseline ratification flags (P0 probes — recorded, NOT mutated)
+
+Probe downloads (4 files, `_staging/probe/`, never committed) + `pdftotext` page-1 checks of
+PMT's "June 2020 (R)" files surfaced two identity findings that belong to the **operator's
+baseline ratification pass**, not to this backfill:
+
+1. `past-papers/…/4ch1/past-papers/2020-06/4CH1-2C/qp.pdf` **prints `4CH1/2CR` + "June 2020"**
+   and is byte-identical to PMT's "June 2020 (R) QP" — the baseline dir is holding the 2CR
+   (regional) document under the 2C identity. Flag for the ratification pass: either the
+   June-2020 2C/2CR pair needs re-attribution, or the dir needs its ref corrected.
+2. PMT's "June 2020 (R) MS" links serve mark schemes **printing "November 2020"**, byte-identical
+   to the corpus's `2020-11/4CH1-1CR/ms.pdf` and `2020-11/4CH1-2CR/ms.pdf` — i.e. PMT's
+   June-2020 R listings are actually November-2020 documents (June 2020 was cancelled; the
+   Nov 2020 sitting reused the regional papers). No new artifacts; flags recorded for the
+   ratification pass to double-check the 2020-11 MS attributions.
+
+The corresponding baseline directories are left untouched — mutating baseline identities is
+the operator's call under the charter lifecycle.
