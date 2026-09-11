@@ -74,6 +74,40 @@ PMT lists for 4CH1 and 4CH0. The expected post-baseline sessions (2024-01, 2025-
 - Tooling committed under `scripts/` (recon / ledger / fetch / coverage), ledgers + link
   inventory + coverage matrix under `docs/`.
 
+### P1a — IAL Chemistry 2018 spec (WCH11–16) — committed (`73abb9a`)
+
+- 189/189 rows fetched (0 failures, 0 corpus duplicates) across 6 unit pages.
+- **180 rows normalized → 90 paper dirs placed** under
+  `past-papers/pearson-edexcel/international-a-level/chemistry/wch11…wch16/`:
+  sessions **2019-01 → 2025-01 including every October session PMT lists** (2019-10 →
+  2024-10) — decision **D3 honored at the source level**.
+- Identity resolved from PDF print on every file (charter §29): unit codes + paper suffix
+  + printed session; PMT session labels that disagree with the print are re-routed by the
+  print and the mismatch recorded in the manifest `identification.notes`.
+- 8 rows `verified` singletons (PMT lists only one material — see §6); 1 cross-listed
+  duplicate row; 0 quarantines; every placed dir is manifest-complete (no partial states).
+
+### P1b — IAL Chemistry legacy (WCH01–06) — committed (`c0a18bb`)
+
+- 320/320 rows fetched (0 failures) from the unsuffixed `Unit-1…6` PMT folders, which mix
+  legacy IAL and GCE documents — separation done by PDF print, never by folder or filename.
+- **158 rows normalized → 79 paper dirs placed** under `…/chemistry/wch01…wch06/`:
+  sessions **2009/2010 → 2019-06, including the printed October/November 2017–2018 legacy
+  sessions** (D3). 31 cross-listed duplicate rows; 13 verified singletons.
+- **79 files quarantined `out-of-scope-gce`**: they print GCE codes (6CH01–05) — Edexcel
+  GCE A-level is a different qualification (charter §4/§5) and outside the ratified P1
+  scope. PDFs are preserved in `_quarantine/out-of-scope-gce/` with REASON.txt; if the
+  operator ever ratifies a GCE sweep they can be placed under `gce-a-level/chemistry/`
+  from there.
+- **37 files quarantined `unresolved-identity`**: no unit code AND no session printed on
+  pages 1–2 (mostly 2009–2012 Unit-3 files with image covers). REASON.txt records the
+  evidence tiers attempted (charter §20). Next lever if the operator wants them: OCR
+  fallback from the baseline tooling — future session.
+
+**Chemistry totals after the backfill: 169 paper dirs under `international-a-level/chemistry/`
+(was 0), every file manifest-backed with SHA-256 + real PMT page-of-record `source_url`,
+everything `AI-IDENTIFIED` pending the operator's ratification pass.**
+
 ## 6. Rollover / gaps PMT cannot fill
 
 ### Gaps (P0)
@@ -82,6 +116,32 @@ PMT lists for 4CH1 and 4CH0. The expected post-baseline sessions (2024-01, 2025-
   (2026-09-11). PMT's 4CH1 pages end at June 2024 (QP list: Jun 2019 → Jun 2024, Jan 2020 →
   Jan 2023, Nov 2021). These sessions remain open acquisition targets for a future pass from
   a different source tier (charter §13) — they are NOT fetchable from the ratified source.
+
+### Gaps (P1)
+
+- **13 verified singletons** (rows stay `verified`, no dirs created — no partial states on
+  main): WCH14/15/16 2020-06 QP-only + 2020-10 MS-only (the June-2020 A2 sitting was
+  cancelled; PMT lists the QP under June and the MS under October — the printed sessions
+  keep them separate series identities under charter §29), WCH16 2023-10 QP-only, and the
+  legacy WCH05/WCH06 October/November 2017–2019 pairs of half-listings. If the operator
+  confirms any Oct/Nov pairs are the same sitting re-labeled, a one-line re-key can merge
+  them — operator-only decision.
+- **37 `unresolved-identity` quarantines** and **79 `out-of-scope-gce` quarantines** — see
+  P1b above; both fully REASON-documented and reversible by operator decision.
+- **ER / grade-boundaries / data-booklets / specimens**: intentionally never fetched (D2,
+  charter §12).
+
+### Session scope rollover (plan DoD)
+
+- Done this session: **P0 closed** (zero new artifacts; evidence committed) + **P1 complete
+  for both WCH families as listed by PMT** — 169 new paper dirs, 338 new PDFs, 169 manifests.
+- Rolled over (not started, per plan §3 priority order): **P2** IGCSE Physics/Mathematics
+  sweeps, **P3** IAL Physics/Mathematics sweeps, **P4** Biology, **P5** stretch + the
+  optional **provenance backfill** of the 2,512 baseline `source_url: null` files
+  (the P5 mechanism is now proven: this session's manifests show the pattern to replicate;
+  the matching pass is ledger-driven and safe).
+- The operator's baseline ratification pass (1,361 dirs, waived for fetching only) remains
+  open — now with **two concrete review flags from §6** to check first.
 
 ### Baseline ratification flags (P0 probes — recorded, NOT mutated)
 
