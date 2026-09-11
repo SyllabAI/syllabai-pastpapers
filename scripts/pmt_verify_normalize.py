@@ -18,6 +18,7 @@ Rerun-safe: rows already normalized/quarantined are skipped.
 """
 import argparse
 import csv
+import glob
 import hashlib
 import json
 import os
@@ -186,7 +187,11 @@ def main():
                   f"--{r['material_type']}")
         staged = os.path.join(staged_dir, row_id + ".pdf")
         if not os.path.exists(staged):
-            r["status"] = "planned"  # lost staging -> refetch next run
+            # staged bytes missing: either lost staging or already quarantined in a
+            # previous (possibly crashed) run — reconcile honestly
+            pre_q = glob.glob(os.path.join(repo, "_quarantine", "*",
+                                           row_id + "*"))
+            r["status"] = "quarantined" if pre_q else "planned"
             continue
         meta = json.load(open(os.path.join(meta_dir, row_id + ".json")))
         text = pdf_text(staged)
@@ -295,7 +300,6 @@ def main():
             prev = verified[key]
             if prev["sha"] == meta.get("sha256"):
                 r["status"] = "na:duplicate-row"
-                os.remove(staged)
                 print(f"{row_id}: duplicate row of {prev['row_id']} (same bytes)")
                 stats["skip"] += 1
                 continue
@@ -319,8 +323,7 @@ def main():
         existing = os.path.join(tdir, "qp.pdf" if mat == "qp" else "ms.pdf")
         if os.path.exists(existing):
             if sha256_file(existing) == meta.get("sha256"):
-                r["status"] = "na:duplicate-row"
-                os.remove(staged)
+                r["status"] = "normalized"  # identical bytes already placed
                 print(f"{row_id}: identical to already-placed {existing}")
                 stats["skip"] += 1
                 continue

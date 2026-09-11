@@ -142,7 +142,15 @@ def main():
         dest = os.path.join(pdfs, row_id + ".pdf")
         if os.path.exists(dest) and os.path.exists(
                 os.path.join(meta_dir, row_id + ".json")):
-            print(f"[{i}/{len(todo)}] {row_id}: already staged (resume)")
+            # cross-listed row sharing a row_id with an already-staged fetch:
+            # the bytes for this identity are staged -> mark fetched (rerun-safe)
+            if r["status"] == "planned":
+                r["status"] = "fetched"
+                save_rows(led, rows)
+                print(f"[{i}/{len(todo)}] {row_id}: adopted staged bytes "
+                      f"(cross-listed row)")
+            else:
+                print(f"[{i}/{len(todo)}] {row_id}: already staged (resume)")
             continue
         url = r["source_file_url"].strip()
         url = re.sub(r"[\x00-\x1f\x7f]", "", url)
