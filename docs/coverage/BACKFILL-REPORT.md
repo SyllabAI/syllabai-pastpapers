@@ -1,6 +1,6 @@
 # Backfill session report — PMT bulk download (T-C12)
 
-**Session:** 2026-09-11 backfill execution (master-pack session 41) · **Executor:** AI ingestion agent
+**Session:** 2026-09-11 backfill execution (master-pack session 42 — renumbered from 41; the concurrent T-C11 stream claimed session 41) · **Executor:** AI ingestion agent
 **Authority:** `PMT-BULK-DOWNLOAD-PLAN.md` §8 ratified decisions D1–D5 + §8.1 gates · charter (README.md) throughout
 
 ## 0. Gate states (recorded at session start, per plan §8.1)
