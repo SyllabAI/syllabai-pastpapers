@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm0:2016-01:4PM0/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm0
+  title: Edexcel International GCSE Further Pure Mathematics (4PM0)
+series:
+  normalized: 2016-01
+  year: '2016'
+  session_month: '01'
+  printed: January 2016; January 2016
+  source: pdf+filename
+paper:
+  official_reference: 4PM0/02
+  unit_code: 4PM0
+  paper_number_variant: '02'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9d55ad7814858cf5302b193dff4bdc363938af192943cf4514523644b639c046
+  size_bytes: 194337
+  original_filename: January 2016 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 0b6108d1eba9e2988489dcbc508a9aa6378a4bbb2525620e84bb1ea4bb89072f
+  size_bytes: 126537
+  original_filename: January 2016 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - date_rule
+  confidence_rank: 5
+  printed_references_seen: []
+  stray_prints: []
+  session_printed: January 2016; January 2016
+  notes:
+  - date rule -> 4PM0/02
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph01:2018-06:WPH01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph01
+  title: Pearson Edexcel International Advanced Level Physics (2013 spec, legacy)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: filename
+paper:
+  official_reference: WPH01/01
+  unit_code: WPH01
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 568c32d1428319ad44e2515c1a436d87245fafcadcb29e3db48e1cd9a3325eb9
+  size_bytes: 104711
+  original_filename: June 2018 (IAL) MS - Unit 1 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 9c9f9ca3149a8143e4405fc0af5c0329da4876ba239c7072e424f69b66607471
+  size_bytes: 233290
+  original_filename: June 2018 (IAL) QP - Unit 1 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH01
+  - WPH01/01
+  stray_prints: []
+  session_printed: June 2018
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

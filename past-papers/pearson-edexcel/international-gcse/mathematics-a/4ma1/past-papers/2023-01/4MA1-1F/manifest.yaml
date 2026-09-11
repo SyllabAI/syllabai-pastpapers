@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2023-01:4MA1/1F
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2023-01
+  year: '2023'
+  session_month: '01'
+  printed: January 2023; January 2023
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/1F
+  unit_code: 4MA1
+  paper_number_variant: 1F
+variant:
+  official_code: F
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4993a5baa07149967a367fe33349ea1c632f2a7a5203ed8d466d795dbfe5064d
+  size_bytes: 405105
+  original_filename: January 2023 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: e1ee8adb22aa2b606eec8f13cb2a24b36dadab29bd58946e4142b4f397e730b5
+  size_bytes: 1049454
+  original_filename: January 2023 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1
+  - 4MA1/1F
+  stray_prints: []
+  session_printed: January 2023; January 2023
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:gce-a-level:physics:physics-2008:2014-06:6PH01/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: physics
+specification:
+  folder: physics-2008
+  title: Edexcel GCE Physics (2008 spec, legacy)
+series:
+  normalized: 2014-06
+  year: '2014'
+  session_month: '06'
+  printed: May 2014; June 2014
+  source: pdf+filename
+paper:
+  official_reference: 6PH01/01R
+  unit_code: 6PH01
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 00855b0c844a776eb7a3cb5fc0aadb4f4ea6bf542107fab2200557d6b66a29f3
+  size_bytes: 316487
+  original_filename: June 2014 (R) QP - Unit 1 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6PH01/01R
+  stray_prints: []
+  session_printed: May 2014; June 2014
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

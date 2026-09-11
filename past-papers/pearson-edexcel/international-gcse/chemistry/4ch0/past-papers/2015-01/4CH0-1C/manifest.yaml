@@ -1,0 +1,66 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2015-01:4CH0/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2015-01
+  year: '2015'
+  session_month: '01'
+  printed: January 2015; January 2015
+  source: pdf+filename
+paper:
+  official_reference: 4CH0/1C
+  unit_code: 4CH0
+  paper_number_variant: 1C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3f094f4eef8acf4d8e1d3f47a3088d39cddc79e4a70c979523db06d020244f8d
+  size_bytes: 503943
+  original_filename: January 2015 MS - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 2d6d5a5e9e747ed7ecdf3b458fea4fb5e9fd130792ad3efb4bc33b87685f7019
+  size_bytes: 363488
+  original_filename: January 2015 QP - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - date_rule
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0/1C
+  - 4SC0/1C
+  stray_prints:
+  - 4SC0/1C (alternate-route/legacy print)
+  session_printed: January 2015; January 2015
+  notes:
+  - date rule -> 4CH0/1C
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

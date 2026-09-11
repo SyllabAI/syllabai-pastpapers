@@ -1,0 +1,71 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb0:2016-06:4EB0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb0
+  title: Edexcel International GCSE English Language B (4EB0)
+series:
+  normalized: 2016-06
+  year: '2016'
+  session_month: '06'
+  printed: June 2016; June 2016
+  source: pdf+filename
+paper:
+  official_reference: 4EB0/01
+  unit_code: 4EB0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: insert
+  path: insert.pdf
+  sha256: 046b03a9f50ea29e13c8d0d43d61bf70f0a0f3c8b9766e8697884958da563e56
+  size_bytes: 77268
+  original_filename: June 2016 IN - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 046c87588e6190cf5555c5e2bc9df715dced2e448248c5925a44f6a37036b4a6
+  size_bytes: 331871
+  original_filename: June 2016 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 95ee7b6c8179494c6814df45085d46e418fc7fe29f3fe5683114bb82b8722ccb
+  size_bytes: 74918
+  original_filename: June 2016 QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB0
+  - 4EB0/01
+  stray_prints: []
+  session_printed: June 2016; June 2016
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2020-11:4MA1/1H
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2020-11
+  year: '2020'
+  session_month: '11'
+  printed: November 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/1H
+  unit_code: 4MA1
+  paper_number_variant: 1H
+variant:
+  official_code: H
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9ec22fac4212f8faa45f280ea24c66a43f96e51f3a446d6e0017f25ae54eef75
+  size_bytes: 358865
+  original_filename: June 2020 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1
+  stray_prints: []
+  session_printed: November 2020; June 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

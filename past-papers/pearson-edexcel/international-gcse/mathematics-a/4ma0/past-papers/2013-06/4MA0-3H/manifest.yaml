@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma0:2013-06:4MA0/3H
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma0
+  title: Edexcel International GCSE Mathematics A (4MA0)
+series:
+  normalized: 2013-06
+  year: '2013'
+  session_month: '06'
+  printed: June 2013
+  source: filename
+paper:
+  official_reference: 4MA0/3H
+  unit_code: 4MA0
+  paper_number_variant: 3H
+variant:
+  official_code: H
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7ada585c1404924dce63815783e800f38e8b62c988bcea509d797c74926863a4
+  size_bytes: 431202
+  original_filename: June 2013 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 599f26fd87900dde99c1e24477cb7c4b292c80e6a207ee7a09714e6c2b283cd3
+  size_bytes: 193947
+  original_filename: June 2013 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA0
+  - 4MA0/3H
+  stray_prints: []
+  session_printed: June 2013
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

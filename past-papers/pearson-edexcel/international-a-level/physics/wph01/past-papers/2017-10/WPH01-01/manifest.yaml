@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph01:2017-10:WPH01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph01
+  title: Pearson Edexcel International Advanced Level Physics (2013 spec, legacy)
+series:
+  normalized: 2017-10
+  year: '2017'
+  session_month: '10'
+  printed: October 2017; October 2017
+  source: pdf+filename
+paper:
+  official_reference: WPH01/01
+  unit_code: WPH01
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 947c064414c945ae4af86b2177cf15313d6c9ef87e5f4258dd17747ad2a8b155
+  size_bytes: 130271
+  original_filename: October 2017 (IAL) MS - Unit 1 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 81e97be656f4b01b8684e85c16a0544434cfa8dbcba41f27433e489d99f77ff7
+  size_bytes: 1306001
+  original_filename: October 2017 (IAL) QP - Unit 1 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH01
+  - WPH01/01
+  stray_prints: []
+  session_printed: October 2017; October 2017
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

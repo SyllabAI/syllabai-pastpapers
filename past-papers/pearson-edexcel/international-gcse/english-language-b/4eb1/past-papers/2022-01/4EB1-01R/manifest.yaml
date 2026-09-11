@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb1:2022-01:4EB1/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb1
+  title: Edexcel International GCSE English Language B (4EB1)
+series:
+  normalized: 2022-01
+  year: '2022'
+  session_month: '01'
+  printed: January 2022
+  source: filename
+paper:
+  official_reference: 4EB1/01R
+  unit_code: 4EB1
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 4ef2ef3ff70473a259497a0900d5d5283bed1d3e389ba6561b00d2492372ef10
+  size_bytes: 578203
+  original_filename: January 2022 (R) QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB1/01R
+  stray_prints: []
+  session_printed: January 2022
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

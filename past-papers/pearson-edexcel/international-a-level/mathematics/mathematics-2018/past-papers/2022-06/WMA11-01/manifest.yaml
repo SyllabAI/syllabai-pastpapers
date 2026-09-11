@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:mathematics-2018:2022-06:WMA11/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: mathematics-2018
+  title: Pearson Edexcel International Advanced Level Mathematics (2018)
+series:
+  normalized: 2022-06
+  year: '2022'
+  session_month: '06'
+  printed: June 2022
+  source: filename
+paper:
+  official_reference: WMA11/01
+  unit_code: WMA11
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f28457564ac7cc5dd90821d309017c687c760353a612b877a3d0e9094302758a
+  size_bytes: 572215
+  original_filename: June 2022 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: d58e74f93107fcb2086074e817e207bde63a916fdce0da428c44e129c842d408
+  size_bytes: 804950
+  original_filename: June 2022 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - WMA11
+  stray_prints: []
+  session_printed: June 2022
+  notes:
+  - date rule -> WMA11/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2014-01:6666/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2014-01
+  year: '2014'
+  session_month: '01'
+  printed: January 2014; January 2014
+  source: pdf+filename
+paper:
+  official_reference: 6666/01
+  unit_code: '6666'
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3f985f6db598918db92920e44eeb8540786d61d4b2add3b1ef1e17f9c4ceb12b
+  size_bytes: 734417
+  original_filename: January 2014 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 329b3f304565c56e542e526a60ef4bb630f31432a96c018dcb294fd13850bcf1
+  size_bytes: 247559
+  original_filename: January 2014 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - date_rule
+  confidence_rank: 5
+  printed_references_seen: []
+  stray_prints: []
+  session_printed: January 2014; January 2014
+  notes:
+  - date rule -> 6666/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2021-06:4CP0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: June 2021
+  source: filename
+paper:
+  official_reference: 4CP0/01
+  unit_code: 4CP0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d9823f01da68e85b89887010f654fd2e5d95b9bac07cf8db1ff24bf81fb2206b
+  size_bytes: 289163
+  original_filename: June 2021 MS - Paper 1 Edexcel Computer Science IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: f9136e076702e9cb515d702737f830cab9861d5a143a066f1927c54c4333eaa4
+  size_bytes: 476070
+  original_filename: June 2021 QP - Paper 1 Edexcel Computer Science IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CP0/01
+  stray_prints: []
+  session_printed: June 2021
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

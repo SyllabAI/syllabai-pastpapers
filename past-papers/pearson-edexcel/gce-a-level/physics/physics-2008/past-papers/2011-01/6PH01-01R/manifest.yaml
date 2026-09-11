@@ -1,0 +1,52 @@
+paper_id: pearson-edexcel:gce-a-level:physics:physics-2008:2011-01:6PH01/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: physics
+specification:
+  folder: physics-2008
+  title: Edexcel GCE Physics (2008 spec, legacy)
+series:
+  normalized: 2011-01
+  year: '2011'
+  session_month: '01'
+  printed: January 2011; January 2011
+  source: pdf+filename
+paper:
+  official_reference: 6PH01/01R
+  unit_code: 6PH01
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9c3c1aa6293c25ea046c6eacb5cf6a4e1216dc266ff8eb8299d27d1f67c44b0e
+  size_bytes: 142779
+  original_filename: January 2011 MS - Unit 1 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6PH01
+  - 6PH01/01R
+  stray_prints: []
+  session_printed: January 2011; January 2011
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

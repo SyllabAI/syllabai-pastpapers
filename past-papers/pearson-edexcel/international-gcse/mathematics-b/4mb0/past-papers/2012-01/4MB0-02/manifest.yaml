@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2012-01:4MB0/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb0
+  title: Edexcel International GCSE Mathematics B (4MB0)
+series:
+  normalized: 2012-01
+  year: '2012'
+  session_month: '01'
+  printed: January 2012; January 2012
+  source: pdf+filename
+paper:
+  official_reference: 4MB0/02
+  unit_code: 4MB0
+  paper_number_variant: '02'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 01c33a0fc139934b8cce087dea54be32d3133b05f8b744d00690c46bd86a3115
+  size_bytes: 151485
+  original_filename: January 2012 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 6141248567b24a8d5b93a39c7d75478349eb19c900a50261663155cd97e768f1
+  size_bytes: 148127
+  original_filename: January 2012 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB0
+  - 4MB0/02
+  stray_prints: []
+  session_printed: January 2012; January 2012
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

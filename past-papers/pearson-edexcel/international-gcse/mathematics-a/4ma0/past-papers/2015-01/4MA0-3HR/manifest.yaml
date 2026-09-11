@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma0:2015-01:4MA0/3HR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma0
+  title: Edexcel International GCSE Mathematics A (4MA0)
+series:
+  normalized: 2015-01
+  year: '2015'
+  session_month: '01'
+  printed: January 2015; January 2015
+  source: pdf+filename
+paper:
+  official_reference: 4MA0/3HR
+  unit_code: 4MA0
+  paper_number_variant: 3HR
+variant:
+  official_code: R
+  type: regional
+  note: H tier + regional variant
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b05de3f0419bcd8983353903455b63d3156c5c5d12ada209285dce6feab8cb0a
+  size_bytes: 457764
+  original_filename: January 2015 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 1eac89b1b3a0d659abc63d2edd308c7485e6fa29871e088b1c09e19659b5927e
+  size_bytes: 292657
+  original_filename: January 2015 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA0
+  - 4MA0/3HR
+  stray_prints: []
+  session_printed: January 2015; January 2015
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

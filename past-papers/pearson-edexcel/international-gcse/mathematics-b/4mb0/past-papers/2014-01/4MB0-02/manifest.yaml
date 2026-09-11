@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2014-01:4MB0/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb0
+  title: Edexcel International GCSE Mathematics B (4MB0)
+series:
+  normalized: 2014-01
+  year: '2014'
+  session_month: '01'
+  printed: January 2014; January 2014
+  source: pdf+filename
+paper:
+  official_reference: 4MB0/02
+  unit_code: 4MB0
+  paper_number_variant: '02'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 07997b700e41623967a5a3b89364e35bbc1004a85e15684daea30b1b65cbdf58
+  size_bytes: 285416
+  original_filename: January 2014 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 3c424eff1bb282e96c505ffc46827dd6784e2bffd395af4fd2903f5091641bd3
+  size_bytes: 186615
+  original_filename: January 2014 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB0/02
+  stray_prints: []
+  session_printed: January 2014; January 2014
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

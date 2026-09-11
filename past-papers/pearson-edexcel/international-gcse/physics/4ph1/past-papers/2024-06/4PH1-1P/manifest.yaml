@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2024-06:4PH1/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: June 2024
+  source: filename
+paper:
+  official_reference: 4PH1/1P
+  unit_code: 4PH1
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d5bd737edbf9df799e3cda9cba9a66b84970a9001591aa4ecbe5434cdf8a59ca
+  size_bytes: 212615
+  original_filename: June 2024 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: a23f38512d6dcc002ee8d245dc879f26f958b49ac4f31d6cf44422c0b7f24853
+  size_bytes: 338498
+  original_filename: June 2024 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1
+  - 4PH1/1P
+  stray_prints: []
+  session_printed: June 2024
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

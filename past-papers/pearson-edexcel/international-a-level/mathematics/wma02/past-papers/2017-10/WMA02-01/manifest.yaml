@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:wma02:2017-10:WMA02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: wma02
+  title: Pearson Edexcel IAL Pure Mathematics (legacy, WMA02)
+series:
+  normalized: 2017-10
+  year: '2017'
+  session_month: '10'
+  printed: October 2017; October 2017
+  source: pdf+filename
+paper:
+  official_reference: WMA02/01
+  unit_code: WMA02
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5792c0ceadb99b078a535efe97b82d7b00ebed2b52a91b627bde63da87b60898
+  size_bytes: 420070
+  original_filename: October 2017 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: a72040f722969e82c3674d0233ea9c925cf7b6b023d94848a11be122a73d90f5
+  size_bytes: 226063
+  original_filename: October 2017 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WMA02
+  - WMA02/01
+  stray_prints: []
+  session_printed: October 2017; October 2017
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:gce-a-level:physics:physics-2008:2010-06:6PH05/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: physics
+specification:
+  folder: physics-2008
+  title: Edexcel GCE Physics (2008 spec, legacy)
+series:
+  normalized: 2010-06
+  year: '2010'
+  session_month: '06'
+  printed: June 2010; June 2010
+  source: pdf+filename
+paper:
+  official_reference: 6PH05/01
+  unit_code: 6PH05
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5191743fc7f558c9f70951f911f3ebabf481b091c117c24dfdd4b5a364129e58
+  size_bytes: 172323
+  original_filename: June 2010 MS - Unit 5 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: a0515224a0bc39367ad40758b263df8fdf8577cfb7ce2aa45ce9f64a0ed71732
+  size_bytes: 159410
+  original_filename: June 2010 QP - Unit 5 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6PH05
+  - 6PH05/01
+  stray_prints: []
+  session_printed: June 2010; June 2010
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb1:2019-06:4MB1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb1
+  title: Edexcel International GCSE Mathematics B (4MB1)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+  printed: June 2019
+  source: filename
+paper:
+  official_reference: 4MB1/02R
+  unit_code: 4MB1
+  paper_number_variant: 02R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2da23c778b14e0aa3c4c03cbeb87c8e741768e04088d044124430616d1c14a64
+  size_bytes: 292232
+  original_filename: June 2019 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB1
+  stray_prints: []
+  session_printed: June 2019
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

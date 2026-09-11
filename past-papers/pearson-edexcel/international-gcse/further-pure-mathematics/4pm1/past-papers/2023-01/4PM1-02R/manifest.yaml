@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm1:2023-01:4PM1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm1
+  title: Edexcel International GCSE Further Pure Mathematics (4PM1)
+series:
+  normalized: 2023-01
+  year: '2023'
+  session_month: '01'
+  printed: January 2023; January 2023
+  source: pdf+filename
+paper:
+  official_reference: 4PM1/02R
+  unit_code: 4PM1
+  paper_number_variant: 02R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 74225496fd0bcce3b70e9cdd0eb5c2a6a1a3f9b2f6548c270d089393ee9f5b8b
+  size_bytes: 468631
+  original_filename: January 2023 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 78acc306fd9e970e5f60b1d92c6d8d9a18c55cce681c5bd151bf93a38a1a2c3d
+  size_bytes: 951487
+  original_filename: January 2023 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM1
+  - 4PM1/02R
+  stray_prints: []
+  session_printed: January 2023; January 2023
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

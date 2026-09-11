@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2022-01:4PH1/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2022-01
+  year: '2022'
+  session_month: '01'
+  printed: January 2022; January 2022
+  source: pdf+filename
+paper:
+  official_reference: 4PH1/1P
+  unit_code: 4PH1
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9a0991eeef812246a1022d7a08a54807b11d5a42f451885b3256b9e96e6e0b35
+  size_bytes: 656824
+  original_filename: January 2022 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 93aae9eae09660a83310d49e656844d9f071e709a177332f884809ed5a358e33
+  size_bytes: 1095722
+  original_filename: January 2022 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1
+  - 4PH1/1P
+  stray_prints: []
+  session_printed: January 2022; January 2022
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

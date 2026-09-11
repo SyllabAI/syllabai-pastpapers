@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm1:2022-01:4PM1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm1
+  title: Edexcel International GCSE Further Pure Mathematics (4PM1)
+series:
+  normalized: 2022-01
+  year: '2022'
+  session_month: '01'
+  printed: January 2022; January 2022
+  source: pdf+filename
+paper:
+  official_reference: 4PM1/01
+  unit_code: 4PM1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 25816f91024b65c937236e1f317f12bc7f13bbcdcf5420fec5e10d79cf12973b
+  size_bytes: 541830
+  original_filename: January 2022 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 24c0c147e424296a3e7530d90d21c4c60b90fc10e98249df1c888069b185a9cc
+  size_bytes: 857798
+  original_filename: January 2022 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM1
+  - 4PM1/01
+  stray_prints: []
+  session_printed: January 2022; January 2022
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

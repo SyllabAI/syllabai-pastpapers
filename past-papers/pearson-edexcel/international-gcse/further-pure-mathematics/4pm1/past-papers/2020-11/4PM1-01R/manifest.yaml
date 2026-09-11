@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm1:2020-11:4PM1/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm1
+  title: Edexcel International GCSE Further Pure Mathematics (4PM1)
+series:
+  normalized: 2020-11
+  year: '2020'
+  session_month: '11'
+  printed: November 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4PM1/01R
+  unit_code: 4PM1
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c5aee43d12b02b2b76781a86651cedea18aaeae744155bb6f5d4b3a4ef4b2875
+  size_bytes: 351122
+  original_filename: June 2020 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM1
+  stray_prints: []
+  session_printed: November 2020; June 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

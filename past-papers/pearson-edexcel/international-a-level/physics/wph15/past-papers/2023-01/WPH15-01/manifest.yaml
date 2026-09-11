@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph15:2023-01:WPH15/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph15
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2023-01
+  year: '2023'
+  session_month: '01'
+  printed: January 2023; January 2023
+  source: pdf+filename
+paper:
+  official_reference: WPH15/01
+  unit_code: WPH15
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 547fc0a5107cc5f3f26d9a7d428ed7541e641a6f37ce6884d8a051a4570ae1f0
+  size_bytes: 344868
+  original_filename: January 2023 (IAL) MS_2_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: a53da5fbb9c84d770475e1a48bc91518d8fa78fcf9d29eb9d9707061afe3bb36
+  size_bytes: 1352760
+  original_filename: January 2023 (IAL) QP_2_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH15/01
+  stray_prints: []
+  session_printed: January 2023; January 2023
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

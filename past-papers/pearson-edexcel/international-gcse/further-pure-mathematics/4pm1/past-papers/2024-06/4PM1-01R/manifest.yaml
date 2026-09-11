@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm1:2024-06:4PM1/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm1
+  title: Edexcel International GCSE Further Pure Mathematics (4PM1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: June 2024
+  source: filename
+paper:
+  official_reference: 4PM1/01R
+  unit_code: 4PM1
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 6f146dfd193fd37eca1a2519b6c01b98e3876dba58a2a287b8777f150cd0e283
+  size_bytes: 570017
+  original_filename: June 2024 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 85df0393bf50843b83454ed3dfdb7eca592add78cb5a9c3c43bf824a8f1d7797
+  size_bytes: 490998
+  original_filename: June 2024 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM1
+  - 4PM1/01R
+  stray_prints: []
+  session_printed: June 2024
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

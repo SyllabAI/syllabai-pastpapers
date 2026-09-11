@@ -1,0 +1,48 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb1:2020-06:4MB1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb1
+  title: Edexcel International GCSE Mathematics B (4MB1)
+series:
+  normalized: 2020-06
+  year: '2020'
+  session_month: '06'
+  printed: May 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4MB1/01
+  unit_code: 4MB1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 27398e846b558217af6e4bc4eb446c49d39263d0ba32382603dd3bbed972c04a
+  size_bytes: 734979
+  original_filename: June 2020 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - date_rule
+  confidence_rank: 5
+  printed_references_seen: []
+  stray_prints: []
+  session_printed: May 2020; June 2020
+  notes:
+  - date rule -> 4MB1/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

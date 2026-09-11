@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm1:2020-01:4PM1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm1
+  title: Edexcel International GCSE Further Pure Mathematics (4PM1)
+series:
+  normalized: 2020-01
+  year: '2020'
+  session_month: '01'
+  printed: January 2020; January 2020
+  source: pdf+filename
+paper:
+  official_reference: 4PM1/02R
+  unit_code: 4PM1
+  paper_number_variant: 02R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 01e249b1ed8186d54f0980fc8092a4ea4a1d8518a3db583e3be0f5a669f6a12c
+  size_bytes: 264334
+  original_filename: January 2020 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 3b2331df275d112ff8233be7a73988cbe6dafad5f872ef62f7617df963a7f240
+  size_bytes: 419788
+  original_filename: January 2020 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM1
+  - 4PM1/02R
+  stray_prints: []
+  session_printed: January 2020; January 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

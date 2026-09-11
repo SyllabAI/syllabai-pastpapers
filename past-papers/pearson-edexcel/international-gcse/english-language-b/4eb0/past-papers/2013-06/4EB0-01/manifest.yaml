@@ -1,0 +1,71 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb0:2013-06:4EB0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb0
+  title: Edexcel International GCSE English Language B (4EB0)
+series:
+  normalized: 2013-06
+  year: '2013'
+  session_month: '06'
+  printed: May 2013; June 2013
+  source: pdf+filename
+paper:
+  official_reference: 4EB0/01
+  unit_code: 4EB0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: insert
+  path: insert.pdf
+  sha256: 43c9fbde6a8fdad221c5ca5be1979d0012ed4cfee32fa8030b278121b48c8a2a
+  size_bytes: 110893
+  original_filename: June 2013 IN - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 09c445face6ecb55a0d6b34d6aa31576397040515a2139a8f62eaaea8ed5a5de
+  size_bytes: 221703
+  original_filename: June 2013 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: b25aa41b2f829c6291c798c145d4266b0098869af06d9245a8ab044f1989af0a
+  size_bytes: 158433
+  original_filename: June 2013 QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB0
+  - 4EB0/01
+  stray_prints: []
+  session_printed: May 2013; June 2013
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

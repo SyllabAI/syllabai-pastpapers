@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:wma01:2015-01:WME02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: wma01
+  title: Pearson Edexcel IAL Mathematics (legacy, WMA01)
+series:
+  normalized: 2015-01
+  year: '2015'
+  session_month: '01'
+  printed: January 2015; January 2015
+  source: pdf+filename
+paper:
+  official_reference: WME02/01
+  unit_code: WME02
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b3d016021c5b24a28ecfbc715b9c281e74efbe180103928254d749aa644e4421
+  size_bytes: 109573
+  original_filename: January 2015 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: b9c85f5c3dae1e66b7acb8702b61d2c2d55f5155e8c18f2021c335882ee5be46
+  size_bytes: 241675
+  original_filename: January 2015 QP_2_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - partner_inference
+  confidence_rank: 0
+  printed_references_seen:
+  - WME02/01
+  stray_prints: []
+  session_printed: January 2015; January 2015
+  notes:
+  - inherited WME02/01 from same-series complementary partner
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

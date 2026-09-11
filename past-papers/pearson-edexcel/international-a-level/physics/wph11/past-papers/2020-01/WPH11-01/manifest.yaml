@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph11:2020-01:WPH11/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph11
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2020-01
+  year: '2020'
+  session_month: '01'
+  printed: January 2020; January 2020
+  source: pdf+filename
+paper:
+  official_reference: WPH11/01
+  unit_code: WPH11
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 75de33332bfc2b56b07571926bf8c4e435b2be5f1eb3299ab8ab572c6cb02489
+  size_bytes: 316303
+  original_filename: January 2020 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: aa676abff388c35962eb7d7a42fcfc3a7ac116055689756ce876f9ced44f2145
+  size_bytes: 1457591
+  original_filename: January 2020 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH11
+  - WPH11/01
+  stray_prints: []
+  session_printed: January 2020; January 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

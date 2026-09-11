@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch1:2024-06:4CH1/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch1
+  title: Edexcel International GCSE Chemistry (4CH1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: June 2024
+  source: filename
+paper:
+  official_reference: 4CH1/1C
+  unit_code: 4CH1
+  paper_number_variant: 1C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9be632c144c5e97667e7010fc2feaf29c7c373236e3e68bb89f10438fc6ab32f
+  size_bytes: 246800
+  original_filename: June 2024 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 2f861899155f512f7761e67c30196d8ab7159174e305b6c655c986c436b5f647
+  size_bytes: 691565
+  original_filename: June 2024 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH1
+  - 4CH1/1C
+  stray_prints: []
+  session_printed: June 2024
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

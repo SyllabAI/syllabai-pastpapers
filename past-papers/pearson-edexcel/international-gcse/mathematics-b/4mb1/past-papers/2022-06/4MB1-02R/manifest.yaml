@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb1:2022-06:4MB1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb1
+  title: Edexcel International GCSE Mathematics B (4MB1)
+series:
+  normalized: 2022-06
+  year: '2022'
+  session_month: '06'
+  printed: June 2022
+  source: filename
+paper:
+  official_reference: 4MB1/02R
+  unit_code: 4MB1
+  paper_number_variant: 02R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d381ebd23e11477e321c725e5b76dd2525ff0ea7f13f895abc8b1aa6cf1f569a
+  size_bytes: 389927
+  original_filename: June 2022 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: c53a6bb274613b75c71a8a9d9ab247528078affdc18ef8647e048a02063332ef
+  size_bytes: 816158
+  original_filename: June 2022 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB1
+  - 4MB1/02R
+  stray_prints: []
+  session_printed: June 2022
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

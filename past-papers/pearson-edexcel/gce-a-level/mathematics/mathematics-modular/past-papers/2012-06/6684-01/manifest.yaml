@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2012-06:6684/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2012-06
+  year: '2012'
+  session_month: '06'
+  printed: June 2012
+  source: filename
+paper:
+  official_reference: 6684/01
+  unit_code: '6684'
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4be223787e2c15fb40bc04f092a280aaac2a6e943e0ce812842f692a732ea57e
+  size_bytes: 222960
+  original_filename: June 2012 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 8548c8668563d23862e469a078115d4249889b4b70f552f9c2a4ee8bc307cb0c
+  size_bytes: 81155
+  original_filename: June 2012 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - '6684'
+  stray_prints: []
+  session_printed: June 2012
+  notes:
+  - date rule -> 6684/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

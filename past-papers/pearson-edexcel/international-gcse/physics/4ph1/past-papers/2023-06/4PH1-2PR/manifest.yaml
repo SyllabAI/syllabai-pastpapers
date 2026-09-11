@@ -1,0 +1,48 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2023-06:4PH1/2PR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: filename
+paper:
+  official_reference: 4PH1/2PR
+  unit_code: 4PH1
+  paper_number_variant: 2PR
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a7e85ef5077be8ebf87231c349c38ee8c52998fe13272031256bf3ff234bf8c3
+  size_bytes: 249717
+  original_filename: June 2023 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1
+  stray_prints: []
+  session_printed: June 2023
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

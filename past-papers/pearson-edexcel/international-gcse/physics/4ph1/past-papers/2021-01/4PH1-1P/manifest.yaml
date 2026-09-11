@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2021-01:4PH1/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2021-01
+  year: '2021'
+  session_month: '01'
+  printed: January 2021; January 2021
+  source: pdf+filename
+paper:
+  official_reference: 4PH1/1P
+  unit_code: 4PH1
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 11cfe535d30be8b14fda7d088e09b29de0cb192d16711de57e3df52e277962d0
+  size_bytes: 233870
+  original_filename: January 2021 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 1d3dc574d13e53756b90ebe8419141fe5ed3e3cd0c911c55372df584e4a38aa0
+  size_bytes: 1178414
+  original_filename: January 2021 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1
+  - 4PH1/1P
+  stray_prints: []
+  session_printed: January 2021; January 2021
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

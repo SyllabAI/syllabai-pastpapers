@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2021-01:4MA1/1FR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2021-01
+  year: '2021'
+  session_month: '01'
+  printed: January 2021; January 2021
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/1FR
+  unit_code: 4MA1
+  paper_number_variant: 1FR
+variant:
+  official_code: R
+  type: regional
+  note: F tier + regional variant
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 411c5a2cc97fce7625ed3ca300ac08a4b31a868aa41c82c73f8622fee26eed78
+  size_bytes: 325624
+  original_filename: January 2021 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 40427a6977ad944a69157e25aaa1dc705ac9092163e990e097a6dbc3e19f04f5
+  size_bytes: 921885
+  original_filename: January 2021 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1
+  - 4MA1/1FR
+  stray_prints: []
+  session_printed: January 2021; January 2021
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

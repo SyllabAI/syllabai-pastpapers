@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2020-11:4CP0/2B
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2020-11
+  year: '2020'
+  session_month: '11'
+  printed: November 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4CP0/2B
+  unit_code: 4CP0
+  paper_number_variant: 2B
+variant:
+  official_code: B
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f2dd434e0fff55009d699fa4ce728075904106d861ad12dcb7ba9ce7dab3e1dc
+  size_bytes: 318656
+  original_filename: June 2020 MS - Paper 2B Edexcel Computer Science IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CP0/2B
+  stray_prints: []
+  session_printed: November 2020; June 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

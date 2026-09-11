@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb0:2017-06:4EB0/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb0
+  title: Edexcel International GCSE English Language B (4EB0)
+series:
+  normalized: 2017-06
+  year: '2017'
+  session_month: '06'
+  printed: June 2017; June 2017
+  source: pdf+filename
+paper:
+  official_reference: 4EB0/01R
+  unit_code: 4EB0
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: insert
+  path: insert.pdf
+  sha256: 0d17b63f71aeece0b33287cbd4b10beb1b0e73a9434299c1e8e06d9bd9e1b73e
+  size_bytes: 364985
+  original_filename: June 2017 (R) IN - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: f07e5cf77bafaba41e1a478ef02ef557bd491acff4527368d6dc5338e630ec64
+  size_bytes: 302963
+  original_filename: June 2017 (R) QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB0/01R
+  stray_prints: []
+  session_printed: June 2017; June 2017
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

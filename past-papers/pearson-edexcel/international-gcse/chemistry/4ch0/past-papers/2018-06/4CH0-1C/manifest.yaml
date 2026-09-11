@@ -1,0 +1,65 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2018-06:4CH0/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: filename
+paper:
+  official_reference: 4CH0/1C
+  unit_code: 4CH0
+  paper_number_variant: 1C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5381d95189fe3d5b4958ac2d2ab5636735aa458e7dffbca94b44b16f1eaa9b30
+  size_bytes: 696768
+  original_filename: June 2018 MS - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 1ff0f7955d3fa61a03d10af626a3a4daa733cd719a987d3be7a784839e8905ae
+  size_bytes: 194087
+  original_filename: June 2018 QP - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0
+  - 4CH0/1C
+  - 4SC0/1C
+  stray_prints:
+  - 4SC0/1C (alternate-route/legacy print)
+  session_printed: June 2018
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:wma01:2018-10:WME01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: wma01
+  title: Pearson Edexcel IAL Mathematics (legacy, WMA01)
+series:
+  normalized: 2018-10
+  year: '2018'
+  session_month: '10'
+  printed: October 2018; October 2018
+  source: pdf+filename
+paper:
+  official_reference: WME01/01
+  unit_code: WME01
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 8f3cf166fecbeb00b3c1759ecffb6b44b366f99f219658cdac9a12fe3bb992af
+  size_bytes: 224493
+  original_filename: October 2018 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 8f119adad15814d9005d09e3cedd248ae161a26324ea6f2111595379a2f2545a
+  size_bytes: 181223
+  original_filename: October 2018 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WME01/01
+  stray_prints: []
+  session_printed: October 2018; October 2018
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

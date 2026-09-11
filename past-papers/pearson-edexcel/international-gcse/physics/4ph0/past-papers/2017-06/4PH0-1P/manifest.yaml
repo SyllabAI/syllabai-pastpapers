@@ -1,0 +1,66 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph0:2017-06:4PH0/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph0
+  title: Edexcel International GCSE Physics (4PH0)
+series:
+  normalized: 2017-06
+  year: '2017'
+  session_month: '06'
+  printed: June 2017
+  source: filename
+paper:
+  official_reference: 4PH0/1P
+  unit_code: 4PH0
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f3c48d06d6e37b9bcfa1c5d9745d83f30ce6e8863b92d216aefea7cceb2a60ec
+  size_bytes: 395455
+  original_filename: June 2017 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: a17992b3596d9ea76fb3fa42f1bbb02060d25d631350db0a79e142280a9033c2
+  size_bytes: 224034
+  original_filename: June 2017 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH0
+  - 4PH0/1P
+  - 4SC0
+  - 4SC0/1P
+  stray_prints:
+  - 4SC0/1P (alternate-route/legacy print)
+  session_printed: June 2017
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

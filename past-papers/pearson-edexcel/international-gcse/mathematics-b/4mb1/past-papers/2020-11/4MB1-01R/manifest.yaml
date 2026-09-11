@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb1:2020-11:4MB1/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb1
+  title: Edexcel International GCSE Mathematics B (4MB1)
+series:
+  normalized: 2020-11
+  year: '2020'
+  session_month: '11'
+  printed: November 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4MB1/01R
+  unit_code: 4MB1
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d386d1ce26afb89f5de5f5cbb61b1e779ea38da911241dc04385f88be659c29b
+  size_bytes: 384244
+  original_filename: June 2020 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB1
+  stray_prints: []
+  session_printed: November 2020; June 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

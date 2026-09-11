@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph11:2026-01:WPH11/01A
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph11
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2026-01
+  year: '2026'
+  session_month: '01'
+  printed: January 2026; January 2026
+  source: pdf+filename
+paper:
+  official_reference: WPH11/01A
+  unit_code: WPH11
+  paper_number_variant: 01A
+variant:
+  official_code: A
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b00f9600a86a69995e3fb54f9fe55b9c9a0725912883556c0ccf444e7ed74ae9
+  size_bytes: 1129991
+  original_filename: January 2026 - Unit 1A MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: e4f8f32306c26ebd0782f87a9e9eda6483d0d2fdc5c0852f30b86ed55e0471cb
+  size_bytes: 1694255
+  original_filename: January 2026 - Unit 1A QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH11/01A
+  stray_prints: []
+  session_printed: January 2026; January 2026
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2022-01:4MA1/1HR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2022-01
+  year: '2022'
+  session_month: '01'
+  printed: January 2022; January 2022
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/1HR
+  unit_code: 4MA1
+  paper_number_variant: 1HR
+variant:
+  official_code: R
+  type: regional
+  note: H tier + regional variant
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 555d84a042434db384799e66b0e0eee7397fcc81a6238679771cce9ae3ed33f2
+  size_bytes: 354055
+  original_filename: January 2022 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 9fea62935995ce3e7c4834242d42ef1fa241e7b2c790f750abbcbb55c8ce198e
+  size_bytes: 944811
+  original_filename: January 2022 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1
+  - 4MA1/1HR
+  stray_prints: []
+  session_printed: January 2022; January 2022
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

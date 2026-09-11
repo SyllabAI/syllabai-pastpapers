@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph15:2022-06:WPH15/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph15
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2022-06
+  year: '2022'
+  session_month: '06'
+  printed: June 2022; June 2022
+  source: pdf+filename
+paper:
+  official_reference: WPH15/01
+  unit_code: WPH15
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7165d8e50c08cdb9343795db22376596d76f249b0e8391393105cd0168d2810c
+  size_bytes: 700040
+  original_filename: June 2022 (IAL) MS_2_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: bda8e9c34aad44d2d851784c15f7998406597ebcd79cffb4f9941a896555781c
+  size_bytes: 1277334
+  original_filename: June 2022 (IAL) QP_2_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH15
+  - WPH15/01
+  stray_prints: []
+  session_printed: June 2022; June 2022
+  notes:
+  - cover prints 'Paper 5' for unit-style code WPH15; unit refs are /01 (Pearson cover anomaly), ref set
+    to /01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

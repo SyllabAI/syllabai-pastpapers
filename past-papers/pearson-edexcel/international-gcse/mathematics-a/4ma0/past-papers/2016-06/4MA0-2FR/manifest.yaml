@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma0:2016-06:4MA0/2FR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma0
+  title: Edexcel International GCSE Mathematics A (4MA0)
+series:
+  normalized: 2016-06
+  year: '2016'
+  session_month: '06'
+  printed: June 2016; June 2016
+  source: pdf+filename
+paper:
+  official_reference: 4MA0/2FR
+  unit_code: 4MA0
+  paper_number_variant: 2FR
+variant:
+  official_code: R
+  type: regional
+  note: F tier + regional variant
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c1e1c58fb893b7a2423ff87d2a8d1357adcee7edaf02bcdb0887c3b3bab773dd
+  size_bytes: 259231
+  original_filename: June 2016 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: e003e98a365fb8f4fb319d60e02ebde4b2a299254dfa3d97625b4e413fc7dc74
+  size_bytes: 127158
+  original_filename: June 2016 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA0
+  - 4MA0/2FR
+  stray_prints: []
+  session_printed: June 2016; June 2016
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

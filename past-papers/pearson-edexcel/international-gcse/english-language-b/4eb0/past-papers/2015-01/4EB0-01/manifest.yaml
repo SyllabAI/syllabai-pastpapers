@@ -1,0 +1,70 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb0:2015-01:4EB0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb0
+  title: Edexcel International GCSE English Language B (4EB0)
+series:
+  normalized: 2015-01
+  year: '2015'
+  session_month: '01'
+  printed: January 2015; January 2015
+  source: pdf+filename
+paper:
+  official_reference: 4EB0/01
+  unit_code: 4EB0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: insert
+  path: insert.pdf
+  sha256: fcb77af9b811813e60c1c84a585868e73fdda926aa29086efa1681fa7cf38faf
+  size_bytes: 94027
+  original_filename: January 2015 IN - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1d7509987afd20926c0e5c56903a14cdede70ff11bc9a128ddc745d871af5ef5
+  size_bytes: 188991
+  original_filename: January 2015 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: b2c0391c51dc1c1d4a16611a11e9ad591d36945c2309e825bd25bceffdf7ba5d
+  size_bytes: 68097
+  original_filename: January 2015 QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB0/01
+  stray_prints: []
+  session_printed: January 2015; January 2015
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

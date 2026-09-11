@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb1:2021-06:4MB1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb1
+  title: Edexcel International GCSE Mathematics B (4MB1)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: June 2021
+  source: filename
+paper:
+  official_reference: 4MB1/01
+  unit_code: 4MB1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 34792b1bce9acf69f277a89bf44920f28f413afc4e3002cb831200a0c7332c7b
+  size_bytes: 444963
+  original_filename: June 2021 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 2df233cbb53e1eb40e47dc6b8df45dc31e66436b7cd714b580aab0d4abba8870
+  size_bytes: 846177
+  original_filename: June 2021 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB1
+  - 4MB1/01
+  stray_prints: []
+  session_printed: June 2021
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

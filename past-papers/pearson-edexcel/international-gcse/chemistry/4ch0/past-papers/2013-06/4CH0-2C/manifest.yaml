@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2013-06:4CH0/2C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2013-06
+  year: '2013'
+  session_month: '06'
+  printed: June 2013
+  source: filename
+paper:
+  official_reference: 4CH0/2C
+  unit_code: 4CH0
+  paper_number_variant: 2C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 8aacda5ad15110f8ab88ae158afbf6ab1af475ebab59f99f16be2840585d3a6c
+  size_bytes: 119769
+  original_filename: June 2013 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 9394357770611a6a9d6653ea2f9715bfa7a0198fec8a59ec254ac2235bc1f774
+  size_bytes: 254497
+  original_filename: June 2013 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0
+  - 4CH0/2C
+  stray_prints: []
+  session_printed: June 2013
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph05:2019-06:WPH05/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph05
+  title: Pearson Edexcel International Advanced Level Physics (2013 spec, legacy)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+  printed: June 2019; June 2019
+  source: pdf+filename
+paper:
+  official_reference: WPH05/01
+  unit_code: WPH05
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: dda289e1ea823aa27889d61b2a11627c1fda4246ce9a971e3eaab49ca1abeed9
+  size_bytes: 479802
+  original_filename: June 2019 (IAL) MS - Unit 5 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: fe4506d620b3b6e13d74f3d0bf2593b440f3c1ff2e323232d22fe903c2ba267f
+  size_bytes: 2993696
+  original_filename: June 2019 (IAL) QP - Unit 5 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - partner_inference
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH05
+  stray_prints: []
+  session_printed: June 2019; June 2019
+  notes:
+  - inherited WPH05/01 from same-series complementary partner
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

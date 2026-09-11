@@ -1,0 +1,70 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb1:specimen:4EB1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb1
+  title: Edexcel International GCSE English Language B (4EB1)
+series:
+  type: specimen
+  spec_year: null
+  printed: null
+paper:
+  official_reference: 4EB1/01
+  unit_code: 4EB1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: insert
+  path: insert.pdf
+  sha256: 1a0f4d931eb25ccb2c4cdeac3650d43bd30062acaeab005801472e49f47984b4
+  size_bytes: 98260
+  original_filename: Specimen IN - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3424e1b8d397f869cc208dcc643009fd1c571b13a1638dc204c052ea0d301d3c
+  size_bytes: 220433
+  original_filename: Specimen MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: bd60d3a970ffbe1253f4fc0a6e90d13278df877c930890bea5058fb92bbb670e
+  size_bytes: 1655554
+  original_filename: Specimen QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - partner_inference
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB1/01
+  stray_prints: []
+  session_printed: null
+  notes:
+  - inherited 4EB1/01 from same-series complementary partner
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

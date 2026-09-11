@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb1:2024-06:4EB1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb1
+  title: Edexcel International GCSE English Language B (4EB1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: June 2024; June 2024
+  source: pdf+filename
+paper:
+  official_reference: 4EB1/01
+  unit_code: 4EB1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3d419a003d520e498f81c8e180241750950d7e2fdd2ef033d266a2313204550f
+  size_bytes: 251040
+  original_filename: June 2024 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 7394f77312e8aa87716de08bfc2845750cf225435e0e510dc55588ad87afc21a
+  size_bytes: 194063
+  original_filename: June 2024 QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB1
+  stray_prints: []
+  session_printed: June 2024; June 2024
+  notes:
+  - date rule -> 4EB1/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

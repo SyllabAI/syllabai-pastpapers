@@ -1,0 +1,48 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb1:2020-11:4EB1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb1
+  title: Edexcel International GCSE English Language B (4EB1)
+series:
+  normalized: 2020-11
+  year: '2020'
+  session_month: '11'
+  printed: November 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4EB1/01
+  unit_code: 4EB1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 6109caf677130fa8aada3c0a30ed86089bc531b6fd2f0c1a788b47b223edd1b3
+  size_bytes: 201431
+  original_filename: June 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB1
+  stray_prints: []
+  session_printed: November 2020; June 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

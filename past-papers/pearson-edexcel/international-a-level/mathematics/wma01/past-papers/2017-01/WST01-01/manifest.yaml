@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:wma01:2017-01:WST01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: wma01
+  title: Pearson Edexcel IAL Mathematics (legacy, WMA01)
+series:
+  normalized: 2017-01
+  year: '2017'
+  session_month: '01'
+  printed: January 2017; January 2017
+  source: pdf+filename
+paper:
+  official_reference: WST01/01
+  unit_code: WST01
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5859a9529a51c256b3610286601a41ea21da303a4bcab9fa232a4d3656f6aa79
+  size_bytes: 313985
+  original_filename: January 2017 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: f258c1b68abe48b7b8ea5a193e84d352994e2cc98ef608ea37a387c9245105f9
+  size_bytes: 157419
+  original_filename: January 2017 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - partner_inference
+  confidence_rank: 0
+  printed_references_seen:
+  - WST01
+  stray_prints: []
+  session_printed: January 2017; January 2017
+  notes:
+  - inherited WST01/01 from same-series complementary partner
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

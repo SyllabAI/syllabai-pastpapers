@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2019-06:4MA1/1HR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+  printed: June 2019
+  source: filename
+paper:
+  official_reference: 4MA1/1HR
+  unit_code: 4MA1
+  paper_number_variant: 1HR
+variant:
+  official_code: R
+  type: regional
+  note: H tier + regional variant
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 21712233321ad0703bb9ba655619b57ea4bcd7174f0c428043be811489bd9683
+  size_bytes: 420398
+  original_filename: June 2019 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: d1e167a68705eb2c5f8e128d90c56752daebbca3f0fe7156c8d4e14831c58d69
+  size_bytes: 198486
+  original_filename: June 2019 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1
+  - 4MA1/1HR
+  stray_prints: []
+  session_printed: June 2019
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
