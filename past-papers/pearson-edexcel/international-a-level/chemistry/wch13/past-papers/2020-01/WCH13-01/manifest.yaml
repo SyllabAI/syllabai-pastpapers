@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:chemistry:wch13:2020-01:WCH13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: chemistry
+specification:
+  folder: wch13
+  title: Pearson Edexcel International Advanced Level Chemistry (2018 spec)
+series:
+  normalized: 2020-01
+  year: '2020'
+  session_month: '01'
+  printed: January 2020
+  source: pdf+filename
+paper:
+  official_reference: WCH13/01
+  unit_code: WCH13
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4d2d226a8a784f2ccb5046b58115d564dc22237b75342cfd57ce346a109393e5
+  size_bytes: 177150
+  original_filename: January 2020 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-chemistry/edexcel-unit-3/
+    downloaded_at: 2026-09-11T12:01:47Z
+    collected_by: SyllabAI ingestion agent (PMT backfill 2026-09-11)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 7ff46857d695f352b7007fa41421569dccc2d172352420dc81a0421220226c62
+  size_bytes: 209139
+  original_filename: January 2020 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-chemistry/edexcel-unit-3/
+    downloaded_at: 2026-09-11T12:01:52Z
+    collected_by: SyllabAI ingestion agent (PMT backfill 2026-09-11)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WCH13/01
+  stray_prints: []
+  session_printed: January 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent (PMT backfill 2026-09-11)
+  run_date: '2026-09-11'
+  source_repo: PMT bulk download (PhysicsAndMathsTutor.com)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

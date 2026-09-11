@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:chemistry:wch12:2022-10:WCH12/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: chemistry
+specification:
+  folder: wch12
+  title: Pearson Edexcel International Advanced Level Chemistry (2018 spec)
+series:
+  normalized: 2022-10
+  year: '2022'
+  session_month: '10'
+  printed: 2022-10
+  source: filename
+paper:
+  official_reference: WCH12/01
+  unit_code: WCH12
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b9dc88bef883aa80b18835a1fab2f92c60c595d905c650c809d227481c73f6fa
+  size_bytes: 247805
+  original_filename: October 2022 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-chemistry/edexcel-unit-2/
+    downloaded_at: 2026-09-11T12:07:19Z
+    collected_by: SyllabAI ingestion agent (PMT backfill 2026-09-11)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 4f67c49ac40425d2a388ae06fcef1a4e1838e55f6a9f03ca8b7bff58080e6de8
+  size_bytes: 621405
+  original_filename: October 2022 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-chemistry/edexcel-unit-2/
+    downloaded_at: 2026-09-11T12:07:23Z
+    collected_by: SyllabAI ingestion agent (PMT backfill 2026-09-11)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WCH12/01
+  stray_prints: []
+  session_printed: not detected
+  notes:
+  - session not detected in pdftotext pages 1-2; series from PMT filename
+ingestion:
+  agent: SyllabAI ingestion agent (PMT backfill 2026-09-11)
+  run_date: '2026-09-11'
+  source_repo: PMT bulk download (PhysicsAndMathsTutor.com)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
