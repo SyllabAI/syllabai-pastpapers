@@ -188,3 +188,11 @@ and fixed two items that touch this report:
 - Method note: PMT listing pages return HTTP 403 to the agent, so page discovery ran through the rendered page-reader pipeline and files were fetched directly from `pmt.physicsandmathstutor.com` (operator-approved; politeness delay ≥3 s between hits).
 - Residue: 79 rows are not obtainable from PMT (not-listed / mislabeled / corrupt - classes in ledger `status`); alternatives (dynamicpapers, xtremepapers, Pearson) are the next wave.
 - F9: the corrupt 4PM1-01 2023-01 ms remains quarantined; PMT re-serves identical truncated bytes.
+
+
+## 10. Other-source wave - 2026-09-12 (F7/F9/F10 residue)
+
+- Trigger: operator authorization "if pmt shows error, then you can use other sources" after the PMT wave left 79 `na:pmt-*` rows + 67 planned rows.
+- Source: **XtremePapers (papers.xtremepape.rs)** public directory tree (probes documented in AUDIT §8); files fetched with a politeness delay, print-verified, blob-deduped against the corpus.
+- Placed: **52 artifacts** (33 qp · 19 ms) with per-file `source_url` provenance in the manifests. F10: 16 of the 66 byte-duplicate rows repaired with true base files. F9: still open (2023-Jan FPM not hosted).
+- Residue: 160 ledger rows open (classes in the ledger; see AUDIT §8). A further source with 2023+ IGCSE and chemistry R-variant coverage is the next requirement.

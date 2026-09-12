@@ -36,10 +36,10 @@
     },
     "corpus_after_gapfill_wave_2026_09_12": {
       "date": "2026-09-12",
-      "note": "file-gap wave (audit F7, P0+P2+P3+P5-scope of docs/ledger/file-gap-sweep.csv): 82 missing artifacts fetched from the PMT CDN and print-verified (54 exact-code + 2 zero-pad-normalized + 7 dir+filename + 11 image-scan dir+filename); PM listing pages 403 the agent - page discovery via rendered page reader, files via direct CDN. 79 of 161 in-scope rows are not satisfiable from PMT (not-listed / mislabeled / corrupt classes, see ledger statuses na:*) and queue for other sources; GCE/CS/English rows remain planned. Post-commit s.19 dedup audit: 66 of the 82 placements were byte-identical to artifacts already held in sibling dirs (pre-existing misidentification, audit F10) and were reverted; 16 unique-byte files remain placed.",
+      "note": "file-gap wave (audit F7, P0+P2+P3+P5-scope of docs/ledger/file-gap-sweep.csv): 82 missing artifacts fetched from the PMT CDN and print-verified (54 exact-code + 2 zero-pad-normalized + 7 dir+filename + 11 image-scan dir+filename); PM listing pages 403 the agent - page discovery via rendered page reader, files via direct CDN. 79 of 161 in-scope rows are not satisfiable from PMT (not-listed / mislabeled / corrupt classes, see ledger statuses na:*) and queue for other sources; GCE/CS/English rows remain planned. Post-commit s.19 dedup audit: 66 of the 82 placements were byte-identical to artifacts already held in sibling dirs (pre-existing misidentification, audit F10) and were reverted; 16 unique-byte files remain placed. TOTALS CORRECTED 2026-09-12 (other-source wave doc-sync): this block's numbers had been written before the s.19 revert (82 placed) and showed 2,933 (1,462 qp / 1,453 ms); post-revert truth is 2,867 (1,405 qp / 1,444 ms / 18 insert) = 2,851 + 16 net placements - now matching the tree.",
       "pdfs_and_inserts": 2867,
-      "qp": 1446,
-      "ms": 1453,
+      "qp": 1405,
+      "ms": 1444,
       "insert": 18,
       "material_entries": 2867,
       "manifests": 1531,
@@ -53,14 +53,30 @@
         "out_of_scope_planned": 67,
         "blocked_by_dedup_F10": 66
       }
+    },
+    "corpus_after_othersource_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
+      "pdfs_and_inserts": 2919,
+      "qp": 1438,
+      "ms": 1463,
+      "insert": 18,
+      "manifests": 1531,
+      "material_entries": 2919,
+      "regular_paper_dirs": 1489,
+      "specimen_refs": 42,
+      "quarantined_pdfs": 314,
+      "ledger_rows": 228,
+      "ledger_normalized": 68,
+      "ledger_open": 160
     }
   },
   "identification_methods": {
-    "pdf_text": 2265,
-    "date_rule": 294,
-    "partner_inference": 87,
+    "pdf_text": 2904,
+    "partner_inference": 157,
+    "date_rule": 541,
     "folder_consensus": 6,
-    "specimen_first_teaching": 8
+    "specimen_first_teaching": 5
   },
   "quarantine_by_class": {
     "duplicate-artifact": 141,
@@ -72,19 +88,19 @@
   "spec_stats": {
     "gce-a-level/mathematics/mathematics-modular": {
       "papers": 245,
-      "files": 478
+      "files": 484
     },
     "gce-a-level/physics/physics-2008": {
       "papers": 78,
-      "files": 142
+      "files": 149
     },
     "international-a-level/mathematics/mathematics-2018": {
       "papers": 138,
-      "files": 255
+      "files": 261
     },
     "international-a-level/mathematics/wma01": {
       "papers": 68,
-      "files": 126
+      "files": 136
     },
     "international-a-level/mathematics/wma02": {
       "papers": 15,
@@ -104,7 +120,7 @@
     },
     "international-a-level/physics/wph04": {
       "papers": 16,
-      "files": 30
+      "files": 31
     },
     "international-a-level/physics/wph05": {
       "papers": 15,
@@ -116,7 +132,7 @@
     },
     "international-a-level/physics/wph11": {
       "papers": 25,
-      "files": 48
+      "files": 49
     },
     "international-a-level/physics/wph12": {
       "papers": 18,
@@ -124,15 +140,15 @@
     },
     "international-a-level/physics/wph13": {
       "papers": 21,
-      "files": 36
+      "files": 39
     },
     "international-a-level/physics/wph14": {
       "papers": 18,
-      "files": 32
+      "files": 34
     },
     "international-a-level/physics/wph15": {
       "papers": 17,
-      "files": 30
+      "files": 31
     },
     "international-a-level/physics/wph16": {
       "papers": 16,
@@ -140,23 +156,23 @@
     },
     "international-gcse/chemistry/4ch0": {
       "papers": 32,
-      "files": 63
+      "files": 64
     },
     "international-gcse/chemistry/4ch1": {
       "papers": 44,
-      "files": 66
+      "files": 67
     },
     "international-gcse/computer-science/4cp0": {
       "papers": 30,
-      "files": 36
+      "files": 40
     },
     "international-gcse/english-language-b/4eb0": {
       "papers": 17,
-      "files": 47
+      "files": 51
     },
     "international-gcse/english-language-b/4eb1": {
       "papers": 25,
-      "files": 38
+      "files": 42
     },
     "international-gcse/further-pure-mathematics/4pm0": {
       "papers": 32,
@@ -164,152 +180,140 @@
     },
     "international-gcse/further-pure-mathematics/4pm1": {
       "papers": 47,
-      "files": 79
+      "files": 81
     },
     "international-gcse/mathematics-a/4ma0": {
       "papers": 98,
-      "files": 189
+      "files": 192
     },
     "international-gcse/mathematics-a/4ma1": {
       "papers": 109,
-      "files": 195
+      "files": 197
     },
     "international-gcse/mathematics-b/4mb0": {
       "papers": 49,
-      "files": 92
+      "files": 97
     },
     "international-gcse/mathematics-b/4mb1": {
       "papers": 49,
-      "files": 86
+      "files": 89
     },
     "international-gcse/physics/4ph0": {
       "papers": 32,
-      "files": 63
+      "files": 64
     },
     "international-gcse/physics/4ph1": {
       "papers": 44,
-      "files": 66
+      "files": 67
     },
     "international-a-level/chemistry/wch01": {
       "papers": 15,
-      "files": 30,
-      "batch": 2
+      "files": 30
     },
     "international-a-level/chemistry/wch02": {
       "papers": 15,
-      "files": 30,
-      "batch": 2
+      "files": 30
     },
     "international-a-level/chemistry/wch03": {
       "papers": 13,
-      "files": 26,
-      "batch": 2
+      "files": 26
     },
     "international-a-level/chemistry/wch04": {
       "papers": 13,
-      "files": 26,
-      "batch": 2
+      "files": 26
     },
     "international-a-level/chemistry/wch05": {
       "papers": 12,
-      "files": 24,
-      "batch": 2
+      "files": 24
     },
     "international-a-level/chemistry/wch06": {
       "papers": 11,
-      "files": 22,
-      "batch": 2
+      "files": 22
     },
     "international-a-level/chemistry/wch11": {
       "papers": 18,
-      "files": 36,
-      "batch": 2
+      "files": 36
     },
     "international-a-level/chemistry/wch12": {
       "papers": 17,
-      "files": 34,
-      "batch": 2
+      "files": 34
     },
     "international-a-level/chemistry/wch13": {
       "papers": 17,
-      "files": 34,
-      "batch": 2
+      "files": 34
     },
     "international-a-level/chemistry/wch14": {
       "papers": 14,
-      "files": 28,
-      "batch": 2
+      "files": 28
     },
     "international-a-level/chemistry/wch15": {
       "papers": 13,
-      "files": 26,
-      "batch": 2
+      "files": 26
     },
     "international-a-level/chemistry/wch16": {
       "papers": 12,
-      "files": 24,
-      "batch": 2
+      "files": 24
     },
     "international-a-level": {
       "mathematics": {
         "mathematics-2018": {
-          "files": 7
+          "files": 261
         },
         "wma01": {
-          "files": 10
+          "files": 136
         }
       },
       "physics": {
         "wph04": {
-          "files": 1
+          "files": 31
         },
         "wph11": {
-          "files": 1
+          "files": 49
         },
         "wph13": {
-          "files": 3
+          "files": 39
         },
         "wph14": {
-          "files": 2
+          "files": 34
         },
         "wph15": {
-          "files": 1
+          "files": 31
         }
       }
     },
     "international-gcse": {
       "chemistry": {
         "4ch1": {
-          "files": 16
+          "files": 67
         }
       },
       "further-pure-mathematics": {
         "4pm0": {
-          "files": 2
+          "files": 62
         },
         "4pm1": {
-          "files": 4
+          "files": 81
         }
       },
       "mathematics-a": {
         "4ma0": {
-          "files": 5
+          "files": 192
         },
         "4ma1": {
-          "files": 5
+          "files": 197
         }
       },
       "mathematics-b": {
         "4mb0": {
-          "files": 6
+          "files": 97
         },
         "4mb1": {
-          "files": 3
+          "files": 89
         }
       },
       "physics": {
         "4ph1": {
-          "files": 16
+          "files": 67
         }
       }
     }
@@ -1329,11 +1333,16 @@
         "date": "2026-09-12",
         "what": "file-gap wave correction: 66 byte-duplicate placements reverted (s.19); F10/F11/F12 recorded",
         "evidence": "docs/AUDIT-2026-09-12.md post-wave findings"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
       }
     ]
   },
   "identification_methods_wave_delta_2026_09_12": {
-    "date_rule_additions": 23,
-    "note": "23 manifests gained a date_rule method entry (fetched file's session evidence came from the PMT filename + cover (c)-year where the cover prints no session). No other method rows were changed by this wave; the base histogram keeps the 2026-09-12 second-pass counting basis."
+    "date_rule_additions": 27,
+    "note": "27 manifests gained a date_rule entry across the two 2026-09-12 waves (wave 1: 23 before the s.19 revert correction scope; wave 2: included in this count). Histogram recomputed exactly from all manifests after the other-source wave."
   }
 }

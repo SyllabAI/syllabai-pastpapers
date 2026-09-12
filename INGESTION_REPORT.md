@@ -20,11 +20,11 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,933** (1,462 qp · 1,453 ms · 18 insert) across **1,531** paper dirs
+- PDFs + inserts placed: **2,919** (1,438 qp · 1,463 ms · 18 insert) across **1,531** paper dirs
   (final state after the second repair pass — the corrupt 4PM1-01 2023-01 ms was quarantined, F9)
   — **1,489 regular** (batch 1: 1,319 · batch 2: 170, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
-- Manifests: **1,531** · manifest material entries: **2,933** (every placed PDF/insert listed with
+- Manifests: **1,531** · manifest material entries: **2,919** (every placed PDF/insert listed with
   SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
 - Quarantined PDFs: **314** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
   79 out-of-scope-gce · 1 corrupt-artifact), every file with a `REASON.txt`
@@ -35,24 +35,31 @@
 - **79 rows are not satisfiable from PMT** and keep their gap: not-listed (2020-11 series, Oct-2020 IAL maths QPs, 01A mark schemes), mislabeled-on-PMT (2020-06 MS files that print November 2020, October-2020 maths QPs that print June 2020, legacy flat-dir mislabels), corrupt-on-PMT (F9's 4PM1-01 2023-01 ms re-served truncated; 4PM1-02R 2022-01 qp missing EOF). Ledger statuses `na:*` carry the per-row class; other sources pending.
 - GCE modular / IGCSE computer-science / English rows (67) remain `planned` per plan §3.
 
+## Other-source wave (2026-09-12, audit F7/F9/F10 residue)
+
+- After the PMT wave, the operator authorized other sources for PMT-error rows. Source probes: archive.org unreachable from the agent; dynamicpapers/papacambridge search surfaces not scriptable; Pearson portal requires interactive access - **XtremePapers (papers.xtremepape.rs) selected** (public directory tree, server-rendered listings).
+- **52 missing artifacts placed** (33 qp · 19 ms), every file print-verified (paper ref + session via cover text, coded or glued filename dates) and checked against the whole corpus by git-blob sha1 BEFORE acceptance (the F10 guard): 25 planned rows resolved (first GCE-maths and GCE-physics placements), 16 of the 66 F10 byte-duplicate rows repaired, 11 na:pmt-* rows resolved.
+- Ledger now: 68 normalized · 160 open (byte-duplicate 50 · mislabeled 39 · not-listed 25 · unresolved 3 · corrupt 1 · planned 42).
+- Totals line above corrected 2,933 → 2,919 (the previous figure predated the s.19 revert).
+
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
 | method | files |
 |---|---|
-| pdf_text | 2237 |
-| date_rule | 314 |
-| partner_inference | 87 |
-| specimen_first_teaching | 8 |
+| pdf_text | 2904 |
+| date_rule | 541 |
+| partner_inference | 157 |
+| specimen_first_teaching | 5 |
 | folder_consensus | 6 |
 
-2026-09-12 file-gap wave delta: +23 manifests gained a `date_rule` entry (fetched files whose session evidence is the PMT filename + cover copyright year); other method rows unchanged.
+2026-09-12 waves delta: 27 manifests gained a `date_rule` entry across the two file-gap waves (wave-1 placements later reverted in the s.19 dedup audit are excluded); the table was recomputed exactly from all manifests after the other-source wave.
 
 ## Spec coverage
 
 | family / subject / spec | paper dirs | files |
 |---|---|---|
-| gce-a-level/mathematics/mathematics-modular | 245 | 478 |
-| gce-a-level/physics/physics-2008 | 78 | 142 |
+| gce-a-level/mathematics/mathematics-modular | 245 | 484 |
+| gce-a-level/physics/physics-2008 | 78 | 149 |
 | international-a-level/chemistry/wch01 | 15 | 30 |
 | international-a-level/chemistry/wch02 | 15 | 30 |
 | international-a-level/chemistry/wch03 | 13 | 26 |
@@ -65,34 +72,34 @@
 | international-a-level/chemistry/wch14 | 14 | 28 |
 | international-a-level/chemistry/wch15 | 13 | 26 |
 | international-a-level/chemistry/wch16 | 12 | 24 |
-| international-a-level/mathematics/mathematics-2018 | 138 | 255 |
-| international-a-level/mathematics/wma01 | 68 | 126 |
+| international-a-level/mathematics/mathematics-2018 | 138 | 261 |
+| international-a-level/mathematics/wma01 | 68 | 136 |
 | international-a-level/mathematics/wma02 | 15 | 30 |
 | international-a-level/physics/wph01 | 16 | 32 |
 | international-a-level/physics/wph02 | 16 | 32 |
 | international-a-level/physics/wph03 | 16 | 32 |
-| international-a-level/physics/wph04 | 16 | 30 |
+| international-a-level/physics/wph04 | 16 | 31 |
 | international-a-level/physics/wph05 | 15 | 30 |
 | international-a-level/physics/wph06 | 15 | 30 |
-| international-a-level/physics/wph11 | 25 | 48 |
+| international-a-level/physics/wph11 | 25 | 49 |
 | international-a-level/physics/wph12 | 18 | 36 |
-| international-a-level/physics/wph13 | 21 | 36 |
-| international-a-level/physics/wph14 | 18 | 32 |
-| international-a-level/physics/wph15 | 17 | 30 |
+| international-a-level/physics/wph13 | 21 | 39 |
+| international-a-level/physics/wph14 | 18 | 34 |
+| international-a-level/physics/wph15 | 17 | 31 |
 | international-a-level/physics/wph16 | 16 | 30 |
-| international-gcse/chemistry/4ch0 | 32 | 63 |
-| international-gcse/chemistry/4ch1 | 44 | 66 |
-| international-gcse/computer-science/4cp0 | 30 | 36 |
-| international-gcse/english-language-b/4eb0 | 17 | 47 |
-| international-gcse/english-language-b/4eb1 | 25 | 38 |
+| international-gcse/chemistry/4ch0 | 32 | 64 |
+| international-gcse/chemistry/4ch1 | 44 | 67 |
+| international-gcse/computer-science/4cp0 | 30 | 40 |
+| international-gcse/english-language-b/4eb0 | 17 | 51 |
+| international-gcse/english-language-b/4eb1 | 25 | 42 |
 | international-gcse/further-pure-mathematics/4pm0 | 32 | 62 |
-| international-gcse/further-pure-mathematics/4pm1 | 47 | 80 |
-| international-gcse/mathematics-a/4ma0 | 98 | 189 |
-| international-gcse/mathematics-a/4ma1 | 109 | 195 |
-| international-gcse/mathematics-b/4mb0 | 49 | 92 |
-| international-gcse/mathematics-b/4mb1 | 49 | 86 |
-| international-gcse/physics/4ph0 | 32 | 63 |
-| international-gcse/physics/4ph1 | 44 | 66 |
+| international-gcse/further-pure-mathematics/4pm1 | 47 | 81 |
+| international-gcse/mathematics-a/4ma0 | 98 | 192 |
+| international-gcse/mathematics-a/4ma1 | 109 | 197 |
+| international-gcse/mathematics-b/4mb0 | 49 | 97 |
+| international-gcse/mathematics-b/4mb1 | 49 | 89 |
+| international-gcse/physics/4ph0 | 32 | 64 |
+| international-gcse/physics/4ph1 | 44 | 67 |
 
 ## Quarantine classes
 
