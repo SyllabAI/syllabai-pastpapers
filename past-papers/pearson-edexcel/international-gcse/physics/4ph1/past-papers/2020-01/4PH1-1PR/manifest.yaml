@@ -32,15 +32,29 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: d910d0f64dfb533a07ed34ccdf6a96fe1b3c6c6de5ce62d2a2718909875c8abf
+  size_bytes: 795270
+  original_filename: January 2020 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/January 2020 (R) QP.pdf
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
+      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - 4PH1
+  - 4SD0/1PR
   stray_prints: []
   session_printed: January 2020; January 2020
-  notes: []
+  notes:
+  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (January 2020); sha256 d910d0f64dfb533a...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
