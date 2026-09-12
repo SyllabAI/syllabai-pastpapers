@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 02660a2ba76f37158984c7658bdf25c89f78a8a978050d06589fa3c6a4725cf7
+  size_bytes: 264974
+  original_filename: Markscheme-Unit1(6PH01)-Paper1R-June2014.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2014%20Jun/Mark-scheme/Markscheme-Unit1%286PH01%29-Paper1R-June2014.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
+  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - 6PH01/01R
   stray_prints: []
   session_printed: May 2014; June 2014
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued June2014); filename match: pad-normalized; sha256 02660a2ba76f3715...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
