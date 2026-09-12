@@ -32,15 +32,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: a0d32c330316443156499c410e67cb6031185cd46b4e902ceb2e80e6b542e79b
+  size_bytes: 433254
+  original_filename: Questionpaper-Unit1(WME01)-October2020.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Mathematics/2020%20Oct/Question-paper/Questionpaper-Unit1%28WME01%29-October2020.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
+  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - WME01/01
   stray_prints: []
   session_printed: October 2020; June 2020
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued October2020); filename match: exact; sha256 a0d32c3303164431...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
