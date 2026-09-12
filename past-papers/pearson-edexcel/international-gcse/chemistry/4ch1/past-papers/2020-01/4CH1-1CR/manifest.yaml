@@ -32,6 +32,18 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 0b7e447a3d17a089653c2a82acce7261cd6c8c2dd53dbb4ebaa6df378c4a9113
+  size_bytes: 385462
+  original_filename: January 2020 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/January 2020 (R) QP.pdf
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
+      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
@@ -40,7 +52,8 @@ identification:
   - 4CH1
   stray_prints: []
   session_printed: January 2020; January 2020
-  notes: []
+  notes:
+  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (January 2020); sha256 0b7e447a3d17a089...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
