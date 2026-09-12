@@ -32,15 +32,32 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: aacf1223dedbcf7e8ad9265e1d404e1493e4228248ac235ee038c3bfd77c9993
+  size_bytes: 951497
+  original_filename: 4ch1-1cr-que-20240518.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam),
+      discovered via the SaveMyExams past-paper index
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1cr-que-20240518.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
+  - coded-date
   confidence_rank: 0
   printed_references_seen:
   - 4CH1
+  - 4SD0/1CR
   stray_prints: []
   session_printed: June 2024
-  notes: []
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: coded-date (coded 20240518); sha256 aacf1223dedbcf7e...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

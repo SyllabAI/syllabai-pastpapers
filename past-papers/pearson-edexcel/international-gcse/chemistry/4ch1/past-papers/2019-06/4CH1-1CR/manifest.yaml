@@ -32,15 +32,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 8df7bd6f8119e396bf48fede6b94d0e95e5adbe8d4f06d6ddcb06c7b6038d4f8
+  size_bytes: 455729
+  original_filename: 4CH1_1CR__June19_QP-IGCSE-Edexcel-Chemistry.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2021/09/4CH1_1CR__June19_QP-IGCSE-Edexcel-Chemistry.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
+  - sme-listing
   confidence_rank: 0
   printed_references_seen:
   - 4CH1
+  - 4SD0/1CR
   stray_prints: []
   session_printed: June 2019
-  notes: []
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: sme-listing (sme 2019-6); sha256 8df7bd6f8119e396...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
