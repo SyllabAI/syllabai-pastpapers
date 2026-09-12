@@ -1026,3 +1026,26 @@ Board
 The filename is only a readable representation of that identity.
 
 If a future agent has to choose between a neat filename and preserving an official identifier, **preserve the official identifier**.
+
+---
+
+## 32. Ratified layout deviations (operator ruling, 2026-09-13)
+
+The following deviations from the preferred patterns above are ratified for the existing corpus.
+They are documented deviations, not permissions to erode the model for future work.
+
+1. **IAL unit-as-specification directories.** IAL Chemistry, Physics and old-spec Maths branches
+   use the unit code as the specification-level directory
+   (`international-a-level/chemistry/wch11/past-papers/<series>/<WCH11-01>/`) instead of a single
+   specification directory with units only at paper level (§9 example). The unit structure is
+   central to IAL identity (§5), and every manifest carries the full canonical identity (§18).
+   New IAL subjects should default to the §9 single-spec layout unless the operator rules
+   otherwise.
+2. **Bare IGCSE specification codes.** IGCSE spec dirs use the bare board code (`4ch1`, `4ma1`, …)
+   rather than `<code>-<version>` (§4). No version ambiguity exists in the corpus today. When
+   2024-modular-route 4CH1 papers are first ingested, their spec dir MUST be created as
+   `4ch1-2024-modular` per §4 (a follow-up migration may rename the existing dir to
+   `4ch1-2017-linear` in the same change).
+3. **Quarantine category names.** §20's suggested category names are realized as
+   `duplicate-artifact/`, `nonstandard-artifact/`, `out-of-scope-gce/`, `unresolved-identity/` and
+   `corrupt-artifact/`; each artifact's reason file is `<original-stem>.REASON.txt` beside it.

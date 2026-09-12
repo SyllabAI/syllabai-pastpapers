@@ -20,11 +20,11 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,997** (1,504 qp · 1,475 ms · 18 insert) across **1,541** paper dirs
-  (final state after the second repair pass — the corrupt 4PM1-01 2023-01 ms was quarantined, F9)
-  — **1,499 regular** (batch 1: 1,319 · batch 2: 170 · wave 4: 11, all manifest-complete) + **42 specimen refs**
+- PDFs + inserts placed: **2,997** (1,504 qp · 1,475 ms · 18 insert) across **1,540** paper dirs
+  (current final state — see the structural repair wave, 2026-09-13, below)
+  — **1,498 regular** (batch 1: 1,319 · batch 2: 170 · wave 4: 11, less the F13 misfile dir and the S2 4EB1-1R merge, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
-- Manifests: **1,541** · manifest material entries: **2,997** (every placed PDF/insert listed with
+- Manifests: **1,540** · manifest material entries: **2,997** (every placed PDF/insert listed with
   SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
 - Quarantined PDFs: **314** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
   79 out-of-scope-gce · 1 corrupt-artifact), every file with a `REASON.txt`
@@ -59,6 +59,15 @@
 - **F6 resolutions (evidence rows updated, no structure change):** the `2023-10/4PM1-01` "missing ms" is a phantom gap — the 2023-10 qp and 2023-11 qp are the SAME paper (Pearson product P73584A, both print "Tuesday 31 October 2023", 36 pp; PMT-watermarked vs clean byte variants) so the 2023-11 ms serves it (row → `na:same-paper-2023-11`). The `2023-10/4MA1-1H` row (dir deleted in the F13 repair) was **re-homed to 2023-11/4MA1-1H** (sat 9 Nov 2023, coded 20231109, prints November) and normalized.
 - **Corpus-wide QP/MS pairing audit (operator question):** of 1,499 regular paper dirs, **1,397 hold a complete QP+MS pair** (was 1,386; the 11 additions are NEW November-2023 session dirs - corpus growth, not closures); the 102 incomplete dirs are unchanged and all ledger-tracked with per-row reasons. Manifest-vs-tree reconciliation: 0 reference mismatches, 0 series mismatches, 0 materials↔disk mismatches, 0 missing sha256; the 54 dirs printing foreign codes are the known benign shared-award cover class (4SC0/4SD0 on 4CH0/4PH0/1C/1P R-papers) plus 5 GCE-maths template strays already adjudicated at ingestion. Ledger: 126 normalized · 89 open · 8 `na:sme-content-dup` · 4 `na:f6-print-conflict` · 1 `na:same-paper-2023-11`.
 - Totals: 2,997 files (1,504 qp · 1,475 ms · 18 insert) across 1,541 dirs.
+
+## Structural repair wave (2026-09-13)
+
+- Operator direction: *"Execute all the fixes."* The 2026-09-13 structural audit (charter-conformance sweep of all tree entries against README §4/§9/§10/§12/§18/§20/§21/§24) found two defects and one convention item (AUDIT §11).
+- **S1 — subject level restored (11 dirs / 33 blobs):** the wave-4 November-2023 IGCSE dirs had been placed at `international-gcse/<spec>/…`, missing the `<subject>` level required by README §9/§24. All blobs re-homed unchanged (git-blob shas preserved; manifests untouched — `paper_id` already carried the subject and `materials[].path` are relative).
+- **S2 — split pair merged (4EB1, 2023-01):** one paper was split across `4EB1-01R/` (qp; cover prints paper reference 4EB1/01R, product P68985A) and `4EB1-1R/` (ms; PMT filename shorthand "Paper 1R"). The ms was re-homed into `4EB1-01R/` (byte-identical move, git blob `511bb858`), the manifests merged (with `ingestion.repair` note) and the stray dir deleted. Ledger rows `4EB1/01R ms` + `4EB1/1R qp` → `normalized` (no separate 4EB1/1R paper exists — same resolution class as the 4MB0 1R↔01R zero-pad normalization).
+- **S3 — ratified layout deviations:** README §32 documents the operator-ratified deviations (IAL unit-as-spec dirs, bare IGCSE spec codes, quarantine category names) and the `4ch1-2024-modular` rule for future modular-route papers.
+- **Post-fix state: 2,997 files (1,504 qp · 1,475 ms · 18 insert) across 1,540 dirs (1,498 regular + 42 specimen)**; manifests 1,540; **1,398/1,498 regular dirs hold a complete QP+MS pair** (100 incomplete: 64 missing-ms · 36 missing-qp, all ledger-tracked); ledger 128 normalized · 89 open · 6 `na:sme-content-dup` · 4 `na:f6-print-conflict` · 1 `na:same-paper-2023-11`.
+- Commits: `77068bc99b` (S1+S2) · `f840c61b16` (S2 follow-up: the tree delta initially left the old `4EB1-1R/ms.pdf` in place — deleted same-session) · this doc commit.
 
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
