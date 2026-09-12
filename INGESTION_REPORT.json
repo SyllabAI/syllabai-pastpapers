@@ -1,7 +1,7 @@
 {
   "run_date": "2026-09-11",
   "agent": "SyllabAI ingestion agent",
-  "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
+  "source": "SyllabAI/Past-Papers — IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
   "totals": {
     "pdfs_seen": 2708,
     "files_placed": 2512,
@@ -56,7 +56,7 @@
     },
     "corpus_after_othersource_wave_2026_09_12": {
       "date": "2026-09-12",
-      "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
+      "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT §8).",
       "pdfs_and_inserts": 2919,
       "qp": 1438,
       "ms": 1463,
@@ -85,16 +85,39 @@
       "ledger_rows": 228,
       "ledger_normalized": 125,
       "ledger_open": 103
+    },
+    "corpus_after_autumn2023_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "wave 4 (operator direction: 'autumn-2023 do online research to confirm. And also, do we have all paper pairs correctly? QP and MS?'): November 2023 confirmed as the first regular International GCSE November series; 22 artifacts (11 qp + 11 ms) placed into 11 new 2023-11 dirs from official qualifications.pearson.com content-dam URLs (SaveMyExams index discovery), print-verified + git-blob dedup + product-code pairing integrity (P734xxA pairs); F6 phantom-gap evidence recorded (4PM1-01 2023-10 == same paper P73584A as 2023-11); 4MA1-1H re-homed 2023-10 -> 2023-11; corpus-wide pairing audit clean (1,397/1,488 complete pairs, 0 mispairs).",
+      "pdfs_seen": 2997,
+      "files_placed": 2997,
+      "paper_variant_dirs": 1541,
+      "paper_dirs_regular": 1499,
+      "specimen_dirs": 42,
+      "materials": {
+        "qp": 1504,
+        "ms": 1475,
+        "insert": 18
+      },
+      "quarantined": 314,
+      "ledger_rows": {
+        "total": 228,
+        "normalized": 126,
+        "open": 89,
+        "na:sme-content-dup": 8,
+        "na:f6-print-conflict": 4,
+        "na:same-paper-2023-11": 1
+      }
     }
   },
   "identification_methods": {
-    "pdf_text": 2960,
-    "partner_inference": 157,
+    "pdf_text": 2982,
+    "coded-date": 60,
+    "sme-listing": 16,
     "date_rule": 556,
+    "partner_inference": 157,
     "folder_consensus": 6,
-    "coded-date": 38,
-    "specimen_first_teaching": 5,
-    "sme-listing": 16
+    "specimen_first_teaching": 5
   },
   "quarantine_by_class": {
     "duplicate-artifact": 141,
@@ -112,9 +135,57 @@
       "papers": 78,
       "files": 149
     },
+    "international-a-level/chemistry/wch01": {
+      "papers": 15,
+      "files": 30
+    },
+    "international-a-level/chemistry/wch02": {
+      "papers": 15,
+      "files": 30
+    },
+    "international-a-level/chemistry/wch03": {
+      "papers": 13,
+      "files": 26
+    },
+    "international-a-level/chemistry/wch04": {
+      "papers": 13,
+      "files": 26
+    },
+    "international-a-level/chemistry/wch05": {
+      "papers": 12,
+      "files": 24
+    },
+    "international-a-level/chemistry/wch06": {
+      "papers": 11,
+      "files": 22
+    },
+    "international-a-level/chemistry/wch11": {
+      "papers": 18,
+      "files": 36
+    },
+    "international-a-level/chemistry/wch12": {
+      "papers": 17,
+      "files": 34
+    },
+    "international-a-level/chemistry/wch13": {
+      "papers": 17,
+      "files": 34
+    },
+    "international-a-level/chemistry/wch14": {
+      "papers": 14,
+      "files": 28
+    },
+    "international-a-level/chemistry/wch15": {
+      "papers": 13,
+      "files": 26
+    },
+    "international-a-level/chemistry/wch16": {
+      "papers": 12,
+      "files": 24
+    },
     "international-a-level/mathematics/mathematics-2018": {
       "papers": 138,
-      "files": 261
+      "files": 262
     },
     "international-a-level/mathematics/wma01": {
       "papers": 68,
@@ -166,11 +237,31 @@
     },
     "international-a-level/physics/wph15": {
       "papers": 17,
-      "files": 31
+      "files": 32
     },
     "international-a-level/physics/wph16": {
       "papers": 16,
-      "files": 30
+      "files": 31
+    },
+    "international-gcse/4ch1/past-papers": {
+      "papers": 2,
+      "files": 4
+    },
+    "international-gcse/4eb1/past-papers": {
+      "papers": 1,
+      "files": 2
+    },
+    "international-gcse/4ma1/past-papers": {
+      "papers": 4,
+      "files": 8
+    },
+    "international-gcse/4mb1/past-papers": {
+      "papers": 2,
+      "files": 4
+    },
+    "international-gcse/4ph1/past-papers": {
+      "papers": 2,
+      "files": 4
     },
     "international-gcse/chemistry/4ch0": {
       "papers": 32,
@@ -178,11 +269,11 @@
     },
     "international-gcse/chemistry/4ch1": {
       "papers": 44,
-      "files": 67
+      "files": 82
     },
     "international-gcse/computer-science/4cp0": {
       "papers": 30,
-      "files": 40
+      "files": 41
     },
     "international-gcse/english-language-b/4eb0": {
       "papers": 17,
@@ -190,7 +281,7 @@
     },
     "international-gcse/english-language-b/4eb1": {
       "papers": 25,
-      "files": 42
+      "files": 43
     },
     "international-gcse/further-pure-mathematics/4pm0": {
       "papers": 32,
@@ -198,15 +289,15 @@
     },
     "international-gcse/further-pure-mathematics/4pm1": {
       "papers": 47,
-      "files": 81
+      "files": 87
     },
     "international-gcse/mathematics-a/4ma0": {
       "papers": 98,
       "files": 192
     },
     "international-gcse/mathematics-a/4ma1": {
-      "papers": 109,
-      "files": 197
+      "papers": 108,
+      "files": 207
     },
     "international-gcse/mathematics-b/4mb0": {
       "papers": 49,
@@ -214,7 +305,7 @@
     },
     "international-gcse/mathematics-b/4mb1": {
       "papers": 49,
-      "files": 89
+      "files": 93
     },
     "international-gcse/physics/4ph0": {
       "papers": 32,
@@ -222,118 +313,7 @@
     },
     "international-gcse/physics/4ph1": {
       "papers": 44,
-      "files": 67
-    },
-    "international-a-level/chemistry/wch01": {
-      "papers": 15,
-      "files": 30
-    },
-    "international-a-level/chemistry/wch02": {
-      "papers": 15,
-      "files": 30
-    },
-    "international-a-level/chemistry/wch03": {
-      "papers": 13,
-      "files": 26
-    },
-    "international-a-level/chemistry/wch04": {
-      "papers": 13,
-      "files": 26
-    },
-    "international-a-level/chemistry/wch05": {
-      "papers": 12,
-      "files": 24
-    },
-    "international-a-level/chemistry/wch06": {
-      "papers": 11,
-      "files": 22
-    },
-    "international-a-level/chemistry/wch11": {
-      "papers": 18,
-      "files": 36
-    },
-    "international-a-level/chemistry/wch12": {
-      "papers": 17,
-      "files": 34
-    },
-    "international-a-level/chemistry/wch13": {
-      "papers": 17,
-      "files": 34
-    },
-    "international-a-level/chemistry/wch14": {
-      "papers": 14,
-      "files": 28
-    },
-    "international-a-level/chemistry/wch15": {
-      "papers": 13,
-      "files": 26
-    },
-    "international-a-level/chemistry/wch16": {
-      "papers": 12,
-      "files": 24
-    },
-    "international-a-level": {
-      "mathematics": {
-        "mathematics-2018": {
-          "files": 261
-        },
-        "wma01": {
-          "files": 136
-        }
-      },
-      "physics": {
-        "wph04": {
-          "files": 31
-        },
-        "wph11": {
-          "files": 49
-        },
-        "wph13": {
-          "files": 39
-        },
-        "wph14": {
-          "files": 34
-        },
-        "wph15": {
-          "files": 31
-        }
-      }
-    },
-    "international-gcse": {
-      "chemistry": {
-        "4ch1": {
-          "files": 67
-        }
-      },
-      "further-pure-mathematics": {
-        "4pm0": {
-          "files": 62
-        },
-        "4pm1": {
-          "files": 81
-        }
-      },
-      "mathematics-a": {
-        "4ma0": {
-          "files": 192
-        },
-        "4ma1": {
-          "files": 197
-        }
-      },
-      "mathematics-b": {
-        "4mb0": {
-          "files": 97
-        },
-        "4mb1": {
-          "files": 89
-        }
-      },
-      "physics": {
-        "4ph1": {
-          "files": 67
-        }
-      }
+      "files": 83
     }
   },
   "quarantined_files": [
@@ -1355,12 +1335,12 @@
       {
         "date": "2026-09-12",
         "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
-        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §8"
       },
       {
         "date": "2026-09-12",
         "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
-        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §9"
       }
     ]
   },

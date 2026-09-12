@@ -20,11 +20,11 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,975** (1,493 qp · 1,464 ms · 18 insert) across **1,530** paper dirs
+- PDFs + inserts placed: **2,997** (1,504 qp · 1,475 ms · 18 insert) across **1,541** paper dirs
   (final state after the second repair pass — the corrupt 4PM1-01 2023-01 ms was quarantined, F9)
-  — **1,489 regular** (batch 1: 1,319 · batch 2: 170, all manifest-complete) + **42 specimen refs**
+  — **1,499 regular** (batch 1: 1,319 · batch 2: 170 · wave 4: 11, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
-- Manifests: **1,530** · manifest material entries: **2,975** (every placed PDF/insert listed with
+- Manifests: **1,541** · manifest material entries: **2,997** (every placed PDF/insert listed with
   SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
 - Quarantined PDFs: **314** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
   79 out-of-scope-gce · 1 corrupt-artifact), every file with a `REASON.txt`
@@ -52,6 +52,14 @@
 - Evidence rows: 8 `na:sme-content-dup` (SME serves the sibling paper's bytes — e.g. 4EB1 01R ms identical to 01 ms) and 6 `na:f6-print-conflict` (autumn-2023 double sittings; SME June-2020-labeled entries carrying November ms). Ledger: 125 normalized · 103 open.
 - Totals: 2,975 files (1,493 qp · 1,464 ms · 18 insert) across 1,530 dirs.
 
+## Wave 4 — Autumn-2023 confirmation & November-2023 completion (2026-09-12)
+
+- Operator direction: *"autumn-2023 do online research to confirm. And also, do we have all paper pairs correctly? QP and MS?"* Online research confirmed **November 2023 was the first regular International GCSE November series** (ran 30 Oct – 24 Nov 2023; 24 subjects), while IAL ran its October 2023 series. The SaveMyExams structured index lists 13 November-2023 papers across our subjects (chem 1C/2C · phys 1P/2P · maths A 1F/1H/2F/2H · maths B 01/02 · FPM 01/02 · English B 01), every one with official Pearson content-dam URLs. Direct 404 probes of R/timezone-variant filenames (`4ma1-1hr`, `4ch1-1cr`, `4ph1-1pr`, `4eb1-01r`, …) and 4CP0 confirmed **no additional November-2023 papers exist** for the corpus scope.
+- **22 artifacts placed (11 qp · 11 ms) into 11 new 2023-11 dirs** (FPM's two papers already held): every file print-verified (paper ref + "November 2023" session; qp coded exam dates 202311xx), corpus git-blob dedup applied, and **pairing integrity proven by shared Pearson product codes** (qp and ms of each pair carry the same P-code: P73420A/23A/25A/27A/29A/63A/65A/67A/69A/94A/96A). Provenance: qualifications.pearson.com content-dam via the SaveMyExams index, per-file source_url in each manifest.
+- **F6 resolutions (evidence rows updated, no structure change):** the `2023-10/4PM1-01` "missing ms" is a phantom gap — the 2023-10 qp and 2023-11 qp are the SAME paper (Pearson product P73584A, both print "Tuesday 31 October 2023", 36 pp; PMT-watermarked vs clean byte variants) so the 2023-11 ms serves it (row → `na:same-paper-2023-11`). The `2023-10/4MA1-1H` row (dir deleted in the F13 repair) was **re-homed to 2023-11/4MA1-1H** (sat 9 Nov 2023, coded 20231109, prints November) and normalized.
+- **Corpus-wide QP/MS pairing audit (operator question):** of 1,488 regular paper dirs, **1,397 hold a complete QP+MS pair** (was 1,386); all 91 incomplete dirs are ledger-tracked with per-row reasons. Manifest-vs-tree reconciliation: 0 reference mismatches, 0 series mismatches, 0 materials↔disk mismatches, 0 missing sha256; the 54 dirs printing foreign codes are the known benign shared-award cover class (4SC0/4SD0 on 4CH0/4PH0/1C/1P R-papers) plus 5 GCE-maths template strays already adjudicated at ingestion. Ledger: 126 normalized · 89 open · 8 `na:sme-content-dup` · 4 `na:f6-print-conflict` · 1 `na:same-paper-2023-11`.
+- Totals: 2,997 files (1,504 qp · 1,475 ms · 18 insert) across 1,541 dirs.
+
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
 | method | files |
@@ -62,7 +70,7 @@
 | specimen_first_teaching | 5 |
 | folder_consensus | 6 |
 
-2026-09-12 waves delta: 27 manifests gained a `date_rule` entry across the two file-gap waves (wave-1 placements later reverted in the s.19 dedup audit are excluded); the table was recomputed exactly from all manifests after the other-source wave.
+2026-09-12 waves delta: 27 manifests gained a `date_rule` entry across the two file-gap waves; wave 3 added `sme-listing`/`coded-date` evidence rows and wave 4 added 11 `pdf_text`+`coded-date` manifests. The table (corrected in wave 4 to re-include the previously dropped `coded-date` and `sme-listing` rows) is recomputed exactly from all manifests.
 
 ## Spec coverage
 
