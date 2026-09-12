@@ -32,29 +32,15 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: question-paper
-  path: qp.pdf
-  sha256: 49eae42157292558602f21e0a74dac200da479f322469245efd380a8eea89bd2
-  size_bytes: 1716596
-  original_filename: October 2020 (IAL) QP.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Physics/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-4/QP/October 2020 (IAL) QP.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
-  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - WPH14
   stray_prints: []
   session_printed: June 2020; October 2020
-  notes:
-  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: date_rule (October 2020 (IAL) QP.pdf + (c)2020); sha256 49eae42157292558...'
+  notes: []
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

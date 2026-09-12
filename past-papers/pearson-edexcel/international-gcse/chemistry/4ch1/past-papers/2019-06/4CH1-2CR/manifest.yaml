@@ -32,18 +32,6 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: question-paper
-  path: qp.pdf
-  sha256: 49d67bcb4f1149bf94df438c22590eaa67dcf49fb7e427b058fbe23b2dd08778
-  size_bytes: 261983
-  original_filename: June 2019 (R) QP.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-2/QP/June 2019 (R) QP.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
@@ -52,8 +40,7 @@ identification:
   - 4CH1
   stray_prints: []
   session_printed: June 2019
-  notes:
-  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (June 2019); sha256 49d67bcb4f1149bf...'
+  notes: []
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

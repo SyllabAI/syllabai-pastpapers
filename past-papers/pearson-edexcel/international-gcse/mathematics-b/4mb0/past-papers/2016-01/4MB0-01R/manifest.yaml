@@ -35,28 +35,15 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: mark-scheme
-  path: ms.pdf
-  sha256: e8a17b0b05d9fb5847e0f837fbbd6339716bd0ed02c84244f9e86e33884e9ed1
-  size_bytes: 312583
-  original_filename: January 2016 (R) MS.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Maths/GCSE/Past-Papers/Edexcel-IGCSE-B/Paper-1/MS/January 2016 (R) MS.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
-  confidence_rank: 2
+  confidence_rank: 0
   printed_references_seen:
   - 4MB0/01R
   stray_prints: []
   session_printed: January 2016; January 2016
-  notes:
-  - '2026-09-12 file-gap wave (F7): missing ms.pdf fetched from PMT CDN and print-checked - code match: dir+filename; session evidence: print (January 2016); sha256 e8a17b0b05d9fb58...'
+  notes: []
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

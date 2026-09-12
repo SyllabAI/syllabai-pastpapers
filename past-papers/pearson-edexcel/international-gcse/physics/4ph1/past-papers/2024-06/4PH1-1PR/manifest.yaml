@@ -32,29 +32,15 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: question-paper
-  path: qp.pdf
-  sha256: a23f38512d6dcc002ee8d245dc879f26f958b49ac4f31d6cf44422c0b7f24853
-  size_bytes: 338498
-  original_filename: June 2024 (R) QP.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Physics/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/June 2024 (R) QP.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
-  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - 4PH1
   stray_prints: []
   session_printed: June 2024
-  notes:
-  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: date_rule (June 2024 (R) QP.pdf + (c)2024); sha256 a23f38512d6dcc00...'
+  notes: []
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

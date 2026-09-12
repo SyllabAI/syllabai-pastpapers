@@ -36,21 +36,22 @@
     },
     "corpus_after_gapfill_wave_2026_09_12": {
       "date": "2026-09-12",
-      "note": "file-gap wave (audit F7, P0+P2+P3+P5-scope of docs/ledger/file-gap-sweep.csv): 82 missing artifacts fetched from the PMT CDN and print-verified (54 exact-code + 2 zero-pad-normalized + 7 dir+filename + 11 image-scan dir+filename); PM listing pages 403 the agent - page discovery via rendered page reader, files via direct CDN. 79 of 161 in-scope rows are not satisfiable from PMT (not-listed / mislabeled / corrupt classes, see ledger statuses na:*) and queue for other sources; GCE/CS/English rows remain planned.",
-      "pdfs_and_inserts": 2933,
-      "qp": 1462,
+      "note": "file-gap wave (audit F7, P0+P2+P3+P5-scope of docs/ledger/file-gap-sweep.csv): 82 missing artifacts fetched from the PMT CDN and print-verified (54 exact-code + 2 zero-pad-normalized + 7 dir+filename + 11 image-scan dir+filename); PM listing pages 403 the agent - page discovery via rendered page reader, files via direct CDN. 79 of 161 in-scope rows are not satisfiable from PMT (not-listed / mislabeled / corrupt classes, see ledger statuses na:*) and queue for other sources; GCE/CS/English rows remain planned. Post-commit s.19 dedup audit: 66 of the 82 placements were byte-identical to artifacts already held in sibling dirs (pre-existing misidentification, audit F10) and were reverted; 16 unique-byte files remain placed.",
+      "pdfs_and_inserts": 2867,
+      "qp": 1446,
       "ms": 1453,
       "insert": 18,
-      "material_entries": 2933,
+      "material_entries": 2867,
       "manifests": 1531,
       "file_gap_wave": {
         "ledger_rows": 228,
         "in_scope": 161,
-        "verified": 82,
-        "qp": 73,
-        "ms": 9,
+        "verified": 16,
+        "qp": 16,
+        "ms": 0,
         "not_found_on_pmt": 79,
-        "out_of_scope_planned": 67
+        "out_of_scope_planned": 67,
+        "blocked_by_dedup_F10": 66
       }
     }
   },
@@ -1323,6 +1324,11 @@
         "date": "2026-09-12",
         "what": "file-gap wave: 82 artifacts placed (73 qp + 9 ms), 82 manifests updated, ledger file-gap-sweep.csv statuses rewritten (normalized/na:*/planned)",
         "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md F7"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "file-gap wave correction: 66 byte-duplicate placements reverted (s.19); F10/F11/F12 recorded",
+        "evidence": "docs/AUDIT-2026-09-12.md post-wave findings"
       }
     ]
   },

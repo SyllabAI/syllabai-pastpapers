@@ -32,18 +32,6 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: question-paper
-  path: qp.pdf
-  sha256: 1f798b485550b778d63a7fe1833b5d4adbfac948f7e4798aeedad07cedcba3ca
-  size_bytes: 461193
-  original_filename: January 2021 QP.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Maths/A-level/Papers/Edexcel-IAL/Statistics/S1/QP/January 2021 QP.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
@@ -52,8 +40,7 @@ identification:
   - WST01/01
   stray_prints: []
   session_printed: January 2021; January 2021
-  notes:
-  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (January 2021); sha256 1f798b485550b778...'
+  notes: []
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

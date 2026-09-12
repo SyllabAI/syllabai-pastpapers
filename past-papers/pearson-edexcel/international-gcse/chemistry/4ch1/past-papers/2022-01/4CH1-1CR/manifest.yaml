@@ -32,30 +32,15 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: question-paper
-  path: qp.pdf
-  sha256: 14c975c28b819d424361ce449b5ba7848b60c9eb19db1fcf3bd974437a000d82
-  size_bytes: 806189
-  original_filename: January 2022 (R) QP.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Chemistry/GCSE/Past-Papers/Edexcel-IGCSE/New-Spec-Paper-1/QP/January 2022 (R) QP.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
-  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - 4CH1
-  - 4SD0/1CR
   stray_prints: []
   session_printed: January 2022; January 2022
-  notes:
-  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: date_rule (January 2022 (R) QP.pdf + (c)2022); sha256 14c975c28b819d42...'
+  notes: []
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

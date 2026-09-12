@@ -32,18 +32,6 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: question-paper
-  path: qp.pdf
-  sha256: 4de4e25060126f360c4e52d70bfacbf2a4bde676185407a7ea6c033f8c7135a0
-  size_bytes: 498573
-  original_filename: January 2020 QP.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Maths/A-level/Papers/Edexcel-IAL/Mechanics/M1/QP/January 2020 QP.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
@@ -52,8 +40,7 @@ identification:
   - WME01
   stray_prints: []
   session_printed: January 2020; January 2020
-  notes:
-  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (January 2020); sha256 4de4e25060126f36...'
+  notes: []
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

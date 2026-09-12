@@ -32,29 +32,16 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
-- type: mark-scheme
-  path: ms.pdf
-  sha256: 99b3127c5e5ae1801aeba0498ff8f42b3c40cd405483a02958c19c6325d70a44
-  size_bytes: 232950
-  original_filename: January 2019 MS.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: Maths/GCSE/Past-Papers/Edexcel-IGCSE-Further/Paper-2/MS/January 2019 MS.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - date_rule
-  confidence_rank: 2
+  confidence_rank: 5
   printed_references_seen: []
   stray_prints: []
   session_printed: January 2019
   notes:
   - date rule -> 4PM1/02
   - '2026-09-12 audit spot-check (F3): no extractable reference or session tokens in the first pages (cover-style layout); queued for operator ratification'
-  - '2026-09-12 file-gap wave (F7): missing ms.pdf fetched from PMT CDN and print-checked - code match: dir+filename; session evidence: print (January 2019); sha256 99b3127c5e5ae180...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
