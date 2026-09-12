@@ -1,0 +1,71 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch1:2023-11:4CH1/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch1
+  title: Edexcel International GCSE Chemistry (4CH1)
+series:
+  normalized: 2023-11
+  year: '2023'
+  session_month: '11'
+  printed: November 2023
+  source: pdf+filename
+paper:
+  official_reference: 4CH1/1C
+  unit_code: 4CH1
+  paper_number_variant: 1C
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 180909048496d940c72e0e669173a52d0a3fa2f6e69c43c453d1ddcc20e06048
+  size_bytes: 678343
+  original_filename: 4ch1-1c-que-20231115.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-que-20231115.pdf
+    collected_by: SyllabAI agent (2026-09-12 wave 4; operator direction - confirm autumn-2023 online);
+      URL discovered via the SaveMyExams structured past-paper index; print-verified before acceptance
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 08caaccc01f8e42a3f066685916e2fac75cf5263a690ae1e0eaba104c3f072ed
+  size_bytes: 276422
+  original_filename: 4ch1-1c-rms-20240125.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1c-rms-20240125.pdf
+    collected_by: SyllabAI agent (2026-09-12 wave 4; operator direction - confirm autumn-2023 online);
+      URL discovered via the SaveMyExams structured past-paper index; print-verified before acceptance
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - coded-date
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH1/1C
+  - 4SD0/1C
+  stray_prints: []
+  session_printed: November 2023
+  notes:
+  - '2026-09-12 wave 4 (autumn-2023 confirmation; operator direction - ''autumn-2023 do online research
+    to confirm''): November 2023 was the first regular International GCSE November series; both materials
+    print-verified before acceptance.'
+  - 'qp session evidence: coded exam date in Pearson filename (4ch1-1c-que-20231115.pdf) + print (November
+    2023); ms session evidence: print (November 2023); rms filename date 20240125 is the publication date
+    (not session evidence).'
+  - 'pairing integrity: qp and ms share Pearson product code P73423A (same paper bundle).'
+  - stray print 4SD0/4SC0 is the shared Science Double Award cover code (benign, corpus-wide known class).
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-12'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

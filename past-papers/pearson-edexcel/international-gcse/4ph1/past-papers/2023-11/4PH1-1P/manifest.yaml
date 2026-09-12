@@ -1,0 +1,71 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2023-11:4PH1/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2023-11
+  year: '2023'
+  session_month: '11'
+  printed: November 2023; November 2023
+  source: pdf+filename
+paper:
+  official_reference: 4PH1/1P
+  unit_code: 4PH1
+  paper_number_variant: 1P
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: f872f5bebbee1260491ee389f0f4d2fa606fdfa6a28fd011c8233070ba955b2a
+  size_bytes: 1084512
+  original_filename: 4ph1-1p-que-20231117.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-que-20231117.pdf
+    collected_by: SyllabAI agent (2026-09-12 wave 4; operator direction - confirm autumn-2023 online);
+      URL discovered via the SaveMyExams structured past-paper index; print-verified before acceptance
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ede67f1a1fb8ffb8a06a149c1ff9b6a123d3004ce1e5bfbdf430f47520b3cc9d
+  size_bytes: 929934
+  original_filename: 4ph1-1p-rms-20240125.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-rms-20240125.pdf
+    collected_by: SyllabAI agent (2026-09-12 wave 4; operator direction - confirm autumn-2023 online);
+      URL discovered via the SaveMyExams structured past-paper index; print-verified before acceptance
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - coded-date
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1/1P
+  - 4SD0/1P
+  stray_prints: []
+  session_printed: November 2023; November 2023
+  notes:
+  - '2026-09-12 wave 4 (autumn-2023 confirmation; operator direction - ''autumn-2023 do online research
+    to confirm''): November 2023 was the first regular International GCSE November series; both materials
+    print-verified before acceptance.'
+  - 'qp session evidence: coded exam date in Pearson filename (4ph1-1p-que-20231117.pdf) + print (November
+    2023); ms session evidence: print (November 2023); rms filename date 20240125 is the publication date
+    (not session evidence).'
+  - 'pairing integrity: qp and ms share Pearson product code P73427A (same paper bundle).'
+  - stray print 4SD0/4SC0 is the shared Science Double Award cover code (benign, corpus-wide known class).
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-12'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
