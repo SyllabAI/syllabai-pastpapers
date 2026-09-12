@@ -69,14 +69,32 @@
       "ledger_rows": 228,
       "ledger_normalized": 68,
       "ledger_open": 160
+    },
+    "corpus_after_sme_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "wave 3 (operator direction: 'Probe further sources. You will find in paperlords or savemyexams'): SaveMyExams structured past-paper index (682 entries across 11 Edexcel subjects) surfaced cdn.savemyexams.com files AND official qualifications.pearson.com content-dam exam materials (2023+ sessions, R/timezone variants). 57 missing artifacts (55 qp + 2 ms) fetched, print-verified (charter-9 strict month rule; Pearson exam-date coded filenames outrank inconsistent autumn covers; Updated-stamp stamps stripped; COVID-2020 IAL-October June-printed covers accepted with evidence) and guarded by corpus blob-sha1 dedup PLUS a content-window dedup vs same-series siblings (pages 4-6 and 9-11). Closes F9 (4PM1/01 2023-01 ms replaced), cures 38 of the 50 F10 byte-duplicate rows, first CS/English placements. 8 na:sme-content-dup and 6 na:f6-print-conflict evidence rows recorded; 89 rows remain open.",
+      "pdfs_and_inserts": 2975,
+      "qp": 1493,
+      "ms": 1464,
+      "insert": 18,
+      "manifests": 1530,
+      "material_entries": 2975,
+      "regular_paper_dirs": 1488,
+      "specimen_refs": 42,
+      "quarantined_pdfs": 314,
+      "ledger_rows": 228,
+      "ledger_normalized": 125,
+      "ledger_open": 103
     }
   },
   "identification_methods": {
-    "pdf_text": 2904,
+    "pdf_text": 2960,
     "partner_inference": 157,
-    "date_rule": 541,
+    "date_rule": 556,
     "folder_consensus": 6,
-    "specimen_first_teaching": 5
+    "coded-date": 38,
+    "specimen_first_teaching": 5,
+    "sme-listing": 16
   },
   "quarantine_by_class": {
     "duplicate-artifact": 141,
@@ -1338,6 +1356,11 @@
         "date": "2026-09-12",
         "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
         "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
       }
     ]
   },

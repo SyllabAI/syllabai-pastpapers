@@ -20,11 +20,11 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,919** (1,438 qp · 1,463 ms · 18 insert) across **1,531** paper dirs
+- PDFs + inserts placed: **2,975** (1,493 qp · 1,464 ms · 18 insert) across **1,530** paper dirs
   (final state after the second repair pass — the corrupt 4PM1-01 2023-01 ms was quarantined, F9)
   — **1,489 regular** (batch 1: 1,319 · batch 2: 170, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
-- Manifests: **1,531** · manifest material entries: **2,919** (every placed PDF/insert listed with
+- Manifests: **1,530** · manifest material entries: **2,975** (every placed PDF/insert listed with
   SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
 - Quarantined PDFs: **314** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
   79 out-of-scope-gce · 1 corrupt-artifact), every file with a `REASON.txt`
@@ -42,12 +42,22 @@
 - Ledger now: 68 normalized · 160 open (byte-duplicate 50 · mislabeled 39 · not-listed 25 · unresolved 3 · corrupt 1 · planned 42).
 - Totals line above corrected 2,933 → 2,919 (the previous figure predated the s.19 revert).
 
+## Wave 3 — SaveMyExams + Pearson content-dam (2026-09-12)
+
+- Operator direction: *"Probe further sources. You will find in paperlords or savemyexams."* paperlords.org is a JS-rendered app (not server-crawlable from the agent); **SaveMyExams exposed a structured JSON index** (682 entries / 11 Edexcel subjects) linking cdn.savemyexams.com files and official qualifications.pearson.com content-dam exam materials.
+- **57 missing artifacts placed** (55 qp · 2 ms), print-verified under the charter-9 strict month rule with three evidence upgrades: Pearson exam-date-coded filenames (`-que-` files) outrank inconsistent autumn covers; `Updated <Month> <Year>` revision stamps are stripped before session extraction; the COVID-2020 IAL-October June-printed covers accepted with evidence. Dedup: corpus git-blob sha1 + content-window comparison vs same-series siblings (pages 4-6 and 9-11; early pages are shared formula sheets and MUST NOT be compared).
+- **F9 closed**: the truncated 4PM1/01 2023-01 ms replaced (SME CDN scan, EOF verified).
+- **F10 cure**: 38 of the 50 byte-duplicate rows normalized (all chemistry 1CR/2CR R-variant QPs 2019-2024, physics 1PR/2PR, maths FR/HR R-rows incl. 2019/2020 scans).
+- **F13 (new, repaired)**: 2023-10/4MA1-1H held the *Summer 2023* ms misfiled by reading the `Updated October 2023` revision stamp as a session; dir removed (corpus-wide sweep found no other instance), true June ms placed into 2023-06/4MA1-1H from Pearson content-dam.
+- Evidence rows: 8 `na:sme-content-dup` (SME serves the sibling paper's bytes — e.g. 4EB1 01R ms identical to 01 ms) and 6 `na:f6-print-conflict` (autumn-2023 double sittings; SME June-2020-labeled entries carrying November ms). Ledger: 125 normalized · 103 open.
+- Totals: 2,975 files (1,493 qp · 1,464 ms · 18 insert) across 1,530 dirs.
+
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
 | method | files |
 |---|---|
-| pdf_text | 2904 |
-| date_rule | 541 |
+| pdf_text | 2960 |
+| date_rule | 556 |
 | partner_inference | 157 |
 | specimen_first_teaching | 5 |
 | folder_consensus | 6 |
@@ -72,7 +82,7 @@
 | international-a-level/chemistry/wch14 | 14 | 28 |
 | international-a-level/chemistry/wch15 | 13 | 26 |
 | international-a-level/chemistry/wch16 | 12 | 24 |
-| international-a-level/mathematics/mathematics-2018 | 138 | 261 |
+| international-a-level/mathematics/mathematics-2018 | 138 | 262 |
 | international-a-level/mathematics/wma01 | 68 | 136 |
 | international-a-level/mathematics/wma02 | 15 | 30 |
 | international-a-level/physics/wph01 | 16 | 32 |
@@ -85,21 +95,21 @@
 | international-a-level/physics/wph12 | 18 | 36 |
 | international-a-level/physics/wph13 | 21 | 39 |
 | international-a-level/physics/wph14 | 18 | 34 |
-| international-a-level/physics/wph15 | 17 | 31 |
-| international-a-level/physics/wph16 | 16 | 30 |
+| international-a-level/physics/wph15 | 17 | 32 |
+| international-a-level/physics/wph16 | 16 | 31 |
 | international-gcse/chemistry/4ch0 | 32 | 64 |
-| international-gcse/chemistry/4ch1 | 44 | 67 |
-| international-gcse/computer-science/4cp0 | 30 | 40 |
+| international-gcse/chemistry/4ch1 | 44 | 82 |
+| international-gcse/computer-science/4cp0 | 30 | 41 |
 | international-gcse/english-language-b/4eb0 | 17 | 51 |
-| international-gcse/english-language-b/4eb1 | 25 | 42 |
+| international-gcse/english-language-b/4eb1 | 25 | 43 |
 | international-gcse/further-pure-mathematics/4pm0 | 32 | 62 |
-| international-gcse/further-pure-mathematics/4pm1 | 47 | 81 |
+| international-gcse/further-pure-mathematics/4pm1 | 47 | 87 |
 | international-gcse/mathematics-a/4ma0 | 98 | 192 |
-| international-gcse/mathematics-a/4ma1 | 109 | 197 |
+| international-gcse/mathematics-a/4ma1 | 108 | 207 |
 | international-gcse/mathematics-b/4mb0 | 49 | 97 |
-| international-gcse/mathematics-b/4mb1 | 49 | 89 |
+| international-gcse/mathematics-b/4mb1 | 49 | 93 |
 | international-gcse/physics/4ph0 | 32 | 64 |
-| international-gcse/physics/4ph1 | 44 | 67 |
+| international-gcse/physics/4ph1 | 44 | 83 |
 
 ## Quarantine classes
 
