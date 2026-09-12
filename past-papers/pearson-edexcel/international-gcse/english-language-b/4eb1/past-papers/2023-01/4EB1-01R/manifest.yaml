@@ -35,6 +35,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c69dac69c2de12e81faa72c3eb0ebd2d3e3b7ffc46727df356a1c19a965586ce
+  size_bytes: 163606
+  original_filename: January 2023 (R) MS - Paper 1R Edexcel English Language (B) IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
@@ -43,9 +54,13 @@ identification:
   - 4EB1/01R
   stray_prints: []
   session_printed: January 2023
-  notes: []
+  notes:
+  - '2026-09-13 structural audit S2: this mark scheme originally sat in sibling dir 4EB1-1R, created from the PMT filename shorthand "Paper 1R". QP cover prints paper reference 4EB1/01R (product P68985A); the Pearson results MS is titled "Paper 1R" for the same paper. MS re-homed here and dir 4EB1-1R deleted; verified by pypdf cover extraction (qp 36 pp, ms 20 pp).'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED (operator ratification pending)
+  repair:
+    date: '2026-09-13'
+    action: merged sibling dir 4EB1-1R into 4EB1-01R (structural audit S2; ms re-homed, stray dir deleted)
