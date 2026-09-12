@@ -1,0 +1,73 @@
+paper_id: cambridge-international:igcse:chemistry:0620:2021-03:0620/32
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: chemistry
+specification:
+  folder: '0620'
+  title: Cambridge IGCSE Chemistry (0620)
+series:
+  normalized: 2021-03
+  year: '2021'
+  session_month: '03'
+  printed: February/March 2021
+  source: pdf+filename
+paper:
+  official_reference: 0620/32
+  unit_code: '0620'
+  paper_number: '3'
+  paper_number_variant: '32'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: a99e1390ffe475e7d6f59dbcdd60af097330ceae699395f8a69b748ff66276f6
+  size_bytes: 1323521
+  original_filename: 0620_m21_qp_32.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/IGCSE/Chemistry-0620/2021-March/0620_m21_qp_32.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 84ca442eba8cc26205ca63d9f6ffaf63baebbdf7cf35dc70b1f9a2d1a6112a2f
+  size_bytes: 244217
+  original_filename: 0620_m21_ms_32.pdf
+  pages: 10
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/IGCSE/Chemistry-0620/2021-March/0620_m21_ms_32.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  - coded-date
+  confidence_rank: 0
+  printed_references_seen:
+  - 0620/32
+  stray_prints: []
+  session_printed: February/March 2021
+  notes:
+  - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
+    convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
+    syllabus code and session before acceptance.'
+  - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
+    in printed_references_seen/session evidence above.
+  - coded barcode line IB21 03_0620_32 (month code 03)
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
