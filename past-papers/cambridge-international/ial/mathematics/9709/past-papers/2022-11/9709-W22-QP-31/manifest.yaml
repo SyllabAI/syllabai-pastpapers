@@ -1,0 +1,71 @@
+paper_id: cambridge-international:ial:mathematics:9709:2022-11:9709/31
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: mathematics
+specification:
+  folder: '9709'
+  title: Cambridge International AS & A Level Mathematics (9709)
+series:
+  normalized: 2022-11
+  year: '2022'
+  session_month: '11'
+  printed: October/November 2022
+  source: pdf+filename
+paper:
+  official_reference: 9709/31
+  unit_code: '9709'
+  paper_number: '3'
+  paper_number_variant: '31'
+variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 2eb1409180a520d3ade33df6a443841301137e88009df3d2523c0debf0e7f217
+  size_bytes: 126585
+  original_filename: 9709_w22_qp_31.pdf
+  pages: 20
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Mathematics-9709/2022-Oct-Nov/9709_w22_qp_31.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: dac78ea8fec3df58e2fb6d8c59990892dad15806311d944e88792e6e411f7a21
+  size_bytes: 422890
+  original_filename: 9709_w22_ms_31.pdf
+  pages: 17
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Mathematics-9709/2022-Oct-Nov/9709_w22_ms_31.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9709/31
+  stray_prints: []
+  session_printed: October/November 2022
+  notes:
+  - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
+    convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
+    syllabus code and session before acceptance.'
+  - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
+    in printed_references_seen/session evidence above.
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

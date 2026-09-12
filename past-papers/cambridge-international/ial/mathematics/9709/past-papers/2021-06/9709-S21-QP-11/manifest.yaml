@@ -1,0 +1,71 @@
+paper_id: cambridge-international:ial:mathematics:9709:2021-06:9709/11
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: mathematics
+specification:
+  folder: '9709'
+  title: Cambridge International AS & A Level Mathematics (9709)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: May/June 2021
+  source: pdf+filename
+paper:
+  official_reference: 9709/11
+  unit_code: '9709'
+  paper_number: '1'
+  paper_number_variant: '11'
+variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: bb345642aabef499041b4ea077cda8b8217f89031dad3ed7380198e0bec8767d
+  size_bytes: 126404
+  original_filename: 9709_s21_qp_11.pdf
+  pages: 20
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Mathematics-9709/2021-May-June/9709_s21_qp_11.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 19d1c29e5b7d4df0173a323c867beee9886d117410529793384242717ca565a1
+  size_bytes: 409233
+  original_filename: 9709_s21_ms_11.pdf
+  pages: 17
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Mathematics-9709/2021-May-June/9709_s21_ms_11.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9709/11
+  stray_prints: []
+  session_printed: May/June 2021
+  notes:
+  - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
+    convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
+    syllabus code and session before acceptance.'
+  - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
+    in printed_references_seen/session evidence above.
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
