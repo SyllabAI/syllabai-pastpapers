@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 5c48b9349dfffccf215461506ae015d52e9f73d6a7963d49ed90e282d82bd2da
+  size_bytes: 341333
+  original_filename: Questionpaper-Paper1P-January2018.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Physics/2018%20Jan/Question-paper/Questionpaper-Paper1P-January2018.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - 4PH0
+  - 4SC0/1P
   stray_prints: []
   session_printed: January 2018; January 2018
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: print (January 2018); filename match: suf-only; sha256 5c48b9349dfffccf...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

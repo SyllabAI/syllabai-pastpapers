@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: c7e6df8b031e2eadfc06187e13ddb2f5c4d5a95ce5ce496be60f1c1d2183c182
+  size_bytes: 334356
+  original_filename: Questionpaper-Paper1R-January2016.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Mathematics%20B/2016%20Jan/Question-paper/Questionpaper-Paper1R-January2016.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - 4MB0
+  - 4MB0/01R
   stray_prints: []
   session_printed: January 2016; January 2016
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: pad-normalized; session evidence: print (January 2016); filename match: suf-only; sha256 c7e6df8b031e2ead...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

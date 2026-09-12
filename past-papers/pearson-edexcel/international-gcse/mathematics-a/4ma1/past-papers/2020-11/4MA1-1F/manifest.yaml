@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: cac5329760e4d8ec54b44cb2b071e6fd38c032049e739dfc6f391bd83caa3401
+  size_bytes: 261452
+  original_filename: Questionpaper-Paper1F-November2020.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Mathematics%20A/2020%20Nov/Question-paper/Questionpaper-Paper1F-November2020.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
+  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - 4MA1
   stray_prints: []
   session_printed: November 2020; June 2020
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued November2020); filename match: suf-only; sha256 cac5329760e4d8ec...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

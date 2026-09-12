@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: b171991024332fcdf5cdd1362a621cb8e8b1e6cd89788374841f013938c8134c
+  size_bytes: 345828
+  original_filename: Questionpaper-Paper3H-June2015.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Mathematics%20A/2015%20Jun/Question-paper/Questionpaper-Paper3H-June2015.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
+  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - 4MA0
   stray_prints: []
   session_printed: June 2015
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued June2015); filename match: suf-only; sha256 b171991024332fcd...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
