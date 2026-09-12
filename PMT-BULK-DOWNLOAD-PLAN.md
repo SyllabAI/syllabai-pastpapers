@@ -1,6 +1,6 @@
 # PMT Bulk-Download Plan — backfill execution brief for the next session
 
-> **Status: RATIFIED — owner decisions D1–D5 recorded 2026-09-11 (§8); NOT yet executed.**
+> **Status: EXECUTION UNDERWAY — RATIFIED 2026-09-11 (owner decisions D1–D5, §8). Gate A opened by operator waiver ("Proceed, I approve", 2026-09-11); P0 closed zero-placement and P1 (IAL Chemistry) completed 2026-09-11 — [docs/coverage/BACKFILL-REPORT.md](docs/coverage/BACKFILL-REPORT.md); subject-folder audit + repairs 2026-09-12 — [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md); P2–P5 pending (§3).**
 > This is the operational plan for bulk-downloading the missing Edexcel IGCSE / IAL assessment
 > materials from [Physics & Maths Tutor](https://www.physicsandmathstutor.com/) (PMT) into this
 > repository, and for repairing the provenance gap (`source_url: null`) left by the 2026-09-11

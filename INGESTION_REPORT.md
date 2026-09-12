@@ -4,9 +4,29 @@
 
 ## Totals
 
+**Batch 1 — operator collection (2026-09-11, this report's original scope):**
+
 - PDFs examined: **2708**
 - Files placed in canonical tree: **2512** across **1361** paper-variant directories
 - Quarantined: **196** (see `_quarantine/` — every file carries a `REASON.txt`)
+
+**Batch 2 — PMT backfill (2026-09-11, session 42; full detail in
+[docs/coverage/BACKFILL-REPORT.md](docs/coverage/BACKFILL-REPORT.md)):**
+
+- Files placed: **340** across **170** IAL-Chemistry paper dirs (wch01–06 legacy 79 dirs / 158 files,
+  wch11–16 2018-spec 91 dirs / 182 files incl. the audit-completed 2019-01 dir)
+- Quarantined: **117** (79 out-of-scope-gce · 37 unresolved-identity · 1 cross-listed duplicate)
+
+**Corpus after the 2026-09-12 audit repairs (see
+[docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
+
+- PDFs + inserts placed: **2,851** (1,389 qp · 1,444 ms · 18 insert) across **1,531** paper dirs
+  — **1,489 regular** (batch 1: 1,319 · batch 2: 170, all manifest-complete) + **42 specimen refs**
+  (all manifest-complete)
+- Manifests: **1,531** · manifest material entries: **2,852** (every placed PDF/insert listed with
+  SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
+- Quarantined PDFs: **313** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
+  79 out-of-scope-gce), every file with a `REASON.txt`
 
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
@@ -24,6 +44,18 @@
 |---|---|---|
 | gce-a-level/mathematics/mathematics-modular | 245 | 478 |
 | gce-a-level/physics/physics-2008 | 78 | 142 |
+| international-a-level/chemistry/wch01 | 15 | 30 |
+| international-a-level/chemistry/wch02 | 15 | 30 |
+| international-a-level/chemistry/wch03 | 13 | 26 |
+| international-a-level/chemistry/wch04 | 13 | 26 |
+| international-a-level/chemistry/wch05 | 12 | 24 |
+| international-a-level/chemistry/wch06 | 11 | 22 |
+| international-a-level/chemistry/wch11 | 18 | 36 |
+| international-a-level/chemistry/wch12 | 17 | 34 |
+| international-a-level/chemistry/wch13 | 17 | 34 |
+| international-a-level/chemistry/wch14 | 14 | 28 |
+| international-a-level/chemistry/wch15 | 13 | 26 |
+| international-a-level/chemistry/wch16 | 12 | 24 |
 | international-a-level/mathematics/mathematics-2018 | 138 | 255 |
 | international-a-level/mathematics/wma01 | 68 | 126 |
 | international-a-level/mathematics/wma02 | 15 | 30 |
@@ -67,7 +99,7 @@
 ## Provenance & status
 
 - duplicate downloads (same artifact) deduplicated by SHA-256; different-bytes collisions kept the higher-confidence identification and quarantined the other
-- provenance: all artifacts are official Pearson Edexcel documents obtained via the third-party archive PhysicsAndMathsTutor.com before this run; per-file source URLs are not available and are recorded as null
+- provenance: all artifacts are official Pearson Edexcel documents obtained via the third-party archive PhysicsAndMathsTutor.com. Batch 1 (2,512 files): per-file source URLs not available, recorded as null. Batch 2 (340 files): real PMT page-of-record `source_url` recorded per material — the pattern for the future P5 provenance backfill of batch 1
 - verification_status of every placed file is AI-IDENTIFIED (operator ratification pending) per the project's SUGGESTED -> HUMAN_VALIDATED lifecycle
 
 ## Quarantined files
@@ -268,3 +300,24 @@
 - `IGCSE/Edexcel/Physics/Paper 2/June 2022 QP_2.pdf` — [duplicate-artifact] same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2022 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)
 - `IGCSE/Edexcel/Physics/Paper 2/June 2023 QP_2.pdf` — [duplicate-artifact] same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2023 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)
 - `IGCSE/Edexcel/Physics/Paper 2/June 2024 QP_2.pdf` — [duplicate-artifact] same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2024 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)
+
+
+## Audit repairs — 2026-09-12
+
+Two content-level findings from the 2026-09-12 subject-folder audit
+([docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)) were repaired the same day, both
+print-verified before placement (charter §29):
+
+1. `ial/mathematics/wma01/2014-01/WME02-01/qp.pdf` had held the Core Mathematics C1 paper
+   (6663A/01 print; byte-identical to the GCE `6663-01` QP) due to a partner-inference filename
+   collision. The true WME02/01 Mechanics-M2 January-2014 question paper was restored from
+   `_quarantine/duplicate-artifact/` (the duplicate-artifact quarantine had preserved the right
+   twin) and the manifest records the full repair trail (`ingestion.repair`).
+2. `ial/chemistry/wch11/2019-01/WCH11-01` had been committed without a manifest (the process slip
+   behind the 169-vs-170 chemistry dir discrepancy). Both artifacts print-verified as genuine
+   WCH11/01 January 2019; manifest written (ms backfilled, qp re-fetched from the ledger-recorded
+   PMT URL) and both ledger rows moved to `normalized`.
+
+Known open flags (operator decisions, recorded in the audit doc): the 6663A international-variant
+labelling under `gce-a-level`, the `<spec>/specimen/` subtree vs charter §12, month-`11` vs D3's
+`-10` normalization, and 227 remaining file-gap dirs (missing qp/ms) queued for the P2/P3 sweeps.

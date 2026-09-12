@@ -161,3 +161,21 @@ baseline ratification pass**, not to this backfill:
 
 The corresponding baseline directories are left untouched — mutating baseline identities is
 the operator's call under the charter lifecycle.
+
+## 7. Post-audit repair addendum (2026-09-12)
+
+The 2026-09-12 subject-folder audit ([docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)) found
+and fixed two items that touch this report:
+
+1. **§5 correction — 170, not 169.** The 91st 2018-spec dir (`wch11/2019-01/WCH11-01`) was
+   committed without a manifest while its ledger MS row read `na:duplicate-row` and its QP row
+   sat at `fetched`. Audit repair completed the dir (manifest written; MS print-verified as
+   genuine WCH11/01 January 2019; QP re-fetched from the ledger-recorded PMT URL and
+   print-verified) and moved both ledger rows to `normalized`. Chemistry totals: 170 dirs,
+   340 files. The §5 claim "every placed dir is manifest-complete" is true as of this addendum.
+2. **Duplicate-artifact quarantine validated.** `wma01/2014-01/WME02-01/qp.pdf` had been placed
+   from the wrong twin of a byte-collision pair (it printed Core Mathematics C1 6663A/01). The
+   true WME02/01 Mechanics-M2 January-2014 QP was the file this pipeline had quarantined as
+   `duplicate-artifact`; the audit restored it (print-verified) and recorded the trail in the
+   manifest `ingestion.repair` block. Lesson: at identity collisions, print-verify BOTH twins
+   before choosing the keeper — filename proximity is not identity (charter §29).
