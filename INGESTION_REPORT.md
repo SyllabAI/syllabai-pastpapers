@@ -20,14 +20,20 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,851** (1,389 qp · 1,444 ms · 18 insert) across **1,531** paper dirs
+- PDFs + inserts placed: **2,933** (1,462 qp · 1,453 ms · 18 insert) across **1,531** paper dirs
   (final state after the second repair pass — the corrupt 4PM1-01 2023-01 ms was quarantined, F9)
   — **1,489 regular** (batch 1: 1,319 · batch 2: 170, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
-- Manifests: **1,531** · manifest material entries: **2,851** (every placed PDF/insert listed with
+- Manifests: **1,531** · manifest material entries: **2,933** (every placed PDF/insert listed with
   SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
 - Quarantined PDFs: **314** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
   79 out-of-scope-gce · 1 corrupt-artifact), every file with a `REASON.txt`
+
+## File-gap wave (2026-09-12, audit F7)
+
+- The 228-row `file-gap-sweep.csv` was swept in its in-scope 161 rows (P0/P2/P3 + FPM): **82 missing artifacts placed** (73 qp · 9 ms) from the PMT CDN, each print-checked (code + session) before acceptance; 54 exact code matches, 2 zero-pad-normalized (4MB0/1R↔01R), 7 dir+filename evidence (reference box not text-extractable), 11 image-scan covers (dir+filename, rank 2).
+- **79 rows are not satisfiable from PMT** and keep their gap: not-listed (2020-11 series, Oct-2020 IAL maths QPs, 01A mark schemes), mislabeled-on-PMT (2020-06 MS files that print November 2020, October-2020 maths QPs that print June 2020, legacy flat-dir mislabels), corrupt-on-PMT (F9's 4PM1-01 2023-01 ms re-served truncated; 4PM1-02R 2022-01 qp missing EOF). Ledger statuses `na:*` carry the per-row class; other sources pending.
+- GCE modular / IGCSE computer-science / English rows (67) remain `planned` per plan §3.
 
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
@@ -38,6 +44,8 @@
 | partner_inference | 87 |
 | specimen_first_teaching | 8 |
 | folder_consensus | 6 |
+
+2026-09-12 file-gap wave delta: +23 manifests gained a `date_rule` entry (fetched files whose session evidence is the PMT filename + cover copyright year); other method rows unchanged.
 
 ## Spec coverage
 

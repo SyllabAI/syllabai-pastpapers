@@ -1,6 +1,6 @@
 # PMT Bulk-Download Plan — backfill execution brief for the next session
 
-> **Status: EXECUTION UNDERWAY — RATIFIED 2026-09-11 (owner decisions D1–D5, §8). Gate A opened by operator waiver ("Proceed, I approve", 2026-09-11); P0 closed zero-placement and P1 (IAL Chemistry) completed 2026-09-11 — [docs/coverage/BACKFILL-REPORT.md](docs/coverage/BACKFILL-REPORT.md); subject-folder audit + repairs 2026-09-12 — [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md); P2–P5 pending (§3).**
+> **Status: EXECUTION UNDERWAY — RATIFIED 2026-09-11 (owner decisions D1–D5, §8). Gate A opened by operator waiver ("Proceed, I approve", 2026-09-11); P0 closed zero-placement and P1 (IAL Chemistry) completed 2026-09-11 — [docs/coverage/BACKFILL-REPORT.md](docs/coverage/BACKFILL-REPORT.md); subject-folder audit + repairs 2026-09-12 — [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md); P2–P3 executed 2026-09-12 as the file-gap wave (82 placed / 79 rows need other sources - ledger `na:*`); P4 pending; P5 partial (FPM swept).**
 > This is the operational plan for bulk-downloading the missing Edexcel IGCSE / IAL assessment
 > materials from [Physics & Maths Tutor](https://www.physicsandmathstutor.com/) (PMT) into this
 > repository, and for repairing the provenance gap (`source_url: null`) left by the 2026-09-11
@@ -60,9 +60,10 @@ including `(R)` variants) plus a `specimen/` shelf.
 > PMT lists beyond that for IGCSE is verified during Identify before fetching.
 
 > **File-gap sweep (audit findings F7/F9, 2026-09-12):** the 228 manifest-complete dirs missing exactly
-> one artifact are pre-loaded in [docs/ledger/file-gap-sweep.csv](docs/ledger/file-gap-sweep.csv) as
-> `expected-identity` rows (status `planned`). P2/P3 resolve the rows inside their scope; the remainder
-> (GCE modular, IGCSE computer-science/English, the corrupt-replacement row) queue for later phases.
+> one artifact are tracked in [docs/ledger/file-gap-sweep.csv](docs/ledger/file-gap-sweep.csv). The 2026-09-12
+> wave resolved 82 of the 161 in-scope rows (status `normalized`); 79 rows are not satisfiable from PMT
+> (status `na:pmt-*`: not-listed, mislabeled, corrupt) and queue for other sources; GCE modular and IGCSE
+> computer-science/English rows (67) remain `planned` for later phases.
 
 ### P0 — Cycle-1 critical: complete IGCSE Chemistry 4CH1
 

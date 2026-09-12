@@ -1,7 +1,7 @@
 {
   "run_date": "2026-09-11",
   "agent": "SyllabAI ingestion agent",
-  "source": "SyllabAI/Past-Papers — IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
+  "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
   "totals": {
     "pdfs_seen": 2708,
     "files_placed": 2512,
@@ -33,6 +33,25 @@
       "regular_paper_dirs": 1489,
       "specimen_refs": 42,
       "quarantined_pdfs": 314
+    },
+    "corpus_after_gapfill_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "file-gap wave (audit F7, P0+P2+P3+P5-scope of docs/ledger/file-gap-sweep.csv): 82 missing artifacts fetched from the PMT CDN and print-verified (54 exact-code + 2 zero-pad-normalized + 7 dir+filename + 11 image-scan dir+filename); PM listing pages 403 the agent - page discovery via rendered page reader, files via direct CDN. 79 of 161 in-scope rows are not satisfiable from PMT (not-listed / mislabeled / corrupt classes, see ledger statuses na:*) and queue for other sources; GCE/CS/English rows remain planned.",
+      "pdfs_and_inserts": 2933,
+      "qp": 1462,
+      "ms": 1453,
+      "insert": 18,
+      "material_entries": 2933,
+      "manifests": 1531,
+      "file_gap_wave": {
+        "ledger_rows": 228,
+        "in_scope": 161,
+        "verified": 82,
+        "qp": 73,
+        "ms": 9,
+        "not_found_on_pmt": 79,
+        "out_of_scope_planned": 67
+      }
     }
   },
   "identification_methods": {
@@ -229,6 +248,69 @@
       "papers": 12,
       "files": 24,
       "batch": 2
+    },
+    "international-a-level": {
+      "mathematics": {
+        "mathematics-2018": {
+          "files": 7
+        },
+        "wma01": {
+          "files": 10
+        }
+      },
+      "physics": {
+        "wph04": {
+          "files": 1
+        },
+        "wph11": {
+          "files": 1
+        },
+        "wph13": {
+          "files": 3
+        },
+        "wph14": {
+          "files": 2
+        },
+        "wph15": {
+          "files": 1
+        }
+      }
+    },
+    "international-gcse": {
+      "chemistry": {
+        "4ch1": {
+          "files": 16
+        }
+      },
+      "further-pure-mathematics": {
+        "4pm0": {
+          "files": 2
+        },
+        "4pm1": {
+          "files": 4
+        }
+      },
+      "mathematics-a": {
+        "4ma0": {
+          "files": 5
+        },
+        "4ma1": {
+          "files": 5
+        }
+      },
+      "mathematics-b": {
+        "4mb0": {
+          "files": 6
+        },
+        "4mb1": {
+          "files": 3
+        }
+      },
+      "physics": {
+        "4ph1": {
+          "files": 16
+        }
+      }
     }
   },
   "quarantined_files": [
@@ -1236,7 +1318,16 @@
         "id": "F2",
         "path": "past-papers/pearson-edexcel/international-a-level/chemistry/wch11/past-papers/2019-01/WCH11-01/",
         "action": "dir completed: manifest written (ms backfilled, qp re-fetched from ledger-recorded PMT URL), both print-verified; ledger rows -> normalized"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "file-gap wave: 82 artifacts placed (73 qp + 9 ms), 82 manifests updated, ledger file-gap-sweep.csv statuses rewritten (normalized/na:*/planned)",
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md F7"
       }
     ]
+  },
+  "identification_methods_wave_delta_2026_09_12": {
+    "date_rule_additions": 23,
+    "note": "23 manifests gained a date_rule method entry (fetched file's session evidence came from the PMT filename + cover (c)-year where the cover prints no session). No other method rows were changed by this wave; the base histogram keeps the 2026-09-12 second-pass counting basis."
   }
 }

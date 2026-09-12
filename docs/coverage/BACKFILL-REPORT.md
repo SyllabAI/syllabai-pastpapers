@@ -179,3 +179,12 @@ and fixed two items that touch this report:
    `duplicate-artifact`; the audit restored it (print-verified) and recorded the trail in the
    manifest `ingestion.repair` block. Lesson: at identity collisions, print-verify BOTH twins
    before choosing the keeper — filename proximity is not identity (charter §29).
+
+
+## 9. File-gap wave - 2026-09-12 (audit F7/F9)
+
+- Scope: the 161 in-scope rows of `docs/ledger/file-gap-sweep.csv` (IGCSE chemistry/physics/maths/FPM + IAL physics/maths; GCE modular, IGCSE CS/English stay `planned`).
+- Executed: **82 artifacts placed** (73 qp · 9 ms) with per-file print forensics (pypdf cover text: paper reference + session) and sha256 recorded in each dir's manifest.
+- Method note: PMT listing pages return HTTP 403 to the agent, so page discovery ran through the rendered page-reader pipeline and files were fetched directly from `pmt.physicsandmathstutor.com` (operator-approved; politeness delay ≥3 s between hits).
+- Residue: 79 rows are not obtainable from PMT (not-listed / mislabeled / corrupt - classes in ledger `status`); alternatives (dynamicpapers, xtremepapers, Pearson) are the next wave.
+- F9: the corrupt 4PM1-01 2023-01 ms remains quarantined; PMT re-serves identical truncated bytes.
