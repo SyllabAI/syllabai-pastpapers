@@ -32,6 +32,19 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 78fd786c083d6b41cdb8f24b9f00a66e9b653ba8a3299556eb902f4cadd1dce7
+  size_bytes: 1368496
+  original_filename: 4PH1_2PR_June19_QP-IGCSE-Edexcel-Physics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2021/10/4PH1_2PR_June19_QP-IGCSE-Edexcel-Physics.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
@@ -40,7 +53,8 @@ identification:
   - 4PH1
   stray_prints: []
   session_printed: June 2019
-  notes: []
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (June 2019); sha256 78fd786c083d6b41...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

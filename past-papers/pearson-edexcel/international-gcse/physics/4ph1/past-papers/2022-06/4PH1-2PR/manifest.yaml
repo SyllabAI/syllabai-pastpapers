@@ -32,15 +32,30 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 81a797320f4eb725cbe5434730692bce45dd2bafee6f056b58080eaa6246c9bc
+  size_bytes: 1280002
+  original_filename: 4ph1-june-2022-qp-2pr-edexcel-igcse-physics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/09/4ph1-june-2022-qp-2pr-edexcel-igcse-physics.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
+  - sme-listing
   confidence_rank: 0
   printed_references_seen:
   - 4PH1
   stray_prints: []
   session_printed: June 2022
-  notes: []
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: sme-listing (sme 2022-6); sha256 81a797320f4eb725...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

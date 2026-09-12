@@ -32,6 +32,19 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: b8419c70375a6c58ffa740f804f302066e5e087cabe3a9598d6b1f3abb395595
+  size_bytes: 875516
+  original_filename: 4ph1-2pr-que-jan-2020.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/12/4ph1-2pr-que-jan-2020.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
@@ -40,7 +53,8 @@ identification:
   - 4PH1
   stray_prints: []
   session_printed: January 2020; January 2020
-  notes: []
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (January 2020); sha256 b8419c70375a6c58...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

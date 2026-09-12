@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: d469f40a7299d1632e3eb1bcd4ec44d913823d4f470b1b8206868bb86a1288b0
+  size_bytes: 1029046
+  original_filename: 4MA1_1FR_que_20190110.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam),
+      discovered via the SaveMyExams past-paper index
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Mathematics%20A/2016/exam-materials/4MA1_1FR_que_20190110.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  - date_rule
+  confidence_rank: 2
   printed_references_seen:
   - 4MA1
   stray_prints: []
   session_printed: January 2019; January 2019
-  notes: []
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: scan+url+coded; session evidence: date_rule (coded 20190110); sha256 d469f40a7299d163...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
