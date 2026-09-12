@@ -21,17 +21,6 @@ paper:
   paper_number_variant: '01'
 variant: null
 materials:
-- type: mark-scheme
-  path: ms.pdf
-  sha256: 9bbe7f972cc5e23fa5cf3993d268e95dba3643b93affdfd9f5859082161c8ced
-  size_bytes: 294912
-  original_filename: January 2023 MS.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
   sha256: ce12b1e794a129697f7470267916683a00784df4b3bbc0c55276d2a932c6aabb
@@ -46,14 +35,27 @@ materials:
 identification:
   methods:
   - date_rule
-  confidence_rank: 5
-  printed_references_seen: []
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM1/01
   stray_prints: []
   session_printed: January 2023
   notes:
   - date rule -> 4PM1/01
+  - '2026-09-12 audit spot-check (F3): identity print-verified from PDF text (qp.pdf prints 4PM1/01; session token not printed on the cover)'
+  - '2026-09-12 audit repair (F9): ms.pdf found corrupt (truncated PDF, EOF marker missing, exactly 288 KiB) and quarantined to _quarantine/corrupt-artifact/ - re-fetch queued via docs/ledger/file-gap-sweep.csv'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED (operator ratification pending)
+  repair:
+    date: '2026-09-12'
+    by: SyllabAI audit (session 43)
+    scope: corrupt ms.pdf quarantined (audit finding F9); qp.pdf print-verified
+    corrupt_ms_sha256: 9bbe7f972cc5e23fa5cf3993d268e95dba3643b93affdfd9f5859082161c8ced
+    note: ms.pdf is a truncated PDF (EOF marker missing, content streams end prematurely, exactly 288 KiB) -
+      sha256 matched at ingestion because the corrupt bytes were hashed as served. Quarantined to
+      _quarantine/corrupt-artifact/; re-fetch attempted 2026-09-12 but PMT returned HTTP 403 to the agent -
+      re-fetch queued via docs/ledger/file-gap-sweep.csv.

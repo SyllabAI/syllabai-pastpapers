@@ -309,7 +309,8 @@ Two content-level findings from the 2026-09-12 subject-folder audit
 print-verified before placement (charter §29):
 
 1. `ial/mathematics/wma01/2014-01/WME02-01/qp.pdf` had held the Core Mathematics C1 paper
-   (6663A/01 print; byte-identical to the GCE `6663-01` QP) due to a partner-inference filename
+   (6663A/01 print; byte-identical to the GCE-slot QP - that slot is now `6663A-01` after the
+   F3 cluster repair, see docs/AUDIT-2026-09-12.md section 7) due to a partner-inference filename
    collision. The true WME02/01 Mechanics-M2 January-2014 question paper was restored from
    `_quarantine/duplicate-artifact/` (the duplicate-artifact quarantine had preserved the right
    twin) and the manifest records the full repair trail (`ingestion.repair`).

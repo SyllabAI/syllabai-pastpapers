@@ -1,0 +1,6 @@
+original_path: past-papers/pearson-edexcel/international-gcse/further-pure-mathematics/4pm1/past-papers/2023-01/4PM1-01/ms.pdf
+class: corrupt-artifact
+reason: PDF is truncated - EOF marker missing and content streams end prematurely (pypdf: "Stream has ended unexpectedly"); file size is exactly 288 KiB (294912 B), indicating a truncated transfer preserved at ingestion (sha256 matched the manifest because the corrupt bytes were hashed as served)
+sha256: 9bbe7f972cc5e23fa5cf3993d268e95dba3643b93affdfd9f5859082161c8ced
+identification_method: pdf_text
+notes: detected 2026-09-12 during the F3 confidence-5 spot-check (audit finding F9); the sibling qp.pdf of the same directory is intact (32 pages, parses leniently); re-fetch from PMT attempted 2026-09-12 but the source returned HTTP 403 to the ingestion agent - re-fetch queued via docs/ledger/file-gap-sweep.csv (4PM1-01 2023-01 ms row)
