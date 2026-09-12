@@ -35,15 +35,28 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: df27a79762f9cdd5748b2b0d2272482733a9d59e1cab2316e199fce8382a1b8f
+  size_bytes: 261318
+  original_filename: October 2020 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: Maths/A-level/Papers/Edexcel-IAL/Pure/P4/MS/October 2020 MS.pdf
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
+      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
   - WMA14/01A
   stray_prints: []
   session_printed: June 2020; October 2020
-  notes: []
+  notes:
+  - '2026-09-12 file-gap wave (F7): missing ms.pdf fetched from PMT CDN and print-checked - code match: dir+filename; session evidence: print (October 2020); sha256 df27a79762f9cdd5...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
