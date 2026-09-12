@@ -1,0 +1,73 @@
+paper_id: cambridge-international:ial:chemistry:9701:2021-11:9701/52
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2021-11
+  year: '2021'
+  session_month: '11'
+  printed: October/November 2021
+  source: pdf+filename
+paper:
+  official_reference: 9701/52
+  unit_code: '9701'
+  paper_number: '5'
+  paper_number_variant: '52'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 93a73c17ea53ed4510441d0aa3d9646f88b9626f804507dd79aa1f9505fa4006
+  size_bytes: 1136532
+  original_filename: 9701_w21_qp_52.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Chemistry-9701/2021-Oct-Nov/9701_w21_qp_52.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: fa59c03229e7408efeea386976de0cc0942b84f2b9b3f9e58e3c7f9dcec81fa0
+  size_bytes: 251669
+  original_filename: 9701_w21_ms_52.pdf
+  pages: 7
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Chemistry-9701/2021-Oct-Nov/9701_w21_ms_52.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  - coded-date
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/52
+  stray_prints: []
+  session_printed: October/November 2021
+  notes:
+  - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
+    convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
+    syllabus code and session before acceptance.'
+  - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
+    in printed_references_seen/session evidence above.
+  - coded barcode line IB21 11_9701_52 (month code 11)
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

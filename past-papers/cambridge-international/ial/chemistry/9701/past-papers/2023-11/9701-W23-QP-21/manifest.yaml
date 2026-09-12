@@ -1,0 +1,71 @@
+paper_id: cambridge-international:ial:chemistry:9701:2023-11:9701/21
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2023-11
+  year: '2023'
+  session_month: '11'
+  printed: October/November 2023
+  source: pdf+filename
+paper:
+  official_reference: 9701/21
+  unit_code: '9701'
+  paper_number: '2'
+  paper_number_variant: '21'
+variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: fadc060d719c10e90ea4f64e8edfafc05e9c5de12a2f0ccf05cd64634ed53c1e
+  size_bytes: 2822881
+  original_filename: 9701_w23_qp_21.pdf
+  pages: 20
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Chemistry-9701/2023-Oct-Nov/9701_w23_qp_21.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: bdc42e57213d7c71688ea2807a6ad4045b3910aa7f55df92b9c64f26b851bdcd
+  size_bytes: 442493
+  original_filename: 9701_w23_ms_21.pdf
+  pages: 15
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Chemistry-9701/2023-Oct-Nov/9701_w23_ms_21.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/21
+  stray_prints: []
+  session_printed: October/November 2023
+  notes:
+  - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
+    convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
+    syllabus code and session before acceptance.'
+  - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
+    in printed_references_seen/session evidence above.
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
