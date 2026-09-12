@@ -340,6 +340,14 @@ past-papers/
 
 The `paper-variant-id` is a filesystem-safe representation of the official component/paper reference.
 
+### Session-month encodings
+
+`YYYY-MM` records the board's own sitting month, not a normalized season: `-01` January,
+`-06` June/summer, `-10` October (IAL autumn sittings, owner decision D3), `-11` November (IGCSE
+and legacy GCE autumn sittings). `-10` and `-11` are distinct months and both occur in the corpus
+(4PM1 `2023-10` prints "October 2023"; IGCSE autumn 2020/2021 prints "November"). Never rename one
+into the other across qualification families.
+
 Example:
 
 ```text
@@ -470,6 +478,10 @@ mock
 ```
 
 Do not classify a document as a past paper unless its provenance supports that classification.
+
+In this repository the canonical specimen location is `<spec>/specimen/<REF>/` (no session level).
+Specimen directories are manifest-backed like every other directory and their manifests carry
+`series.type: specimen`; they are counted separately and never enter past-paper session counts.
 
 ---
 
@@ -845,6 +857,7 @@ past-papers/
                         └── <official-paper-reference-safe>/
                             ├── qp.pdf
                             ├── ms.pdf
+                            ├── insert.pdf (only where the board issues inserts; manifest type: insert)
                             ├── er.pdf
                             └── manifest.yaml
 ```

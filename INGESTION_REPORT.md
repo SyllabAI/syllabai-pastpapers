@@ -20,13 +20,14 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,852** (1,389 qp · 1,445 ms · 18 insert) across **1,531** paper dirs
+- PDFs + inserts placed: **2,851** (1,389 qp · 1,444 ms · 18 insert) across **1,531** paper dirs
+  (final state after the second repair pass — the corrupt 4PM1-01 2023-01 ms was quarantined, F9)
   — **1,489 regular** (batch 1: 1,319 · batch 2: 170, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
-- Manifests: **1,531** · manifest material entries: **2,852** (every placed PDF/insert listed with
+- Manifests: **1,531** · manifest material entries: **2,851** (every placed PDF/insert listed with
   SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
-- Quarantined PDFs: **313** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
-  79 out-of-scope-gce), every file with a `REASON.txt`
+- Quarantined PDFs: **314** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
+  79 out-of-scope-gce · 1 corrupt-artifact), every file with a `REASON.txt`
 
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
@@ -319,6 +320,13 @@ print-verified before placement (charter §29):
    WCH11/01 January 2019; manifest written (ms backfilled, qp re-fetched from the ledger-recorded
    PMT URL) and both ledger rows moved to `normalized`.
 
-Known open flags (operator decisions, recorded in the audit doc): the 6663A international-variant
-labelling under `gce-a-level`, the `<spec>/specimen/` subtree vs charter §12, month-`11` vs D3's
-`-10` normalization, and 227 remaining file-gap dirs (missing qp/ms) queued for the P2/P3 sweeps.
+A second repair pass the same day (operator-approved; audit doc §7) print-verified all 34 low-confidence
+manifests: a 20-dir identity cluster was corrected and renamed (F3 — 6663A/6664A/6665A/6666A and
+6PH07/6PH08), 8 more dirs were print-confirmed, and a corrupt (truncated) 4PM1-01 2023-01 mark scheme was
+quarantined as the corpus's first `corrupt-artifact` (F9). Totals above reflect the final state.
+
+Known open flags (operator decisions, recorded in the audit doc §7): whether the corrected 6663A–6666A
+dirs should additionally be re-homed under the IAL family (F3 residual), board semantics of the 6PH07/6PH08
+printed codes, and 228 file-gap dirs (missing qp/ms) pre-loaded as `planned` rows in
+`docs/ledger/file-gap-sweep.csv` for the P2/P3 sweeps. F5 (specimen subtree) and F6 (month-`11` encoding)
+were resolved by the second pass; F8 is partially resolved (insert provision + 12 specification.yaml files).

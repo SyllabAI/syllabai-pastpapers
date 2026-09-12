@@ -59,6 +59,11 @@ including `(R)` variants) plus a `specimen/` shelf.
 > to `10`, and label quirks are resolved at Identify). IGCSE families remain Jan/June — anything
 > PMT lists beyond that for IGCSE is verified during Identify before fetching.
 
+> **File-gap sweep (audit findings F7/F9, 2026-09-12):** the 228 manifest-complete dirs missing exactly
+> one artifact are pre-loaded in [docs/ledger/file-gap-sweep.csv](docs/ledger/file-gap-sweep.csv) as
+> `expected-identity` rows (status `planned`). P2/P3 resolve the rows inside their scope; the remainder
+> (GCE modular, IGCSE computer-science/English, the corrupt-replacement row) queue for later phases.
+
 ### P0 — Cycle-1 critical: complete IGCSE Chemistry 4CH1
 
 - **2024-01** (January 2024), **2025-01**, **2025-06** (post-baseline sessions)
