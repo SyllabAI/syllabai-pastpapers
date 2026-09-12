@@ -22,6 +22,20 @@ paper:
   paper_number_variant: '13'
 variant: '3'
 materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 6b1d50f52f03e08cbaa7c825c61efac8df5d6c619275e6679590a4d099816f14
+  size_bytes: 810829
+  original_filename: 9701_s23_qp_13.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Chemistry-9701/2023-May-June/9701_s23_qp_13.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      checks applied; print verification via shifted-cmap decode
 - type: mark-scheme
   path: ms.pdf
   sha256: 6326b1b09c505b9f5607e07c1035e509f2d249304e7537a79cbe9050af3dcab7
@@ -39,6 +53,7 @@ materials:
 identification:
   methods:
   - pdf_text
+  - coded-date
   confidence_rank: 0
   printed_references_seen:
   - 9701/13
@@ -48,9 +63,12 @@ identification:
   - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
     convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
     syllabus code and session before acceptance.'
+  - 'qp cover text layer uses a nonstandard shifted-cmap font encoding (pypdf: ''Advanced encoding [] not implemented
+    yet''); the text was recovered by a uniform +0x1D byte shift and decode-verified: cover prints 9701/13, coded
+    barcode IB23 06_9701_13, session May/June 2023, (c) UCLES 2023. Initially rejected by the wave-1 print check,
+    re-accepted after decode verification.'
   - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
     in printed_references_seen/session evidence above.
-  - incomplete pair at ingestion time (qp not present on source); tracked in docs/ledger/cie-gap-sweep.csv.
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-13'

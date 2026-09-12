@@ -31,17 +31,17 @@
 
 **Cambridge International wave 1 (2026-09-13):**
 
-- Files placed: **1,281** (648 qp · 633 ms) across **650** paper dirs — 6 syllabi
+- Files placed: **1,283** (650 qp · 633 ms) across **650** paper dirs — 6 syllabi
   (IGCSE 0620 Chemistry · 0625 Physics · 0580 Mathematics; IAL 9701 Chemistry · 9702 Physics ·
   9709 Mathematics), sessions 2021-2024 (IGCSE incl. February/March), source pastpapers.co
   (see the Cambridge section below)
 
 **Combined corpus (Pearson Edexcel + Cambridge International):**
 
-- **4,278 files (2,152 qp · 2,108 ms · 18 insert) across 2,190 paper dirs**; manifests 2,190;
-  specification.yaml 48 (42 Pearson · 6 Cambridge); complete QP+MS pairs 2,029/2,148
-  (Pearson 1,398/1,498 · Cambridge 631/650); all 119 incomplete dirs ledger-tracked
-  (100 Pearson + 19 Cambridge)
+- **4,280 files (2,154 qp · 2,108 ms · 18 insert) across 2,190 paper dirs**; manifests 2,190;
+  specification.yaml 48 (42 Pearson · 6 Cambridge); complete QP+MS pairs 2,031/2,148
+  (Pearson 1,398/1,498 · Cambridge 633/650); all 117 incomplete dirs ledger-tracked
+  (100 Pearson + 17 Cambridge)
 
 ## File-gap wave (2026-09-12, audit F7)
 
@@ -95,24 +95,27 @@
 - Source: **pastpapers.co CIE archive**. Its HTML listing pages are Cloudflare-gated, but files
   are served directly at stable paths; the tree was therefore enumerated by the standardized CIE
   filename convention (`<code>_<s|m|w><yy>_{qp|ms}_<variant>.pdf`) with 1,384 deterministic
-  probes → 1,319 candidate hits; 38 candidates proved to be soft-404 HTML responses carrying
-  HTTP 200 and were rejected at download. **1,281 files (648 qp · 633 ms) across 650 paper dirs
-  accepted.**
+  probes → 1,319 candidate hits; 36 candidates proved to be soft-404 HTML responses carrying
+  HTTP 200 and were rejected at download, and 2 more (9701 s23 QPs) initially failed the print
+  check due to a nonstandard shifted-cmap cover encoding and were re-accepted after decode
+  verification (uniform +0x1D byte shift recovers `9701/12`, `IB23 06_9701_12`, `May/June 2023`).
+  **1,283 files (650 qp · 633 ms) across 650 paper dirs accepted.**
 - Validation per file: PDF magic + size floor, pypdf page count, printed syllabus reference
   (`0620/12` style) and session token on the first two pages, SHA-256 in the manifest. Evidence
-  methods: every dir is `pdf_text`; 227 dirs additionally carry a `coded-date` CIE barcode line
+  methods: every dir is `pdf_text`; 229 dirs additionally carry a `coded-date` CIE barcode line
   (`IB<YY> <MM>_<syllabus>_<paper>`). MCQ mark schemes legitimately print 3 pages (answer grid).
 - Layout: board id `cambridge-international`; quals `igcse` / `ial`; spec dirs are bare syllabus
   codes (`0620` … `9709`); paper refs `<CODE>-<S|W|M><YY>-QP-<V>` (e.g. `0620-S23-QP-12`),
   uppercase per the §10 paper-dir charset; sessions mapped m→`-03`, s→`-06`, w→`-11`.
-- Gaps (85 rows, all `planned`, [docs/ledger/cie-gap-sweep.csv](docs/ledger/cie-gap-sweep.csv)):
-  36× 9709 Oct-Nov 2021 and 2× 9701 May-June 2023 QPs not hosted by the source; 17 0580 MS the
-  source lacks; 2 dirs missing their QP counterpart; the whole IGCSE February/March 2022 session
+- Gaps (83 rows, all `planned`, [docs/ledger/cie-gap-sweep.csv](docs/ledger/cie-gap-sweep.csv)):
+  36× 9709 Oct-Nov 2021 QPs and their 36 ms counterparts not hosted by the source (plus 2 0580-ms
+  rows and 45 session-completeness rows incl. the whole IGCSE February/March 2022 session); the
+  source also lacks 17 0580 MS; the whole IGCSE February/March 2022 session
   (30 files) absent at the source (both `2022-March` and `2022-February-March` slugs 404).
   Wave-2 candidates: XtremePapers CAIE tree (Cloudflare-blocked to the agent) and
   bestexamhelp.com (JS-challenge gated).
-- Cambridge complete pairs: **631/650 dirs** hold a complete QP+MS pair; 19 incomplete, all
-  ledger-tracked.
+- Cambridge complete pairs: **633/650 dirs** hold a complete QP+MS pair; 17 incomplete (0580
+  missing-ms), all ledger-tracked.
 
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
@@ -128,7 +131,7 @@
 
 2026-09-12 waves delta: 27 manifests gained a `date_rule` entry across the two file-gap waves; wave 3 added `sme-listing`/`coded-date` evidence rows and wave 4 added 11 `pdf_text`+`coded-date` manifests. The table (corrected in wave 4 to re-include the previously dropped `coded-date` and `sme-listing` rows) is recomputed exactly from all manifests.
 
-2026-09-13 Cambridge wave 1 delta: **+1,281 material entries, all `pdf_text`** (code + session print-verified), of which **227 additionally carry `coded-date`** (CIE barcode line). The table above remains the Pearson histogram; the Cambridge manifests carry their own per-dir method lists under `identification.methods`.
+2026-09-13 Cambridge wave 1 delta: **+1,283 material entries, all `pdf_text`** (code + session print-verified; two 9701 QPs via shifted-cmap decode), of which **229 additionally carry `coded-date`** (CIE barcode line). The table above remains the Pearson histogram; the Cambridge manifests carry their own per-dir method lists under `identification.methods`.
 
 ## Spec coverage
 
@@ -180,7 +183,7 @@
 | cambridge-international/igcse/chemistry/0620 | 121 | 242 |
 | cambridge-international/igcse/mathematics/0580 | 81 | 145 |
 | cambridge-international/igcse/physics/0625 | 122 | 244 |
-| cambridge-international/ial/chemistry/9701 | 92 | 182 |
+| cambridge-international/ial/chemistry/9701 | 92 | 184 |
 | cambridge-international/ial/mathematics/9709 | 126 | 252 |
 | cambridge-international/ial/physics/9702 | 108 | 216 |
 

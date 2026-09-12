@@ -128,13 +128,13 @@
    "board": "cambridge-international",
    "operator_direction": "Now download cambridge igcse and ial papers and mark schemes",
    "source": "pastpapers.co CIE archive (direct file URLs; HTML listing pages Cloudflare-gated)",
-   "enumeration": "standardized CIE filename convention: 1384 probes -> 1319 candidate hits; 38 soft-404 (HTTP 200 HTML) rejected at download",
-   "files_placed": 1281,
-   "qp": 648,
+   "enumeration": "standardized CIE filename convention: 1384 probes -> 1319 candidate hits; 36 soft-404 (HTTP 200 HTML) rejected at download; 2 9701 s23 QPs re-accepted after shifted-cmap cover decode (+0x1D)",
+   "files_placed": 1283,
+   "qp": 650,
    "ms": 633,
    "paper_dirs": 650,
-   "complete_pairs": 631,
-   "incomplete_dirs": 19,
+   "complete_pairs": 633,
+   "incomplete_dirs": 17,
    "specs": {
     "igcse/chemistry/0620": {
      "dirs": 121,
@@ -150,7 +150,7 @@
     },
     "ial/chemistry/9701": {
      "dirs": 92,
-     "files": 182
+     "files": 184
     },
     "ial/mathematics/9709": {
      "dirs": 126,
@@ -162,16 +162,16 @@
     }
    },
    "sessions_scope": "2021-2024 (IGCSE incl. February/March; IAL June + November)",
-   "gaps_ledger": "docs/ledger/cie-gap-sweep.csv (85 planned rows)",
+   "gaps_ledger": "docs/ledger/cie-gap-sweep.csv (83 planned rows)",
    "methods_delta": {
-    "pdf_text_entries": 1281,
-    "coded_date_entries": 227
+    "pdf_text_entries": 1283,
+    "coded_date_entries": 229
    }
   },
   "corpus_after_cambridge_wave_1_2026_09_13": {
    "date": "2026-09-13",
-   "files": 4278,
-   "qp": 2152,
+   "files": 4280,
+   "qp": 2154,
    "ms": 2108,
    "insert": 18,
    "paper_dirs": 2190,
@@ -182,14 +182,14 @@
     },
     "cambridge-international": {
      "dirs": 650,
-     "files": 1281
+     "files": 1283
     }
    },
    "manifests": 2190,
    "specification_yamls": 48,
    "complete_pairs": {
     "pearson_edexcel": "1398/1498",
-    "cambridge_international": "631/650"
+    "cambridge_international": "633/650"
    }
   }
  },
@@ -392,7 +392,7 @@
   },
   "cambridge-international/ial/chemistry/9701": {
    "papers": 92,
-   "files": 182
+   "files": 184
   },
   "cambridge-international/ial/mathematics/9709": {
    "papers": 126,
