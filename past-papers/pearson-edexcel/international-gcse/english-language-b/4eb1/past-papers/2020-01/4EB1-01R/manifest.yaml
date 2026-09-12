@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 38b800ef5ace3f20e1066e452e86efff60178a6a872f20e8c1ce05851e6116f6
+  size_bytes: 221084
+  original_filename: Markscheme-Paper1R-January2020.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/English%20Language%20B/2020%20Jan/Mark-scheme/Markscheme-Paper1R-January2020.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - 4EB1/01R
+  - 4EB1/1R
   stray_prints: []
   session_printed: January 2020; January 2020
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: pad-normalized; session evidence: print (January 2020); filename match: suf-only; sha256 38b800ef5ace3f20...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

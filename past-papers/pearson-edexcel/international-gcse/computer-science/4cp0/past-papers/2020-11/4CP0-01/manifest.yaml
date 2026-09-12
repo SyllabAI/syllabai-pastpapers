@@ -32,15 +32,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 9e775006c0245d0a405ec871caa4a943b8132b33e3be1278fa01c214ea5e2a41
+  size_bytes: 255961
+  original_filename: 4CP0_01_que_20201103.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Computer%20Science/2020%20Nov/Question-paper/4CP0_01_que_20201103.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  - date_rule
+  confidence_rank: 2
   printed_references_seen:
   - 4CP0/01
   stray_prints: []
   session_printed: November 2020; June 2020
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: scan+dir+filename; session evidence: date_rule (coded 20201103); filename match: exact; sha256 9e775006c0245d0a...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

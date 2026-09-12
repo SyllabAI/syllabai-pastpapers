@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5366e41046a975afef6190a1327a8f18c8c81ff8e817879c4df7a066412b7a84
+  size_bytes: 420501
+  original_filename: 4CP0_2C_rms_20210604.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Computer%20Science/2021%20Jun/Mark-scheme/4CP0_2C_rms_20210604.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  - date_rule
+  confidence_rank: 2
   printed_references_seen:
   - 4CP0/02C
   stray_prints: []
   session_printed: June 2021
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: scan+dir+filename; session evidence: date_rule (coded 20210604); filename match: pad-normalized; sha256 5366e41046a975af...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

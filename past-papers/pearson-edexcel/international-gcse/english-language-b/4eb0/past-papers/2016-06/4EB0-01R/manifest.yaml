@@ -46,15 +46,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3fe90ca99e03c6cef4a6911818a88c33abe04a55e1b1282d35a5a08bea99faef
+  size_bytes: 233529
+  original_filename: Markscheme-Paper1R-June2016.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/English%20Language%20B/2016%20Jun/Mark-scheme/Markscheme-Paper1R-June2016.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
+  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - 4EB0/01R
   stray_prints: []
   session_printed: June 2016; June 2016
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued June2016); filename match: suf-only; sha256 3fe90ca99e03c6ce...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

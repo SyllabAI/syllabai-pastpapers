@@ -35,6 +35,20 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2b7c1bf73e1802c0bca6347c6fc5b117529964d51bbffaa3ec4e57aeb7349159
+  size_bytes: 284765
+  original_filename: Markscheme-Paper1R-January2022.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/English%20Language%20B/2022%20Jan/Mark-scheme/Markscheme-Paper1R-January2022.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
@@ -43,7 +57,8 @@ identification:
   - 4EB1/01R
   stray_prints: []
   session_printed: January 2022
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: print (January 2022); filename match: suf-only; sha256 2b7c1bf73e1802c0...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
