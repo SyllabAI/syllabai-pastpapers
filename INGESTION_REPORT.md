@@ -64,11 +64,13 @@
 
 | method | files |
 |---|---|
-| pdf_text | 2960 |
+| pdf_text | 2982 |
 | date_rule | 556 |
 | partner_inference | 157 |
-| specimen_first_teaching | 5 |
+| coded-date | 60 |
+| sme-listing | 16 |
 | folder_consensus | 6 |
+| specimen_first_teaching | 5 |
 
 2026-09-12 waves delta: 27 manifests gained a `date_rule` entry across the two file-gap waves; wave 3 added `sme-listing`/`coded-date` evidence rows and wave 4 added 11 `pdf_text`+`coded-date` manifests. The table (corrected in wave 4 to re-include the previously dropped `coded-date` and `sme-listing` rows) is recomputed exactly from all manifests.
 
