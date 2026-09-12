@@ -1,0 +1,69 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2023-11:4MA1/1H
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2023-11
+  year: '2023'
+  session_month: '11'
+  printed: November 2023; November 2023
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/1H
+  unit_code: 4MA1
+  paper_number_variant: 1H
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 229b918e051ecdc1a10292a859e0dd6c1594d4fb9c10296185a610b2042427ad
+  size_bytes: 1175715
+  original_filename: 4ma1-1h-que-20231109.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-A/2016/Exam-materials/4ma1-1h-que-20231109.pdf
+    collected_by: SyllabAI agent (2026-09-12 wave 4; operator direction - confirm autumn-2023 online);
+      URL discovered via the SaveMyExams structured past-paper index; print-verified before acceptance
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 65c7df10df06fca808a948b956f9bc0766dcfa9eade8ef1fef9e5b9c07be946a
+  size_bytes: 355348
+  original_filename: 4ma1-1h-rms-20240125.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-A/2016/Exam-materials/4ma1-1h-rms-20240125.pdf
+    collected_by: SyllabAI agent (2026-09-12 wave 4; operator direction - confirm autumn-2023 online);
+      URL discovered via the SaveMyExams structured past-paper index; print-verified before acceptance
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - coded-date
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1/1H
+  stray_prints: []
+  session_printed: November 2023; November 2023
+  notes:
+  - '2026-09-12 wave 4 (autumn-2023 confirmation; operator direction - ''autumn-2023 do online research
+    to confirm''): November 2023 was the first regular International GCSE November series; both materials
+    print-verified before acceptance.'
+  - 'qp session evidence: coded exam date in Pearson filename (4ma1-1h-que-20231109.pdf) + print (November
+    2023); ms session evidence: print (November 2023); rms filename date 20240125 is the publication date
+    (not session evidence).'
+  - 'pairing integrity: qp and ms share Pearson product code P73465A (same paper bundle).'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-12'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
