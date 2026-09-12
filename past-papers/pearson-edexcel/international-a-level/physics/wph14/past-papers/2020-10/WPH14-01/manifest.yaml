@@ -32,15 +32,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: ac8242cb1f6e9185fbbcec1ad67ad053c3d276a66530c9d48a26625a67a60d64
+  size_bytes: 714894
+  original_filename: Questionpaper-Unit4(WPH14)-October2020.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2020%20Oct%20%282018%20syllabus%29/Question-paper/Questionpaper-Unit4%28WPH14%29-October2020.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
+  - date_rule
   confidence_rank: 0
   printed_references_seen:
   - WPH14
   stray_prints: []
   session_printed: June 2020; October 2020
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued October2020); filename match: exact; sha256 ac8242cb1f6e9185...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

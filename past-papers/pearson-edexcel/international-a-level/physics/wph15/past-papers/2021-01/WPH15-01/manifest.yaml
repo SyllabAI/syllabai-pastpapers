@@ -32,6 +32,20 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 064e040ad6ee17735f93616bddfa8221b158c36d2ca807d8188566d76ccd8676
+  size_bytes: 583546
+  original_filename: QuestionPaper-Unit5(WPH15)-January2021.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2021%20Jan/Question-paper/QuestionPaper-Unit5%28WPH15%29-January2021.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
@@ -40,7 +54,8 @@ identification:
   - WPH15/01
   stray_prints: []
   session_printed: January 2021; January 2021
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: print (January 2021); filename match: exact; sha256 064e040ad6ee1773...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
