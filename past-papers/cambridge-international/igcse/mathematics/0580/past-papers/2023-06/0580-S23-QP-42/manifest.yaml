@@ -1,0 +1,71 @@
+paper_id: cambridge-international:igcse:mathematics:0580:2023-06:0580/42
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: mathematics
+specification:
+  folder: 0580
+  title: Cambridge IGCSE Mathematics (0580)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May/June 2023
+  source: pdf+filename
+paper:
+  official_reference: 0580/42
+  unit_code: 0580
+  paper_number: '4'
+  paper_number_variant: '42'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: bea75820f9a8cb87421b76d11e08f718fb1b4aabd1d36173ddd52b3e18d51ad2
+  size_bytes: 2649140
+  original_filename: 0580_s23_qp_42.pdf
+  pages: 20
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/IGCSE/Mathematics-0580/2023-May-June/0580_s23_qp_42.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 6b2dd3051293272a76fac71c5c7e4d750c6d756044c9bc274dab823dc29e3b8f
+  size_bytes: 313734
+  original_filename: 0580_s23_ms_42.pdf
+  pages: 11
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/IGCSE/Mathematics-0580/2023-May-June/0580_s23_ms_42.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0580/42
+  stray_prints: []
+  session_printed: May/June 2023
+  notes:
+  - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
+    convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
+    syllabus code and session before acceptance.'
+  - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
+    in printed_references_seen/session evidence above.
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
