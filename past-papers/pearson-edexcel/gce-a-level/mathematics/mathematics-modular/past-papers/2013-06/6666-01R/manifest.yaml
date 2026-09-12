@@ -35,15 +35,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 77b6547489a320a4744ec9a5be4af54c0c56dce393f656a24e76be1d28ef5500
+  size_bytes: 204577
+  original_filename: 6666_01R_que_20130618.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Mathematics/2013%20Jun/Question-paper/6666_01R_que_20130618.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  - date_rule
+  confidence_rank: 2
   printed_references_seen:
   - 6666/01R
   stray_prints: []
   session_printed: June 2013
-  notes: []
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: scan+dir+filename; session evidence: date_rule (coded 20130618); filename match: exact; sha256 77b6547489a320a4...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
