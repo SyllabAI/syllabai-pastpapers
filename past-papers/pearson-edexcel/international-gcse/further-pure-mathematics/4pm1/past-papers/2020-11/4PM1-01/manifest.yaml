@@ -32,6 +32,19 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 8791268d215584c1f8f6977a55216b64aefa0f8346e33dba6179e5cfce28ec75
+  size_bytes: 821941
+  original_filename: edexcel-igcse-further-pure-maths-2020-nov-p1-qp.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/09/edexcel-igcse-further-pure-maths-2020-nov-p1-qp.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
@@ -40,7 +53,8 @@ identification:
   - 4PM1
   stray_prints: []
   session_printed: November 2020; June 2020
-  notes: []
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (November 2020); sha256 8791268d215584c1...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
