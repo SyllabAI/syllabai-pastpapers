@@ -1,7 +1,7 @@
 {
  "run_date": "2026-09-11",
  "agent": "SyllabAI ingestion agent",
- "source": "SyllabAI/Past-Papers — IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
+ "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
  "totals": {
   "pdfs_seen": 2708,
   "files_placed": 2512,
@@ -56,7 +56,7 @@
   },
   "corpus_after_othersource_wave_2026_09_12": {
    "date": "2026-09-12",
-   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT §8).",
+   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
    "pdfs_and_inserts": 2919,
    "qp": 1438,
    "ms": 1463,
@@ -111,7 +111,7 @@
   },
   "corpus_after_structure_fix_2026_09_13": {
    "date": "2026-09-13",
-   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README §32 deviation rulings). Independent recount at f840c61b16.",
+   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README \u00a732 deviation rulings). Independent recount at f840c61b16.",
    "files_placed": 2997,
    "qp": 1504,
    "ms": 1475,
@@ -122,6 +122,75 @@
    "complete_qp_ms_pairs": 1398,
    "incomplete_regular_dirs": 100,
    "ledger_rows_total": 228
+  },
+  "cambridge_wave_1_2026_09_13": {
+   "date": "2026-09-13",
+   "board": "cambridge-international",
+   "operator_direction": "Now download cambridge igcse and ial papers and mark schemes",
+   "source": "pastpapers.co CIE archive (direct file URLs; HTML listing pages Cloudflare-gated)",
+   "enumeration": "standardized CIE filename convention: 1384 probes -> 1319 candidate hits; 38 soft-404 (HTTP 200 HTML) rejected at download",
+   "files_placed": 1281,
+   "qp": 648,
+   "ms": 633,
+   "paper_dirs": 650,
+   "complete_pairs": 631,
+   "incomplete_dirs": 19,
+   "specs": {
+    "igcse/chemistry/0620": {
+     "dirs": 121,
+     "files": 242
+    },
+    "igcse/mathematics/0580": {
+     "dirs": 81,
+     "files": 145
+    },
+    "igcse/physics/0625": {
+     "dirs": 122,
+     "files": 244
+    },
+    "ial/chemistry/9701": {
+     "dirs": 92,
+     "files": 182
+    },
+    "ial/mathematics/9709": {
+     "dirs": 126,
+     "files": 252
+    },
+    "ial/physics/9702": {
+     "dirs": 108,
+     "files": 216
+    }
+   },
+   "sessions_scope": "2021-2024 (IGCSE incl. February/March; IAL June + November)",
+   "gaps_ledger": "docs/ledger/cie-gap-sweep.csv (85 planned rows)",
+   "methods_delta": {
+    "pdf_text_entries": 1281,
+    "coded_date_entries": 227
+   }
+  },
+  "corpus_after_cambridge_wave_1_2026_09_13": {
+   "date": "2026-09-13",
+   "files": 4278,
+   "qp": 2152,
+   "ms": 2108,
+   "insert": 18,
+   "paper_dirs": 2190,
+   "boards": {
+    "pearson-edexcel": {
+     "dirs": 1540,
+     "files": 2997
+    },
+    "cambridge-international": {
+     "dirs": 650,
+     "files": 1281
+    }
+   },
+   "manifests": 2190,
+   "specification_yamls": 48,
+   "complete_pairs": {
+    "pearson_edexcel": "1398/1498",
+    "cambridge_international": "631/650"
+   }
   }
  },
  "identification_methods": {
@@ -308,6 +377,30 @@
   "international-gcse/physics/4ph1": {
    "papers": 46,
    "files": 87
+  },
+  "cambridge-international/igcse/chemistry/0620": {
+   "papers": 121,
+   "files": 242
+  },
+  "cambridge-international/igcse/mathematics/0580": {
+   "papers": 81,
+   "files": 145
+  },
+  "cambridge-international/igcse/physics/0625": {
+   "papers": 122,
+   "files": 244
+  },
+  "cambridge-international/ial/chemistry/9701": {
+   "papers": 92,
+   "files": 182
+  },
+  "cambridge-international/ial/mathematics/9709": {
+   "papers": 126,
+   "files": 252
+  },
+  "cambridge-international/ial/physics/9702": {
+   "papers": 108,
+   "files": 216
   }
  },
  "quarantined_files": [
@@ -1329,17 +1422,17 @@
    {
     "date": "2026-09-12",
     "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §8"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
    },
    {
     "date": "2026-09-12",
     "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §9"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
    },
    {
     "date": "2026-09-13",
     "what": "structural audit fixes S1+S2: 11 Nov-2023 IGCSE dirs re-homed under the subject level (33 blobs, sha-identical); 4EB1-1R ms merged into 4EB1-01R (byte-identical, git blob 511bb858), stray dir deleted; ledger 2 rows normalized",
-    "evidence": "docs/AUDIT-2026-09-12.md §11; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
+    "evidence": "docs/AUDIT-2026-09-12.md \u00a711; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
    }
   ]
  },

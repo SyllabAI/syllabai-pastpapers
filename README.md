@@ -1049,3 +1049,15 @@ They are documented deviations, not permissions to erode the model for future wo
 3. **Quarantine category names.** §20's suggested category names are realized as
    `duplicate-artifact/`, `nonstandard-artifact/`, `out-of-scope-gce/`, `unresolved-identity/` and
    `corrupt-artifact/`; each artifact's reason file is `<original-stem>.REASON.txt` beside it.
+
+
+## 33. Board partitions (2026-09-13)
+
+`past-papers/` hosts one directory per exam board. The founding corpus is
+`past-papers/pearson-edexcel/` (§5-§31). As of 2026-09-13 the repo also carries
+`past-papers/cambridge-international/` (Cambridge Assessment International Education), with
+qualification families `igcse` and `ial`, bare syllabus codes as specification directories
+(`0620`, `9701`, …), sessions encoded `-03` (February/March) · `-06` (May/June) · `-11`
+(October/November), and paper-reference directories `<CODE>-<S|W|M><YY>-QP-<V>` (e.g.
+`0620-S23-QP-12`). Every other charter rule (§4, §9-§10, §18, §24) applies unchanged per board;
+per-board manifests carry `exam_board.id: cambridge-international`.
