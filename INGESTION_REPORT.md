@@ -20,7 +20,7 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,851** (1,389 qp · 1,444 ms · 18 insert) across **1,531** paper dirs
+- PDFs + inserts placed: **2,852** (1,389 qp · 1,445 ms · 18 insert) across **1,531** paper dirs
   — **1,489 regular** (batch 1: 1,319 · batch 2: 170, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
 - Manifests: **1,531** · manifest material entries: **2,852** (every placed PDF/insert listed with
