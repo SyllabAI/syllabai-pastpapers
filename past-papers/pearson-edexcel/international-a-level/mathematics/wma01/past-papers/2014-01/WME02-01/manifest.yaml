@@ -34,15 +34,17 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: fcb29ee12578d03341fca3473bcfe223e291bd175a1543e0b1e27295ade79ec8
-  size_bytes: 128524
-  original_filename: January 2014 (IAL) QP.pdf
+  sha256: e7beed33646098471bd78a9951b6e125d4009d05e58e47e179ca2d3ef0159ad7
+  size_bytes: 127086
+  original_filename: January 2014 QP_2_2.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: restored 2026-09-12 from _quarantine/duplicate-artifact/IAL__Edexcel__Pure Maths__M2__January
+      2014 QP_2_2.pdf by audit repair; identity print-verified from PDF (WME02/01, Mechanics M2, January
+      2014)
 identification:
   methods:
   - pdf_text
@@ -54,8 +56,19 @@ identification:
   session_printed: January 2014; January 2014
   notes:
   - inherited WME02/01 from same-series complementary partner
+  - '2026-09-12 audit repair (F1): the qp.pdf slot held the Core Mathematics C1 paper (prints 6663A/01;
+    byte-identical to gce-a-level/mathematics/mathematics-modular/2014-01/6663-01/qp.pdf) - partner-inference
+    filename collision ("January 2014 (IAL) QP.pdf" vs "January 2014 QP_2_2.pdf")'
+  - '2026-09-12 audit repair (F1): true WME02/01 question paper restored from _quarantine/duplicate-artifact
+    and print-verified (WME02/01, Mechanics M2, January 2014)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED (operator ratification pending)
+  repair:
+    date: '2026-09-12'
+    by: SyllabAI audit (session 43)
+    scope: qp.pdf replaced via quarantine-restore, print-verified before placement
+    wrong_bytes_sha256: fcb29ee12578d03341fca3473bcfe223e291bd175a1543e0b1e27295ade79ec8
+    note: wrong bytes remain in the corpus at their correct identity slot gce-a-level/mathematics/mathematics-modular/2014-01/6663-01/qp.pdf
