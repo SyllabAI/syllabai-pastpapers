@@ -1,0 +1,54 @@
+paper_id: cambridge-international:ial:chemistry:9701:2022-06:9701/35
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2022-06
+  year: '2022'
+  session_month: '06'
+  printed: May/June 2022
+  source: pdf+filename
+paper:
+  official_reference: 9701/35
+  unit_code: '9701'
+  paper_number: '3'
+  paper_number_variant: '35'
+variant: '5'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 4b29b9e943b2ceb56e846f5c007b3eec1fcf278a3ab49963f4037e7dc2b72677
+  size_bytes: 552231
+  original_filename: June 2022 (v5) QP.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-3/QP/June%202022%20(v5)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7786d1b0a053d4bf5cb78ddf2b42d0ce1fe72ff3abe14633bf42a500471a0456
+  size_bytes: 173968
+  original_filename: June 2022 (v5) MS.pdf
+  pages: 10
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-3/MS/June%202022%20(v5)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/35
+  stray_prints: []
