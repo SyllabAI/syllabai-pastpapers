@@ -1,0 +1,54 @@
+paper_id: cambridge-international:ial:mathematics:9709:2024-03:9709/22
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: mathematics
+specification:
+  folder: '9709'
+  title: Cambridge International AS & A Level Mathematics (9709)
+series:
+  normalized: 2024-03
+  year: '2024'
+  session_month: '03'
+  printed: February/March 2024
+  source: pdf+filename
+paper:
+  official_reference: 9709/22
+  unit_code: '9709'
+  paper_number: '2'
+  paper_number_variant: '22'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: e4b3ef8b12e46b5799ae765f05f9dff75d30eea751e563a8edec8983f5c9a4c0
+  size_bytes: 627806
+  original_filename: March 2024 (v2) QP.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/CIE/CAIE/Pure-2/QP/March%202024%20(v2)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9dab1d3690800e59042f03dbfcb6ed336ac70e1a7b9ba4a02dd92ff03a3b9e25
+  size_bytes: 288686
+  original_filename: March 2024 (v2) MS.pdf
+  pages: 11
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/CIE/CAIE/Pure-2/MS/March%202024%20(v2)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9709/22
+  stray_prints: []
