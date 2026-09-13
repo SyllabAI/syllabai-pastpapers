@@ -180,7 +180,9 @@ def main():
     notes_by_dir = {}
 
     for idx, r in enumerate(rows):
-        if r["status"] != "fetched":
+        # "stuck:mixed-suffix" rows retry: the stall may be fixed upstream
+        # (ledger suffix corrected / sibling re-listed) since the last run
+        if r["status"] not in ("fetched", "stuck:mixed-suffix"):
             stats["skip"] += 1
             continue
         row_id = (f"{r['spec_slug']}--{r['series']}--{r['paper_ref']}"
@@ -346,11 +348,33 @@ def main():
     groups = {}
     for key, v in verified.items():
         groups.setdefault(key[:3], {})[key[3]] = v
+    # refs each material resolved to, per (slug, series): lets the INCOMPLETE
+    # branch tell a true half-pair (material never fetched) from a MIXED-SUFFIX
+    # stall — qp and ms that resolved different paper refs can never meet in
+    # one group; those rows used to sit parked at "fetched" forever with no
+    # placement, no quarantine and no visibility (20 such rows shipped)
+    mat_refs = {}
+    for (slug, series, ref), mats in groups.items():
+        for mat in mats:
+            mat_refs.setdefault((slug, series), {}).setdefault(mat, set()).add(ref)
     for (slug, series, ref), mats in sorted(groups.items()):
         if not all(m in mats for m in ("qp", "ms")):
-            print(f"{slug}/{series}/{ref}: INCOMPLETE PAIR "
-                  f"({sorted(mats)}) — not placed; rows stay verified")
-            stats["verified-single"] += len(mats)
+            missing = [m for m in ("qp", "ms") if m not in mats]
+            mixed = {m: sorted(mat_refs.get((slug, series), {}).get(m, ()))
+                     for m in missing
+                     if any(r2 != ref
+                            for r2 in mat_refs.get((slug, series), {}).get(m, ()))}
+            if mixed:
+                print(f"{slug}/{series}/{ref}: MIXED-SUFFIX STALL — missing "
+                      f"{sorted(mixed)} exist under different refs {mixed}; "
+                      f"rows marked stuck:mixed-suffix (operator decision needed)")
+                for v in mats.values():
+                    rows[v["row_idx"]]["status"] = "stuck:mixed-suffix"
+                stats["stuck-mixed-suffix"] += len(mats)
+            else:
+                print(f"{slug}/{series}/{ref}: INCOMPLETE PAIR "
+                      f"({sorted(mats)}) — not placed; rows stay verified")
+                stats["verified-single"] += len(mats)
             continue
         code, suffix = ref.split("-", 1)
         identity = mats["qp" if "qp" in mats else "ms"]["identity"]
@@ -387,6 +411,9 @@ def main():
         print(f"PLACED {slug}/{series}/{ref} "
               f"({os.path.getsize(os.path.join(tdir, 'qp.pdf'))} + "
               f"{os.path.getsize(os.path.join(tdir, 'ms.pdf'))} bytes)")
+        # crash-window fix: persist placements as they happen instead of only
+        # at the end of the run (a crash used to lose the whole run's state)
+        save_rows(led_path, rows)
 
     save_rows(led_path, rows)
     print(f"verify+normalize done: {stats}")

@@ -42,11 +42,47 @@ def sha256_file(path):
     return h.hexdigest()
 
 
+def _count_corpus_pdfs(repo):
+    n = 0
+    for base in ("past-papers", "_quarantine"):
+        for root, _dirs, files in os.walk(os.path.join(repo, base)):
+            n += sum(1 for fn in files
+                     if fn in ("qp.pdf", "ms.pdf", "er.pdf")
+                     or fn.lower().endswith(".pdf"))
+    return n
+
+
+def _git_head(repo):
+    try:
+        import subprocess
+        return subprocess.run(["git", "-C", repo, "rev-parse", "HEAD"],
+                              capture_output=True, text=True,
+                              check=True).stdout.strip()
+    except Exception:  # noqa: BLE001 — not a git checkout
+        return "nogit"
+
+
 def corpus_sha_map(repo):
+    """sha256 -> repo-relative path over the full corpus (s.19 dedup).
+
+    The cache is only reused when the corpus it described is provably the
+    same one: same git HEAD and same PDF count. A blindly reused stale map
+    silently disabled full-corpus byte-dedup on resumed runs (the exact
+    F10/s.19 failure class) whenever papers had landed since it was built.
+    Counting PDFs is cheap; hashing 4,300 of them is not."""
     cache = os.path.join(repo, "_staging", "corpus_shas.json")
+    pdf_count = _count_corpus_pdfs(repo)
+    head = _git_head(repo)
     if os.path.exists(cache):
-        with open(cache) as f:
-            return json.load(f)
+        try:
+            with open(cache) as f:
+                cached = json.load(f)
+            if (isinstance(cached, dict) and "shas" in cached
+                    and cached.get("head") == head
+                    and cached.get("pdf_count") == pdf_count):
+                return cached["shas"]
+        except (json.JSONDecodeError, OSError):
+            pass  # unreadable cache — rebuild below
     out = {}
     for root, _dirs, files in os.walk(os.path.join(repo, "past-papers")):
         for fn in files:
@@ -60,7 +96,7 @@ def corpus_sha_map(repo):
                 out[sha256_file(p)] = os.path.relpath(p, repo)
     os.makedirs(os.path.dirname(cache), exist_ok=True)
     with open(cache, "w") as f:
-        json.dump(out, f)
+        json.dump({"head": head, "pdf_count": pdf_count, "shas": out}, f)
     return out
 
 
@@ -84,7 +120,19 @@ def fetch(url, dest, timeout=30, retries=3):
         except urllib.error.HTTPError as e:
             last = f"http {e.code}"
             if e.code == 429:
-                wait = int(e.headers.get("Retry-After", "30") or 30)
+                ra = e.headers.get("Retry-After", "30")
+                try:
+                    wait = int(ra or 30)
+                except ValueError:
+                    # HTTP-date form ("Wed, 21 Oct 2026 07:28:00 GMT") — int()
+                    # raised and used to abort the whole run; convert instead
+                    try:
+                        from email.utils import parsedate_to_datetime
+                        delta = (parsedate_to_datetime(ra).timestamp()
+                                 - time.time())
+                        wait = max(1, int(delta))
+                    except Exception:  # noqa: BLE001 — unparseable, be polite
+                        wait = 30
                 time.sleep(min(wait, 120))
                 continue
             if e.code in (403, 404):

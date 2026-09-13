@@ -38,6 +38,10 @@ def cmd_dup_csv(args):
     repo = args.repo
     led = os.path.join(repo, "docs", "ledger", args.ledger)
     rows = load_rows(led)
+    # fixed field order: out_rows[0] raised IndexError on a ledger with zero
+    # duplicates (header-only evidence trail is a valid outcome)
+    dup_fields = ["row_id", "source_file_url", "source_page_url", "sha256",
+                  "duplicate_of", "fetched_at", "note"]
     out_rows = []
     for r in rows:
         if r["status"] != "na:duplicate-of-corpus":
@@ -61,7 +65,7 @@ def cmd_dup_csv(args):
     out_path = os.path.join(repo, "docs", "ledger",
                             args.ledger.replace(".csv", "") + "-duplicates.csv")
     with open(out_path, "w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(out_rows[0].keys()))
+        w = csv.DictWriter(f, fieldnames=dup_fields)
         w.writeheader()
         for r in out_rows:
             w.writerow(r)
@@ -78,8 +82,14 @@ def cmd_matrix(args):
             continue
         key = (r["series"], r["paper_ref"])
         st = r["status"]
-        if st in ("corpus", "committed", "normalized", "verified", "fetched"):
+        if st in ("corpus", "committed", "normalized", "verified"):
             val = "present" if st != "committed" else "committed"
+        elif st == "fetched":
+            # staging bytes, not repo evidence — "present" overstated coverage
+            # (7 stuck-fetched rows shipped as "present" in the matrix)
+            val = "staged"
+        elif st == "stuck:mixed-suffix":
+            val = "staged"
         elif st == "planned":
             val = "missing"
         elif st.startswith("na:duplicate"):

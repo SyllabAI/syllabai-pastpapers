@@ -222,13 +222,14 @@ def corpus_keys(repo):
 
 
 def load_existing(path):
-    """Ledger rows already progressed keep their status (rerun-safe)."""
+    """Ledger rows already progressed keep their status (rerun-safe).
+    Returns url -> full row dict so delisted rows can be carried through."""
     if not os.path.exists(path):
         return {}
     out = {}
     with open(path) as f:
         for r in csv.DictReader(f):
-            out[r["source_file_url"]] = r["status"]
+            out[r["source_file_url"]] = r
     return out
 
 
@@ -325,8 +326,17 @@ def main():
             if key in ck:
                 r["status"] = "corpus"
             if r["source_file_url"] in prev:
-                r["status"] = prev[r["source_file_url"]]
+                r["status"] = prev[r["source_file_url"]]["status"]
             out_rows.append(r)
+        # rows PMT delisted: carry them through verbatim instead of silently
+        # dropping them — a vanished listing must not erase the row's
+        # progression history (placed artifacts still exist in the corpus)
+        carried = 0
+        carried_urls = {r.get("source_file_url", "") for r in out_rows}
+        for url, prow in prev.items():
+            if url not in carried_urls:
+                out_rows.append(prow)
+                carried += 1
         out_rows.sort(key=lambda r: (r.get("series", ""), r.get("paper_ref", ""),
                                      r.get("material_type", "")))
         with open(path, "w", newline="") as f:
@@ -337,7 +347,8 @@ def main():
         n = {}
         for r in out_rows:
             n[r["status"]] = n.get(r["status"], 0) + 1
-        print(f"{ledgers[b]}: {len(out_rows)} rows -> {n}")
+        print(f"{ledgers[b]}: {len(out_rows)} rows -> {n} "
+              f"(+{carried} delisted rows carried)")
 
     with open(os.path.join(ldir, "pmt-link-inventory.json"), "w") as f:
         json.dump({"note": "PMT link inventory captured 2026-09-11 via z-ai page_reader "
