@@ -36,6 +36,20 @@ materials:
       ial papers and mark schemes)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
       + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c1de3164f74cc29977f6b7636e1a02adff0c3e76d6c2a50a6f3e166a170e648e
+  size_bytes: 195186
+  original_filename: 0580_w23_ms_23.pdf
+  pages: 6
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers CAIE archive
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Mathematics%20(0580)/0580_w23_ms_23.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 3; operator direction - proceed with wave
+      3)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session checks applied before acceptance
 identification:
   methods:
   - pdf_text
@@ -51,6 +65,7 @@ identification:
   - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
     in printed_references_seen/session evidence above.
   - incomplete pair at ingestion time (ms not present on source); tracked in docs/ledger/cie-gap-sweep.csv.
+  - 'partial dir completed 2026-09-13 (Cambridge wave 3) - ms placed from the XtremePapers CAIE archive (print-verified); gap row resolved.'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-13'

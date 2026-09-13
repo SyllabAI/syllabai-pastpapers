@@ -35,6 +35,20 @@ materials:
     collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
       + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: abd04857e2895054261d8e5ac7f0ea163e8f5b970f820872f31b2cee63f07904
+  size_bytes: 243761
+  original_filename: 9709_m19_ms_42.pdf
+  pages: 13
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers CAIE archive
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Mathematics%20(9709)/9709_m19_ms_42.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 3; operator direction - proceed with wave
+      3)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session checks applied before acceptance
 identification:
   methods:
   - pdf_text
@@ -45,7 +59,7 @@ identification:
   session_printed: February/March 2019
   notes:
   - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
-  - partial dir: ms not hosted by the source for this component; gap row recorded in docs/ledger/cie-gap-sweep.csv.
+  - 'partial dir completed 2026-09-13 (Cambridge wave 3) - ms placed from the XtremePapers CAIE archive (print-verified); gap row in docs/ledger/cie-gap-sweep.csv resolved.'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-13'
