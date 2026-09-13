@@ -1,0 +1,54 @@
+paper_id: cambridge-international:ial:chemistry:9701:2024-03:9701/33
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2024-03
+  year: '2024'
+  session_month: '03'
+  printed: February/March 2024
+  source: pdf+filename
+paper:
+  official_reference: 9701/33
+  unit_code: '9701'
+  paper_number: '3'
+  paper_number_variant: '33'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: edf1271e9ec92c9f98154517b408fa7f6ba9f823117e396bf20198d977215453
+  size_bytes: 625620
+  original_filename: March 2024 (v3) QP.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-3/QP/March%202024%20(v3)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c3d8a2438da6a3fca86a6c63def4c828d657ee3e148f36c62219ee80c57d0fc0
+  size_bytes: 238555
+  original_filename: March 2024 (v3) MS.pdf
+  pages: 11
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-3/MS/March%202024%20(v3)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/33
+  stray_prints: []

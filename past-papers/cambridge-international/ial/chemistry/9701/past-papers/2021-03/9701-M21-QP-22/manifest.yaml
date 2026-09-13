@@ -1,0 +1,54 @@
+paper_id: cambridge-international:ial:chemistry:9701:2021-03:9701/22
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2021-03
+  year: '2021'
+  session_month: '03'
+  printed: February/March 2021
+  source: pdf+filename
+paper:
+  official_reference: 9701/22
+  unit_code: '9701'
+  paper_number: '2'
+  paper_number_variant: '22'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 708a6af2cbdc87a98bf3e4c0ad9dcbea4ebcbb6af3145e38a0212531303a41ae
+  size_bytes: 516499
+  original_filename: March 2021 (v2) QP.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-2/QP/March%202021%20(v2)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 429df3c0a1167c2509610568cf8ac5ff03efaef27db277da7fe6fc4447e7d06a
+  size_bytes: 182782
+  original_filename: March 2021 (v2) MS.pdf
+  pages: 9
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-2/MS/March%202021%20(v2)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/22
+  stray_prints: []

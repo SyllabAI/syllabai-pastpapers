@@ -1,0 +1,56 @@
+paper_id: cambridge-international:ial:physics:9702:2021-03:9702/22
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: physics
+specification:
+  folder: '9702'
+  title: Cambridge International AS & A Level Physics (9702)
+series:
+  normalized: 2021-03
+  year: '2021'
+  session_month: '03'
+  printed: February/March 2021
+  source: pdf+filename
+paper:
+  official_reference: 9702/22
+  unit_code: '9702'
+  paper_number: '2'
+  paper_number_variant: '22'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: e7ef5da68f7483e37ed531d22d3b0f5b3db4c21f4ba6508d4a6a719a07e346ef
+  size_bytes: 904613
+  original_filename: March 2021 (v2) QP.pdf
+  pages: 20
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/QP/March%202021%20(v2)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1ef7ebd68b83705ed074a7a40d005b57762faada9ff48a640664fd702520edeb
+  size_bytes: 145101
+  original_filename: March 2021 (v2) MS.pdf
+  pages: 13
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-2/MS/March%202021%20(v2)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+      MS cover prints 9702/COMP (CIE combined-component convention, March 2021); session March 2021 + Paper 2 printed; sole MS for the sitting on the source page
+identification:
+  methods: ['pdf_text', 'partner_inference']
+  confidence_rank: 2
+  printed_references_seen:
+  - 9702/22
+  - 9702/COMP
+  stray_prints: []
