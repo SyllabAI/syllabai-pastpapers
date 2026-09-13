@@ -1,0 +1,69 @@
+paper_id: cambridge-international:igcse:physics:0625:2022-03:0625/22
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: physics
+specification:
+  folder: '0625'
+  title: Cambridge IGCSE Physics (0625)
+series:
+  normalized: 2022-03
+  year: '2022'
+  session_month: '03'
+  printed: February/March 2022
+  source: pdf+filename
+paper:
+  official_reference: 0625/22
+  unit_code: '0625'
+  paper_number: '2'
+  paper_number_variant: '22'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 3cb3ed50b6d397287a7aa451f320ebbcc62f48a53d0bd8ebc307c21b8d007915
+  size_bytes: 250881
+  original_filename: 0625_m22_qp_22.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers CAIE archive
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Physics%20(0625)/0625_m22_qp_22.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 3; operator direction - proceed with wave
+      3)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 788506ce163b4c69565117c39651913f7100dd474e8f1074651ee88445197559
+  size_bytes: 120549
+  original_filename: 0625_m22_ms_22.pdf
+  pages: 3
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers CAIE archive
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Physics%20(0625)/0625_m22_ms_22.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 3; operator direction - proceed with wave
+      3)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0625/22
+  stray_prints: []
+  session_printed: February/March 2022
+  notes:
+  - '2026-09-13 Cambridge wave 3: remaining ledger gaps + 0580 paper-3 sweep for 2021-2024 per the wave-2
+    report; files fetched from the XtremePapers CAIE archive; every material print-checked for syllabus
+    code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: XtremePapers (CAIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
