@@ -32,6 +32,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 0aac8d239d1500d3e6cef657287b48c6f2c414e91a7fad17326a688a1bc176a9
+  size_bytes: 233041
+  original_filename: IGCSE_CHEMISTRY_2020_Jan_P2R_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/Jan%202020/IGCSE_CHEMISTRY_2020_Jan_P2R_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -40,7 +51,8 @@ identification:
   - 4CH1
   stray_prints: []
   session_printed: January 2020; January 2020
-  notes: []
+  notes:
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

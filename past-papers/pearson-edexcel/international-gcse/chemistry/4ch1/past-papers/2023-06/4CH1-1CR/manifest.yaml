@@ -39,13 +39,21 @@ materials:
   original_filename: 4ch1-1cr-que-20230523.pdf
   source:
     source_type: third-party-archive
-    archive: Pearson qualifications portal (qualifications.pearson.com content-dam),
-      discovered via the SaveMyExams past-paper index
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam), discovered via the SaveMyExams past-paper index
     source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1cr-que-20230523.pdf
-    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
-      probe further sources, files are on paperlords or savemyexams; fetched from the
-      SaveMyExams structured past-paper index, print-verified before acceptance)
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction - probe further sources, files are on paperlords or savemyexams; fetched from the SaveMyExams structured past-paper index, print-verified before acceptance)
     note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: examiner-report
+  path: er.pdf
+  sha256: baae7bddf027696eb7709b5ff69bee965b77771cec5a9b5a5c965e48aa0ce8b1
+  size_bytes: 5002745
+  original_filename: IGCSE_CHEMISTRY_2023_May_P1R_PEF_1777794099054.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/May 2023/IGCSE_CHEMISTRY_2023_May_P1R_PEF_1777794099054.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -58,6 +66,7 @@ identification:
   session_printed: June 2023
   notes:
   - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: coded-date (coded 20230523); sha256 0766bcd0d5a790a1...'
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

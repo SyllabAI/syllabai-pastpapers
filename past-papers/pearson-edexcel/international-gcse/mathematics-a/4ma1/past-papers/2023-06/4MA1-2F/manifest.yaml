@@ -46,6 +46,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: c384d128de5ab2362288f373dcb735dbb474ac5803493b8ee285d39f7ab0b90c
+  size_bytes: 202607
+  original_filename: IGCSE_MATHEMATICS_A_2023_MayJune_Foundation_P2_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Mathematics%20A/MayJune%202023/IGCSE_MATHEMATICS_A_2023_MayJune_Foundation_P2_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -55,7 +66,8 @@ identification:
   - 4MA1/2F
   stray_prints: []
   session_printed: June 2023
-  notes: []
+  notes:
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

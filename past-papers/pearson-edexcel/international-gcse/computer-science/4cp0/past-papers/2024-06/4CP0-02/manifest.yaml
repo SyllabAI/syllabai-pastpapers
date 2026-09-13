@@ -43,6 +43,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: a2085622020f1dea65f37fb7fda5601a4e581e90ff91a805307babab71cafd82
+  size_bytes: 239452
+  original_filename: P2_ER_1777445822475.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Computer Science/MayJune 2024/P2_ER_1777445822475.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -54,6 +65,7 @@ identification:
   session_printed: June 2024
   notes:
   - date rule -> 4CP0/02
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

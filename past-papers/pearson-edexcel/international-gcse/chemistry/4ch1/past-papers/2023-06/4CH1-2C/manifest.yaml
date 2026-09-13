@@ -46,6 +46,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: e945edc16db7d003f856ec3913803c1cde108ba2e2c2f185281dd7995bab01d3
+  size_bytes: 4168230
+  original_filename: IGCSE_CHEMISTRY_2023_May_P2_PEF_1777794102121.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/May 2023/IGCSE_CHEMISTRY_2023_May_P2_PEF_1777794102121.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -55,7 +66,8 @@ identification:
   - 4CH1/2C
   stray_prints: []
   session_printed: June 2023
-  notes: []
+  notes:
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

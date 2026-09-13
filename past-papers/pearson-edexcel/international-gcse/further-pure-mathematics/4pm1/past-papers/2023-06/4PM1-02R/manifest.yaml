@@ -46,6 +46,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: 9a98c55d6af58e4347a76262631cb4d949b8e7b1da96cecb0da217892270ddc8
+  size_bytes: 358780
+  original_filename: IGCSE_FURTHER_PURE_MATHEMATICS_2023_MayJune_P2R_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Further%20Pure%20Maths/MayJune%202023/IGCSE_FURTHER_PURE_MATHEMATICS_2023_MayJune_P2R_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -55,7 +66,8 @@ identification:
   - 4PM1/02R
   stray_prints: []
   session_printed: June 2023
-  notes: []
+  notes:
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

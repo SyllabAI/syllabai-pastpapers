@@ -1,0 +1,46 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2021-06:4CP0/012
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: (not printed on cover; session from source catalog "MayJune 2021")
+  source: catalog_fallback
+paper:
+  official_reference: 4CP0/012
+  unit_code: 4CP0
+  paper_number_variant: '012'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: e427161734a81eb930bb6837af778b77b7f1fe39cf3e89bf5b71f3f082393095
+  size_bytes: 1429196
+  original_filename: P1_QP_1777451006880.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Computer Science/MayJune 2021/P1_QP_1777451006880.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session MayJune 2021'
+identification:
+  methods:
+  - partner_inference
+  confidence_rank: 3
+  printed_references_seen:
+  - 4CP0/012
+  stray_prints: []
+  session_printed: (not printed on cover; session from source catalog "MayJune 2021")
+  notes: no printed session; catalog session MayJune 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
