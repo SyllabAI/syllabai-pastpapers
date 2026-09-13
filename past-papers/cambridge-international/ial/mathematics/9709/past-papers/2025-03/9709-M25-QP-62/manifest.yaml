@@ -1,0 +1,54 @@
+paper_id: cambridge-international:ial:mathematics:9709:2025-03:9709/62
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: mathematics
+specification:
+  folder: '9709'
+  title: Cambridge International AS & A Level Mathematics (9709)
+series:
+  normalized: 2025-03
+  year: '2025'
+  session_month: '03'
+  printed: February/March 2025
+  source: pdf+filename
+paper:
+  official_reference: 9709/62
+  unit_code: '9709'
+  paper_number: '6'
+  paper_number_variant: '62'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 775ea308a77bc7167e60a89f1ac40aeabb4a9060e4fde6b541d5e9445336bb22
+  size_bytes: 107565
+  original_filename: March 2025 (v2) QP.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/CIE/CAIE/Statistics-2/QP/March%202025%20(v2)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: dac199e8c0ad7da9e55c7986f745ccb759943222f7753268ec86a02ed8f9bd4a
+  size_bytes: 374146
+  original_filename: March 2025 (v2) MS.pdf
+  pages: 15
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/CIE/CAIE/Statistics-2/MS/March%202025%20(v2)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9709/62
+  stray_prints: []
