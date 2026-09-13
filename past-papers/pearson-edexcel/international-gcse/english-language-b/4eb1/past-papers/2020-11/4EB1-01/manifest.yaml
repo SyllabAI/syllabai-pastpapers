@@ -13,7 +13,7 @@ series:
   normalized: 2020-11
   year: '2020'
   session_month: '11'
-  printed: November 2020; June 2020
+  printed: June 2020
   source: pdf+filename
 paper:
   official_reference: 4EB1/01
@@ -21,17 +21,6 @@ paper:
   paper_number_variant: '01'
 variant: null
 materials:
-- type: mark-scheme
-  path: ms.pdf
-  sha256: 6109caf677130fa8aada3c0a30ed86089bc531b6fd2f0c1a788b47b223edd1b3
-  size_bytes: 201431
-  original_filename: June 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
   sha256: bc02e442e1a664d17618a6ef1554be22ee5cda1414ade453350f4bbab048a029
@@ -53,9 +42,10 @@ identification:
   printed_references_seen:
   - 4EB1
   stray_prints: []
-  session_printed: November 2020; June 2020
+  session_printed: June 2020
   notes:
   - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: coded-date (coded 20201103); sha256 bc02e442e1a664d1...'
+  - "2026-09-13 wave 7 - F15: the mark scheme held here printed \"Paper 1R\" (November-2020 1R scheme) beside the 4EB1/01 QP (P63884A) - an F14-class misfile from the pre-audit PMT migration; bytes re-homed to 2020-11/4EB1-01R/ms.pdf; the true November-2020 Paper-01 scheme (prints \"Mark Scheme (Results) November 2020 - Paper 1\", pairing proven by P-code P63884A identity with this QP) is placed at 2020-06/4EB1-01/ms.pdf; a byte-distinct copy for this dir is not available from probed sources - operator ruling requested"
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
