@@ -1,0 +1,54 @@
+paper_id: cambridge-international:igcse:physics:0625:2021-06:0625/63
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: physics
+specification:
+  folder: '0625'
+  title: Cambridge IGCSE Physics (0625)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: May/June 2021
+  source: pdf+filename
+paper:
+  official_reference: 0625/63
+  unit_code: '0625'
+  paper_number: '6'
+  paper_number_variant: '63'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 6e2c5b7cdc45b649832b36fb644239415c5ea70f6dfc7400a65149a5d0a7b571
+  size_bytes: 2042003
+  original_filename: June 2021 (v3) QP.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/CIE/Paper-6/International/QP/June%202021%20(v3)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1c0485d8bcee768ee7d7f42e5637db99faa8d11f0fdda3915f08b67e3f7b09cf
+  size_bytes: 132677
+  original_filename: June 2021 (v3) MS.pdf
+  pages: 8
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/CIE/Paper-6/International/MS/June%202021%20(v3)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 0625/63
+  stray_prints: []

@@ -1,0 +1,54 @@
+paper_id: cambridge-international:igcse:chemistry:0620:2024-11:0620/53
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: chemistry
+specification:
+  folder: '0620'
+  title: Cambridge IGCSE Chemistry (0620)
+series:
+  normalized: 2024-11
+  year: '2024'
+  session_month: '11'
+  printed: October/November 2024
+  source: pdf+filename
+paper:
+  official_reference: 0620/53
+  unit_code: '0620'
+  paper_number: '5'
+  paper_number_variant: '53'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 6ea3fd20288cc2fff90e6849b9a68219fbef7cf68fd2fd4a47fb8cbc38f410d6
+  size_bytes: 93257
+  original_filename: November 2024 (v3) QP.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/CIE/Paper-5/International/QP/November%202024%20(v3)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: dbfb0b96dcf9d74d436108d2bbeb9a0e156261d932968656a1717d54f8069311
+  size_bytes: 193617
+  original_filename: November 2024 (v3) MS.pdf
+  pages: 7
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/CIE/Paper-5/International/MS/November%202024%20(v3)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 0620/53
+  stray_prints: []
