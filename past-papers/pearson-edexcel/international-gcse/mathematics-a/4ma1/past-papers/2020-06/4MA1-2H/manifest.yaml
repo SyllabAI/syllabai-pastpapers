@@ -13,7 +13,7 @@ series:
   normalized: 2020-06
   year: '2020'
   session_month: '06'
-  printed: June 2020; June 2020
+  printed: June 2020; June 2020; November 2020
   source: pdf+filename
 paper:
   official_reference: 4MA1/2H
@@ -35,15 +35,28 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f49c35fb8a1d6e893dd3ae5ab6bf45ace28e9b55980f5f3424ec605f5f2b998d
+  size_bytes: 472611
+  original_filename: "IGCSE_MATHEMATICS_A_2020_MayJune_Higher_P2_MS.pdf"
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: "https://archive.paperlords.org/library/IGCSE/Mathematics%20A/MayJune%202020/IGCSE_MATHEMATICS_A_2020_MayJune_Higher_P2_MS.pdf"
+    collected_by: "SyllabAI agent (2026-09-13 wave 7; operator direction - run the paperlords headless probe)"
+    note: "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4MA1/2H scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P62657A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
+
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  - partner_inference
+  confidence_rank: 2
   printed_references_seen:
   - 4MA1/2H
   stray_prints: []
-  session_printed: June 2020; June 2020
-  notes: []
+  session_printed: June 2020; June 2020; November 2020
+  notes: "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4MA1/2H scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P62657A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

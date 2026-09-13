@@ -13,7 +13,7 @@ series:
   normalized: 2020-06
   year: '2020'
   session_month: '06'
-  printed: June 2020; June 2020
+  printed: June 2020; June 2020; November 2020
   source: pdf+filename
 paper:
   official_reference: 4PM1/01
@@ -32,16 +32,29 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: be3787042bf537e64706112bad946c54c5ecdced83dc32aa305a804556196f0a
+  size_bytes: 881086
+  original_filename: "IGCSE_FURTHER_PURE_MATHEMATICS_2020_MayJune_P1_MS.pdf"
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: "https://archive.paperlords.org/library/IGCSE/Further%20Pure%20Maths/MayJune%202020/IGCSE_FURTHER_PURE_MATHEMATICS_2020_MayJune_P1_MS.pdf"
+    collected_by: "SyllabAI agent (2026-09-13 wave 7; operator direction - run the paperlords headless probe)"
+    note: "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4PM1/01 scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P62280A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
+
 identification:
   methods:
   - date_rule
   confidence_rank: 5
   printed_references_seen: []
   stray_prints: []
-  session_printed: June 2020; June 2020
+  session_printed: June 2020; June 2020; November 2020
   notes:
   - date rule -> 4PM1/01
   - '2026-09-12 audit spot-check (F3): session print confirmed from PDF text (June 2020); paper reference not present in extractable text - ref identity still date_rule-derived, queued for operator ratification'
+  - "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4PM1/01 scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P62280A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

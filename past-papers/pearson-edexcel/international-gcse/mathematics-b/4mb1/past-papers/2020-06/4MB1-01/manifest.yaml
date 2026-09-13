@@ -13,7 +13,7 @@ series:
   normalized: 2020-06
   year: '2020'
   session_month: '06'
-  printed: May 2020; June 2020
+  printed: May 2020; June 2020; November 2020
   source: pdf+filename
 paper:
   official_reference: 4MB1/01
@@ -32,18 +32,31 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c5ff9b679af5c84e3c95e7bcb0db81891b4df3b9e723d0771c53d665e24565a4
+  size_bytes: 978701
+  original_filename: "IGCSE_MATHEMATICS_B_2020_MayJune_P1_MS.pdf"
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: "https://archive.paperlords.org/library/IGCSE/Mathematics%20B/MayJune%202020/IGCSE_MATHEMATICS_B_2020_MayJune_P1_MS.pdf"
+    collected_by: "SyllabAI agent (2026-09-13 wave 7; operator direction - run the paperlords headless probe)"
+    note: "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4MB1/01 scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P61906A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
+
 identification:
   methods:
   - date_rule
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
   - 4MB1/01
   stray_prints: []
-  session_printed: May 2020; June 2020
+  session_printed: May 2020; June 2020; November 2020
   notes:
   - date rule -> 4MB1/01
   - '2026-09-12 audit spot-check (F3): identity print-verified from PDF text (4MB1/01, June 2020)'
+  - "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4MB1/01 scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P61906A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
