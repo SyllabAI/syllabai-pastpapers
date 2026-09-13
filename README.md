@@ -6,7 +6,7 @@ This repository stores official or explicitly approved examination materials use
 
 The repository is deliberately separate from the main SyllabAI application, curriculum/knowledge-graph repositories, and revision-note corpus.
 
-> **Status:** combined corpus (Pearson Edexcel + Cambridge International) 2026-09-13: **4,280 files (2,154 qp · 2,108 ms · 18 insert) across 2,190 paper directories, 314 quarantined** — see `INGESTION_REPORT.md`. All artifacts `AI-IDENTIFIED`, operator ratification pending. Execution: first corpus ingested 2026-09-11 (operator-collected PhysicsAndMathsTutor.com material, IGCSE + IAL scope: 2,708 PDFs examined → 2,512 files across 1,361 directories, 196 quarantined); Gate A opened by operator waiver ("Proceed, I approve", 2026-09-11); P0 closed zero-placement and P1 (IAL Chemistry WCH01–06 + WCH11–16) completed 2026-09-11 — see `docs/coverage/BACKFILL-REPORT.md`; subject-folder audit + repairs 2026-09-12 — see `docs/AUDIT-2026-09-12.md`; file-gap, other-source (XtremePapers) and structural-repair waves 2026-09-12/13; Cambridge International wave 1 (6 syllabi: IGCSE 0620/0625/0580 · IAL 9701/9702/9709, sessions 2021-2024) completed 2026-09-13; board partitions per §33.
+> **Status:** first corpus ingested 2026-09-11 (operator-collected PhysicsAndMathsTutor.com material, IGCSE + IAL scope): 2,708 PDFs examined → 2,512 files across 1,361 paper-variant directories, 196 quarantined — see `INGESTION_REPORT.md`. All artifacts `AI-IDENTIFIED`, operator ratification pending. Execution: Gate A opened by operator waiver ("Proceed, I approve", 2026-09-11); P0 closed zero-placement and P1 (IAL Chemistry WCH01–06 + WCH11–16) completed 2026-09-11 — see `docs/coverage/BACKFILL-REPORT.md`; subject-folder audit + repairs 2026-09-12 — see `docs/AUDIT-2026-09-12.md`; P2–P5 pending per plan §3 priority order.
 
 ---
 
@@ -1061,3 +1061,8 @@ qualification families `igcse` and `ial`, bare syllabus codes as specification d
 (October/November), and paper-reference directories `<CODE>-<S|W|M><YY>-QP-<V>` (e.g.
 `0620-S23-QP-12`). Every other charter rule (§4, §9-§10, §18, §24) applies unchanged per board;
 per-board manifests carry `exam_board.id: cambridge-international`.
+Cambridge wave 2 (2026-09-13) backfilled sessions 2016-2020 for the six syllabi (IGCSE including
+February/March; IAL June + November plus the February/March India AS sessions where hosted) and swept the
+wave-1 gap ledger - including the whole 9709 Oct-Nov 2021 session. Six files pastpapers.co serves empty (or
+does not host) were recovered from the XtremePapers CAIE tree; every material is print-verified to rank 0 and
+the CIE gap ledger (docs/ledger/cie-gap-sweep.csv) is rebuilt from corpus + source state after every wave.

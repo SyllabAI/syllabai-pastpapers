@@ -1,1443 +1,1473 @@
 {
- "run_date": "2026-09-11",
- "agent": "SyllabAI ingestion agent",
- "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
- "totals": {
-  "pdfs_seen": 2708,
-  "files_placed": 2512,
-  "paper_variant_dirs": 1361,
-  "quarantined": 196,
-  "_note": "batch 1 (operator collection) scope; batches below added 2026-09-12",
-  "batch2_pmt_backfill_2026_09_11": {
-   "files_placed": 340,
-   "paper_dirs": 170,
-   "split": {
-    "legacy_wch01_06": {
-     "dirs": 79,
-     "files": 158
+  "run_date": "2026-09-11",
+  "agent": "SyllabAI ingestion agent",
+  "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
+  "totals": {
+    "pdfs_seen": 2708,
+    "files_placed": 2512,
+    "paper_variant_dirs": 1361,
+    "quarantined": 196,
+    "_note": "batch 1 (operator collection) scope; batches below added 2026-09-12",
+    "batch2_pmt_backfill_2026_09_11": {
+      "files_placed": 340,
+      "paper_dirs": 170,
+      "split": {
+        "legacy_wch01_06": {
+          "dirs": 79,
+          "files": 158
+        },
+        "spec2018_wch11_16": {
+          "dirs": 91,
+          "files": 182
+        }
+      },
+      "quarantined": 117
     },
-    "spec2018_wch11_16": {
-     "dirs": 91,
-     "files": 182
+    "corpus_after_audit_repairs_2026_09_12": {
+      "pdfs_and_inserts": 2851,
+      "qp": 1389,
+      "ms": 1444,
+      "insert": 18,
+      "manifests": 1531,
+      "material_entries": 2851,
+      "regular_paper_dirs": 1489,
+      "specimen_refs": 42,
+      "quarantined_pdfs": 314
+    },
+    "corpus_after_gapfill_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "file-gap wave (audit F7, P0+P2+P3+P5-scope of docs/ledger/file-gap-sweep.csv): 82 missing artifacts fetched from the PMT CDN and print-verified (54 exact-code + 2 zero-pad-normalized + 7 dir+filename + 11 image-scan dir+filename); PM listing pages 403 the agent - page discovery via rendered page reader, files via direct CDN. 79 of 161 in-scope rows are not satisfiable from PMT (not-listed / mislabeled / corrupt classes, see ledger statuses na:*) and queue for other sources; GCE/CS/English rows remain planned. Post-commit s.19 dedup audit: 66 of the 82 placements were byte-identical to artifacts already held in sibling dirs (pre-existing misidentification, audit F10) and were reverted; 16 unique-byte files remain placed. TOTALS CORRECTED 2026-09-12 (other-source wave doc-sync): this block's numbers had been written before the s.19 revert (82 placed) and showed 2,933 (1,462 qp / 1,453 ms); post-revert truth is 2,867 (1,405 qp / 1,444 ms / 18 insert) = 2,851 + 16 net placements - now matching the tree.",
+      "pdfs_and_inserts": 2867,
+      "qp": 1405,
+      "ms": 1444,
+      "insert": 18,
+      "material_entries": 2867,
+      "manifests": 1531,
+      "file_gap_wave": {
+        "ledger_rows": 228,
+        "in_scope": 161,
+        "verified": 16,
+        "qp": 16,
+        "ms": 0,
+        "not_found_on_pmt": 79,
+        "out_of_scope_planned": 67,
+        "blocked_by_dedup_F10": 66
+      }
+    },
+    "corpus_after_othersource_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
+      "pdfs_and_inserts": 2919,
+      "qp": 1438,
+      "ms": 1463,
+      "insert": 18,
+      "manifests": 1531,
+      "material_entries": 2919,
+      "regular_paper_dirs": 1489,
+      "specimen_refs": 42,
+      "quarantined_pdfs": 314,
+      "ledger_rows": 228,
+      "ledger_normalized": 68,
+      "ledger_open": 160
+    },
+    "corpus_after_sme_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "wave 3 (operator direction: 'Probe further sources. You will find in paperlords or savemyexams'): SaveMyExams structured past-paper index (682 entries across 11 Edexcel subjects) surfaced cdn.savemyexams.com files AND official qualifications.pearson.com content-dam exam materials (2023+ sessions, R/timezone variants). 57 missing artifacts (55 qp + 2 ms) fetched, print-verified (charter-9 strict month rule; Pearson exam-date coded filenames outrank inconsistent autumn covers; Updated-stamp stamps stripped; COVID-2020 IAL-October June-printed covers accepted with evidence) and guarded by corpus blob-sha1 dedup PLUS a content-window dedup vs same-series siblings (pages 4-6 and 9-11). Closes F9 (4PM1/01 2023-01 ms replaced), cures 38 of the 50 F10 byte-duplicate rows, first CS/English placements. 8 na:sme-content-dup and 6 na:f6-print-conflict evidence rows recorded; 89 rows remain open.",
+      "pdfs_and_inserts": 2975,
+      "qp": 1493,
+      "ms": 1464,
+      "insert": 18,
+      "manifests": 1530,
+      "material_entries": 2975,
+      "regular_paper_dirs": 1488,
+      "specimen_refs": 42,
+      "quarantined_pdfs": 314,
+      "ledger_rows": 228,
+      "ledger_normalized": 125,
+      "ledger_open": 103
+    },
+    "corpus_after_autumn2023_wave_2026_09_12": {
+      "date": "2026-09-12",
+      "note": "wave 4 (operator direction: 'autumn-2023 do online research to confirm. And also, do we have all paper pairs correctly? QP and MS?'): November 2023 confirmed as the first regular International GCSE November series; 22 artifacts (11 qp + 11 ms) placed into 11 new 2023-11 dirs from official qualifications.pearson.com content-dam URLs (SaveMyExams index discovery), print-verified + git-blob dedup + product-code pairing integrity (P734xxA pairs); F6 phantom-gap evidence recorded (4PM1-01 2023-10 == same paper P73584A as 2023-11); 4MA1-1H re-homed 2023-10 -> 2023-11; corpus-wide pairing audit clean (1,397/1,499 complete pairs, 102 ledger-tracked incomplete, 0 mispairs).",
+      "pdfs_seen": 2997,
+      "files_placed": 2997,
+      "paper_variant_dirs": 1541,
+      "paper_dirs_regular": 1499,
+      "specimen_dirs": 42,
+      "materials": {
+        "qp": 1504,
+        "ms": 1475,
+        "insert": 18
+      },
+      "quarantined": 314,
+      "ledger_rows": {
+        "total": 228,
+        "normalized": 126,
+        "open": 89,
+        "na:sme-content-dup": 8,
+        "na:f6-print-conflict": 4,
+        "na:same-paper-2023-11": 1
+      }
+    },
+    "corpus_after_structure_fix_2026_09_13": {
+      "date": "2026-09-13",
+      "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README \u00a732 deviation rulings). Independent recount at f840c61b16.",
+      "files_placed": 2997,
+      "qp": 1504,
+      "ms": 1475,
+      "insert": 18,
+      "paper_variant_dirs": 1540,
+      "paper_dirs_regular": 1498,
+      "specimen_dirs": 42,
+      "complete_qp_ms_pairs": 1398,
+      "incomplete_regular_dirs": 100,
+      "ledger_rows_total": 228
+    },
+    "cambridge_wave_1_2026_09_13": {
+      "date": "2026-09-13",
+      "board": "cambridge-international",
+      "operator_direction": "Now download cambridge igcse and ial papers and mark schemes",
+      "source": "pastpapers.co CIE archive (direct file URLs; HTML listing pages Cloudflare-gated)",
+      "enumeration": "standardized CIE filename convention: 1384 probes -> 1319 candidate hits; 36 soft-404 (HTTP 200 HTML) rejected at download; 2 9701 s23 QPs re-accepted after shifted-cmap cover decode (+0x1D)",
+      "files_placed": 1283,
+      "qp": 650,
+      "ms": 633,
+      "paper_dirs": 650,
+      "complete_pairs": 633,
+      "incomplete_dirs": 17,
+      "specs": {
+        "igcse/chemistry/0620": {
+          "dirs": 121,
+          "files": 242
+        },
+        "igcse/mathematics/0580": {
+          "dirs": 81,
+          "files": 145
+        },
+        "igcse/physics/0625": {
+          "dirs": 122,
+          "files": 244
+        },
+        "ial/chemistry/9701": {
+          "dirs": 92,
+          "files": 184
+        },
+        "ial/mathematics/9709": {
+          "dirs": 126,
+          "files": 252
+        },
+        "ial/physics/9702": {
+          "dirs": 108,
+          "files": 216
+        }
+      },
+      "sessions_scope": "2021-2024 (IGCSE incl. February/March; IAL June + November)",
+      "gaps_ledger": "docs/ledger/cie-gap-sweep.csv (83 planned rows)",
+      "methods_delta": {
+        "pdf_text_entries": 1283,
+        "coded_date_entries": 229
+      }
+    },
+    "corpus_after_cambridge_wave_1_2026_09_13": {
+      "date": "2026-09-13",
+      "files": 4280,
+      "qp": 2154,
+      "ms": 2108,
+      "insert": 18,
+      "paper_dirs": 2190,
+      "boards": {
+        "pearson-edexcel": {
+          "dirs": 1540,
+          "files": 2997
+        },
+        "cambridge-international": {
+          "dirs": 650,
+          "files": 1283
+        }
+      },
+      "manifests": 2190,
+      "specification_yamls": 48,
+      "complete_pairs": {
+        "pearson_edexcel": "1398/1498",
+        "cambridge_international": "633/650"
+      }
     }
-   },
-   "quarantined": 117
   },
-  "corpus_after_audit_repairs_2026_09_12": {
-   "pdfs_and_inserts": 2851,
-   "qp": 1389,
-   "ms": 1444,
-   "insert": 18,
-   "manifests": 1531,
-   "material_entries": 2851,
-   "regular_paper_dirs": 1489,
-   "specimen_refs": 42,
-   "quarantined_pdfs": 314
+  "identification_methods": {
+    "pdf_text": 2982,
+    "coded-date": 60,
+    "sme-listing": 16,
+    "date_rule": 556,
+    "partner_inference": 157,
+    "folder_consensus": 6,
+    "specimen_first_teaching": 5
   },
-  "corpus_after_gapfill_wave_2026_09_12": {
-   "date": "2026-09-12",
-   "note": "file-gap wave (audit F7, P0+P2+P3+P5-scope of docs/ledger/file-gap-sweep.csv): 82 missing artifacts fetched from the PMT CDN and print-verified (54 exact-code + 2 zero-pad-normalized + 7 dir+filename + 11 image-scan dir+filename); PM listing pages 403 the agent - page discovery via rendered page reader, files via direct CDN. 79 of 161 in-scope rows are not satisfiable from PMT (not-listed / mislabeled / corrupt classes, see ledger statuses na:*) and queue for other sources; GCE/CS/English rows remain planned. Post-commit s.19 dedup audit: 66 of the 82 placements were byte-identical to artifacts already held in sibling dirs (pre-existing misidentification, audit F10) and were reverted; 16 unique-byte files remain placed. TOTALS CORRECTED 2026-09-12 (other-source wave doc-sync): this block's numbers had been written before the s.19 revert (82 placed) and showed 2,933 (1,462 qp / 1,453 ms); post-revert truth is 2,867 (1,405 qp / 1,444 ms / 18 insert) = 2,851 + 16 net placements - now matching the tree.",
-   "pdfs_and_inserts": 2867,
-   "qp": 1405,
-   "ms": 1444,
-   "insert": 18,
-   "material_entries": 2867,
-   "manifests": 1531,
-   "file_gap_wave": {
-    "ledger_rows": 228,
-    "in_scope": 161,
-    "verified": 16,
-    "qp": 16,
-    "ms": 0,
-    "not_found_on_pmt": 79,
-    "out_of_scope_planned": 67,
-    "blocked_by_dedup_F10": 66
-   }
+  "quarantine_by_class": {
+    "duplicate-artifact": 141,
+    "corrupt-artifact": 1,
+    "nonstandard-artifact": 35,
+    "unresolved-identity": 58,
+    "out-of-scope-gce": 79
   },
-  "corpus_after_othersource_wave_2026_09_12": {
-   "date": "2026-09-12",
-   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
-   "pdfs_and_inserts": 2919,
-   "qp": 1438,
-   "ms": 1463,
-   "insert": 18,
-   "manifests": 1531,
-   "material_entries": 2919,
-   "regular_paper_dirs": 1489,
-   "specimen_refs": 42,
-   "quarantined_pdfs": 314,
-   "ledger_rows": 228,
-   "ledger_normalized": 68,
-   "ledger_open": 160
-  },
-  "corpus_after_sme_wave_2026_09_12": {
-   "date": "2026-09-12",
-   "note": "wave 3 (operator direction: 'Probe further sources. You will find in paperlords or savemyexams'): SaveMyExams structured past-paper index (682 entries across 11 Edexcel subjects) surfaced cdn.savemyexams.com files AND official qualifications.pearson.com content-dam exam materials (2023+ sessions, R/timezone variants). 57 missing artifacts (55 qp + 2 ms) fetched, print-verified (charter-9 strict month rule; Pearson exam-date coded filenames outrank inconsistent autumn covers; Updated-stamp stamps stripped; COVID-2020 IAL-October June-printed covers accepted with evidence) and guarded by corpus blob-sha1 dedup PLUS a content-window dedup vs same-series siblings (pages 4-6 and 9-11). Closes F9 (4PM1/01 2023-01 ms replaced), cures 38 of the 50 F10 byte-duplicate rows, first CS/English placements. 8 na:sme-content-dup and 6 na:f6-print-conflict evidence rows recorded; 89 rows remain open.",
-   "pdfs_and_inserts": 2975,
-   "qp": 1493,
-   "ms": 1464,
-   "insert": 18,
-   "manifests": 1530,
-   "material_entries": 2975,
-   "regular_paper_dirs": 1488,
-   "specimen_refs": 42,
-   "quarantined_pdfs": 314,
-   "ledger_rows": 228,
-   "ledger_normalized": 125,
-   "ledger_open": 103
-  },
-  "corpus_after_autumn2023_wave_2026_09_12": {
-   "date": "2026-09-12",
-   "note": "wave 4 (operator direction: 'autumn-2023 do online research to confirm. And also, do we have all paper pairs correctly? QP and MS?'): November 2023 confirmed as the first regular International GCSE November series; 22 artifacts (11 qp + 11 ms) placed into 11 new 2023-11 dirs from official qualifications.pearson.com content-dam URLs (SaveMyExams index discovery), print-verified + git-blob dedup + product-code pairing integrity (P734xxA pairs); F6 phantom-gap evidence recorded (4PM1-01 2023-10 == same paper P73584A as 2023-11); 4MA1-1H re-homed 2023-10 -> 2023-11; corpus-wide pairing audit clean (1,397/1,499 complete pairs, 102 ledger-tracked incomplete, 0 mispairs).",
-   "pdfs_seen": 2997,
-   "files_placed": 2997,
-   "paper_variant_dirs": 1541,
-   "paper_dirs_regular": 1499,
-   "specimen_dirs": 42,
-   "materials": {
-    "qp": 1504,
-    "ms": 1475,
-    "insert": 18
-   },
-   "quarantined": 314,
-   "ledger_rows": {
-    "total": 228,
-    "normalized": 126,
-    "open": 89,
-    "na:sme-content-dup": 8,
-    "na:f6-print-conflict": 4,
-    "na:same-paper-2023-11": 1
-   }
-  },
-  "corpus_after_structure_fix_2026_09_13": {
-   "date": "2026-09-13",
-   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README \u00a732 deviation rulings). Independent recount at f840c61b16.",
-   "files_placed": 2997,
-   "qp": 1504,
-   "ms": 1475,
-   "insert": 18,
-   "paper_variant_dirs": 1540,
-   "paper_dirs_regular": 1498,
-   "specimen_dirs": 42,
-   "complete_qp_ms_pairs": 1398,
-   "incomplete_regular_dirs": 100,
-   "ledger_rows_total": 228
-  },
-  "cambridge_wave_1_2026_09_13": {
-   "date": "2026-09-13",
-   "board": "cambridge-international",
-   "operator_direction": "Now download cambridge igcse and ial papers and mark schemes",
-   "source": "pastpapers.co CIE archive (direct file URLs; HTML listing pages Cloudflare-gated)",
-   "enumeration": "standardized CIE filename convention: 1384 probes -> 1319 candidate hits; 36 soft-404 (HTTP 200 HTML) rejected at download; 2 9701 s23 QPs re-accepted after shifted-cmap cover decode (+0x1D)",
-   "files_placed": 1283,
-   "qp": 650,
-   "ms": 633,
-   "paper_dirs": 650,
-   "complete_pairs": 633,
-   "incomplete_dirs": 17,
-   "specs": {
-    "igcse/chemistry/0620": {
-     "dirs": 121,
-     "files": 242
+  "spec_stats": {
+    "gce-a-level/mathematics/mathematics-modular": {
+      "papers": 245,
+      "files": 484
     },
-    "igcse/mathematics/0580": {
-     "dirs": 81,
-     "files": 145
+    "gce-a-level/physics/physics-2008": {
+      "papers": 78,
+      "files": 149
     },
-    "igcse/physics/0625": {
-     "dirs": 122,
-     "files": 244
+    "international-a-level/chemistry/wch01": {
+      "papers": 15,
+      "files": 30
     },
-    "ial/chemistry/9701": {
-     "dirs": 92,
-     "files": 184
+    "international-a-level/chemistry/wch02": {
+      "papers": 15,
+      "files": 30
     },
-    "ial/mathematics/9709": {
-     "dirs": 126,
-     "files": 252
+    "international-a-level/chemistry/wch03": {
+      "papers": 13,
+      "files": 26
     },
-    "ial/physics/9702": {
-     "dirs": 108,
-     "files": 216
+    "international-a-level/chemistry/wch04": {
+      "papers": 13,
+      "files": 26
+    },
+    "international-a-level/chemistry/wch05": {
+      "papers": 12,
+      "files": 24
+    },
+    "international-a-level/chemistry/wch06": {
+      "papers": 11,
+      "files": 22
+    },
+    "international-a-level/chemistry/wch11": {
+      "papers": 18,
+      "files": 36
+    },
+    "international-a-level/chemistry/wch12": {
+      "papers": 17,
+      "files": 34
+    },
+    "international-a-level/chemistry/wch13": {
+      "papers": 17,
+      "files": 34
+    },
+    "international-a-level/chemistry/wch14": {
+      "papers": 14,
+      "files": 28
+    },
+    "international-a-level/chemistry/wch15": {
+      "papers": 13,
+      "files": 26
+    },
+    "international-a-level/chemistry/wch16": {
+      "papers": 12,
+      "files": 24
+    },
+    "international-a-level/mathematics/mathematics-2018": {
+      "papers": 138,
+      "files": 262
+    },
+    "international-a-level/mathematics/wma01": {
+      "papers": 68,
+      "files": 136
+    },
+    "international-a-level/mathematics/wma02": {
+      "papers": 15,
+      "files": 30
+    },
+    "international-a-level/physics/wph01": {
+      "papers": 16,
+      "files": 32
+    },
+    "international-a-level/physics/wph02": {
+      "papers": 16,
+      "files": 32
+    },
+    "international-a-level/physics/wph03": {
+      "papers": 16,
+      "files": 32
+    },
+    "international-a-level/physics/wph04": {
+      "papers": 16,
+      "files": 31
+    },
+    "international-a-level/physics/wph05": {
+      "papers": 15,
+      "files": 30
+    },
+    "international-a-level/physics/wph06": {
+      "papers": 15,
+      "files": 30
+    },
+    "international-a-level/physics/wph11": {
+      "papers": 25,
+      "files": 49
+    },
+    "international-a-level/physics/wph12": {
+      "papers": 18,
+      "files": 36
+    },
+    "international-a-level/physics/wph13": {
+      "papers": 21,
+      "files": 39
+    },
+    "international-a-level/physics/wph14": {
+      "papers": 18,
+      "files": 34
+    },
+    "international-a-level/physics/wph15": {
+      "papers": 17,
+      "files": 32
+    },
+    "international-a-level/physics/wph16": {
+      "papers": 16,
+      "files": 31
+    },
+    "international-gcse/chemistry/4ch0": {
+      "papers": 32,
+      "files": 64
+    },
+    "international-gcse/chemistry/4ch1": {
+      "papers": 46,
+      "files": 86
+    },
+    "international-gcse/computer-science/4cp0": {
+      "papers": 30,
+      "files": 41
+    },
+    "international-gcse/english-language-b/4eb0": {
+      "papers": 17,
+      "files": 51
+    },
+    "international-gcse/english-language-b/4eb1": {
+      "papers": 26,
+      "files": 45
+    },
+    "international-gcse/further-pure-mathematics/4pm0": {
+      "papers": 32,
+      "files": 62
+    },
+    "international-gcse/further-pure-mathematics/4pm1": {
+      "papers": 47,
+      "files": 87
+    },
+    "international-gcse/mathematics-a/4ma0": {
+      "papers": 98,
+      "files": 192
+    },
+    "international-gcse/mathematics-a/4ma1": {
+      "papers": 112,
+      "files": 215
+    },
+    "international-gcse/mathematics-b/4mb0": {
+      "papers": 49,
+      "files": 97
+    },
+    "international-gcse/mathematics-b/4mb1": {
+      "papers": 51,
+      "files": 97
+    },
+    "international-gcse/physics/4ph0": {
+      "papers": 32,
+      "files": 64
+    },
+    "international-gcse/physics/4ph1": {
+      "papers": 46,
+      "files": 87
+    },
+    "cambridge-international/igcse/chemistry/0620": {
+      "papers": 330,
+      "files": 660
+    },
+    "cambridge-international/igcse/mathematics/0580": {
+      "papers": 227,
+      "files": 431
+    },
+    "cambridge-international/igcse/physics/0625": {
+      "papers": 331,
+      "files": 662
+    },
+    "cambridge-international/ial/chemistry/9701": {
+      "papers": 287,
+      "files": 574
+    },
+    "cambridge-international/ial/mathematics/9709": {
+      "papers": 380,
+      "files": 759
+    },
+    "cambridge-international/ial/physics/9702": {
+      "papers": 289,
+      "files": 578
     }
-   },
-   "sessions_scope": "2021-2024 (IGCSE incl. February/March; IAL June + November)",
-   "gaps_ledger": "docs/ledger/cie-gap-sweep.csv (83 planned rows)",
-   "methods_delta": {
-    "pdf_text_entries": 1283,
-    "coded_date_entries": 229
-   }
   },
-  "corpus_after_cambridge_wave_1_2026_09_13": {
-   "date": "2026-09-13",
-   "files": 4280,
-   "qp": 2154,
-   "ms": 2108,
-   "insert": 18,
-   "paper_dirs": 2190,
-   "boards": {
-    "pearson-edexcel": {
-     "dirs": 1540,
-     "files": 2997
+  "quarantined_files": [
+    {
+      "path": "IAL/Edexcel/Physics/Unit 1/June 2013 (R) MS - Unit 1 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 1/June 2013 MS - Unit 1 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
     },
-    "cambridge-international": {
-     "dirs": 650,
-     "files": 1283
+    {
+      "path": "IAL/Edexcel/Physics/Unit 1/June 2014 MS - Unit 1 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 1/June 2014 (R) MS - Unit 1 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Physics/Unit 2/June 2013 MS - Unit 2 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 2/June 2013 (R) MS - Unit 2 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Physics/Unit 2/June 2014 MS - Unit 2 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 2/June 2014 (R) MS - Unit 2 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Physics/Unit 4/June 2013 (R) MS - Unit 4 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 4/June 2013 MS - Unit 4 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Physics/Unit 4/June 2014 MS - Unit 4 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 4/June 2014 (R) MS - Unit 4 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Physics/Unit 5/June 2013 MS - Unit 5 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 5/June 2013 (R) MS - Unit 5 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Physics/Unit 5/June 2014 MS - Unit 5 Edexcel Physics A-level.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Physics/Unit 5/June 2014 (R) MS - Unit 5 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Physics/Unit 6/Grade Boundaries - Edexcel Physics A2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C1/- Numerical Answers_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C1/Combined MS_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C1/June 2013 (R) QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C1/June 2013 QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C1/Mock MS_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C1/Mock QP_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C1/Questions from P1-P3 MS_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C1/Questions from P1-P3_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C2/June 2009 MS.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C2/January 2009 MS.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C2/Mock MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C2/Mock QP.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/- Numerical Answers.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/Combined MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/Combined QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/Combined QP (Reduced)_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/June 2005 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/Combined QP (Reduced)_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/June 2013 (R) QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/June 2013 (Withdrawn) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/June 2013 MS.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/June 2013 (Withdrawn) MS.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/June 2013 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/June 2013 (Withdrawn) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/Mock MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/Mock QP.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C3/Questions from P1-P3.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/- Numerical Answers.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/Combined MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/June 2013 (R) QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C4/June 2013 (Withdrawn) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/June 2013 MS.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C4/June 2013 (Withdrawn) MS.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/June 2013 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/C4/June 2013 (Withdrawn) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/Mock MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/Mock QP.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/C4/Questions from P1-P3.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M1/- Numerical Answers.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M1/Combined MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M1/Mock MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M1/Mock QP.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M1/Specimen MS_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/M1/Specimen MS.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M1/Specimen QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/M1/Specimen QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/- Numerical Answers_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/Combined MS_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/January 2014 (IAL) MS.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/January 2014 QP_2_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/M2/January 2014 (IAL) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2013 MS_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/M2/June 2013 (Withdrawn) MS.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2013 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/M2/June 2013 (Withdrawn) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2014 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2015 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2016 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2016 QP_5.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2017 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2017 QP_5.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2018 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/June 2018 QP_5.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/Mock MS_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/Mock QP_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/Questions from P1-P3 MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/Questions from P1-P3.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/Specimen MS_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "specimen of shared-code unit (WME/WST spans old-IAL and 2018-IAL); era not establishable"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/M2/Specimen QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/P4/January 2022 MS_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/P4/January 2022 MS (Unused)_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/P4/January 2022 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/P4/January 2022 QP (Unused)_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S1/- Numerical Answers.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S1/Combined MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S1/Mock MS.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S1/Mock QP.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S1/Specimen MS_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/S1/Specimen MS.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S1/Specimen QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/S1/Specimen QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2014 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2015 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2016 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2016 QP_5.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2017 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2017 QP_5.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2018 QP_3.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/June 2018 QP_5.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/Mock MS_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/Mock QP_2.pdf",
+      "class": "nonstandard-artifact",
+      "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/Specimen MS .pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/S2/Specimen MS_3.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IAL/Edexcel/Pure Maths/S2/Specimen QP_3.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IAL/Edexcel/Pure Maths/S2/Specimen QP_5.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2016 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2015 QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2020 QP .pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2021 QP .pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2021 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2022 QP .pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2023 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2013 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2013 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2013 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2013 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2014 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2014 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2014 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2014 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2016 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2016 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2016 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2016 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2017 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2017 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2017 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2017 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2019 QP .pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2020 QP .pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2022 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2023 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2024 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2024 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2020 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2021 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2021 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2022 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2023 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2013 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2013 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2013 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2013 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2014 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2014 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2014 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2014 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2016 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2016 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2016 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2016 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2017 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2017 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2017 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2017 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2019 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2020 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2022 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2023 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2024 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2024 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Computer Science/Paper 2/Specimen MS - Paper 2 Edexcel Computer Science IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Computer Science/Paper 1/Specimen MS - Paper 1 Edexcel Computer Science IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Computer Science/Paper 2/Specimen QP - Paper 2 Edexcel Computer Science IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Computer Science/Paper 1/Specimen QP - Paper 1 Edexcel Computer Science IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/January 2019 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/January 2019 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/January 2020 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/January 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/January 2022 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/January 2022 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2014 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2014 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2015 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2015 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2016 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2016 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2017 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2017 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2018 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2018 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2019 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2019 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2020 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2022 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2022 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2023 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2023 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2024 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2024 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Further Pure Maths/Paper 2/Specimen (2016) MS_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Further Pure Maths/Paper 1/Specimen (2016) MS.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Further Pure Maths/Paper 2/Specimen (2016) QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Further Pure Maths/Paper 1/Specimen (2016) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 1F/January 2019 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 1F/January 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 1F/June 2015 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 1F/June 2015 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 1H/January 2019 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 1H/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 2F/January 2015 (R) QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/January 2015 QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 2F/January 2019 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/January 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 2F/June 2015 (R) QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/June 2015 QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 2F/June 2019 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths A/Paper 2H/January 2019 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2H/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 1/January 2015 (R) QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 1/January 2015 QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 1/January 2019 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 1/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 1/Specimen MS_2.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 2/January 2015 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/January 2015 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 2/January 2016 (R) QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/January 2016 QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 2/January 2019 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 2/June 2015 (R) QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/June 2015 QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 2/June 2019 (R) QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/June 2019 QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 2/Specimen MS_2.pdf",
+      "class": "unresolved-identity",
+      "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Maths B/Paper 2/Specimen QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 1/Specimen QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/January 2019 QP - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2018 QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/January 2020 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/January 2021 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2021 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/January 2022 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/January 2023 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2013 MS - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2013 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2013 QP - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2013 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2014 MS - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2014 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2014 QP - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2014 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2015 MS - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2015 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2015 QP - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2015 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2016 MS - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2016 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2016 QP - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2016 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2017 MS - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2017 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2017 QP - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2017 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2018 MS - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2018 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2018 QP - Paper 1P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2018 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2019 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2020 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2022 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2023 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 1/June 2024 QP.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2024 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/January 2020 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2020 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/January 2021 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2021 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/January 2022 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2022 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/January 2023 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2023 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2013 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2013 QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2013 MS - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2013 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2014 MS - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2014 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2014 QP - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2014 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2015 MS - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2015 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2015 QP - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2015 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2016 MS - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2016 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2016 QP - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2016 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2017 MS - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2017 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2017 QP - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2017 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2018 MS - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2018 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2018 QP - Paper 2P Edexcel Physics IGCSE.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2018 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2019 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2020 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2020 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2022 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2022 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2023 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2023 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
+    },
+    {
+      "path": "IGCSE/Edexcel/Physics/Paper 2/June 2024 QP_2.pdf",
+      "class": "duplicate-artifact",
+      "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2024 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
     }
-   },
-   "manifests": 2190,
-   "specification_yamls": 48,
-   "complete_pairs": {
-    "pearson_edexcel": "1398/1498",
-    "cambridge_international": "633/650"
-   }
-  }
- },
- "identification_methods": {
-  "pdf_text": 2982,
-  "coded-date": 60,
-  "sme-listing": 16,
-  "date_rule": 556,
-  "partner_inference": 157,
-  "folder_consensus": 6,
-  "specimen_first_teaching": 5
- },
- "quarantine_by_class": {
-  "duplicate-artifact": 141,
-  "corrupt-artifact": 1,
-  "nonstandard-artifact": 35,
-  "unresolved-identity": 58,
-  "out-of-scope-gce": 79
- },
- "spec_stats": {
-  "gce-a-level/mathematics/mathematics-modular": {
-   "papers": 245,
-   "files": 484
-  },
-  "gce-a-level/physics/physics-2008": {
-   "papers": 78,
-   "files": 149
-  },
-  "international-a-level/chemistry/wch01": {
-   "papers": 15,
-   "files": 30
-  },
-  "international-a-level/chemistry/wch02": {
-   "papers": 15,
-   "files": 30
-  },
-  "international-a-level/chemistry/wch03": {
-   "papers": 13,
-   "files": 26
-  },
-  "international-a-level/chemistry/wch04": {
-   "papers": 13,
-   "files": 26
-  },
-  "international-a-level/chemistry/wch05": {
-   "papers": 12,
-   "files": 24
-  },
-  "international-a-level/chemistry/wch06": {
-   "papers": 11,
-   "files": 22
-  },
-  "international-a-level/chemistry/wch11": {
-   "papers": 18,
-   "files": 36
-  },
-  "international-a-level/chemistry/wch12": {
-   "papers": 17,
-   "files": 34
-  },
-  "international-a-level/chemistry/wch13": {
-   "papers": 17,
-   "files": 34
-  },
-  "international-a-level/chemistry/wch14": {
-   "papers": 14,
-   "files": 28
-  },
-  "international-a-level/chemistry/wch15": {
-   "papers": 13,
-   "files": 26
-  },
-  "international-a-level/chemistry/wch16": {
-   "papers": 12,
-   "files": 24
-  },
-  "international-a-level/mathematics/mathematics-2018": {
-   "papers": 138,
-   "files": 262
-  },
-  "international-a-level/mathematics/wma01": {
-   "papers": 68,
-   "files": 136
-  },
-  "international-a-level/mathematics/wma02": {
-   "papers": 15,
-   "files": 30
-  },
-  "international-a-level/physics/wph01": {
-   "papers": 16,
-   "files": 32
-  },
-  "international-a-level/physics/wph02": {
-   "papers": 16,
-   "files": 32
-  },
-  "international-a-level/physics/wph03": {
-   "papers": 16,
-   "files": 32
-  },
-  "international-a-level/physics/wph04": {
-   "papers": 16,
-   "files": 31
-  },
-  "international-a-level/physics/wph05": {
-   "papers": 15,
-   "files": 30
-  },
-  "international-a-level/physics/wph06": {
-   "papers": 15,
-   "files": 30
-  },
-  "international-a-level/physics/wph11": {
-   "papers": 25,
-   "files": 49
-  },
-  "international-a-level/physics/wph12": {
-   "papers": 18,
-   "files": 36
-  },
-  "international-a-level/physics/wph13": {
-   "papers": 21,
-   "files": 39
-  },
-  "international-a-level/physics/wph14": {
-   "papers": 18,
-   "files": 34
-  },
-  "international-a-level/physics/wph15": {
-   "papers": 17,
-   "files": 32
-  },
-  "international-a-level/physics/wph16": {
-   "papers": 16,
-   "files": 31
-  },
-  "international-gcse/chemistry/4ch0": {
-   "papers": 32,
-   "files": 64
-  },
-  "international-gcse/chemistry/4ch1": {
-   "papers": 46,
-   "files": 86
-  },
-  "international-gcse/computer-science/4cp0": {
-   "papers": 30,
-   "files": 41
-  },
-  "international-gcse/english-language-b/4eb0": {
-   "papers": 17,
-   "files": 51
-  },
-  "international-gcse/english-language-b/4eb1": {
-   "papers": 26,
-   "files": 45
-  },
-  "international-gcse/further-pure-mathematics/4pm0": {
-   "papers": 32,
-   "files": 62
-  },
-  "international-gcse/further-pure-mathematics/4pm1": {
-   "papers": 47,
-   "files": 87
-  },
-  "international-gcse/mathematics-a/4ma0": {
-   "papers": 98,
-   "files": 192
-  },
-  "international-gcse/mathematics-a/4ma1": {
-   "papers": 112,
-   "files": 215
-  },
-  "international-gcse/mathematics-b/4mb0": {
-   "papers": 49,
-   "files": 97
-  },
-  "international-gcse/mathematics-b/4mb1": {
-   "papers": 51,
-   "files": 97
-  },
-  "international-gcse/physics/4ph0": {
-   "papers": 32,
-   "files": 64
-  },
-  "international-gcse/physics/4ph1": {
-   "papers": 46,
-   "files": 87
-  },
-  "cambridge-international/igcse/chemistry/0620": {
-   "papers": 121,
-   "files": 242
-  },
-  "cambridge-international/igcse/mathematics/0580": {
-   "papers": 81,
-   "files": 145
-  },
-  "cambridge-international/igcse/physics/0625": {
-   "papers": 122,
-   "files": 244
-  },
-  "cambridge-international/ial/chemistry/9701": {
-   "papers": 92,
-   "files": 184
-  },
-  "cambridge-international/ial/mathematics/9709": {
-   "papers": 126,
-   "files": 252
-  },
-  "cambridge-international/ial/physics/9702": {
-   "papers": 108,
-   "files": 216
-  }
- },
- "quarantined_files": [
-  {
-   "path": "IAL/Edexcel/Physics/Unit 1/June 2013 (R) MS - Unit 1 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 1/June 2013 MS - Unit 1 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 1/June 2014 MS - Unit 1 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 1/June 2014 (R) MS - Unit 1 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 2/June 2013 MS - Unit 2 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 2/June 2013 (R) MS - Unit 2 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 2/June 2014 MS - Unit 2 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 2/June 2014 (R) MS - Unit 2 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 4/June 2013 (R) MS - Unit 4 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 4/June 2013 MS - Unit 4 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 4/June 2014 MS - Unit 4 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 4/June 2014 (R) MS - Unit 4 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 5/June 2013 MS - Unit 5 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 5/June 2013 (R) MS - Unit 5 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 5/June 2014 MS - Unit 5 Edexcel Physics A-level.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Physics/Unit 5/June 2014 (R) MS - Unit 5 Edexcel Physics A-level.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Physics/Unit 6/Grade Boundaries - Edexcel Physics A2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C1/- Numerical Answers_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C1/Combined MS_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C1/June 2013 (R) QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C1/June 2013 QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C1/Mock MS_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C1/Mock QP_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C1/Questions from P1-P3 MS_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C1/Questions from P1-P3_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C2/June 2009 MS.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C2/January 2009 MS.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C2/Mock MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C2/Mock QP.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/- Numerical Answers.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/Combined MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/Combined QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/Combined QP (Reduced)_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/June 2005 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/Combined QP (Reduced)_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/June 2013 (R) QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/June 2013 (Withdrawn) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/June 2013 MS.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/June 2013 (Withdrawn) MS.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/June 2013 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C3/June 2013 (Withdrawn) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/Mock MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/Mock QP.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C3/Questions from P1-P3.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/- Numerical Answers.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/Combined MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/June 2013 (R) QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C4/June 2013 (Withdrawn) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/June 2013 MS.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C4/June 2013 (Withdrawn) MS.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/June 2013 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/C4/June 2013 (Withdrawn) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/Mock MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/Mock QP.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/C4/Questions from P1-P3.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M1/- Numerical Answers.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M1/Combined MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M1/Mock MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M1/Mock QP.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M1/Specimen MS_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/M1/Specimen MS.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M1/Specimen QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/M1/Specimen QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/- Numerical Answers_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/Combined MS_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/January 2014 (IAL) MS.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/January 2014 QP_2_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/M2/January 2014 (IAL) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2013 MS_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/M2/June 2013 (Withdrawn) MS.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2013 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/M2/June 2013 (Withdrawn) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2014 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2015 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2016 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2016 QP_5.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2017 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2017 QP_5.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2018 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/June 2018 QP_5.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/Mock MS_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/Mock QP_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/Questions from P1-P3 MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/Questions from P1-P3.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/Specimen MS_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "specimen of shared-code unit (WME/WST spans old-IAL and 2018-IAL); era not establishable"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/M2/Specimen QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/P4/January 2022 MS_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/P4/January 2022 MS (Unused)_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/P4/January 2022 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/P4/January 2022 QP (Unused)_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S1/- Numerical Answers.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S1/Combined MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "not a single-paper assessment artifact (compilation/answers/grade boundaries)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S1/Mock MS.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S1/Mock QP.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S1/Specimen MS_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/S1/Specimen MS.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S1/Specimen QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/S1/Specimen QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2014 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2015 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2016 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2016 QP_5.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2017 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2017 QP_5.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2018 QP_3.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/June 2018 QP_5.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/Mock MS_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/Mock QP_2.pdf",
-   "class": "nonstandard-artifact",
-   "reason": "mock/practice material, not an actual exam series artifact (charter section 12)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/Specimen MS .pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/S2/Specimen MS_3.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IAL/Edexcel/Pure Maths/S2/Specimen QP_3.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IAL/Edexcel/Pure Maths/S2/Specimen QP_5.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2016 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2015 QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2020 QP .pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2021 QP .pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2021 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2022 QP .pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/January 2023 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/January 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2013 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2013 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2013 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2013 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2014 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2014 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2014 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2014 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2016 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2016 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2016 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2016 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2017 MS - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2017 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2017 QP - Paper 1C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2017 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2019 QP .pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2020 QP .pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2022 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2023 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 1/June 2024 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2024 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2020 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2021 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2021 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2022 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/January 2023 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/January 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2013 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2013 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2013 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2013 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2014 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2014 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2014 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2014 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2016 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2016 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2016 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2016 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2017 MS - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2017 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2017 QP - Paper 2C Edexcel Chemistry IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2017 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2019 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2020 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2022 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2023 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Chemistry/Paper 2/June 2024 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Chemistry/Paper 2/June 2024 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Computer Science/Paper 2/Specimen MS - Paper 2 Edexcel Computer Science IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Computer Science/Paper 1/Specimen MS - Paper 1 Edexcel Computer Science IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Computer Science/Paper 2/Specimen QP - Paper 2 Edexcel Computer Science IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Computer Science/Paper 1/Specimen QP - Paper 1 Edexcel Computer Science IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/January 2019 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/January 2019 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/January 2020 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/January 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/January 2022 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/January 2022 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2014 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2014 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2015 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2015 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2016 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2016 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2017 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2017 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2018 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2018 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2019 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2019 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2020 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2022 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2022 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2023 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2023 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/English Language B/Paper 1/June 2024 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/English Language B/Paper 1/June 2024 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Further Pure Maths/Paper 2/Specimen (2016) MS_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Further Pure Maths/Paper 1/Specimen (2016) MS.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Further Pure Maths/Paper 2/Specimen (2016) QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Further Pure Maths/Paper 1/Specimen (2016) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 1F/January 2019 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 1F/January 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 1F/June 2015 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 1F/June 2015 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 1H/January 2019 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 1H/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 2F/January 2015 (R) QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/January 2015 QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 2F/January 2019 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/January 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 2F/June 2015 (R) QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/June 2015 QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 2F/June 2019 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2F/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths A/Paper 2H/January 2019 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths A/Paper 2H/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 1/January 2015 (R) QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 1/January 2015 QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 1/January 2019 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 1/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 1/Specimen MS_2.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 2/January 2015 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/January 2015 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 2/January 2016 (R) QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/January 2016 QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 2/January 2019 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/January 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 2/June 2015 (R) QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/June 2015 QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 2/June 2019 (R) QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 2/June 2019 QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 2/Specimen MS_2.pdf",
-   "class": "unresolved-identity",
-   "reason": "no ref after all evidence tiers (unreadable text layer, no partner)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Maths B/Paper 2/Specimen QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Maths B/Paper 1/Specimen QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/January 2019 QP - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2018 QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/January 2020 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/January 2021 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2021 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/January 2022 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/January 2023 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/January 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2013 MS - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2013 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2013 QP - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2013 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2014 MS - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2014 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2014 QP - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2014 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2015 MS - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2015 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2015 QP - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2015 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2016 MS - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2016 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2016 QP - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2016 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2017 MS - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2017 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2017 QP - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2017 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2018 MS - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2018 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2018 QP - Paper 1P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2018 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2019 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2019 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2020 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2022 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2023 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 1/June 2024 QP.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 1/June 2024 (R) QP.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/January 2020 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2020 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/January 2021 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2021 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/January 2022 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2022 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/January 2023 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/January 2023 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2013 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2013 QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2013 MS - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2013 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2014 MS - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2014 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2014 QP - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2014 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2015 MS - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2015 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2015 QP - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2015 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2016 MS - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2016 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2016 QP - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2016 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2017 MS - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2017 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2017 QP - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2017 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2018 MS - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2018 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2018 QP - Paper 2P Edexcel Physics IGCSE.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2018 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2019 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2019 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2020 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2020 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2022 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2022 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2023 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2023 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  },
-  {
-   "path": "IGCSE/Edexcel/Physics/Paper 2/June 2024 QP_2.pdf",
-   "class": "duplicate-artifact",
-   "reason": "same identity slot as IGCSE/Edexcel/Physics/Paper 2/June 2024 (R) QP_2.pdf but different bytes (kept the higher-confidence identification)"
-  }
- ],
- "method_notes": [
-  "identity evidence hierarchy per charter s.13-17: PDF-printed paper references > same-series partner inheritance > single-code folder consensus > corpus-evidenced date boundaries > quarantine",
-  "PDF-verified facts that override folder names: 4MA0 higher-tier papers are officially 3H/4H (PMT folders say 1H/2H); 'IAL/Physics' 2009-2013 files are legacy GCE 6PH01-05 papers; C12/C34 print WMA01/01 and WMA02/01; C1-C4/M1/M2/S1/S2 print 6663-6666/6677/6678/6683/6684 (GCE modular, not IAL)",
-  "PMT watermark strings glued to printed refs were stripped by suffix whitelist per code family",
-  "series normalization: January->01, May/June->06, October/November->10/11 (autumn keeps printed month evidence); specimens are stored under specimen/ and are not exam-series sittings",
-  "MS covers with missing/unreadable paper references were paired to their same-series QP identity; method recorded per manifest",
-  "duplicate downloads (same artifact) deduplicated by SHA-256; different-bytes collisions kept the higher-confidence identification and quarantined the other",
-  "provenance: all artifacts are official Pearson Edexcel documents obtained via the third-party archive PhysicsAndMathsTutor.com before this run; per-file source URLs are not available and are recorded as null",
-  "verification_status of every placed file is AI-IDENTIFIED (operator ratification pending) per the project's SUGGESTED -> HUMAN_VALIDATED lifecycle"
- ],
- "audit_repairs": {
-  "date": "2026-09-12",
-  "report": "docs/AUDIT-2026-09-12.md",
-  "repairs": [
-   {
-    "id": "F1",
-    "path": "past-papers/pearson-edexcel/international-a-level/mathematics/wma01/past-papers/2014-01/WME02-01/qp.pdf",
-    "action": "wrong bytes (C1 6663A/01 print) replaced by true WME02/01 Mechanics-M2 January-2014 QP restored from _quarantine/duplicate-artifact; print-verified"
-   },
-   {
-    "id": "F2",
-    "path": "past-papers/pearson-edexcel/international-a-level/chemistry/wch11/past-papers/2019-01/WCH11-01/",
-    "action": "dir completed: manifest written (ms backfilled, qp re-fetched from ledger-recorded PMT URL), both print-verified; ledger rows -> normalized"
-   },
-   {
+  ],
+  "method_notes": [
+    "identity evidence hierarchy per charter s.13-17: PDF-printed paper references > same-series partner inheritance > single-code folder consensus > corpus-evidenced date boundaries > quarantine",
+    "PDF-verified facts that override folder names: 4MA0 higher-tier papers are officially 3H/4H (PMT folders say 1H/2H); 'IAL/Physics' 2009-2013 files are legacy GCE 6PH01-05 papers; C12/C34 print WMA01/01 and WMA02/01; C1-C4/M1/M2/S1/S2 print 6663-6666/6677/6678/6683/6684 (GCE modular, not IAL)",
+    "PMT watermark strings glued to printed refs were stripped by suffix whitelist per code family",
+    "series normalization: January->01, May/June->06, October/November->10/11 (autumn keeps printed month evidence); specimens are stored under specimen/ and are not exam-series sittings",
+    "MS covers with missing/unreadable paper references were paired to their same-series QP identity; method recorded per manifest",
+    "duplicate downloads (same artifact) deduplicated by SHA-256; different-bytes collisions kept the higher-confidence identification and quarantined the other",
+    "provenance: all artifacts are official Pearson Edexcel documents obtained via the third-party archive PhysicsAndMathsTutor.com before this run; per-file source URLs are not available and are recorded as null",
+    "verification_status of every placed file is AI-IDENTIFIED (operator ratification pending) per the project's SUGGESTED -> HUMAN_VALIDATED lifecycle"
+  ],
+  "audit_repairs": {
     "date": "2026-09-12",
-    "what": "file-gap wave: 82 artifacts placed (73 qp + 9 ms), 82 manifests updated, ledger file-gap-sweep.csv statuses rewritten (normalized/na:*/planned)",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md F7"
-   },
-   {
-    "date": "2026-09-12",
-    "what": "file-gap wave correction: 66 byte-duplicate placements reverted (s.19); F10/F11/F12 recorded",
-    "evidence": "docs/AUDIT-2026-09-12.md post-wave findings"
-   },
-   {
-    "date": "2026-09-12",
-    "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
-   },
-   {
-    "date": "2026-09-12",
-    "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
-   },
-   {
+    "report": "docs/AUDIT-2026-09-12.md",
+    "repairs": [
+      {
+        "id": "F1",
+        "path": "past-papers/pearson-edexcel/international-a-level/mathematics/wma01/past-papers/2014-01/WME02-01/qp.pdf",
+        "action": "wrong bytes (C1 6663A/01 print) replaced by true WME02/01 Mechanics-M2 January-2014 QP restored from _quarantine/duplicate-artifact; print-verified"
+      },
+      {
+        "id": "F2",
+        "path": "past-papers/pearson-edexcel/international-a-level/chemistry/wch11/past-papers/2019-01/WCH11-01/",
+        "action": "dir completed: manifest written (ms backfilled, qp re-fetched from ledger-recorded PMT URL), both print-verified; ledger rows -> normalized"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "file-gap wave: 82 artifacts placed (73 qp + 9 ms), 82 manifests updated, ledger file-gap-sweep.csv statuses rewritten (normalized/na:*/planned)",
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md F7"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "file-gap wave correction: 66 byte-duplicate placements reverted (s.19); F10/F11/F12 recorded",
+        "evidence": "docs/AUDIT-2026-09-12.md post-wave findings"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
+      },
+      {
+        "date": "2026-09-12",
+        "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
+        "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
+      },
+      {
+        "date": "2026-09-13",
+        "what": "structural audit fixes S1+S2: 11 Nov-2023 IGCSE dirs re-homed under the subject level (33 blobs, sha-identical); 4EB1-1R ms merged into 4EB1-01R (byte-identical, git blob 511bb858), stray dir deleted; ledger 2 rows normalized",
+        "evidence": "docs/AUDIT-2026-09-12.md \u00a711; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
+      }
+    ]
+  },
+  "identification_methods_wave_delta_2026_09_12": {
+    "date_rule_additions": 27,
+    "note": "27 manifests gained a date_rule entry across the two 2026-09-12 waves (wave 1: 23 before the s.19 revert correction scope; wave 2: included in this count). Histogram recomputed exactly from all manifests after the other-source wave."
+  },
+  "cambridge_wave_2_2026_09_13": {
     "date": "2026-09-13",
-    "what": "structural audit fixes S1+S2: 11 Nov-2023 IGCSE dirs re-homed under the subject level (33 blobs, sha-identical); 4EB1-1R ms merged into 4EB1-01R (byte-identical, git blob 511bb858), stray dir deleted; ledger 2 rows normalized",
-    "evidence": "docs/AUDIT-2026-09-12.md \u00a711; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
-   }
-  ]
- },
- "identification_methods_wave_delta_2026_09_12": {
-  "date_rule_additions": 27,
-  "note": "27 manifests gained a date_rule entry across the two 2026-09-12 waves (wave 1: 23 before the s.19 revert correction scope; wave 2: included in this count). Histogram recomputed exactly from all manifests after the other-source wave."
- }
+    "board": "cambridge-international",
+    "operator_direction": "Proceed with wave 2. And also reach back to 2016-2020",
+    "source": "pastpapers.co CIE archive (server-rendered session listings crawled; /api/file endpoint with Referer) + XtremePapers CAIE tree (6 fallback files)",
+    "files_placed": 2381,
+    "qp": 1194,
+    "ms": 1187,
+    "paper_dirs": 1194,
+    "complete_pairs": 1187,
+    "incomplete_dirs": 7,
+    "sessions_scope": "2016-2020 for all six wave-1 syllabi (IGCSE incl. February/March; IAL June + November + February/March India AS); plus the 9709 Oct-Nov 2021 gap session",
+    "identity": "every file rank 0 (printed syllabus reference + session string); 0 intra-wave byte duplicates",
+    "gaps_swept": "9709 2021-11 whole session placed (72 of 83 wave-1 planned rows resolved); IGCSE Feb/March 2022 still un-hosted (30 rows planned); 0580 missing-MS rows remain",
+    "gaps_ledger": "docs/ledger/cie-gap-sweep.csv rebuilt: 89 rows (53 planned / 36 normalized)"
+  },
+  "corpus_after_cambridge_wave_2_2026_09_13": {
+    "date": "2026-09-13",
+    "files": 6661,
+    "qp": 3348,
+    "ms": 3295,
+    "insert": 18,
+    "paper_dirs": 3384,
+    "manifests": 3384,
+    "specification_yamls": 48,
+    "complete_pairs": {
+      "pearson-edexcel": "1398/1498",
+      "cambridge-international": "1820/1844"
+    }
+  }
 }

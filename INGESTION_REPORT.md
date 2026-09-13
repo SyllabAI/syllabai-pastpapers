@@ -117,6 +117,35 @@
 - Cambridge complete pairs: **633/650 dirs** hold a complete QP+MS pair; 17 incomplete (0580
   missing-ms), all ledger-tracked.
 
+## Cambridge International wave 2 (2026-09-13)
+
+- Operator direction: *"Proceed with wave 2. And also reach back to 2016-2020."* Session backfill for the six
+  wave-1 syllabi: sessions 2016-2020 added (IGCSE incl. February/March; IAL June + November plus the
+  February/March India AS sessions where hosted), alongside the wave-1 planned-row sweep.
+- Source: **pastpapers.co CIE archive** - wave 2 crawled its server-rendered listing pages (spec -> year ->
+  session pages) instead of wave-1's blind filename probes; files served via the `/api/file` endpoint with a
+  Referer header (the plain old-archive paths serve an HTML download page). **6 files the source serves as
+  empty-200 responses or does not host** (0580 w16 qp12, w17 qp23; 0620 s19 ms32/qp11/qp22; 9709 s19 qp61)
+  were recovered from **XtremePapers' CAIE tree** and print-verified identically; per-material provenance in
+  the manifests.
+- Files placed: **2381 (1194 qp · 1187 ms) across 1194 new paper dirs** -
+  every file identity rank 0 (printed syllabus reference + session string on the first two pages), every dir
+  manifest-complete, 0 intra-wave byte duplicates (§19).
+- Wave-1 planned-row sweep: the whole **9709 Oct-Nov 2021 session (36 files)** is now hosted by the source
+  and was placed, resolving **72 of the 83 planned rows**. IGCSE February/March 2022 (0580/0620/0625)
+  remains entirely un-hosted by the source; the 17 0580 missing-MS rows (2023-11/2024-06) remain open.
+- New coverage notes: 0580 paper-3 QPs (31-33) surfaced at the source for 2023-11/2024-06 and were placed
+  (MS not hosted - qp-only dirs ledgered); sweeping 0580 paper-3 for the remaining 2021-2024 sessions is a
+  wave-3 candidate. 9709/42 June-2019 MS is served truncated (no-EOF) by the source and stays ledgered.
+- Ledger: [docs/ledger/cie-gap-sweep.csv](docs/ledger/cie-gap-sweep.csv) rebuilt from corpus ∪ source state:
+  **89 rows (53 planned · 36 normalized)**.
+
+**Combined corpus (Pearson Edexcel + Cambridge International, after wave 2):**
+
+- **6,661 files (3,348 qp · 3,295 ms · 18 insert) across 3,384 paper dirs**; manifests 3,384;
+  specification.yaml 48; complete QP+MS pairs 3,218/3,342 (Pearson 1,398/1,498 · Cambridge
+  1820/1844); all incomplete dirs ledger-tracked.
+
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
 | method | files |
