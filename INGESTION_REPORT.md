@@ -248,7 +248,8 @@ Negatives: the remaining 61 open rows have no Paperlords coverage - GCE-legacy 6
 4CP0 2B/2C QPs (ms only, already held), and 01A variants (catalog carries A-variants only from 2025).
 
 Corpus after wave 7: 7,537 files (3,769 qp · 3,750 ms · 18 insert) across 3,800 dirs/manifests;
-complete regular pairs Pearson 1,406/1,499 + Cambridge 2,259/2,259. Edexcel ledger 230 rows:
+complete regular pairs Pearson 1,419/1,499 + Cambridge 2,259/2,259 (14 dirs completed by the ms
+placements + WST01-01, minus the F15 re-homed ms). Edexcel ledger 230 rows:
 150 normalized / 80 open (23 planned · 7 not-listed · 11 byte-duplicate · 22 mislabeled ·
 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper).
 
