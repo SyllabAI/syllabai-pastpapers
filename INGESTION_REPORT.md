@@ -20,11 +20,11 @@
 **Corpus after the 2026-09-12 audit repairs (see
 [docs/AUDIT-2026-09-12.md](docs/AUDIT-2026-09-12.md)):**
 
-- PDFs + inserts placed: **2,997** (1,504 qp · 1,475 ms · 18 insert) across **1,540** paper dirs
+- PDFs + inserts placed: **3,004** (1,509 qp · 1,477 ms · 18 insert) across **1,540** paper dirs
   (current final state — see the structural repair wave, 2026-09-13, below)
   — **1,498 regular** (batch 1: 1,319 · batch 2: 170 · wave 4: 11, less the F13 misfile dir and the S2 4EB1-1R merge, all manifest-complete) + **42 specimen refs**
   (all manifest-complete)
-- Manifests: **1,540** · manifest material entries: **2,997** (every placed PDF/insert listed with
+- Manifests: **1,540** · manifest material entries: **3,004** (every placed PDF/insert listed with
   SHA-256; directory fields ↔ manifest fields verified 0-mismatch by the audit)
 - Quarantined PDFs: **314** (141 duplicate-artifact · 35 nonstandard-artifact · 58 unresolved-identity ·
   79 out-of-scope-gce · 1 corrupt-artifact), every file with a `REASON.txt`
@@ -184,14 +184,46 @@
   · Cambridge 1876/1876); incomplete dirs
   ledger-tracked (0580 w22 paper-3: 6 planned rows).
 
+## Wave 5 — SaveMyExams re-probe (2026-09-13)
+
+- Operator direction: *"Check savemyexams."* SME re-probed against the open ledgers of BOTH boards:
+  the 6 planned CIE rows (0580 w22 paper 3 — hosted nowhere during Cambridge wave 3) and the 44
+  fetchable Edexcel rows (35 planned + 9 na:pmt-not-listed). The SME CIE maths listing (absent from
+  the wave-3 sitemap, which is stale) exposes **papacambridge-hosted direct uploads** for 0580.
+- **Cambridge: 6 files placed (3 qp · 3 ms)** — 0580 w22 papers 31/32/33, each print-verified
+  (`0580/3x October/November 2022`, rank 0). **CIE ledger closes at 130/130 normalized (100%).**
+- **Edexcel: 7 files placed (5 qp · 2 ms)**: 4MA1-2H 2020-11 qp (rank 0); **F14 repair** — the
+  4EB1-01R 2022-06 ms was found misfiled at 4EB1-01 (prints `Paper 01R`; PMT's original filename
+  `June 2022 (R) MS - Paper 1`): bytes moved to 4EB1-01R (completing the dir) and the true
+  `Paper 01` ms placed from SME/Pearson; 4CP0 sitting-variant files — 2A QPs for 2021-06/2022-06/
+  2023-06 + the 2021-11 Paper-2 ms (single-sitting session, ms prints `(4CP0/2A)`).
+- **Sitting-letter convention (evidence finding):** 4CP0 QP covers print the base reference
+  `4CP0/02` for EVERY sitting variant (held 02C/02 QPs confirm); the letter lives only in ms headers
+  and official Pearson filenames. Attributions recorded at `partner_inference` rank 2 — operator
+  ratification pending. The 2020-11 2A qp placement documents the COVID-2020 June-cover reuse
+  (content-identical to the paper held at 2020-06/4CP0-02; paired ms prints November 2020).
+- Evidence dispositions: 6 `na:sme-content-dup` (SME's 01C/02C/02 ms candidates are content-identical
+  to held sibling schemes) + 2 `na:sme-mislabeled` (SME's June-2020 CS entries carry the
+  November-2020 sitting). SME hosts no GCE-legacy, no old-spec 4MA0/4MB0/4PM0, no WME01/WST01, no
+  Nov-2020 chem/physics, no 2020-06 English B — those planned rows stay source-blocked.
+- Ledger: Edexcel **135 normalized · 93 open** (23 planned · 8 not-listed · 11 byte-duplicate ·
+  34 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper);
+  Cambridge **130 normalized · 0 open**.
+- Methods table below recomputed over the full tree (the previous table predated the Cambridge
+  waves and under-counted multi-method manifests).
+- Combined corpus: **6,762 files (3,388 qp · 3,356 ms ·
+  18 insert) across 3,419 paper dirs** (Pearson 1,540 + Cambridge 879);
+  manifests 3,419; specification.yaml 48; complete pairs **3,284/3,377**
+  (Pearson 1405/1,540 · Cambridge 1879/879); incomplete 93, all ledger-tracked.
+
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
 | method | files |
 |---|---|
-| pdf_text | 2982 |
+| pdf_text | 6747 |
 | date_rule | 556 |
-| partner_inference | 157 |
-| coded-date | 60 |
+| partner_inference | 163 |
+| coded-date | 518 |
 | sme-listing | 16 |
 | folder_consensus | 6 |
 | specimen_first_teaching | 5 |
@@ -204,7 +236,7 @@
 
 | family / subject / spec | paper dirs | files |
 |---|---|---|
-| gce-a-level/mathematics/mathematics-modular | 245 | 484 |
+| gce-a-level/mathematics/mathematics-modular | 237 | 484 |
 | gce-a-level/physics/physics-2008 | 78 | 149 |
 | international-a-level/chemistry/wch01 | 15 | 30 |
 | international-a-level/chemistry/wch02 | 15 | 30 |
@@ -218,34 +250,34 @@
 | international-a-level/chemistry/wch14 | 14 | 28 |
 | international-a-level/chemistry/wch15 | 13 | 26 |
 | international-a-level/chemistry/wch16 | 12 | 24 |
-| international-a-level/mathematics/mathematics-2018 | 138 | 262 |
-| international-a-level/mathematics/wma01 | 68 | 136 |
-| international-a-level/mathematics/wma02 | 15 | 30 |
-| international-a-level/physics/wph01 | 16 | 32 |
-| international-a-level/physics/wph02 | 16 | 32 |
-| international-a-level/physics/wph03 | 16 | 32 |
-| international-a-level/physics/wph04 | 16 | 31 |
-| international-a-level/physics/wph05 | 15 | 30 |
-| international-a-level/physics/wph06 | 15 | 30 |
-| international-a-level/physics/wph11 | 25 | 49 |
-| international-a-level/physics/wph12 | 18 | 36 |
-| international-a-level/physics/wph13 | 21 | 39 |
-| international-a-level/physics/wph14 | 18 | 34 |
-| international-a-level/physics/wph15 | 17 | 32 |
-| international-a-level/physics/wph16 | 16 | 31 |
+| international-a-level/mathematics/mathematics-2018 | 130 | 262 |
+| international-a-level/mathematics/wma01 | 67 | 136 |
+| international-a-level/mathematics/wma02 | 14 | 30 |
+| international-a-level/physics/wph01 | 15 | 32 |
+| international-a-level/physics/wph02 | 15 | 32 |
+| international-a-level/physics/wph03 | 15 | 32 |
+| international-a-level/physics/wph04 | 15 | 31 |
+| international-a-level/physics/wph05 | 14 | 30 |
+| international-a-level/physics/wph06 | 14 | 30 |
+| international-a-level/physics/wph11 | 24 | 49 |
+| international-a-level/physics/wph12 | 17 | 36 |
+| international-a-level/physics/wph13 | 20 | 39 |
+| international-a-level/physics/wph14 | 17 | 34 |
+| international-a-level/physics/wph15 | 16 | 32 |
+| international-a-level/physics/wph16 | 15 | 31 |
 | international-gcse/chemistry/4ch0 | 32 | 64 |
-| international-gcse/chemistry/4ch1 | 44 | 82 |
-| international-gcse/computer-science/4cp0 | 30 | 41 |
+| international-gcse/chemistry/4ch1 | 44 | 86 |
+| international-gcse/computer-science/4cp0 | 29 | 46 |
 | international-gcse/english-language-b/4eb0 | 17 | 51 |
-| international-gcse/english-language-b/4eb1 | 25 | 43 |
+| international-gcse/english-language-b/4eb1 | 24 | 46 |
 | international-gcse/further-pure-mathematics/4pm0 | 32 | 62 |
-| international-gcse/further-pure-mathematics/4pm1 | 47 | 87 |
+| international-gcse/further-pure-mathematics/4pm1 | 46 | 87 |
 | international-gcse/mathematics-a/4ma0 | 98 | 192 |
-| international-gcse/mathematics-a/4ma1 | 108 | 207 |
+| international-gcse/mathematics-a/4ma1 | 108 | 216 |
 | international-gcse/mathematics-b/4mb0 | 49 | 97 |
-| international-gcse/mathematics-b/4mb1 | 49 | 93 |
+| international-gcse/mathematics-b/4mb1 | 50 | 97 |
 | international-gcse/physics/4ph0 | 32 | 64 |
-| international-gcse/physics/4ph1 | 44 | 83 |
+| international-gcse/physics/4ph1 | 44 | 87 |
 
 | cambridge-international/igcse/chemistry/0620 | 121 | 242 |
 | cambridge-international/igcse/mathematics/0580 | 81 | 145 |
