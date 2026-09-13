@@ -1,0 +1,46 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi12:2021-06:WBI12/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi12
+  title: Edexcel International Advanced Level Biology (WBI12)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: (not printed on cover; session from source catalog "June 2021")
+  source: catalog_fallback
+paper:
+  official_reference: WBI12/01
+  unit_code: WBI12
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 2b17388c6149fef24bc7610c485cae077287368026ca6a71c2265c181e743e8c
+  size_bytes: 1573286
+  original_filename: IAL_BIOLOGY_2021_June_U2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202021/IAL_BIOLOGY_2021_June_U2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session June 2021'
+identification:
+  methods:
+  - partner_inference
+  confidence_rank: 3
+  printed_references_seen:
+  - WBI12/01
+  stray_prints: []
+  session_printed: (not printed on cover; session from source catalog "June 2021")
+  notes: no printed session; catalog session June 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested

@@ -1,0 +1,46 @@
+paper_id: pearson-edexcel:international-a-level:business:wbs11:2021-06:WBS11/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: business
+specification:
+  folder: wbs11
+  title: Edexcel International Advanced Level Business (WBS11)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: (not printed on cover; session from source catalog "MayJune 2021")
+  source: catalog_fallback
+paper:
+  official_reference: WBS11/01
+  unit_code: WBS11
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 165310a38561052eea22c21a0e1c3923f4e31e1ec9d5f7dafc61841ae22c1064
+  size_bytes: 427676
+  original_filename: IAL_IAL_BUSINESS_2021_MayJune_U1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune%202021/IAL_IAL_BUSINESS_2021_MayJune_U1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session MayJune 2021'
+identification:
+  methods:
+  - partner_inference
+  confidence_rank: 3
+  printed_references_seen:
+  - WBS11/01
+  stray_prints: []
+  session_printed: (not printed on cover; session from source catalog "MayJune 2021")
+  notes: no printed session; catalog session MayJune 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested

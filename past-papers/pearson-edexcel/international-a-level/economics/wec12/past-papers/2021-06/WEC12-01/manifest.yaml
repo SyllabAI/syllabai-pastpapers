@@ -1,0 +1,46 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec12:2021-06:WEC12/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec12
+  title: Edexcel International Advanced Level Economics (WEC12)
+series:
+  normalized: 2021-06
+  year: '2021'
+  session_month: '06'
+  printed: (not printed on cover; session from source catalog "June 2021")
+  source: catalog_fallback
+paper:
+  official_reference: WEC12/01
+  unit_code: WEC12
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 3fabdecf5d72118432fd0dd4807fec33af24c1ffddccb29f5d9567439b5273a7
+  size_bytes: 599208
+  original_filename: IAL_ECONOMICS_2021_June_U2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/June%202021/IAL_ECONOMICS_2021_June_U2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session June 2021'
+identification:
+  methods:
+  - partner_inference
+  confidence_rank: 3
+  printed_references_seen:
+  - WEC12/01
+  stray_prints: []
+  session_printed: (not printed on cover; session from source catalog "June 2021")
+  notes: no printed session; catalog session June 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
