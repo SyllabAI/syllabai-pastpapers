@@ -1,0 +1,54 @@
+paper_id: cambridge-international:ial:physics:9702:2025-06:9702/38
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: physics
+specification:
+  folder: '9702'
+  title: Cambridge International AS & A Level Physics (9702)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: May/June 2025
+  source: pdf+filename
+paper:
+  official_reference: 9702/38
+  unit_code: '9702'
+  paper_number: '3'
+  paper_number_variant: '38'
+variant: '8'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 128075c43367a2048ef6eca81ea9ec7c11a2d16ccdf052bf45c8a29e1b883569
+  size_bytes: 95035
+  original_filename: June 2025 (v8) QP.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/QP/June%202025%20(v8)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 67d3f4eceb301db345b8d3d1dd7a23fb12534394a829d067100cb908b45be25d
+  size_bytes: 272861
+  original_filename: June 2025 (v8) MS.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-3/MS/June%202025%20(v8)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9702/38
+  stray_prints: []
