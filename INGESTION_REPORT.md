@@ -530,3 +530,32 @@ dirs should additionally be re-homed under the IAL family (F3 residual), board s
 printed codes, and 228 file-gap dirs (missing qp/ms) pre-loaded as `planned` rows in
 `docs/ledger/file-gap-sweep.csv` for the P2/P3 sweeps. F5 (specimen subtree) and F6 (month-`11` encoding)
 were resolved by the second pass; F8 is partially resolved (insert provision + 12 specification.yaml files).
+## Cambridge wave 6 — PMT remaining-paper sweep (2026-09-13)
+
+Operator direction: "Check pmt for any remaining Cambridge igcse/ial papers". All 33 PMT CIE paper
+listings were parsed (IGCSE maths papers 1-4, physics 1-6, chemistry 1-6; A-level maths Pure 1-3 +
+mechanics/statistics pages, physics 1-5, chemistry 1-5 — 8,350 pdf links in total), normalized against
+the corpus, and every PMT-listed session from 2016 onward the repo did not hold became a wave-6 target:
+**398 paper-variant refs (796 files)**. All 796 files were fetched from the `pmt.physicsandmathstutor.com`
+CDN subdomain (the `www` host serves a Cloudflare challenge to non-browser clients) and print-verified
+one by one (pypdf: PDF magic, EOF, page count, printed spec/paper/variant code, printed session).
+
+Placement was governed by the **printed cover code**, not PMT's `(vN)` labels — which resolved several
+label ambiguities exactly: PMT's pre-2021 March listings label the held variant-2 files as `(v1)` (18
+refs matched held dirs byte-for-byte and were skipped as `na:held-duplicate`, e.g. `0580-M16-QP-12`,
+`9709-M16-QP-52`); two garbled 9701 covers (S23/W23 QP-11) decoded via the uniform +0x1D CMap shift and
+print `9701/11` plus the session exactly; the March-2021 9702 Paper-2 mark scheme prints the official
+`9702/COMP` combined-component convention and is accepted at partner_inference rank 2 (session + paper
+printed; sole MS for the sitting). Git-blob dedup against the full corpus found 0 duplicates and 0
+intra-wave duplicates.
+
+Placed: **380 new paper dirs / 760 files (380 qp + 380 ms)** —
+- whole IAL Feb/March 2021-2024 sessions for 9701/9702/9709 (64 dirs),
+- IAL June/November in-range variant gaps (86 dirs; incl. the 9701/9702 COVID-era paper-3 extra variants 33-36),
+- IGCSE in-range paper/variant gaps (80 dirs; 0620/0625 papers 1/5/6 variants 1+3 for 2021-2024, 0580 M23/M24 paper-32),
+- first 2025 sessions for all six syllabi (150 dirs; Feb/March + May/June, incl. the real 9709/15 P1 variant 15).
+
+Corpus after wave 6: 7522 PDFs (3768 qp / 3736 ms / 18 insert) across 3799 paper dirs;
+Cambridge regular dirs **2259/2259 complete (100%)**, coverage 2016-03..2025-06.
+CIE ledger rebuilt: 926 rows (890 normalized ·
+36 na:held-duplicate over the 18 held refs).

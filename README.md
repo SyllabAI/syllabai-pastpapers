@@ -1073,3 +1073,11 @@ March 2021/2022 paper-32 dirs its shape was missing), the 0580 2023-11/2024-06 m
 completed and every June/November 2021-2024 0580 session now carries papers 31-33. Three 0580 w24 QP
 covers have broken-ToUnicode glyphs and are accepted at partner_inference rank with evidence notes;
 0580 w22 paper-3 remains un-hosted anywhere probed (6 planned rows).
+Cambridge wave 6 (2026-09-13) swept every PMT CIE paper listing (33 pages, 8,350 links) for sessions the
+corpus lacked: 380 new paper dirs / 760 print-verified files — whole IAL Feb/March 2021-2024 sessions
+(9701/9702/9709), IAL June/November variant gaps (incl. the 2021 paper-3 extra variants), IGCSE
+papers-1/5/6 variant gaps for 2021-2024 and 0580 M23/M24 paper-32, and the first 2025 sessions
+(Feb/March + May/June, all six syllabi, incl. the real 9709 P1 variant 15). 18 PMT-listed refs matched
+held dirs (pre-2021 March label variants) and were skipped after byte checks; 0 corpus duplicate blobs.
+Cambridge regular dirs now 2,259/2,259 complete (100%), coverage 2016-03..2025-06; the CIE gap ledger is
+rebuilt to 926 rows (890 normalized · 36 na:held-duplicate).

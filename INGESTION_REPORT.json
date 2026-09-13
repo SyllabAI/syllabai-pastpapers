@@ -1537,5 +1537,41 @@
       "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
       "cambridge": "130 normalized / 0 open (100%)"
     }
+  },
+  "pmt_cie_sweep_wave_2026_09_13": {
+    "date": "2026-09-13",
+    "trigger": "operator direction: 'Check pmt for any remaining Cambridge igcse/ial papers'",
+    "source": "Physics & Maths Tutor CIE listings (33 paper pages, 8,350 pdf links; downloads via the pmt.physicsandmathstutor.com CDN subdomain - the www host serves a Cloudflare challenge)",
+    "scope": "every PMT-listed CIE IGCSE (0580/0620/0625) and IAL (9701/9702/9709) session 2016+ not already held, per printed spec/paper/variant code; PMT (vN) labels treated as candidates only - placement governed by pypdf-printed covers",
+    "fetched": 796,
+    "print_verified": 796,
+    "placed_refs": 380,
+    "placed_files": 760,
+    "held_duplicates": 18,
+    "evidence": [
+      "per-file pypdf forensics: PDF magic, %%EOF, page count, printed code (spec/NN), printed session",
+      "2 garbled-cover QPs (9701-S23/W23 QP-11) decoded via the uniform +0x1D CMap shift; decoded covers print 9701/11 + session exactly",
+      "9702-M21-QP-22 ms prints 9702/COMP (CIE combined-component convention, March 2021); accepted at partner_inference rank 2",
+      "git-blob dedup vs full corpus (0 duplicates) and intra-wave (0 duplicates)",
+      "18 refs already held (pre-2021 March sessions where PMT labels v1 for the held variant-2 files) skipped, 36 ledger rows na:held-duplicate"
+    ]
+  },
+  "corpus_after_pmt_cie_sweep_2026_09_13": {
+    "date": "2026-09-13",
+    "files": 7522,
+    "qp": 3768,
+    "ms": 3736,
+    "insert": 18,
+    "paper_dirs": 3799,
+    "manifests": 3799,
+    "specification_yamls": 48,
+    "complete_pairs": {
+      "pearson-edexcel": "1405/1498",
+      "cambridge-international": "2259/2259"
+    },
+    "ledger": {
+      "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
+      "cambridge": "926 rows: 890 normalized \u00b7 36 na:held-duplicate (18 refs PMT-listed but already held)"
+    }
   }
 }
