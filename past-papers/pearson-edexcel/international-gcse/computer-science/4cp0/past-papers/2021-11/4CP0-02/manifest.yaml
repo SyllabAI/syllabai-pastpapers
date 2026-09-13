@@ -32,15 +32,28 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 20600c393504fed16c8ec8e67da3bcb97ffbd8734a9efded89792cee04ea0dad
+  size_bytes: 656169
+  original_filename: 4cp0-2a-rms-20220224.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams.com (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2024/02/4cp0-2a-rms-20220224.pdf
+    collected_by: SyllabAI agent (2026-09-13 wave 4; operator direction - Check savemyexams)
+    note: official Pearson file 4cp0-2a-rms-20220224 prints (4CP0/2A) November 2021; November 2021 ran a single Paper 2 sitting whose QP cover prints the base reference 4CP0/02; Pearson groups this ms with the held qp in its own listing; partner_inference, operator ratification pending
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
+  - 4CP0/2A
   - 4CP0/02
   stray_prints: []
   session_printed: November 2021
-  notes: []
+  notes:
+  - 2026-09-13 wave 4: ms added from SaveMyExams - November 2021 CS Paper 2 was a single sitting (officially version 2A; QP cover prints base 4CP0/02, as QP covers do for every 4CP0 sitting variant); PMT and SME/Pearson each host exactly one November-2021 Paper 2.
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

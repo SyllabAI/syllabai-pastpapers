@@ -35,15 +35,28 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 871ccbfc74b15b0fe47797dea79f660eab961b7d9db5989afdb0dc2aaf98f447
+  size_bytes: 663665
+  original_filename: 4cp0-2a-que-20230608.pdf
+  source:
+    source_type: third-party-archive
+    archive: official qualifications.pearson.com content-dam (via SaveMyExams.com listing)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Computer-science/2017/Exam-materials/4cp0-2a-que-20230608.pdf
+    collected_by: SyllabAI agent (2026-09-13 wave 4; operator direction - Check savemyexams)
+    note: official Pearson content-dam file 4cp0-2a-que-20230608 (P72938A); cover prints the base reference 4CP0/02 + the 5-7 June 2023 window; official 2a-coded filename pairs it with the 2a ms held in this dir; content distinct from the separate plain-02 2023 sitting paper; partner_inference, operator ratification pending
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
+  - 4CP0/02
   - 4CP0/2A
   stray_prints: []
   session_printed: June 2023
-  notes: []
+  notes:
+  - 2026-09-13 wave 4: qp added from SaveMyExams - official Pearson content-dam file 4cp0-2a-que-20230608 (P72938A); cover prints the base reference 4CP0/02 + the 5-7 June 2023 window; official 2a-coded filename pairs it with the 2a ms held in this dir; content distinct from the separate plain-02 2023 sitting paper; partner_inference, operator ratification pending.
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

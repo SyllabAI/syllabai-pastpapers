@@ -35,15 +35,28 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 2bc86016dcea2fe68079b47b2aef2bee3a3d7516abc37e790e4175c82ef0cb65
+  size_bytes: 481136
+  original_filename: 4cp0-02-jun-nov-2020-question-paper-2-edexcel-igcse-computerscience.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams.com (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/03/4cp0-02-jun-nov-2020-question-paper-2-edexcel-igcse-computerscience.pdf
+    collected_by: SyllabAI agent (2026-09-13 wave 4; operator direction - Check savemyexams)
+    note: November-2020 2A window re-sat the June-2020 printed paper (P61885A; cover prints base reference 4CP0/02 + 3-5 June 2020); pairing evidenced by the official 2A ms held in this dir (prints November 2020) and Pearson jun-nov-2020 file grouping; content-identical to the June paper held at 2020-06/4CP0-02 (COVID-2020 reuse, cf. the wave-3 IAL precedent); partner_inference, operator ratification pending
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
+  - 4CP0/02
   - 4CP0/2A
   stray_prints: []
   session_printed: November 2020; June 2020
-  notes: []
+  notes:
+  - 2026-09-13 wave 4: qp added from SaveMyExams - November-2020 2A window re-sat the June-2020 printed paper (P61885A; cover prints base reference 4CP0/02 + 3-5 June 2020); pairing evidenced by the official 2A ms held in this dir (prints November 2020) and Pearson jun-nov-2020 file grouping; content-identical to the June paper held at 2020-06/4CP0-02 (COVID-2020 reuse, cf. the wave-3 IAL precedent); partner_inference, operator ratification pending.
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
