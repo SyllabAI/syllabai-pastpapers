@@ -216,6 +216,42 @@
   manifests 3,419; specification.yaml 48; complete pairs **3,284/3,377**
   (Pearson 1405/1,540 · Cambridge 1879/879); incomplete 93, all ledger-tracked.
 
+## Wave 7 — Paperlords headless probe (2026-09-13)
+
+Source probe ordered by the operator ("run the paperlords headless probe"). The marketing site
+(paperlords.org, Next.js App Router) had defeated earlier curl probes; a headless-browser session
+opened the IGCSE/IAL archive accordions, a QP-button click exposed the direct CDN host
+(archive.paperlords.org), and the site's Supabase `papers` catalog (3,378 rows: 1,365 IGCSE +
+2,013 IAL) was pulled via its public anon key, giving every subject/session/paper link in one query.
+
+15 open rows had catalog coverage; all 15 files were downloaded, print-forensically verified and
+placed (methods [pdf_text, partner_inference], confidence_rank 2, operator ratification pending):
+
+- 14 mark schemes into `2020-06/` dirs (4MA1-1H/1HR/2H/2HR, 4MB1-01/01R/02/02R, 4PM1-01/01R/02/02R,
+  4EB1-01, 4EB1-01R): every ms cover prints "Mark Scheme (Results) November 2020". The June-2020
+  sitting was cancelled and no June MS was ever published; QP P-code identity (held 2020-06 QP and
+  held 2020-11 QP share the same P-code, e.g. P62652A for 4MA1-1H) proves the June papers were
+  re-sat in the November-2020 window, so the November scheme is the scheme for this paper content
+  (COVID-2020 reuse; mirrors the wave-4 4CP0-2A precedent).
+- 1 question paper at `mathematics-2018/2020-10/WST01-01` (fills na:pmt-not-listed): prints
+  WST01/01, "June 2020", exam date "Thursday 4 June 2020" (P65761A) - the June-printed paper sat in
+  the October-2020 window (wave-3 WST02/01 precedent; cf. the held 2020-10/WMA11-01 QP).
+
+F15 discovered and repaired: `2020-11/4EB1-01/ms.pdf` printed "Paper 1R" (the November-2020 1R
+scheme, PMT original filename "June 2020 (R) MS") beside the 4EB1/01 QP - an F14-class misfile.
+Bytes moved unchanged to a new dir `2020-11/4EB1-01R/` (ms-only; its qp opens as planned); the true
+November Paper-01 scheme was placed at `2020-06/4EB1-01/ms.pdf` (a byte-distinct copy for the
+2020-11 dir is not available; operator ruling requested).
+
+Negatives: the remaining 61 open rows have no Paperlords coverage - GCE-legacy 6663-6684/6PH01-05
+(catalog starts 2019), old-spec 4MA0/4MB0/4PM0 pre-2019, Nov-2020 IGCSE chemistry/physics,
+4CP0 2B/2C QPs (ms only, already held), and 01A variants (catalog carries A-variants only from 2025).
+
+Corpus after wave 7: 7,537 files (3,769 qp · 3,750 ms · 18 insert) across 3,800 dirs/manifests;
+complete regular pairs Pearson 1,406/1,499 + Cambridge 2,259/2,259. Edexcel ledger 230 rows:
+150 normalized / 80 open (23 planned · 7 not-listed · 11 byte-duplicate · 22 mislabeled ·
+10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper).
+
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
 | method | files |
