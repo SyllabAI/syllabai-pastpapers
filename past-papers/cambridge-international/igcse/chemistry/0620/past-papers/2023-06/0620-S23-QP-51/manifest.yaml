@@ -1,0 +1,54 @@
+paper_id: cambridge-international:igcse:chemistry:0620:2023-06:0620/51
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: chemistry
+specification:
+  folder: '0620'
+  title: Cambridge IGCSE Chemistry (0620)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May/June 2023
+  source: pdf+filename
+paper:
+  official_reference: 0620/51
+  unit_code: '0620'
+  paper_number: '5'
+  paper_number_variant: '51'
+variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 8cc7639b2d559932ad3ada099798bafcbb9fb86171e57fa14fa6878990be620a
+  size_bytes: 514583
+  original_filename: June 2023 (v1) QP.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/CIE/Paper-5/International/QP/June%202023%20(v1)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a67bd825ef3ba13f6737907f35b8aa3251d71b9db616049ec1bfc4170142a280
+  size_bytes: 129995
+  original_filename: June 2023 (v1) MS.pdf
+  pages: 9
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/CIE/Paper-5/International/MS/June%202023%20(v1)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 0620/51
+  stray_prints: []
