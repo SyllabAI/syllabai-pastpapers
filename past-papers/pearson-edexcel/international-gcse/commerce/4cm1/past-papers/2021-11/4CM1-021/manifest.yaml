@@ -1,0 +1,46 @@
+paper_id: pearson-edexcel:international-gcse:commerce:4cm1:2021-11:4CM1/021
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: commerce
+specification:
+  folder: 4cm1
+  title: Edexcel International GCSE Commerce (4CM1)
+series:
+  normalized: 2021-11
+  year: '2021'
+  session_month: '11'
+  printed: (not printed on cover; session from source catalog "Nov 2021")
+  source: catalog_fallback
+paper:
+  official_reference: 4CM1/021
+  unit_code: 4CM1
+  paper_number_variant: '021'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 253e5ad71ea3e5cf6f985fa7473cf28e46c5fc038bfc3ad73788c6c441ce36f9
+  size_bytes: 575747
+  original_filename: IGCSE_COMMERCE_2021_Nov_P2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/Nov%202021/IGCSE_COMMERCE_2021_Nov_P2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session Nov 2021'
+identification:
+  methods:
+  - partner_inference
+  confidence_rank: 3
+  printed_references_seen:
+  - 4CM1/021
+  stray_prints: []
+  session_printed: (not printed on cover; session from source catalog "Nov 2021")
+  notes: no printed session; catalog session Nov 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
