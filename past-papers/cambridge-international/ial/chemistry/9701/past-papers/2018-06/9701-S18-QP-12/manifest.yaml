@@ -1,0 +1,65 @@
+paper_id: cambridge-international:ial:chemistry:9701:2018-06:9701/12
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: May/June 2018
+  source: pdf+filename
+paper:
+  official_reference: 9701/12
+  unit_code: '9701'
+  paper_number: '1'
+  paper_number_variant: '12'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 15036a198343cb9c37b980b319961c5ed8b378cb4e452c7c0ec59f53ba3ea160
+  size_bytes: 330942
+  original_filename: 9701_s18_qp_12.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/a-level/chemistry-9701/2018-may-june/9701_s18_qp_12.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 260f46eb7f8c545027c86e8137b9cb7756ea4fbb031c90942940dfbb0d0a3041
+  size_bytes: 88175
+  original_filename: 9701_s18_ms_12.pdf
+  pages: 3
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/a-level/chemistry-9701/2018-may-june/9701_s18_ms_12.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/12
+  stray_prints: []
+  session_printed: May/June 2018
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

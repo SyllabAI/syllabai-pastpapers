@@ -1,0 +1,65 @@
+paper_id: cambridge-international:igcse:chemistry:0620:2020-03:0620/22
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: chemistry
+specification:
+  folder: '0620'
+  title: Cambridge IGCSE Chemistry (0620)
+series:
+  normalized: 2020-03
+  year: '2020'
+  session_month: '03'
+  printed: February/March 2020
+  source: pdf+filename
+paper:
+  official_reference: 0620/22
+  unit_code: '0620'
+  paper_number: '2'
+  paper_number_variant: '22'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 4dd19b9b335c0d4e4dcee0054d9f09f89e98282f128545636a5fd32d9a940b8b
+  size_bytes: 297299
+  original_filename: 0620_m20_qp_22.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/chemistry-0620/2020-march/0620_m20_qp_22.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 130f4a6cbc89a1a8c03e8493764fd1d1776d84cb4665762b2ab375d2ed960122
+  size_bytes: 143411
+  original_filename: 0620_m20_ms_22.pdf
+  pages: 3
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/chemistry-0620/2020-march/0620_m20_ms_22.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0620/22
+  stray_prints: []
+  session_printed: February/March 2020
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

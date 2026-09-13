@@ -1,0 +1,65 @@
+paper_id: cambridge-international:ial:physics:9702:2019-03:9702/33
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: physics
+specification:
+  folder: '9702'
+  title: Cambridge International AS & A Level Physics (9702)
+series:
+  normalized: 2019-03
+  year: '2019'
+  session_month: '03'
+  printed: February/March 2019
+  source: pdf+filename
+paper:
+  official_reference: 9702/33
+  unit_code: '9702'
+  paper_number: '3'
+  paper_number_variant: '33'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: c7575c3a10810f2316f1eb1d73ce2531c7396fd4ebacd9acfea6305d29e07078
+  size_bytes: 1979975
+  original_filename: 9702_m19_qp_33.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/a-level/physics-9702/2019-march/9702_m19_qp_33.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: cf3f0aa02ff32441c7f831b7611e9ea9e01683fc9406e1a26e9cbf303617b797
+  size_bytes: 179399
+  original_filename: 9702_m19_ms_33.pdf
+  pages: 7
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/a-level/physics-9702/2019-march/9702_m19_ms_33.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9702/33
+  stray_prints: []
+  session_printed: February/March 2019
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

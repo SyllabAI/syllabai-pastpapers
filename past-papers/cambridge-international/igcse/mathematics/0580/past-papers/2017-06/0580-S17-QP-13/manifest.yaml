@@ -1,0 +1,65 @@
+paper_id: cambridge-international:igcse:mathematics:0580:2017-06:0580/13
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: mathematics
+specification:
+  folder: '0580'
+  title: Cambridge IGCSE Mathematics (0580)
+series:
+  normalized: 2017-06
+  year: '2017'
+  session_month: '06'
+  printed: May/June 2017
+  source: pdf+filename
+paper:
+  official_reference: 0580/13
+  unit_code: '0580'
+  paper_number: '1'
+  paper_number_variant: '13'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 4d7f23b04529255890c366610aa43a8255c97e1ff4470efa3c7e0166a6b2523c
+  size_bytes: 1890251
+  original_filename: 0580_s17_qp_13.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/mathematics-0580/2017/2017-jun/0580_s17_qp_13.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ebc6d364236408a6c2058dd789f997559242462396eba9d97f8c5dda61c08ec7
+  size_bytes: 247506
+  original_filename: 0580_s17_ms_13.pdf
+  pages: 4
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/mathematics-0580/2017/2017-jun/0580_s17_ms_13.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0580/13
+  stray_prints: []
+  session_printed: May/June 2017
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

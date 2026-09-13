@@ -1,0 +1,53 @@
+paper_id: cambridge-international:igcse:mathematics:0580:2024-06:0580/33
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: mathematics
+specification:
+  folder: '0580'
+  title: Cambridge IGCSE Mathematics (0580)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: May/June 2024
+  source: pdf+filename
+paper:
+  official_reference: 0580/33
+  unit_code: '0580'
+  paper_number: '3'
+  paper_number_variant: '33'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 3f55490c1077d3db1c70eebdae77da817143da211213be73430705546ca52b5f
+  size_bytes: 336777
+  original_filename: 0580_s24_qp_33.pdf
+  pages: 20
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/mathematics-0580/2024-may-june/0580_s24_qp_33.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0580/33
+  stray_prints: []
+  session_printed: May/June 2024
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+  - partial dir: ms not hosted by the source for this component; gap row recorded in docs/ledger/cie-gap-sweep.csv.
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)

@@ -1,0 +1,65 @@
+paper_id: cambridge-international:igcse:physics:0625:2017-06:0625/63
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: physics
+specification:
+  folder: '0625'
+  title: Cambridge IGCSE Physics (0625)
+series:
+  normalized: 2017-06
+  year: '2017'
+  session_month: '06'
+  printed: May/June 2017
+  source: pdf+filename
+paper:
+  official_reference: 0625/63
+  unit_code: '0625'
+  paper_number: '6'
+  paper_number_variant: '63'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 85daaae595fe1b30e9045566861f00107ad46c8202723e41deca06bbc6d64479
+  size_bytes: 2442988
+  original_filename: 0625_s17_qp_63.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/physics-0625/2017/2017-jun/0625_s17_qp_63.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 408eae1b4718ce7039a6ccb2bf7d2a9186548ae9212d861c9b2d84d695c7e2de
+  size_bytes: 194909
+  original_filename: 0625_s17_ms_63.pdf
+  pages: 5
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/physics-0625/2017/2017-jun/0625_s17_ms_63.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0625/63
+  stray_prints: []
+  session_printed: May/June 2017
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
