@@ -146,6 +146,44 @@
   specification.yaml 48; complete QP+MS pairs 3,218/3,342 (Pearson 1,398/1,498 · Cambridge
   1820/1844); all incomplete dirs ledger-tracked.
 
+## Cambridge International wave 3 (2026-09-13)
+
+- Operator direction: *"Proceed with wave 3."* Scope per the wave-2 report's wave-3 candidates: the 53
+  remaining planned CIE rows (IGCSE February/March 2022 sessions for 0580/0620/0625 + the 0580
+  2023-11/2024-06 missing-MS rows) and the 0580 paper-3 sweep for the remaining 2021-2024 June/November
+  sessions.
+- Source: **pastpapers.co was down (HTTP 522) for the whole wave** - **XtremePapers CAIE archive** selected
+  (flat server-rendered per-syllabus listings; wave 2 had already validated 6 of its files byte-for-byte).
+  papacambridge (JS-only, legacy subdomain defunct), gceguide (domain lapsed), dynamicpapers (500) and
+  xtrapapers (no CAIE coverage) were probed and rejected.
+- Files placed: **88 (32 qp · 56 ms)** across
+  **32 new paper dirs** + **24 partial dirs completed** - every dir manifest-complete.
+- Evidence: 85/88 files rank 0 (printed syllabus reference + session string). Three **0580 w24 QPs
+  (31/32/33)** have covers whose glyphs use a broken ToUnicode CMap (per-glyph remapping; the wave-1
+  uniform-shift decode is not applicable) - accepted at **partner_inference** rank on the source's
+  official-convention filename + distinct per-paper structure + same-series pairing with their
+  print-verified mark schemes; flagged for operator ratification. One cover erratum recorded:
+  **0580_s21_ms_33** misprints 0580/31 (content is the Paper 33 scheme - structure distinct from the 31/32
+  schemes, similarity 0.57/0.59). **0580_m21_ms_32** prints "March 2021" (CIE March-session MS cover
+  convention) rather than "February/March 2021".
+- Shape completions discovered at source: **0580 March 2022 also ran Paper 32** (the m16-m22 March sessions
+  all have 4 papers; the ledger had projected the post-2022 3-paper shape) and **0580 March 2021 Paper 32**
+  was missing from the wave-1 shape - both placed, March shapes now consistent.
+- 0580 paper-3 sweep: s21/w21/s22/s23/w24 papers 31-33 placed (15 new complete dirs); the w23/s24 paper-3
+  dirs gained their MS. **9709 March 2019 paper 42** - a partial dir the wave-2 ledger rebuild had missed -
+  gained its print-verified MS, bringing Cambridge regular dirs to 1,876/1,876 complete. **0580
+  October/November 2022 paper 3 (6 files) is hosted nowhere probed** (xtp skips w22 entirely) and stays planned.
+- Ledger: [docs/ledger/cie-gap-sweep.csv](docs/ledger/cie-gap-sweep.csv) rebuilt:
+  **130 rows (6 planned · 124 normalized)**.
+
+**Combined corpus (Pearson Edexcel + Cambridge International, after wave 3):**
+
+- **6749 files (3380 qp · 3351 ms · 18 insert) across
+  3416 paper dirs**; manifests 3416; specification.yaml 48; complete QP+MS pairs
+  **3274/3374** (Pearson 1398/1498
+  · Cambridge 1876/1876); incomplete dirs
+  ledger-tracked (0580 w22 paper-3: 6 planned rows).
+
 ## Identification methods (evidence hierarchy, charter s.13-17)
 
 | method | files |

@@ -1066,3 +1066,10 @@ February/March; IAL June + November plus the February/March India AS sessions wh
 wave-1 gap ledger - including the whole 9709 Oct-Nov 2021 session. Six files pastpapers.co serves empty (or
 does not host) were recovered from the XtremePapers CAIE tree; every material is print-verified to rank 0 and
 the CIE gap ledger (docs/ledger/cie-gap-sweep.csv) is rebuilt from corpus + source state after every wave.
+Cambridge wave 3 (2026-09-13) swept the remaining gap ledger and the 0580 paper-3 sweep for the
+2021-2024 June/November sessions (pastpapers.co was down all wave - files came from the XtremePapers
+CAIE archive): IGCSE February/March 2022 sessions placed for 0580/0620/0625 (0580 also gained the
+March 2021/2022 paper-32 dirs its shape was missing), the 0580 2023-11/2024-06 missing-MS rows were
+completed and every June/November 2021-2024 0580 session now carries papers 31-33. Three 0580 w24 QP
+covers have broken-ToUnicode glyphs and are accepted at partner_inference rank with evidence notes;
+0580 w22 paper-3 remains un-hosted anywhere probed (6 planned rows).
