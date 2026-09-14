@@ -746,3 +746,20 @@ both sha256s); the remaining legacy stragglers (4EB0 2018, 4HB0/4IT0, WEC01-03)"
 Corpus after wave 11: **10,189 PDFs** (5,058 qp / 4,994 ms / 117 er / 20 insert) across **5,144
 paper dirs/manifests**; Pearson complete regular pairs **2,609/2,843**; Cambridge **2,259/2,259
 (100%)**; quarantine unchanged (316 PDFs + 316 REASON records).
+
+
+## Wave 12 — date-coded rank-2 ratification + freshness sweep (2026-09-15)
+
+Operator direction: *"ratify the 8 new date-coded rank-2 manifests and push Wave 9-style
+freshness."*
+
+- **Ratification (commit 0e805f23):** 9 manifests (the queue's true count - 2 4HB0 2012-06
+  date_rule QPs + 7 WEC 2015 image-cover manifests; the worklog's "8" missed WEC02-01 2015-06,
+  whose pending cover is the MS) upgraded to `OPERATOR-RATIFIED` with operator_ratification
+  blocks. Queue now empty. Corpus unchanged - ratification is metadata-only.
+- **Freshness sweep:** IAL frontier 2026-06 held + variant-complete (paperlords' R/A labels
+  byte-match the held `-01A` files 6/6); IGCSE frontier 2025-10 + 2025-11 held complete to the
+  paperlords catalog (P1s at 2025-10 byte-verified 7/7; Bangla Nov-2025 = held 4BA0-01 2025-10);
+  IGCSE January series discontinued (last session 2023-01); June-2026 IGCSE un-hosted on every
+  probed source; content-dam carries no current-spec materials (calibrated 0/72 + 0/960).
+- **Net placements: none** - the corpus was already at the freshness frontier; no ledger delta.

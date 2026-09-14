@@ -1154,3 +1154,20 @@ git-blob dedup applied. Corpus: **10,189 PDFs across 5,144 paper dirs**; Pearson
 complete regular pairs; Cambridge 2,259/2,259 (100%); ledger 978 rows (664 normalized / 179
 planned / 135 na). Remaining legacy residuals: 4IT0 pre-2018 sessions and the legacy mark schemes
 for 4EB0-2018/4HB0/WEC01-02 2017-18 are un-hosted anywhere probed (ledger-tracked).
+
+
+---
+
+## 37. Wave 12 (2026-09-15)
+
+Operator ratification of the wave-11 date-coded rank-2 queue: **9 manifests** (2 4HB0 2012-06
+date_rule QPs + 7 WEC 2015 image-cover manifests - the previously reported count of 8 missed
+WEC02-01 2015-06, whose pending cover is the MS) now carry `operator_ratification` blocks and
+`OPERATOR-RATIFIED` status (commit 0e805f23); the ratification queue is empty. Wave 9-style
+freshness sweep across every probed source (paperlords app catalog + Supabase, PMT, SME,
+Pearson content-dam): the corpus is already at the frontier - IAL complete to June 2026
+(variant-complete; paperlords' R/A second-variant labels byte-match the held `-01A` files),
+IGCSE complete to the autumn-2025 sessions (2025-10 P1s + 2025-11 P2s, the print-faithful
+encoding), the IGCSE January series is discontinued after 2023-01, and June-2026 IGCSE is not
+yet hosted anywhere. Net placements: none; corpus unchanged at **10,189 PDFs / 5,144 paper
+dirs**; ledger 978 rows.
