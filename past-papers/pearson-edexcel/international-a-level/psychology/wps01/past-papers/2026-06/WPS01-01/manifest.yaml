@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Psychology/June 2026/IAL_PSYCHOLOGY_2026_June_U1_QP_1787723912878.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b836e9b1b73ca9f56e21bc1866337b31067805c7d77c2b417efc56152f2c1dec
+  size_bytes: 310736
+  original_filename: IAL_PSYCHOLOGY_2026_June_U1_MS_1787723911751.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Psychology/June 2026/IAL_PSYCHOLOGY_2026_June_U1_MS_1787723911751.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WPS01/01
   stray_prints: []
-  session_printed: May 2026
   notes: print-verified from cover (rank 0)

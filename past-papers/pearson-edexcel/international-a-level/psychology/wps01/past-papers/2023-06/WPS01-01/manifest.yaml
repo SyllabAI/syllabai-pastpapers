@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Psychology/MayJune%202023/IAL_PSYCHOLOGY_2023_MayJune_U1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a2e44ece40718d4ae0bbbe8a206cff319bdd2a9babce10aa0c3e4ca2c8341377
+  size_bytes: 287135
+  original_filename: IAL_PSYCHOLOGY_2023_MayJune_U1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Psychology/MayJune%202023/IAL_PSYCHOLOGY_2023_MayJune_U1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: b614e9827d009938395de16ed3e1128902c054c1616a74439e3febd303994d1b
+  size_bytes: 3944208
+  original_filename: IAL_PSYCHOLOGY_2023_MayJune_U1_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Psychology/MayJune%202023/IAL_PSYCHOLOGY_2023_MayJune_U1_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - WPS01/01
   stray_prints: []
-  session_printed: May 2023
   notes: print-verified from cover (rank 0)

@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Accounting/Oct%202024/IAL_ACCOUNTING_2024_Oct_U1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b6c82aef34b2c5c64ab30c817793783e1d3a88b4b223415d3b3d894fac9dabc5
+  size_bytes: 363023
+  original_filename: ACCOUNTING_2024_Oct_U1_MS_1777819530264.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Accounting/Oct 2024/ACCOUNTING_2024_Oct_U1_MS_1777819530264.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WAC11/01
   stray_prints: []
-  session_printed: October 2024
   notes: print-verified from cover (rank 0)

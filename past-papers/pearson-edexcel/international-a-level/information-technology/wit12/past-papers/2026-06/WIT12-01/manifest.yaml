@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/IT/June 2026/IAL_IT_2026_June_U2_QP_1787725075145.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1b0091e5982c192b63bbc307559e4fa34b591b6c1950db2a508a08419e3af470
+  size_bytes: 675315
+  original_filename: IAL_IT_2026_June_U2_MS_1787725074058.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/IT/June 2026/IAL_IT_2026_June_U2_MS_1787725074058.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WIT12/01
   stray_prints: []
-  session_printed: May 2026
   notes: print-verified from cover (rank 0)
