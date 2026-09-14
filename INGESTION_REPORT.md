@@ -624,3 +624,45 @@ Corpus after wave 8: **9,746 PDFs** (4,827 qp / 4,784 ms / 117 er / 18 insert) a
 (4,902 regular + 42 specimen). Complete regular pairs: Cambridge **2,259/2,259 (100%)**;
 Pearson **2369/2643**. Ledger recomposed: 157 normalized ·
 237 planned (new-subject incomplete pairs + source-side rejects) · 50 documented na:*.
+
+---
+
+## Wave 9 — file-gap completion + split-dir consolidation (2026-09-14)
+
+Continuation of the wave-8 program: the recomposed gap ledger (237 planned rows) was swept against
+the Paperlords catalog (re-queried live from the wave-7 Supabase snapshot — unchanged at 1,365 IGCSE +
+2,013 IAL rows), the PMT download CDN and the XtremePapers GCE tree.
+
+- **30 files placed** (6 qp · 24 ms): 25 Paperlords placements (print forensics; 2 rank-1, 23 rank-2/3
+  with scan covers identified by OCR session + catalog unit, operator ratification requested),
+  3 October-2020 IAL reuse QPs (WCH14/15/16 — PMT files these June-printing papers under its
+  "October 2020 (IAL)" labels, following the ratified June/October reuse precedent), and 2 GCE-physics
+  June-2013 01R schemes from XtremePapers (OCR-verified "Paper 01R").
+- **26 split-dir consolidations (F19):** wave 8 had split one paper identity across two directory
+  encodings — QP at `2025-10/4AC1-01` vs MS at `2025-11/4AC1-01` (Pearson's autumn IGCSE series prints
+  October on QP covers, November on MS/ER headers; stored by the QP's sitting month per §9, whose own
+  4PM1-2023-10 example blesses the encoding), IAL legacy-retake QPs at `2019-11` vs MSs at `2019-10`
+  (§9 D3: IAL autumn → `-10`; the WAC12 QP prints exam date Monday 4 November 2019 while its scheme
+  header prints October 2019 — one sitting), and padded/unpadded ref dirs (`4GE1-01` vs `4GE1-1`,
+  `WBI16-01` vs `WBI16-1`, `4CP0-02C` vs `4CP0-2C`, `4ET1-02R` er stray). Every pair was manifest-verified
+  as one session before merging; the moved halves keep their manifests' provenance; operator
+  ratification requested for the encoding rulings.
+- **F20 (open):** four dirs hold a second, byte-distinct MS of an already-complete paper
+  (`2020-10/WCH11-1|WCH12-1|WCH13-1|WPH13-1` alongside complete `-01` twins) — provisional-vs-final
+  scheme generations; rows closed as `na:stray-duplicate-dir` pending content forensics / operator ruling.
+- **Ledger recomposed: 440 rows — 243 normalized · 140 planned · 57 documented na:*** (from
+  157/237/50): 81 rows closed by placements and consolidations, 5 stale rows marked `na:dir-absent`
+  (dirs absent from the tree: 4HB1-02 2019-01, WPH15/16 2019-06, WLA01 2026-06, WPH16 2020-06),
+  1 duplicate row deduped, 1 new planned row for the created `2021-06/4AC1-02` dir (its June-2021 QP
+  is un-hosted — the catalog's "MayJune 2021 P2 QP" prints March 2021).
+- **F21:** PMT's CDN serves the June-2020 IAL papers under "October 2020" session labels — PMT naming
+  is reuse-based, not print-based; all PMT fetches are print-verified before placement (3 reused here,
+  3 rejected as byte-dups of corpus files, 1 recorded as same-paper evidence for WPH13).
+
+Corpus after wave 9: **9,776 PDFs** (4,833 qp / 4,808 ms / 117 er / 18 insert) across **4,919 paper dirs**
+(4,877 regular + 42 specimen). Complete regular pairs: Cambridge **2,259/2,259 (100%)**;
+Pearson **2,423/2,618** (up from 2,369/2,643 — the consolidations completed 26 dirs while removing
+their half-empty twins). Remaining planned rows are dominated by source-blocked sessions
+(IAL Oct-2020 QPs un-hosted anywhere probed under print-faithful naming, 4CP0 P2B/P2C QPs,
+GCE-legacy 6663/6665 01R QPs + 2009 MSs, and the newest-session IGCSE ms) plus the legacy
+back-catalog sweep (pre-2019 4XX0 / W??01-04 specs — the AUDIT §16 wave-10 candidate).

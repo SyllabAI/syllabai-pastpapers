@@ -1103,3 +1103,16 @@ remaining subjects"*. Wave 8 onboarded 18 further Edexcel subjects from the Pape
 Every new directory carries a manifest in the §18 model with per-file Paperlords provenance; examiner
 reports are stored as `er.pdf` (§10 whitelist). The gap ledger (docs/ledger/file-gap-sweep.csv) was
 recomposed as the actionable gap list for the enlarged corpus.
+
+---
+
+## 35. Wave 9 (2026-09-14)
+
+The wave-8 gap ledger was swept to completion wherever sources allow: 30 files placed (Paperlords
+catalog re-query, PMT download CDN, XtremePapers GCE tree — every file print-verified before
+placement, OCR forensics for scan covers), and the 26 split-directory defects (F19 — one paper
+identity encoded as two dirs across `-10`/`-11` session months or padded/unpadded ref forms)
+consolidated per §9/§11 with full evidence trails and operator ratification requests. The gap
+ledger now stands at 243 normalized / 140 planned / 57 documented na; the remaining planned rows are
+source-blocked (see AUDIT §17). Corpus: 9,776 PDFs across 4,919 paper dirs; Pearson regular pairs
+2,423/2,618; Cambridge unchanged at 2,259/2,259 (100%).
