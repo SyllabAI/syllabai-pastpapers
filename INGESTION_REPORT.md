@@ -615,12 +615,12 @@ remaining subjects"*. Source: the Paperlords public catalog (snapshot 2026-09-13
   693 freshness files (393 in the newest seasons), incl. print-verified legacy strays (4IT0 2018, WBS12 2015,
   WEC12 2016, 2019 legacy retakes, C12/C34).
 - **2,209 files placed** (1058 qp · 1034 ms ·
-  117 examiner reports) into 1,143 new paper dirs + 51 manifest splices; every file
+  117 examiner reports) into 1,144 new paper dirs + 50 spliced dirs (51 spliced materials); every file
   identified from its own cover (ref + session + P-code), blob-sha deduped vs corpus and intra-wave.
 - Identity ranks: 1,984 print-verified (rank 0) · 43 COVID date-rule (rank 2) · 182 catalog-inference
   (rank 3 — covers without a readable reference; operator ratification requested).
 
-Corpus after wave 8: **9,746 PDFs** (4,827 qp / 4,784 ms / 117 er / 18 insert) across 4,943 paper dirs
-(4,901 regular + 42 specimen). Complete regular pairs: Cambridge **2,259/2,259 (100%)**;
-Pearson **2369/2641**. Ledger recomposed: 157 normalized ·
+Corpus after wave 8: **9,746 PDFs** (4,827 qp / 4,784 ms / 117 er / 18 insert) across 4,944 paper dirs
+(4,902 regular + 42 specimen). Complete regular pairs: Cambridge **2,259/2,259 (100%)**;
+Pearson **2369/2643**. Ledger recomposed: 157 normalized ·
 237 planned (new-subject incomplete pairs + source-side rejects) · 50 documented na:*.
