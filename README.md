@@ -1125,3 +1125,8 @@ PMT spec-boundary mislabels were documented and excluded (F22), a stray duplicat
 consolidated (F23), and one attribution ambiguity was flagged for the operator (F24). The gap
 ledger stands at 549 normalized / 140 planned / 127 documented na. Corpus: 10,082 PDFs across
 5,070 paper dirs; Pearson regular pairs 2,574/2,769; Cambridge 2,259/2,259 (100%).
+
+
+*Correction (2026-09-14):* wave-10 net placements are **149 new dirs / 302 new files** (three
+same-identity 2019-06 legacy dirs were re-sourced in place; see AUDIT §18.1). Corpus: 10,076 PDFs
+across 5,067 paper dirs; Pearson 2,572/2,766; Cambridge 2,259/2,259 (100%).

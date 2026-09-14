@@ -696,3 +696,17 @@ Corpus after wave 10: **10,082 PDFs** (4,985 qp / 4,960 ms / 117 er / 20 insert)
 paper dirs** (5,028 regular + 42 specimen). Complete regular pairs: Cambridge **2,259/2,259 (100%)**;
 Pearson **2,574/2,769**. Legacy state: 4CH0/4PH0/4MA0/4MB0/4PM0/4EB0 pre-2019 gaps closed to the
 PMT-enumerated horizon; remaining planned rows are source-blocked (see AUDIT §18).
+
+
+### Wave 10 correction (2026-09-14, same session)
+
+- The wave block above stated 152 new dirs / 306 files; the exact tree diff shows **149 new dirs /
+  302 new files** (300 qp+ms + 2 inserts): the enumeration case-bug (`WBI04` vs `wbi04` in the
+  coverage lookup) kept WBI04/05/06-01 2019-06 in the target list — their bytes and manifests were
+  **replaced in place** (same identity slot; PMT copies print-verified; supersedes the previous
+  paperlords copies on equal rank-0 evidence). No identity changed.
+- F23 completion: the stray `4MB0-1R` 2016-01 qp/ms leftovers (unmanifested after the manifest
+  removal) are now deleted from the regular tree; the variant scan remains quarantined.
+- Corrected corpus after wave 10: **10,076 PDFs** (4,982 qp / 4,957 ms / 117 er / 20 insert)
+  across **5,067 paper dirs** (5,025 regular + 42 specimen); Pearson complete pairs **2,572/2,766**;
+  Cambridge 2,259/2,259 (100%). Ledger unchanged at 816 rows (549/140/127).

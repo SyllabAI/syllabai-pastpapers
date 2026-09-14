@@ -193,24 +193,24 @@
    }
   },
   "corpus_after_legacy_backcatalog_2026_09_14": {
-   "pdfs": 10082,
-   "qp": 4985,
-   "ms": 4960,
+   "pdfs": 10076,
+   "qp": 4982,
+   "ms": 4957,
    "er": 117,
    "insert": 20,
-   "paper_dirs": 5070,
-   "regular_dirs": 5028,
+   "paper_dirs": 5067,
+   "regular_dirs": 5025,
    "specimen_dirs": 42,
-   "pearson_complete_regular_pairs": "2574/2769",
+   "pearson_complete_regular_pairs": "2572/2766",
    "cambridge_complete_regular_pairs": "2259/2259"
   }
  },
  "identification_methods": {
-  "pdf_text": 6898,
+  "pdf_text": 7046,
   "coded-date": 518,
   "sme-listing": 16,
   "date_rule": 556,
-  "partner_inference": 182,
+  "partner_inference": 201,
   "folder_consensus": 6,
   "specimen_first_teaching": 5
  },
@@ -264,7 +264,7 @@
   },
   "international-gcse/mathematics-b/4mb0": {
    "paper_dirs": 48,
-   "materials": 95
+   "materials": 93
   },
   "international-gcse/english-language-b/4eb0": {
    "paper_dirs": 17,
@@ -415,36 +415,36 @@
    "materials": 500
   },
   "international-a-level/biology/WBI01": {
-   "paper_dirs": 15,
-   "materials": 30
+   "paper_dirs": 30,
+   "materials": 60
   },
   "international-a-level/biology/WBI02": {
-   "paper_dirs": 15,
-   "materials": 30
+   "paper_dirs": 30,
+   "materials": 60
   },
   "international-a-level/biology/WBI03": {
-   "paper_dirs": 15,
-   "materials": 30
+   "paper_dirs": 30,
+   "materials": 60
   },
   "international-a-level/biology/WBI04": {
-   "paper_dirs": 14,
-   "materials": 28
+   "paper_dirs": 28,
+   "materials": 56
   },
   "international-a-level/biology/WBI05": {
-   "paper_dirs": 14,
-   "materials": 30
+   "paper_dirs": 28,
+   "materials": 60
   },
   "international-a-level/biology/WBI06": {
-   "paper_dirs": 14,
-   "materials": 28
+   "paper_dirs": 28,
+   "materials": 56
   },
   "international-gcse/biology/4bi0": {
-   "paper_dirs": 44,
-   "materials": 88
+   "paper_dirs": 88,
+   "materials": 176
   },
   "international-gcse/economics/4ec0": {
-   "paper_dirs": 21,
-   "materials": 42
+   "paper_dirs": 42,
+   "materials": 84
   }
  },
  "quarantined_files": [
@@ -1749,8 +1749,8 @@
  "legacy_backcatalog_wave_2026_09_14": {
   "date": "2026-09-14",
   "scope": "PMT-enumerated pre-2019 legacy back-catalog (4XX0 IGCSE + WBI01-06 legacy IAL units)",
-  "new_dirs": 152,
-  "new_files": 306,
+  "new_dirs": 149,
+  "new_files": 302,
   "new_specs": [
    "international-gcse/biology/4bi0 (44 dirs)",
    "international-gcse/economics/4ec0 (21 dirs)",
@@ -1781,6 +1781,7 @@
    "4EB0 2018-01/2018-06, 4HB0/4IT0 extra sessions, WEC01-03, UK-GCE strays: not PMT-enumerated (no page)",
    "4MA0 2018-06 true 4MA0-set papers: not listed on PMT",
    "4MB0 2019-01 01R/02R qps: bytes exist in two scanned variants, F24"
-  ]
+  ],
+  "note": "net of 3 same-identity dirs (WBI04/05/06-01 2019-06) whose bytes+manifests were re-sourced from PMT (print-verified; supersedes the paperlords-rank-0 copies on equal evidence) and the F23 removal of the unmanifested 4MB0-1R leftovers"
  }
 }
