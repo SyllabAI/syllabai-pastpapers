@@ -41,11 +41,19 @@ materials:
     source_type: third-party-archive
     archive: XtremePapers (papers.xtremepape.rs)
     source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Mathematics/2020%20Oct/Question-paper/Questionpaper-Unit2%28WME02%29-October2020.pdf
-    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
-      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
-      public directory tree, print-verified before acceptance)
-    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
-      artifacts may be present
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization - rows PMT could not satisfy may use other sources; files fetched from the XtremePapers public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan artifacts may be present
+- type: examiner-report
+  path: er.pdf
+  sha256: 2d35aa183e069d97fee5436097e0536081529ebbbe371a927a504bf65544e760
+  size_bytes: 193380
+  original_filename: IAL_Maths_2020_May_M2_ER_1784112924737.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_M2_ER_1784112924737.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
 identification:
   methods:
   - pdf_text
@@ -57,6 +65,7 @@ identification:
   session_printed: October 2020; June 2020
   notes:
   - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued October2020); filename match: exact; sha256 d20649c901bae153...'
+  - '2026-09-14 wave 8: catalog said May 2020; cover prints October 2020'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

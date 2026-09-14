@@ -43,6 +43,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: 49a942bdfa85ca1d0dbaed044fe930b2d523d7efdef9fd1031f548d87f2e1ced
+  size_bytes: 2579117
+  original_filename: PHYSICS_2023_June_U1_ER_1777810719728.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/June 2023/PHYSICS_2023_June_U1_ER_1777810719728.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -54,6 +65,7 @@ identification:
   session_printed: June 2023
   notes:
   - date rule -> WPH11/01
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

@@ -43,6 +43,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: 3614ca31f9a102bf56ac49b39933af4c628c240fe3e27a957e4adb8695599e6b
+  size_bytes: 276013
+  original_filename: IAL_Maths_2020_May_P2_ER_1784112928323.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_P2_ER_1784112928323.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
 identification:
   methods:
   - pdf_text
@@ -52,7 +63,8 @@ identification:
   - WMA12/01
   stray_prints: []
   session_printed: October 2020; October 2020
-  notes: []
+  notes:
+  - '2026-09-14 wave 8: catalog said May 2020; cover prints October 2020'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

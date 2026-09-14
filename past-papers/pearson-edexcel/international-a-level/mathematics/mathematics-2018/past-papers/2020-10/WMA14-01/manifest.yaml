@@ -41,10 +41,19 @@ materials:
     source_type: third-party-archive
     archive: SaveMyExams CDN (cdn.savemyexams.com)
     source_url: https://cdn.savemyexams.com/uploads/2022/10/04a-pure-mathematics-4-october-2020-examination-paper-pdf.pdf
-    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
-      probe further sources, files are on paperlords or savemyexams; fetched from the
-      SaveMyExams structured past-paper index, print-verified before acceptance)
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction - probe further sources, files are on paperlords or savemyexams; fetched from the SaveMyExams structured past-paper index, print-verified before acceptance)
     note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: examiner-report
+  path: er.pdf
+  sha256: 83dc089ce939d207d29d39c8b7edf433d53a4b4ee85c98941d6814d895fa9583
+  size_bytes: 231609
+  original_filename: IAL_Maths_2020_May_P4_ER_1784112932438.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_P4_ER_1784112932438.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
 identification:
   methods:
   - pdf_text
@@ -55,6 +64,7 @@ identification:
   session_printed: October 2020; October 2020
   notes:
   - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (October 2020); sha256 eb2de7c2327b6e01...'
+  - '2026-09-14 wave 8: catalog said May 2020; cover prints October 2020'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

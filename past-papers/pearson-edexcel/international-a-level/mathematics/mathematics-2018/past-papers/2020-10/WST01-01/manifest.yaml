@@ -36,14 +36,24 @@ materials:
   path: qp.pdf
   sha256: 8894bf366d493ea41243e2e743abbfc93177e45c4cc1ea5a4613cfd9d3225875
   size_bytes: 829483
-  original_filename: "IAL_Maths_2020_May_S1_QP_1784112935928.pdf"
+  original_filename: IAL_Maths_2020_May_S1_QP_1784112935928.pdf
   source:
     source_type: third-party-archive
     archive: Paperlords (paperlords.org archive CDN)
-    source_url: "https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_S1_QP_1784112935928.pdf"
-    collected_by: "SyllabAI agent (2026-09-13 wave 7; operator direction - run the paperlords headless probe)"
-    note: "2026-09-13 wave 7 - qp added from Paperlords (paperlords.org); cover prints WST01/01, session \"June 2020\" and exam date \"Thursday 4 June 2020\" (original June print, P-code P65761A); the October-2020 window sat the June-printed papers (COVID-2020 reuse, cf. the wave-3 WST02/01 precedent and the 2020-10/WMA11-01 QP held in this corpus); pairs with the held October-2020 ms; partner_inference - operator ratification pending"
-
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_S1_QP_1784112935928.pdf
+    collected_by: SyllabAI agent (2026-09-13 wave 7; operator direction - run the paperlords headless probe)
+    note: 2026-09-13 wave 7 - qp added from Paperlords (paperlords.org); cover prints WST01/01, session "June 2020" and exam date "Thursday 4 June 2020" (original June print, P-code P65761A); the October-2020 window sat the June-printed papers (COVID-2020 reuse, cf. the wave-3 WST02/01 precedent and the 2020-10/WMA11-01 QP held in this corpus); pairs with the held October-2020 ms; partner_inference - operator ratification pending
+- type: examiner-report
+  path: er.pdf
+  sha256: d2d5312615e0b602818fc33f08b5d9701983c22e90da0e640b2abf2a0c25c2d1
+  size_bytes: 189683
+  original_filename: IAL_Maths_2020_May_S1_ER_1784112934581.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_S1_ER_1784112934581.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
 identification:
   methods:
   - pdf_text
@@ -53,7 +63,7 @@ identification:
   - WST01/01
   stray_prints: []
   session_printed: October 2020; June 2020
-  notes: "2026-09-13 wave 7 - qp added from Paperlords (paperlords.org); cover prints WST01/01, session \"June 2020\" and exam date \"Thursday 4 June 2020\" (original June print, P-code P65761A); the October-2020 window sat the June-printed papers (COVID-2020 reuse, cf. the wave-3 WST02/01 precedent and the 2020-10/WMA11-01 QP held in this corpus); pairs with the held October-2020 ms; partner_inference - operator ratification pending"
+  notes: '2026-09-13 wave 7 - qp added from Paperlords (paperlords.org); cover prints WST01/01, session "June 2020" and exam date "Thursday 4 June 2020" (original June print, P-code P65761A); the October-2020 window sat the June-printed papers (COVID-2020 reuse, cf. the wave-3 WST02/01 precedent and the 2020-10/WMA11-01 QP held in this corpus); pairs with the held October-2020 ms; partner_inference - operator ratification pending | 2026-09-14 wave 8: catalog said May 2020; cover prints October 2020'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
