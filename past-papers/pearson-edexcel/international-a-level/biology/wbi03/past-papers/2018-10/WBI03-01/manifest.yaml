@@ -49,14 +49,21 @@ identification:
   methods:
   - partner_inference
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
   - WBI03/01
   stray_prints: []
   session_printed: October 2018
   notes:
-  - ms.pdf: code not in extractable text; attribution from PMT listing, ratification pending
+  - ms.pdf: code not in extractable text; attribution from PMT listing
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (WBI0x code/session-only or garbled cover; partner_inference class, AUDIT-2026-09-12.md section 18 rank-2 set)
+  decision: attribution accepted by operator - recorded identity, session and material stand
 ingestion:
   agent: SyllabAI agent (wave 10 2026-09-14)
   run_date: '2026-09-14'
   source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)
+  verification_status: OPERATOR-RATIFIED

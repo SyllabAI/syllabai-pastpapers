@@ -54,8 +54,14 @@ identification:
   session_printed: January 2019; January 2019
   notes:
   - date rule -> 4MB1/01
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (F24 - scanned qp byte-variants without text layer, AUDIT-2026-09-12.md section 18)
+  decision: (R) bytes ratified as the Jan-2019 4MB1/0x question papers; the base-byte scan variants remain quarantined (duplicate-artifact) with both sha256s recorded in their REASON records
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED
