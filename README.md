@@ -1135,3 +1135,22 @@ across 5,067 paper dirs; Pearson 2,572/2,766; Cambridge 2,259/2,259 (100%).
 *Final (2026-09-14):* settled wave-10 corpus = 10,074 PDFs, 5,067 paper dirs, Pearson 2,571/2,766
 complete regular pairs, Cambridge 2,259/2,259 (100%); ledger 816 rows (549 normalized / 140
 planned / 127 na).
+
+
+---
+
+## 36. Wave 11 (2026-09-15)
+
+Operator ratification: the 19 §18 wave-10 rank-2 attributions and the F24 arrangement are
+**OPERATOR-RATIFIED** (commit 2d065499) - manifests carry `operator_ratification` blocks and the
+quarantine REASON records document both sha256s with the decision. Legacy straggler sweep: 4EB0
+gained its real 2018-01/2018-06 sessions (3 qp-only dirs, incl. the terminal 5-June-2018 overlap
+sitting with 4EB1 and the 01R regional variant), 4HB0 gained 24 pre-2019 qp-only dirs (2011-06..
+2018-06), and the legacy IAL Economics spec WEC01-04 entered the corpus complete to its final
+October-2018 sittings (50 dirs / 88 files; unit 4 included - the legacy spec is 4 units). Sources:
+SaveMyExams structured index + the official Pearson content-dam repository (date-coded
+exam-material filenames, HEAD-probed); every file print-verified or officially date-coded, corpus
+git-blob dedup applied. Corpus: **10,189 PDFs across 5,144 paper dirs**; Pearson 2,609/2,843
+complete regular pairs; Cambridge 2,259/2,259 (100%); ledger 978 rows (664 normalized / 179
+planned / 135 na). Remaining legacy residuals: 4IT0 pre-2018 sessions and the legacy mark schemes
+for 4EB0-2018/4HB0/WEC01-02 2017-18 are un-hosted anywhere probed (ledger-tracked).

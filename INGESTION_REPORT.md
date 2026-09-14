@@ -715,3 +715,34 @@ PMT-enumerated horizon; remaining planned rows are source-blocked (see AUDIT §1
 *Final reconciliation (2026-09-14):* with the F23 file removals applied, the settled wave-10 corpus
 is **10,074 PDFs** (4,981 qp / 4,956 ms / 117 er / 20 insert), 5,067 paper dirs (5,025 regular +
 42 specimen), Pearson complete pairs 2,571/2,766, Cambridge 2,259/2,259 (100%).
+
+
+## Wave 11 — ratification + legacy stragglers (2026-09-15)
+
+Operator direction: *"Proceed with ratify the 19 rank-2 attributions + F24 (REASON records carry
+both sha256s); the remaining legacy stragglers (4EB0 2018, 4HB0/4IT0, WEC01-03)"*.
+
+- **Ratification (2d065499):** the 19 §18 rank-2 manifests upgraded to `OPERATOR-RATIFIED` with
+  `operator_ratification` blocks (confidence_rank field corrected to 2 to match the recorded
+  partner_inference class); F24 resolved by ratification - the (R) bytes stay canonical at
+  4MB1-01/02 2019-01, the quarantined base-byte scans stay quarantined, both sha256s on record.
+- **Source sweep:** PMT has no legacy pages for any of the four targets (audit residual stands);
+  the Paperlords catalog (Supabase `papers`, 3,378 rows) starts at the new-spec sessions;
+  XtremePapers' walker no longer serves deep listings. Effective sources: SaveMyExams structured
+  index (IAL-economics legacy units) and the official Pearson content-dam repository (HEAD-probed
+  date-coded exam-material filenames over per-session exam-date windows).
+- **115 files / 77 dirs placed:** 4EB0 2018-01 + 2018-06 (3 qp-only dirs, rank-0 prints incl.
+  4EB0/01R; terminal 5-June-2018 overlap sitting), 4HB0 24 qp-only dirs 2011-06..2018-06 (rank-0
+  prints or official date-coded files), legacy IAL Economics WEC01-04 50 dirs / 88 files
+  (38 complete qp+ms pairs from SaveMyExams + 12 qp-only 2017-2018 dirs from Pearson).
+- **Identity notes:** SME's `6ecaX` Jan-2014 files are rebranded scans of the WEC0x sittings
+  (not placed); U4's SME "2018-06" entry holds the January-2018 sitting by cover print (§17).
+  **F25:** PMT's "Edexcel IGCSE B Paper 2" page serves Maths-B files and its ELB Paper-1
+  June-2018 entries serve the held 4EB1 papers - 0 unique bytes (naming never evidence).
+- **Ledger:** 978 rows (664 normalized / 179 planned / 135 na incl. 8 `na:not-hosted` for the
+  4HB0 2014-06 / 2015-01 P2 / 2015-06 P1 files; 39 planned rows for the un-hosted legacy mark
+  schemes of the qp-only dirs). 4IT0 pre-2018 sessions remain source-blocked (no enumerable rows).
+
+Corpus after wave 11: **10,189 PDFs** (5,058 qp / 4,994 ms / 117 er / 20 insert) across **5,144
+paper dirs/manifests**; Pearson complete regular pairs **2,609/2,843**; Cambridge **2,259/2,259
+(100%)**; quarantine unchanged (316 PDFs + 316 REASON records).
