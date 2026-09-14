@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Biology/MayJune%202023/IGCSE_BIOLOGY_2023_MayJune_P2R_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: dc7cebee1826eac9c0ca5a1a5f31ff8e9e15f63d8fea55f8ec1ebf75baa31bf3
+  size_bytes: 281490
+  original_filename: IGCSE_BIOLOGY_2023_MayJune_P2R_MS_1777791998975.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Biology/MayJune 2023/IGCSE_BIOLOGY_2023_MayJune_P2R_MS_1777791998975.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: c4932364e0c37223ada61ffa0a7367b09eb1204b1532337819acbcac8d89b5d9
+  size_bytes: 6266202
+  original_filename: IGCSE_BIOLOGY_2023_MayJune_P2R_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Biology/MayJune%202023/IGCSE_BIOLOGY_2023_MayJune_P2R_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - 4BI1/2BR
   stray_prints: []
-  session_printed: June 2023
   notes: print-verified from cover (rank 0)

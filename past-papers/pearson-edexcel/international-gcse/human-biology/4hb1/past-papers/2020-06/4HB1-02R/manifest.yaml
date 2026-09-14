@@ -35,12 +35,24 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/MayJune%202020/IGCSE_HUMAN_BIOLOGY_2020_MayJune_P2R_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 27022ced968479f97abd4f6c72050637e3c96978731123e15559ce24d7b61c35
+  size_bytes: 294428
+  original_filename: IGCSE_HUMAN_BIOLOGY_2020_MayJune_P2R_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/MayJune%202020/IGCSE_HUMAN_BIOLOGY_2020_MayJune_P2R_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  - date_rule
+  confidence_rank: 2
   printed_references_seen:
   - 4HB1/02R
   stray_prints: []
-  session_printed: May 2020
-  notes: print-verified from cover (rank 0)
+  notes:
+  - MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)

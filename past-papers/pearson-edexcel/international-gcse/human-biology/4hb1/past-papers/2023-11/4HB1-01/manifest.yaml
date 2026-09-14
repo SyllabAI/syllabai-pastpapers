@@ -24,6 +24,17 @@ variant:
   type: null
   note: null
 materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 49c104adbefe5c55dde176fc724c2f8dfa50f2304f0aed007b70d81f7067c883
+  size_bytes: 548248
+  original_filename: IGCSE_HUMAN_BIOLOGY_2023_Nov_P1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/Nov%202023/IGCSE_HUMAN_BIOLOGY_2023_Nov_P1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 - type: mark-scheme
   path: ms.pdf
   sha256: 070591e833db22e24eefdba66d059cc7fcce308eef9ab7816af1e20b80eeb6f8
@@ -42,5 +53,5 @@ identification:
   printed_references_seen:
   - 4HB1/01
   stray_prints: []
-  session_printed: November 2023
-  notes: ' [cover prints "(4HBI)" - Pearson cover typo for 4HB1; official filename says 4HB1_01_MS; re-routed to 4hb1]'
+  notes:
+  - ' [cover prints "(4HBI)" - Pearson cover typo for 4HB1; official filename says 4HB1_01_MS; re-routed to 4hb1]'

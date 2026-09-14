@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Biology/MayJune%202019/IGCSE_BIOLOGY_2019_MayJune_P2R_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: bd1ae0b00016f441b90e1b2276b6d4d5d61944b5b3ced9a269fdc5474a3eaf85
+  size_bytes: 178779
+  original_filename: IGCSE_BIOLOGY_2019_MayJune_P2R_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Biology/MayJune%202019/IGCSE_BIOLOGY_2019_MayJune_P2R_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - 4BI1/2BR
   stray_prints: []
-  session_printed: June 2019
   notes: print-verified from cover (rank 0)

@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Commerce/May 2023/IGCSE_COMMERCE_2023_May_P1R_QP_1777795513945.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0233eed0916a9a2018015c605a08c04cf0284df79dc94d793cd02dbca5a6b42a
+  size_bytes: 397895
+  original_filename: IGCSE_COMMERCE_2023_May_P1R_MS_1777795511730.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/May 2023/IGCSE_COMMERCE_2023_May_P1R_MS_1777795511730.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 76366e58b536e45a14e4e80a466b4f5569b75dceabdb407eb23405499a7035d0
+  size_bytes: 181181
+  original_filename: IGCSE_COMMERCE_2023_Nov_P1R_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/Nov%202023/IGCSE_COMMERCE_2023_Nov_P1R_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Nov 2023; cover prints Summer 2023'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,5 @@ identification:
   printed_references_seen:
   - 4CM1/01R
   stray_prints: []
-  session_printed: May 2023
-  notes: print-verified from cover (rank 0)
+  notes:
+  - catalog said Nov 2023; cover prints Summer 2023
