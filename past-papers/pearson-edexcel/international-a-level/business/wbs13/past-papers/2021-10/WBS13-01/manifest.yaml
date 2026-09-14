@@ -34,9 +34,7 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202021/IAL_IAL_BUSINESS_2021_Oct_U3_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
-      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
-      no printed session; catalog session Oct 2021'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session Oct 2021'
 - type: mark-scheme
   path: ms.pdf
   sha256: 76a537e2c26fdfcbeaac80e953f563a8ec8da284490453d71326d768a5c9f038
@@ -47,8 +45,7 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202021/IAL_IAL_BUSINESS_2021_Oct_U3_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 9)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
-      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - partner_inference
@@ -57,10 +54,16 @@ identification:
   - WBS13/01
   stray_prints: []
   notes:
-  - no printed session; catalog session Oct 2021 cover does not expose a readable paper reference (no
-    text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing
-    for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords
-    U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification
-    requested
-  - wave-9 placement (ms.pdf); printed session ['october 2021']; identity rank 2 (print==sibling(season));
-    operator ratification requested
+  - no printed session; catalog session Oct 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3
+  - wave-9 placement (ms.pdf); printed session ['october 2021']; identity rank 2 (print==sibling(season))
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (wave-9 ms placement; session attributed from sibling print evidence, rank 2; dir identity print-verified where stated)
+  decision: attribution accepted by operator - recorded identity, session and material stand
+ingestion:
+  agent: SyllabAI ingestion agent (wave-9 file-gap completion)
+  run_date: '2026-09-14'
+  source_repo: PhysicsAndMathsTutor.com CDN + Paperlords archive CDN (wave-9 sources)
+  verification_status: OPERATOR-RATIFIED

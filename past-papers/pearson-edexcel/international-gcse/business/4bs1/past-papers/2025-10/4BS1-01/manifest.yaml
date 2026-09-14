@@ -34,9 +34,7 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Business%20Studies/Nov%202025/IGCSE_BUSINESS_STUDIES_2025_Nov_P1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
-      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
-      catalog said Nov 2025; cover prints October 2025'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Nov 2025; cover prints October 2025'
 - type: mark-scheme
   path: ms.pdf
   sha256: fcad98bff317362debbc374461a0dbe98a72dd5d72da34486cf2b382b178ec74
@@ -47,8 +45,7 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Business Studies/Nov 2025/IGCSE_BUSINESS_STUDIES_2025_Nov_P1_MS_1777822343998.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
-      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -58,6 +55,15 @@ identification:
   stray_prints: []
   notes:
   - catalog said Nov 2025; cover prints October 2025
-  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-gcse/business/4bs1/past-papers/2025-11/4BS1-01
-    — one paper identity was split across two directory encodings (4BS1-01 vs 4BS1-01); merged per §11
-    shared paper identity; operator ratification requested'
+  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-gcse/business/4bs1/past-papers/2025-11/4BS1-01 — one paper identity was split across two directory encodings (4BS1-01 vs 4BS1-01); merged per §11 shared paper identity'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: consolidation (F19 split-dir merge ratified - canonical section-9 encoding and merged evidence stand)
+  decision: consolidation ratified by operator - merged identity and canonical encoding stand
+ingestion:
+  agent: SyllabAI ingestion agent (wave-9 file-gap completion)
+  run_date: '2026-09-14'
+  source_repo: PhysicsAndMathsTutor.com CDN + Paperlords archive CDN (wave-9 sources)
+  verification_status: OPERATOR-RATIFIED

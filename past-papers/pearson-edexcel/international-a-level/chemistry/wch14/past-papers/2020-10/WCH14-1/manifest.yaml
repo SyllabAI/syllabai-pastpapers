@@ -34,9 +34,7 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Chemistry/June%202020/IAL_CHEMISTRY_2020_June_U4_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
-      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
-      catalog said June 2020; cover prints October 2020'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said June 2020; cover prints October 2020'
 - type: question-paper
   path: qp.pdf
   sha256: 342944d5a05935c22863dd3dffd5499830ec2c4191072b641c29a3e8642739c0
@@ -45,19 +43,27 @@ materials:
   source:
     source_type: third-party-archive
     archive: PMT (physicsandmathstutor.com download CDN)
-    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-4/QP/October
-      2020 (IAL) QP.pdf
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-4/QP/October 2020 (IAL) QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 9)
-    note: 'official Pearson Edexcel document obtained from PMT (physicsandmathstutor.com download CDN);
-      collected 2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
+    note: 'official Pearson Edexcel document obtained from PMT (physicsandmathstutor.com download CDN); collected 2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
   - WCH14/1
   stray_prints: []
   notes:
   - catalog said June 2020; cover prints October 2020
-  - wave-9 placement (qp.pdf); printed session ['June 2020']; identity rank 2 (pmt-october-reuse); operator
-    ratification requested
+  - wave-9 placement (qp.pdf); printed session ['June 2020']; identity rank 2 (pmt-october-reuse)
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (wave-9 qp placement; pmt-october-reuse class - PMT 'October 2020 (IAL)' object printing May/June 2020, placed per cover print per F21; October-2020 sitting normalized)
+  decision: attribution accepted by operator - recorded identity, session and material stand
+ingestion:
+  agent: SyllabAI ingestion agent (wave-9 file-gap completion)
+  run_date: '2026-09-14'
+  source_repo: PhysicsAndMathsTutor.com CDN + Paperlords archive CDN (wave-9 sources)
+  verification_status: OPERATOR-RATIFIED

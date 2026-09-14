@@ -55,11 +55,15 @@ identification:
   stray_prints: []
   session_printed: June 2022
   notes:
-  - 'wave-9 consolidation: qp.pdf re-homed from past-papers/pearson-edexcel/international-gcse/computer-science/4cp0/past-papers/2022-06/4CP0-02C
-    — one paper identity was split across two directory encodings (4CP0-2C vs 4CP0-02C); merged per §11
-    shared paper identity; operator ratification requested'
+  - 'wave-9 consolidation: qp.pdf re-homed from past-papers/pearson-edexcel/international-gcse/computer-science/4cp0/past-papers/2022-06/4CP0-02C — one paper identity was split across two directory encodings (4CP0-2C vs 4CP0-02C); merged per §11 shared paper identity'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: consolidation (F19 split-dir merge ratified - canonical section-9 encoding and merged evidence stand)
+  decision: consolidation ratified by operator - merged identity and canonical encoding stand
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED

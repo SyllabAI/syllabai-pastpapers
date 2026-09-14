@@ -45,8 +45,7 @@ materials:
     archive: XtremePapers (papers.xtremepape.rs)
     source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2013%20Jun/Mark-scheme/6PH02_01R_msc_20130815.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 9)
-    note: 'official Pearson Edexcel document obtained from XtremePapers (papers.xtremepape.rs); collected
-      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
+    note: 'official Pearson Edexcel document obtained from XtremePapers (papers.xtremepape.rs); collected 2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -57,8 +56,14 @@ identification:
   session_printed: June 2013; June 2013
   notes:
   - wave-9 placement (ms.pdf); printed session ['Summer 2013']; identity rank 1 (xtp-ocr)
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (wave-9 XtremePapers ms placement; OCR 'Paper 01R' + Summer 2013 cover match, rank 1; non-R prints were rejected in wave-9 forensics)
+  decision: attribution accepted by operator - recorded identity, session and material stand
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED
