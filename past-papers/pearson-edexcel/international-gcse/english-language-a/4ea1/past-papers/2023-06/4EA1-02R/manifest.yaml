@@ -35,6 +35,28 @@ materials:
     source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Language A/MayJune 2023/P2R_QP_1777738266597.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e7c8ec4c2962831c478307b5ce994816aa8cad57481dad965d0442d2e3b92da6
+  size_bytes: 240015
+  original_filename: IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2R_MS_1777801418102.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English Language A/MayJune 2023/IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2R_MS_1777801418102.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 60872aa617ff0cbabf77f0d920019c8f053eb9315ff9035da521bb870b38022e
+  size_bytes: 9054138
+  original_filename: IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2R_PEF_1777801419664.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English Language A/MayJune 2023/IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2R_PEF_1777801419664.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - 4EA1/02R
   stray_prints: []
-  session_printed: June 2023
   notes: print-verified from cover (rank 0)
