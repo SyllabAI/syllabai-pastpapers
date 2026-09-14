@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Physics/Jan%202026/IAL_PHYSICS_2026_Jan_U5A_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7b2266ec6b5fd06c4c78767b808e160d6ac89381ea86de21d51f618b079cd58f
+  size_bytes: 786082
+  original_filename: IAL_PHYSICS_2026_Jan_U5A_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/Jan%202026/IAL_PHYSICS_2026_Jan_U5A_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WPH15/01A
   stray_prints: []
-  session_printed: January 2026
   notes: print-verified from cover (rank 0)

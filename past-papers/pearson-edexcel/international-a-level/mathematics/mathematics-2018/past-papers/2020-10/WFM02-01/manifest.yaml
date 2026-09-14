@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_FP2_MS_1784112918408.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
+- type: examiner-report
+  path: er.pdf
+  sha256: fdfdfbf0998e53dded686f4dab1ca845f67bce16bc83d42c4317e947238380de
+  size_bytes: 224121
+  original_filename: IAL_Maths_2020_May_FP2_ER_1784112917692.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_FP2_ER_1784112917692.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,6 @@ identification:
   printed_references_seen:
   - WFM02/01
   stray_prints: []
-  session_printed: October 2020
-  notes: catalog said May 2020; cover prints October 2020
+  notes:
+  - catalog said May 2020; cover prints October 2020
+  - catalog said May 2020; cover prints October 2020

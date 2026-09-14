@@ -35,12 +35,24 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Maths/Jan%202023/IAL_MATHS_2023_Jan_FP1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session Jan 2023'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b66547680be9f6bae74df1e9c77224396e9be7b14f2ee58a4af00504c4d1651c
+  size_bytes: 395544
+  original_filename: IAL_MATHS_2023_Jan_FP1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/Jan%202023/IAL_MATHS_2023_Jan_FP1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
+  - pdf_text
   - partner_inference
   confidence_rank: 3
   printed_references_seen:
   - WFM01/01
   stray_prints: []
-  session_printed: (not printed on cover; session from source catalog "Jan 2023")
-  notes: no printed session; catalog session Jan 2023 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  notes:
+  - no printed session; catalog session Jan 2023 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested

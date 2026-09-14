@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Maths/June 2026/IAL_MATHS_2026_JUNE_D1A_QP_1786858008996.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3d214de3685f9717a55bac75035de9bf353933b2221a9308b87adaa4aca06b30
+  size_bytes: 655090
+  original_filename: IAL_MATHS_2026_JUNE_D1A_MS_1786858008348.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/June 2026/IAL_MATHS_2026_JUNE_D1A_MS_1786858008348.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WDM11/01A
   stray_prints: []
-  session_printed: May 2026
   notes: print-verified from cover (rank 0)

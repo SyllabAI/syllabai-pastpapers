@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Chemistry/Oct%202025/IAL_CHEMISTRY_2025_Oct_U2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0526b5f3454599db3cfb3a1cb47ef592b2190f0c91f66dd86f1db4bd09efc739
+  size_bytes: 494202
+  original_filename: IAL_CHEMISTRY_2025_Oct_U2_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Chemistry/Oct%202025/IAL_CHEMISTRY_2025_Oct_U2_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WCH12/01
   stray_prints: []
-  session_printed: October 2025
   notes: print-verified from cover (rank 0)
