@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec01:2018-10:WEC01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec01
+  title: Edexcel International Advanced Level Economics (WEC01)
+series:
+  normalized: 2018-10
+  year: '2018'
+  session_month: '10'
+  printed: January; October
+  source: pdf_text
+paper:
+  official_reference: WEC01/01
+  unit_code: WEC01
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 82c41a37071299a665aa7af83910416686a71150467712fdd4291ba15452df31
+  size_bytes: 1613436
+  original_filename: WEC01_01_que_20181009.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Economics/2013/Exam%20materials/WEC01_01_que_20181009.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the board's content-dam exam-materials repository (official date-coded filename)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WEC01/01
+  stray_prints:
+  - January
+  notes:
+  - 'missing-material note: the paired mark scheme is not hosted by any probed source (PMT has no pages for this legacy spec, Pearson content-dam hosts QPs only, SaveMyExams/Paperlords carry no legacy session); ledger row opened'
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)

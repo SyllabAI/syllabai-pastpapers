@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec04:2018-06:WEC04/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec04
+  title: Edexcel International Advanced Level Economics (WEC04)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: January; June
+  source: pdf_text
+paper:
+  official_reference: WEC04/01
+  unit_code: WEC04
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 8c8b57cbca355fd4f2b58d7deebbaef4654ac1257dfc89978eb8b185610ab5f7
+  size_bytes: 380371
+  original_filename: wec04_01_que_20180613.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec04_01_que_20180613.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c100f460ab6a7793574c9f9540e0c1041f6cba884929e6d4faf4b5e9ecd78d0d
+  size_bytes: 393749
+  original_filename: wec04_01_rms_20180815.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec04_01_rms_20180815.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WEC04
+  - WEC04/01
+  stray_prints:
+  - January
+  notes:
+  - 'ms.pdf: mark scheme cover prints unit code + unit number + session; single-paper unit (no /NN suffix printed on cover)'
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)

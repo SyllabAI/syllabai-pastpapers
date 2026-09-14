@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec02:2015-06:WEC02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec02
+  title: Edexcel International Advanced Level Economics (WEC02)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: 'exam date printed: Tuesday 19 May 2015'
+  source: pdf_text
+paper:
+  official_reference: WEC02/01
+  unit_code: WEC02
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: f0eb757dbc7b9507a16a2c1d0575f657581c7b79e437e61d5dd40696681f16ab
+  size_bytes: 129588
+  original_filename: wec02_01_que_june-2015_edexcel-ial-economics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec02_01_que_june-2015_edexcel-ial-economics.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b9165924ec6457a6de293f215809695ceb03fb00d643b390431ab0274560b9ce
+  size_bytes: 356151
+  original_filename: wec02_01_msc_june-2015_edexcel-ial-economics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec02_01_msc_june-2015_edexcel-ial-economics.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+identification:
+  methods:
+  - date_rule
+  - partner_inference
+  - pdf_text
+  confidence_rank: 2
+  printed_references_seen:
+  - WEC02/01
+  stray_prints: []
+  notes:
+  - 'ms.pdf: mark scheme cover carries no extractable text; identity from the official Pearson date-coded exam-material filename and board content-dam folder - operator ratification requested'
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)
+  verification_status: AI-IDENTIFIED (operator ratification pending)
