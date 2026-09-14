@@ -763,3 +763,23 @@ freshness."*
   IGCSE January series discontinued (last session 2023-01); June-2026 IGCSE un-hosted on every
   probed source; content-dam carries no current-spec materials (calibrated 0/72 + 0/960).
 - **Net placements: none** - the corpus was already at the freshness frontier; no ledger delta.
+
+## Wave 14 — s17 ratification closeout + F20/F12 repairs (2026-09-15)
+
+Operator direction: full-folder audit, then *"Okay, proceed"* on the fix batch.
+
+- **Ratification (commit 620cfa98f8):** 40 of the 41 wave-9 s17 manifests upgraded to
+  `OPERATOR-RATIFIED` with operator_ratification blocks (queue count corrected 23->41; the 41st
+  member rides the F12 4HB0-2 rename). Classes: 3 pmt-october-reuse rank-2 corrections,
+  12 F19 consolidations, 2 GCE xtp rank-1, 22 sibling/catalog-attributed placements.
+- **F20 (commit 3238694616):** the four October-2020 second MS generations are the same documents
+  as their `-01` twins (aggressive text-normalization equality 4/4; watermark-only difference).
+  Clean unwatermarked generations ruled canonical at WCH11/12/13-01 + WPH13-01; watermarked
+  generations quarantined with both sha256s; the 4 stray `-1` dirs removed.
+- **F12 (same commit):** 4PM1-2R scan generation quarantined (canonical 4PM1-02R kept);
+  4CP0-01C watermarked generation quarantined (canonical 4CP0-01 kept); 4HB0-2 -> 4HB0-02 and
+  4MB0-2R -> 4MB0-02R renames per printed references. 7 quarantine artifacts + 7 REASON records
+  (both sha256s each).
+- **Ledger:** 978 -> 979 rows (+WPH13/1 ms na:stray-duplicate-dir with resolution pointer).
+- **Corpus after wave 14:** 10,182 held PDFs (5,056 qp / 4,989 ms / 117 er / 20 insert);
+  5,138 paper dirs/manifests; quarantine 323+323.

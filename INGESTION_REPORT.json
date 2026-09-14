@@ -1878,5 +1878,64 @@
   "net_placements": 0,
   "ledger_delta": "none (978 rows)",
   "corpus_after": "unchanged: 10,189 PDFs / 5,144 dirs"
+ },
+ "wave14_s17_ratification_2026_09_15": {
+  "date": "2026-09-15",
+  "commit": "620cfa98f8",
+  "queue_count_correction": "23 -> 41 (sibling-attributed placements + 2 GCE xtp rank-1 + YAML-wrapped note)",
+  "ratified": 40,
+  "classes": {
+   "pmt-october-reuse rank-2 corrections": 3,
+   "F19 consolidations": 12,
+   "GCE xtp rank-1": 2,
+   "rank-1 sibling-attributed": 1,
+   "rank-2 sibling/catalog-attributed": 22
+  },
+  "deferred": [
+   "4HB0-2 2019-01 (ratified with the F12 rename commit)"
+  ],
+  "effect": "ingestion.verification_status -> OPERATOR-RATIFIED; operator_ratification blocks added; pending note suffixes dropped"
+ },
+ "wave14_f20_f12_repairs_2026_09_15": {
+  "date": "2026-09-15",
+  "commit": "3238694616",
+  "f20": {
+   "finding": "October-2020 byte-distinct second MS generations at WCH11-1/WCH12-1/WCH13-1/WPH13-1",
+   "forensics": "same page counts + aggressive text-normalization document equality 4/4 - watermark-only difference",
+   "ruling": "clean unwatermarked generations canonical at the -01 identities; PMT-watermarked generations quarantined (both sha256s on REASON records); 4 stray -1 dirs removed"
+  },
+  "f12": {
+   "4PM1-2R": "second scan generation of 4PM1-02R (P66307A, January 2022) quarantined; canonical kept",
+   "4CP0-01C": "PMT-watermarked generation of 4CP0-01 (P61880A) quarantined; canonical kept",
+   "renames": [
+    "4HB0-2 -> 4HB0-02 (prints 4HB0/02)",
+    "4MB0-2R -> 4MB0-02R (padded-R convention)"
+   ],
+   "already_closed": [
+    "4MB0-1R 2016-01 (wave-10 F23)",
+    "4EB1-1R 2023-01 (wave-9 F19)"
+   ]
+  },
+  "quarantine_delta": "+7 artifacts / +7 REASON records (F24: both sha256s each)",
+  "ledger_delta": "978 -> 979 rows (+WPH13/1 ms na:stray-duplicate-dir)"
+ },
+ "corpus_after_wave14_2026_09_15": {
+  "held_pdfs": 10182,
+  "qp": 5056,
+  "ms": 4989,
+  "er": 117,
+  "insert": 20,
+  "paper_dirs": {
+   "regular": 5096,
+   "specimen": 42,
+   "manifests": 5138
+  },
+  "quarantine": {
+   "artifacts": 323,
+   "reason_records": 323
+  },
+  "ledger_rows": 979,
+  "pearson_complete_regular_pairs": "2,606/2,840",
+  "cambridge": "2,259/2,259 (100%)"
  }
 }

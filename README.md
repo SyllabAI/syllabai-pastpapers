@@ -1171,3 +1171,20 @@ IGCSE complete to the autumn-2025 sessions (2025-10 P1s + 2025-11 P2s, the print
 encoding), the IGCSE January series is discontinued after 2023-01, and June-2026 IGCSE is not
 yet hosted anywhere. Net placements: none; corpus unchanged at **10,189 PDFs / 5,144 paper
 dirs**; ledger 978 rows.
+
+## 38. Wave 14 (2026-09-15)
+
+Full-folder audit (wave 13) returned a clean structural bill - census exact vs the wave-12
+baseline, 0 missing manifests, 0 held-vs-held duplicates, quarantine fully paired, F24 records
+verified - with every anomaly mapping to a documented finding class. Operator then ratified the
+fix batch (commit `620cfa98f8`): **40 of the 41 wave-9 s17 manifests** now carry
+`operator_ratification` blocks and `OPERATOR-RATIFIED` status (the queue's true count is 41, not
+23 - the prose had counted only the scan-cover class; one member rides the F12 rename). The F20
+keep-one ruling (commit `3238694616`) made the clean unwatermarked October-2020 MS generations
+canonical at WCH11/12/13-01 + WPH13-01 (forensics: aggressive text-normalization document equality
+4/4, watermark-only difference), quarantined the watermarked generations with both sha256s, and
+removed the 4 stray `-1` dirs. F12 closed: 4PM1-2R and 4CP0-01C duplicate generations quarantined
+(canonical padded/clean dirs kept), 4HB0-2 -> 4HB0-02 and 4MB0-2R -> 4MB0-02R renames per printed
+references. Ledger 978 -> 979 rows. Corpus after wave 14: **10,182 held PDFs / 5,138 paper dirs**;
+quarantine 323+323. Remaining ratification backlog: the wave-8 subject-expansion queue (175
+manifests, precisely enumerated).
