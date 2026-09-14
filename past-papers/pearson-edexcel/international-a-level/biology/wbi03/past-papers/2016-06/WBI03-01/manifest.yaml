@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi03:2016-06:WBI03/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi03
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
+series:
+  normalized: 2016-06
+  year: '2016'
+  session_month: '06'
+  printed: June 2016
+  source: pdf_text
+paper:
+  official_reference: WBI03/01
+  unit_code: WBI03
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 6ca5804be7b5fc8cb60619687aa1ab7fea2153d7234f369503dc6bbf5b93a310
+  size_bytes: 146449
+  original_filename: June 2016 (IAL) QP - Unit 3 Edexcel Biology.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-3/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7f4794b9878f83c673aa4fc7c546bbb79099baea73a9c420e0929182b754ba18
+  size_bytes: 56775
+  original_filename: June 2016 (IAL) MS - Unit 3 Edexcel Biology.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-3/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI03/01
+  stray_prints: []
+  session_printed: June 2016
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

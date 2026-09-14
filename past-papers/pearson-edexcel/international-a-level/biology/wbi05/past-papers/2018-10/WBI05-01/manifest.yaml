@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi05:2018-10:WBI05/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi05
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
+series:
+  normalized: 2018-10
+  year: '2018'
+  session_month: '10'
+  printed: October 2018
+  source: partner_inference+pdf_text
+paper:
+  official_reference: WBI05/01
+  unit_code: WBI05
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 9387e8d50737073497aa57cf9675ac9f8afbb280fa2adf5c035d9f208031fe1d
+  size_bytes: 331045
+  original_filename: October 2018 (IAL) QP - Unit 5 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a06e9ada2874aba2fabf570352c588128deb7b38f7ecaee10cf1bb6f0f436237
+  size_bytes: 98696
+  original_filename: October 2018 (IAL) MS - Unit 5 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - partner_inference
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI05/01
+  stray_prints: []
+  session_printed: October 2018
+  notes:
+  - ms.pdf: code not in extractable text; attribution from PMT listing, ratification pending
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

@@ -1,0 +1,74 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi05:2014-01:WBI05/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi05
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
+series:
+  normalized: 2014-01
+  year: '2014'
+  session_month: '01'
+  printed: January 2014
+  source: partner_inference+pdf_text
+paper:
+  official_reference: WBI05/01
+  unit_code: WBI05
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: d0ecbea1cfeb6c7dc35f23b97d582e8d626315371591fe84511264d0f3c8aa0d
+  size_bytes: 116289
+  original_filename: January 2014 (IAL) QP - Unit 5 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0656de9c7310b05cbc504933e52d3d6dc3d5b3aab290a950e21eaa97fb8d5b51
+  size_bytes: 78981
+  original_filename: January 2014 (IAL) MS - Unit 5 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: insert
+  path: insert.pdf
+  sha256: 611dcf3117aa9c3695899b04ec3d162c7bd7256125c7a6d98b1bc22e489181a1
+  size_bytes: 1184317
+  original_filename: January 2014 (IAL) INS - Unit 5 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - partner_inference
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI05/01
+  stray_prints: []
+  session_printed: January 2014
+  notes:
+  - insert.pdf: article booklet attributed from PMT listing (rank 2)
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

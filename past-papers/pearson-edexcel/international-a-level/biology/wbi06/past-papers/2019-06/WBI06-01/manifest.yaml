@@ -8,49 +8,55 @@ qualification:
 subject: biology
 specification:
   folder: wbi06
-  title: Edexcel International Advanced Level Biology (WBI06)
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
 series:
   normalized: 2019-06
   year: '2019'
   session_month: '06'
-  printed: May 2019
-  source: pdf_text
+  printed: June 2019
+  source: partner_inference+pdf_text
 paper:
   official_reference: WBI06/01
   unit_code: WBI06
   paper_number_variant: '01'
-variant:
-  official_code: null
-  type: null
-  note: null
+variant: null
 materials:
 - type: question-paper
   path: qp.pdf
-  sha256: 35e8d37122d7b31823decb07a4178317daa99233d78206a46cdefb31ef2689b0
-  size_bytes: 1158748
-  original_filename: IAL_BIOLOGY_2019_June_U6_QP.pdf
+  sha256: 5bdb14406f2049632a20c7e3fee7d7a99ff173703d139dd1011057cd559ab8f2
+  size_bytes: 145069
+  original_filename: June 2019 (IAL) QP - Unit 6 Edexcel Biology A-level.pdf
   source:
     source_type: third-party-archive
-    archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U6_QP.pdf
-    collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-6/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
 - type: mark-scheme
   path: ms.pdf
-  sha256: 29bf35f12413366c261c5a908f034fdd6cfcd791d0c8675b86342757ce39dd5d
-  size_bytes: 514832
-  original_filename: IAL_BIOLOGY_2019_June_U6_MS.pdf
+  sha256: 9610f910dd97b6eb273f06d8baebefb8ad0d587be0ac66473ddb49f7a6c4d904
+  size_bytes: 500541
+  original_filename: June 2019 (IAL) MS - Unit 6 Edexcel Biology A-level.pdf
   source:
     source_type: third-party-archive
-    archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U6_MS.pdf
-    collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-6/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
 identification:
   methods:
+  - partner_inference
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - WBI06/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  session_printed: June 2019
+  notes:
+  - qp.pdf: code not in extractable text; attribution from PMT listing, ratification pending
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

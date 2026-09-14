@@ -8,7 +8,7 @@ qualification:
 subject: biology
 specification:
   folder: wbi04
-  title: Edexcel International Advanced Level Biology (WBI04)
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
 series:
   normalized: 2019-06
   year: '2019'
@@ -19,33 +19,32 @@ paper:
   official_reference: WBI04/01
   unit_code: WBI04
   paper_number_variant: '01'
-variant:
-  official_code: null
-  type: null
-  note: null
+variant: null
 materials:
 - type: question-paper
   path: qp.pdf
-  sha256: eda7b382160e63ba58399baaa3bf317fc677beb401a3a3f520e74632da220fc3
-  size_bytes: 893494
-  original_filename: IAL_BIOLOGY_2019_June_U4_QP.pdf
+  sha256: c7cb2a88957a14c87aa17b9c63cfa1bbf7dea9aa2826ccfb22968ca2ef80d9ef
+  size_bytes: 537887
+  original_filename: June 2019 (IAL) QP - Unit 4 Edexcel Biology A-level.pdf
   source:
     source_type: third-party-archive
-    archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U4_QP.pdf
-    collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-4/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
 - type: mark-scheme
   path: ms.pdf
-  sha256: e80ec4ced77f21a93e28c4c3ec57a290f39861bf42080abd75cd788cc0dd6ccb
-  size_bytes: 494827
-  original_filename: IAL_BIOLOGY_2019_June_U4_MS.pdf
+  sha256: 781e44f5dd51f7a99de42f1c893e806b116c452092265456928c672a3c2ffbd6
+  size_bytes: 478574
+  original_filename: June 2019 (IAL) MS - Unit 4 Edexcel Biology A-level.pdf
   source:
     source_type: third-party-archive
-    archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U4_MS.pdf
-    collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-4/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
@@ -53,4 +52,9 @@ identification:
   printed_references_seen:
   - WBI04/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  session_printed: June 2019
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

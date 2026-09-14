@@ -8,49 +8,55 @@ qualification:
 subject: biology
 specification:
   folder: wbi05
-  title: Edexcel International Advanced Level Biology (WBI05)
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
 series:
   normalized: 2019-06
   year: '2019'
   session_month: '06'
   printed: June 2019
-  source: pdf_text
+  source: partner_inference+pdf_text
 paper:
   official_reference: WBI05/01
   unit_code: WBI05
   paper_number_variant: '01'
-variant:
-  official_code: null
-  type: null
-  note: null
+variant: null
 materials:
 - type: question-paper
   path: qp.pdf
-  sha256: 47ae1c15c047035eabd14abcdf86911a8ccc87a25109521112fd73066b348ae0
-  size_bytes: 1471582
-  original_filename: IAL_BIOLOGY_2019_June_U5_QP.pdf
+  sha256: b0851387513c5fce6ad8b48755945349c9df2bc610bd73fedb5089ee6f3f6489
+  size_bytes: 177596
+  original_filename: June 2019 (IAL) QP - Unit 5 Edexcel Biology A-level.pdf
   source:
     source_type: third-party-archive
-    archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U5_QP.pdf
-    collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
 - type: mark-scheme
   path: ms.pdf
-  sha256: 37cb6ae35b951e2c0e5c32fef74a1da9303d1c5800e2505451fee5351e09943a
-  size_bytes: 141593
-  original_filename: IAL_BIOLOGY_2019_June_U5_MS.pdf
+  sha256: c5ae3c0bb949700026729816a81283807de698a9becaafbb465f93e33fa001ca
+  size_bytes: 134933
+  original_filename: June 2019 (IAL) MS - Unit 5 Edexcel Biology A-level.pdf
   source:
     source_type: third-party-archive
-    archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U5_MS.pdf
-    collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
 identification:
   methods:
+  - partner_inference
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - WBI05/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  session_printed: June 2019
+  notes:
+  - qp.pdf: code not in extractable text; attribution from PMT listing, ratification pending
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

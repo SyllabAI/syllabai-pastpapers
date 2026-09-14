@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi06:2016-06:WBI06/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi06
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
+series:
+  normalized: 2016-06
+  year: '2016'
+  session_month: '06'
+  printed: June 2016
+  source: pdf_text
+paper:
+  official_reference: WBI06/01
+  unit_code: WBI06
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: efc81641a64aef1149b18e914cd00631f00a913a50562c58f0e924d0188ab959
+  size_bytes: 104106
+  original_filename: June 2016 (IAL) QP - Unit 6 Edexcel Biology.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-6/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1e5f722189c5cc70ed004ea41ebe1c67783f5cf0bb849a8a8682c94706043e80
+  size_bytes: 59926
+  original_filename: June 2016 (IAL) MS - Unit 6 Edexcel Biology.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-6/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI06/01
+  stray_prints: []
+  session_printed: June 2016
+  notes:
+  - ms.pdf: cover prints unit code + session (paper number not printed; single-paper unit, number from PMT listing)
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

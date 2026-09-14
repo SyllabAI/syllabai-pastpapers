@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi05:2015-06:WBI05/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi05
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: June 2015
+  source: pdf_text
+paper:
+  official_reference: WBI05/01
+  unit_code: WBI05
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: bd264565e2c60bbe18830d364c539eacc48d099bb434382bf2f36764d56d728b
+  size_bytes: 317480
+  original_filename: June 2015 (IAL) QP - Unit 5 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e369617e652bd336885b1704a4baaf7783ef77fdcf233919743f1497d3ec46bb
+  size_bytes: 131084
+  original_filename: June 2015 (IAL) MS - Unit 5 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-5/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI05/01
+  stray_prints: []
+  session_printed: June 2015
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)
