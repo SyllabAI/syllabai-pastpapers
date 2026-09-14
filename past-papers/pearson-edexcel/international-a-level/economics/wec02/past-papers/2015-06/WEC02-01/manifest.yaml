@@ -56,9 +56,15 @@ identification:
   - WEC02/01
   stray_prints: []
   notes:
-  - 'ms.pdf: mark scheme cover carries no extractable text; identity from the official Pearson date-coded exam-material filename and board content-dam folder - operator ratification requested'
+  - 'ms.pdf: mark scheme cover carries no extractable text; identity from the official Pearson date-coded exam-material filename and board content-dam folder'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (image-only scanned cover without extractable text on qp.pdf and/or ms.pdf; official Pearson date-coded exam-material filename, date_rule class - wave-11 legacy IAL Economics WEC01-04 intake)
+  decision: attribution accepted by operator - recorded identity, session and material stand
 ingestion:
   agent: SyllabAI agent (wave 11 2026-09-15)
   run_date: '2026-09-15'
   source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED
