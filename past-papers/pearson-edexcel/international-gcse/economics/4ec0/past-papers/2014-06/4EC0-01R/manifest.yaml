@@ -1,0 +1,65 @@
+paper_id: pearson-edexcel:international-gcse:economics:4ec0:2014-06:4EC0/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: economics
+specification:
+  folder: 4ec0
+  title: Edexcel International GCSE Economics (4EC0)
+series:
+  normalized: 2014-06
+  year: '2014'
+  session_month: '06'
+  printed: June 2014
+  source: partner_inference+pdf_text
+paper:
+  official_reference: 4EC0/01R
+  unit_code: 4EC0
+  paper_number_variant: '01R'
+variant:
+  official_code: R
+  type: regional
+  note: paper 01 + regional variant
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 5fecfa9dd12cc1d7244c407673c5a8ecf244552097c5fc2bd0e01269b3987821
+  size_bytes: 141417
+  original_filename: June 2014 (R) QP - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4d3a70cf803996178c37d6681c55516355f395d3e99dbc5c0a81b9edb31656e7
+  size_bytes: 133893
+  original_filename: June 2014 (R) MS - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - partner_inference
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EC0/01R
+  stray_prints: []
+  session_printed: June 2014
+  notes:
+  - qp.pdf: code not in extractable text; attribution from PMT listing, ratification pending
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

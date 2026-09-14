@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:economics:4ec0:2018-06:4EC0/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: economics
+specification:
+  folder: 4ec0
+  title: Edexcel International GCSE Economics (4EC0)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: pdf_text
+paper:
+  official_reference: 4EC0/01R
+  unit_code: 4EC0
+  paper_number_variant: '01R'
+variant:
+  official_code: R
+  type: regional
+  note: paper 01 + regional variant
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: fdd6db66f63c9500719a30423683825467583d3eb38f52bf28ef577277825d77
+  size_bytes: 547007
+  original_filename: June 2018 (R) QP - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ccc84ef9a5baa45d2e5810e694528ca76b6c54e1486c2726da3681a4c2cce286
+  size_bytes: 312834
+  original_filename: June 2018 (R) MS - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EC0/01R
+  stray_prints: []
+  session_printed: June 2018
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

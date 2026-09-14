@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:economics:4ec0:2012-06:4EC0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: economics
+specification:
+  folder: 4ec0
+  title: Edexcel International GCSE Economics (4EC0)
+series:
+  normalized: 2012-06
+  year: '2012'
+  session_month: '06'
+  printed: June 2012
+  source: partner_inference+pdf_text
+paper:
+  official_reference: 4EC0/01
+  unit_code: 4EC0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: b18a4d719aa4ca9aa55ad83c470c7588a14312f9a3203ccf005c0184965b2f80
+  size_bytes: 153285
+  original_filename: June 2012 QP - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ab72707dda0e8fedf6d50cc019c8909680c94225193816e76875a6c03044bbad
+  size_bytes: 156631
+  original_filename: June 2012 MS - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - partner_inference
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EC0/01
+  stray_prints: []
+  session_printed: June 2012
+  notes:
+  - qp.pdf: cover text CMap-garbled (legacy encoding); attribution from PMT listing, ratification pending
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)

@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:biology:4bi0:2015-06:4BI0/1BR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: biology
+specification:
+  folder: 4bi0
+  title: Edexcel International GCSE Biology (4BI0)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: June 2015
+  source: pdf_text
+paper:
+  official_reference: 4BI0/1BR
+  unit_code: 4BI0
+  paper_number_variant: 1BR
+variant:
+  official_code: R
+  type: regional
+  note: paper 1B + regional variant
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: d2324699bae9bbe9902b3940f1bca9aae2c2f7960c804da1e6e2206feffec51a
+  size_bytes: 771141
+  original_filename: June 2015 (R) QP - Paper 1B Edexcel Biology IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-biology/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f7413b6f04031cfea8850ead29385a7f7800379dba742507551dbe05df58d7c2
+  size_bytes: 240509
+  original_filename: June 2015 (R) MS - Paper 1B Edexcel Biology IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-biology/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4BI0/1BR
+  stray_prints: []
+  session_printed: June 2015
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)
