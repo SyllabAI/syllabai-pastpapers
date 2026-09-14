@@ -710,3 +710,8 @@ PMT-enumerated horizon; remaining planned rows are source-blocked (see AUDIT §1
 - Corrected corpus after wave 10: **10,076 PDFs** (4,982 qp / 4,957 ms / 117 er / 20 insert)
   across **5,067 paper dirs** (5,025 regular + 42 specimen); Pearson complete pairs **2,572/2,766**;
   Cambridge 2,259/2,259 (100%). Ledger unchanged at 816 rows (549/140/127).
+
+
+*Final reconciliation (2026-09-14):* with the F23 file removals applied, the settled wave-10 corpus
+is **10,074 PDFs** (4,981 qp / 4,956 ms / 117 er / 20 insert), 5,067 paper dirs (5,025 regular +
+42 specimen), Pearson complete pairs 2,571/2,766, Cambridge 2,259/2,259 (100%).

@@ -1130,3 +1130,8 @@ ledger stands at 549 normalized / 140 planned / 127 documented na. Corpus: 10,08
 *Correction (2026-09-14):* wave-10 net placements are **149 new dirs / 302 new files** (three
 same-identity 2019-06 legacy dirs were re-sourced in place; see AUDIT §18.1). Corpus: 10,076 PDFs
 across 5,067 paper dirs; Pearson 2,572/2,766; Cambridge 2,259/2,259 (100%).
+
+
+*Final (2026-09-14):* settled wave-10 corpus = 10,074 PDFs, 5,067 paper dirs, Pearson 2,571/2,766
+complete regular pairs, Cambridge 2,259/2,259 (100%); ledger 816 rows (549 normalized / 140
+planned / 127 na).
