@@ -1116,3 +1116,12 @@ consolidated per §9/§11 with full evidence trails and operator ratification re
 ledger now stands at 243 normalized / 140 planned / 57 documented na; the remaining planned rows are
 source-blocked (see AUDIT §17). Corpus: 9,776 PDFs across 4,919 paper dirs; Pearson regular pairs
 2,423/2,618; Cambridge unchanged at 2,259/2,259 (100%).
+
+
+**Wave 10 (2026-09-14)** completed the PMT-enumerated legacy back-catalog sweep: 152 new paper
+dirs / 306 files covering the full pre-2019 4BI0 Biology and 4EC0 Economics IGCSE specs and the
+legacy IAL biology units WBI01-06 (2014-2019 incl. final June-2019 sittings), all print-verified.
+PMT spec-boundary mislabels were documented and excluded (F22), a stray duplicate dir was
+consolidated (F23), and one attribution ambiguity was flagged for the operator (F24). The gap
+ledger stands at 549 normalized / 140 planned / 127 documented na. Corpus: 10,082 PDFs across
+5,070 paper dirs; Pearson regular pairs 2,574/2,769; Cambridge 2,259/2,259 (100%).

@@ -1,7 +1,7 @@
 {
  "run_date": "2026-09-11",
  "agent": "SyllabAI ingestion agent",
- "source": "SyllabAI/Past-Papers — IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
+ "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
  "totals": {
   "pdfs_seen": 2708,
   "files_placed": 2512,
@@ -56,7 +56,7 @@
   },
   "corpus_after_othersource_wave_2026_09_12": {
    "date": "2026-09-12",
-   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT §8).",
+   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
    "pdfs_and_inserts": 2919,
    "qp": 1438,
    "ms": 1463,
@@ -111,7 +111,7 @@
   },
   "corpus_after_structure_fix_2026_09_13": {
    "date": "2026-09-13",
-   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README §32 deviation rulings). Independent recount at f840c61b16.",
+   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README \u00a732 deviation rulings). Independent recount at f840c61b16.",
    "files_placed": 3004,
    "qp": 1509,
    "ms": 1477,
@@ -191,19 +191,31 @@
     "pearson_edexcel": "1398/1498",
     "cambridge_international": "633/650"
    }
+  },
+  "corpus_after_legacy_backcatalog_2026_09_14": {
+   "pdfs": 10082,
+   "qp": 4985,
+   "ms": 4960,
+   "er": 117,
+   "insert": 20,
+   "paper_dirs": 5070,
+   "regular_dirs": 5028,
+   "specimen_dirs": 42,
+   "pearson_complete_regular_pairs": "2574/2769",
+   "cambridge_complete_regular_pairs": "2259/2259"
   }
  },
  "identification_methods": {
-  "pdf_text": 6747,
+  "pdf_text": 6898,
   "coded-date": 518,
   "sme-listing": 16,
   "date_rule": 556,
-  "partner_inference": 163,
+  "partner_inference": 182,
   "folder_consensus": 6,
   "specimen_first_teaching": 5
  },
  "quarantine_by_class": {
-  "duplicate-artifact": 141,
+  "duplicate-artifact": 143,
   "corrupt-artifact": 1,
   "nonstandard-artifact": 35,
   "unresolved-identity": 58,
@@ -251,8 +263,8 @@
    "materials": 97
   },
   "international-gcse/mathematics-b/4mb0": {
-   "paper_dirs": 49,
-   "materials": 97
+   "paper_dirs": 48,
+   "materials": 95
   },
   "international-gcse/english-language-b/4eb0": {
    "paper_dirs": 17,
@@ -401,6 +413,38 @@
   "igcse/mathematics/0580": {
    "paper_dirs": 250,
    "materials": 500
+  },
+  "international-a-level/biology/WBI01": {
+   "paper_dirs": 15,
+   "materials": 30
+  },
+  "international-a-level/biology/WBI02": {
+   "paper_dirs": 15,
+   "materials": 30
+  },
+  "international-a-level/biology/WBI03": {
+   "paper_dirs": 15,
+   "materials": 30
+  },
+  "international-a-level/biology/WBI04": {
+   "paper_dirs": 14,
+   "materials": 28
+  },
+  "international-a-level/biology/WBI05": {
+   "paper_dirs": 14,
+   "materials": 30
+  },
+  "international-a-level/biology/WBI06": {
+   "paper_dirs": 14,
+   "materials": 28
+  },
+  "international-gcse/biology/4bi0": {
+   "paper_dirs": 44,
+   "materials": 88
+  },
+  "international-gcse/economics/4ec0": {
+   "paper_dirs": 21,
+   "materials": 42
   }
  },
  "quarantined_files": [
@@ -1422,22 +1466,22 @@
    {
     "date": "2026-09-12",
     "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §8"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
    },
    {
     "date": "2026-09-12",
     "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §9"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
    },
    {
     "date": "2026-09-13",
     "what": "structural audit fixes S1+S2: 11 Nov-2023 IGCSE dirs re-homed under the subject level (33 blobs, sha-identical); 4EB1-1R ms merged into 4EB1-01R (byte-identical, git blob 511bb858), stray dir deleted; ledger 2 rows normalized",
-    "evidence": "docs/AUDIT-2026-09-12.md §11; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
+    "evidence": "docs/AUDIT-2026-09-12.md \u00a711; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
    },
    {
     "date": "2026-09-13",
     "what": "wave 5: F14 misfile repair - 2022-06/4EB1-01/ms.pdf was the Paper 01R scheme (misfiled by the pre-audit migration); moved to 4EB1-01R/ms.pdf (completing the dir) and the true Paper 01 ms placed from SaveMyExams/Pearson; both manifests carry the repair trail; 13 further files placed across both boards",
-    "evidence": "manifest notes + docs/ledger/*.csv + docs/AUDIT-2026-09-12.md §10"
+    "evidence": "manifest notes + docs/ledger/*.csv + docs/AUDIT-2026-09-12.md \u00a710"
    }
   ]
  },
@@ -1534,7 +1578,7 @@
    "cambridge-international": "1879/1879"
   },
   "ledger": {
-   "edexcel": "135 normalized / 93 open (23 planned · 8 not-listed · 11 byte-duplicate · 34 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
+   "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
    "cambridge": "130 normalized / 0 open (100%)"
   }
  },
@@ -1570,8 +1614,8 @@
    "cambridge-international": "2259/2259"
   },
   "ledger": {
-   "edexcel": "135 normalized / 93 open (23 planned · 8 not-listed · 11 byte-duplicate · 34 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
-   "cambridge": "926 rows: 890 normalized · 36 na:held-duplicate (18 refs PMT-listed but already held)"
+   "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
+   "cambridge": "926 rows: 890 normalized \u00b7 36 na:held-duplicate (18 refs PMT-listed but already held)"
   }
  },
  "paperlords_gapfill_wave_2026_09_13": {
@@ -1604,8 +1648,8 @@
   },
   "complete_pairs_note": "1405 + 14 dir completions from the ms placements + WST01-01 - 1 (2020-11/4EB1-01 ms re-homed by F15 repair)",
   "ledger": {
-   "edexcel": "150 normalized / 80 open (23 planned · 7 not-listed · 11 byte-duplicate · 22 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
-   "cambridge": "926 rows: 890 normalized · 36 na:held-duplicate (unchanged this wave)"
+   "edexcel": "150 normalized / 80 open (23 planned \u00b7 7 not-listed \u00b7 11 byte-duplicate \u00b7 22 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
+   "cambridge": "926 rows: 890 normalized \u00b7 36 na:held-duplicate (unchanged this wave)"
   }
  },
  "subject_expansion_wave_2026_09_14": {
@@ -1701,5 +1745,42 @@
   "specimen_dirs": 42,
   "pearson_complete_regular_pairs": "2423/2618",
   "cambridge_complete_regular_pairs": "2259/2259"
+ },
+ "legacy_backcatalog_wave_2026_09_14": {
+  "date": "2026-09-14",
+  "scope": "PMT-enumerated pre-2019 legacy back-catalog (4XX0 IGCSE + WBI01-06 legacy IAL units)",
+  "new_dirs": 152,
+  "new_files": 306,
+  "new_specs": [
+   "international-gcse/biology/4bi0 (44 dirs)",
+   "international-gcse/economics/4ec0 (21 dirs)",
+   "international-a-level/biology/wbi01..wbi06 (87 dirs)"
+  ],
+  "identification": {
+   "rank0_dirs": 133,
+   "rank2_dirs": 19,
+   "note": "rank 2 = CMap-garbled/scanned covers or listing attribution; per-manifest notes, operator ratification requested"
+  },
+  "excluded": {
+   "na:pmt-mislabeled": 68,
+   "detail": [
+    "4MA0 2018-06 x8 (PMT serves 4MA1 papers, print-verified 4MA1/1F etc.)",
+    "4MB0 2018-06 x4 + 2019-01 x4 (PMT serves 4MB1 papers)",
+    "4CH0 1CR/2CR x8 + 4PH0 1PR/2PR x12 ((R) listings serve base-paper bytes)",
+    "4MB0-02R 2016-01 x2 (bytes already held at 4MB0-2R)"
+   ]
+  },
+  "repairs": {
+   "F23": "stray duplicate dir 4MB0-1R 2016-01 consolidated into 4MB0-01R; variant scan quarantined"
+  },
+  "findings": {
+   "F22": "PMT maths pages switch specs at the 2018-06 boundary (serve 4MA1/4MB1 bytes under legacy listings); PMT naming is not print-faithful across spec boundaries",
+   "F24": "4MB0-01R/02R 2019-01 qps: two scanned byte-variants exist (migration kept one at 4MB1-01/02, quarantined the base); neither carries a text layer - attribution unresolved, operator ratification requested"
+  },
+  "residual": [
+   "4EB0 2018-01/2018-06, 4HB0/4IT0 extra sessions, WEC01-03, UK-GCE strays: not PMT-enumerated (no page)",
+   "4MA0 2018-06 true 4MA0-set papers: not listed on PMT",
+   "4MB0 2019-01 01R/02R qps: bytes exist in two scanned variants, F24"
+  ]
  }
 }

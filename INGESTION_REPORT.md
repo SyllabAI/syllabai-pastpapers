@@ -666,3 +666,33 @@ their half-empty twins). Remaining planned rows are dominated by source-blocked 
 (IAL Oct-2020 QPs un-hosted anywhere probed under print-faithful naming, 4CP0 P2B/P2C QPs,
 GCE-legacy 6663/6665 01R QPs + 2009 MSs, and the newest-session IGCSE ms) plus the legacy
 back-catalog sweep (pre-2019 4XX0 / W??01-04 specs — the AUDIT §16 wave-10 candidate).
+
+
+## Wave 10 - legacy back-catalog sweep (2026-09-14)
+
+Operator direction: "Proceed with wave 10 = legacy back-catalog sweep (pre-2019 4XX0/W??01-04,
+PMT-enumerated)". All sources PhysicsAndMathsTutor.com legacy listings; every file pypdf-print
+checked; placements follow the printed reference (PMT dir names are advisory only).
+
+- **152 new paper dirs, 306 files**: 4BI0 Biology 44 dirs (2011-06..2019-01, 1B/2B + R variants),
+  4EC0 Economics 21 dirs (2011-06..2019-01, Paper 01 + R variants), legacy IAL biology units
+  WBI01-06 87 dirs (2014-01..2019-06 incl the Oct-2016..2018 series and the final June-2019
+  legacy sittings, print-verified WBI01/01 etc.), plus 2 WBI05 article inserts.
+- **Identity**: 133 dirs rank 0 (pdf_text); 19 dirs rank 2 (CMap-garbled legacy 4EC0 covers,
+  scanned covers, code+session-only prints) - per-manifest notes, operator ratification requested.
+- **F22 (PMT spec-boundary mislabels, rank-0 evidence):** the June-2018 maths listings on PMT's
+  legacy pages serve 4MA1/4MB1 papers (files print 4MA1/1F, 4MB1/01 etc.), and the "(R)" listings
+  for 4CH0/4PH0 serve byte-copies of the base papers. 68 files excluded as `na:pmt-mislabeled`
+  (no 4MA0/4MB0 2018-06 true-set papers surfaced; 4CH0/4PH0 R variants remain source-blocked).
+- **F23:** stray duplicate dir `4MB0-1R` 2016-01 (byte-variant of held `4MB0-01R`, both print
+  4MB0/01R, P46918A) consolidated; variant scan quarantined with REASON record.
+- **F24 (unresolved, operator):** the 4MB0-01R/02R 2019-01 qps exist as two scanned byte-variants
+  (one quarantined by the migration, one placed at 4MB1-01/02 as "(R)"); neither has a text layer;
+  attribution left as-is pending ratification.
+- **Ledger rebuilt: 816 rows - 549 normalized / 140 planned / 127 na:*** (from 243/140/57):
+  +306 normalized, +68 na:pmt-mislabeled, +2 na:stray-duplicate-dir.
+
+Corpus after wave 10: **10,082 PDFs** (4,985 qp / 4,960 ms / 117 er / 20 insert) across **5,070
+paper dirs** (5,028 regular + 42 specimen). Complete regular pairs: Cambridge **2,259/2,259 (100%)**;
+Pearson **2,574/2,769**. Legacy state: 4CH0/4PH0/4MA0/4MB0/4PM0/4EB0 pre-2019 gaps closed to the
+PMT-enumerated horizon; remaining planned rows are source-blocked (see AUDIT §18).
