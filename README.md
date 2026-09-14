@@ -1081,3 +1081,25 @@ papers-1/5/6 variant gaps for 2021-2024 and 0580 M23/M24 paper-32, and the first
 held dirs (pre-2021 March label variants) and were skipped after byte checks; 0 corpus duplicate blobs.
 Cambridge regular dirs now 2,259/2,259 complete (100%), coverage 2016-03..2025-06; the CIE gap ledger is
 rebuilt to 926 rows (890 normalized · 36 na:held-duplicate).
+
+---
+
+## 34. Subject expansion (2026-09-14)
+
+Operator direction: *"update both levels of Edexcel to the latest exam season available online. And also cover
+remaining subjects"*. Wave 8 onboarded 18 further Edexcel subjects from the Paperlords catalog
+(identity from cover prints; §13-§19 rules unchanged):
+
+- International GCSE: Accounting (4AC1), Bangla (4BA0), Biology (4BI1), Business (4BS1), Commerce (4CM1),
+  Economics (4EC1), English Language A (4EA1), English Literature (4ET1 + modular 4WET1/4WET2),
+  Geography (4GE1 + modular 4WGE1/4WGE2), Human Biology (4HB1), ICT (4IT1) — sessions 2019 .. November 2025.
+- International Advanced Level: Accounting (WAC11/12), Biology (WBI11-16, legacy WBI04-06),
+  Business (WBS11-14), Economics (WEC11-14), Information Technology (WIT11-14), Law (YLA1),
+  Psychology (WPS01-04) — sessions 2019 .. **June 2026**.
+- Existing subjects were extended to the newest hosted seasons: IGCSE November 2025, IAL June 2026
+  (including the full January-2026 session), with 2020 COVID placements following the ratified June/November
+  and June/October reuse precedents.
+
+Every new directory carries a manifest in the §18 model with per-file Paperlords provenance; examiner
+reports are stored as `er.pdf` (§10 whitelist). The gap ledger (docs/ledger/file-gap-sweep.csv) was
+recomposed as the actionable gap list for the enlarged corpus.

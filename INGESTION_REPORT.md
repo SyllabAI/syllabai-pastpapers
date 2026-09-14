@@ -596,3 +596,31 @@ Corpus after wave 6: 7522 PDFs (3768 qp / 3736 ms / 18 insert) across 3799 paper
 Cambridge regular dirs **2259/2259 complete (100%)**, coverage 2016-03..2025-06.
 CIE ledger rebuilt: 926 rows (890 normalized ·
 36 na:held-duplicate over the 18 held refs).
+
+---
+
+## Wave 8 — Subject expansion + freshness to latest seasons (2026-09-14)
+
+Operator direction: *"update both levels of Edexcel to the latest exam season available online. And also cover
+remaining subjects"*. Source: the Paperlords public catalog (snapshot 2026-09-13, wave 7) — 1,365 IGCSE rows
+(18 subjects) + 2,013 IAL rows (10 subjects) with direct CDN links; sessions 2019 .. **Nov 2025 (IGCSE)** and
+**June 2026 (IAL)** — the newest seasons hosted anywhere probed (PMT listings lag at 2020/Jan 2025).
+
+- **Subjects added — IGCSE (11):** Accounting 4AC1 · Bangla 4BA0 · Biology 4BI1 · Business 4BS1 · Commerce 4CM1 ·
+  Economics 4EC1 · English Language A 4EA1 · English Literature 4ET1 (incl. modular 4WET1/4WET2) ·
+  Geography 4GE1 (incl. modular 4WGE1/4WGE2) · Human Biology 4HB1 · ICT 4IT1.
+- **Subjects added — IAL (7):** Accounting WAC11/12 · Biology WBI11-16 (+ legacy WBI04-06) · Business WBS11-14 ·
+  Economics WEC11-14 · Information Technology WIT11-14 · Law YLA1 · Psychology WPS01-04.
+- **Freshness:** existing subjects extended to IGCSE 2025-11 and IAL 2026-06 (incl. the full Jan-2026 IAL session);
+  693 freshness files (393 in the newest seasons), incl. print-verified legacy strays (4IT0 2018, WBS12 2015,
+  WEC12 2016, 2019 legacy retakes, C12/C34).
+- **2,209 files placed** (1058 qp · 1034 ms ·
+  117 examiner reports) into 1,143 new paper dirs + 51 manifest splices; every file
+  identified from its own cover (ref + session + P-code), blob-sha deduped vs corpus and intra-wave.
+- Identity ranks: 1,984 print-verified (rank 0) · 43 COVID date-rule (rank 2) · 182 catalog-inference
+  (rank 3 — covers without a readable reference; operator ratification requested).
+
+Corpus after wave 8: **9,746 PDFs** (4,827 qp / 4,784 ms / 117 er / 18 insert) across 4,943 paper dirs
+(4,901 regular + 42 specimen). Complete regular pairs: Cambridge **2,259/2,259 (100%)**;
+Pearson **2369/2641**. Ledger recomposed: 157 normalized ·
+237 planned (new-subject incomplete pairs + source-side rejects) · 50 documented na:*.

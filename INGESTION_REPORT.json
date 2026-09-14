@@ -1,7 +1,7 @@
 {
  "run_date": "2026-09-11",
  "agent": "SyllabAI ingestion agent",
- "source": "SyllabAI/Past-Papers — IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
+ "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
  "totals": {
   "pdfs_seen": 2708,
   "files_placed": 2512,
@@ -56,7 +56,7 @@
   },
   "corpus_after_othersource_wave_2026_09_12": {
    "date": "2026-09-12",
-   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT §8).",
+   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
    "pdfs_and_inserts": 2919,
    "qp": 1438,
    "ms": 1463,
@@ -111,7 +111,7 @@
   },
   "corpus_after_structure_fix_2026_09_13": {
    "date": "2026-09-13",
-   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README §32 deviation rulings). Independent recount at f840c61b16.",
+   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README \u00a732 deviation rulings). Independent recount at f840c61b16.",
    "files_placed": 3004,
    "qp": 1509,
    "ms": 1477,
@@ -1422,22 +1422,22 @@
    {
     "date": "2026-09-12",
     "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §8"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
    },
    {
     "date": "2026-09-12",
     "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §9"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
    },
    {
     "date": "2026-09-13",
     "what": "structural audit fixes S1+S2: 11 Nov-2023 IGCSE dirs re-homed under the subject level (33 blobs, sha-identical); 4EB1-1R ms merged into 4EB1-01R (byte-identical, git blob 511bb858), stray dir deleted; ledger 2 rows normalized",
-    "evidence": "docs/AUDIT-2026-09-12.md §11; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
+    "evidence": "docs/AUDIT-2026-09-12.md \u00a711; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
    },
    {
     "date": "2026-09-13",
     "what": "wave 5: F14 misfile repair - 2022-06/4EB1-01/ms.pdf was the Paper 01R scheme (misfiled by the pre-audit migration); moved to 4EB1-01R/ms.pdf (completing the dir) and the true Paper 01 ms placed from SaveMyExams/Pearson; both manifests carry the repair trail; 13 further files placed across both boards",
-    "evidence": "manifest notes + docs/ledger/*.csv + docs/AUDIT-2026-09-12.md §10"
+    "evidence": "manifest notes + docs/ledger/*.csv + docs/AUDIT-2026-09-12.md \u00a710"
    }
   ]
  },
@@ -1534,7 +1534,7 @@
    "cambridge-international": "1879/1879"
   },
   "ledger": {
-   "edexcel": "135 normalized / 93 open (23 planned · 8 not-listed · 11 byte-duplicate · 34 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
+   "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
    "cambridge": "130 normalized / 0 open (100%)"
   }
  },
@@ -1570,8 +1570,8 @@
    "cambridge-international": "2259/2259"
   },
   "ledger": {
-   "edexcel": "135 normalized / 93 open (23 planned · 8 not-listed · 11 byte-duplicate · 34 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
-   "cambridge": "926 rows: 890 normalized · 36 na:held-duplicate (18 refs PMT-listed but already held)"
+   "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
+   "cambridge": "926 rows: 890 normalized \u00b7 36 na:held-duplicate (18 refs PMT-listed but already held)"
   }
  },
  "paperlords_gapfill_wave_2026_09_13": {
@@ -1604,8 +1604,76 @@
   },
   "complete_pairs_note": "1405 + 14 dir completions from the ms placements + WST01-01 - 1 (2020-11/4EB1-01 ms re-homed by F15 repair)",
   "ledger": {
-   "edexcel": "150 normalized / 80 open (23 planned · 7 not-listed · 11 byte-duplicate · 22 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
-   "cambridge": "926 rows: 890 normalized · 36 na:held-duplicate (unchanged this wave)"
+   "edexcel": "150 normalized / 80 open (23 planned \u00b7 7 not-listed \u00b7 11 byte-duplicate \u00b7 22 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
+   "cambridge": "926 rows: 890 normalized \u00b7 36 na:held-duplicate (unchanged this wave)"
+  }
+ },
+ "subject_expansion_wave_2026_09_14": {
+  "date": "2026-09-14",
+  "operator_direction": "update both levels of Edexcel to the latest exam season available online; cover remaining subjects",
+  "source": "Paperlords public catalog (Supabase `papers` table snapshot taken 2026-09-13 during the wave-7 headless probe) + direct CDN downloads (archive.paperlords.org / pub-*.r2.dev)",
+  "catalog_enumeration": "1,365 IGCSE rows across 18 subjects + 2,013 IAL rows across 10 subjects; sessions Jan 2019 .. Nov 2025 (IGCSE) and June 2019 .. June 2026 (IAL)",
+  "identity_forensics": "every file identified from its own cover text (pypdf): paper reference (slash / paren / unit+paper / boxed-cell / underscore forms), printed session (incl. Summer/Autumn aliases and 'Updated <Mon> <Year>' revision-stamp stripping), P-code extraction; git-blob sha1 dedup vs the full corpus and intra-wave; byte-distinct co-located conflicts resolved by deep re-decode or dropped; 5-char modular unit codes (4WET1/4WET2, 4WGE1/4WGE2) and 2019 legacy codes (WBI04-06, WCH04-06, WPH04-06, WMA01/02) routed from prints",
+  "placements": {
+   "total": 2209,
+   "international-gcse": 853,
+   "international-a-level": 1356,
+   "qp": 1058,
+   "ms": 1034,
+   "er": 117
+  },
+  "identity_ranks": {
+   "pdf_text": 1984,
+   "catalog_fallback": 182,
+   "date_rule": 43
+  },
+  "subjects_added": {
+   "international-gcse": [
+    "accounting",
+    "bangla",
+    "biology",
+    "business",
+    "commerce",
+    "economics",
+    "english-language-a",
+    "english-literature",
+    "geography",
+    "human-biology",
+    "ict"
+   ],
+   "international-a-level": [
+    "accounting",
+    "biology",
+    "business",
+    "economics",
+    "information-technology",
+    "law",
+    "psychology"
+   ]
+  },
+  "freshness": "existing Edexcel subjects extended: IGCSE to November 2025 (newest IGCSE season hosted anywhere probed; PMT listings lag at 2020 or earlier), IAL to June 2026 (newest IAL season - results published August 2026); Jan 2026 IAL session added for chemistry/mathematics/physics/business/economics/accounting/biology/psychology; legacy strays recovered from the catalog: 4IT0 June 2018, WBS12 Jan 2015, WEC12 Jan 2016 (print-verified), WBI04-06/WCH04-06/WPH04-06 2019 legacy retakes, WMA01/02 C12/C34 2019",
+  "covid_2020_rule": "IGCSE mark schemes printing November 2020 placed into June-2020 dirs only where the June QP is present (P-code reuse precedent ratified 2026-09-13); IAL QPs printing June 2020 placed at October 2020",
+  "ledger_semantics": "file-gap-sweep.csv recomposed as the actionable gap list: 7 existing rows normalized (paperlords fills), existing na:* evidence rows preserved verbatim, new planned rows added for incomplete pairs among the new subject dirs and for the 41 source-side rejects (truncated PDFs / unreadable covers, each with its source URL)"
+ },
+ "corpus_after_subject_expansion_wave_2026_09_14": {
+  "date": "2026-09-14",
+  "files": 9746,
+  "breakdown": {
+   "qp": 4827,
+   "ms": 4784,
+   "er": 117,
+   "insert": 18
+  },
+  "paper_dirs": 4943,
+  "regular": 4901,
+  "specimen": 42,
+  "complete_regular_pairs": {
+   "pearson-edexcel": "2369/2641",
+   "cambridge-international": "2259/2259 (100%)"
+  },
+  "sessions_extended": {
+   "pearson-igcse": "2011-06 .. 2025-11",
+   "pearson-ial": "2014-01 .. 2026-06"
   }
  }
 }
