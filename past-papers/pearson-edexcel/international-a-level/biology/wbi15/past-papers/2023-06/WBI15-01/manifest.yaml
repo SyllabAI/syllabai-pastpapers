@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Biology/June 2023/BIOLOGY_2023_June_U5_QP_1777818931785.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d2e1b85b0cb7f3532e27d797d443dd0efcf2230748641698a85a90541bc040c3
+  size_bytes: 332972
+  original_filename: BIOLOGY_2023_June_U5_MS_1777818930862.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/June 2023/BIOLOGY_2023_June_U5_MS_1777818930862.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 30eac548604f0e25798af7b7848a7c418694c2863faea819efb2bd5050417590
+  size_bytes: 7697616
+  original_filename: BIOLOGY_2023_June_U5_ER_1777818928110.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/June 2023/BIOLOGY_2023_June_U5_ER_1777818928110.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - WBI15/01
   stray_prints: []
-  session_printed: June 2023
   notes: print-verified from cover (rank 0)

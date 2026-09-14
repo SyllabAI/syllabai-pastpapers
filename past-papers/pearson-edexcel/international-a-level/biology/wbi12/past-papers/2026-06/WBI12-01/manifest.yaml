@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Biology/June 2026/BIOLOGY_2026_June_U2_QP_1786858169370.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a5a079e84f32fdad2528c9972bf6a3953c4f7e987affef9c456c1afbf483a076
+  size_bytes: 456695
+  original_filename: BIOLOGY_2026_June_U2_MS_1786858168700.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/June 2026/BIOLOGY_2026_June_U2_MS_1786858168700.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WBI12/01
   stray_prints: []
-  session_printed: May 2026
   notes: print-verified from cover (rank 0)

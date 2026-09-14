@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Economics/June 2026/IAL_ECONOMICS_2026_June_U4_QP_1787724707270.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a12764a4910001ea7a7533d5c759a1a251cedd17de55fbbf2c33e9181a890ea7
+  size_bytes: 354500
+  original_filename: IAL_ECONOMICS_2026_June_U4_MS_1787724706235.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/June 2026/IAL_ECONOMICS_2026_June_U4_MS_1787724706235.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WEC14/01
   stray_prints: []
-  session_printed: June 2026
   notes: print-verified from cover (rank 0)

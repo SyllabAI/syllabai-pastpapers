@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202025/IAL_IAL_BUSINESS_2025_Oct_U3_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a306564e9c9c6f4ba870b0be4cf261196dd14c2d90c512298e674c465a61f54b
+  size_bytes: 282741
+  original_filename: IAL_IAL_BUSINESS_2025_Oct_U3_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202025/IAL_IAL_BUSINESS_2025_Oct_U3_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WBS13/01
   stray_prints: []
-  session_printed: October 2025
   notes: print-verified from cover (rank 0)

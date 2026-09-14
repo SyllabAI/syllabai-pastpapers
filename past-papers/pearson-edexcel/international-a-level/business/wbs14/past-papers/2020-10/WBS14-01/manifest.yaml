@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202020/IAL_IAL_BUSINESS_2020_Oct_U4_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) prints June 2020; sat in October-2020 window (COVID reuse precedent)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e0d7d2f4dc3350cd370d77208015b6d9a7e180aa0ef211205b01e18e2bec35ba
+  size_bytes: 250845
+  original_filename: IAL_IAL_BUSINESS_2020_Oct_U4_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202020/IAL_IAL_BUSINESS_2020_Oct_U4_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -43,5 +54,5 @@ identification:
   printed_references_seen:
   - WBS14/01
   stray_prints: []
-  session_printed: June 2020
-  notes: prints June 2020; sat in October-2020 window (COVID reuse precedent) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)
+  notes:
+  - prints June 2020; sat in October-2020 window (COVID reuse precedent) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)

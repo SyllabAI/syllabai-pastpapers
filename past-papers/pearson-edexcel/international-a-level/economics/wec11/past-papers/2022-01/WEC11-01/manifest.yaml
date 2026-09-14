@@ -35,12 +35,24 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202022/IAL_ECONOMICS_2022_Jan_U1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session Jan 2022'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d0dceba85ab8eee9ef42ed93e2ddf3b7b8277b00c3139c94887dd4f5af328f02
+  size_bytes: 420333
+  original_filename: IAL_ECONOMICS_2022_Jan_U1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202022/IAL_ECONOMICS_2022_Jan_U1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
+  - pdf_text
   - partner_inference
   confidence_rank: 3
   printed_references_seen:
   - WEC11/01
   stray_prints: []
-  session_printed: (not printed on cover; session from source catalog "Jan 2022")
-  notes: no printed session; catalog session Jan 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  notes:
+  - no printed session; catalog session Jan 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested

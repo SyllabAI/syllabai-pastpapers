@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U1_QP_1777813822818.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d6d825bd4c28985e091ab98af96cf7152f41c94c50275a80af98c12c47988859
+  size_bytes: 236619
+  original_filename: IAL_BUSINESS_2023_MayJune_U1_MS_1777813821913.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U1_MS_1777813821913.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 2322d02c9fdfa107e6edbd1f77b47e3fba7b33c2641ecd4b3cbe23dd36a84177
+  size_bytes: 5153838
+  original_filename: IAL_BUSINESS_2023_MayJune_U1_ER_1777813818530.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U1_ER_1777813818530.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - WBS11/01
   stray_prints: []
-  session_printed: May 2023
   notes: print-verified from cover (rank 0)

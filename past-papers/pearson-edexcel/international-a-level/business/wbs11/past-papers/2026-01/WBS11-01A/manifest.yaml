@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/Jan%202026/IAL_IAL_BUSINESS_2026_Jan_U1A_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 8cd02954c8947eb50c12a1cd7aceb6e9dface05c0e3ca8887f1ea93d8b8ba6e4
+  size_bytes: 242330
+  original_filename: IAL_IAL_BUSINESS_2026_Jan_U1A_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Jan%202026/IAL_IAL_BUSINESS_2026_Jan_U1A_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WBS11/01A
   stray_prints: []
-  session_printed: January 2026
   notes: print-verified from cover (rank 0)

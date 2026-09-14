@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U4_QP_1777813835370.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2c306027bd27a993a23a8a7f0fdf80e81ecb99a1ec45f0aa9b46ebbc40d1458f
+  size_bytes: 300931
+  original_filename: IAL_BUSINESS_2023_MayJune_U4_MS_1777813833735.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U4_MS_1777813833735.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 83520c0e1e0c3887e55c3715b57d1801880b3512c2ccc25889391fbb21998dae
+  size_bytes: 5299636
+  original_filename: IAL_BUSINESS_2023_MayJune_U4_ER_1777813831212.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U4_ER_1777813831212.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - WBS14/01
   stray_prints: []
-  session_printed: June 2023
   notes: print-verified from cover (rank 0)

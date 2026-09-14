@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/June 2026/IAL_BUSINESS_2026_June_U3_QP_1787722752562.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d43bf59a1ef578b10f62b1324358db281ec37599bfcc8825899374d37963aec5
+  size_bytes: 208185
+  original_filename: IAL_BUSINESS_2026_June_U3_MS_1787722751660.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/June 2026/IAL_BUSINESS_2026_June_U3_MS_1787722751660.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - WBS13/01
   stray_prints: []
-  session_printed: May 2026
   notes: print-verified from cover (rank 0)

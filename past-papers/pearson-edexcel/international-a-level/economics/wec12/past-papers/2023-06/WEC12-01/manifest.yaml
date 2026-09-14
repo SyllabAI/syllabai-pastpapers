@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Economics/June 2023/ECONOMICS_2023_June_U2_QP_1777813109071.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: cd768f89a188b47f67a2d7340c3345be1464684dcdaac35435e038b148cc9bff
+  size_bytes: 340522
+  original_filename: ECONOMICS_2023_June_U2_MS_1777813108285.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/June 2023/ECONOMICS_2023_June_U2_MS_1777813108285.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: ac03ee27e040a6f84c43aa488823d6c7e295793ee0bbb17a8d1486d1ed858e85
+  size_bytes: 7034232
+  original_filename: ECONOMICS_2023_June_U2_ER_1777813107136.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/June 2023/ECONOMICS_2023_June_U2_ER_1777813107136.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - WEC12/01
   stray_prints: []
-  session_printed: May 2023
   notes: print-verified from cover (rank 0)

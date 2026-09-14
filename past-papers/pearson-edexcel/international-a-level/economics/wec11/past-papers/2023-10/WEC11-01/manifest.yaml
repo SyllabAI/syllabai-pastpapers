@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202023/IAL_ECONOMICS_2023_Jan_U1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Jan 2023; cover prints October 2023'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f499e5c64ac25ea58aa01d87ce0dad87780643f94c23758e7c1e6e4c69339c9a
+  size_bytes: 513576
+  original_filename: IAL_ECONOMICS_2023_Jan_U1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202023/IAL_ECONOMICS_2023_Jan_U1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Jan 2023; cover prints October 2023'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,6 @@ identification:
   printed_references_seen:
   - WEC11/01
   stray_prints: []
-  session_printed: October 2023
-  notes: catalog said Jan 2023; cover prints October 2023
+  notes:
+  - catalog said Jan 2023; cover prints October 2023
+  - catalog said Jan 2023; cover prints October 2023

@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/Jan%202025/IAL_IAL_BUSINESS_2025_Jan_U4_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f3fff8db76be4572e2da90c2ee1fb4b184e531baff6ab661b548168abdcfa925
+  size_bytes: 254616
+  original_filename: IAL_IAL_BUSINESS_2025_Jan_U1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Jan%202025/IAL_IAL_BUSINESS_2025_Jan_U1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)  [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,5 @@ identification:
   printed_references_seen:
   - WBS14/01
   stray_prints: []
-  session_printed: January 2025
-  notes: print-verified from cover (rank 0)
+  notes:
+  - ' [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
