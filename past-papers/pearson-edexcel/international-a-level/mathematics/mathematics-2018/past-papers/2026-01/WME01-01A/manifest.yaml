@@ -34,7 +34,20 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Maths/Jan%202026/IAL_MATHS_2026_Jan_M1A_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: bddf5c69bf2308361172b76921c6d2e68c88146d7d3f344e1066ae855aefae9f
+  size_bytes: 759731
+  original_filename: IAL_MATHS_2026_Jan_M1A_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/Jan%202026/IAL_MATHS_2026_Jan_M1A_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -42,4 +55,7 @@ identification:
   printed_references_seen:
   - WME01/01A
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - wave-9 placement (ms.pdf); printed session ['january 2026']; identity rank 2 (print==sibling); operator
+    ratification requested

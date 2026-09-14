@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Maths/Oct%202019/IAL_MATHS_2019_Oct_P2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Oct 2019; cover prints November 2019'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      catalog said Oct 2019; cover prints November 2019'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b628ef9df630038104aae915070cce9751b03731f214b5a43f93facb566774dd
+  size_bytes: 726709
+  original_filename: IAL_MATHS_2019_Oct_P2_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/Oct%202019/IAL_MATHS_2019_Oct_P2_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -44,3 +58,5 @@ identification:
   stray_prints: []
   notes:
   - catalog said Oct 2019; cover prints November 2019
+  - wave-9 placement (ms.pdf); printed session ['october 2019']; identity rank 2 (print==sibling(season));
+    operator ratification requested

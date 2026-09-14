@@ -34,7 +34,22 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Chemistry/June%202020/IAL_CHEMISTRY_2020_June_U5_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said June 2020; cover prints October 2020'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      catalog said June 2020; cover prints October 2020'
+- type: question-paper
+  path: qp.pdf
+  sha256: f12e3e5b1810b34cc01526e1efbd38ea3bcf2da1f531a35af834c3041509d611
+  size_bytes: 289343
+  original_filename: October 2020 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PMT (physicsandmathstutor.com download CDN)
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/Edexcel-IAL/2018-spec/Unit-5/QP/October
+      2020 (IAL) QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from PMT (physicsandmathstutor.com download CDN);
+      collected 2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -44,3 +59,5 @@ identification:
   stray_prints: []
   notes:
   - catalog said June 2020; cover prints October 2020
+  - wave-9 placement (qp.pdf); printed refs ['WCH15/01']; printed session ['June 2020']; identity rank
+    2 (pmt-october-reuse); operator ratification requested

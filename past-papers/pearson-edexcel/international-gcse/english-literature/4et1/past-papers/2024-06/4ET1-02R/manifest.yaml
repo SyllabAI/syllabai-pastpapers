@@ -32,9 +32,11 @@ materials:
   source:
     source_type: third-party-archive
     archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune 2024/P2R_QP_1777447429508.pdf
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune
+      2024/P2R_QP_1777447429508.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 - type: mark-scheme
   path: ms.pdf
   sha256: 4ef18e931dc4800ccaf383f0e924a15554a3a17af2530c6bb0d496e8524624b7
@@ -43,9 +45,26 @@ materials:
   source:
     source_type: third-party-archive
     archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune 2024/P2R_MS_1777447428774.pdf
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune
+      2024/P2R_MS_1777447428774.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 1b574dceb30a506de945d706e71b966f61b6204093fc4a83ae82d3fc139ff882
+  size_bytes: 5989642
+  original_filename: P2R_ER_1777447427408.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune
+      2024/P2R_ER_1777447427408.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      cover text unreadable (broken ToUnicode CMap or blank); identity from source catalog listing - rank
+      3, operator ratification requested'
 identification:
   methods:
   - pdf_text

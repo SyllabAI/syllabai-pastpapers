@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Further%20Pure%20Maths/Nov%202025/IGCSE_FURTHER_PURE_MATHEMATICS_2025_Nov_P1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Nov 2025; cover prints October 2025'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      catalog said Nov 2025; cover prints October 2025'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d5b70527d44f15fd2c2d91d2cf9e42017d34642c26ae20e82bb11773789b484d
+  size_bytes: 557015
+  original_filename: IGCSE_FURTHER_PURE_MATHEMATICS_2025_Nov_P1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Further%20Pure%20Maths/Nov%202025/IGCSE_FURTHER_PURE_MATHEMATICS_2025_Nov_P1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -44,3 +58,6 @@ identification:
   stray_prints: []
   notes:
   - catalog said Nov 2025; cover prints October 2025
+  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-gcse/further-pure-mathematics/4pm1/past-papers/2025-11/4PM1-01
+    — one paper identity was split across two directory encodings (4PM1-01 vs 4PM1-01); merged per §11
+    shared paper identity; operator ratification requested'

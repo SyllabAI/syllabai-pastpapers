@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Bangla/Nov%202023/IGCSE_BANGLA_2023_Nov_P1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Nov 2023; cover prints October 2023'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      catalog said Nov 2023; cover prints October 2023'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: bb0558ef0b32b5d6ddc955db3f480a73b8cefcc46ec59e8f2874e9e447305f64
+  size_bytes: 381609
+  original_filename: IGCSE_BANGLA_2023_Nov_P1_MS_1777791766899.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Bangla/Nov 2023/IGCSE_BANGLA_2023_Nov_P1_MS_1777791766899.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -44,3 +58,6 @@ identification:
   stray_prints: []
   notes:
   - catalog said Nov 2023; cover prints October 2023
+  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-gcse/bangla/4ba0/past-papers/2023-11/4BA0-01
+    — one paper identity was split across two directory encodings (4BA0-01 vs 4BA0-01); merged per §11
+    shared paper identity; operator ratification requested'

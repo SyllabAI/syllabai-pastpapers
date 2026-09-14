@@ -34,7 +34,20 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Biology/June 2026/BIOLOGY_2026_June_U4_MS_1786858171412.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 2d48315a3c5e5ee09f53bfabc3340098356d217a6b596016fe9097d72b64c0bd
+  size_bytes: 4631681
+  original_filename: BIOLOGY_2026_June_U4_QP_1786858423191.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/June 2026/BIOLOGY_2026_June_U4_QP_1786858423191.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -42,4 +55,7 @@ identification:
   printed_references_seen:
   - WBI14/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - wave-9 placement (qp.pdf); printed refs ['WBI14/01']; printed session ['may 2026']; identity rank
+    1 (print==sibling(season))

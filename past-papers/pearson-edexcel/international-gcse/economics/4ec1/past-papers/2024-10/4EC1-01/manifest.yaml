@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Economics/Nov%202024/IGCSE_ECONOMICS_2024_Nov_P1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Nov 2024; cover prints October 2024'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      catalog said Nov 2024; cover prints October 2024'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 56fab487fa61b20bff2360e1e1c4f450f2d4e537624cc49339c6802159559f12
+  size_bytes: 435822
+  original_filename: IGCSE_ECONOMICS_2024_Nov_P1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Economics/Nov%202024/IGCSE_ECONOMICS_2024_Nov_P1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -44,3 +58,6 @@ identification:
   stray_prints: []
   notes:
   - catalog said Nov 2024; cover prints October 2024
+  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-gcse/economics/4ec1/past-papers/2024-11/4EC1-01
+    — one paper identity was split across two directory encodings (4EC1-01 vs 4EC1-01); merged per §11
+    shared paper identity; operator ratification requested'

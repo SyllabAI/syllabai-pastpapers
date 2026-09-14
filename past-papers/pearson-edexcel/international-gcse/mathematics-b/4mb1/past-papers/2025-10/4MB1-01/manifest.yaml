@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Mathematics%20B/Nov%202025/IGCSE_MATHEMATICS_B_2025_Nov_P1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Nov 2025; cover prints October 2025'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      catalog said Nov 2025; cover prints October 2025'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c7a61618dd4fbf5b86d9a00398b437eba488c1f7671dbd479d1b96211ca02020
+  size_bytes: 704120
+  original_filename: IGCSE_MATHEMATICS_B_2025_Nov_P1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Mathematics%20B/Nov%202025/IGCSE_MATHEMATICS_B_2025_Nov_P1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -44,3 +58,6 @@ identification:
   stray_prints: []
   notes:
   - catalog said Nov 2025; cover prints October 2025
+  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-gcse/mathematics-b/4mb1/past-papers/2025-11/4MB1-01
+    — one paper identity was split across two directory encodings (4MB1-01 vs 4MB1-01); merged per §11
+    shared paper identity; operator ratification requested'

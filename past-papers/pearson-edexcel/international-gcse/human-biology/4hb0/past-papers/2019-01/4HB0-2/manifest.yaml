@@ -34,7 +34,20 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/Jan%202019/IGCSE_HUMAN_BIOLOGY_2019_Jan_P2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: d29e5e5852c6690b3e487fee06b854cf404ee9c59b4b59403d6647d58486c76a
+  size_bytes: 5603036
+  original_filename: IGCSE_HUMAN_BIOLOGY_2019_Jan_P2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/Jan%202019/IGCSE_HUMAN_BIOLOGY_2019_Jan_P2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -42,4 +55,7 @@ identification:
   printed_references_seen:
   - 4HB0/2
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - wave-9 placement (qp.pdf); printed refs ['4HB0/02']; printed session ['january 2019']; identity rank
+    2 (print==catalog(sibling-rank3)); operator ratification requested

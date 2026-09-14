@@ -35,6 +35,18 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 373832032d6ba9111b7c63cde6ce46180341621854d62cb3af0f173d0943574f
+  size_bytes: 236248
+  original_filename: 6PH04_01R_msc_20130815.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2013%20Jun/Mark-scheme/6PH04_01R_msc_20130815.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from XtremePapers (papers.xtremepape.rs); collected
+      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -43,7 +55,8 @@ identification:
   - 6PH04/01R
   stray_prints: []
   session_printed: June 2013; June 2013
-  notes: []
+  notes:
+  - wave-9 placement (ms.pdf); printed session ['Summer 2013']; identity rank 1 (xtp-ocr)
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

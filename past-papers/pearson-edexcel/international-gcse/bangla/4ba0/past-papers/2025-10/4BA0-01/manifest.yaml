@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Bangla/Nov%202025/IGCSE_BANGLA_2025_Nov_P1_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Nov 2025; cover prints October 2025'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      catalog said Nov 2025; cover prints October 2025'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f44b716f4df3e124fac0a85f9d003a5f08eabd4ffa7ee7a7aee73604fdb09257
+  size_bytes: 233248
+  original_filename: IGCSE_BANGLA_2025_Nov_P1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Bangla/Nov%202025/IGCSE_BANGLA_2025_Nov_P1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -44,3 +58,6 @@ identification:
   stray_prints: []
   notes:
   - catalog said Nov 2025; cover prints October 2025
+  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-gcse/bangla/4ba0/past-papers/2025-11/4BA0-01
+    — one paper identity was split across two directory encodings (4BA0-01 vs 4BA0-01); merged per §11
+    shared paper identity; operator ratification requested'

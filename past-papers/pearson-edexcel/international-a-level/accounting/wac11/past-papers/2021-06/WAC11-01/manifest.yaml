@@ -34,7 +34,20 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Accounting/June 2021/ACCOUNTING_2021_June_U1_MS_1777819894254.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 0b0c7ca3d31746c8d2b88a79abc6294abc1d2cc6dfba7c59aea3685826caa4ad
+  size_bytes: 820542
+  original_filename: ACCOUNTING_2021_June_U1_QP_1777819895137.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Accounting/June 2021/ACCOUNTING_2021_June_U1_QP_1777819895137.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -42,4 +55,7 @@ identification:
   printed_references_seen:
   - WAC11/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - wave-9 placement (qp.pdf); printed session ['april 2021', 'january 2021']; identity rank 2 (print==sibling(season));
+    operator ratification requested

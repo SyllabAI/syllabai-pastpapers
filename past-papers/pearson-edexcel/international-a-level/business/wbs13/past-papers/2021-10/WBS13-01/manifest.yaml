@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202021/IAL_IAL_BUSINESS_2021_Oct_U3_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session Oct 2021'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      no printed session; catalog session Oct 2021'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 76a537e2c26fdfcbeaac80e953f563a8ec8da284490453d71326d768a5c9f038
+  size_bytes: 271373
+  original_filename: IAL_IAL_BUSINESS_2021_Oct_U3_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202021/IAL_IAL_BUSINESS_2021_Oct_U3_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 9)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - partner_inference
@@ -43,4 +57,10 @@ identification:
   - WBS13/01
   stray_prints: []
   notes:
-  - no printed session; catalog session Oct 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  - no printed session; catalog session Oct 2021 cover does not expose a readable paper reference (no
+    text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing
+    for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords
+    U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification
+    requested
+  - wave-9 placement (ms.pdf); printed session ['october 2021']; identity rank 2 (print==sibling(season));
+    operator ratification requested

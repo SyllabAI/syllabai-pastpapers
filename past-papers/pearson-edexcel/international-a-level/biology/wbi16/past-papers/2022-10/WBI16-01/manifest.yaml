@@ -34,7 +34,21 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Biology/Oct%202022/IAL_BIOLOGY_2022_Oct_U6_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session Oct 2022'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
+      no printed session; catalog session Oct 2022'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 49b7e5e0a8f41bd5bd92bbd8dd611b64a0f8f4fc49c1500e3783840210b63c28
+  size_bytes: 347016
+  original_filename: IAL_BIOLOGY_2022_Oct_U6_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/Oct%202022/IAL_BIOLOGY_2022_Oct_U6_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - partner_inference
@@ -43,4 +57,11 @@ identification:
   - WBI16/01
   stray_prints: []
   notes:
-  - no printed session; catalog session Oct 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  - no printed session; catalog session Oct 2022 cover does not expose a readable paper reference (no
+    text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing
+    for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords
+    U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification
+    requested
+  - 'wave-9 consolidation: ms.pdf re-homed from past-papers/pearson-edexcel/international-a-level/biology/wbi16/past-papers/2022-10/WBI16-1
+    — one paper identity was split across two directory encodings (WBI16-01 vs WBI16-1); merged per §11
+    shared paper identity; operator ratification requested'
