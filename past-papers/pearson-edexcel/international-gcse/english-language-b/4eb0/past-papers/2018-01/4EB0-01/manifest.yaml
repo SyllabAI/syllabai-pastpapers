@@ -1,0 +1,50 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb0:2018-01:4EB0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb0
+  title: Edexcel International GCSE English Language B (4EB0)
+series:
+  normalized: 2018-01
+  year: '2018'
+  session_month: '01'
+  printed: January
+  source: pdf_text
+paper:
+  official_reference: 4EB0/01
+  unit_code: 4EB0
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 57f1f565bb0c1724fb28ecccb2d6739527019a48425ccfd5bf5aef43d920d958
+  size_bytes: 1637852
+  original_filename: 4EB0_01_que_20180125.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/English%20Language%20B/2009/Exam%20materials/4EB0_01_que_20180125.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the board's content-dam exam-materials repository (official date-coded filename)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB0/01
+  stray_prints: []
+  notes:
+  - 'missing-material note: the paired mark scheme is not hosted by any probed source (PMT has no pages for this legacy spec, Pearson content-dam hosts QPs only, SaveMyExams/Paperlords carry no legacy session); ledger row opened'
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)
