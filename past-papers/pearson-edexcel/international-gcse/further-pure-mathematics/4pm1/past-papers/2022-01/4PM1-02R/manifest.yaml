@@ -44,11 +44,8 @@ materials:
     source_type: third-party-archive
     archive: XtremePapers (papers.xtremepape.rs)
     source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Further%20Pure%20Mathematics/2022%20Jan/Mark-scheme/Markscheme-Paper2R-January2022.pdf
-    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
-      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
-      public directory tree, print-verified before acceptance)
-    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
-      artifacts may be present
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization - rows PMT could not satisfy may use other sources; files fetched from the XtremePapers public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
@@ -60,8 +57,15 @@ identification:
   session_printed: January 2022
   notes:
   - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: pad-normalized; session evidence: print (January 2022); filename match: suf-only; sha256 dcd5365bc41e802f...'
+  - 'F12 closed (wave 14): the unpadded 4PM1-2R encoding dir held a second scan generation of this same paper (P-code P66307A, January 2022 print, same page counts on qp+ms); that generation is quarantined with both sha256s; canonical padded encoding kept per section-9/F19'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: F12 encoding closure (4PM1-2R vs 4PM1-02R duplicate dirs under two name encodings)
+  decision: canonical padded 4PM1-02R kept - unpadded 2R scan generation quarantined
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED

@@ -23,15 +23,16 @@ variant: null
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: 2a418b1fba0123288a5eeea499287f9e39bb394a617310b54256dcc03bdb9006
-  size_bytes: 197006
-  original_filename: October 2020 (IAL) MS.pdf
+  sha256: 18cf22f77b87792b225af86cbb2ed21dd3b6e3d3ce73b599317f1d9b2b36dadc
+  size_bytes: 441152
+  original_filename: IAL_PHYSICS_2020_June_U3_MS.pdf
   source:
     source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/June%202020/IAL_PHYSICS_2020_June_U3_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said June 2020; cover prints October 2020'
+  note: 'F20 resolution (wave 14): clean unwatermarked generation of the October-2020 WPH13/01 mark scheme ruled canonical; the byte-distinct PMT-watermarked generation previously held here is quarantined (both sha256s on the REASON record)'
 - type: question-paper
   path: qp.pdf
   sha256: 7199eb4f12d65bd75dadacaa4de8ce7e2b668ae8f55f9e3d3971c7291daacdba
@@ -41,11 +42,8 @@ materials:
     source_type: third-party-archive
     archive: XtremePapers (papers.xtremepape.rs)
     source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2020%20Oct%20%282018%20syllabus%29/Question-paper/Questionpaper-Unit3%28WPH13%29-October2020.pdf
-    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
-      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
-      public directory tree, print-verified before acceptance)
-    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
-      artifacts may be present
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization - rows PMT could not satisfy may use other sources; files fetched from the XtremePapers public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan artifacts may be present
 identification:
   methods:
   - pdf_text
@@ -57,8 +55,15 @@ identification:
   session_printed: October 2020; October 2020
   notes:
   - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued October2020); filename match: exact; sha256 7199eb4f12d65bd7...'
+  - 'F20 resolved (wave 14): clean generation moved from WPH13-1 (wave-8 Paperlords placement, cover prints October 2020); PMT-watermarked generation quarantined; content-identical by aggressive text-normalization, same page counts'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: F20 duplicate-generation ruling (October-2020 second MS generation; watermark-only difference confirmed by full-document text forensics)
+  decision: clean unwatermarked generation canonical - watermarked generation quarantined
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED

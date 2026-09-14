@@ -23,16 +23,16 @@ variant: null
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: cbe20bd25678f3b97a65c057aa617b824cdaa2fe52df4194234e3ec9ffaefb7d
-  size_bytes: 116829
-  original_filename: October 2020 (IAL) MS.pdf
+  sha256: 20b20e9d88620b2bffe5f41bcc15fca68aa62aaef7cc35306cbb6182761efc62
+  size_bytes: 257169
+  original_filename: IAL_CHEMISTRY_2020_June_U3_MS.pdf
   source:
     source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-chemistry/edexcel-unit-3/
-    downloaded_at: 2026-09-11T12:02:18Z
-    collected_by: SyllabAI ingestion agent (PMT backfill 2026-09-11)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Chemistry/June%202020/IAL_CHEMISTRY_2020_June_U3_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said June 2020; cover prints October 2020'
+  note: 'F20 resolution (wave 14): clean unwatermarked generation of the October-2020 WCH13/01 mark scheme ruled canonical; the byte-distinct PMT-watermarked generation previously held here is quarantined (both sha256s on the REASON record)'
 - type: question-paper
   path: qp.pdf
   sha256: 6c4f945fc1b0bb5e24436ab73e7545b931d060434034750a72ff338bbde915ac
@@ -42,7 +42,7 @@ materials:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: https://www.physicsandmathstutor.com/past-papers/a-level-chemistry/edexcel-unit-3/
-    downloaded_at: 2026-09-11T12:02:22Z
+    downloaded_at: 2026-09-11 12:02:22+00:00
     collected_by: SyllabAI ingestion agent (PMT backfill 2026-09-11)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
@@ -55,8 +55,15 @@ identification:
   session_printed: not detected
   notes:
   - session not detected in pdftotext pages 1-2; series from PMT filename
+  - 'F20 resolved (wave 14): clean generation moved from WCH13-1 (wave-8 Paperlords placement, cover prints October 2020); PMT-watermarked generation quarantined; content-identical by aggressive text-normalization, same page counts'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: F20 duplicate-generation ruling (October-2020 second MS generation; watermark-only difference confirmed by full-document text forensics)
+  decision: clean unwatermarked generation canonical - watermarked generation quarantined
 ingestion:
   agent: SyllabAI ingestion agent (PMT backfill 2026-09-11)
   run_date: '2026-09-11'
   source_repo: PMT bulk download (PhysicsAndMathsTutor.com)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED

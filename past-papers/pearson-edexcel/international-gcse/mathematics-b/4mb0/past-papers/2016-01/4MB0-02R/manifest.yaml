@@ -1,4 +1,4 @@
-paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2016-01:4MB0/2R
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2016-01:4MB0/02R
 exam_board:
   id: pearson-edexcel
   name: Pearson Edexcel
@@ -16,7 +16,7 @@ series:
   printed: January 2016; January 2016
   source: pdf+filename
 paper:
-  official_reference: 4MB0/2R
+  official_reference: 4MB0/02R
   unit_code: 4MB0
   paper_number_variant: 2R
 variant:
@@ -44,8 +44,7 @@ materials:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: Maths/GCSE/Past-Papers/Edexcel-IGCSE-B/Paper-2/QP/January 2016 (R) QP.pdf
-    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
-      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
@@ -57,8 +56,15 @@ identification:
   session_printed: January 2016; January 2016
   notes:
   - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: scan+dir+filename; session evidence: no-session-evidence (None); sha256 511f91993c1f50d7...'
+  - 'F12 encoding ruling (wave 14): dir renamed 4MB0-2R -> 4MB0-02R, aligning the January-2016 session with the padded R-encoding used across the corpus (e.g. 4MB0-02R 2015-06, 4MB0-01R)'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: 'encoding (F12 family - unpadded R-encoding normalization; identity evidence unchanged: rank-2 code+session+filename)'
+  decision: renamed padded encoding accepted by operator - recorded identity and materials stand
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED

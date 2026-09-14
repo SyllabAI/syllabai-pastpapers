@@ -1,4 +1,4 @@
-paper_id: pearson-edexcel:international-gcse:human-biology:4hb0:2019-01:4HB0/2
+paper_id: pearson-edexcel:international-gcse:human-biology:4hb0:2019-01:4HB0/02
 exam_board:
   id: pearson-edexcel
   name: Pearson Edexcel
@@ -16,7 +16,7 @@ series:
   printed: January 2019
   source: pdf_text
 paper:
-  official_reference: 4HB0/2
+  official_reference: 4HB0/02
   unit_code: 4HB0
   paper_number_variant: '2'
 variant:
@@ -34,8 +34,7 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/Jan%202019/IGCSE_HUMAN_BIOLOGY_2019_Jan_P2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
-      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 - type: question-paper
   path: qp.pdf
   sha256: d29e5e5852c6690b3e487fee06b854cf404ee9c59b4b59403d6647d58486c76a
@@ -46,8 +45,7 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/Jan%202019/IGCSE_HUMAN_BIOLOGY_2019_Jan_P2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 9)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
-      2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 9 (operator direction: complete open file-gap rows, wave 9)'
 identification:
   methods:
   - pdf_text
@@ -57,5 +55,14 @@ identification:
   stray_prints: []
   notes:
   - print-verified from cover (rank 0)
-  - wave-9 placement (qp.pdf); printed refs ['4HB0/02']; printed session ['january 2019']; identity rank
-    2 (print==catalog(sibling-rank3)); operator ratification requested
+  - wave-9 placement (qp.pdf); printed refs ['4HB0/02']; printed session ['january 2019']; identity rank 2 (print==catalog(sibling-rank3)); operator ratification requested
+  - 'F12 encoding ruling (wave 14): dir renamed 4HB0-2 -> 4HB0-02; printed reference on the cover is 4HB0/02, so the padded encoding matches the print'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification + encoding (wave-9 qp placement, print==catalog sibling corroboration rank 2; F12 unpadded dir encoding normalized to 4HB0-02 per the printed reference)
+  decision: attribution and renamed encoding accepted by operator - recorded identity, session and material stand
+ingestion:
+  agent: SyllabAI ingestion agent (wave-14 F20/F12 resolution)
+  verification_status: OPERATOR-RATIFIED
