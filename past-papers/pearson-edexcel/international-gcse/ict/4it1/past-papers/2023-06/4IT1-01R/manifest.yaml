@@ -35,6 +35,28 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune%202023/IGCSE_ICT_2023_MayJune_P1R_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4d7db0ed3757da76d419bf290394772e5d185086be7f92eeb413988b8e8f07d2
+  size_bytes: 255400
+  original_filename: ICT_2023_MayJune_P1R_MS_1777872209829.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune 2023/ICT_2023_MayJune_P1R_MS_1777872209829.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 38f9f5b81ded5e289e85933fa3a4f6f3e0d11dfdf6da3a7322c118088cd95f2d
+  size_bytes: 149633
+  original_filename: IGCSE_ICT_2023_MayJune_P1R_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune%202023/IGCSE_ICT_2023_MayJune_P1R_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +64,4 @@ identification:
   printed_references_seen:
   - 4IT1/01R
   stray_prints: []
-  session_printed: May 2023
   notes: print-verified from cover (rank 0)

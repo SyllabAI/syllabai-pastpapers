@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/ICT/Nov%202023/IGCSE_ICT_2023_Nov_P2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 761fead108757a47df9a30a84d2ed061304874fb954ee56144c1ca68bf055695
+  size_bytes: 212446
+  original_filename: IGCSE_ICT_2023_Nov_P2_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/ICT/Nov%202023/IGCSE_ICT_2023_Nov_P2_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - 4IT1/02
   stray_prints: []
-  session_printed: November 2023
   notes: print-verified from cover (rank 0)

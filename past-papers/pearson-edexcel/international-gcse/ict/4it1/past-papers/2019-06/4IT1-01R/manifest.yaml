@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune%202019/IGCSE_ICT_2019_MayJune_P1R_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1cd76bc9d6d106f083d022ba4186a8a826b784302fb7eea9f6398672dad51f4d
+  size_bytes: 305039
+  original_filename: IGCSE_ICT_2019_MayJune_P1R_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune%202019/IGCSE_ICT_2019_MayJune_P1R_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -42,5 +53,4 @@ identification:
   printed_references_seen:
   - 4IT1/01R
   stray_prints: []
-  session_printed: May 2019
   notes: print-verified from cover (rank 0)

@@ -35,12 +35,25 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Business%20Studies/MayJune%202022/IGCSE_BUSINESS_STUDIES_2022_MayJune_P2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session MayJune 2022'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5adfcde411c7e035a503f3b6b1d94f958b3305c76d5bbb894d9fbb43028e9aab
+  size_bytes: 224230
+  original_filename: IGCSE_BUSINESS_STUDIES_2022_MayJune_P2R_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Business%20Studies/MayJune%202022/IGCSE_BUSINESS_STUDIES_2022_MayJune_P2R_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)  [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
 identification:
   methods:
+  - pdf_text
   - partner_inference
   confidence_rank: 3
   printed_references_seen:
   - 4BS1/02
   stray_prints: []
-  session_printed: (not printed on cover; session from source catalog "MayJune 2022")
-  notes: no printed session; catalog session MayJune 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  notes:
+  - no printed session; catalog session MayJune 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  - ' [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'

@@ -35,12 +35,24 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Economics/MayJune%202021/IGCSE_ECONOMICS_2021_MayJune_P2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session MayJune 2021'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a4cba0985930253c6e519252a227fab7d4d4be27b231ca5c952e880e1fff75c9
+  size_bytes: 331749
+  original_filename: IGCSE_ECONOMICS_2021_MayJune_P2_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Economics/MayJune%202021/IGCSE_ECONOMICS_2021_MayJune_P2_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
+  - pdf_text
   - partner_inference
   confidence_rank: 3
   printed_references_seen:
   - 4EC1/02
   stray_prints: []
-  session_printed: (not printed on cover; session from source catalog "MayJune 2021")
-  notes: no printed session; catalog session MayJune 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  notes:
+  - no printed session; catalog session MayJune 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
