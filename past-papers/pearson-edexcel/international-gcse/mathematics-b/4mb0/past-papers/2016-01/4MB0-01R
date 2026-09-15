@@ -1,0 +1,67 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2016-01:4MB0/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb0
+  title: Edexcel International GCSE Mathematics B (4MB0)
+series:
+  normalized: 2016-01
+  year: '2016'
+  session_month: '01'
+  printed: January 2016; January 2016
+  source: pdf+filename
+paper:
+  official_reference: 4MB0/01R
+  unit_code: 4MB0
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 7dab758ff279a766ef8a17d99484dd801e40c112bb3f7112ed176a6ad8210d91
+  size_bytes: 153926
+  original_filename: January 2016 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ca1633158c1152aeffabd8ae8bd5749ef1ac25d8913e822c63335fda5b9f38b4
+  size_bytes: 281432
+  original_filename: Markscheme-Paper1R-January2016.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Mathematics%20B/2016%20Jan/Mark-scheme/Markscheme-Paper1R-January2016.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB0/01R
+  - 4MB0/1R
+  stray_prints: []
+  session_printed: January 2016; January 2016
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: pad-normalized; session evidence: print (January 2016); filename match: suf-only; sha256 ca1633158c1152ae...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2024-06:4PH1/2PR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: June 2024
+  source: filename
+paper:
+  official_reference: 4PH1/2PR
+  unit_code: 4PH1
+  paper_number_variant: 2PR
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2a91793c900581f2ee1c58eaa7730552b84343e4306d347ed477752a5fc072c2
+  size_bytes: 246530
+  original_filename: June 2024 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: e99ecb0e2c52893acf58374215a93114f1107a9ded6a1a9c4e739fed4c4c04ff
+  size_bytes: 1835607
+  original_filename: 4ph1-2pr-que-20240615.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam),
+      discovered via the SaveMyExams past-paper index
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-2pr-que-20240615.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - coded-date
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1
+  stray_prints: []
+  session_printed: June 2024
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: coded-date (coded 20240615); sha256 e99ecb0e2c52893a...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

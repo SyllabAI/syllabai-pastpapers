@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2015-06:4MB0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb0
+  title: Edexcel International GCSE Mathematics B (4MB0)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: June 2015
+  source: filename
+paper:
+  official_reference: 4MB0/01
+  unit_code: 4MB0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e24a6ce996090fcd7c3e56367a7be35871c3fa5a617fb7be73eb4ad45ab231fb
+  size_bytes: 311384
+  original_filename: June 2015 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 83b28e23329521e922489bf8c2aed878660d09cb005b12dd771ad72776553b57
+  size_bytes: 2407352
+  original_filename: June 2015 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB0
+  - 4MB0/01
+  stray_prints: []
+  session_printed: June 2015
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

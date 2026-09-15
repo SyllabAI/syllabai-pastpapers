@@ -1,0 +1,65 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2020-11:4MA1/2F
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2020-11
+  year: '2020'
+  session_month: '11'
+  printed: November 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/2F
+  unit_code: 4MA1
+  paper_number_variant: 2F
+variant:
+  official_code: F
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: bc67630fa5f59b978ca6b86a54e1b62d3f4a06201d5b6fe88a63e95da9e23d9b
+  size_bytes: 286565
+  original_filename: June 2020 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 1d6c43ec87da6d1fcae2b9b58293a8f0781aad68f0e2ce4225981c690252da10
+  size_bytes: 772851
+  original_filename: 02a-igcse-maths-4ma1-2f-november-2020-examination-paper.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/01/02a-igcse-maths-4ma1-2f-november-2020-examination-paper.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1
+  stray_prints: []
+  session_printed: November 2020; June 2020
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (November 2020); sha256 1d6c43ec87da6d1f...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

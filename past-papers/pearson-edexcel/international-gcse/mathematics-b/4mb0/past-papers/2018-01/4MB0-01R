@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2018-01:4MB0/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb0
+  title: Edexcel International GCSE Mathematics B (4MB0)
+series:
+  normalized: 2018-01
+  year: '2018'
+  session_month: '01'
+  printed: January 2018; January 2018
+  source: pdf+filename
+paper:
+  official_reference: 4MB0/01R
+  unit_code: 4MB0
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9ede1657d770ad95072feb6a6ec080088e535763ea96290c3fbd94886f9f0ab1
+  size_bytes: 435347
+  original_filename: January 2018 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 0c0db07ad122c65e5e387ee65b6a6adbb83f9bc69c625d5d0e84551e82834337
+  size_bytes: 232556
+  original_filename: January 2018 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB0
+  - 4MB0/01R
+  stray_prints: []
+  session_printed: January 2018; January 2018
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

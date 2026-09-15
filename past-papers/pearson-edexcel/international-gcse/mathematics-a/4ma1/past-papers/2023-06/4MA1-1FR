@@ -1,0 +1,75 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2023-06:4MA1/1FR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: filename
+paper:
+  official_reference: 4MA1/1FR
+  unit_code: 4MA1
+  paper_number_variant: 1FR
+variant:
+  official_code: R
+  type: regional
+  note: F tier + regional variant
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 610fe778c102947705fc851899e395c8f90c7cffb7dc6903d34874bfb795718a
+  size_bytes: 392908
+  original_filename: June 2023 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 6844df015d6c0b16e42f3455b1f83bbe7aa1e5872f41b612f46e373b2d145b55
+  size_bytes: 1191902
+  original_filename: June 2023 (R) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: c0fe19b53de204986c4d54bd46452b45ac7f65c795edb2d59c986303f930bdfb
+  size_bytes: 281042
+  original_filename: IGCSE_MATHEMATICS_A_2023_MayJune_Foundation_P1R_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Mathematics%20A/MayJune%202023/IGCSE_MATHEMATICS_A_2023_MayJune_Foundation_P1R_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1
+  - 4MA1/1FR
+  stray_prints: []
+  session_printed: June 2023
+  notes:
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

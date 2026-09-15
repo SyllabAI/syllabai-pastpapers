@@ -1,0 +1,68 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2020-11:4PH1/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2020-11
+  year: '2020'
+  session_month: '11'
+  printed: November 2020; June 2020
+  source: pdf+filename
+paper:
+  official_reference: 4PH1/1P
+  unit_code: 4PH1
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9a359a0cdbd468459b9f9696064f3d605945bab5831ddd0aaa91ff9f5ee6b86f
+  size_bytes: 351104
+  original_filename: June 2020 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: e6da3465b62dbec9c3a3e33600262aee0a9b338336594022d51808f319e4e51d
+  size_bytes: 373317
+  original_filename: Questionpaper-Paper1P-November2020.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Physics/2020%20Nov/Question-paper/Questionpaper-Paper1P-November2020.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1
+  - 4SD0/1P
+  stray_prints: []
+  session_printed: November 2020; June 2020
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued November2020); filename match: suf-only; sha256 e6da3465b62dbec9...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

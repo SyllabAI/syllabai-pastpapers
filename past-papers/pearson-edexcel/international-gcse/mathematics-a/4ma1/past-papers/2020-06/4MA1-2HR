@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2020-06:4MA1/2HR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2020-06
+  year: '2020'
+  session_month: '06'
+  printed: June 2020; June 2020; November 2020
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/2HR
+  unit_code: 4MA1
+  paper_number_variant: 2HR
+variant:
+  official_code: R
+  type: regional
+  note: H tier + regional variant
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 3e8fc6cd2596a607574e7d519b19b2c0fce9840d3e0094bf03e0c951cb235745
+  size_bytes: 1089177
+  original_filename: June 2020 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a3228cc5391b7d790512718e7a1a532fdfe22663d1c2d84cd9bb3e708c2d01c3
+  size_bytes: 552580
+  original_filename: "IGCSE_MATHEMATICS_A_2020_MayJune_Higher_P2R_MS.pdf"
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: "https://archive.paperlords.org/library/IGCSE/Mathematics%20A/MayJune%202020/IGCSE_MATHEMATICS_A_2020_MayJune_Higher_P2R_MS.pdf"
+    collected_by: "SyllabAI agent (2026-09-13 wave 7; operator direction - run the paperlords headless probe)"
+    note: "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4MA1/2HR scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P64693A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
+
+identification:
+  methods:
+  - pdf_text
+  - partner_inference
+  confidence_rank: 2
+  printed_references_seen:
+  - 4MA1/2HR
+  stray_prints: []
+  session_printed: June 2020; June 2020; November 2020
+  notes: "2026-09-13 wave 7 - ms added from Paperlords (paperlords.org); cover prints \"Mark Scheme (Results) November 2020\" (4MA1/2HR scheme); no June-2020 MS was published because the June 2020 sitting was cancelled; this paper content (QP P-code P64693A) was sat in the November-2020 window (COVID-2020 reuse) with P-code identity verified against the 2020-11 sibling QP; placement into the 2020-06 dir mirrors the wave-4 4CP0-2A reuse precedent; partner_inference - operator ratification pending"
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

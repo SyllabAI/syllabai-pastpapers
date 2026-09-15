@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph0:2019-01:4PH0/2P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph0
+  title: Edexcel International GCSE Physics (4PH0)
+series:
+  normalized: 2019-01
+  year: '2019'
+  session_month: '01'
+  printed: January 2019; January 2019
+  source: pdf+filename
+paper:
+  official_reference: 4PH0/2P
+  unit_code: 4PH0
+  paper_number_variant: 2P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 73ad396e648083eb550ac10d12f4ee34d9f3463891bdbbbe8eaa9a6f497a1ac8
+  size_bytes: 227432
+  original_filename: January 2019 MS - Paper 2P Edexcel Physics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: dc94fa1c5469d315174d4b37909bce056c6aa82b5c3731b2f709c04c1feac2ce
+  size_bytes: 126794
+  original_filename: January 2019 QP - Paper 2P Edexcel Physics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH0
+  - 4PH0/2P
+  stray_prints: []
+  session_printed: January 2019; January 2019
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

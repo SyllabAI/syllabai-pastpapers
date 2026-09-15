@@ -1,0 +1,75 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2023-06:4MA1/1H
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May 2023; June 2023
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/1H
+  unit_code: 4MA1
+  paper_number_variant: 1H
+variant:
+  official_code: H
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 79e90dd0c0e6c11dc1a1cef89e722f4c7dcabdfc6a713f5b8e55313b14b4b7c1
+  size_bytes: 720064
+  original_filename: June 2023 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a7813438a83b18d4ae118cb2077c21717b4390c616ea8ea707feafefa8ac08d4
+  size_bytes: 431504
+  original_filename: 4ma1-1h-rms-20230824.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam), discovered via the SaveMyExams past-paper index
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-A/2016/Exam-materials/4ma1-1h-rms-20230824.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction - probe further sources, files are on paperlords or savemyexams; fetched from the SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: examiner-report
+  path: er.pdf
+  sha256: ebaa328da1c96a644a1252f509439e436d634bd42157d7882695b90fc995fe26
+  size_bytes: 190380
+  original_filename: IGCSE_MATHEMATICS_A_2023_MayJune_Higher_P1_ER.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Mathematics%20A/MayJune%202023/IGCSE_MATHEMATICS_A_2023_MayJune_Higher_P1_ER.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1/1H
+  stray_prints: []
+  session_printed: May 2023; June 2023
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing ms.pdf fetched and print-checked - code match: exact; session evidence: print (June 2023); sha256 a7813438a83b18d4...'
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

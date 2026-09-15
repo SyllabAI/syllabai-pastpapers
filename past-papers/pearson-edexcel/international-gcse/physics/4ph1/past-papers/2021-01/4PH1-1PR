@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:2021-01:4PH1/1PR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  normalized: 2021-01
+  year: '2021'
+  session_month: '01'
+  printed: January 2021; January 2021
+  source: pdf+filename
+paper:
+  official_reference: 4PH1/1PR
+  unit_code: 4PH1
+  paper_number_variant: 1PR
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 15b58e6a9412cfdb38adfc045f0a4a25c094cafac65386d5f0366b5a9700a20d
+  size_bytes: 374655
+  original_filename: January 2021 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 29edd018de47b0214c113f69eb4ae69e1ddaa6c9aea3ff18103bf340d1bf43b1
+  size_bytes: 1346322
+  original_filename: 4ph1-1pr-que-jan-2021.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/12/4ph1-1pr-que-jan-2021.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1
+  - 4SD0/1PR
+  stray_prints: []
+  session_printed: January 2021; January 2021
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (January 2021); sha256 29edd018de47b021...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED
