@@ -55,4 +55,15 @@ identification:
   - YLA1/02
   stray_prints: []
   notes:
-  - no printed session; catalog session MayJune 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3 - operator ratification requested
+  - no printed session; catalog session MayJune 2021 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (wave-8 subject-expansion placement; image-only cover without extractable text (no text layer / CMap issue); identity (unit + paper number, session) taken from the Paperlords source listing, corroborated by the unit->code mapping (U1..U6 == W??11..16 for 2019+ sessions) and sibling print-verified files; AUDIT s16 rank-3 class)
+  decision: attribution accepted by operator - recorded identity, session and material stand
+ingestion:
+  agent: SyllabAI ingestion agent (wave-8 subject expansion + freshness)
+  run_date: '2026-09-14'
+  source_repo: Paperlords archive CDN (wave-8 subject-expansion sources)
+  verification_status: OPERATOR-RATIFIED
