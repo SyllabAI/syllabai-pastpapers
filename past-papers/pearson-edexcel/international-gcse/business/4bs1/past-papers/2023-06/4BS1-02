@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:business:4bs1:2023-06:4BS1/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: business
+specification:
+  folder: 4bs1
+  title: Edexcel International GCSE Business (4BS1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: pdf_text
+paper:
+  official_reference: 4BS1/02
+  unit_code: 4BS1
+  paper_number_variant: '02'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 52d32967f4b36a56731bfbcb9b6152cde6055e20ec35e9478ddda6786e443532
+  size_bytes: 370005
+  original_filename: IGCSE_BUSINESS_STUDIES_2023_May_P2_QP_1777793154207.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Business Studies/May 2023/IGCSE_BUSINESS_STUDIES_2023_May_P2_QP_1777793154207.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 37aa5b6c9a237bc6338a9f2476a8efa9d7c8c539d40cbfa418d685ff1c6c4808
+  size_bytes: 310755
+  original_filename: IGCSE_BUSINESS_STUDIES_2023_May_P2_MS_1777793150592.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Business Studies/May 2023/IGCSE_BUSINESS_STUDIES_2023_May_P2_MS_1777793150592.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: aa497a4e9b9c15f890915ca3ccc711ed141c1f544d4eaf0b9f7512a36b91e023
+  size_bytes: 3998063
+  original_filename: IGCSE_BUSINESS_STUDIES_2023_May_P2_PEF_1777793151626.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Business Studies/May 2023/IGCSE_BUSINESS_STUDIES_2023_May_P2_PEF_1777793151626.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4BS1/02
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

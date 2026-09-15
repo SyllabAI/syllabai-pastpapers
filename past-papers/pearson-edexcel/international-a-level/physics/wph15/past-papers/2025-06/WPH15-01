@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph15:2025-06:WPH15/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph15
+  title: Edexcel International Advanced Level Physics (WPH15)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: June 2025
+  source: pdf_text
+paper:
+  official_reference: WPH15/01
+  unit_code: WPH15
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 436b05db10b05743ac31f5801e4a236dc72d99b1370b887526a27654a511add2
+  size_bytes: 1869151
+  original_filename: IAL_PHYSICS_2025_June_U5_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/June%202025/IAL_PHYSICS_2025_June_U5_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4f56bce1bd15c14b90aaea1ad7918eb9fee2444d15f0cb0816922b945b6ff360
+  size_bytes: 626673
+  original_filename: IAL_PHYSICS_2025_June_U5_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/June%202025/IAL_PHYSICS_2025_June_U5_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH15/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

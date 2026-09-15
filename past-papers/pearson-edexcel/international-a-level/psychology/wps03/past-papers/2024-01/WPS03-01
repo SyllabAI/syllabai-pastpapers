@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:psychology:wps03:2024-01:WPS03/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: psychology
+specification:
+  folder: wps03
+  title: Edexcel International Advanced Level Psychology (WPS03)
+series:
+  normalized: 2024-01
+  year: '2024'
+  session_month: '01'
+  printed: January 2024
+  source: pdf_text
+paper:
+  official_reference: WPS03/01
+  unit_code: WPS03
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: e8ff421ca4f5e36d381a41eafc8c68711992b086d3b1b7b96b8fbc9a17e2a909
+  size_bytes: 379906
+  original_filename: IAL_PSYCHOLOGY_2024_Jan_U3_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Psychology/Jan%202024/IAL_PSYCHOLOGY_2024_Jan_U3_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 84ee3ad5776d197893c322b8bc9974c5db92bd7d4059269a63e3cab5ac4bd188
+  size_bytes: 262223
+  original_filename: IAL_PSYCHOLOGY_2024_Jan_U3_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Psychology/Jan%202024/IAL_PSYCHOLOGY_2024_Jan_U3_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPS03/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:english-literature:4et1:2023-06:4ET1/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-literature
+specification:
+  folder: 4et1
+  title: Edexcel International GCSE English Literature (4ET1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May 2023
+  source: pdf_text
+paper:
+  official_reference: 4ET1/01R
+  unit_code: 4ET1
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 6b5069abe1eb14768ef5a336be64f3e58c24e4bb4d3368caacd338ea58741aae
+  size_bytes: 680749
+  original_filename: P1R_QP_1777446666682.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune 2023/P1R_QP_1777446666682.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 82c01e27daf35bc910d5a7eeed336f10e4d04164b9ca7984ca4746584a18474f
+  size_bytes: 290402
+  original_filename: P1R_MS_1777446665880.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune 2023/P1R_MS_1777446665880.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: cbffda2a1aa21cc7777605ba9f71633345b69f63eb8734a23187c915086ed405
+  size_bytes: 14833909
+  original_filename: P1R_ER_1777446663613.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/MayJune 2023/P1R_ER_1777446663613.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4ET1/01R
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2020-06:4CP0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2020-06
+  year: '2020'
+  session_month: '06'
+  printed: May 2020
+  source: pdf_text
+paper:
+  official_reference: 4CP0/01
+  unit_code: 4CP0
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: a7d065671f3f8badc2dd22076f3f0b441c5eabc71ea98f28125e816b5ca961c8
+  size_bytes: 564555
+  original_filename: P1_QP_1777451003297.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Computer Science/Nov 2020/P1_QP_1777451003297.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 6a277450e6f9ed0b7b973866658ad9fd7660dcd000d28e4412f90526dc761cd5
+  size_bytes: 383739
+  original_filename: P1_MS_1777451002601.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Computer Science/Nov 2020/P1_MS_1777451002601.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) MS prints November 2020; placed in June-2020 dir (COVID June/Nov reuse, same-paper P-code precedent, ratified 2026-09-13)'
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 2
+  printed_references_seen:
+  - 4CP0/01
+  stray_prints: []
+  notes:
+  - MS prints November 2020; placed in June-2020 dir (COVID June/Nov reuse, same-paper P-code precedent, ratified 2026-09-13) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

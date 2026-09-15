@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:english-language-a:4ea1:2023-06:4EA1/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-a
+specification:
+  folder: 4ea1
+  title: Edexcel International GCSE English Language A (4EA1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: pdf_text
+paper:
+  official_reference: 4EA1/02
+  unit_code: 4EA1
+  paper_number_variant: '02'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 4cda5df3c2732d4b0baa3f966e3b01aa0b6720229ce2d63a2bc05c78d5d6fd78
+  size_bytes: 1066064
+  original_filename: P2_QP_1777738265562.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Language A/MayJune 2023/P2_QP_1777738265562.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f299dd7258d1513f9830653ada8f8ec7fc5945130633ff0eb619ba2f7f3521df
+  size_bytes: 221794
+  original_filename: IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2_MS_1777801413377.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English Language A/MayJune 2023/IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2_MS_1777801413377.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 6429b1f08e0648e7f9bf8a48664c45e1af1404bada28e2c1ed77de6c23b1efe3
+  size_bytes: 8525121
+  original_filename: IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2_PEF_1777801414354.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English Language A/MayJune 2023/IGCSE_ENGLISH_LANGUAGE_A_2023_MayJune_P2_PEF_1777801414354.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EA1/02
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

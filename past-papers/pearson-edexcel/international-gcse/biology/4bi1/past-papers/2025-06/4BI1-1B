@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:biology:4bi1:2025-06:4BI1/1B
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: biology
+specification:
+  folder: 4bi1
+  title: Edexcel International GCSE Biology (4BI1)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: May 2025
+  source: pdf_text
+paper:
+  official_reference: 4BI1/1B
+  unit_code: 4BI1
+  paper_number_variant: 1B
+variant:
+  official_code: B
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 641cfa72c041eba66ec75bed524d48dfb4df6f181a1f831f4bfaba72ffd9bd2a
+  size_bytes: 592171
+  original_filename: P1_QP_1777477105565.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Biology/MAY 2025/P1_QP_1777477105565.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 540c51a04206865cdb98f89764ff219f1c17e1dab37a5294d4f84fe8363f10f2
+  size_bytes: 391324
+  original_filename: P1_MS_1777477104488.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Biology/MAY 2025/P1_MS_1777477104488.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4BI1/1B
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

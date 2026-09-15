@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:accounting:4ac1:2024-06:4AC1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: accounting
+specification:
+  folder: 4ac1
+  title: Edexcel International GCSE Accounting (4AC1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: May 2024
+  source: pdf_text
+paper:
+  official_reference: 4AC1/01
+  unit_code: 4AC1
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: dcf448ffd8f7712c8809135f3e30303dccd1454a0b2681c42f4ee45130109fdd
+  size_bytes: 365003
+  original_filename: IGCSE_ACCOUNTING_2024_MayJune_P1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Accounting/MayJune%202024/IGCSE_ACCOUNTING_2024_MayJune_P1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ef4dc4c7354ba36a8dfa0ec9d1c4b76ecfeba30e18b30fd100be940c685e6718
+  size_bytes: 450131
+  original_filename: P1_MS_1777781572083.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Accounting/MayJune 2024/P1_MS_1777781572083.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4AC1/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

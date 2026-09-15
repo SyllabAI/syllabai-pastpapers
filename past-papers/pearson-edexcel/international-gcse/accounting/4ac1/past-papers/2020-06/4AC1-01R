@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-gcse:accounting:4ac1:2020-06:4AC1/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: accounting
+specification:
+  folder: 4ac1
+  title: Edexcel International GCSE Accounting (4AC1)
+series:
+  normalized: 2020-06
+  year: '2020'
+  session_month: '06'
+  printed: May 2020
+  source: pdf_text
+paper:
+  official_reference: 4AC1/01R
+  unit_code: 4AC1
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: c94fa385ec9adb110bd39c1e9d1262a6fffdefd6beac75bd546824ba26d60718
+  size_bytes: 462500
+  original_filename: IGCSE_ACCOUNTING_2020_MayJune_P1R_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Accounting/MayJune%202020/IGCSE_ACCOUNTING_2020_MayJune_P1R_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 43e1bafeee6ce61a42ca2344e146899b4d17fdaf19b17b5a8de77d03b79d1824
+  size_bytes: 277579
+  original_filename: IGCSE_ACCOUNTING_2020_MayJune_P1R_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Accounting/MayJune%202020/IGCSE_ACCOUNTING_2020_MayJune_P1R_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 2
+  printed_references_seen:
+  - 4AC1/01R
+  stray_prints: []
+  notes:
+  - MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch1:2025-11:4CH1/2C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch1
+  title: Edexcel International GCSE Chemistry (4CH1)
+series:
+  normalized: 2025-11
+  year: '2025'
+  session_month: '11'
+  printed: November 2025
+  source: pdf_text
+paper:
+  official_reference: 4CH1/2C
+  unit_code: 4CH1
+  paper_number_variant: 2C
+variant:
+  official_code: C
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 1963af3aa5a42b5ab0ed8da4231dd615d9efd47098f22a057dcfcaaf6632a95b
+  size_bytes: 656366
+  original_filename: IGCSE_CHEMISTRY_2025_Nov_P2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/Nov%202025/IGCSE_CHEMISTRY_2025_Nov_P2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 54f77a4de78c9f67c2419ddf56d191ccc76247c187b71eb0696dd657b59a9054
+  size_bytes: 276912
+  original_filename: IGCSE_CHEMISTRY_2025_Nov_P2_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/Nov%202025/IGCSE_CHEMISTRY_2025_Nov_P2_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH1/2C
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-gcse:bangla:4ba0:2020-06:4BA0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: bangla
+specification:
+  folder: 4ba0
+  title: Edexcel International GCSE Bangla (4BA0)
+series:
+  normalized: 2020-06
+  year: '2020'
+  session_month: '06'
+  printed: May 2020
+  source: pdf_text
+paper:
+  official_reference: 4BA0/01
+  unit_code: 4BA0
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: e21c12c7d064c737d95a5f73553c95cce127ff0f8e5cc56fd595147de2fc06c9
+  size_bytes: 7848988
+  original_filename: IGCSE_BANGLA_2020_MayJuneNov_P1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Bangla/MayJuneNov%202020/IGCSE_BANGLA_2020_MayJuneNov_P1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 16e27d3b4f82b841d2820eaf8560430f9e8e9a0ccc906b4a8c5d8b74e39caf00
+  size_bytes: 847596
+  original_filename: IGCSE_BANGLA_2020_MayJuneNov_P1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Bangla/MayJuneNov%202020/IGCSE_BANGLA_2020_MayJuneNov_P1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 2
+  printed_references_seen:
+  - 4BA0/01
+  stray_prints: []
+  notes:
+  - MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

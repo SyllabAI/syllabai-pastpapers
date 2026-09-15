@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:mathematics-2018:2025-06:WME02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: mathematics-2018
+  title: Edexcel International Advanced Level Mathematics (2018 spec)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: June 2025
+  source: pdf_text
+paper:
+  official_reference: WME02/01
+  unit_code: WME02
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 8b583f6938dc63128550ad349029388273e5f2da503eba2552582a2a01bd065a
+  size_bytes: 984937
+  original_filename: IAL_MATHS_2025_MayJune_M2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/MayJune%202025/IAL_MATHS_2025_MayJune_M2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0b7a73e463226774d70a7b0bc705f1b5142e95af91487b33eab168fc72662999
+  size_bytes: 647134
+  original_filename: IAL_MATHS_2025_MayJune_M2A_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/MayJune%202025/IAL_MATHS_2025_MayJune_M2A_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)  [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WME02/01
+  stray_prints: []
+  notes:
+  - ' [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

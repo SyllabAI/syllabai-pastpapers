@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:commerce:4cm1:2023-06:4CM1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: commerce
+specification:
+  folder: 4cm1
+  title: Edexcel International GCSE Commerce (4CM1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May 2023
+  source: pdf_text
+paper:
+  official_reference: 4CM1/01
+  unit_code: 4CM1
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: fb2a73b58780062cc89b22d31d37c9b31868fb110d959fab5315a2de14da4499
+  size_bytes: 305879
+  original_filename: IGCSE_COMMERCE_2023_May_P1_QP_1777795510442.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/May 2023/IGCSE_COMMERCE_2023_May_P1_QP_1777795510442.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e4bd0abb114a3b201e624aecc3c00b6f33b8ff28cb7425796ef25c43e4f766ae
+  size_bytes: 302425
+  original_filename: IGCSE_COMMERCE_2023_May_P1_MS_1777795485073.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/May 2023/IGCSE_COMMERCE_2023_May_P1_MS_1777795485073.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: a04716c44a89026b2ac4de04f511f35eba55ab669f68e5d3df3a3812b52548d7
+  size_bytes: 159686
+  original_filename: IGCSE_COMMERCE_2023_May_P1_PEF_1777795508278.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/May 2023/IGCSE_COMMERCE_2023_May_P1_PEF_1777795508278.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CM1/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:english-literature:4et1:2023-11:4ET1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-literature
+specification:
+  folder: 4et1
+  title: Edexcel International GCSE English Literature (4ET1)
+series:
+  normalized: 2023-11
+  year: '2023'
+  session_month: '11'
+  printed: November 2023
+  source: pdf_text
+paper:
+  official_reference: 4ET1/01
+  unit_code: 4ET1
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 8ebd190a3bf66007189197864cb448f452e31669fc7fe8089d552f729a58275a
+  size_bytes: 679167
+  original_filename: P1_QP_1777447294469.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/Nov 2023/P1_QP_1777447294469.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f8495445b4e0f941043120f8406c6153a4f204fa4d8356ffc90de8e7075c30e4
+  size_bytes: 491868
+  original_filename: P1_MS_1777447292131.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/English Literature/Nov 2023/P1_MS_1777447292131.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4ET1/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

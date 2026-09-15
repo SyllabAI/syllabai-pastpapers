@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:commerce:4cm1:2024-06:4CM1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: commerce
+specification:
+  folder: 4cm1
+  title: Edexcel International GCSE Commerce (4CM1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: May 2024
+  source: pdf_text
+paper:
+  official_reference: 4CM1/02R
+  unit_code: 4CM1
+  paper_number_variant: 02R
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 34b3d158f8c9eb69f942138d1c0388fc705c3ea67699010a36e816502d0679eb
+  size_bytes: 349400
+  original_filename: IGCSE_COMMERCE_2024_MayJune_P2R_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/MayJune%202024/IGCSE_COMMERCE_2024_MayJune_P2R_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a5d219d275f6d58f8c087b6ceb4e3c9be874f1a780b513b949bd7bec5e314e4b
+  size_bytes: 349713
+  original_filename: IGCSE_COMMERCE_2024_MayJune_P2R_MS_1777794706560.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Commerce/MayJune 2024/IGCSE_COMMERCE_2024_MayJune_P2R_MS_1777794706560.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CM1/02R
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

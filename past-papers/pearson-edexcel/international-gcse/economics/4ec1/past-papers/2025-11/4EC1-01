@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:economics:4ec1:2025-11:4EC1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: economics
+specification:
+  folder: 4ec1
+  title: Edexcel International GCSE Economics (4EC1)
+series:
+  normalized: 2025-11
+  year: '2025'
+  session_month: '11'
+  printed: November 2025
+  source: pdf_text
+paper:
+  official_reference: 4EC1/01
+  unit_code: 4EC1
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 64a23ae1b77b983bf04c91e074a8c0864552cfe2d891d3bbdc3f75b3ec926f32
+  size_bytes: 265220
+  original_filename: IGCSE_ECONOMICS_2025_Nov_P1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Economics/Nov%202025/IGCSE_ECONOMICS_2025_Nov_P1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ddd0c517857b9835d801ccd8156f4b87676722070bc4f8efc6bcfc06ebd82617
+  size_bytes: 446289
+  original_filename: IGCSE_ECONOMICS_2025_Nov_P1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Economics/Nov%202025/IGCSE_ECONOMICS_2025_Nov_P1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EC1/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

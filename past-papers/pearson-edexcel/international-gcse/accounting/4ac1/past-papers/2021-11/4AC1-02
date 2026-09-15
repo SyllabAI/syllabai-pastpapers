@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:accounting:4ac1:2021-11:4AC1/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: accounting
+specification:
+  folder: 4ac1
+  title: Edexcel International GCSE Accounting (4AC1)
+series:
+  normalized: 2021-11
+  year: '2021'
+  session_month: '11'
+  printed: November 2021
+  source: pdf_text
+paper:
+  official_reference: 4AC1/02
+  unit_code: 4AC1
+  paper_number_variant: '02'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f338c17cedb9ee7707a9a62b0b4f915fc9a2ae2f08df72b3e894df5580149c73
+  size_bytes: 234115
+  original_filename: IGCSE_ACCOUNTING_2021_Nov_P2_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Accounting/Nov%202021/IGCSE_ACCOUNTING_2021_Nov_P2_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4AC1/02
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED
