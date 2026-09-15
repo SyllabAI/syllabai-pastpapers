@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph1:specimen:4PH1/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph1
+  title: Edexcel International GCSE Physics (4PH1)
+series:
+  type: specimen
+  spec_year: '2017'
+  printed: null
+paper:
+  official_reference: 4PH1/1P
+  unit_code: 4PH1
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3c3a1d4393376a8aace30b1748a8fc4f3aaaee5f9092a8181bb3e4ab66681ee8
+  size_bytes: 486672
+  original_filename: Specimen 2017 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 7bdd9ec61fb942b7a0515df10b46486d93d6b3f3b0d918d6efb1625c67801c56
+  size_bytes: 618229
+  original_filename: Specimen 2017 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - partner_inference
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PH1/1P
+  stray_prints: []
+  session_printed: null
+  notes:
+  - inherited 4PH1/1P from same-series complementary partner
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

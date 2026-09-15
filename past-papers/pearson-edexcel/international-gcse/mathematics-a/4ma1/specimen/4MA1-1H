@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:specimen:4MA1/1H
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  type: specimen
+  spec_year: null
+  printed: null
+paper:
+  official_reference: 4MA1/1H
+  unit_code: 4MA1
+  paper_number_variant: 1H
+variant:
+  official_code: H
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 8f79136a33abbf9beb33fe4a1b3563cee00ce00644604629599ebca86666a170
+  size_bytes: 810235
+  original_filename: Specimen MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 0f776c662fa3ff2748086e94ab7918623133dfb276b94dd3b3dd53fdd499512c
+  size_bytes: 1168005
+  original_filename: Specimen QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - partner_inference
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1/1H
+  stray_prints: []
+  session_printed: null
+  notes:
+  - inherited 4MA1/1H from same-series complementary partner
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch1:specimen:4CH1/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch1
+  title: Edexcel International GCSE Chemistry (4CH1)
+series:
+  type: specimen
+  spec_year: '2017'
+  printed: null
+paper:
+  official_reference: 4CH1/1C
+  unit_code: 4CH1
+  paper_number_variant: 1C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d11e6153a30827e2a09160b0561be8afdae55a06b7db66ea2aba2867e646e9a2
+  size_bytes: 388426
+  original_filename: Specimen 2017 MS .pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 559387449b3aa7526ffdcd68e7a68728c17ff33a9b0243daffb7ad0ff490afd3
+  size_bytes: 284003
+  original_filename: Specimen 2017 QP .pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - partner_inference
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH1/1C
+  stray_prints: []
+  session_printed: null
+  notes:
+  - inherited 4CH1/1C from same-series complementary partner
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED
