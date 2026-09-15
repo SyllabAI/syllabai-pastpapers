@@ -1,0 +1,60 @@
+paper_id: cambridge-international:igcse:physics:0625:2023-06:0625/51
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: physics
+specification:
+  folder: '0625'
+  title: Cambridge IGCSE Physics (0625)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May/June 2023
+  source: pdf+filename
+paper:
+  official_reference: 0625/51
+  unit_code: '0625'
+  paper_number: '5'
+  paper_number_variant: '51'
+variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: dd512187e80f73560d9c6527b94e65691997a117d17af8708e96916783ae552f
+  size_bytes: 597927
+  original_filename: June 2023 (v1) QP.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/CIE/Paper-5/International/QP/June%202023%20(v1)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3d9d3da0d507e34d68dabb7f68fe9d88f388afa3fa1fefff43fdc8f05053ebf0
+  size_bytes: 176481
+  original_filename: June 2023 (v1) MS.pdf
+  pages: 10
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/CIE/Paper-5/International/MS/June%202023%20(v1)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 0625/51
+  stray_prints: []
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

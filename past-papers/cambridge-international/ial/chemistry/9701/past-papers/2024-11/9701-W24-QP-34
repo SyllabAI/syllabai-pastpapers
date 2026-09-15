@@ -1,0 +1,60 @@
+paper_id: cambridge-international:ial:chemistry:9701:2024-11:9701/34
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2024-11
+  year: '2024'
+  session_month: '11'
+  printed: October/November 2024
+  source: pdf+filename
+paper:
+  official_reference: 9701/34
+  unit_code: '9701'
+  paper_number: '3'
+  paper_number_variant: '34'
+variant: '4'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 1404e3d0f35586cb1f6fa9f0cfb9f7b95d432bf48c4b99c5047ab8412a73f341
+  size_bytes: 111693
+  original_filename: November 2024 (v4) QP.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-3/QP/November%202024%20(v4)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: aaec08c81b7ebb2e20a3158eba3d75544e9580d0d576df893d861eb73a309dce
+  size_bytes: 242499
+  original_filename: November 2024 (v4) MS.pdf
+  pages: 10
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/CAIE/Paper-3/MS/November%202024%20(v4)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/34
+  stray_prints: []
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,60 @@
+paper_id: cambridge-international:ial:mathematics:9709:2021-03:9709/12
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: mathematics
+specification:
+  folder: '9709'
+  title: Cambridge International AS & A Level Mathematics (9709)
+series:
+  normalized: 2021-03
+  year: '2021'
+  session_month: '03'
+  printed: February/March 2021
+  source: pdf+filename
+paper:
+  official_reference: 9709/12
+  unit_code: '9709'
+  paper_number: '1'
+  paper_number_variant: '12'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 5c85389395a9f6bfb6e6208d7541d00974f768025f03b5e9b379c940b61a9e8d
+  size_bytes: 116875
+  original_filename: March 2021 (v2) QP.pdf
+  pages: 20
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/CIE/CAIE/Pure-1/QP/March%202021%20(v2)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9ff46bf025cfb58e70b3632ba1749b68995ac00e77bf6a6eb0fab5965aa42f01
+  size_bytes: 157577
+  original_filename: March 2021 (v2) MS.pdf
+  pages: 14
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/A-level/Papers/CIE/CAIE/Pure-1/MS/March%202021%20(v2)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 9709/12
+  stray_prints: []
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,60 @@
+paper_id: cambridge-international:igcse:chemistry:0620:2023-11:0620/11
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: chemistry
+specification:
+  folder: '0620'
+  title: Cambridge IGCSE Chemistry (0620)
+series:
+  normalized: 2023-11
+  year: '2023'
+  session_month: '11'
+  printed: October/November 2023
+  source: pdf+filename
+paper:
+  official_reference: 0620/11
+  unit_code: '0620'
+  paper_number: '1'
+  paper_number_variant: '11'
+variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 99a563a1f968e1b0c3ec1161b7c91cc136d599fa2324ca152d4bf0b933e89979
+  size_bytes: 164136
+  original_filename: November 2023 (v1) QP.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/CIE/Paper-1/International/QP/November%202023%20(v1)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5873d87ab65d0b63225393f557c6959523f14553b47e631e1071abd7e5da8b1f
+  size_bytes: 145107
+  original_filename: November 2023 (v1) MS.pdf
+  pages: 3
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/CIE/Paper-1/International/MS/November%202023%20(v1)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 0620/11
+  stray_prints: []
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

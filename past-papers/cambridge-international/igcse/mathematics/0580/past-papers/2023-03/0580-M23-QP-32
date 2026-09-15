@@ -1,0 +1,60 @@
+paper_id: cambridge-international:igcse:mathematics:0580:2023-03:0580/32
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: mathematics
+specification:
+  folder: '0580'
+  title: Cambridge IGCSE Mathematics (0580)
+series:
+  normalized: 2023-03
+  year: '2023'
+  session_month: '03'
+  printed: February/March 2023
+  source: pdf+filename
+paper:
+  official_reference: 0580/32
+  unit_code: '0580'
+  paper_number: '3'
+  paper_number_variant: '32'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 498775235c4aa0a8909d07a677e172218e8fd0cd55c4fbaedfda87b3e969643b
+  size_bytes: 651364
+  original_filename: March 2023 (v2) QP.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Past-Papers/CIE/Paper-3/International/QP/March%202023%20(v2)%20QP.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 634f30f8693a02ae69ff98059dd6cee22c40eed97caac7b432ac10fe48352a8f
+  size_bytes: 275025
+  original_filename: March 2023 (v2) MS.pdf
+  pages: 8
+  source:
+    source_type: third-party-archive
+    archive: Physics & Maths Tutor (PMT) CIE archive
+    source_url: https://pmt.physicsandmathstutor.com/download/Maths/GCSE/Past-Papers/CIE/Paper-3/International/MS/March%202023%20(v2)%20MS.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
+    note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+identification:
+  methods: ['pdf_text', 'coded-date']
+  confidence_rank: 0
+  printed_references_seen:
+  - 0580/32
+  stray_prints: []
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED
