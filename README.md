@@ -1206,3 +1206,17 @@ resolved normalized (they were the 01A-held generations). Corpus after wave 15: 
 5,118 paper dirs**; quarantine 341+341; ledger 979 rows (666/179/134). Ratification queues are now
 empty; remaining backlog is metadata normalization (legacy status strings on 1,879 Cambridge + 1,458 Pearson + 41
 specimen manifests, specification.yaml 48/102).
+
+## 40. Wave 16 — independent verification audit (2026-09-15)
+
+Full corpus re-verification at `6b799d98` after the wave 14+15 surgery: structure and naming
+conventions **PASS on every check** — path grammar, basename whitelist, sessions, manifest↔tree
+consistency (0 mismatches across 5,118 manifests), quarantine pairing 341+341, zero held-vs-held
+duplicate blobs, byte forensics 16/16 sha256 matches, every census claim reproduced exactly
+(10,164 held PDFs / 5,118 dirs; Cambridge 2,259/2,259). All 193 REF-shape outliers map to documented
+legitimate conventions (lettered science papers, three-digit codes, 4CP0 sitting letters,
+print-faithful WCH14/15/16-1). Two hygiene defects fixed: 3 ledger rows re-quoted (unquoted commas had
+shifted their status cells; histogram is exactly 666/179/134 as documented) and the ratified `4HB0-02`
+manifest's stale "operator ratification requested" note suffix dropped. REASON records: 285/341 carry
+sha256 (100% of F24-governed classes); the 56 pre-F24 legacy records are a backfill candidate.
+Ratification queues remain empty; backlog is metadata normalization only.

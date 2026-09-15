@@ -1,7 +1,7 @@
 {
  "run_date": "2026-09-11",
  "agent": "SyllabAI ingestion agent",
- "source": "SyllabAI/Past-Papers — IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
+ "source": "SyllabAI/Past-Papers \u2014 IGCSE/ and IAL/ only (operator-collected from PhysicsAndMathsTutor.com)",
  "totals": {
   "pdfs_seen": 2708,
   "files_placed": 2512,
@@ -56,7 +56,7 @@
   },
   "corpus_after_othersource_wave_2026_09_12": {
    "date": "2026-09-12",
-   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT §8).",
+   "note": "other-source wave (F7/F9/F10 residue of docs/ledger/file-gap-sweep.csv): after the PMT wave left 79 na:pmt-* rows + 67 planned rows, the operator authorized other sources for PMT-error rows. XtremePapers (papers.xtremepape.rs public directory tree) was selected after probes (archive.org unreachable; dynamicpapers/papacambridge/pearson portals not scriptable); 52 missing artifacts (33 qp + 19 ms) fetched, print-verified (fixed ref regex incl. 'Paper NN' covers and the F3 lowercase-lookahead; session via print / coded / glued-filename dates) and byte-deduped against the whole corpus by git-blob sha1 before acceptance. Resolves 25 planned rows (first GCE maths/GCE physics placements), 16 of the 66 F10 byte-duplicate rows, and 11 na:pmt-* rows. 160 rows remain open (xtp-not-hosted or identity-rejected; see AUDIT \u00a78).",
    "pdfs_and_inserts": 2919,
    "qp": 1438,
    "ms": 1463,
@@ -111,7 +111,7 @@
   },
   "corpus_after_structure_fix_2026_09_13": {
    "date": "2026-09-13",
-   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README §32 deviation rulings). Independent recount at f840c61b16.",
+   "note": "structural repair wave (S1 subject-level re-home of 11 wave-4 dirs; S2 4EB1-1R/4EB1-01R split-pair merge; S3 README \u00a732 deviation rulings). Independent recount at f840c61b16.",
    "files_placed": 3004,
    "qp": 1509,
    "ms": 1477,
@@ -1466,22 +1466,22 @@
    {
     "date": "2026-09-12",
     "what": "other-source wave: 52 artifacts placed (33 qp + 19 ms) from XtremePapers with print forensics + corpus-wide blob dedup; ledger statuses rewritten; INGESTION_REPORT totals corrected for the stale post-revert 2,933",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §8"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a78"
    },
    {
     "date": "2026-09-12",
     "what": "wave 3: 57 artifacts placed (55 qp + 2 ms) from SaveMyExams/Pearson content-dam with print forensics + corpus blob dedup + same-series content-window dedup; F9 corrupt ms replaced; F13 misfile repair - 2023-10/4MA1-1H removed (its only file was the Summer-2023 ms misfiled via the 'Updated October 2023' revision stamp; corpus-wide sweep confirmed no other instance; the true June ms placed into 2023-06/4MA1-1H)",
-    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md §9"
+    "evidence": "per-dir manifest notes + docs/ledger/file-gap-sweep.csv + docs/AUDIT-2026-09-12.md \u00a79"
    },
    {
     "date": "2026-09-13",
     "what": "structural audit fixes S1+S2: 11 Nov-2023 IGCSE dirs re-homed under the subject level (33 blobs, sha-identical); 4EB1-1R ms merged into 4EB1-01R (byte-identical, git blob 511bb858), stray dir deleted; ledger 2 rows normalized",
-    "evidence": "docs/AUDIT-2026-09-12.md §11; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
+    "evidence": "docs/AUDIT-2026-09-12.md \u00a711; commits 77068bc99b, f840c61b16; post-fix recount 1,540 dirs / 2,997 files / 1,398 complete pairs"
    },
    {
     "date": "2026-09-13",
     "what": "wave 5: F14 misfile repair - 2022-06/4EB1-01/ms.pdf was the Paper 01R scheme (misfiled by the pre-audit migration); moved to 4EB1-01R/ms.pdf (completing the dir) and the true Paper 01 ms placed from SaveMyExams/Pearson; both manifests carry the repair trail; 13 further files placed across both boards",
-    "evidence": "manifest notes + docs/ledger/*.csv + docs/AUDIT-2026-09-12.md §10"
+    "evidence": "manifest notes + docs/ledger/*.csv + docs/AUDIT-2026-09-12.md \u00a710"
    }
   ]
  },
@@ -1578,7 +1578,7 @@
    "cambridge-international": "1879/1879"
   },
   "ledger": {
-   "edexcel": "135 normalized / 93 open (23 planned · 8 not-listed · 11 byte-duplicate · 34 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
+   "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
    "cambridge": "130 normalized / 0 open (100%)"
   }
  },
@@ -1614,8 +1614,8 @@
    "cambridge-international": "2259/2259"
   },
   "ledger": {
-   "edexcel": "135 normalized / 93 open (23 planned · 8 not-listed · 11 byte-duplicate · 34 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
-   "cambridge": "926 rows: 890 normalized · 36 na:held-duplicate (18 refs PMT-listed but already held)"
+   "edexcel": "135 normalized / 93 open (23 planned \u00b7 8 not-listed \u00b7 11 byte-duplicate \u00b7 34 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
+   "cambridge": "926 rows: 890 normalized \u00b7 36 na:held-duplicate (18 refs PMT-listed but already held)"
   }
  },
  "paperlords_gapfill_wave_2026_09_13": {
@@ -1648,8 +1648,8 @@
   },
   "complete_pairs_note": "1405 + 14 dir completions from the ms placements + WST01-01 - 1 (2020-11/4EB1-01 ms re-homed by F15 repair)",
   "ledger": {
-   "edexcel": "150 normalized / 80 open (23 planned · 7 not-listed · 11 byte-duplicate · 22 mislabeled · 10 sme-content-dup · 2 sme-mislabeled · 4 f6-print-conflict · 1 same-paper)",
-   "cambridge": "926 rows: 890 normalized · 36 na:held-duplicate (unchanged this wave)"
+   "edexcel": "150 normalized / 80 open (23 planned \u00b7 7 not-listed \u00b7 11 byte-duplicate \u00b7 22 mislabeled \u00b7 10 sme-content-dup \u00b7 2 sme-mislabeled \u00b7 4 f6-print-conflict \u00b7 1 same-paper)",
+   "cambridge": "926 rows: 890 normalized \u00b7 36 na:held-duplicate (unchanged this wave)"
   }
  },
  "subject_expansion_wave_2026_09_14": {
@@ -1987,6 +1987,66 @@
   "specimen_4MB1_01": "identity ratified (SAM 'first teaching 2016' -> 4MB1/01); specimen MS not exposed by any scriptable source (PMT CDN + Paperlords archive probed) - closed as accepted, documented gap"
  },
  "corpus_after_wave15_2026_09_15": {
+  "held_pdfs": 10164,
+  "qp": 5038,
+  "ms": 4989,
+  "er": 117,
+  "insert": 20,
+  "paper_dirs": {
+   "regular": 5076,
+   "specimen": 42,
+   "manifests": 5118
+  },
+  "quarantine": {
+   "artifacts": 341,
+   "reason_records": 341
+  },
+  "genuine_01A_dirs": 122,
+  "ledger_rows": 979,
+  "pearson_complete_regular_pairs": "2,610/2,817",
+  "cambridge": "2,259/2,259 (100%)"
+ },
+ "wave16_verification_audit_2026_09_15": {
+  "run_date": "2026-09-15",
+  "head": "6b799d98",
+  "trigger": "operator direction: analyze all folders; check structure and naming conventions",
+  "method": "fresh recursive tree (23,025 entries) + corpus-wide manifest sweep (5,118) + ledger/REASON/byte verification",
+  "results": {
+   "path_grammar_violations": 0,
+   "basename_whitelist_violations": 0,
+   "manifest_tree_mismatches": 0,
+   "manifest_parse_failures": 0,
+   "held_pdfs": 10164,
+   "qp": 5038,
+   "ms": 4989,
+   "er": 117,
+   "insert": 20,
+   "regular_dirs": 5076,
+   "specimen_dirs": 42,
+   "complete_pairs": {
+    "cambridge_regular": "2259/2259",
+    "pearson_regular": "2610/2817",
+    "pearson_specimen": "41/42"
+   },
+   "quarantine": "341 artifacts + 341 REASON records, all paired; 0 double-extension",
+   "held_held_duplicate_blobs": 0,
+   "a_dirs": {
+    "total": 122,
+    "operator_ratified": 4,
+    "rank0_print_verified": 118
+   },
+   "ref_shape_outliers": "193, all documented legitimate classes",
+   "byte_forensics": "16/16 sha256 match",
+   "reason_sha256": "285/341 (100% of F24-governed classes; 56 pre-F24 legacy records)",
+   "ledger_after_fix": "979 rows = 666 normalized / 179 planned / 134 na"
+  },
+  "hygiene_fixes": [
+   "docs/ledger/file-gap-sweep.csv: 3 rows re-quoted (WMA13/01 qp, WST02/01 qp 2020-10; WPH13/1 ms) - unquoted commas had shifted status cells into an overflow column",
+   "4HB0-02 2019-01 manifest: stale 'operator ratification requested' note suffix dropped (manifest already OPERATOR-RATIFIED by the wave-14 F12 rename commit)"
+  ],
+  "verdict": "structure and naming conventions PASS; no open structural defects"
+ },
+ "corpus_after_wave16_2026_09_15": {
   "held_pdfs": 10164,
   "qp": 5038,
   "ms": 4989,

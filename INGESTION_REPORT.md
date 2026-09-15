@@ -806,3 +806,21 @@ Operator direction: proceed with the wave-8 ratification queue (175) + F11 01A r
   content-duplicates were the 01A-held generations, now merged). 979 rows = 666/179/134.
 - **Corpus after wave 15:** 10,164 held PDFs (5,038 qp / 4,989 ms / 117 er / 20 insert); 5,118 paper
   dirs/manifests; quarantine 341+341; 122 verified-genuine `-01A` dirs.
+
+## Wave 16 — independent verification audit (2026-09-15)
+
+Fresh full-corpus verification at `6b799d98` (tree 23,025 entries; all 5,118 manifests swept and
+validated; 16 sampled PDFs byte-checked against recorded sha256). Structure and naming PASS on every
+check: 0 path-grammar violations, 0 basename-whitelist violations, 0 manifest↔tree mismatches, 0
+held-vs-held duplicate blobs, quarantine 341+341 fully paired with 0 double-extension records, sessions
+2001-01..2026-06 grammar-clean, all wave-15 census claims reproduced exactly. The 193 REF core-shape
+outliers all map to documented legitimate conventions; the 122 `-01A` dirs split 4
+OPERATOR-RATIFIED + 118 rank-0 print-verified (none pending). Two hygiene defects found and fixed:
+(1) three `docs/ledger/file-gap-sweep.csv` rows carried unquoted commas that shifted their status cells
+(the corpus-wide histogram after the fix is exactly the documented 666 normalized / 179 planned /
+134 na = 979 rows); (2) the ratified `4HB0-02 2019-01` manifest still carried the stale
+"operator ratification requested" note suffix — dropped. REASON integrity: 285/341 records carry
+sha256 (100% of the F24-governed classes); 56 pre-F24 migration-era records (`nonstandard-artifact/`
+35, `unresolved-identity/` 21) remain a documented backfill candidate. Ratification queues remain
+empty; the open backlog is metadata normalization only (legacy status strings on 3,378 manifests,
+ingestion blocks missing on 1,286 of the same generations, specification.yaml 48/102).
