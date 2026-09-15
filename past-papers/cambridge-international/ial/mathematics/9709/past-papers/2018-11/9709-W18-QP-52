@@ -1,0 +1,65 @@
+paper_id: cambridge-international:ial:mathematics:9709:2018-11:9709/52
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: mathematics
+specification:
+  folder: '9709'
+  title: Cambridge International AS & A Level Mathematics (9709)
+series:
+  normalized: 2018-11
+  year: '2018'
+  session_month: '11'
+  printed: October/November 2018
+  source: pdf+filename
+paper:
+  official_reference: 9709/52
+  unit_code: '9709'
+  paper_number: '5'
+  paper_number_variant: '52'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 4cc20fbb381f7e079bf23a91d59133de7569dc49b7fb63df8f79fadb527d2378
+  size_bytes: 121910
+  original_filename: 9709_w18_qp_52.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/a-level/mathematics-9709/2018-oct-nov/9709_w18_qp_52.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f8765357cdbf6cbf6df8dfe5eed3cb51dbb1601243de34e1cba8b554d361fce2
+  size_bytes: 257137
+  original_filename: 9709_w18_ms_52.pdf
+  pages: 10
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/a-level/mathematics-9709/2018-oct-nov/9709_w18_ms_52.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9709/52
+  stray_prints: []
+  session_printed: October/November 2018
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED
