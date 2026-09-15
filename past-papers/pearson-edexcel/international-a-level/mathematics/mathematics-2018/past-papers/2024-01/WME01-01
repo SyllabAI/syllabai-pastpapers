@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:mathematics-2018:2024-01:WME01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: mathematics-2018
+  title: Pearson Edexcel International Advanced Level Mathematics (2018)
+series:
+  normalized: 2024-01
+  year: '2024'
+  session_month: '01'
+  printed: January 2024; January 2024
+  source: pdf+filename
+paper:
+  official_reference: WME01/01
+  unit_code: WME01
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1bed69d383c6fef144cd5c49410bb9239fce9cf8f659f9731b25e9427293e343
+  size_bytes: 392122
+  original_filename: January 2024 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: f2e5e960f8c925698de38d87af7b7c4b1c39d6c9adb2c981376ed6d3fc42ab7f
+  size_bytes: 320427
+  original_filename: January 2024 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - WME01
+  stray_prints: []
+  session_printed: January 2024; January 2024
+  notes:
+  - date rule -> WME01/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

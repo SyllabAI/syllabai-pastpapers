@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:wma01:2015-06:WST02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: wma01
+  title: Pearson Edexcel IAL Mathematics (legacy, WMA01)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: June 2015; June 2015
+  source: pdf+filename
+paper:
+  official_reference: WST02/01
+  unit_code: WST02
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a8c821473610821845c5ded92d12ba33e91433490fed11d11d431b339565da0d
+  size_bytes: 415047
+  original_filename: June 2015 MS_3.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: c143b6e65e82ecbbed0f037d4713585bdc31feddd7aec95566c9e7d2d8e7f3b0
+  size_bytes: 143243
+  original_filename: June 2015 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/QP/June 2015 QP.pdf
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
+      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WST02/01
+  stray_prints: []
+  session_printed: June 2015; June 2015
+  notes:
+  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (June 2015); sha256 c143b6e65e82ecbb...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

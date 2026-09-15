@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:wma01:2014-06:WME02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: wma01
+  title: Pearson Edexcel IAL Mathematics (legacy, WMA01)
+series:
+  normalized: 2014-06
+  year: '2014'
+  session_month: '06'
+  printed: June 2014
+  source: filename
+paper:
+  official_reference: WME02/01
+  unit_code: WME02
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f1d9d8f59eb030496157438508b5d0d56967f50df03a15a701ba3edf176e6059
+  size_bytes: 108869
+  original_filename: June 2014 MS_3.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: d5d289d97b8ec33df2ffd6c5317745aa02f2ad42d8211401c0a8693fdd660789
+  size_bytes: 118257
+  original_filename: June 2014 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: Maths/A-level/Papers/Edexcel-IAL/Mechanics/M2/QP/June 2014 QP.pdf
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
+      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WME02/01
+  stray_prints: []
+  session_printed: June 2014
+  notes:
+  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (June 2014); sha256 d5d289d97b8ec33d...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

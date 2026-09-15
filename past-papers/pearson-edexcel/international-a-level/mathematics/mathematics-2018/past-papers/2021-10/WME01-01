@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:mathematics-2018:2021-10:WME01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: mathematics-2018
+  title: Pearson Edexcel International Advanced Level Mathematics (2018)
+series:
+  normalized: 2021-10
+  year: '2021'
+  session_month: '10'
+  printed: October 2021; October 2021
+  source: pdf+filename
+paper:
+  official_reference: WME01/01
+  unit_code: WME01
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: bd7be7c749bd28dda2e095974d8c2b5f22489bc363362fb63d306d5c43ed2934
+  size_bytes: 173247
+  original_filename: October 2021 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 9226de8baa11794ac42624dea5f61b5440c9f3d7ce35d6f164313dde4b8bf1a7
+  size_bytes: 648174
+  original_filename: October 2021 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WME01
+  - WME01/01
+  stray_prints: []
+  session_printed: October 2021; October 2021
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

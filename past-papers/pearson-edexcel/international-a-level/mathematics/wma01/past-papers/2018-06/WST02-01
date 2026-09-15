@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:wma01:2018-06:WST02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: wma01
+  title: Pearson Edexcel IAL Mathematics (legacy, WMA01)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: filename
+paper:
+  official_reference: WST02/01
+  unit_code: WST02
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 04658b6b75f447af633fa3b63ddf5e7d2475967163416622608e376cf6334eb7
+  size_bytes: 340675
+  original_filename: June 2018 MS_3.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 40e0358d2672a29e03c7ccde9c9cfe4f56efabb25716a8b3b6484ffbc0406ffa
+  size_bytes: 176517
+  original_filename: June 2018 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: Maths/A-level/Papers/Edexcel-IAL/Statistics/S2/QP/June 2018 QP.pdf
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
+      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WST02/01
+  stray_prints: []
+  session_printed: June 2018
+  notes:
+  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: exact; session evidence: print (June 2018); sha256 40e0358d2672a29e...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

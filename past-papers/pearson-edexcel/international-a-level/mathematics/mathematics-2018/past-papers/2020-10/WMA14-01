@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-a-level:mathematics:mathematics-2018:2020-10:WMA14/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: mathematics
+specification:
+  folder: mathematics-2018
+  title: Pearson Edexcel International Advanced Level Mathematics (2018)
+series:
+  normalized: 2020-10
+  year: '2020'
+  session_month: '10'
+  printed: October 2020; October 2020
+  source: pdf+filename
+paper:
+  official_reference: WMA14/01
+  unit_code: WMA14
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: df27a79762f9cdd5748b2b0d2272482733a9d59e1cab2316e199fce8382a1b8f
+  size_bytes: 261318
+  original_filename: October 2020 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: eb2de7c2327b6e0130395ec3a5aceab4aaf4cc077562c606bf59d3690b997beb
+  size_bytes: 946284
+  original_filename: 04a-pure-mathematics-4-october-2020-examination-paper-pdf.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/10/04a-pure-mathematics-4-october-2020-examination-paper-pdf.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction - probe further sources, files are on paperlords or savemyexams; fetched from the SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: examiner-report
+  path: er.pdf
+  sha256: 83dc089ce939d207d29d39c8b7edf433d53a4b4ee85c98941d6814d895fa9583
+  size_bytes: 231609
+  original_filename: IAL_Maths_2020_May_P4_ER_1784112932438.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_P4_ER_1784112932438.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WMA14
+  - WMA14/01
+  stray_prints: []
+  session_printed: October 2020; October 2020
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (October 2020); sha256 eb2de7c2327b6e01...'
+  - '2026-09-14 wave 8: catalog said May 2020; cover prints October 2020'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED
