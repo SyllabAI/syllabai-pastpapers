@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:human-biology:4hb0:2013-06:4HB0/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: human-biology
+specification:
+  folder: 4hb0
+  title: Edexcel International GCSE Human Biology (4HB0)
+series:
+  normalized: 2013-06
+  year: '2013'
+  session_month: '06'
+  printed: 'exam date printed: Thursday 9 May 2013'
+  source: pdf_text
+paper:
+  official_reference: 4HB0/02
+  unit_code: 4HB0
+  paper_number_variant: '02'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: d95d457c289849db47ff82feeb6b37a2a6499a56139ecfc567b7882473a8ec3f
+  size_bytes: 147002
+  original_filename: 4HB0_02_que_20130510.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Human%20Biology/2009/Exam%20materials/4HB0_02_que_20130510.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the board's content-dam exam-materials repository (official date-coded filename)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4HB0/02
+  stray_prints: []
+  notes:
+  - 'missing-material note: the paired mark scheme is not hosted by any probed source (PMT has no pages for this legacy spec, Pearson content-dam hosts QPs only, SaveMyExams/Paperlords carry no legacy session); ledger row opened'
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)
+  verification_status: AI-IDENTIFIED

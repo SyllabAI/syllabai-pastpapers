@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi06:2018-06:WBI06/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi06
+  title: Pearson Edexcel International Advanced Level Biology (legacy spec)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: pdf_text
+paper:
+  official_reference: WBI06/01
+  unit_code: WBI06
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 5e326058aeb93519892b0f7798d9524524bf2a5d837677cd23980bc54f7075a6
+  size_bytes: 257728
+  original_filename: June 2018 (IAL) QP - Unit 6 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-6/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4f329f732f0b82e8532148c6ed347610d1ec72af8ea136c0595d8868f01d30d8
+  size_bytes: 220900
+  original_filename: June 2018 (IAL) MS - Unit 6 Edexcel Biology A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/a-level-biology/edexcel-unit-6/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI06/01
+  stray_prints: []
+  session_printed: June 2018
+  notes:
+  - ms.pdf: cover prints unit code + session (paper number not printed; single-paper unit, number from PMT listing)
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)
+  verification_status: AI-IDENTIFIED

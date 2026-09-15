@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:biology:4bi0:2011-06:4BI0/1B
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: biology
+specification:
+  folder: 4bi0
+  title: Edexcel International GCSE Biology (4BI0)
+series:
+  normalized: 2011-06
+  year: '2011'
+  session_month: '06'
+  printed: June 2011
+  source: pdf_text
+paper:
+  official_reference: 4BI0/1B
+  unit_code: 4BI0
+  paper_number_variant: 1B
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 0a2906cda2da5aa453e515e8eb61cb068804b05f06644579cfa514676c87303d
+  size_bytes: 620123
+  original_filename: June 2011 QP - Paper 1B Edexcel Biology IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-biology/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 08690b083a0723ec599a0a4f4e5f2a4081a2f19887a1520f88a971f422e0087e
+  size_bytes: 166148
+  original_filename: June 2011 MS - Paper 1B Edexcel Biology IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-biology/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4BI0/1B
+  stray_prints: []
+  session_printed: June 2011
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:biology:4bi0:2016-01:4BI0/1B
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: biology
+specification:
+  folder: 4bi0
+  title: Edexcel International GCSE Biology (4BI0)
+series:
+  normalized: 2016-01
+  year: '2016'
+  session_month: '01'
+  printed: January 2016
+  source: pdf_text
+paper:
+  official_reference: 4BI0/1B
+  unit_code: 4BI0
+  paper_number_variant: 1B
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: eca8115af9aa64d969b0c863c82d3644fe9e7d0e69dab090412a19e08d63cf2e
+  size_bytes: 243463
+  original_filename: January 2016 QP - Paper 1B Edexcel Biology IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-biology/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 8cd94f7699bbf0846fe17b7cb0553ddd725e36637d5dbb295446b2d28d1e8867
+  size_bytes: 104753
+  original_filename: January 2016 MS - Paper 1B Edexcel Biology IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-biology/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4BI0/1B
+  stray_prints: []
+  session_printed: January 2016
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,65 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec04:2014-06:WEC04/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec04
+  title: Edexcel International Advanced Level Economics (WEC04)
+series:
+  normalized: 2014-06
+  year: '2014'
+  session_month: '06'
+  printed: January; June; November
+  source: pdf_text
+paper:
+  official_reference: WEC04/01
+  unit_code: WEC04
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: c893243cdf1f0a806d651760cf9fc922ebe42de46b28d9c0563f218cf35e85ff
+  size_bytes: 115665
+  original_filename: wec04_01_que_june-2014_edexcel-ial-economics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec04_01_que_june-2014_edexcel-ial-economics.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 29694ce6f0f6a1f7f6d3fa7d3b5d16e6eca66a462f15caff48605d14266d9d88
+  size_bytes: 228411
+  original_filename: mark-scheme-unit-4-wec04-june-2014_edexcel-ial-economics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/mark-scheme-unit-4-wec04-june-2014_edexcel-ial-economics.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WEC04
+  - WEC04/01
+  stray_prints:
+  - January
+  - November
+  notes:
+  - 'ms.pdf: mark scheme cover prints unit code + unit number + session; single-paper unit (no /NN suffix printed on cover)'
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)
+  verification_status: AI-IDENTIFIED

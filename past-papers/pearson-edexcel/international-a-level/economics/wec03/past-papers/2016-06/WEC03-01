@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec03:2016-06:WEC03/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec03
+  title: Edexcel International Advanced Level Economics (WEC03)
+series:
+  normalized: 2016-06
+  year: '2016'
+  session_month: '06'
+  printed: June; October
+  source: pdf_text
+paper:
+  official_reference: WEC03/01
+  unit_code: WEC03
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 1c11b0e95383f159b7c4b14df2133e6fdad41bf68408d4c0f851c46ef27479c9
+  size_bytes: 181152
+  original_filename: wec03_01_que_june-2016_edexcel-ial-economics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec03_01_que_june-2016_edexcel-ial-economics.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 68287918bbb7e2b617374e442d44de5812ac0f32a358ed27569713b02b4ae4ba
+  size_bytes: 457754
+  original_filename: wec03_01_rms_june-2016_edexcel-ial-economics.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec03_01_rms_june-2016_edexcel-ial-economics.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WEC03
+  - WEC03/01
+  stray_prints:
+  - October
+  notes:
+  - 'ms.pdf: mark scheme cover prints unit code + unit number + session; single-paper unit (no /NN suffix printed on cover)'
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)
+  verification_status: AI-IDENTIFIED

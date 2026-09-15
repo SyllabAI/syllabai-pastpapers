@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec04:2018-10:WEC04/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec04
+  title: Edexcel International Advanced Level Economics (WEC04)
+series:
+  normalized: 2018-10
+  year: '2018'
+  session_month: '10'
+  printed: November; October
+  source: pdf_text
+paper:
+  official_reference: WEC04/01
+  unit_code: WEC04
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 7d5e8b405df77d0ae476e83461925446b3a1de08502ba0ae22496ee3fe44d057
+  size_bytes: 1690940
+  original_filename: wec04_01_que_20181030.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec04_01_que_20181030.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5d54699ddfe8cf99ac245dc7af205dc3224fd589205735d44fb85e3b28f1a3e1
+  size_bytes: 234453
+  original_filename: wec04_01_rms_20190124.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/03/wec04_01_rms_20190124.pdf
+    collected_by: SyllabAI agent (2026-09-15 wave 11)
+    note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WEC04/01
+  stray_prints:
+  - November
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 11 2026-09-15)
+  run_date: '2026-09-15'
+  source_repo: SaveMyExams CDN + Pearson qualifications content-dam (wave 11 legacy stragglers)
+  verification_status: AI-IDENTIFIED

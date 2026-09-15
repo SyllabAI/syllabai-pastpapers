@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:economics:4ec0:2019-01:4EC0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: economics
+specification:
+  folder: 4ec0
+  title: Edexcel International GCSE Economics (4EC0)
+series:
+  normalized: 2019-01
+  year: '2019'
+  session_month: '01'
+  printed: January 2019
+  source: pdf_text
+paper:
+  official_reference: 4EC0/01
+  unit_code: 4EC0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 1dce877baa499a4be9f9771b9a2b255992273bbcfe083aad5d5d64f771ba18e3
+  size_bytes: 565413
+  original_filename: January 2019 QP - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e289fbf05a51b6cb4c14ea0d8d495ccacb73d28188f855cf975e72bb6781bbcd
+  size_bytes: 179022
+  original_filename: January 2019 MS - Paper 1 Edexcel Economics IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://www.physicsandmathstutor.com/past-papers/gcse-economics/edexcel-igcse-paper-1/
+    downloaded_at: 2026-09-14T00:00:00Z
+    collected_by: SyllabAI agent (wave 10 2026-09-14)
+    note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EC0/01
+  stray_prints: []
+  session_printed: January 2019
+  notes: []
+ingestion:
+  agent: SyllabAI agent (wave 10 2026-09-14)
+  run_date: '2026-09-14'
+  source_repo: PMT legacy back-catalog (PhysicsAndMathsTutor.com)
+  verification_status: AI-IDENTIFIED
