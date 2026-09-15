@@ -1204,5 +1204,5 @@ documented gap; the 2 wave-10 double-extension REASON records renamed to the can
 sha256 backfill. Ledger: the two 2020-10 qp rows the wave-3 SME pass had marked `na:sme-content-dup`
 resolved normalized (they were the 01A-held generations). Corpus after wave 15: **10,164 held PDFs /
 5,118 paper dirs**; quarantine 341+341; ledger 979 rows (666/179/134). Ratification queues are now
-empty; remaining backlog is metadata normalization (legacy status strings on 3,404 Cambridge + 41
+empty; remaining backlog is metadata normalization (legacy status strings on 1,879 Cambridge + 1,458 Pearson + 41
 specimen manifests, specification.yaml 48/102).
