@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2002-06:6678/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2002-06
+  year: '2002'
+  session_month: '06'
+  printed: JUNE 2002; June 2002
+  source: pdf+filename
+paper:
+  official_reference: 6678/01
+  unit_code: '6678'
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1c523a08ffef3c63728ef23591f0549e9920ea02cd6436d02b76556d8648b43e
+  size_bytes: 64568
+  original_filename: June 2002 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 735c9d013e0eae464de5484eb0c4426d9bc21b1384e20cfa6fbeac2d34c473ea
+  size_bytes: 39953
+  original_filename: June 2002 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6678'
+  stray_prints: []
+  session_printed: JUNE 2002; June 2002
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

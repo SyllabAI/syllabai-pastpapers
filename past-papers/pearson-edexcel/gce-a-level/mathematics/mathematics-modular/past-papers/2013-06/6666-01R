@@ -1,0 +1,67 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2013-06:6666/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2013-06
+  year: '2013'
+  session_month: '06'
+  printed: June 2013
+  source: filename
+paper:
+  official_reference: 6666/01R
+  unit_code: '6666'
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5d5b1fe4b42b280fc2b598ff3a4f86974989155667578b9f2790ca6ae31237d4
+  size_bytes: 224870
+  original_filename: June 2013 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 77b6547489a320a4744ec9a5be4af54c0c56dce393f656a24e76be1d28ef5500
+  size_bytes: 204577
+  original_filename: 6666_01R_que_20130618.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Mathematics/2013%20Jun/Question-paper/6666_01R_que_20130618.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 2
+  printed_references_seen:
+  - 6666/01R
+  stray_prints: []
+  session_printed: June 2013
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: scan+dir+filename; session evidence: date_rule (coded 20130618); filename match: exact; sha256 77b6547489a320a4...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

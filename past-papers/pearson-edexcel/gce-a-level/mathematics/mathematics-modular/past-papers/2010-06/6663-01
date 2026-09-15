@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2010-06:6663/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2010-06
+  year: '2010'
+  session_month: '06'
+  printed: June 2010
+  source: filename
+paper:
+  official_reference: 6663/01
+  unit_code: '6663'
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5c81c42a9facf25fe55c579ac4da55c4de181a111e1e26d2d74edd72c59aa953
+  size_bytes: 179295
+  original_filename: June 2010 MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: e69fcece6ede33d8b57f2339126b8732f7495fe87f98b411aba662138f08194f
+  size_bytes: 163715
+  original_filename: June 2010 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6663'
+  - 6663/01
+  - 6663/57
+  stray_prints: []
+  session_printed: June 2010
+  notes:
+  - multiple allowed refs printed ['6663/01', '6663/57']; chose first
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

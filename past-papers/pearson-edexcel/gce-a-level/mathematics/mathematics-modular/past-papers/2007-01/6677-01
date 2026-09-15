@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2007-01:6677/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2007-01
+  year: '2007'
+  session_month: '01'
+  printed: January 2007; January 2007
+  source: pdf+filename
+paper:
+  official_reference: 6677/01
+  unit_code: '6677'
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 01d6681ffbd3f2c28bc481d5674cbf85b0f8640d7bbbc3b20b8d3cb170dcdb7d
+  size_bytes: 141867
+  original_filename: January 2007 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: aaae98bab754d122bd04f8cf46dfa2f70aa52e29a6aca6024562604652475416
+  size_bytes: 57476
+  original_filename: January 2007 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6677'
+  - 6677/01
+  - 6677/57
+  stray_prints: []
+  session_printed: January 2007; January 2007
+  notes:
+  - multiple allowed refs printed ['6677/01', '6677/57']; chose first
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

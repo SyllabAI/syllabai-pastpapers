@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2006-06:6666/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2006-06
+  year: '2006'
+  session_month: '06'
+  printed: June 2006; June 2006
+  source: pdf+filename
+paper:
+  official_reference: 6666/01
+  unit_code: '6666'
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: dcec601883c1c6e98e9de9977797aaa018eeb1d8e4a883c03f3b762830a142df
+  size_bytes: 812453
+  original_filename: June 2006 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: c64b2cf002cdff4eee076f8785f7c4363c67af92fbee51df7918b99b5bd7901e
+  size_bytes: 96263
+  original_filename: June 2006 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6666'
+  - 6666/01
+  - 6666/57
+  stray_prints: []
+  session_printed: June 2006; June 2006
+  notes:
+  - multiple allowed refs printed ['6666/01', '6666/57']; chose first
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

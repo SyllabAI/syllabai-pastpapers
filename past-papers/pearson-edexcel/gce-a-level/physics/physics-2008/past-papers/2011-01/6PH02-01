@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:gce-a-level:physics:physics-2008:2011-01:6PH02/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: physics
+specification:
+  folder: physics-2008
+  title: Edexcel GCE Physics (2008 spec, legacy)
+series:
+  normalized: 2011-01
+  year: '2011'
+  session_month: '01'
+  printed: January 2011; January 2011
+  source: pdf+filename
+paper:
+  official_reference: 6PH02/01
+  unit_code: 6PH02
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 41c452907af0c3cdeb1b6eb9e2b10ea25dd6b32c0bfd2fa29c54e4ac7bf6a7a0
+  size_bytes: 140778
+  original_filename: January 2011 QP - Unit 2 Edexcel Physics A-level.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: aed95fcff431ef3a15c973154a238b087212c8cc80d9c8c966e119d181901588
+  size_bytes: 256238
+  original_filename: Markscheme-Unit2(6PH02)-January2011.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2011%20Jan/Mark-scheme/Markscheme-Unit2%286PH02%29-January2011.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6PH02/01
+  stray_prints: []
+  session_printed: January 2011; January 2011
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: print (January 2011); filename match: exact; sha256 aed95fcff431ef3a...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

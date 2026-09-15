@@ -1,0 +1,65 @@
+paper_id: pearson-edexcel:gce-a-level:mathematics:mathematics-modular:2014-06:6678/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: mathematics
+specification:
+  folder: mathematics-modular
+  title: Edexcel GCE Mathematics (modular, legacy)
+series:
+  normalized: 2014-06
+  year: '2014'
+  session_month: '06'
+  printed: June 2014
+  source: filename
+paper:
+  official_reference: 6678/01R
+  unit_code: '6678'
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 429d1fa17b9a90074ea871abc5fd7b24f3e94f76e86dadc49761330bea7718c7
+  size_bytes: 77780
+  original_filename: June 2014 (R) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 5604d9bf451bd8d47c6104f18defb33b3f9fd14eac0017b3ee84ca3837926e0b
+  size_bytes: 105324
+  original_filename: June 2014 (R) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6678'
+  - 6678/01R
+  - 6678/57
+  stray_prints: []
+  session_printed: June 2014
+  notes:
+  - multiple allowed refs printed ['6678/01R', '6678/57']; chose first
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED
