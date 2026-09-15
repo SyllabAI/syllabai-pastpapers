@@ -1,0 +1,71 @@
+paper_id: cambridge-international:ial:chemistry:9701:2024-06:9701/32
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: chemistry
+specification:
+  folder: '9701'
+  title: Cambridge International AS & A Level Chemistry (9701)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: May/June 2024
+  source: pdf+filename
+paper:
+  official_reference: 9701/32
+  unit_code: '9701'
+  paper_number: '3'
+  paper_number_variant: '32'
+variant: '2'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 42e418d987d6fa93fae6bd7fa69ca13d910b450b4980a27d9a39ce6d2fb2c5d1
+  size_bytes: 852671
+  original_filename: 9701_s24_qp_32.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Chemistry-9701/2024-May-June/9701_s24_qp_32.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 189502a736cd23c2350f21a951ebc14f98a5de87d0b00eb1ff561731ddbcf724
+  size_bytes: 246384
+  original_filename: 9701_s24_ms_32.pdf
+  pages: 11
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Chemistry-9701/2024-May-June/9701_s24_ms_32.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 1; operator direction - download cambridge igcse and
+      ial papers and mark schemes)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9701/32
+  stray_prints: []
+  session_printed: May/June 2024
+  notes:
+  - '2026-09-13 Cambridge wave 1: files enumerated against the pastpapers.co tree using the standardized CIE filename
+    convention (listing pages are Cloudflare-gated; files are served directly); every material print-checked for
+    syllabus code and session before acceptance.'
+  - series.printed is the canonical CIE cover session string for this series; per-file session evidence recorded
+    in printed_references_seen/session evidence above.
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED
