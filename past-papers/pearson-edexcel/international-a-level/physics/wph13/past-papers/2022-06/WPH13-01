@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph13:2022-06:WPH13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph13
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2022-06
+  year: '2022'
+  session_month: '06'
+  printed: June 2022; June 2022
+  source: pdf+filename
+paper:
+  official_reference: WPH13/01
+  unit_code: WPH13
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 895ab27e372c01a2c0ce76b67496da5790fa84af66424714e3c5f9b02977ace2
+  size_bytes: 307284
+  original_filename: June 2022 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 67e36beec81509bde1085ce1e965ed845725f5c50101c2dc78961fe42848b1b1
+  size_bytes: 646242
+  original_filename: June 2022 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH13
+  - WPH13/01
+  stray_prints: []
+  session_printed: June 2022; June 2022
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

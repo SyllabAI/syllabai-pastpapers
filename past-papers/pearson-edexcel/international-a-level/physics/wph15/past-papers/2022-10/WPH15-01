@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph15:2022-10:WPH15/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph15
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2022-10
+  year: '2022'
+  session_month: '10'
+  printed: October 2022; October 2022
+  source: pdf+filename
+paper:
+  official_reference: WPH15/01
+  unit_code: WPH15
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d957aff01bceff45661aa79245dbdbf803bcad723154db7a3450563d3f480ac8
+  size_bytes: 367156
+  original_filename: October 2022 (IAL) MS_2_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 4ab5b1be71e8f8b676c2a0b3ea45556a5891158f9ff19922075f2cdf93591d6e
+  size_bytes: 1237720
+  original_filename: October 2022 (IAL) QP_2_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH15/01
+  stray_prints: []
+  session_printed: October 2022; October 2022
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

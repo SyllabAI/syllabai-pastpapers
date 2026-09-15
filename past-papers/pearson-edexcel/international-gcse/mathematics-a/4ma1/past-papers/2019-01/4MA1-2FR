@@ -1,0 +1,67 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2019-01:4MA1/2FR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2019-01
+  year: '2019'
+  session_month: '01'
+  printed: January 2019; January 2019
+  source: pdf+filename
+paper:
+  official_reference: 4MA1/2FR
+  unit_code: 4MA1
+  paper_number_variant: 2FR
+variant:
+  official_code: R
+  type: regional
+  note: F tier + regional variant
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 71c1f982deaac042486d0a64c88171d27787ea269196f7b2a53fbab5f9cb3477
+  size_bytes: 231426
+  original_filename: January 2019 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: bf6e0d65373babaab97cd762ce3045d71cf8ad96f12f729fc2460215afe93302
+  size_bytes: 381710
+  original_filename: 4MA1_2FR_que_20190116.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam),
+      discovered via the SaveMyExams past-paper index
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Mathematics%20A/2016/exam-materials/4MA1_2FR_que_20190116.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 2
+  printed_references_seen:
+  - 4MA1
+  stray_prints: []
+  session_printed: January 2019; January 2019
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: scan+url+coded; session evidence: date_rule (coded 20190116); sha256 bf6e0d65373babaa...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

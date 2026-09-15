@@ -1,0 +1,75 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch1:2023-06:4CH1/1CR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch1
+  title: Edexcel International GCSE Chemistry (4CH1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: filename
+paper:
+  official_reference: 4CH1/1CR
+  unit_code: 4CH1
+  paper_number_variant: 1CR
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 9cc282f92e1f986a5d2e9082047a9269747856485170e1b8a3d022fff2b81917
+  size_bytes: 256604
+  original_filename: June 2023 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 0766bcd0d5a790a15faf486b6079067bbfa83f2869887ca1060556707cd2ef58
+  size_bytes: 1258669
+  original_filename: 4ch1-1cr-que-20230523.pdf
+  source:
+    source_type: third-party-archive
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam), discovered via the SaveMyExams past-paper index
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2017/Exam-materials/4ch1-1cr-que-20230523.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction - probe further sources, files are on paperlords or savemyexams; fetched from the SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+- type: examiner-report
+  path: er.pdf
+  sha256: baae7bddf027696eb7709b5ff69bee965b77771cec5a9b5a5c965e48aa0ce8b1
+  size_bytes: 5002745
+  original_filename: IGCSE_CHEMISTRY_2023_May_P1R_PEF_1777794099054.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/May 2023/IGCSE_CHEMISTRY_2023_May_P1R_PEF_1777794099054.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  - coded-date
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH1
+  - 4CH1/1CR
+  - 4SD0/1CR
+  stray_prints: []
+  session_printed: June 2023
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: coded-date (coded 20230523); sha256 0766bcd0d5a790a1...'
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

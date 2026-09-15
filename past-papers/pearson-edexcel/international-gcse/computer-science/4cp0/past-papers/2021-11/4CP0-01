@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2021-11:4CP0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2021-11
+  year: '2021'
+  session_month: '11'
+  printed: November 2021
+  source: filename
+paper:
+  official_reference: 4CP0/01
+  unit_code: 4CP0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 73fdb16e3243f7e056b4a81a2704caf79a173002c74ad5dc968a8f28e9d4ce54
+  size_bytes: 448722
+  original_filename: November 2021 QP - Paper 1 Edexcel Computer Science IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e72496d5ce0b85964ecb3e514da9b35d4c9359b65684d545a4bcaed2eb0b83a1
+  size_bytes: 289247
+  original_filename: Markscheme-Paper1-November21.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Computer%20Science/2021%20Nov/Mark-scheme/Markscheme-Paper1-November21.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CP0/01
+  stray_prints: []
+  session_printed: November 2021
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: print (November 2021); filename match: suf-only; sha256 e72496d5ce0b8596...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

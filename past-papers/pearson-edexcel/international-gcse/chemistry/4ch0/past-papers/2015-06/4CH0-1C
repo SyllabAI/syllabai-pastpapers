@@ -1,0 +1,66 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2015-06:4CH0/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: June 2015
+  source: filename
+paper:
+  official_reference: 4CH0/1C
+  unit_code: 4CH0
+  paper_number_variant: 1C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b0704e76048cb454a3e702a1612fae5f026e460a146ccad67d436157a563a3ba
+  size_bytes: 191215
+  original_filename: June 2015 MS - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 4c844e4f7e5dbc7386b9845ca3dc455f760764e08605bb4f1b493b49ce22a8cb
+  size_bytes: 331924
+  original_filename: June 2015 QP - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0
+  - 4CH0/1C
+  - 4SC0
+  - 4SC0/1C
+  stray_prints:
+  - 4SC0/1C (alternate-route/legacy print)
+  session_printed: June 2015
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

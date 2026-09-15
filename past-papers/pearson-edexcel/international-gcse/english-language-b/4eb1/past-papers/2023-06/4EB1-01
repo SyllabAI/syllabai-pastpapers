@@ -1,0 +1,74 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb1:2023-06:4EB1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb1
+  title: Edexcel International GCSE English Language B (4EB1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: filename
+paper:
+  official_reference: 4EB1/01
+  unit_code: 4EB1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ffaa08913138b158c73e1eb7e458fb8d9d5e842b643993abf9860072acb6dc01
+  size_bytes: 206620
+  original_filename: June 2023 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 5f1d5f1fc1dfdc0126919817572dafddd8f756333d30d06385afe061b97b246a
+  size_bytes: 233686
+  original_filename: June 2023 QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: 3035ad8f75c8b14dd8bda291ed7556b2faf2d2ce0a59d2606c883282ec6583b8
+  size_bytes: 8966116
+  original_filename: IGCSE_ENGLISH_LANGUAGE_B_2023_MayJune_P1_PEF_1777803125435.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English Language B/MayJune 2023/IGCSE_ENGLISH_LANGUAGE_B_2023_MayJune_P1_PEF_1777803125435.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB1
+  - 4EB1/01
+  stray_prints: []
+  session_printed: June 2023
+  notes:
+  - date rule -> 4EB1/01
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

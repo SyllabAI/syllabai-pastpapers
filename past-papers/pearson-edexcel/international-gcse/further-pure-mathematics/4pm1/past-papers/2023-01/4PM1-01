@@ -1,0 +1,76 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm1:2023-01:4PM1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm1
+  title: Edexcel International GCSE Further Pure Mathematics (4PM1)
+series:
+  normalized: 2023-01
+  year: '2023'
+  session_month: '01'
+  printed: January 2023
+  source: filename
+paper:
+  official_reference: 4PM1/01
+  unit_code: 4PM1
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: ce12b1e794a129697f7470267916683a00784df4b3bbc0c55276d2a932c6aabb
+  size_bytes: 802340
+  original_filename: January 2023 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 291fc4aa984a02d5b015440ba6887f8a4e340ee7f059e7f7546a2ae9ff2a6072
+  size_bytes: 916236
+  original_filename: 4pm1-01-rms-20230302.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2024/04/4pm1-01-rms-20230302.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - date_rule
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM1/01
+  - 4PM1/1
+  stray_prints: []
+  session_printed: January 2023
+  notes:
+  - date rule -> 4PM1/01
+  - '2026-09-12 audit spot-check (F3): identity print-verified from PDF text (qp.pdf prints 4PM1/01; session token not printed on the cover)'
+  - '2026-09-12 audit repair (F9): ms.pdf found corrupt (truncated PDF, EOF marker missing, exactly 288 KiB) and quarantined to _quarantine/corrupt-artifact/ - re-fetch queued via docs/ledger/file-gap-sweep.csv'
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing ms.pdf fetched and print-checked - code match: pad-normalized; session evidence: print (January 2023); sha256 291fc4aa984a02d5...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED
+  repair:
+    date: '2026-09-12'
+    by: SyllabAI audit (session 43)
+    scope: corrupt ms.pdf quarantined (audit finding F9); qp.pdf print-verified
+    corrupt_ms_sha256: 9bbe7f972cc5e23fa5cf3993d268e95dba3643b93affdfd9f5859082161c8ced
+    note: ms.pdf is a truncated PDF (EOF marker missing, content streams end prematurely, exactly 288 KiB) -
+      sha256 matched at ingestion because the corrupt bytes were hashed as served. Quarantined to
+      _quarantine/corrupt-artifact/; re-fetch attempted 2026-09-12 but PMT returned HTTP 403 to the agent -
+      re-fetch queued via docs/ledger/file-gap-sweep.csv.

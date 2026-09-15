@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch1:2021-01:4CH1/2CR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch1
+  title: Edexcel International GCSE Chemistry (4CH1)
+series:
+  normalized: 2021-01
+  year: '2021'
+  session_month: '01'
+  printed: January 2021; January 2021
+  source: pdf+filename
+paper:
+  official_reference: 4CH1/2CR
+  unit_code: 4CH1
+  paper_number_variant: 2CR
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: a3a74608219dfac965de3c3d1100ab774c283ed383e0ff41ebee429f5be372cb
+  size_bytes: 192407
+  original_filename: January 2021 (R) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 330fd797fc8cb97d726f4fdcba7ad880508c80e64613ebda510c563ece7053a9
+  size_bytes: 826733
+  original_filename: 4ch1-2cr-que-20210304.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2022/12/4ch1-2cr-que-20210304.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave 3; operator direction -
+      probe further sources, files are on paperlords or savemyexams; fetched from the
+      SaveMyExams structured past-paper index, print-verified before acceptance)
+    note: official Pearson Edexcel document; watermark or scan artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH1
+  stray_prints: []
+  session_printed: January 2021; January 2021
+  notes:
+  - '2026-09-12 wave 3 (SaveMyExams/Pearson): missing qp.pdf fetched and print-checked - code match: exact; session evidence: print (January 2021); sha256 330fd797fc8cb97d...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

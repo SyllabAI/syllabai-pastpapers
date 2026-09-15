@@ -1,0 +1,74 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph14:2023-06:WPH14/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph14
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: filename
+paper:
+  official_reference: WPH14/01
+  unit_code: WPH14
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ba463885e8cb2b391f0a7cd2240186570ba6f5e786ed79e18dbf9b3ef0ca8b0a
+  size_bytes: 348555
+  original_filename: June 2023 (IAL) MS_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 9c05503d592fd0ac1180bf636f8551e3fd927b9e1aba55917e678f6fd7d79843
+  size_bytes: 892612
+  original_filename: June 2023 (IAL) QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: ff1798560df50e4f3497863c83acc197f32e8c1530f04a7154bf7cc312c81ccd
+  size_bytes: 5633514
+  original_filename: PHYSICS_2023_June_U4_ER_1777810726992.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/June 2023/PHYSICS_2023_June_U4_ER_1777810726992.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH14
+  - WPH14/01
+  stray_prints: []
+  session_printed: June 2023
+  notes:
+  - date rule -> WPH14/01
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

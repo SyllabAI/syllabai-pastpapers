@@ -1,0 +1,78 @@
+paper_id: pearson-edexcel:international-gcse:english-language-b:4eb0:2015-06:4EB0/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-language-b
+specification:
+  folder: 4eb0
+  title: Edexcel International GCSE English Language B (4EB0)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: June 2015; June 2015
+  source: pdf+filename
+paper:
+  official_reference: 4EB0/01R
+  unit_code: 4EB0
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: insert
+  path: insert.pdf
+  sha256: 04066f94042ffa79b2a776f89b00f2b9da86422e67ac18980cf436730ebdd3ef
+  size_bytes: 101774
+  original_filename: June 2015 (R) IN - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 1970fc88888b79dd39a25bc015f857b333e7dd8c03e11067c938a59e7041f7f2
+  size_bytes: 69443
+  original_filename: June 2015 (R) QP - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 63b7fb7197720ecfd087e62dfa4fdfb23941fbbdf352d7e0183db6a35cbafe47
+  size_bytes: 194490
+  original_filename: Markscheme-Paper1R-June2015.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/English%20Language%20B/2015%20Jun/Mark-scheme/Markscheme-Paper1R-June2015.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - 4EB0/01R
+  stray_prints: []
+  session_printed: June 2015; June 2015
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing ms.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued June2015); filename match: suf-only; sha256 63b7fb7197720ecf...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

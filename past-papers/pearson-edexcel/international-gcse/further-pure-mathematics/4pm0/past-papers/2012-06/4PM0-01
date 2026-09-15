@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm0:2012-06:4PM0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm0
+  title: Edexcel International GCSE Further Pure Mathematics (4PM0)
+series:
+  normalized: 2012-06
+  year: '2012'
+  session_month: '06'
+  printed: June 2012
+  source: filename
+paper:
+  official_reference: 4PM0/01
+  unit_code: 4PM0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b123680682c948d97d47e8e5bdad5df6fea80036d5cea9f1ed3130e9c3a98458
+  size_bytes: 173497
+  original_filename: June 2012 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: b9a96de704b2fc652c4d7f06315c52838b8c7cc01fe73676db6ab5668134253a
+  size_bytes: 252664
+  original_filename: June 2012 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM0
+  - 4PM0/01
+  stray_prints: []
+  session_printed: June 2012
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph13:2024-10:WPH13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph13
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2024-10
+  year: '2024'
+  session_month: '10'
+  printed: October 2024; October 2024
+  source: pdf+filename
+paper:
+  official_reference: WPH13/01
+  unit_code: WPH13
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7769128587638ddfa9cb110272b3e02e429e3a7f306fcd090fa6a6ed1e4eb9a6
+  size_bytes: 296935
+  original_filename: October 2024 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 726b418222f185868bc32fc5f49670c5b57b943f2af6bf187fd88a024d1253f2
+  size_bytes: 493177
+  original_filename: October 2024 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH13
+  stray_prints: []
+  session_printed: October 2024; October 2024
+  notes:
+  - date rule -> WPH13/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

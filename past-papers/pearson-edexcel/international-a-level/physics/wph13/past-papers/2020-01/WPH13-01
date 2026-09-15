@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph13:2020-01:WPH13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph13
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2020-01
+  year: '2020'
+  session_month: '01'
+  printed: January 2020; January 2020
+  source: pdf+filename
+paper:
+  official_reference: WPH13/01
+  unit_code: WPH13
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 6cf0030d2eea95ba1c32b700fb04d58b78d582c11fb6ea82b0776cf644ee40fc
+  size_bytes: 257021
+  original_filename: January 2020 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 039dbd106df1a61c9bb970eb6093e409f319dcb2430f72caa70db60eec77da3b
+  size_bytes: 761656
+  original_filename: January 2020 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH13
+  - WPH13/01
+  stray_prints: []
+  session_printed: January 2020; January 2020
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

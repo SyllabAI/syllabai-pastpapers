@@ -1,0 +1,66 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2014-06:4CH0/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2014-06
+  year: '2014'
+  session_month: '06'
+  printed: June 2014; June 2014
+  source: pdf+filename
+paper:
+  official_reference: 4CH0/1C
+  unit_code: 4CH0
+  paper_number_variant: 1C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b81fd2bc25bac1fb611e44b68b38d6f771ae1aca261f4c84962ddcd8f437a026
+  size_bytes: 362671
+  original_filename: June 2014 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: b1fa10107dad8964471cf4bd0b119f520bc56c65daf15d1eabc67c34b65d5da0
+  size_bytes: 235562
+  original_filename: June 2014 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0
+  - 4CH0/1C
+  - 4SC0
+  - 4SC0/1C
+  stray_prints:
+  - 4SC0/1C (alternate-route/legacy print)
+  session_printed: June 2014; June 2014
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

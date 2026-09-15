@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2016-01:4CH0/2C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2016-01
+  year: '2016'
+  session_month: '01'
+  printed: January 2016; January 2016
+  source: pdf+filename
+paper:
+  official_reference: 4CH0/2C
+  unit_code: 4CH0
+  paper_number_variant: 2C
+variant:
+  official_code: C
+  type: null
+  note: official variant code; semantics not verified from board documentation (charter s.8)
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 017a2f3193417a8b992bc4b978e905e058da81bb3bdfde512f35aa2414a60fdd
+  size_bytes: 125331
+  original_filename: January 2016 MS - Paper 2C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 0c13c000eef4d8d83f81015066d048c0093d589b1df6994b7db9af68c2cb2bef
+  size_bytes: 245679
+  original_filename: January 2016 QP - Paper 2C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0
+  - 4CH0/2C
+  stray_prints: []
+  session_printed: January 2016; January 2016
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

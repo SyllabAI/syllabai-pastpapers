@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:further-pure-mathematics:4pm0:2016-01:4PM0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: further-pure-mathematics
+specification:
+  folder: 4pm0
+  title: Edexcel International GCSE Further Pure Mathematics (4PM0)
+series:
+  normalized: 2016-01
+  year: '2016'
+  session_month: '01'
+  printed: January 2016; January 2016
+  source: pdf+filename
+paper:
+  official_reference: 4PM0/01
+  unit_code: 4PM0
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b9f5a34d3e66f3e3ee0e793cf15c1e086efd9ae7c710f1ca1dd33ead0c2773bd
+  size_bytes: 188460
+  original_filename: January 2016 MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 39e0d92360945f4d9725c56afe5bb621f5ed26c2861abc726ff68bf7229fb37b
+  size_bytes: 112337
+  original_filename: January 2016 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - date_rule
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4PM0/01
+  stray_prints: []
+  session_printed: January 2016; January 2016
+  notes:
+  - date rule -> 4PM0/01
+  - '2026-09-12 audit spot-check (F3): identity print-verified from PDF text (4PM0/01, January 2016)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

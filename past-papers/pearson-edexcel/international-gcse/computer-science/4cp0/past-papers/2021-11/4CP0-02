@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2021-11:4CP0/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2021-11
+  year: '2021'
+  session_month: '11'
+  printed: November 2021
+  source: filename
+paper:
+  official_reference: 4CP0/02
+  unit_code: 4CP0
+  paper_number_variant: '02'
+variant: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 2c12196e69a391688d77d2a12070eedc1904373bc27b4f773c2aec47fa0c3d3b
+  size_bytes: 319042
+  original_filename: November 2021 QP - Paper 2 Edexcel Computer Science IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 20600c393504fed16c8ec8e67da3bcb97ffbd8734a9efded89792cee04ea0dad
+  size_bytes: 656169
+  original_filename: 4cp0-2a-rms-20220224.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams.com (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2024/02/4cp0-2a-rms-20220224.pdf
+    collected_by: SyllabAI agent (2026-09-13 wave 4; operator direction - Check savemyexams)
+    note: official Pearson file 4cp0-2a-rms-20220224 prints (4CP0/2A) November 2021; November 2021 ran a single Paper 2 sitting whose QP cover prints the base reference 4CP0/02; Pearson groups this ms with the held qp in its own listing; partner_inference, operator ratification pending
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 2
+  printed_references_seen:
+  - 4CP0/2A
+  - 4CP0/02
+  stray_prints: []
+  session_printed: November 2021
+  notes:
+  - 2026-09-13 wave 4: ms added from SaveMyExams - November 2021 CS Paper 2 was a single sitting (officially version 2A; QP cover prints base 4CP0/02, as QP covers do for every 4CP0 sitting variant); PMT and SME/Pearson each host exactly one November-2021 Paper 2.
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

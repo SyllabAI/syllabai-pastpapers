@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph13:2019-06:WPH13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph13
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+  printed: June 2019; June 2019
+  source: pdf+filename
+paper:
+  official_reference: WPH13/01
+  unit_code: WPH13
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 75326c9b31830c51460c0576bc0de001c5e36c594f69ff0822a51c59890b2a9a
+  size_bytes: 790420
+  original_filename: June 2019 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 9cff5bf78528ce6e165fbe5d733b256e6fa5e51557e4c9ab85cda678f41dbf64
+  size_bytes: 513962
+  original_filename: Questionpaper-Unit3(WPH13)-June2019.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs)
+    source_url: https://papers.xtremepape.rs/Edexcel/Advanced%20Level/Physics/2019%20Jun%20%282018%20syllabus%29/Question-paper/Questionpaper-Unit3%28WPH13%29-June2019.pdf
+    collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization -
+      rows PMT could not satisfy may use other sources; files fetched from the XtremePapers
+      public directory tree, print-verified before acceptance)
+    note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan
+      artifacts may be present
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH13
+  stray_prints: []
+  session_printed: June 2019; June 2019
+  notes:
+  - '2026-09-12 other-source wave (F7/F9/F10 residue): missing qp.pdf fetched from XtremePapers after PMT exhaustion and print-checked - code match: exact; session evidence: date_rule (glued June2019); filename match: exact; sha256 9cff5bf78528ce6e...'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED

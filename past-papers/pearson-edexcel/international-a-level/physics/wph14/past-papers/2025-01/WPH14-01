@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph14:2025-01:WPH14/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph14
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2025-01
+  year: '2025'
+  session_month: '01'
+  printed: January 2025; January 2025
+  source: pdf+filename
+paper:
+  official_reference: WPH14/01
+  unit_code: WPH14
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ce7fd8beab90bc67caead505a8d1c253eb5f40c0b1f3e84177ce96da45eaf3bd
+  size_bytes: 541869
+  original_filename: January 2025 (IAL) MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: fb97298eed3eb29a3a899595298285dfac866dc9c149bf0b623bd98bb6021733
+  size_bytes: 2111270
+  original_filename: January 2025 (IAL) QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 0
+  printed_references_seen:
+  - WPH14
+  stray_prints: []
+  session_printed: January 2025; January 2025
+  notes:
+  - date rule -> WPH14/01
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED
