@@ -43,6 +43,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_P3_ER_1784112930335.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said May 2020; cover prints October 2020'
+- type: question-paper
+  path: qp.pdf
+  sha256: d0bf0479753bf549026ee84bfb8d78bf4ee46389e4ee2e52ee216f8bc3e22cc9
+  size_bytes: 891156
+  original_filename: October 2020 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
@@ -54,8 +65,15 @@ identification:
   session_printed: October 2020; October 2020
   notes:
   - '2026-09-14 wave 8: catalog said May 2020; cover prints October 2020'
+  - 'F11 consolidation (wave 15): the session question paper had been held at WMA13-01A (greedy-extraction dir name - the cover prints WMA13/01 with ''Afternoon'' as a separate sitting-time label, text-run forensics); the qp is merged into the -01 identity per the F11 ruling and the dir is now complete (qp+ms+er)'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: 'identification (F11 01A ruling + consolidation - wave 15): the WMA13-01 2020-10 question paper merged from the greedy-extraction WMA13-01A dir; identity WMA13/01 stands per cover text-run forensics'
+  decision: F11 consolidation ratified - qp merged into the -01 identity and the recorded identity, session and material stand
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED

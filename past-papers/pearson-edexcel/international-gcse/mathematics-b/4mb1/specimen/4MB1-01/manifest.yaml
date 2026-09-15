@@ -39,8 +39,15 @@ identification:
   session_printed: null
   notes:
   - SAM printed 'first teaching 2016' -> 4MB1/01
+  - 'specimen MS gap closed (wave 15): the mark scheme is not exposed by any scriptable source (PMT CDN + Paperlords archive probed 2026-09-15) - the qp-only specimen dir stands as an accepted, documented gap'
+operator_ratification:
+  status: ratified
+  decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
+  decided_at: '2026-09-15'
+  scope: identification (specimen; SAM cover prints 'first teaching 2016' -> 4MB1/01 per the specimen_first_teaching method; rank-3 class)
+  decision: attribution accepted by operator - the recorded specimen identity stands; the missing specimen mark scheme is closed as an accepted, documented gap (not exposed by any scriptable source - PMT CDN and Paperlords archive probed 2026-09-15; AUDIT s22)
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: AI-IDENTIFIED (operator ratification pending)
+  verification_status: OPERATOR-RATIFIED
