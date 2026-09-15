@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:information-technology:wit11:2023-06:WIT11/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: information-technology
+specification:
+  folder: wit11
+  title: Edexcel International Advanced Level Information Technology (WIT11)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May 2023
+  source: pdf_text
+paper:
+  official_reference: WIT11/01
+  unit_code: WIT11
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: ad00ce1610efc5aef5a5c60eec6417673022079deef3b9e4f73f95744c32c1fc
+  size_bytes: 954810
+  original_filename: IAL_IT_2023_MayJune_U1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/IT/MayJune%202023/IAL_IT_2023_MayJune_U1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: be9f1895d10fba372797a820f42d47249e5642461307ea5dfb7fe78d0a2e389d
+  size_bytes: 431767
+  original_filename: IAL_IT_2023_MayJune_U1_MS_1777874879755.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/IT/MayJune 2023/IAL_IT_2023_MayJune_U1_MS_1777874879755.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WIT11/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:accounting:wac11:2025-10:WAC11/01A
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: accounting
+specification:
+  folder: wac11
+  title: Edexcel International Advanced Level Accounting (WAC11)
+series:
+  normalized: 2025-10
+  year: '2025'
+  session_month: '10'
+  printed: October 2025
+  source: pdf_text
+paper:
+  official_reference: WAC11/01A
+  unit_code: WAC11
+  paper_number_variant: 01A
+variant:
+  official_code: A
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 1cc71a4b31fd4132828ffa1bbf5c7c82c1d14307c66f884d665eae3cf2f31503
+  size_bytes: 531578
+  original_filename: IAL_ACCOUNTING_2025_Oct_U1A_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Accounting/Oct%202025/IAL_ACCOUNTING_2025_Oct_U1A_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2024d0d17fa44b640551b8f8f75384ad7c02aa4c18a99d2a715d34869e8a9050
+  size_bytes: 282278
+  original_filename: IAL_ACCOUNTING_2025_Oct_U1A_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Accounting/Oct%202025/IAL_ACCOUNTING_2025_Oct_U1A_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WAC11/01A
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:business:wbs12:2026-06:WBS12/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: business
+specification:
+  folder: wbs12
+  title: Edexcel International Advanced Level Business (WBS12)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+  printed: May 2026
+  source: pdf_text
+paper:
+  official_reference: WBS12/01
+  unit_code: WBS12
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: e48c1ed2d2200f4b81099f390142d58a16bfd70d709b38de543e0575ba90baef
+  size_bytes: 317925
+  original_filename: IAL_BUSINESS_2026_June_U2_QP_1787722750603.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/June 2026/IAL_BUSINESS_2026_June_U2_QP_1787722750603.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: cb3cbedf5fcb756fe94535e075c01393a804ba6f92e6b50e02c30b329115b446
+  size_bytes: 243660
+  original_filename: IAL_BUSINESS_2026_June_U2_MS_1787722749444.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/June 2026/IAL_BUSINESS_2026_June_U2_MS_1787722749444.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBS12/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

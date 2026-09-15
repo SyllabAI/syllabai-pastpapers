@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:chemistry:wch15:2026-01:WCH15/01A
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: chemistry
+specification:
+  folder: wch15
+  title: Edexcel International Advanced Level Chemistry (WCH15)
+series:
+  normalized: 2026-01
+  year: '2026'
+  session_month: '01'
+  printed: January 2026
+  source: pdf_text
+paper:
+  official_reference: WCH15/01A
+  unit_code: WCH15
+  paper_number_variant: 01A
+variant:
+  official_code: A
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: ae7caabe26c45f2a57a2d05c4938343314e8245ccda17f1e2c7e3df9dad0d679
+  size_bytes: 1602880
+  original_filename: IAL_CHEMISTRY_2026_Jan_U5A_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Chemistry/Jan%202026/IAL_CHEMISTRY_2026_Jan_U5A_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: aedc4c0753a4b9819f44ed129ebdd78d0dc6c616c137649f01d52a27784e7d83
+  size_bytes: 785240
+  original_filename: IAL_CHEMISTRY_2026_Jan_U5A_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Chemistry/Jan%202026/IAL_CHEMISTRY_2026_Jan_U5A_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WCH15/01A
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

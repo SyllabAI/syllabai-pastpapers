@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi15:2026-01:WBI15/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi15
+  title: Edexcel International Advanced Level Biology (WBI15)
+series:
+  normalized: 2026-01
+  year: '2026'
+  session_month: '01'
+  printed: January 2026
+  source: pdf_text
+paper:
+  official_reference: WBI15/01
+  unit_code: WBI15
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 0bba086b9fa310cf408ec288155b9be8859e169a8a7cb6a025f3c31113160c61
+  size_bytes: 1147956
+  original_filename: IAL_BIOLOGY_2026_Jan_U5_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/Jan%202026/IAL_BIOLOGY_2026_Jan_U5_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 158ce44cc8cb698d1f4ec84756fcf7f5dcb97c964f26861b75d445ec46ad809e
+  size_bytes: 968273
+  original_filename: IAL_BIOLOGY_2026_Jan_U5_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/Jan%202026/IAL_BIOLOGY_2026_Jan_U5_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI15/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

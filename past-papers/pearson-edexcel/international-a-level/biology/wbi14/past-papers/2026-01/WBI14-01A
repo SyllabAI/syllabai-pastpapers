@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi14:2026-01:WBI14/01A
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi14
+  title: Edexcel International Advanced Level Biology (WBI14)
+series:
+  normalized: 2026-01
+  year: '2026'
+  session_month: '01'
+  printed: January 2026
+  source: pdf_text
+paper:
+  official_reference: WBI14/01A
+  unit_code: WBI14
+  paper_number_variant: 01A
+variant:
+  official_code: A
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 218d5e48e04ac2d9e883c1d907ec2c6d7ffe8cf58aa9c4453a80c4fc9a25bcd7
+  size_bytes: 1124284
+  original_filename: IAL_BIOLOGY_2026_Jan_U4A_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/Jan%202026/IAL_BIOLOGY_2026_Jan_U4A_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 21727920cb705396c6159561f8e9997a55b9b6f022ca088172ce5b3a9e255bf5
+  size_bytes: 395777
+  original_filename: IAL_BIOLOGY_2026_Jan_U4_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/Jan%202026/IAL_BIOLOGY_2026_Jan_U4_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)  [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI14/01A
+  stray_prints: []
+  notes:
+  - ' [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

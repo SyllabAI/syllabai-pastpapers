@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:business:wbs13:2025-10:WBS13/01A
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: business
+specification:
+  folder: wbs13
+  title: Edexcel International Advanced Level Business (WBS13)
+series:
+  normalized: 2025-10
+  year: '2025'
+  session_month: '10'
+  printed: October 2025
+  source: pdf_text
+paper:
+  official_reference: WBS13/01A
+  unit_code: WBS13
+  paper_number_variant: 01A
+variant:
+  official_code: A
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 582046f49753fff607febd12c9fd5c3beee69ad37a1d07773a95272e48600b8c
+  size_bytes: 400737
+  original_filename: IAL_IAL_BUSINESS_2025_Oct_U3A_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202025/IAL_IAL_BUSINESS_2025_Oct_U3A_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0027415e846ca4fae3971a99b22f67e3b53425a83830f112deafccbb7f9f8ba8
+  size_bytes: 282723
+  original_filename: IAL_IAL_BUSINESS_2025_Oct_U3A_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202025/IAL_IAL_BUSINESS_2025_Oct_U3A_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBS13/01A
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

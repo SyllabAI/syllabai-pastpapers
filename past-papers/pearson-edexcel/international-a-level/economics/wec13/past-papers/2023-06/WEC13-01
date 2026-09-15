@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec13:2023-06:WEC13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec13
+  title: Edexcel International Advanced Level Economics (WEC13)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: pdf_text
+paper:
+  official_reference: WEC13/01
+  unit_code: WEC13
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: b287e68e3aae81511efd5bc969f45a236ed9d540b3a5a61655e90f6268c6f8ff
+  size_bytes: 324996
+  original_filename: ECONOMICS_2023_June_U3_QP_1777813111964.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/June 2023/ECONOMICS_2023_June_U3_QP_1777813111964.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: fc23ede9ff283ca4ac7a79c97af2f5702b216a15d621d372cb65b1939272d9f5
+  size_bytes: 388725
+  original_filename: ECONOMICS_2023_June_U3_MS_1777813110917.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/June 2023/ECONOMICS_2023_June_U3_MS_1777813110917.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 5319ce850d3c95d2619fb0a4155fdc4d186f299d5fc8fd003eedca1409a92e3b
+  size_bytes: 6785600
+  original_filename: ECONOMICS_2023_June_U3_ER_1777813109840.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/June 2023/ECONOMICS_2023_June_U3_ER_1777813109840.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WEC13/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

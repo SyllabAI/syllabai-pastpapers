@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-a-level:business:wbs11:2020-10:WBS11/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: business
+specification:
+  folder: wbs11
+  title: Edexcel International Advanced Level Business (WBS11)
+series:
+  normalized: 2020-10
+  year: '2020'
+  session_month: '10'
+  printed: May 2020
+  source: date_rule
+paper:
+  official_reference: WBS11/01
+  unit_code: WBS11
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 1fd35244eb031d1c32c4808c8bbb9817125b9483b696e9816afd91a3c1c4c046
+  size_bytes: 459935
+  original_filename: IAL_IAL_BUSINESS_2020_Oct_U1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202020/IAL_IAL_BUSINESS_2020_Oct_U1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) prints June 2020; sat in October-2020 window (COVID reuse precedent)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f8e35873882038326cd6a6b19ea0edb457b8ec48922454a782a9a864ef84da6a
+  size_bytes: 238980
+  original_filename: IAL_IAL_BUSINESS_2020_Oct_U1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202020/IAL_IAL_BUSINESS_2020_Oct_U1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 2
+  printed_references_seen:
+  - WBS11/01
+  stray_prints: []
+  notes:
+  - prints June 2020; sat in October-2020 window (COVID reuse precedent) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

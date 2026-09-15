@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:international-a-level:economics:wec13:2020-01:WEC13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: economics
+specification:
+  folder: wec13
+  title: Edexcel International Advanced Level Economics (WEC13)
+series:
+  normalized: 2020-01
+  year: '2020'
+  session_month: '01'
+  printed: January 2020
+  source: pdf_text
+paper:
+  official_reference: WEC13/01
+  unit_code: WEC13
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 1ca0b7dad961cd6c14efb9a894dfe04b66eae35d5002b9188c834c29c189185c
+  size_bytes: 629080
+  original_filename: IAL_ECONOMICS_2020_Jan_U3_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202020/IAL_ECONOMICS_2020_Jan_U3_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)  [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 4bf303ac2ceb3ebc95af9736b7959d007f260ae638e4d340a3dc494cb63d1ba6
+  size_bytes: 430729
+  original_filename: IAL_ECONOMICS_2020_Jan_U3_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202020/IAL_ECONOMICS_2020_Jan_U3_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WEC13/01
+  stray_prints: []
+  notes:
+  - ' [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

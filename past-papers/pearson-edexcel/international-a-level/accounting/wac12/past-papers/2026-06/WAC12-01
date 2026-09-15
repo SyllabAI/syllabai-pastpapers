@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:accounting:wac12:2026-06:WAC12/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: accounting
+specification:
+  folder: wac12
+  title: Edexcel International Advanced Level Accounting (WAC12)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+  printed: May 2026
+  source: pdf_text
+paper:
+  official_reference: WAC12/01
+  unit_code: WAC12
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 26dae2b5f0cd5e8a2980247679871fb9ee22f0697325635b7fbd3bf3a50ce51e
+  size_bytes: 491702
+  original_filename: IAL_ACCOUNTING_2026_June_U2_QP_1787722237888.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Accounting/June 2026/IAL_ACCOUNTING_2026_June_U2_QP_1787722237888.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3eda852b47e71b9454c68014cc3140b6a7ccba165ebdfae1ef92c4d5e0e2213b
+  size_bytes: 670736
+  original_filename: IAL_ACCOUNTING_2026_June_U2_MS_1787722236709.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Accounting/June 2026/IAL_ACCOUNTING_2026_June_U2_MS_1787722236709.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WAC12/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-a-level:business:wbs14:2023-06:WBS14/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: business
+specification:
+  folder: wbs14
+  title: Edexcel International Advanced Level Business (WBS14)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: pdf_text
+paper:
+  official_reference: WBS14/01
+  unit_code: WBS14
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 87e43f1e92d988a9da40ace9983434dcd0b516bec52226d630b3a41abc5126d5
+  size_bytes: 300419
+  original_filename: IAL_BUSINESS_2023_MayJune_U4_QP_1777813835370.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U4_QP_1777813835370.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2c306027bd27a993a23a8a7f0fdf80e81ecb99a1ec45f0aa9b46ebbc40d1458f
+  size_bytes: 300931
+  original_filename: IAL_BUSINESS_2023_MayJune_U4_MS_1777813833735.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U4_MS_1777813833735.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 83520c0e1e0c3887e55c3715b57d1801880b3512c2ccc25889391fbb21998dae
+  size_bytes: 5299636
+  original_filename: IAL_BUSINESS_2023_MayJune_U4_ER_1777813831212.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/MayJune 2023/IAL_BUSINESS_2023_MayJune_U4_ER_1777813831212.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBS14/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

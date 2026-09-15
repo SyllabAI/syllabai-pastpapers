@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:business:wbs14:2024-10:WBS14/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: business
+specification:
+  folder: wbs14
+  title: Edexcel International Advanced Level Business (WBS14)
+series:
+  normalized: 2024-10
+  year: '2024'
+  session_month: '10'
+  printed: October 2024
+  source: pdf_text
+paper:
+  official_reference: WBS14/01
+  unit_code: WBS14
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: dc6f738a8c037a527006b2961085208ee023a01149d90a3b747bb22f0af888bb
+  size_bytes: 309006
+  original_filename: IAL_BUSINESS_2024_Oct_U4_QP_1777813584564.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct 2024/IAL_BUSINESS_2024_Oct_U4_QP_1777813584564.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2e1e73d3c01dcb92ac8103d8f08773399ff0c3fe4ae118c294020415644ce99e
+  size_bytes: 371634
+  original_filename: IAL_IAL_BUSINESS_2024_Oct_U4_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202024/IAL_IAL_BUSINESS_2024_Oct_U4_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBS14/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED
