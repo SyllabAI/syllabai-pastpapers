@@ -1,0 +1,66 @@
+paper_id: cambridge-international:igcse:mathematics:0580:2017-11:0580/23
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: mathematics
+specification:
+  folder: '0580'
+  title: Cambridge IGCSE Mathematics (0580)
+series:
+  normalized: 2017-11
+  year: '2017'
+  session_month: '11'
+  printed: October/November 2017
+  source: pdf+filename
+paper:
+  official_reference: 0580/23
+  unit_code: '0580'
+  paper_number: '2'
+  paper_number_variant: '23'
+variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 543e98e83177615c40ea255191dbed5c6dd86b353b95e1df00c02d52c0b3a0f1
+  size_bytes: 361039
+  original_filename: 0580_w17_qp_23.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (papers.xtremepape.rs) CAIE archive
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Mathematics (0580)/0580_w17_qp_23.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance; pastpapers.co serves this file as an empty 200 response; XtremePapers used as fallback source
+- type: mark-scheme
+  path: ms.pdf
+  sha256: bd2b22d8cf914dd0d921a5721a66aea09bed71862ed865a8443da83e33719c06
+  size_bytes: 228761
+  original_filename: 0580_w17_ms_23.pdf
+  pages: 5
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/mathematics-0580/2017/2017-nov/0580_w17_ms_23.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0580/23
+  stray_prints: []
+  session_printed: October/November 2017
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+  - mixed-source dir: materials recovered from different third-party archives (see per-material source blocks).
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section) + XtremePapers CAIE section
+  verification_status: AI-IDENTIFIED

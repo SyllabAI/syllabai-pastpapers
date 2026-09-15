@@ -1,0 +1,65 @@
+paper_id: cambridge-international:igcse:mathematics:0580:2020-06:0580/21
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: mathematics
+specification:
+  folder: '0580'
+  title: Cambridge IGCSE Mathematics (0580)
+series:
+  normalized: 2020-06
+  year: '2020'
+  session_month: '06'
+  printed: May/June 2020
+  source: pdf+filename
+paper:
+  official_reference: 0580/21
+  unit_code: '0580'
+  paper_number: '2'
+  paper_number_variant: '21'
+variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 68b54038baf6fb81071b35c45e8944454131f7aa88ff2d47f815938e344081c3
+  size_bytes: 2326007
+  original_filename: 0580_s20_qp_21.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/mathematics-0580/2020-may-june/0580_s20_qp_21.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 42e6f7525aeeb2f9b8e7eb51b575888e9d7fd5d895a6d030c061b4e9bf68cbf2
+  size_bytes: 317485
+  original_filename: 0580_s20_ms_21.pdf
+  pages: 7
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/caie/igcse/mathematics-0580/2020-may-june/0580_s20_ms_21.pdf
+    collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
+      + printed code/session checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0580/21
+  stray_prints: []
+  session_printed: May/June 2020
+  notes:
+  - '2026-09-13 Cambridge wave 2: sessions 2016-2020 added per operator direction; source listings crawled server-rendered from pastpapers.co session pages; every material print-checked for syllabus code and session before acceptance.'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-13'
+  source_repo: pastpapers.co (CIE section)
+  verification_status: AI-IDENTIFIED
