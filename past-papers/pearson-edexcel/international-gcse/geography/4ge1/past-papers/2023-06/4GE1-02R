@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:geography:4ge1:2023-06:4GE1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: geography
+specification:
+  folder: 4ge1
+  title: Edexcel International GCSE Geography (4GE1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: June 2023
+  source: pdf_text
+paper:
+  official_reference: 4GE1/02R
+  unit_code: 4GE1
+  paper_number_variant: 02R
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: eb5a4766aa332d9b56fec07fd34c07d49ef5f1bb7f89dcac9430c0e08c9a2f6f
+  size_bytes: 6986578
+  original_filename: P2R_QP_1777449446800.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Geography/MayJune 2023/P2R_QP_1777449446800.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: fa106df90d0613b2103e768bec66e396cce02f8b788d8a7d15c421de88aa86d2
+  size_bytes: 942492
+  original_filename: P2R_MS_1777449445943.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Geography/MayJune 2023/P2R_MS_1777449445943.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 902c18eb68275629d2dc1fc51757f268b059bea236df1b7415e6f742378399ba
+  size_bytes: 8205462
+  original_filename: P2R_ER_1777449444365.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Geography/MayJune 2023/P2R_ER_1777449444365.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4GE1/02R
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

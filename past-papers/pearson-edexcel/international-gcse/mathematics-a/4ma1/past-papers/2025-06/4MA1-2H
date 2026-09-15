@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2025-06:4MA1/2H
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: June 2025
+  source: pdf_text
+paper:
+  official_reference: 4MA1/2H
+  unit_code: 4MA1
+  paper_number_variant: 2H
+variant:
+  official_code: H
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 73abf37749e48833e21e25fcf5fc4cf4a4a3b22bceb506606a500143e7276d24
+  size_bytes: 1254888
+  original_filename: Paper_2H_QP_1777739713232.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Mathematics A/June 2025/Paper_2H_QP_1777739713232.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 92947a4c1d0219ec84973ad7f88d28ddd864a038b5c8c030b04cc75b126c5f22
+  size_bytes: 654990
+  original_filename: Paper_2H_MS_1777739712232.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Mathematics A/June 2025/Paper_2H_MS_1777739712232.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1/2H
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

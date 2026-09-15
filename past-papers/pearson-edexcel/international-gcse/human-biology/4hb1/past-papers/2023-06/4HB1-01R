@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:human-biology:4hb1:2023-06:4HB1/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: human-biology
+specification:
+  folder: 4hb1
+  title: Edexcel International GCSE Human Biology (4HB1)
+series:
+  normalized: 2023-06
+  year: '2023'
+  session_month: '06'
+  printed: May 2023
+  source: pdf_text
+paper:
+  official_reference: 4HB1/01R
+  unit_code: 4HB1
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: a1c97728e62797c3d40cc81c3f8065ee176a5316bc1f531c79780c5c6eda4a69
+  size_bytes: 540698
+  original_filename: IGCSE_HUMAN_BIOLOGY_2023_May_P1R_QP_1777804412645.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human Biology/May 2023/IGCSE_HUMAN_BIOLOGY_2023_May_P1R_QP_1777804412645.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: cb3fb1fb84d1cc4f4ba9c877f161b0f75aa003bba2a5737049755b19bc57f01f
+  size_bytes: 275295
+  original_filename: IGCSE_HUMAN_BIOLOGY_2023_May_P1R_MS_1777804297694.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human Biology/May 2023/IGCSE_HUMAN_BIOLOGY_2023_May_P1R_MS_1777804297694.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: c34c0373561f8e4a0546871676e580ec740acf0a81891d9bb5c391b8893e3073
+  size_bytes: 4808972
+  original_filename: IGCSE_HUMAN_BIOLOGY_2023_May_P1R_PEF_1777804298509.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human Biology/May 2023/IGCSE_HUMAN_BIOLOGY_2023_May_P1R_PEF_1777804298509.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4HB1/01R
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

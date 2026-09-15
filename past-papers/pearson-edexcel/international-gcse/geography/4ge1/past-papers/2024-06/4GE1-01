@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:geography:4ge1:2024-06:4GE1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: geography
+specification:
+  folder: 4ge1
+  title: Edexcel International GCSE Geography (4GE1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: May 2024
+  source: pdf_text
+paper:
+  official_reference: 4GE1/01
+  unit_code: 4GE1
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: a1d63a7b27a0207ab47cca50c041d5fcf9ee660becd67eb6758d6b628e201995
+  size_bytes: 7438293
+  original_filename: P1_QP_1777449452181.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Geography/MayJune 2024/P1_QP_1777449452181.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1f9ff0e92b253fdee3148ce0dd9f8d2094308c11ef710062be9100cfbb9f82d0
+  size_bytes: 389528
+  original_filename: P1_MS_1777449451450.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Geography/MayJune 2024/P1_MS_1777449451450.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4GE1/01
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

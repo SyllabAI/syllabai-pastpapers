@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-gcse:geography:4wge2:2025-06:4WGE2/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: geography
+specification:
+  folder: 4wge2
+  title: Edexcel International GCSE Geography (4WGE2)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: June 2025
+  source: pdf_text
+paper:
+  official_reference: 4WGE2/01R
+  unit_code: 4WGE2
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 9832e13e893aa2a4c19db5f88a67502b6a738f4a6fef2bde1151c13c0d0c3de6
+  size_bytes: 7868933
+  original_filename: Paper_2_R_(Modular)_QP_1777449476508.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Geography/MayJune 2025/Paper_2_R_(Modular)_QP_1777449476508.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1319cf1a7c5562ef9f12597b13bfbb761b7aca422cf898fc06708d8d05787967
+  size_bytes: 621671
+  original_filename: Paper_2_R_(Modular)_MS_1777449475704.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://pub-a2eda39105f54cdd94f4f22e236ea1df.r2.dev/library/IGCSE/Geography/MayJune 2025/Paper_2_R_(Modular)_MS_1777449475704.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4WGE2/01R
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

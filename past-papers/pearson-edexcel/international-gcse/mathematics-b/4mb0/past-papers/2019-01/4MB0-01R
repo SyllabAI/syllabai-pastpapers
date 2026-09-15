@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-b:4mb0:2019-01:4MB0/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-b
+specification:
+  folder: 4mb0
+  title: Edexcel International GCSE Mathematics B (4MB0)
+series:
+  normalized: 2019-01
+  year: '2019'
+  session_month: '01'
+  printed: January 2019
+  source: pdf_text
+paper:
+  official_reference: 4MB0/01R
+  unit_code: 4MB0
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: fa15b269fc39bd4052e0d8777295363f650868f195e15a5d9f3d97d25c7da94e
+  size_bytes: 970558
+  original_filename: IGCSE_MATHEMATICS_B_2019_Jan_P1R_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Mathematics%20B/Jan%202019/IGCSE_MATHEMATICS_B_2019_Jan_P1R_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MB0/01R
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED

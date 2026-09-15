@@ -1,0 +1,64 @@
+paper_id: pearson-edexcel:international-gcse:ict:4it1:2020-06:4IT1/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: ict
+specification:
+  folder: 4it1
+  title: Edexcel International GCSE ICT (4IT1)
+series:
+  normalized: 2020-06
+  year: '2020'
+  session_month: '06'
+  printed: May 2020
+  source: pdf_text
+paper:
+  official_reference: 4IT1/01
+  unit_code: 4IT1
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 3e016d194d8addb1d0fd825d2b54392c3d11995dae5c5da90291dc3ad881d3f9
+  size_bytes: 690237
+  original_filename: IGCSE_ICT_2020_MayJune_P1_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune%202020/IGCSE_ICT_2020_MayJune_P1_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: baaad86952f37c230643eab446665e40f073aef43199026263666d5b3f6017e5
+  size_bytes: 270393
+  original_filename: IGCSE_ICT_2020_MayJune_P1_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune%202020/IGCSE_ICT_2020_MayJune_P1_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
+identification:
+  methods:
+  - pdf_text
+  - date_rule
+  confidence_rank: 2
+  printed_references_seen:
+  - 4IT1/01
+  stray_prints: []
+  notes:
+  - MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing) session resolved by the COVID-2020 date rules (June/November or June/October print reuse precedents, ratified 2026-09-13)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED
