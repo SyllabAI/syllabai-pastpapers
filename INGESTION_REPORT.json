@@ -1937,5 +1937,73 @@
   "ledger_rows": 979,
   "pearson_complete_regular_pairs": "2,606/2,840",
   "cambridge": "2,259/2,259 (100%)"
+ },
+ "wave15_wave8_ratification_2026_09_15": {
+  "date": "2026-09-15",
+  "commit": "41ff49bc6a",
+  "queue_reconciliation": "175 measured at wave 14 -> 6 dual-flagged members already ratified with the wave-9 s17 closeout -> 169 live",
+  "ratified": 169,
+  "classes": {
+   "s16 rank-3 image-only Paperlords placements": 168,
+   "rank-0 4ET1-02R (unreadable ER cover)": 1
+  },
+  "effect": "operator_ratification blocks added; ingestion blocks CREATED with verification_status OPERATOR-RATIFIED (wave-8 manifests predate the block); pending note suffixes dropped; confidence ranks unchanged"
+ },
+ "wave15_f11_rulings_2026_09_15": {
+  "date": "2026-09-15",
+  "commit": "25b1cfc300",
+  "forensics": "cover text-run analysis over all 143 -01A dirs (pypdf runs + pdftotext fallback for 3 xref-broken WEC12 files)",
+  "genuine_01A": {
+   "count": 122,
+   "sessions": "2025-06..2026-06",
+   "evidence": "reference box prints e.g. ' WAC11/01A' as an independent run; WCH16/01A 2026-01 prints Morning (variant not afternoon-bound)"
+  },
+  "artifacts": {
+   "count": 21,
+   "sessions": "2019-06..2021-01",
+   "evidence": "cover prints '01' + separate 'Afternoon (Time: ...)' sitting-time label (greedy-extraction class confirmed)"
+  },
+  "treatment": {
+   "quarantined": 18,
+   "quarantine_detail": "byte-distinct duplicate generations of the -01 sibling's paper (17 document-identical same-P-code + WMA14-01 2020-10 cover-date revision, P65759A, 31/32 pages); F24 REASON records with both sha256s",
+   "merged": [
+    "WMA13-01A 2020-10 qp -> WMA13-01 (dir now complete qp+ms+er)",
+    "WST02-01A 2020-10 qp -> WST02-01 (dir now complete qp+ms+er)"
+   ],
+   "renamed": [
+    "WST01-01A 2020-06 -> WST01-01 (no sibling; printed reference WST01/01)"
+   ],
+   "ratified_genuine": [
+    "WPH11-01A 2025-10",
+    "WPH11-01A 2026-01"
+   ]
+  },
+  "quarantine_delta": "+18 artifacts / +18 REASON records (F24: both sha256s each)",
+  "ledger_delta": "WMA13/01 + WST02/01 2020-10 qp na:sme-content-dup -> normalized (979 rows = 666 normalized / 179 planned / 134 na)"
+ },
+ "wave15_hygiene_specimen_2026_09_15": {
+  "date": "2026-09-15",
+  "legacy_reason_records": "2 wave-10 double-extension <name>.pdf.REASON.txt records renamed to canonical <stem>.REASON.txt + sha256/kept_alternative_sha256/operator_ratification backfill (F24 complete; double-extension naming extinct)",
+  "specimen_4MB1_01": "identity ratified (SAM 'first teaching 2016' -> 4MB1/01); specimen MS not exposed by any scriptable source (PMT CDN + Paperlords archive probed) - closed as accepted, documented gap"
+ },
+ "corpus_after_wave15_2026_09_15": {
+  "held_pdfs": 10164,
+  "qp": 5038,
+  "ms": 4989,
+  "er": 117,
+  "insert": 20,
+  "paper_dirs": {
+   "regular": 5076,
+   "specimen": 42,
+   "manifests": 5118
+  },
+  "quarantine": {
+   "artifacts": 341,
+   "reason_records": 341
+  },
+  "genuine_01A_dirs": 122,
+  "ledger_rows": 979,
+  "pearson_complete_regular_pairs": "2,610/2,817",
+  "cambridge": "2,259/2,259 (100%)"
  }
 }

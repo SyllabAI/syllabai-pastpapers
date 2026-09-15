@@ -783,3 +783,26 @@ Operator direction: full-folder audit, then *"Okay, proceed"* on the fix batch.
 - **Ledger:** 978 -> 979 rows (+WPH13/1 ms na:stray-duplicate-dir with resolution pointer).
 - **Corpus after wave 14:** 10,182 held PDFs (5,056 qp / 4,989 ms / 117 er / 20 insert);
   5,138 paper dirs/manifests; quarantine 323+323.
+
+## Wave 15 — wave-8 ratification closeout + F11 01A rulings (2026-09-15)
+
+Operator direction: proceed with the wave-8 ratification queue (175) + F11 01A rulings + specimen
+4MB1-01 MS + 2 legacy REASON records.
+
+- **Ratification (commit 41ff49bc6a):** 169 wave-8 subject-expansion manifests upgraded to
+  `OPERATOR-RATIFIED` with operator_ratification blocks (175 measured at wave 14 minus 6 dual-flagged
+  members already ratified with the wave-9 s17 closeout). 168 s16 rank-3 image-only Paperlords
+  placements + 1 rank-0 (4ET1-02R). Ingestion blocks created (wave-8 manifests predate the block).
+- **F11 (commit 25b1cfc300):** cover text-run forensics over all 143 `-01A` dirs - 122 genuine 01A
+  variant papers (2025-06 onward; kept, 2 ratified), 21 greedy-extraction artifacts (`01` + separate
+  'Afternoon' label). 18 duplicate-generation dirs quarantined (F24, both sha256s; 17 document-identical
+  + WMA14-01 2020-10 cover-date revision, same P-code), 2 qps merged (WMA13-01/WST02-01 2020-10 now
+  complete), 1 rename (WST01-01A -> WST01-01 2020-06).
+- **Specimen 4MB1-01:** ratified; specimen MS not exposed by any scriptable source - closed as an
+  accepted, documented gap.
+- **REASON hygiene:** 2 wave-10 double-extension records renamed to canonical `<stem>.REASON.txt` +
+  sha256/kept_alternative_sha256 backfill (F24).
+- **Ledger:** WMA13/01 + WST02/01 2020-10 qp `na:sme-content-dup` -> normalized (the SME-rejected
+  content-duplicates were the 01A-held generations, now merged). 979 rows = 666/179/134.
+- **Corpus after wave 15:** 10,164 held PDFs (5,038 qp / 4,989 ms / 117 er / 20 insert); 5,118 paper
+  dirs/manifests; quarantine 341+341; 122 verified-genuine `-01A` dirs.

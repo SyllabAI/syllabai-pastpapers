@@ -1188,3 +1188,21 @@ removed the 4 stray `-1` dirs. F12 closed: 4PM1-2R and 4CP0-01C duplicate genera
 references. Ledger 978 -> 979 rows. Corpus after wave 14: **10,182 held PDFs / 5,138 paper dirs**;
 quarantine 323+323. Remaining ratification backlog: the wave-8 subject-expansion queue (175
 manifests, precisely enumerated).
+
+## 39. Wave 15 (2026-09-15)
+
+The wave-8 subject-expansion ratification queue closed (commit `41ff49bc6a`): 169 manifests ratified
+with `operator_ratification` blocks and created ingestion blocks (`OPERATOR-RATIFIED`) - the 175
+measured at wave 14 minus 6 dual-flagged members already ratified with the wave-9 closeout; 168 are the
+s16 rank-3 image-only Paperlords placements. F11 resolved (commit `25b1cfc300`): cover text-run
+forensics over all 143 `-01A` dirs split them into **122 genuine 01A variant papers** (2025-06 onward,
+reference box prints 01A as an independent run) and **21 greedy-extraction artifacts** (2019-2021 covers
+printing `01` + a separate `Afternoon` label); 18 duplicate-generation dirs quarantined (F24, both
+sha256s), 2 qps merged into their er+ms `-01` dirs (WMA13-01/WST02-01 2020-10 now complete), WST01-01A
+renamed to WST01-01 2020-06. Specimen 4MB1-01 ratified with its missing MS closed as an accepted,
+documented gap; the 2 wave-10 double-extension REASON records renamed to the canonical naming with
+sha256 backfill. Ledger: the two 2020-10 qp rows the wave-3 SME pass had marked `na:sme-content-dup`
+resolved normalized (they were the 01A-held generations). Corpus after wave 15: **10,164 held PDFs /
+5,118 paper dirs**; quarantine 341+341; ledger 979 rows (666/179/134). Ratification queues are now
+empty; remaining backlog is metadata normalization (legacy status strings on 3,404 Cambridge + 41
+specimen manifests, specification.yaml 48/102).
