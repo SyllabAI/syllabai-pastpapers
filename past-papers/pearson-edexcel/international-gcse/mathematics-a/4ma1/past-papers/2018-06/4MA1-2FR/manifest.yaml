@@ -1,4 +1,4 @@
-paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2021-06:4MA1/1F
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2018-06:4MA1/2FR
 exam_board:
   id: pearson-edexcel
   name: Pearson Edexcel
@@ -10,25 +10,25 @@ specification:
   folder: 4ma1
   title: Edexcel International GCSE Mathematics A (4MA1)
 series:
-  normalized: 2021-06
-  year: '2021'
+  normalized: 2018-06
+  year: '2018'
   session_month: '06'
-  printed: June 2021
+  printed: June 2018
   source: filename
 paper:
-  official_reference: 4MA1/1F
+  official_reference: 4MA1/2FR
   unit_code: 4MA1
-  paper_number_variant: 1F
+  paper_number_variant: 2FR
 variant:
-  official_code: F
-  type: null
-  note: null
+  official_code: R
+  type: regional
+  note: F tier + regional variant
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: a39451bc12af145c6db7135a3bd29ac32c64c1658cc2cd58a4964a214b40a3e8
-  size_bytes: 404375
-  original_filename: June 2021 MS.pdf
+  sha256: 5173fff02c1736923cb0f6ed474567faef1d0a61f8609d5c774e4802969c0015
+  size_bytes: 301757
+  original_filename: June 2018 (R) MS.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
@@ -37,9 +37,9 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 647e407f6a39694852f67f4f9ad4302d024b5fc75a5f14e0ae01d9062e278f6d
-  size_bytes: 1005618
-  original_filename: June 2021 QP.pdf
+  sha256: 0ab63c8083c1b75e2a44d7d52dd487742613948fc202d456ef1d2c2ef1decb79
+  size_bytes: 188023
+  original_filename: June 2018 (R) QP.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
@@ -52,9 +52,9 @@ identification:
   confidence_rank: 0
   printed_references_seen:
   - 4MA1
-  - 4MA1/1F
+  - 4MA1/2FR
   stray_prints: []
-  session_printed: June 2021
+  session_printed: June 2018
   notes: []
 ingestion:
   agent: SyllabAI ingestion agent
