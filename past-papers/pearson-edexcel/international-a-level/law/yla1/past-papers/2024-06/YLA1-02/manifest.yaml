@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:international-a-level:law:yla1:2024-06:YLA1/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: law
+specification:
+  folder: yla1
+  title: Edexcel International Advanced Level Law (YLA1)
+series:
+  normalized: 2024-06
+  year: '2024'
+  session_month: '06'
+  printed: June 2024
+  source: pdf_text
+paper:
+  official_reference: YLA1/02
+  unit_code: YLA1
+  paper_number_variant: '02'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 26652d9420a5acf63ec4617a6bfa7059a4052aa05a730a9f9084673ee7a5e8e6
+  size_bytes: 530910
+  original_filename: IAL_LAW_2024_MayJune_U2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Law/MayJune%202024/IAL_LAW_2024_MayJune_U2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 728ab730b7920a41e37c1e5983826d1034f41429792f15f5927bfe0162e663c0
+  size_bytes: 906712
+  original_filename: IAL_LAW_2024_MayJune_U2_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Law/MayJune%202024/IAL_LAW_2024_MayJune_U2_MS.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - YLA1/02
+  stray_prints: []
+  notes: print-verified from cover (rank 0)
+ingestion:
+  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
+  run_date: '2026-09-15'
+  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
+  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  verification_status: AI-IDENTIFIED
