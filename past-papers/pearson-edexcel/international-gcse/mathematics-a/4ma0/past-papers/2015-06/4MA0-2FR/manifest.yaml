@@ -1,4 +1,4 @@
-paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2018-06:4MA1/2FR
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma0:2015-06:4MA0/2FR
 exam_board:
   id: pearson-edexcel
   name: Pearson Edexcel
@@ -7,17 +7,17 @@ qualification:
   name: International GCSE
 subject: mathematics-a
 specification:
-  folder: 4ma1
-  title: Edexcel International GCSE Mathematics A (4MA1)
+  folder: 4ma0
+  title: Edexcel International GCSE Mathematics A (4MA0)
 series:
-  normalized: 2018-06
-  year: '2018'
+  normalized: 2015-06
+  year: '2015'
   session_month: '06'
-  printed: June 2018
+  printed: June 2015
   source: filename
 paper:
-  official_reference: 4MA1/2FR
-  unit_code: 4MA1
+  official_reference: 4MA0/2FR
+  unit_code: 4MA0
   paper_number_variant: 2FR
 variant:
   official_code: R
@@ -26,9 +26,9 @@ variant:
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: 5173fff02c1736923cb0f6ed474567faef1d0a61f8609d5c774e4802969c0015
-  size_bytes: 301757
-  original_filename: June 2018 (R) MS.pdf
+  sha256: ee85d25990232c94a2a4c48d3d5f1ace6689560dde275c85a98d76a091432460
+  size_bytes: 387033
+  original_filename: June 2015 (R) MS.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
@@ -37,25 +37,26 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 0ab63c8083c1b75e2a44d7d52dd487742613948fc202d456ef1d2c2ef1decb79
-  size_bytes: 188023
-  original_filename: June 2018 (R) QP.pdf
+  sha256: 9cfe0b81a0851c920e8a6c969cd2eebd667586780fd31ca011bba930937c63e8
+  size_bytes: 276470
+  original_filename: June 2015 (R) QP.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
+    source_url: Maths/GCSE/Past-Papers/Edexcel-IGCSE-A/Paper-2F/QP/June 2015 (R) QP.pdf
+    collected_by: SyllabAI agent (2026-09-12 file-gap wave; operator-approved - PMT listing
+      pages 403 the agent, page discovery via rendered page reader, files fetched direct from PMT CDN)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 identification:
   methods:
   - pdf_text
-  confidence_rank: 0
+  confidence_rank: 2
   printed_references_seen:
-  - 4MA1
-  - 4MA1/2FR
+  - 4MA0
   stray_prints: []
-  session_printed: June 2018
-  notes: []
+  session_printed: June 2015
+  notes:
+  - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: scan+dir+filename; session evidence: no-session-evidence (None); sha256 9cfe0b81a0851c92...'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
