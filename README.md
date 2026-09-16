@@ -1220,3 +1220,25 @@ shifted their status cells; histogram is exactly 666/179/134 as documented) and 
 manifest's stale "operator ratification requested" note suffix dropped. REASON records: 285/341 carry
 sha256 (100% of F24-governed classes); the 56 pre-F24 legacy records are a backfill candidate.
 Ratification queues remain empty; backlog is metadata normalization only.
+
+## 41. Wave 17 — metadata normalization (2026-09-15)
+
+The migration-era metadata backlog is closed. 3,378 legacy status strings normalized
+(`AI-IDENTIFIED (operator ratification pending)` -> `AI-IDENTIFIED`; no pending requests exist),
+201 wave-10/11 manifests gained the missing `verification_status` field, 1,286 migration-era manifests
+(380 Cambridge + 906 Pearson) received created ingestion blocks, the 54 missing `specification.yaml`
+files were generated from corpus data (coverage 48/102 -> 102/102), and the 56 pre-F24 quarantine
+REASON records received their artifact sha256 (F24 coverage 341/341). Status census after: 4,865
+AI-IDENTIFIED + 253 OPERATOR-RATIFIED = 5,118 manifests; the pending-status string is extinct.
+
+One incident, fully repaired in-wave: the status/ingestion commits briefly flattened 4,865 paper-dir
+subtrees (manifests were staged at dir paths instead of `<dir>/manifest.yaml`), dropping 14,530 paths
+from the tree. Detected by the post-commit verification (raw-CDN cross-check), repaired at the
+object level with zero content re-uploads — normalized manifests re-landed at their correct paths and
+every PDF re-attached with its original blob sha, verified by a full-tree sha ledger against the
+wave-16 snapshot (0 missing paths, 0 sha mismatches on all 16,092 blobs at HEAD `1011ffa6e0`; the
+repair chain landed as 97 commits of 200 tree entries each, resumed live across two external commits
+that were preserved intact). A GitHub partially-degraded-service incident (502/504 on the git objects
+API) interrupted the first repair attempts, and 1,000-entry chunk POSTs still exceeded the API
+gateway's ~10 s tree-apply window after recovery; 200-entry chunks land reliably and the resume-aware
+repair completed.

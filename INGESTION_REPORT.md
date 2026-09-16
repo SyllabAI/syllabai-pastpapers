@@ -824,3 +824,19 @@ sha256 (100% of the F24-governed classes); 56 pre-F24 migration-era records (`no
 35, `unresolved-identity/` 21) remain a documented backfill candidate. Ratification queues remain
 empty; the open backlog is metadata normalization only (legacy status strings on 3,378 manifests,
 ingestion blocks missing on 1,286 of the same generations, specification.yaml 48/102).
+
+## Wave 17 — metadata normalization (2026-09-15)
+
+Migration-era metadata backlog closed: 3,378 legacy status strings normalized to `AI-IDENTIFIED`, 201
+wave-10/11 manifests gained the missing `verification_status` field, 1,286 migration-era manifests
+received created ingestion blocks, 54 `specification.yaml` files added (coverage 102/102), and 56
+pre-F24 REASON records received artifact sha256 (F24 coverage 341/341). Status census: 4,865
+AI-IDENTIFIED + 253 OPERATOR-RATIFIED = 5,118. One self-inflicted incident (status/ingestion commits
+flattened 4,865 paper-dir subtrees by staging manifests at dir paths; 14,530 paths dropped) was
+detected by the post-commit verification and repaired at the object level with zero content
+re-uploads; a concurrent GitHub partially-degraded-service incident interrupted the first repair
+attempts, and 1,000-entry chunk POSTs still exceeded the API gateway's ~10 s tree-apply window after
+recovery, so the resume-aware repair landed as 97 commits of 200 tree entries each (resumed live
+across two external commits, preserved intact). Full-tree sha-ledger verification at HEAD
+`1011ffa6e0` against the wave-16 snapshot confirms: every pre-wave path present, PDFs byte-identical,
+manifests exactly the normalized content — 0 missing paths, 0 sha mismatches on all 16,092 blobs.
