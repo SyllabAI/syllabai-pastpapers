@@ -1,0 +1,4817 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 12,
+ "totalMarks": 110,
+ "marksVerified": false,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "Answer ALL questions."
+    },
+    {
+     "type": "para",
+     "md": "Some questions must be answered with a cross in a box . If you change your mind about an"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "and then mark your new answer with a cross ."
+    },
+    {
+     "type": "para",
+     "md": "answer, put a line through the box"
+    },
+    {
+     "type": "para",
+     "md": "1 This question is about atomic structure."
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table shows the number of protons, neutrons and electrons in five species,"
+      },
+      {
+       "type": "para",
+       "md": "V, W, X, Y and Z."
+      },
+      {
+       "type": "para",
+       "md": "The letters represent the species but are not symbols from the Periodic Table."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Choose letters from the table to answer these questions."
+      },
+      {
+       "type": "para",
+       "md": "Each letter may be used once, more than once or not at all."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which species is an atom?"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which species is an ion with a positive charge?"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which species is an ion with a 3− charge?"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what is meant by the term atomic number."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "1b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what is meant by the term mass number."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 7,
+     "sum": 7,
+     "verified": true
+    },
+    "guidance": [
+     "A description that refers to the following two points",
+     "Ignore gas/solution",
+     "REJECT iodide solution"
+    ],
+    "points": [
+     {
+      "id": "a-key",
+      "part": "a",
+      "sub": null,
+      "marks": 5,
+      "md": "",
+      "allow": [
+       "Li",
+       "Br/Br2",
+       "C2H4"
+      ],
+      "reject": [
+       "Br−"
+      ],
+      "ignore": [],
+      "notes": [
+       "a good conductor of electricity lithium",
+       "an element that is a liquid bromine",
+       "at room temperature",
+       "a substance that can be used to form a polymer ethene",
+       "an element that forms a basic oxide lithium",
+       "a substance that has a giant covalent structure diamond",
+       "Description Substance"
+      ],
+      "pages": [
+       4
+      ],
+      "pool": {
+       "rule": "any-5-for-1-each"
+      }
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "(use damp blue) litmus paper",
+      "allow": [
+       "blue litmus",
+       "universal indicator paper"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "paper turns red and then bleached"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "(litmus paper) bleached/turns white",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "gas/solution"
+      ],
+      "notes": [
+       "M2 dep on M1",
+       "Red litmus paper turns blue then bleaches/turns white scores M1 only"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "b-alt-m1",
+      "part": null,
+      "sub": null,
+      "marks": 0,
+      "md": "bromide solution",
+      "allow": [
+       ""
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH"
+   ]
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about methane, CH4"
+    },
+    {
+     "type": "para",
+     "md": "The diagram shows a Bunsen burner that uses methane."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "During combustion, methane reacts with a gas in the air."
+      },
+      {
+       "type": "para",
+       "md": "Give the name of this gas."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the two products of the complete combustion of methane."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "During the incomplete combustion of methane, carbon monoxide forms."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why carbon monoxide forms during incomplete combustion."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State why carbon monoxide is poisonous."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The equation shows the reaction of methane with bromine."
+      },
+      {
+       "type": "para",
+       "md": "CH4 + Br2 → CH3Br + HBr"
+      },
+      {
+       "type": "para",
+       "md": "Give the name of this type of chemical reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 9,
+     "sum": 9,
+     "verified": true
+    },
+    "guidance": [
+     "An explanation that links the following two points",
+     "OR"
+    ],
+    "points": [
+     {
+      "id": "a-i",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "most reactive Q",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "S",
+       "R",
+       "least reactive P"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "a-ii",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "R",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "a-iii",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "aluminium + hydrochloric acid → aluminium chloride + hydrogen",
+      "allow": [
+       ""
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2Al + 6HCl → 2AlCl3 + 3H2",
+       "or multiples or fractions"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "a-iv",
+      "part": "a",
+      "sub": "iv",
+      "marks": 1,
+      "md": "copper/silver/gold",
+      "allow": [
+       "platinum or any other metal that does not react with hydrochloric acid",
+       "correct symbol"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "a-v",
+      "part": "a",
+      "sub": "v",
+      "marks": 1,
+      "md": "explosive/dangerous/violent/unsafe",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "volatile/vigorous"
+      ],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "b-i",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "heat/thermal energy is given out/released (to the surroundings)",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "energy on its own"
+      ],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "b-ii",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "aluminium is more reactive/ higher in the reactivity series (than iron) ORA",
+      "allow": [
+       "aluminium is a better/stronger reducing agent",
+       "Al"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "iii",
+      "marks": 1,
+      "md": "aluminium/Al gains oxygen and iron(III) oxide /Fe2O3 loses oxygen",
+      "allow": [
+       "aluminium/Al loses electrons and iron ions/Fe3+ gain electrons"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "for M1"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": "iii",
+      "marks": 1,
+      "md": "(so) aluminium/Al is oxidised and iron(III) oxide /Fe2O3 is reduced",
+      "allow": [
+       "correct changes in oxidation numbers"
+      ],
+      "reject": [
+       "iron loses oxygen for M2"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH",
+    "MS-PART-NO-POINTS"
+   ]
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 8,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about elements, mixtures and compounds."
+    }
+   ],
+   "parts": [
+    {
+     "id": "3a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The box gives some methods used to separate mixtures."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "crystallisation filtration"
+      },
+      {
+       "type": "para",
+       "md": "fractional distillation simple distillation"
+      },
+      {
+       "type": "para",
+       "md": "Choose methods from the box to answer these questions."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify a method to remove sand from a mixture of sand and seawater."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify a method to separate a mixture of liquids with different boiling points."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows part of the structure of silicon dioxide."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "oxygen"
+      },
+      {
+       "type": "para",
+       "md": "silicon"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Explain why silicon dioxide is a compound."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The molecular formula of the compound insulin is C257H383N65O77S6"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Determine the number of different elements in C257H383N65O77S6"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Determine the number of atoms in a molecule of C257H383N65O77S6"
+      },
+      {
+       "type": "para",
+       "md": "number of atoms = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Magnalium is a mixture of magnesium atoms and aluminium atoms."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "The diagram shows a sample of magnalium."
+      },
+      {
+       "type": "para",
+       "md": "magnesium atom"
+      },
+      {
+       "type": "para",
+       "md": "aluminium atom"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the percentage of magnesium atoms in this sample."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "percentage = .............................................................. %"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 10,
+     "sum": 10,
+     "verified": true
+    },
+    "guidance": [
+     "4",
+     "(c)"
+    ],
+    "points": [
+     {
+      "id": "a-i",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "2",
+      "allow": [
+       "two"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "a-ii",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "3",
+      "allow": [
+       "three"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "a-iii",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "ZF2",
+      "allow": [
+       "MgF2",
+       "F2Mg",
+       "F2Z"
+      ],
+      "reject": [
+       "MgFl2"
+      ],
+      "ignore": [],
+      "notes": [
+       "Penalise incorrect case or superscripts"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "12 6.0 1023",
+      "allow": [
+       "ecf if incorrect number of electrons x"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "7.2 1024",
+      "allow": [
+       "ecf if /12 ONLY rather than x12 giving 5(.0) x1022"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "6.0 x 1023"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "(isotopic masses) 24, 25 and 26",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "79.0 24 + 10.0 25 + 11.0 26 OR 2432",
+      "allow": [
+       "ecf if incorrect mass numbers used"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 subsumes M1"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "79.0 24 + 10.0 25 + 11.0 26 OR 2432 OR 24.32",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "100                   100",
+       "12.3 scores 3 with working",
+       "24.3 without working scores 4"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M4",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "24.3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "24.32 without working scores 3",
+       "M4 scores only if numbers from the table are used."
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "d",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "magnesium",
+      "allow": [
+       "Mg"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH"
+   ]
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about the alkali metals."
+    },
+    {
+     "type": "para",
+     "md": "A teacher demonstrates the reaction between sodium and water."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "The teacher fills a trough with water and then adds a piece of sodium."
+    },
+    {
+     "type": "para",
+     "md": "sodium"
+    }
+   ],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The sodium reacts with the water, forming bubbles of hydrogen gas and a"
+      },
+      {
+       "type": "para",
+       "md": "colourless solution."
+      },
+      {
+       "type": "para",
+       "md": "State two other observations that would be made."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a test to show that, at the end of the reaction, the solution contains"
+      },
+      {
+       "type": "para",
+       "md": "sodium ions."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Lithium, sodium and potassium react in a similar way when added to water."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State, with reference to the electronic configurations of atoms, why these"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "elements have similar reactions."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table shows the atomic radius of a lithium atom, a sodium atom and a"
+      },
+      {
+       "type": "para",
+       "md": "potassium atom."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Deduce the relationship between the atomic radius and the reactivity of"
+      },
+      {
+       "type": "para",
+       "md": "the metals."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 12,
+     "sum": 12,
+     "verified": true
+    },
+    "guidance": [
+     "A description that refers to two of the following points",
+     "2",
+     "5"
+    ],
+    "points": [
+     {
+      "id": "a-i",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "24",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "12 8 + 1 x 10 + 14 4 + 16 2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "No ECF",
+       "correct answer of 194 scores 2"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "194",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "a-iii",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "C4H5N2O",
+      "allow": [
+       "atoms in any order"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "b-i",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "(simple) distillation",
+      "allow": [],
+      "reject": [
+       "fractional distillation"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(the condenser/X) cools the (ethanol) vapour",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "so it condenses OR forms liquid (ethanol)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "calcium bromide is a giant (ionic) lattice/structure",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "with many/strong electrostatic attractions between (oppositely charged) ions",
+      "allow": [
+       "many/strong ionic bonds"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "No M2 if covalent bonds or IMF given here"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "caffeine has a simple molecular structure",
+      "allow": [
+       "simple covalent structure"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M4",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "caffeine has weak intermolecular forces /weak forces between molecules",
+      "allow": [],
+      "reject": [
+       "weak forces between bonds"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M5",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "more energy is needed to break the electrostatic attractions (in calcium bromide) than to overcome the intermolecular forces (in caffeine) OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "No M5 if reference to breaking covalent bonds",
+       "No M5 if reference to incorrect bonds"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH"
+   ]
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "Chromatography is used to separate the components in a mixture."
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Diagram 1 shows the apparatus used to separate the different dyes in a"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "food colouring."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "baseline drawn"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "in pencil"
+      },
+      {
+       "type": "para",
+       "md": "food colouring"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "Diagram 1"
+      }
+     ],
+     "answerLines": 3,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the diagram by adding the missing labels."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why the baseline is drawn in pencil."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Diagram 2 shows a chromatogram produced from four different food colourings,"
+      },
+      {
+       "type": "para",
+       "md": "W, X, Y and Z."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "W"
+      },
+      {
+       "type": "para",
+       "md": "X"
+      },
+      {
+       "type": "para",
+       "md": "Y"
+      },
+      {
+       "type": "para",
+       "md": "Z"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Diagram 2"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which two food colourings contain the same dye?"
+      },
+      {
+       "type": "para",
+       "md": "A W and X"
+      },
+      {
+       "type": "para",
+       "md": "B W and Y"
+      },
+      {
+       "type": "para",
+       "md": "C X and Z"
+      },
+      {
+       "type": "para",
+       "md": "D Y and Z"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the Rf value of the dye in food colouring W."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Rf = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 9,
+     "sum": 9,
+     "verified": true
+    },
+    "guidance": [
+     "An explanation that links the following two points",
+     "An explanation that links the following two points",
+     "An explanation that links the following two points",
+     "3"
+    ],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "They will not dissolve/diffuse into the solvent (at the bottom of beaker) OWTTE",
+      "allow": [
+       "water",
+       "dye in place of spot throughout question 5"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "so that the dyes can travel up the paper",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "E and H",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 dep on M1"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "as the dye is/both have a spot at the same level/travelled the same distance/same Rf value",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "The student can only be certain about G containing one dye as only one spot",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "As F is insoluble/not moved (so you cannot tell how many dyes it has) OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "distance from baseline to solvent level in mm = 65",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "distance from baseline to spot/dye in mm = 39",
+      "allow": [
+       "any value between 38 and 41 inclusive"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "(Rf value = 39 65 =) 0.6",
+      "allow": [
+       "any value between 0.57 and 0.64"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M3 not awarded if value is incorrectly rounded"
+      ],
+      "pages": [
+       8
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH"
+   ]
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "A student uses this apparatus to find the heat energy released by the combustion of"
+    },
+    {
+     "type": "para",
+     "md": "liquid fuels."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "metal can"
+    },
+    {
+     "type": "para",
+     "md": "water"
+    },
+    {
+     "type": "para",
+     "md": "burner"
+    },
+    {
+     "type": "para",
+     "md": "liquid fuel"
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain what is meant by the term fuel."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "6b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In one experiment, the student uses liquid ethanol as the fuel."
+      },
+      {
+       "type": "para",
+       "md": "The thermometer shows the temperature of the water at the start of the"
+      },
+      {
+       "type": "para",
+       "md": "experiment."
+      },
+      {
+       "type": "para",
+       "md": "ºC"
+      },
+      {
+       "type": "para",
+       "md": "23"
+      },
+      {
+       "type": "para",
+       "md": "22"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "21"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "19"
+      },
+      {
+       "type": "para",
+       "md": "18"
+      },
+      {
+       "type": "para",
+       "md": "Complete the table by giving the temperatures to the nearest 0.1 °C."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14,
+      15
+     ]
+    },
+    {
+     "id": "6b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The metal can contains water of mass 150 g."
+      },
+      {
+       "type": "para",
+       "md": "Show, by calculation, that the heat energy change (Q) for this reaction is"
+      },
+      {
+       "type": "para",
+       "md": "approximately 36 000 J."
+      },
+      {
+       "type": "para",
+       "md": "[for water, c = 4.2 J/g/°C]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Q = .............................................................. J"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "6b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In the experiment, 2.3 g of ethanol (Mr = 46) is burned."
+      },
+      {
+       "type": "para",
+       "md": "Calculate the molar enthalpy change (ΔH), in kJ/mol, for the combustion of"
+      },
+      {
+       "type": "para",
+       "md": "ethanol, C2H5OH"
+      },
+      {
+       "type": "para",
+       "md": "Include a sign in your answer."
+      },
+      {
+       "type": "para",
+       "md": "Give your answer to two significant figures."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "ΔH = .............................................................. kJ/mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In this experiment, the calculated value of ΔH is less than the value given in a"
+      },
+      {
+       "type": "para",
+       "md": "data book."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Give a possible reason for the difference in values."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 13,
+     "sum": 13,
+     "verified": true
+    },
+    "guidance": [
+     "Any 2 from",
+     "An explanation that links the following two points",
+     "Mark independently",
+     "An explanation that links the following two points"
+    ],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "effervescence/bubbles/fizzing",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "moves",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "moves on surface scores M2 and M3"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "floats",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M4",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "disappears/ gets smaller",
+      "allow": [
+       "dissolves"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M5",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "melts/forms a ball/forms a sphere",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "heat produced"
+      ],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M6",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "white trail",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "flame"
+      ],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(the phenolphthalein) turns pink",
+      "allow": [
+       "an alkaline solution /an alkali is produced"
+      ],
+      "reject": [
+       "red or purple"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(because) OH− ions/hydroxide ions are present",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "metal oxide forms"
+      ],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "(to remove) any other ions/chemicals/ impurities/substances/elements (that may be on the wire)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "(so that) they do not interfere with/mask the colour of the flame/change the flame colour",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "b-ii",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "C (red)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is incorrect as lithium ions do not give a lilac flame",
+       "B is incorrect as lithium ions do not give an orange flame",
+       "D is incorrect as lithium ions do not give a yellow flame"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "potassium ion K+",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "aluminium ion Al3+",
+      "allow": [
+       "Al+3"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "sulfate ion SO42-",
+      "allow": [
+       "SO4-2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "All three correct 2 marks",
+       "Any two correct 1 mark"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(mass of water =) 23.7 − 12.9 OR 10.8",
+      "allow": [
+       "alternative methods"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "without working scores 4",
+       "correct answer of 12"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(moles of KAl(SO4)2 =) 12.9 258 OR 0.05(00)",
+      "allow": [
+       "ecf on incorrect mass of water"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(moles of water =) 10.8 18 OR 0.6(00)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "answer to M4 must be a whole number"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(x = 0.6 0.05 =) 12",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     }
+    ],
+    "provenance": "llm-structured",
+    "pools": [
+     {
+      "part": "a-i",
+      "labels": [
+       "M1",
+       "M2",
+       "M3",
+       "M4",
+       "M5",
+       "M6"
+      ],
+      "cap": 2,
+      "reason": "'Any 2 from' line 216; block mark 2"
+     },
+     {
+      "part": "c-i",
+      "labels": [
+       "M1",
+       "M2",
+       "M3"
+      ],
+      "cap": 2,
+      "reason": "'All three correct 2 marks / Any two correct 1 mark' lines 245-246; block mark 2"
+     }
+    ]
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH"
+   ]
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "A student uses this apparatus to investigate the rate of reaction between dilute"
+    },
+    {
+     "type": "para",
+     "md": "sulfuric acid and an excess of small pieces of zinc."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "gas syringe"
+    },
+    {
+     "type": "para",
+     "md": "dilute sulfuric acid"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "zinc pieces"
+    },
+    {
+     "type": "para",
+     "md": "This is the student’s method."
+    },
+    {
+     "type": "para",
+     "md": "Step 1 use 50 cm3 of dilute sulfuric acid"
+    },
+    {
+     "type": "para",
+     "md": "Step 2 add approximately 5 g of small zinc pieces to the sulfuric acid"
+    },
+    {
+     "type": "para",
+     "md": "Step 3 quickly connect the gas syringe"
+    },
+    {
+     "type": "para",
+     "md": "Step 4 \u0007record the reading on the gas syringe every 30 seconds until the"
+    },
+    {
+     "type": "para",
+     "md": "reaction stops"
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name a suitable piece of apparatus to measure the volume of sulfuric acid."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "7a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why the mass of zinc pieces does not need to be"
+      },
+      {
+       "type": "para",
+       "md": "measured accurately."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "7a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why the student quickly connects the gas syringe in step 3."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "7a-iv",
+     "label": "a",
+     "sub": "iv",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State how the student would know when the reaction stops."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 9,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The graph shows the volume of gas collected in the syringe during"
+      },
+      {
+       "type": "para",
+       "md": "the experiment."
+      },
+      {
+       "type": "para",
+       "md": "70"
+      },
+      {
+       "type": "para",
+       "md": "60"
+      },
+      {
+       "type": "para",
+       "md": "50"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "40"
+      },
+      {
+       "type": "para",
+       "md": "Volume of gas"
+      },
+      {
+       "type": "para",
+       "md": "in cm3"
+      },
+      {
+       "type": "para",
+       "md": "30"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "10"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "30"
+      },
+      {
+       "type": "para",
+       "md": "60"
+      },
+      {
+       "type": "para",
+       "md": "90"
+      },
+      {
+       "type": "para",
+       "md": "120"
+      },
+      {
+       "type": "para",
+       "md": "150"
+      },
+      {
+       "type": "para",
+       "md": "180"
+      },
+      {
+       "type": "para",
+       "md": "210"
+      },
+      {
+       "type": "para",
+       "md": "240"
+      },
+      {
+       "type": "para",
+       "md": "Time in s"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A tangent to the curve has been drawn at a time of 80 s."
+      },
+      {
+       "type": "para",
+       "md": "Use the tangent to calculate the rate of reaction at 80 s."
+      },
+      {
+       "type": "para",
+       "md": "Show your working on the graph."
+      },
+      {
+       "type": "para",
+       "md": "Give the unit."
+      },
+      {
+       "type": "para",
+       "md": "rate of reaction = .............................................................. unit .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain the shape of the graph in these regions."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "from 0 s to 60 s"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      },
+      {
+       "type": "para",
+       "md": "from 60 s to 150 s"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      },
+      {
+       "type": "para",
+       "md": "from 150 s to 240 s"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      }
+     ],
+     "answerLines": 18,
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 13,
+     "sum": 13,
+     "verified": true
+    },
+    "guidance": [
+     "A description that refers to the following six points",
+     "6"
+    ],
+    "points": [
+     {
+      "id": "a",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "D (80 %)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is incorrect as there is not approximately 1 % of nitrogen in the atmosphere",
+       "B is incorrect as there is not approximately 20 % of nitrogen in the atmosphere",
+       "C is incorrect as there is not approximately 70 % of nitrogen in the atmosphere"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "3 pairs of electrons between the two nitrogen atoms",
+      "allow": [
+       "any combination of dots and crosses"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "rest of molecule fully correct",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 dep on M1"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "all formulae correct",
+      "allow": [
+       "multiples and fractions"
+      ],
+      "reject": [],
+      "ignore": [
+       "state symbols"
+      ],
+      "notes": [
+       "4NO2 + 2H2O + O2 → 4HNO3"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "balancing of correct formulae",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "even if incorrect",
+       "M2 dep on M1"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "c-ii",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "any one environmental effect of acid rain",
+      "allow": [
+       "any other environmental effect"
+      ],
+      "reject": [
+       "ozone layer"
+      ],
+      "ignore": [
+       "climate change"
+      ],
+      "notes": [
+       "e.g. acidifies lakes /kills fish /deforestation /damages plants /corrodes marble statues /corrodes buildings"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "d-i",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "D (NH4)2CO3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is incorrect as NH3CO3 is not the formula of ammonium carbonate",
+       "B is incorrect as (NH3)2CO3 is not the formula of ammonium carbonate",
+       "C is incorrect as NH4CO3 is not the formula of ammonium carbonate"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "add sodium hydroxide solution (and heat)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Test for ammonium ions",
+       "and M3"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "test the gas/ammonia with (damp) red litmus paper",
+      "allow": [
+       "universal indicator paper which turns blue/purple for M2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 is dependent on M1",
+       "OR can be awarded for heating the solution and producing a gas to test",
+       "No M2 and M3 if litmus paper added directly to the solution"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(red litmus) turns blue",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M3 can be awarded independently if ammonia gas is correctly tested with correct colour change"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M4",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "add (hydrochloric) acid ONLY",
+      "allow": [
+       "other acids"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Test for carbonate ions"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M5",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "test the gas/carbon dioxide with limewater",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M5 dependent on gaining M4 by adding acid ONLY to the solution"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M6",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(limewater) turns cloudy/milky/white precipitate",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M6 can be awarded independently if a correct limewater test on carbon dioxide gas is carried out",
+       "No M5 and M6 if limewater added directly to the solution."
+      ],
+      "pages": [
+       12
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PART-MARKS-MISMATCH",
+    "MS-POINT-UNKNOWN-PART"
+   ]
+  },
+  {
+   "number": 8,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about crude oil."
+    }
+   ],
+   "parts": [
+    {
+     "id": "8a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe how crude oil is separated into fractions by fractional distillation."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 12,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "8b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Some of the products of fractional distillation are then cracked."
+      },
+      {
+       "type": "para",
+       "md": "This equation represents a reaction that occurs during cracking."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "C15H32 → C8H18 + C3H6 + 2C2H4"
+      },
+      {
+       "type": "para",
+       "md": "Explain why cracking is an important process in the oil industry."
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 12,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "8c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Fuels obtained from crude oil may contain impurities."
+      },
+      {
+       "type": "para",
+       "md": "Explain how an impurity found in fuels can cause an environmental problem."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 15,
+     "sum": 15,
+     "verified": true
+    },
+    "guidance": [
+     "An explanation that links the following two points",
+     "2",
+     "2",
+     "3",
+     "2",
+     "2"
+    ],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "(compounds with) the same molecular formula",
+      "allow": [
+       "same number of carbons and hydrogens/atoms of each element"
+      ],
+      "reject": [
+       "elements with the same molecular formula",
+       "chemical formula for M1"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "but different structural/displayed formulae",
+      "allow": [
+       "different structures/arrangements of atoms"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 independent of M1"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "",
+      "allow": [
+       "cis and trans isomers for both marks"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Must show all bonds"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [
+       "cycloalkanes"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "b",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "A (addition)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "B is incorrect as this is not a combustion reaction",
+       "C is incorrect as this is not a decomposition reaction",
+       "D is incorrect as this is not a substitution reaction"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "c-i",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "H CH3 C−C H H",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "brackets and n"
+      ],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "they are inert/unreactive/do not biodegrade/decomposes (very) slowly/running out space",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "global warming"
+      ],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "they produce toxic fumes/greenhouse gases (when burned)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "y (= 396 44) = 9",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "z (= 180 18) = 10",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "x = 14",
+      "allow": [
+       "ecf for M3 on incorrect values for M1 and/or M2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "e",
+      "sub": "i",
+      "marks": 1,
+      "md": "correct balancing",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "C8H18(l) + 7O2(g) → 5CO(g) + 3C(s) + 9H2O(l)"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "e",
+      "sub": "i",
+      "marks": 1,
+      "md": "correct state symbols",
+      "allow": [
+       "(g) for H2O"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "e",
+      "sub": "ii",
+      "marks": 1,
+      "md": "carbon monoxide/CO",
+      "allow": [
+       "carbon/C",
+       "soot causes respiratory problems"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "e",
+      "sub": "ii",
+      "marks": 1,
+      "md": "is poisonous/toxic/limits the capacity to carry oxygen in the blood",
+      "allow": [
+       "correct references to haemoglobin"
+      ],
+      "reject": [],
+      "ignore": [
+       "harmful"
+      ],
+      "notes": [
+       "M2 dep on M1"
+      ],
+      "pages": [
+       14
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH",
+    "MS-POINT-UNKNOWN-PART"
+   ]
+  },
+  {
+   "number": 9,
+   "type": "structured",
+   "marks": 14,
+   "commandWord": null,
+   "stem": [],
+   "parts": [
+    {
+     "id": "9a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table shows the formulae of some positive and negative ions, and the"
+      },
+      {
+       "type": "para",
+       "md": "formulae of some compounds containing these ions."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "9a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the table by giving the formulae of the missing compounds."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "9a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the name of the compound with the formula ZnSO4"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "9b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 10,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Hydrogen chloride and magnesium chloride have different types of bonding and"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "have different structures."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "9b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the dot-and-cross diagram to show the outer shell electrons in a"
+      },
+      {
+       "type": "para",
+       "md": "molecule of hydrogen chloride."
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "Cl"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "9b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows the electronic configuration of a magnesium atom and of"
+      },
+      {
+       "type": "para",
+       "md": "a chlorine atom."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "x x"
+      },
+      {
+       "type": "para",
+       "md": "x x"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "x x"
+      },
+      {
+       "type": "para",
+       "md": "x x"
+      },
+      {
+       "type": "para",
+       "md": "x x"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "x x"
+      },
+      {
+       "type": "para",
+       "md": "x x"
+      },
+      {
+       "type": "para",
+       "md": "magnesium"
+      },
+      {
+       "type": "para",
+       "md": "chlorine"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Draw the electronic configuration of a magnesium ion and of a chloride ion in"
+      },
+      {
+       "type": "para",
+       "md": "the boxes."
+      },
+      {
+       "type": "para",
+       "md": "Show the charge on each ion."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "magnesium ion"
+      },
+      {
+       "type": "para",
+       "md": "chloride ion"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      23
+     ]
+    },
+    {
+     "id": "9b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why magnesium chloride has a much higher melting point than"
+      },
+      {
+       "type": "para",
+       "md": "hydrogen chloride."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Refer to structure and bonding in your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      }
+     ],
+     "answerLines": 15,
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [
+     "Any two linked pairs from the following:",
+     "An explanation that links the following three points"
+    ],
+    "points": [
+     {
+      "id": "a-i",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "carbon dioxide/a gas is given off",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "marble dissolving",
+       "gas formed"
+      ],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "a-ii",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "to prevent acid spray from leaving the flask OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "to stop solid from escaping"
+      ],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "the curve is steep(est) at the start/the loss in mass is fastest at the start",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "because the acid concentration is highest/maximum number of reacting particles",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "curves becomes less steep/the loss in mass slows down",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M4",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "acid becomes more dilute/less concentrated",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M5",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "curve levels off/becomes flat/plateaus/the loss in mass stops",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M6",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "acid has been used up",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "curve drawn starting at the origin and below the original curve",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "curve levels off at 0.27 g + or − half a small square",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "the rate of reaction would increase/be faster",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "(because) the smaller marble chips have a greater surface area",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "less chance of collisions"
+      ],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "(so) there will be more collisions per unit time",
+      "allow": [
+       "more frequent collisions"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "MAX 1 mark if reference to particles having more energy or moving faster"
+      ],
+      "pages": [
+       15
+      ]
+     }
+    ],
+    "provenance": "llm-structured",
+    "pools": [
+     {
+      "part": "b-i",
+      "labels": [
+       "M1",
+       "M2",
+       "M3",
+       "M4",
+       "M5",
+       "M6"
+      ],
+      "cap": 4,
+      "reason": "'Any two linked pairs from the following' line 383: pairs (M1,M2), (M3,M4), (M5,M6); two full pairs score 4 — numeric cap 4 over six labels; pair-linking constraint documented here"
+     }
+    ]
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH",
+    "MS-POINT-UNKNOWN-PART"
+   ]
+  },
+  {
+   "number": 10,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "This is the equation for the decomposition of hydrogen peroxide."
+    },
+    {
+     "type": "para",
+     "md": "2H2O2(aq) → 2H2O(l) + O2(g)"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "The rate of reaction increases when a catalyst of manganese(IV) oxide is added."
+    }
+   ],
+   "parts": [
+    {
+     "id": "10a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe how a catalyst increases the rate of a reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "10b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student adds 50 cm3 of hydrogen peroxide solution to a glass container and"
+      },
+      {
+       "type": "para",
+       "md": "then adds 1.0 g of manganese(IV) oxide."
+      },
+      {
+       "type": "para",
+       "md": "The diagram shows the apparatus the student uses."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "glass container"
+      },
+      {
+       "type": "para",
+       "md": "hydrogen peroxide"
+      },
+      {
+       "type": "para",
+       "md": "solution"
+      },
+      {
+       "type": "para",
+       "md": "manganese(IV) oxide"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "10b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the glass container the student uses."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "10b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The student waits until the hydrogen peroxide solution"
+      },
+      {
+       "type": "para",
+       "md": "completely decomposes."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Describe how the student could then show that the manganese(IV) oxide was"
+      },
+      {
+       "type": "para",
+       "md": "a catalyst and not a reactant."
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [
+     "An explanation that links the following two points",
+     "2"
+    ],
+    "points": [
+     {
+      "id": "a",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "Mg + 2HNO3 → Mg(NO3)2 + H2",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "state symbols even if incorrect"
+      ],
+      "notes": [],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "b",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "",
+      "allow": [
+       "ECF from incorrect highest temperature reached",
+       "ECF from an incorrect starting temperature"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "temperature of the acid at the start in oC 16.0",
+       "highest temperature reached in oC 32.4",
+       "temperature rise in oC 16.4",
+       "Must be given to 1dp"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "Q = 40 4.2 16.4",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "2755 (J)",
+      "allow": [
+       "any number of sig figs except 1"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "n(Mg) = 0.12 ÷ 24 OR 0.005",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "correct answer with minus sign and without working scores 4",
+       "find the amount of magnesium in moles"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "Q ÷ n OR 2755 ÷ 0.005 OR 551 000 (J/mol)",
+      "allow": [
+       "use of 2760 or 2800",
+       "ECF on incorrect answer to (i) and/or M1"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "divide Q by n"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "551 000 ÷ 1000 OR 551 (kJ/mol)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "convert answer in J/mol to kJ/mol"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "M4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "− 550 (kJ/mol)",
+      "allow": [
+       "ECF on incorrect answer to M2",
+       "ECF on incorrect answer to M3"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M4 – to score must be to 2sf and have correct sign",
+       "Use of 2800 gives an answer of − 560 (kJ/mol)",
+       "answer including sign to 2sf"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "polystyrene is an insulator/poor conductor OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       17
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "(so) there is less heat loss/more heat retained (compared to the glass beaker)",
+      "allow": [],
+      "reject": [
+       "no heat loss"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       17
+      ]
+     }
+    ],
+    "provenance": "llm-structured"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
+    "PART-MARKS-MISMATCH",
+    "MS-POINT-UNKNOWN-PART"
+   ]
+  },
+  {
+   "number": 11,
+   "type": "structured",
+   "marks": 12,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "Diamond and graphite are both forms of the element carbon."
+    },
+    {
+     "type": "para",
+     "md": "Diamond and graphite both have covalent bonds and giant covalent structures."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "The diagram represents the structure of diamond and the structure of graphite."
+    },
+    {
+     "type": "para",
+     "md": "diamond"
+    },
+    {
+     "type": "para",
+     "md": "graphite"
+    }
+   ],
+   "parts": [
+    {
+     "id": "11a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why diamond is an element."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      28
+     ]
+    },
+    {
+     "id": "11b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe the forces of attraction in a covalent bond."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      28
+     ]
+    },
+    {
+     "id": "11c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why graphite conducts electricity."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      28
+     ]
+    },
+    {
+     "id": "11c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why diamond is hard but graphite is soft."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      29
+     ]
+    },
+    {
+     "id": "11d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Another form of carbon has molecules with the formula Cx"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "x represents the number of carbon atoms in each molecule."
+      },
+      {
+       "type": "para",
+       "md": "Each molecule of Cx has a mass of 1.40 × 10−21 g."
+      },
+      {
+       "type": "para",
+       "md": "One mole of Cx contains 6.02 × 1023 molecules."
+      },
+      {
+       "type": "para",
+       "md": "Calculate the Mr of Cx and the value of x"
+      },
+      {
+       "type": "para",
+       "md": "[for carbon, Ar = 12]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Mr = .............................................................."
+      },
+      {
+       "type": "para",
+       "md": "x = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 0,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "MS-QUESTION-MISSING",
+    "MS-PART-NO-POINTS"
+   ]
+  },
+  {
+   "number": 12,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": null,
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about the metal tantalum, Ta."
+    },
+    {
+     "type": "para",
+     "md": "Tantalum metal can be produced by heating tantalum chloride (TaCl5) and hydrogen"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "gas in a furnace."
+    },
+    {
+     "type": "para",
+     "md": "The other product of the reaction is hydrogen chloride."
+    }
+   ],
+   "parts": [
+    {
+     "id": "12a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the equation for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "............................... TaCl5(s) + ............................... H2(g) → ............................... Ta(s) + ............................... HCl(g)"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      30
+     ]
+    },
+    {
+     "id": "12b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "As tantalum chloride is heated, the mass of solid in the furnace decreases leaving"
+      },
+      {
+       "type": "para",
+       "md": "tantalum as the only solid product."
+      },
+      {
+       "type": "para",
+       "md": "The table shows the mass of solid in the furnace at one-hour intervals."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      30
+     ]
+    },
+    {
+     "id": "12b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State how the data in the table shows that the reaction is complete."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      31
+     ]
+    },
+    {
+     "id": "12b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use the data to show that the formula of tantalum chloride is TaCl5"
+      },
+      {
+       "type": "para",
+       "md": "[for tantalum, Ar = 181 for chlorine, Ar = 35.5]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "QUESTION 12 CONTINUES ON NEXT PAGE."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      31
+     ]
+    },
+    {
+     "id": "12c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Another method of extracting tantalum is by reacting tantalum(V) oxide"
+      },
+      {
+       "type": "para",
+       "md": "with carbon."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "This is the equation for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "Ta2O5(s) + 5C(s) → 2Ta(s) + 5CO(g)"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      32
+     ]
+    },
+    {
+     "id": "12c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why this is a redox reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      32
+     ]
+    },
+    {
+     "id": "12c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "2000 mol of tantalum(V) oxide is heated with 500 000 g of carbon."
+      },
+      {
+       "type": "para",
+       "md": "Show by calculation that the carbon is in excess."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "[for carbon, Ar = 12]"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      32
+     ]
+    },
+    {
+     "id": "12c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the maximum mass, in grams, of tantalum that can be obtained"
+      },
+      {
+       "type": "para",
+       "md": "from 2000 mol of tantalum(V) oxide."
+      },
+      {
+       "type": "para",
+       "md": "[for tantalum, Ar = 181]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "mass = .............................................................. g"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      32
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 0,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "MS-QUESTION-MISSING",
+    "MS-PART-NO-POINTS"
+   ]
+  }
+ ]
+}
