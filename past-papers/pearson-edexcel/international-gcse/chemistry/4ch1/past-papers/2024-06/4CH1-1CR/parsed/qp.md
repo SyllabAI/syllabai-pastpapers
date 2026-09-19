@@ -1,5 +1,4 @@
 <!-- PAGE 1 -->
-PMT
 Please check the examination details below before entering your candidate information
 Candidate surname
 Other names
@@ -46,7 +45,6 @@ P73424A
 F:1/1/1/1/1/1/1
 
 <!-- PAGE 2 -->
-PMT
 
 ![figure](assets/QP_p02_01.png)
 
@@ -91,7 +89,6 @@ The relative atomic masses of copper and chlorine have not been rounded to the n
 
 
 <!-- PAGE 3 -->
-PMT
 
 ![figure](assets/QP_p03_02.png)
 
@@ -106,7 +103,6 @@ Turn over
 
 
 <!-- PAGE 4 -->
-PMT
 
 ![figure](assets/QP_p04_03.png)
 
@@ -147,7 +143,6 @@ V, W, X, Y and Z.
 
 
 <!-- PAGE 5 -->
-PMT
 
 ![figure](assets/QP_p05_04.png)
 
@@ -170,7 +165,6 @@ Turn over
 
 
 <!-- PAGE 6 -->
-PMT
 
 ![figure](assets/QP_p06_05.png)
 
@@ -208,7 +202,6 @@ CH4 + Br2 → CH3Br + HBr
 
 
 <!-- PAGE 7 -->
-PMT
 
 ![figure](assets/QP_p07_06.png)
 
@@ -223,7 +216,6 @@ Turn over
 
 
 <!-- PAGE 8 -->
-PMT
 
 ![figure](assets/QP_p08_07.png)
 
@@ -256,7 +248,6 @@ silicon
 
 
 <!-- PAGE 9 -->
-PMT
 
 ![figure](assets/QP_p09_08.png)
 
@@ -285,7 +276,6 @@ Turn over
 
 
 <!-- PAGE 10 -->
-PMT
 
 ![figure](assets/QP_p10_09.png)
 
@@ -317,7 +307,6 @@ sodium ions.
 
 
 <!-- PAGE 11 -->
-PMT
 
 ![figure](assets/QP_p11_10.png)
 
@@ -352,7 +341,6 @@ Turn over
 
 
 <!-- PAGE 12 -->
-PMT
 
 ![figure](assets/QP_p12_11.png)
 
@@ -381,7 +369,6 @@ Diagram 1
 
 
 <!-- PAGE 13 -->
-PMT
 
 ![figure](assets/QP_p13_12.png)
 
@@ -412,7 +399,6 @@ Turn over
 
 
 <!-- PAGE 14 -->
-PMT
 
 ![figure](assets/QP_p14_13.png)
 
@@ -447,7 +433,6 @@ experiment.
 
 
 <!-- PAGE 15 -->
-PMT
 
 ![figure](assets/QP_p15_14.png)
 
@@ -482,7 +467,6 @@ Turn over
 
 
 <!-- PAGE 16 -->
-PMT
 
 ![figure](assets/QP_p16_15.png)
 
@@ -502,7 +486,6 @@ DO NOT WRITE IN THIS AREA
 
 
 <!-- PAGE 17 -->
-PMT
 
 ![figure](assets/QP_p17_16.png)
 
@@ -539,7 +522,6 @@ Turn over
 
 
 <!-- PAGE 18 -->
-PMT
 
 ![figure](assets/QP_p18_17.png)
 
@@ -584,7 +566,6 @@ rate of reaction = .............................................................
 
 
 <!-- PAGE 19 -->
-PMT
 
 ![figure](assets/QP_p19_18.png)
 
@@ -622,7 +603,6 @@ Turn over
 
 
 <!-- PAGE 20 -->
-PMT
 
 ![figure](assets/QP_p20_19.png)
 
@@ -650,7 +630,6 @@ DO NOT WRITE IN THIS AREA
 
 
 <!-- PAGE 21 -->
-PMT
 
 ![figure](assets/QP_p21_20.png)
 
@@ -691,7 +670,6 @@ Turn over
 
 
 <!-- PAGE 22 -->
-PMT
 
 ![figure](assets/QP_p22_21.png)
 
@@ -725,7 +703,6 @@ Cl
 
 
 <!-- PAGE 23 -->
-PMT
 
 ![figure](assets/QP_p23_22.png)
 
@@ -759,7 +736,6 @@ Turn over
 
 
 <!-- PAGE 24 -->
-PMT
 
 ![figure](assets/QP_p24_23.png)
 
@@ -792,7 +768,6 @@ DO NOT WRITE IN THIS AREA
 
 
 <!-- PAGE 25 -->
-PMT
 
 ![figure](assets/QP_p25_24.png)
 
@@ -807,7 +782,6 @@ Turn over
 
 
 <!-- PAGE 26 -->
-PMT
 
 ![figure](assets/QP_p26_25.png)
 
@@ -839,7 +813,6 @@ manganese(IV) oxide
 
 
 <!-- PAGE 27 -->
-PMT
 
 ![figure](assets/QP_p27_26.png)
 
@@ -865,7 +838,6 @@ Turn over
 
 
 <!-- PAGE 28 -->
-PMT
 
 ![figure](assets/QP_p28_27.png)
 
@@ -899,7 +871,6 @@ graphite
 
 
 <!-- PAGE 29 -->
-PMT
 
 ![figure](assets/QP_p29_28.png)
 
@@ -933,7 +904,6 @@ Turn over
 
 
 <!-- PAGE 30 -->
-PMT
 
 ![figure](assets/QP_p30_29.png)
 
@@ -968,7 +938,6 @@ tantalum as the only solid product.
 
 
 <!-- PAGE 31 -->
-PMT
 
 ![figure](assets/QP_p31_30.png)
 
@@ -990,7 +959,6 @@ Turn over
 
 
 <!-- PAGE 32 -->
-PMT
 
 ![figure](assets/QP_p32_31.png)
 

@@ -211,109 +211,95 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 7,
-     "sum": 7,
+     "printed": 5,
+     "sum": 5,
      "verified": true
     },
-    "guidance": [
-     "A description that refers to the following two points",
-     "Ignore gas/solution",
-     "REJECT iodide solution"
-    ],
+    "guidance": [],
     "points": [
      {
-      "id": "a-key",
+      "id": "P1",
       "part": "a",
-      "sub": null,
-      "marks": 5,
-      "md": "",
-      "allow": [
-       "Li",
-       "Br/Br2",
-       "C2H4"
-      ],
-      "reject": [
-       "Br−"
-      ],
-      "ignore": [],
-      "notes": [
-       "a good conductor of electricity lithium",
-       "an element that is a liquid bromine",
-       "at room temperature",
-       "a substance that can be used to form a polymer ethene",
-       "an element that forms a basic oxide lithium",
-       "a substance that has a giant covalent structure diamond",
-       "Description Substance"
-      ],
-      "pages": [
-       4
-      ],
-      "pool": {
-       "rule": "any-5-for-1-each"
-      }
-     },
-     {
-      "id": "M1",
-      "part": "b",
-      "sub": null,
+      "sub": "i",
       "marks": 1,
-      "md": "(use damp blue) litmus paper",
-      "allow": [
-       "blue litmus",
-       "universal indicator paper"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "paper turns red and then bleached"
-      ],
-      "pages": [
-       4
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "b",
-      "sub": null,
-      "marks": 1,
-      "md": "(litmus paper) bleached/turns white",
+      "md": "W",
       "allow": [],
-      "reject": [],
-      "ignore": [
-       "gas/solution"
-      ],
-      "notes": [
-       "M2 dep on M1",
-       "Red litmus paper turns blue then bleaches/turns white scores M1 only"
-      ],
-      "pages": [
-       4
-      ]
-     },
-     {
-      "id": "b-alt-m1",
-      "part": null,
-      "sub": null,
-      "marks": 0,
-      "md": "bromide solution",
-      "allow": [
-       ""
-      ],
       "reject": [],
       "ignore": [],
       "notes": [],
       "pages": [
        4
       ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "V",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "Z",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "the number of protons (in the nucleus)",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "reference to"
+      ],
+      "notes": [
+       "electrons",
+       "protons"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(the sum of) the number of protons and neutrons (in",
+      "allow": [
+       "amount of"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "the nucleus)                                          protons and neutrons"
+      ],
+      "pages": [
+       4
+      ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 2,
@@ -486,177 +472,104 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 9,
-     "sum": 9,
+     "printed": 6,
+     "sum": 6,
      "verified": true
     },
-    "guidance": [
-     "An explanation that links the following two points",
-     "OR"
-    ],
+    "guidance": [],
     "points": [
      {
-      "id": "a-i",
+      "id": "P1",
       "part": "a",
-      "sub": "i",
+      "sub": null,
       "marks": 1,
-      "md": "most reactive Q",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "S",
-       "R",
-       "least reactive P"
-      ],
-      "pages": [
-       5
-      ]
-     },
-     {
-      "id": "a-ii",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "R",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       5
-      ]
-     },
-     {
-      "id": "a-iii",
-      "part": "a",
-      "sub": "iii",
-      "marks": 1,
-      "md": "aluminium + hydrochloric acid → aluminium chloride + hydrogen",
+      "md": "oxygen",
       "allow": [
-       ""
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "2Al + 6HCl → 2AlCl3 + 3H2",
-       "or multiples or fractions"
-      ],
-      "pages": [
-       5
-      ]
-     },
-     {
-      "id": "a-iv",
-      "part": "a",
-      "sub": "iv",
-      "marks": 1,
-      "md": "copper/silver/gold",
-      "allow": [
-       "platinum or any other metal that does not react with hydrochloric acid",
-       "correct symbol"
+       "O2"
       ],
       "reject": [],
       "ignore": [],
       "notes": [],
       "pages": [
-       5
-      ]
-     },
-     {
-      "id": "a-v",
-      "part": "a",
-      "sub": "v",
-      "marks": 1,
-      "md": "explosive/dangerous/violent/unsafe",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "volatile/vigorous"
-      ],
-      "notes": [],
-      "pages": [
-       5
-      ]
-     },
-     {
-      "id": "b-i",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "heat/thermal energy is given out/released (to the surroundings)",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "energy on its own"
-      ],
-      "notes": [],
-      "pages": [
-       5
-      ]
-     },
-     {
-      "id": "b-ii",
-      "part": "b",
-      "sub": "ii",
-      "marks": 1,
-      "md": "aluminium is more reactive/ higher in the reactivity series (than iron) ORA",
-      "allow": [
-       "aluminium is a better/stronger reducing agent",
-       "Al"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       5
+       4
       ]
      },
      {
       "id": "M1",
       "part": "b",
-      "sub": "iii",
+      "sub": null,
+      "marks": 2,
+      "md": "carbon dioxide / CO2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "answers can be in",
+       "either order",
+       "M2 water / H2O                                        ACCEPT water vapour"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
+      "sub": "i",
       "marks": 1,
-      "md": "aluminium/Al gains oxygen and iron(III) oxide /Fe2O3 loses oxygen",
+      "md": "there is a limited supply of air / oxygen OWTTE",
       "allow": [
-       "aluminium/Al loses electrons and iron ions/Fe3+ gain electrons"
+       "not enough"
       ],
       "reject": [],
       "ignore": [],
       "notes": [
-       "for M1"
+       "air/oxygen"
       ],
       "pages": [
-       5
+       4
       ]
      },
      {
-      "id": "M2",
-      "part": "b",
-      "sub": "iii",
+      "id": "P3",
+      "part": "c",
+      "sub": "ii",
       "marks": 1,
-      "md": "(so) aluminium/Al is oxidised and iron(III) oxide /Fe2O3 is reduced",
+      "md": "carbon monoxide reduces the capacity of blood to",
       "allow": [
-       "correct changes in oxidation numbers"
+       "correct"
       ],
-      "reject": [
-       "iron loses oxygen for M2"
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "transport oxygen OWTTE                                references to",
+       "haemoglobin",
+       "carboxyhaemoglobin"
       ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "substitution",
+      "allow": [
+       "redox (reaction)"
+      ],
+      "reject": [],
       "ignore": [],
       "notes": [],
       "pages": [
-       5
+       4
       ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH",
-    "MS-PART-NO-POINTS"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 3,
@@ -905,194 +818,113 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 10,
-     "sum": 10,
+     "printed": 8,
+     "sum": 8,
      "verified": true
     },
     "guidance": [
-     "4",
-     "(c)"
+     "M2 joined / bonded together REJECT M2 intermolecular"
     ],
     "points": [
      {
-      "id": "a-i",
+      "id": "P1",
       "part": "a",
       "sub": "i",
       "marks": 1,
-      "md": "2",
-      "allow": [
-       "two"
-      ],
+      "md": "filtration",
+      "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [],
       "pages": [
-       6
+       5
       ]
      },
      {
-      "id": "a-ii",
+      "id": "P2",
       "part": "a",
       "sub": "ii",
       "marks": 1,
-      "md": "3",
-      "allow": [
-       "three"
-      ],
+      "md": "fractional distillation",
+      "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [],
       "pages": [
-       6
-      ]
-     },
-     {
-      "id": "a-iii",
-      "part": "a",
-      "sub": "iii",
-      "marks": 1,
-      "md": "ZF2",
-      "allow": [
-       "MgF2",
-       "F2Mg",
-       "F2Z"
-      ],
-      "reject": [
-       "MgFl2"
-      ],
-      "ignore": [],
-      "notes": [
-       "Penalise incorrect case or superscripts"
-      ],
-      "pages": [
-       6
+       5
       ]
      },
      {
       "id": "M1",
       "part": "b",
       "sub": null,
-      "marks": 1,
-      "md": "12 6.0 1023",
+      "marks": 2,
+      "md": "(two) different atoms / elements",
       "allow": [
-       "ecf if incorrect number of electrons x"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       6
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "b",
-      "sub": null,
-      "marks": 1,
-      "md": "7.2 1024",
-      "allow": [
-       "ecf if /12 ONLY rather than x12 giving 5(.0) x1022"
+       "atoms/elements"
       ],
       "reject": [],
       "ignore": [],
       "notes": [
-       "6.0 x 1023"
+       "of silicon and oxygen"
       ],
       "pages": [
-       6
+       5
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "5 / five",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "788",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
       ]
      },
      {
       "id": "M1",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "(isotopic masses) 24, 25 and 26",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       6
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "79.0 24 + 10.0 25 + 11.0 26 OR 2432",
-      "allow": [
-       "ecf if incorrect mass numbers used"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M2 subsumes M1"
-      ],
-      "pages": [
-       6
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "79.0 24 + 10.0 25 + 11.0 26 OR 2432 OR 24.32",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "100                   100",
-       "12.3 scores 3 with working",
-       "24.3 without working scores 4"
-      ],
-      "pages": [
-       6
-      ]
-     },
-     {
-      "id": "M4",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "24.3",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "24.32 without working scores 3",
-       "M4 scores only if numbers from the table are used."
-      ],
-      "pages": [
-       6
-      ]
-     },
-     {
-      "id": "d",
       "part": "d",
       "sub": null,
-      "marks": 1,
-      "md": "magnesium",
-      "allow": [
-       "Mg"
-      ],
+      "marks": 2,
+      "md": "(3 ÷ 18) × 100",
+      "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [],
+      "notes": [
+       "M2 16.7%                              ALLOW ecf from M1",
+       "e.g. (3 ÷ 15) × 100 = 20%",
+       "scores 1 mark",
+       "as long as a percentage",
+       "sum and correctly",
+       "rounded."
+      ],
       "pages": [
-       6
+       5
       ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 4,
@@ -1279,210 +1111,91 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 12,
-     "sum": 12,
+     "printed": 6,
+     "sum": 6,
      "verified": true
     },
-    "guidance": [
-     "A description that refers to two of the following points",
-     "2",
-     "5"
-    ],
+    "guidance": [],
     "points": [
      {
-      "id": "a-i",
+      "id": "P1",
       "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "any two from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "effervescence /"
+      ],
+      "notes": [
+       "M1 floats                                      M1 and M2 moves on",
+       "the surface",
+       "M2 moves",
+       "M3 melts / turns into a ball /sphere",
+       "M4 gets smaller / disappears                   ALLOW sodium dissolves",
+       "M5 white trail",
+       "bubbling / fizzing"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "do a flame test",
+      "allow": [
+       "a description of"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "the flame test",
+       "M2 yellow (flame)                              ALLOW orange (flame)"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
       "sub": "i",
       "marks": 1,
-      "md": "24",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "12 8 + 1 x 10 + 14 4 + 16 2",
+      "md": "(they have the) same number of outer shell",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "No ECF",
-       "correct answer of 194 scores 2"
+       "electrons / one outer shell electron"
       ],
       "pages": [
-       7
+       6
       ]
      },
      {
-      "id": "M2",
-      "part": "a",
+      "id": "P3",
+      "part": "c",
       "sub": "ii",
       "marks": 1,
-      "md": "194",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "a-iii",
-      "part": "a",
-      "sub": "iii",
-      "marks": 1,
-      "md": "C4H5N2O",
-      "allow": [
-       "atoms in any order"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "b-i",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "(simple) distillation",
-      "allow": [],
-      "reject": [
-       "fractional distillation"
-      ],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "b",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(the condenser/X) cools the (ethanol) vapour",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "b",
-      "sub": "ii",
-      "marks": 1,
-      "md": "so it condenses OR forms liquid (ethanol)",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "calcium bromide is a giant (ionic) lattice/structure",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "with many/strong electrostatic attractions between (oppositely charged) ions",
-      "allow": [
-       "many/strong ionic bonds"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "No M2 if covalent bonds or IMF given here"
-      ],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "caffeine has a simple molecular structure",
-      "allow": [
-       "simple covalent structure"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M4",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "caffeine has weak intermolecular forces /weak forces between molecules",
-      "allow": [],
-      "reject": [
-       "weak forces between bonds"
-      ],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       7
-      ]
-     },
-     {
-      "id": "M5",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "more energy is needed to break the electrostatic attractions (in calcium bromide) than to overcome the intermolecular forces (in caffeine) OWTTE",
+      "md": "as the atomic radius increases they get more",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "No M5 if reference to breaking covalent bonds",
-       "No M5 if reference to incorrect bonds"
+       "reactive OWTTE"
       ],
       "pages": [
-       7
+       6
       ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 5,
@@ -1711,162 +1424,94 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 9,
-     "sum": 9,
+     "printed": 7,
+     "sum": 7,
      "verified": true
     },
-    "guidance": [
-     "An explanation that links the following two points",
-     "An explanation that links the following two points",
-     "An explanation that links the following two points",
-     "3"
-    ],
+    "guidance": [],
     "points": [
      {
-      "id": "M1",
+      "id": "P1",
       "part": "a",
       "sub": "i",
-      "marks": 1,
-      "md": "They will not dissolve/diffuse into the solvent (at the bottom of beaker) OWTTE",
-      "allow": [
-       "water",
-       "dye in place of spot throughout question 5"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       8
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "so that the dyes can travel up the paper",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       8
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "E and H",
+      "marks": 3,
+      "md": "clockwise from bottom left",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "M2 dep on M1"
+       "M1 solvent                                           ALLOW water",
+       "M2 solvent front",
+       "M3 chromatography paper                              ALLOW paper"
       ],
       "pages": [
-       8
+       7
       ]
      },
      {
-      "id": "M2",
+      "id": "P2",
       "part": "a",
       "sub": "ii",
       "marks": 1,
-      "md": "as the dye is/both have a spot at the same level/travelled the same distance/same Rf value",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       8
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "a",
-      "sub": "iii",
-      "marks": 1,
-      "md": "The student can only be certain about G containing one dye as only one spot",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       8
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "a",
-      "sub": "iii",
-      "marks": 1,
-      "md": "As F is insoluble/not moved (so you cannot tell how many dyes it has) OWTTE",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       8
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "b",
-      "sub": null,
-      "marks": 1,
-      "md": "distance from baseline to solvent level in mm = 65",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       8
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "b",
-      "sub": null,
-      "marks": 1,
-      "md": "distance from baseline to spot/dye in mm = 39",
+      "md": "pencil is not soluble / insoluble",
       "allow": [
-       "any value between 38 and 41 inclusive"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       8
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "b",
-      "sub": null,
-      "marks": 1,
-      "md": "(Rf value = 39 65 =) 0.6",
-      "allow": [
-       "any value between 0.57 and 0.64"
+       "pencil will not"
       ],
       "reject": [],
       "ignore": [],
       "notes": [
-       "M3 not awarded if value is incorrectly rounded"
+       "dissolve",
+       "run (up the",
+       "chromatogram)"
       ],
       "pages": [
-       8
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "B (W and Y)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "have a spot at the same height",
+       "C is not the correct answer because X and Z do not",
+       "have a spot at the same height",
+       "D is not the correct answer because Y and Z do not",
+       "have a spot at the same height"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "distance moved by the dye from 1.1 to 1.4 (cm)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "distance moved by the solvent 6.5 (cm)",
+       "M2 distance moved by the dye ÷ distance moved by     e.g. 0.17 / 0.18 / 0.2(0)",
+       "the solvent and correctly evaluated                  / 0.22",
+       "sig figs as long as it is",
+       "correctly rounded."
+      ],
+      "pages": [
+       7
       ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 6,
@@ -2114,336 +1759,117 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 13,
-     "sum": 13,
+     "printed": 11,
+     "sum": 11,
      "verified": true
     },
-    "guidance": [
-     "Any 2 from",
-     "An explanation that links the following two points",
-     "Mark independently",
-     "An explanation that links the following two points"
-    ],
+    "guidance": [],
     "points": [
      {
       "id": "M1",
       "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "effervescence/bubbles/fizzing",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "moves",
-      "allow": [],
+      "sub": null,
+      "marks": 2,
+      "md": "(a substance/a fuel that) when burned",
+      "allow": [
+       "burns / combusts"
+      ],
       "reject": [],
       "ignore": [],
       "notes": [
-       "moves on surface scores M2 and M3"
+       "/catches fire",
+       "M2 releases heat (energy) / thermal energy"
       ],
       "pages": [
-       9
+       8
       ]
      },
      {
-      "id": "M3",
-      "part": "a",
+      "id": "P1",
+      "part": "b",
       "sub": "i",
-      "marks": 1,
-      "md": "floats",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M4",
-      "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "disappears/ gets smaller",
+      "marks": 2,
+      "md": "temperature at the start = 20.4 °C",
       "allow": [
-       "dissolves"
+       "ECF from"
       ],
       "reject": [],
       "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M5",
-      "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "melts/forms a ball/forms a sphere",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "heat produced"
+      "notes": [
+       "incorrect temperature",
+       "highest temperature reached = 77.6 °C           reading"
       ],
-      "notes": [],
       "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M6",
-      "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "white trail",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "flame"
-      ],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(the phenolphthalein) turns pink",
-      "allow": [
-       "an alkaline solution /an alkali is produced"
-      ],
-      "reject": [
-       "red or purple"
-      ],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(because) OH− ions/hydroxide ions are present",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "metal oxide forms"
-      ],
-      "notes": [],
-      "pages": [
-       9
+       8
       ]
      },
      {
       "id": "M1",
       "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "(to remove) any other ions/chemicals/ impurities/substances/elements (that may be on the wire)",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "(so that) they do not interfere with/mask the colour of the flame/change the flame colour",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "b-ii",
-      "part": "b",
       "sub": "ii",
-      "marks": 1,
-      "md": "C (red)",
+      "marks": 2,
+      "md": "150 × 4.2 × 57.2",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "A is incorrect as lithium ions do not give a lilac flame",
-       "B is incorrect as lithium ions do not give an orange flame",
-       "D is incorrect as lithium ions do not give a yellow flame"
+       "M2 36 036 (J)                                   ALLOW 36 000 if M1 is",
+       "scored",
+       "36 036 with no working",
+       "scores 2",
+       "long as the 3 values are",
+       "multiplied"
       ],
       "pages": [
-       9
+       8
       ]
      },
      {
       "id": "M1",
-      "part": "c",
-      "sub": "i",
-      "marks": 1,
-      "md": "potassium ion K+",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": "i",
-      "marks": 1,
-      "md": "aluminium ion Al3+",
+      "part": "b",
+      "sub": "iii",
+      "marks": 4,
+      "md": "36.036 kJ",
       "allow": [
-       "Al+3"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       9
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "c",
-      "sub": "i",
-      "marks": 1,
-      "md": "sulfate ion SO42-",
-      "allow": [
-       "SO4-2"
+       "36 kJ"
       ],
       "reject": [],
       "ignore": [],
       "notes": [
-       "All three correct 2 marks",
-       "Any two correct 1 mark"
+       "M2 amount of ethanol = 2.3 ÷ 46 OR 0.05 (mol)",
+       "M3 36.036 ÷ 0.05 OR 720.720 (kJ)                M3 subsumes M1 and M2",
+       "M3 36036 ÷ 0.05 (J)                             ALLOW M3 to 2 sig figs",
+       "M4 −720 (kJ/mol)                                ALLOW ECF M4 with 2 sig",
+       "figs and a − sign",
+       "Correct answer without",
+       "working scores 4 marks"
       ],
       "pages": [
-       9
+       8
       ]
      },
      {
-      "id": "M1",
+      "id": "P2",
       "part": "c",
-      "sub": "ii",
+      "sub": null,
       "marks": 1,
-      "md": "(mass of water =) 23.7 − 12.9 OR 10.8",
-      "allow": [
-       "alternative methods"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "without working scores 4",
-       "correct answer of 12"
-      ],
-      "pages": [
-       10
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(moles of KAl(SO4)2 =) 12.9 258 OR 0.05(00)",
-      "allow": [
-       "ecf on incorrect mass of water"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       10
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(moles of water =) 10.8 18 OR 0.6(00)",
+      "md": "any one from",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "answer to M4 must be a whole number"
+       "heat absorbed by the metal can",
+       "incomplete combustion",
+       "heat lost to the surroundings                   ALLOW heat loss"
       ],
       "pages": [
-       10
-      ]
-     },
-     {
-      "id": "M4",
-      "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(x = 0.6 0.05 =) 12",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       10
+       8
       ]
      }
     ],
-    "provenance": "llm-structured",
-    "pools": [
-     {
-      "part": "a-i",
-      "labels": [
-       "M1",
-       "M2",
-       "M3",
-       "M4",
-       "M5",
-       "M6"
-      ],
-      "cap": 2,
-      "reason": "'Any 2 from' line 216; block mark 2"
-     },
-     {
-      "part": "c-i",
-      "labels": [
-       "M1",
-       "M2",
-       "M3"
-      ],
-      "cap": 2,
-      "reason": "'All three correct 2 marks / Any two correct 1 mark' lines 245-246; block mark 2"
-     }
-    ]
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 7,
@@ -2818,250 +2244,131 @@
      "sum": 13,
      "verified": true
     },
-    "guidance": [
-     "A description that refers to the following six points",
-     "6"
-    ],
+    "guidance": [],
     "points": [
      {
-      "id": "a",
+      "id": "P1",
       "part": "a",
-      "sub": null,
+      "sub": "i",
       "marks": 1,
-      "md": "D (80 %)",
-      "allow": [],
-      "reject": [],
+      "md": "measuring cylinder",
+      "allow": [
+       "burette /"
+      ],
+      "reject": [
+       "gas syringe"
+      ],
       "ignore": [],
       "notes": [
-       "A is incorrect as there is not approximately 1 % of nitrogen in the atmosphere",
-       "B is incorrect as there is not approximately 20 % of nitrogen in the atmosphere",
-       "C is incorrect as there is not approximately 70 % of nitrogen in the atmosphere"
+       "pipette / syringe"
       ],
       "pages": [
-       11
+       9
       ]
      },
      {
-      "id": "M1",
-      "part": "b",
-      "sub": null,
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
       "marks": 1,
-      "md": "3 pairs of electrons between the two nitrogen atoms",
-      "allow": [
-       "any combination of dots and crosses"
-      ],
+      "md": "(the) zinc / Zn / it is in excess",
+      "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [],
       "pages": [
-       11
+       9
       ]
      },
      {
-      "id": "M2",
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "so as little gas as possible is lost",
+      "allow": [
+       "to keep as"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "much gas as possible",
+       "gas / so gas does not",
+       "escape"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "a",
+      "sub": "iv",
+      "marks": 1,
+      "md": "any one from",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "no further effervescence / bubbles / fizzing",
+       "no more gas collects in the syringe                  ALLOW gas syringe does",
+       "not move"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M1",
       "part": "b",
-      "sub": null,
-      "marks": 1,
-      "md": "rest of molecule fully correct",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M2 dep on M1"
-      ],
-      "pages": [
-       11
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "c",
       "sub": "i",
-      "marks": 1,
-      "md": "all formulae correct",
-      "allow": [
-       "multiples and fractions"
-      ],
-      "reject": [],
-      "ignore": [
-       "state symbols"
-      ],
-      "notes": [
-       "4NO2 + 2H2O + O2 → 4HNO3"
-      ],
-      "pages": [
-       11
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": "i",
-      "marks": 1,
-      "md": "balancing of correct formulae",
+      "marks": 3,
+      "md": "calculation of gradient OR 50 ÷ 150",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "even if incorrect",
-       "M2 dep on M1"
+       "triangle needs to be",
+       "drawn on graph for M1",
+       "M2 0.33                                              ALLOW ECF from M1",
+       "M3 units cm3/s                                       ACCEPT cm3 s−1"
       ],
       "pages": [
-       11
+       9
       ]
      },
      {
-      "id": "c-ii",
-      "part": "c",
+      "id": "P5",
+      "part": "b",
       "sub": "ii",
-      "marks": 1,
-      "md": "any one environmental effect of acid rain",
-      "allow": [
-       "any other environmental effect"
-      ],
-      "reject": [
-       "ozone layer"
-      ],
-      "ignore": [
-       "climate change"
-      ],
-      "notes": [
-       "e.g. acidifies lakes /kills fish /deforestation /damages plants /corrodes marble statues /corrodes buildings"
-      ],
-      "pages": [
-       11
-      ]
-     },
-     {
-      "id": "d-i",
-      "part": "d",
-      "sub": "i",
-      "marks": 1,
-      "md": "D (NH4)2CO3",
+      "marks": 6,
+      "md": "from 0 to 60 s",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "A is incorrect as NH3CO3 is not the formula of ammonium carbonate",
-       "B is incorrect as (NH3)2CO3 is not the formula of ammonium carbonate",
-       "C is incorrect as NH4CO3 is not the formula of ammonium carbonate"
+       "M1 gradient is steepest",
+       "M2 because there are most acid particles (per unit   ACCEPT because",
+       "volume) / most collisions (per unit time) / most     concentration is",
+       "frequent collisions                                  greatest / highest",
+       "from 60 to 150 s",
+       "M3 the curve becomes less steep",
+       "M4 because there are fewer particles (per unit       ACCEPT because",
+       "volume) / fewer collisions (per unit time) / fewer   concentration is lower",
+       "frequent collisions",
+       "from 150 to 240 s",
+       "M5 the reaction has stopped / curve levels           ALLOW the volume of",
+       "off/becomes flat/plateaus                            gas becomes constant",
+       "M6 because the (sulfuric) acid has been used up"
       ],
       "pages": [
-       11
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "d",
-      "sub": "ii",
-      "marks": 1,
-      "md": "add sodium hydroxide solution (and heat)",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "Test for ammonium ions",
-       "and M3"
-      ],
-      "pages": [
-       12
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "d",
-      "sub": "ii",
-      "marks": 1,
-      "md": "test the gas/ammonia with (damp) red litmus paper",
-      "allow": [
-       "universal indicator paper which turns blue/purple for M2"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M2 is dependent on M1",
-       "OR can be awarded for heating the solution and producing a gas to test",
-       "No M2 and M3 if litmus paper added directly to the solution"
-      ],
-      "pages": [
-       12
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "d",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(red litmus) turns blue",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M3 can be awarded independently if ammonia gas is correctly tested with correct colour change"
-      ],
-      "pages": [
-       12
-      ]
-     },
-     {
-      "id": "M4",
-      "part": "d",
-      "sub": "ii",
-      "marks": 1,
-      "md": "add (hydrochloric) acid ONLY",
-      "allow": [
-       "other acids"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "Test for carbonate ions"
-      ],
-      "pages": [
-       12
-      ]
-     },
-     {
-      "id": "M5",
-      "part": "d",
-      "sub": "ii",
-      "marks": 1,
-      "md": "test the gas/carbon dioxide with limewater",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M5 dependent on gaining M4 by adding acid ONLY to the solution"
-      ],
-      "pages": [
-       12
-      ]
-     },
-     {
-      "id": "M6",
-      "part": "d",
-      "sub": "ii",
-      "marks": 1,
-      "md": "(limewater) turns cloudy/milky/white precipitate",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M6 can be awarded independently if a correct limewater test on carbon dioxide gas is carried out",
-       "No M5 and M6 if limewater added directly to the solution."
-      ],
-      "pages": [
-       12
+       9
       ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PART-MARKS-MISMATCH",
-    "MS-POINT-UNKNOWN-PART"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 8,
@@ -3192,278 +2499,93 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 15,
-     "sum": 15,
+     "printed": 11,
+     "sum": 11,
      "verified": true
     },
-    "guidance": [
-     "An explanation that links the following two points",
-     "2",
-     "2",
-     "3",
-     "2",
-     "2"
-    ],
+    "guidance": [],
     "points": [
      {
-      "id": "M1",
+      "id": "P1",
       "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "(compounds with) the same molecular formula",
-      "allow": [
-       "same number of carbons and hydrogens/atoms of each element"
-      ],
-      "reject": [
-       "elements with the same molecular formula",
-       "chemical formula for M1"
-      ],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       13
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "a",
-      "sub": "i",
-      "marks": 1,
-      "md": "but different structural/displayed formulae",
-      "allow": [
-       "different structures/arrangements of atoms"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M2 independent of M1"
-      ],
-      "pages": [
-       13
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "",
-      "allow": [
-       "cis and trans isomers for both marks"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "Must show all bonds"
-      ],
-      "pages": [
-       13
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "",
+      "sub": null,
+      "marks": 4,
+      "md": "a description that links any 4 of the following points",
       "allow": [],
-      "reject": [
-       "cycloalkanes"
-      ],
+      "reject": [],
       "ignore": [],
-      "notes": [],
+      "notes": [
+       "M1 crude oil is heated / vapourised                      ALLOW boiled",
+       "M2 the vapour enters the lower part / bottom of the",
+       "column",
+       "M3 there is a temperature gradient in the column         ACCEPT cooler at the",
+       "top and hotter at the",
+       "bottom",
+       "M4 the vapours rise up the column until they",
+       "condense",
+       "M5 at a height where the boiling point of the vapour     ALLOW the fractions are",
+       "is lower than the temperature in the column              separated according to",
+       "their boiling point"
+      ],
       "pages": [
-       13
+       10
       ]
      },
      {
-      "id": "b",
+      "id": "P2",
       "part": "b",
       "sub": null,
-      "marks": 1,
-      "md": "A (addition)",
+      "marks": 4,
+      "md": "an explanation that links any 4 of the following",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "B is incorrect as this is not a combustion reaction",
-       "C is incorrect as this is not a decomposition reaction",
-       "D is incorrect as this is not a substitution reaction"
+       "points",
+       "M1 fractional distillation of crude oil produces more    ALLOW is a lower",
+       "long chain hydrocarbons than can be used directly        demand for long chain",
+       "hydrocarbons / a higher",
+       "demand for short chain",
+       "hydrocarbons",
+       "M2 (cracking) produces shorter (chain) alkanes           ALLOW petrol / gasoline",
+       "M3 which are more flammable/ more useful as fuels        M3 dep on M2",
+       "M4 (cracking) produces alkenes",
+       "M5 which are used to make polymers/plastics              M5 dep on M4"
       ],
       "pages": [
-       13
-      ]
-     },
-     {
-      "id": "c-i",
-      "part": "c",
-      "sub": "i",
-      "marks": 1,
-      "md": "H CH3 C−C H H",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "brackets and n"
-      ],
-      "notes": [],
-      "pages": [
-       13
+       10
       ]
      },
      {
       "id": "M1",
       "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "they are inert/unreactive/do not biodegrade/decomposes (very) slowly/running out space",
+      "sub": null,
+      "marks": 3,
+      "md": "fuels contain sulfur",
       "allow": [],
-      "reject": [],
+      "reject": [
+       "nitrogen for M1"
+      ],
       "ignore": [
-       "global warming"
-      ],
-      "notes": [],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "they produce toxic fumes/greenhouse gases (when burned)",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "d",
-      "sub": null,
-      "marks": 1,
-      "md": "y (= 396 44) = 9",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "d",
-      "sub": null,
-      "marks": 1,
-      "md": "z (= 180 18) = 10",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "d",
-      "sub": null,
-      "marks": 1,
-      "md": "x = 14",
-      "allow": [
-       "ecf for M3 on incorrect values for M1 and/or M2"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "2"
-      ],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "e",
-      "sub": "i",
-      "marks": 1,
-      "md": "correct balancing",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "C8H18(l) + 7O2(g) → 5CO(g) + 3C(s) + 9H2O(l)"
-      ],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "e",
-      "sub": "i",
-      "marks": 1,
-      "md": "correct state symbols",
-      "allow": [
-       "(g) for H2O"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "e",
-      "sub": "ii",
-      "marks": 1,
-      "md": "carbon monoxide/CO",
-      "allow": [
-       "carbon/C",
-       "soot causes respiratory problems"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       14
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "e",
-      "sub": "ii",
-      "marks": 1,
-      "md": "is poisonous/toxic/limits the capacity to carry oxygen in the blood",
-      "allow": [
-       "correct references to haemoglobin"
-      ],
-      "reject": [],
-      "ignore": [
-       "harmful"
+       "C / CO / CO2"
       ],
       "notes": [
-       "M2 dep on M1"
+       "and any reference to",
+       "global warming etc.",
+       "M2 which burns producing sulfur dioxide",
+       "M3 causing acid rain                                     ALLOW effects of acid",
+       "rain",
+       "M3 dep on M1 or M2 or",
+       "NO2 or SO3"
       ],
       "pages": [
-       14
+       10
       ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH",
-    "MS-POINT-UNKNOWN-PART"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 9,
@@ -3745,231 +2867,118 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 11,
-     "sum": 11,
-     "verified": true
+     "printed": 14,
+     "sum": 9,
+     "verified": false
     },
     "guidance": [
-     "Any two linked pairs from the following:",
-     "An explanation that links the following three points"
+     "M4 in hydrogen chloride there are weak REJECT weak forces",
+     "M5 (much) more energy is required to break the REJECT any reference"
     ],
     "points": [
      {
-      "id": "a-i",
+      "id": "M1",
       "part": "a",
       "sub": "i",
-      "marks": 1,
-      "md": "carbon dioxide/a gas is given off",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "marble dissolving",
-       "gas formed"
-      ],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "a-ii",
-      "part": "a",
-      "sub": "ii",
-      "marks": 1,
-      "md": "to prevent acid spray from leaving the flask OWTTE",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "to stop solid from escaping"
-      ],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "the curve is steep(est) at the start/the loss in mass is fastest at the start",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "because the acid concentration is highest/maximum number of reacting particles",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "curves becomes less steep/the loss in mass slows down",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M4",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "acid becomes more dilute/less concentrated",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M5",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "curve levels off/becomes flat/plateaus/the loss in mass stops",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M6",
-      "part": "b",
-      "sub": "i",
-      "marks": 1,
-      "md": "acid has been used up",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "b",
-      "sub": "ii",
-      "marks": 1,
-      "md": "curve drawn starting at the origin and below the original curve",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "b",
-      "sub": "ii",
-      "marks": 1,
-      "md": "curve levels off at 0.27 g + or − half a small square",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "the rate of reaction would increase/be faster",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "(because) the smaller marble chips have a greater surface area",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "less chance of collisions"
-      ],
-      "notes": [],
-      "pages": [
-       15
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "c",
-      "sub": null,
-      "marks": 1,
-      "md": "(so) there will be more collisions per unit time",
+      "marks": 3,
+      "md": "NaCl",
       "allow": [
-       "more frequent collisions"
+       "Na+Cl− / ClNa"
+      ],
+      "reject": [
+       "any incorrect"
+      ],
+      "ignore": [],
+      "notes": [
+       "M2 ZnO                            ACCEPT Zn2+O2− / OZn",
+       "M3 (NH4)2SO4                      ACCEPT (NH4+)2SO42−",
+       "/SO4(NH4)2",
+       "charges",
+       "Penalise once only for",
+       "incorrect case or",
+       "subscripts / superscripts"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "zinc sulfate",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "2 bonding electrons",
+      "allow": [
+       "dots, crosses or"
       ],
       "reject": [],
       "ignore": [],
       "notes": [
-       "MAX 1 mark if reference to particles having more energy or moving faster"
+       "any combination",
+       "M2 rest of the molecule correct   M2 dep on M1"
       ],
       "pages": [
-       15
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 3,
+      "md": "magnesium ion",
+      "allow": [
+       "dots, crosses or"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "any combination",
+       "Only 1 mark max in M1",
+       "and M2 if they only",
+       "show the outer",
+       "electrons, as the",
+       "question requires the",
+       "electronic",
+       "M2 chloride ion                   configurations",
+       "M3 Mg2+ and Cl−",
+       "points",
+       "M1 hydrogen chloride is simple molecular / simple      ALLOW molecular",
+       "covalent                                               covalent",
+       "M2 magnesium chloride is giant ionic / ionic lattice   ALLOW giant structure",
+       "if ions are mentioned",
+       "M3 strong electrostatic attraction between             ALLOW strong ionic",
+       "(oppositely charged) ions                              bonds",
+       "No M3 if any mention of",
+       "covalent bonds or",
+       "intermolecular forces in",
+       "magnesium chloride"
+      ],
+      "pages": [
+       11
       ]
      }
     ],
-    "provenance": "llm-structured",
-    "pools": [
-     {
-      "part": "b-i",
-      "labels": [
-       "M1",
-       "M2",
-       "M3",
-       "M4",
-       "M5",
-       "M6"
-      ],
-      "cap": 4,
-      "reason": "'Any two linked pairs from the following' line 383: pairs (M1,M2), (M3,M4), (M5,M6); two full pairs score 4 — numeric cap 4 over six labels; pair-linking constraint documented here"
-     }
-    ]
+    "provenance": "pdf-parsed"
    },
    "provenance": "pdf-parsed",
    "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH",
-    "MS-POINT-UNKNOWN-PART"
+    "MS-POINTS-DONT-CLOSE",
+    "PART-MARKS-MISMATCH"
    ]
   },
   {
@@ -4131,195 +3140,67 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": 11,
-     "sum": 11,
+     "printed": 6,
+     "sum": 6,
      "verified": true
     },
-    "guidance": [
-     "An explanation that links the following two points",
-     "2"
-    ],
+    "guidance": [],
     "points": [
      {
-      "id": "a",
+      "id": "M1",
       "part": "a",
       "sub": null,
-      "marks": 1,
-      "md": "Mg + 2HNO3 → Mg(NO3)2 + H2",
-      "allow": [],
-      "reject": [],
-      "ignore": [
-       "state symbols even if incorrect"
-      ],
-      "notes": [],
-      "pages": [
-       16
-      ]
-     },
-     {
-      "id": "b",
-      "part": "b",
-      "sub": null,
       "marks": 2,
-      "md": "",
-      "allow": [
-       "ECF from incorrect highest temperature reached",
-       "ECF from an incorrect starting temperature"
-      ],
+      "md": "a catalyst provides an alternative pathway /",
+      "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "temperature of the acid at the start in oC 16.0",
-       "highest temperature reached in oC 32.4",
-       "temperature rise in oC 16.4",
-       "Must be given to 1dp"
+       "route",
+       "M2 of lower activation energy"
       ],
       "pages": [
-       16
+       12
       ]
      },
      {
-      "id": "M1",
-      "part": "c",
+      "id": "P1",
+      "part": "b",
       "sub": "i",
       "marks": 1,
-      "md": "Q = 40 4.2 16.4",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       16
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": "i",
-      "marks": 1,
-      "md": "2755 (J)",
+      "md": "conical flask",
       "allow": [
-       "any number of sig figs except 1"
+       "flask"
       ],
       "reject": [],
       "ignore": [],
       "notes": [],
       "pages": [
-       16
+       12
       ]
      },
      {
       "id": "M1",
-      "part": "c",
+      "part": "b",
       "sub": "ii",
-      "marks": 1,
-      "md": "n(Mg) = 0.12 ÷ 24 OR 0.005",
+      "marks": 3,
+      "md": "filter out the manganese(IV) oxide",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "correct answer with minus sign and without working scores 4",
-       "find the amount of magnesium in moles"
+       "M2 allow it to dry",
+       "M3 reweigh the catalyst, the same mass should be",
+       "left / mass is still 1 g"
       ],
       "pages": [
-       16
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "Q ÷ n OR 2755 ÷ 0.005 OR 551 000 (J/mol)",
-      "allow": [
-       "use of 2760 or 2800",
-       "ECF on incorrect answer to (i) and/or M1"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "divide Q by n"
-      ],
-      "pages": [
-       16
-      ]
-     },
-     {
-      "id": "M3",
-      "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "551 000 ÷ 1000 OR 551 (kJ/mol)",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "convert answer in J/mol to kJ/mol"
-      ],
-      "pages": [
-       16
-      ]
-     },
-     {
-      "id": "M4",
-      "part": "c",
-      "sub": "ii",
-      "marks": 1,
-      "md": "− 550 (kJ/mol)",
-      "allow": [
-       "ECF on incorrect answer to M2",
-       "ECF on incorrect answer to M3"
-      ],
-      "reject": [],
-      "ignore": [],
-      "notes": [
-       "M4 – to score must be to 2sf and have correct sign",
-       "Use of 2800 gives an answer of − 560 (kJ/mol)",
-       "answer including sign to 2sf"
-      ],
-      "pages": [
-       16
-      ]
-     },
-     {
-      "id": "M1",
-      "part": "d",
-      "sub": null,
-      "marks": 1,
-      "md": "polystyrene is an insulator/poor conductor OWTTE",
-      "allow": [],
-      "reject": [],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       17
-      ]
-     },
-     {
-      "id": "M2",
-      "part": "d",
-      "sub": null,
-      "marks": 1,
-      "md": "(so) there is less heat loss/more heat retained (compared to the glass beaker)",
-      "allow": [],
-      "reject": [
-       "no heat loss"
-      ],
-      "ignore": [],
-      "notes": [],
-      "pages": [
-       17
+       12
       ]
      }
     ],
-    "provenance": "llm-structured"
+    "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PRINTED-TOTAL-DISCREPANCY-QP-VS-MS",
-    "PART-MARKS-MISMATCH",
-    "MS-POINT-UNKNOWN-PART"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 11,
@@ -4518,19 +3399,121 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": null,
-     "sum": 0,
-     "verified": false
+     "printed": 12,
+     "sum": 12,
+     "verified": true
     },
-    "guidance": [],
-    "points": [],
+    "guidance": [
+     "M2 in diamond, the bonds need a lot of energy to REJECT mention of",
+     "diamond for M1 and M2"
+    ],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "has only one type of atom",
+      "allow": [
+       "only made up"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "of carbon atoms"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "(attraction between) a shared pair of electrons",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 and nuclei                                        do not accept nucleus",
+       "nuclei must be plural",
+       "M1 a shared pair of electrons",
+       "M2 and (attraction between) nuclei                   do not accept nucleus",
+       "nuclei must be plural"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 2,
+      "md": "delocalised electrons",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "No marks if mention of",
+       "ions / molecules in",
+       "M2 (electrons) can move / flow (throughout the       graphite",
+       "structure)"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 4,
+      "md": "(diamond is hard because) it has a 3D",
+      "allow": [
+       "3D/ rigid/"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "lattice/rigid lattice /tetrahedral lattice /every    tetrahedral structure",
+       "carbon is bonded to four other carbons"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": null,
+      "marks": 3,
+      "md": "calculation Mr of Cx",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 Mr ÷ 12",
+       "M3 answer given as an integer",
+       "exemplar",
+       "M1 1.40 × 10−21 × 6.02 × 1023 OR 842.8               ALLOW any number of",
+       "significant figures from",
+       "2",
+       "M2 842.8 ÷ 12 (= 70.23)                              ALLOW ECF if division",
+       "by atomic number 6",
+       "M3 70                                                Answer of 70 without",
+       "working scores 3",
+       "M3 (no printed marks cell): (graphite is soft because) it has layers | ALLOW sheets | M4 which can slide over one another                  IGNORE intermolecular | forces in graphite | M4 dep on M3"
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "MS-QUESTION-MISSING",
-    "MS-PART-NO-POINTS"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 12,
@@ -4799,19 +3782,150 @@
    ],
    "markScheme": {
     "totals": {
-     "printed": null,
-     "sum": 0,
-     "verified": false
+     "printed": 11,
+     "sum": 11,
+     "verified": true
     },
-    "guidance": [],
-    "points": [],
+    "guidance": [
+     "M2 tantalum oxide loses oxygen and is reduced REJECT tantalum loses"
+    ],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "2TaCl5(s) + 5H2(g) → 2Ta(s) + 10HCl(g)",
+      "allow": [
+       "multiples or"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "fractions"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "the last (3) masses are the same",
+      "allow": [
+       "mass does not"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "change / mass becomes",
+       "constant"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 3,
+      "md": "mass of chlorine = 1243 (kg)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 1 267 000 ÷ 181 and 1 243 000 ÷ 35.5           ALLOW calculation done",
+       "in kilomoles",
+       "e.g. 1267 ÷ 181 and 1243",
+       "÷ 35.5",
+       "M3 7000 moles of tantalum and 35 014 moles of     e.g. ratio 7 : 35 moles",
+       "chlorine (so 1:5 ratio)",
+       "M3 subsumes M1 and M2",
+       "no M2 or M3 for upside",
+       "down calculation or use",
+       "of atomic numbers"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 2,
+      "md": "carbon is oxidised and tantalum oxide is",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Penalise tantalum is",
+       "reduced                                           reduced or tantalum",
+       "loses oxygen once only",
+       "M2 carbon gains oxygen and tantalum oxide loses",
+       "oxygen",
+       "M1 carbon gains oxygen and is oxidised"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 2,
+      "md": "(5 × 2000 =) 10 000 moles of carbon is needed",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(12 × 2000 =) 24 000 g",
+       "M2 (10 000 × 12 =) 120 000 g of carbon is needed   (5 × 24 000 =) 120 000 g of",
+       "(which is less than 500 000 g)                     carbon is needed",
+       "M1 (500 000 ÷ 12) of carbon is 41 667 moles        (500 000 ÷ 5) is 100 000 g",
+       "M2 which is enough to react with (41 667 ÷ 5 =)    which is enough to react",
+       "8333 moles of tantalum oxide                       with (100 000 ÷ 12 =)",
+       "8333 moles of tantalum",
+       "OR                                                 oxide",
+       "M1 (5 × 2000 =) 10 000 moles of carbon is needed",
+       "M2 (500 000 ÷ 12) is more than 41 667 moles of",
+       "carbon"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "iii",
+      "marks": 2,
+      "md": "(2 × 2000 =) 4000 moles of tantalum",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (4000 × 181=) 724 000 g of tantalum             ALLOW ECF for incorrect",
+       "moles",
+       "e.g. 2000 × 181 = 362 000",
+       "scores 1",
+       "1000 × 181 = 181 000",
+       "scores 1",
+       "4000 × 362 = 1 448 000",
+       "scores 1"
+      ],
+      "pages": [
+       15
+      ]
+     }
+    ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "MS-QUESTION-MISSING",
-    "MS-PART-NO-POINTS"
-   ]
+   "provenance": "pdf-parsed"
   }
  ]
 }
