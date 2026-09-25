@@ -1,0 +1,78 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2016-06:4CH0/2CR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2016-06
+  year: '2016'
+  session_month: '06'
+  printed: June 2016
+  source: filename
+paper:
+  official_reference: 4CH0/2CR
+  unit_code: 4CH0
+  paper_number_variant: 2CR
+variant:
+  official_code: R
+  type: regional-variant
+  note: regional variant preserved during 2026-09-25 F10 repair; these bytes were
+    previously misfiled in the 4CH0-2C dir
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 95ede68db0160975035273a5460bf94725aa970bab2139a431a293df46265ad0
+  size_bytes: 279081
+  original_filename: June 2016 (R) MS - Paper 2C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: af18b5e37a089345ebff06e7ed04d0e5d414943c23b49425ca07311c125ccd2d
+  size_bytes: 129401
+  original_filename: June 2016 (R) QP - Paper 2C Edexcel Chemistry IGCSE.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0/2CR
+  stray_prints: []
+  session_printed: June 2016
+  notes: []
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-09-11'
+  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
+  verification_status: AI-IDENTIFIED
+repair:
+  date: '2026-09-25'
+  actor: SyllabAI repair agent (AUDIT-2026-09-12 F10 cure; see docs/REPAIR-2026-09-25.md)
+  action: r-preserved-new-dir
+  entry:
+    moved_from: past-papers/pearson-edexcel/international-gcse/chemistry/4ch0/past-papers/2016-06/4CH0-2CR/
+    bytes_unchanged: true
+    content_sha256:
+      qp.pdf: af18b5e37a089345ebff06e7ed04d0e5d414943c23b49425ca07311c125ccd2d
+      ms.pdf: 95ede68db0160975035273a5460bf94725aa970bab2139a431a293df46265ad0
+    note: '2026-09-25 F10 repair: regional-variant bytes that previously sat in the
+      4CH0-2C dir moved here to their true identity (4CH0-2CR); cover-verified printed
+      refs 4CH0/2CR. See docs/REPAIR-2026-09-25.md.'

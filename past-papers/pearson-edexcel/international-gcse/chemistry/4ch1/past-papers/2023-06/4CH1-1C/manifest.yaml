@@ -22,7 +22,8 @@ paper:
 variant:
   official_code: C
   type: null
-  note: official variant code; semantics not verified from board documentation (charter s.8)
+  note: official variant code; semantics not verified from board documentation (charter
+    s.8)
 materials:
 - type: mark-scheme
   path: ms.pdf
@@ -34,18 +35,20 @@ materials:
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 045fbcb336946b2697ff6d9d1bb18934e5afa12c5f3edc590ce97391e7f97349
-  size_bytes: 1013986
-  original_filename: June 2023 (R) QP.pdf
+  sha256: db3e6fdfb62c0357798a5bda8d755facdada1bd0a43d1439565b737ca26fb817
+  size_bytes: 757681
+  original_filename: IGCSE__Edexcel__Chemistry__Paper 1__June 2023 QP.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
 - type: examiner-report
   path: er.pdf
   sha256: 6dc34a53ce3e9bbf32c0fc4b5ef897d491fa4210b58c655ec4a5d83b9a7f28fd
@@ -56,7 +59,9 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/May 2023/IGCSE_CHEMISTRY_2023_May_P1_PEF_1777794091323.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org
+      archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel
+      to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -64,12 +69,34 @@ identification:
   printed_references_seen:
   - 4CH1
   - 4CH1/1C
+  - 4SD0/1C
   stray_prints: []
   session_printed: June 2023
   notes:
-  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
+  - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave
+    8)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED
+repair:
+  date: '2026-09-25'
+  actor: SyllabAI repair agent (AUDIT-2026-09-12 F10 cure; see docs/REPAIR-2026-09-25.md)
+  action: qp-replaced
+  entries:
+  - file: qp.pdf
+    previous_sha256: 045fbcb336946b2697ff6d9d1bb18934e5afa12c5f3edc590ce97391e7f97349
+    previous_size_bytes: 1013986
+    previous_original_filename: June 2023 (R) QP.pdf
+    promoted_from: _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+      1__June 2023 QP.pdf
+    promoted_sha256: db3e6fdfb62c0357798a5bda8d755facdada1bd0a43d1439565b737ca26fb817
+    quarantine_reason: "original_path: IGCSE/Edexcel/Chemistry/Paper 1/June 2023 QP.pdf\n\
+      class: duplicate-artifact\nreason: same identity slot as IGCSE/Edexcel/Chemistry/Paper\
+      \ 1/June 2023 (R) QP.pdf but different bytes (kept the higher-confidence identification)\n\
+      identification_method: pdf_text\nnotes: \nsha256: db3e6fdfb62c0357798a5bda8d755facdada1bd0a43d1439565b737ca26fb817\n\
+      kept_alternative_sha256: 045fbcb336946b2697ff6d9d1"
+  note: '2026-09-25 F10 repair (see docs/REPAIR-2026-09-25.md): this dir previously
+    held regional-variant bytes (printed 4CH1/1CR); genuine paper promoted from _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+    1__June 2023 QP.pdf (cover-verified).'

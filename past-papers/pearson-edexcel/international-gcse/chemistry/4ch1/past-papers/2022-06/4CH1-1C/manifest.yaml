@@ -22,7 +22,8 @@ paper:
 variant:
   official_code: C
   type: null
-  note: official variant code; semantics not verified from board documentation (charter s.8)
+  note: official variant code; semantics not verified from board documentation (charter
+    s.8)
 materials:
 - type: mark-scheme
   path: ms.pdf
@@ -34,18 +35,20 @@ materials:
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: f21e970f2cb67b8333e2271689e8278aa3c2a131dab449f534b2bb11cf548ff9
-  size_bytes: 1117678
-  original_filename: June 2022 (R) QP.pdf
+  sha256: 222019063953cef895736c575d38b4e3fcd6e3af5eb0e964c3ef14b81af81e62
+  size_bytes: 801091
+  original_filename: IGCSE__Edexcel__Chemistry__Paper 1__June 2022 QP.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
 identification:
   methods:
   - pdf_text
@@ -53,6 +56,7 @@ identification:
   printed_references_seen:
   - 4CH1
   - 4CH1/1C
+  - 4SD0/1C
   stray_prints: []
   session_printed: June 2022
   notes: []
@@ -61,3 +65,23 @@ ingestion:
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED
+repair:
+  date: '2026-09-25'
+  actor: SyllabAI repair agent (AUDIT-2026-09-12 F10 cure; see docs/REPAIR-2026-09-25.md)
+  action: qp-replaced
+  entries:
+  - file: qp.pdf
+    previous_sha256: f21e970f2cb67b8333e2271689e8278aa3c2a131dab449f534b2bb11cf548ff9
+    previous_size_bytes: 1117678
+    previous_original_filename: June 2022 (R) QP.pdf
+    promoted_from: _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+      1__June 2022 QP.pdf
+    promoted_sha256: 222019063953cef895736c575d38b4e3fcd6e3af5eb0e964c3ef14b81af81e62
+    quarantine_reason: "original_path: IGCSE/Edexcel/Chemistry/Paper 1/June 2022 QP.pdf\n\
+      class: duplicate-artifact\nreason: same identity slot as IGCSE/Edexcel/Chemistry/Paper\
+      \ 1/June 2022 (R) QP.pdf but different bytes (kept the higher-confidence identification)\n\
+      identification_method: pdf_text\nnotes: \nsha256: 222019063953cef895736c575d38b4e3fcd6e3af5eb0e964c3ef14b81af81e62\n\
+      kept_alternative_sha256: f21e970f2cb67b8333e227168"
+  note: '2026-09-25 F10 repair (see docs/REPAIR-2026-09-25.md): this dir previously
+    held regional-variant bytes (printed 4CH1/1CR); genuine paper promoted from _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+    1__June 2022 QP.pdf (cover-verified).'

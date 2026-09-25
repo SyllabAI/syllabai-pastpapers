@@ -22,30 +22,35 @@ paper:
 variant:
   official_code: C
   type: null
-  note: official variant code; semantics not verified from board documentation (charter s.8)
+  note: official variant code; semantics not verified from board documentation (charter
+    s.8)
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: f1b6e819adc5bfbdfb64c095c7b53d18b4b95dcdc1c5b6a63218c52e1d300eac
-  size_bytes: 664841
-  original_filename: June 2017 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf
+  sha256: 28008020cb90708bfe438195b02417a0bb7d57232e3094220ad808971aa29a75
+  size_bytes: 345989
+  original_filename: IGCSE__Edexcel__Chemistry__Paper 1__June 2017 MS - Paper 1C Edexcel
+    Chemistry IGCSE.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: fa8769bea3b6ef523b0e2c6a3f339fab8502ddf317ba7d9444cb8da034bc1c5b
-  size_bytes: 499733
-  original_filename: June 2017 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf
+  sha256: a4f7eb2c6d9b93fe678416af270b578acc567fd8a47cdfae1f3d98c9b6e4813b
+  size_bytes: 549926
+  original_filename: IGCSE__Edexcel__Chemistry__Paper 1__June 2017 QP - Paper 1C Edexcel
+    Chemistry IGCSE.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
 identification:
   methods:
   - pdf_text
@@ -64,3 +69,35 @@ ingestion:
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED
+repair:
+  date: '2026-09-25'
+  actor: SyllabAI repair agent (AUDIT-2026-09-12 F10 cure; see docs/REPAIR-2026-09-25.md)
+  action: pair-replaced
+  entries:
+  - file: qp.pdf
+    previous_sha256: fa8769bea3b6ef523b0e2c6a3f339fab8502ddf317ba7d9444cb8da034bc1c5b
+    previous_size_bytes: 499733
+    previous_original_filename: June 2017 (R) QP - Paper 1C Edexcel Chemistry IGCSE.pdf
+    promoted_from: _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+      1__June 2017 QP - Paper 1C Edexcel Chemistry IGCSE.pdf
+    promoted_sha256: a4f7eb2c6d9b93fe678416af270b578acc567fd8a47cdfae1f3d98c9b6e4813b
+    quarantine_reason: "original_path: IGCSE/Edexcel/Chemistry/Paper 1/June 2017 QP\
+      \ - Paper 1C Edexcel Chemistry IGCSE.pdf\nclass: duplicate-artifact\nreason:\
+      \ same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2017 (R) QP - Paper\
+      \ 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence\
+      \ identification)\nidentification_method: pdf_text\nnotes: \nsha256: a4f7eb2c6d9b93fe678416af270b578acc567fd8a47cd"
+  - file: ms.pdf
+    previous_sha256: f1b6e819adc5bfbdfb64c095c7b53d18b4b95dcdc1c5b6a63218c52e1d300eac
+    previous_size_bytes: 664841
+    previous_original_filename: June 2017 (R) MS - Paper 1C Edexcel Chemistry IGCSE.pdf
+    promoted_from: _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+      1__June 2017 MS - Paper 1C Edexcel Chemistry IGCSE.pdf
+    promoted_sha256: 28008020cb90708bfe438195b02417a0bb7d57232e3094220ad808971aa29a75
+    quarantine_reason: "original_path: IGCSE/Edexcel/Chemistry/Paper 1/June 2017 MS\
+      \ - Paper 1C Edexcel Chemistry IGCSE.pdf\nclass: duplicate-artifact\nreason:\
+      \ same identity slot as IGCSE/Edexcel/Chemistry/Paper 1/June 2017 (R) MS - Paper\
+      \ 1C Edexcel Chemistry IGCSE.pdf but different bytes (kept the higher-confidence\
+      \ identification)\nidentification_method: pdf_text\nnotes: \nsha256: 28008020cb90708bfe438195b02417a0bb7d57232e309"
+  note: '2026-09-25 F10 repair (see docs/REPAIR-2026-09-25.md): this dir previously
+    held regional-variant bytes (printed 4CH0/1CR); genuine paper promoted from _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+    1__June 2017 MS - Paper 1C Edexcel Chemistry IGCSE.pdf (cover-verified).'
