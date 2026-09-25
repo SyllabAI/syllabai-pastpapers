@@ -22,7 +22,8 @@ paper:
 variant:
   official_code: C
   type: null
-  note: official variant code; semantics not verified from board documentation (charter s.8)
+  note: official variant code; semantics not verified from board documentation (charter
+    s.8)
 materials:
 - type: mark-scheme
   path: ms.pdf
@@ -34,13 +35,27 @@ materials:
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 01949da0e27e17eca053ce0b79243587b70a1dc1c0b433cc9e7a0f1c9e867e1f
+  size_bytes: 600090
+  original_filename: IGCSE__Edexcel__Chemistry__Paper 2__June 2020 QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
 identification:
   methods:
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - 4CH1
+  - 4CH1/2C
   stray_prints: []
   session_printed: November 2020; June 2020
   notes: []
@@ -49,3 +64,21 @@ ingestion:
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED
+repair:
+  date: '2026-09-25'
+  actor: SyllabAI repair agent (AUDIT-2026-09-12 F10 cure; see docs/REPAIR-2026-09-25.md)
+  action: session-merge-qp-added
+  entry:
+    file: qp.pdf
+    sha256: 01949da0e27e17eca053ce0b79243587b70a1dc1c0b433cc9e7a0f1c9e867e1f
+    promoted_from: _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+      2__June 2020 QP.pdf
+    previous_original_filename: null
+    quarantine_reason: "original_path: IGCSE/Edexcel/Chemistry/Paper 2/June 2020 QP.pdf\n\
+      class: duplicate-artifact\nreason: same identity slot as IGCSE/Edexcel/Chemistry/Paper\
+      \ 2/June 2020 (R) QP.pdf but different bytes (kept the higher-confidence identification)\n\
+      identification_method: pdf_text\nnotes: \nsha256: 01949da0e27e17eca053ce0b79243587b70a1dc1c0b433cc9e7a0f1c9e867e1f\n\
+      kept_alternative_sha256: 3a280ff330b75f3ca8853c572"
+  note: '2026-09-25 F10 repair: genuine 2C QP (June 2020 print, administered November
+    2020) promoted from _quarantine/duplicate-artifact/IGCSE__Edexcel__Chemistry__Paper
+    2__June 2020 QP.pdf; fills the MS-only 2C slot in the merged sitting. See docs/REPAIR-2026-09-25.md.'

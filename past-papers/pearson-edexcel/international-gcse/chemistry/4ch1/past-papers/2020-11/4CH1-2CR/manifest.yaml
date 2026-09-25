@@ -31,13 +31,28 @@ materials:
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: bc6e12f1d5e6a27a4960a5bdaa58c51ed8b575234c41219d0d0ece8152c6f0c8
+  size_bytes: 752573
+  original_filename: IGCSE_CHEMISTRY_2020_MayJune_P2R_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/MayJune%202020/IGCSE_CHEMISTRY_2020_MayJune_P2R_QP.pdf
+    collected_by: SyllabAI agent (2026-09-14 wave 8)
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org
+      archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel
+      to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - 4CH1
+  - 4CH1/2CR
   stray_prints: []
   session_printed: November 2020; June 2020
   notes: []
@@ -46,3 +61,16 @@ ingestion:
   run_date: '2026-09-11'
   source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
   verification_status: AI-IDENTIFIED
+repair:
+  date: '2026-09-25'
+  actor: SyllabAI repair agent (AUDIT-2026-09-12 F10 cure; see docs/REPAIR-2026-09-25.md)
+  action: session-merge-qp-added
+  entry:
+    file: qp.pdf
+    sha256: bc6e12f1d5e6a27a4960a5bdaa58c51ed8b575234c41219d0d0ece8152c6f0c8
+    promoted_from: null
+    previous_original_filename: IGCSE_CHEMISTRY_2020_MayJune_P2R_QP.pdf
+  note: '2026-09-25 F10 repair: June-2020 sitting merged into 2020-11 (exams cancelled
+    in June 2020, papers administered November 2020 — COVID June/Nov reuse); QP moved
+    from past-papers/pearson-edexcel/international-gcse/chemistry/4ch1/past-papers/2020-06/4CH1-2CR/qp.pdf.
+    See docs/REPAIR-2026-09-25.md.'
