@@ -1,0 +1,36 @@
+# notify-demo-reindex — corpus-side half of the zero-touch pipeline.
+#
+# Fires on every push to main that touches paper material and pings the
+# syllabai-demo repo's reindex-pastpapers workflow (repository_dispatch).
+# That workflow rebuilds src/data/pastpapers-index.json, commits it when the
+# corpus git tree changed, and the push triggers the Vercel deploy.
+#
+# Requires the DEMO_REINDEX_PAT secret: a PAT (classic, repo scope) with
+# push access to SyllabAI/syllabai-demo.
+
+name: notify-demo-reindex
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "past-papers/**"
+      - "specimen/**"
+  workflow_dispatch:
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch to SyllabAI/syllabai-demo
+        env:
+          PAT: ${{ secrets.DEMO_REINDEX_PAT }}
+        run: |
+          code=$(curl -s -o /tmp/dispatch_resp.txt -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer $PAT" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/SyllabAI/syllabai-demo/dispatches \
+            -d '{"event_type":"corpus-updated","client_payload":{"source":"syllabai-pastpapers","sha":"${{ github.sha }}"}}')
+          echo "dispatch HTTP $code"
+          cat /tmp/dispatch_resp.txt || true
+          [ "$code" = "204" ]
