@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:accounting:4ac1:2026-06:4AC1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: accounting
+specification:
+  folder: 4ac1
+  title: Edexcel International GCSE Accounting (4AC1)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4AC1/02R
+  unit_code: 4AC1
+  paper_number_variant: 02R
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: cf35d0c5de7b33b7112f39723b4d65574748951b1f7091440d4ffda9acd4a4da
+  size_bytes: 286185
+  original_filename: IGCSE_ACCOUNTING_2026_June_P2R_MS_1789837743252.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Accounting/June 2026/IGCSE_ACCOUNTING_2026_June_P2R_MS_1789837743252.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: e48203373e11843477d69bae7227a865f640fec402ded200c7cfff666ec2779c
+  size_bytes: 255314
+  original_filename: IGCSE_ACCOUNTING_2026_June_P2R_QP_1789837744046.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Accounting/June 2026/IGCSE_ACCOUNTING_2026_June_P2R_QP_1789837744046.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4AC1/02R
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

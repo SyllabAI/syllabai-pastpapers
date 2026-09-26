@@ -32,8 +32,20 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7c1ff0c9f502a92a47bd3c8f0fa9724d925f6f1002fda4d3052101cb944f438e
+  size_bytes: 401639
+  original_filename: IAL_Maths_2020_May_S1_MS_1784112935280.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Maths/May 2020/IAL_Maths_2020_May_S1_MS_1784112935280.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
 identification:
   methods:
+  - catalog_identity
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
@@ -41,7 +53,9 @@ identification:
   stray_prints: []
   session_printed: June 2020; June 2020
   notes:
-  - 'F11 ruling (wave 15): dir renamed 01A -> 01 - the cover reference box prints WST01/01; the trailing ''A'' was a greedy-extraction artifact of the adjacent ''Afternoon'' sitting-time label (text-run forensics: separate runs ''WST01/01'' + ''Afternoon (Time: ...)''); no -01 dir existed at this session so the corrected identity is conflict-free'
+  - 'F11 ruling (wave 15): dir renamed 01A -> 01 - the cover reference box prints WST01/01; the trailing ''A'' was a greedy-extraction artifact of the adjacent ''Afternoon'' sitting-time label (text-run
+    forensics: separate runs ''WST01/01'' + ''Afternoon (Time: ...)''); no -01 dir existed at this session so the corrected identity is conflict-free'
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
 operator_ratification:
   status: ratified
   decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
@@ -49,7 +63,7 @@ operator_ratification:
   scope: 'identification (F11 01A ruling - wave 15): greedy-extraction dir name corrected to the printed reference WST01/01 (Afternoon-label artifact); identity, session and material stand'
   decision: F11 rename ratified - the corrected identity WST01/01 stands
 ingestion:
-  agent: SyllabAI ingestion agent
-  run_date: '2026-09-11'
-  source_repo: SyllabAI/Past-Papers (IGCSE/ + IAL/)
-  verification_status: OPERATOR-RATIFIED
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'materials appended by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

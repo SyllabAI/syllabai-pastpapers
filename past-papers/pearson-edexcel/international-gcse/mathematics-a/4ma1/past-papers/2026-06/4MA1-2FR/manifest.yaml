@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma1:2026-06:4MA1/2FR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma1
+  title: Edexcel International GCSE Mathematics A (4MA1)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4MA1/2FR
+  unit_code: 4MA1
+  paper_number_variant: 2FR
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 50b351398c1f98bd412009068a93120ee48e5659ae50e57735c910c3289d210a
+  size_bytes: 593968
+  original_filename: IGCSE_MATHEMATICS_A_2026_June_Foundation_P2R_MS_1789833344717.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Mathematics A/June 2026/IGCSE_MATHEMATICS_A_2026_June_Foundation_P2R_MS_1789833344717.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 9d726a2258690e6b96a1735d2b59052738f0c41162416fcdf5b1a74b647c6cfa
+  size_bytes: 955081
+  original_filename: IGCSE_MATHEMATICS_A_2026_June_Foundation_P2R_QP_1789833345531.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Mathematics A/June 2026/IGCSE_MATHEMATICS_A_2026_June_Foundation_P2R_QP_1789833345531.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA1/2FR
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

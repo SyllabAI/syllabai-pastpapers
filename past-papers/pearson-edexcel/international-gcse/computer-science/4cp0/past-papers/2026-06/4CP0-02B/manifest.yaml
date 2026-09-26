@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2026-06:4CP0/02B
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4CP0/02B
+  unit_code: 4CP0
+  paper_number_variant: 02B
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: b692e77fd2d7cf24c414aa211e637d5c150591af100fe700efce4ba110fb0ab6
+  size_bytes: 718948
+  original_filename: IGCSE_COMPUTER_SCIENCE_2026_June_P2B_MS_1789838760370.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Computer Science/June 2026/IGCSE_COMPUTER_SCIENCE_2026_June_P2B_MS_1789838760370.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 2e2959c6c8a09e7b45bfd939fbed428741918619818984b597353002de833d2a
+  size_bytes: 487475
+  original_filename: IGCSE_COMPUTER_SCIENCE_2026_June_P2B_QP_1789838761148.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Computer Science/June 2026/IGCSE_COMPUTER_SCIENCE_2026_June_P2B_QP_1789838761148.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  confidence_rank: 3
+  printed_references_seen:
+  - 4CP0/02B
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

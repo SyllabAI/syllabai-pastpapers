@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch1:2026-06:4CH1/1C
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch1
+  title: Edexcel International GCSE Chemistry (4CH1)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4CH1/1C
+  unit_code: 4CH1
+  paper_number_variant: 1C
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d4febc1650d2632a220e5ed367d05d99880bcf2b5cf73c434eb2ff7aac3c5040
+  size_bytes: 309629
+  original_filename: IGCSE_CHEMISTRY_2026_June_P1_MS_1789838389142.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/June 2026/IGCSE_CHEMISTRY_2026_June_P1_MS_1789838389142.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 231c05743b0853aa408ae22103faf2645baca81e44fbc839972adc493abbede3
+  size_bytes: 564863
+  original_filename: IGCSE_CHEMISTRY_2026_June_P1_QP_1789838390220.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Chemistry/June 2026/IGCSE_CHEMISTRY_2026_June_P1_QP_1789838390220.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH1/1C
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

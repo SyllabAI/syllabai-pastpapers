@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-gcse:computer-science:4cp0:2026-06:4CP0/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: computer-science
+specification:
+  folder: 4cp0
+  title: Edexcel International GCSE Computer Science (4CP0)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4CP0/01
+  unit_code: 4CP0
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 56cd814c79e947e46290f8cc358792fc630e56f170bf95e510a87dd455a94b67
+  size_bytes: 668807
+  original_filename: IGCSE_COMPUTER_SCIENCE_2026_June_P1_MS_1789838639581.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Computer Science/June 2026/IGCSE_COMPUTER_SCIENCE_2026_June_P1_MS_1789838639581.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 972486bbf61cfcc8fff293be7dd5cff2409dad99d9190791b612374f6ca86397
+  size_bytes: 652909
+  original_filename: IGCSE_COMPUTER_SCIENCE_2026_June_P1_QP_1789838640522.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Computer Science/June 2026/IGCSE_COMPUTER_SCIENCE_2026_June_P1_QP_1789838640522.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CP0/01
+  stray_prints: []
+  notes: []
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

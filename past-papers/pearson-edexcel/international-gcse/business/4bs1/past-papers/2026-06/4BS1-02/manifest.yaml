@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:business:4bs1:2026-06:4BS1/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: business
+specification:
+  folder: 4bs1
+  title: Edexcel International GCSE Business (4BS1)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4BS1/02
+  unit_code: 4BS1
+  paper_number_variant: '02'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7128ee449e5f22300883a306563259e3f056a11d4d40cbf6b3b4e2bf55edbea4
+  size_bytes: 477203
+  original_filename: IGCSE_BUSINESS_STUDIES_2026_June_P2_MS_1789838221128.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Business Studies/June 2026/IGCSE_BUSINESS_STUDIES_2026_June_P2_MS_1789838221128.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: b0a57d2fa2e81daa7c6bb4d312af2319b44ad7e76de6b87641a1992003261319
+  size_bytes: 333023
+  original_filename: IGCSE_BUSINESS_STUDIES_2026_June_P2_QP_1789838222030.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Business Studies/June 2026/IGCSE_BUSINESS_STUDIES_2026_June_P2_QP_1789838222030.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4BS1/02
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

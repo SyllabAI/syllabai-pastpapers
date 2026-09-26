@@ -1,0 +1,59 @@
+paper_id: pearson-edexcel:international-gcse:english-literature:4et1:2026-06:4ET1/02R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: english-literature
+specification:
+  folder: 4et1
+  title: Edexcel International GCSE English Literature (4ET1)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4ET1/02R
+  unit_code: 4ET1
+  paper_number_variant: 02R
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1ded1e8bc9d4ced3dea855cdc34131b466166246e220e8b1543c87d28e226faf
+  size_bytes: 1025844
+  original_filename: IGCSE_ENGLISH_LITERATURE_2026_June_P2R_MS_1789835652921.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English Literature/June 2026/IGCSE_ENGLISH_LITERATURE_2026_June_P2R_MS_1789835652921.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 1d2c526e2511de80704865ef2ef4b6a265bb276abcdd512105a1ec44c6aa6ab5
+  size_bytes: 332963
+  original_filename: IGCSE_ENGLISH_LITERATURE_2026_June_P2R_QP_1789835653731.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English Literature/June 2026/IGCSE_ENGLISH_LITERATURE_2026_June_P2R_QP_1789835653731.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4ET1/02R
+  stray_prints: []
+  notes: []
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED
