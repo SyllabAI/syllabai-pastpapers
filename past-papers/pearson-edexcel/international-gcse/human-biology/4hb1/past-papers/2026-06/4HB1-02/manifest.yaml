@@ -1,0 +1,61 @@
+paper_id: pearson-edexcel:international-gcse:human-biology:4hb1:2026-06:4HB1/02
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: human-biology
+specification:
+  folder: 4hb1
+  title: Edexcel International GCSE Human Biology (4HB1)
+series:
+  normalized: 2026-06
+  year: '2026'
+  session_month: '06'
+paper:
+  official_reference: 4HB1/02
+  unit_code: 4HB1
+  paper_number_variant: '02'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 6ac21580516c5f39148d6d3f8ba15be861795fc27fa9fb729fcf463d4e4a688a
+  size_bytes: 349739
+  original_filename: IGCSE_HUMAN_BIOLOGY_2026_June_P2_MS_1789839851930.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human Biology/June 2026/IGCSE_HUMAN_BIOLOGY_2026_June_P2_MS_1789839851930.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 6d7413cb89c47052f61dd95565a13f7ebd6dfa59aa367fe6a25f6c6bdfd25b71
+  size_bytes: 298872
+  original_filename: IGCSE_HUMAN_BIOLOGY_2026_June_P2_QP_1789839852642.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Human Biology/June 2026/IGCSE_HUMAN_BIOLOGY_2026_June_P2_QP_1789839852642.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4HB1/02
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED
