@@ -34,18 +34,65 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IAL/Accounting/Oct%202021/IAL_ACCOUNTING_2021_Oct_U2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining
+      subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: e7571e528ebb16a0d9b7edae777172e59859a697f67ede4a1604896ec5a6e273
+  size_bytes: 808735
+  original_filename: IAL_ACCOUNTING_2021_Oct_U2_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Accounting/Oct%202021/IAL_ACCOUNTING_2021_Oct_U2_QP.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
 identification:
   methods:
+  - catalog_identity
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
   - WAC12/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - p
+  - r
+  - i
+  - n
+  - t
+  - '-'
+  - v
+  - e
+  - r
+  - i
+  - f
+  - i
+  - e
+  - d
+  - ' '
+  - f
+  - r
+  - o
+  - m
+  - ' '
+  - c
+  - o
+  - v
+  - e
+  - r
+  - ' '
+  - (
+  - r
+  - a
+  - n
+  - k
+  - ' '
+  - '0'
+  - )
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
 ingestion:
-  agent: SyllabAI ingestion agent (wave-17 metadata normalization)
-  run_date: '2026-09-15'
-  source_repo: migration-era corpus (pre-schema manifest; per-material provenance preserved in source blocks)
-  note: ingestion block backfilled by wave-17 metadata normalization - original manifest predates the ingestion schema
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'materials appended by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
   verification_status: AI-IDENTIFIED

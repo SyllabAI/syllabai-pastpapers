@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:physics:wph16:2019-06:WPH16/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: physics
+specification:
+  folder: wph16
+  title: Pearson Edexcel International Advanced Level Physics (2018 spec)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+paper:
+  official_reference: WPH16/01
+  unit_code: WPH16
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2643b838db065f1a927cd815c6fbbc5f20cd6129d5df33536ac3b12fa88dc5c1
+  size_bytes: 792900
+  original_filename: IAL_PHYSICS_2019_June_U6_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/June%202019/IAL_PHYSICS_2019_June_U6_MS.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: cb66784b4b7a5e26e160d5c9bc0442ff7f3b3c62748e2e752387bb4dbf84fe76
+  size_bytes: 1664238
+  original_filename: IAL_PHYSICS_2019_June_U6_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Physics/June%202019/IAL_PHYSICS_2019_June_U6_QP.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  confidence_rank: 3
+  printed_references_seen:
+  - WPH16/01
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

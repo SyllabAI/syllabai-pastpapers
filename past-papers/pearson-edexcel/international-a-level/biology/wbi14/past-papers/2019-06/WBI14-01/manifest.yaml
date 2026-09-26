@@ -1,0 +1,60 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi14:2019-06:WBI14/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi14
+  title: Edexcel International Advanced Level Biology (WBI14)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+paper:
+  official_reference: WBI14/01
+  unit_code: WBI14
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e80ec4ced77f21a93e28c4c3ec57a290f39861bf42080abd75cd788cc0dd6ccb
+  size_bytes: 494827
+  original_filename: IAL_BIOLOGY_2019_June_U4_MS.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U4_MS.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+- type: question-paper
+  path: qp.pdf
+  sha256: eda7b382160e63ba58399baaa3bf317fc677beb401a3a3f520e74632da220fc3
+  size_bytes: 893494
+  original_filename: IAL_BIOLOGY_2019_June_U4_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IAL/Biology/June%202019/IAL_BIOLOGY_2019_June_U4_QP.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
+identification:
+  methods:
+  - catalog_identity
+  confidence_rank: 3
+  printed_references_seen:
+  - WBI14/01
+  stray_prints: []
+  notes:
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
+ingestion:
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'manifest created by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
+  verification_status: AI-IDENTIFIED

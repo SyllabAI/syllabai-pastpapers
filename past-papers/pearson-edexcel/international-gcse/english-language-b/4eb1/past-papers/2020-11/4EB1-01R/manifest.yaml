@@ -25,15 +25,29 @@ materials:
   path: ms.pdf
   sha256: 6109caf677130fa8aada3c0a30ed86089bc531b6fd2f0c1a788b47b223edd1b3
   size_bytes: 201431
-  original_filename: "June 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf"
+  original_filename: June 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
     source_url: null
     collected_by: operator (download date not recorded)
-    note: "2026-09-13 wave 7 - F15 repair: bytes moved unchanged (same git blob) from 2020-11/4EB1-01/ms.pdf, where the pre-audit PMT migration had filed this Paper-1R scheme (\"June 2020 (R) MS\" original filename) beside the 4EB1/01 QP; ms cover prints \"Mark Scheme (Results) November 2020 - Paper 1R\"; the November-2020 1R QP is not held (the June-printed 1R paper P62600A is held at 2020-06/4EB1-01R; the sibling 01 dir shows the June/November 2020 COVID reuse); qp row opened as planned"
+    note: '2026-09-13 wave 7 - F15 repair: bytes moved unchanged (same git blob) from 2020-11/4EB1-01/ms.pdf, where the pre-audit PMT migration had filed this Paper-1R scheme ("June 2020 (R) MS" original
+      filename) beside the 4EB1/01 QP; ms cover prints "Mark Scheme (Results) November 2020 - Paper 1R"; the November-2020 1R QP is not held (the June-printed 1R paper P62600A is held at 2020-06/4EB1-01R;
+      the sibling 01 dir shows the June/November 2020 COVID reuse); qp row opened as planned'
+- type: question-paper
+  path: qp.pdf
+  sha256: 7d5b9c585b6e9791c91e4f728a33ea1d3d16c4199dce4995e0b2be6c704b1795
+  size_bytes: 3676123
+  original_filename: IGCSE_ENGLISH_LANGUAGE_B_2020_MayJuneNov_P1R_QP.pdf
+  source:
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/English%20Language%20B/MayJuneNov%202020/IGCSE_ENGLISH_LANGUAGE_B_2020_MayJuneNov_P1R_QP.pdf
+    collected_by: SyllabAI agent (2026-09-26 gap-fill wave)
+    note: 'official Pearson Edexcel document obtained from Paperlords archive CDN; collected 2026-09-26 gap-fill wave (operator direction: fix all errors, check paperlords/PMT/SME/Pearson for missing papers)'
 identification:
   methods:
+  - catalog_identity
   - pdf_text
   confidence_rank: 0
   printed_references_seen:
@@ -41,9 +55,12 @@ identification:
   stray_prints: []
   session_printed: November 2020
   notes:
-  - "2026-09-13 wave 7 - F15 repair: bytes moved unchanged (same git blob) from 2020-11/4EB1-01/ms.pdf, where the pre-audit PMT migration had filed this Paper-1R scheme (\"June 2020 (R) MS\" original filename) beside the 4EB1/01 QP; ms cover prints \"Mark Scheme (Results) November 2020 - Paper 1R\"; the November-2020 1R QP is not held (the June-printed 1R paper P62600A is held at 2020-06/4EB1-01R; the sibling 01 dir shows the June/November 2020 COVID reuse); qp row opened as planned"
+  - '2026-09-13 wave 7 - F15 repair: bytes moved unchanged (same git blob) from 2020-11/4EB1-01/ms.pdf, where the pre-audit PMT migration had filed this Paper-1R scheme ("June 2020 (R) MS" original filename)
+    beside the 4EB1/01 QP; ms cover prints "Mark Scheme (Results) November 2020 - Paper 1R"; the November-2020 1R QP is not held (the June-printed 1R paper P62600A is held at 2020-06/4EB1-01R; the sibling
+    01 dir shows the June/November 2020 COVID reuse); qp row opened as planned'
+  - rank-3 catalog identity for image-only scan file(s); corroborated by unit/subject catalog label + no conflicting held bytes - operator ratification requested (2026-09-26 gap-fill wave)
 ingestion:
-  agent: SyllabAI ingestion agent
-  run_date: '2026-09-13'
-  source_repo: SyllabAI/syllabai-pastpapers
+  agent: SyllabAI agent (2026-09-26 gap-fill wave)
+  run_date: '2026-09-26'
+  note: 'materials appended by 2026-09-26 gap-fill wave (source: Paperlords catalog diff vs corpus + ledger planned rows)'
   verification_status: AI-IDENTIFIED
