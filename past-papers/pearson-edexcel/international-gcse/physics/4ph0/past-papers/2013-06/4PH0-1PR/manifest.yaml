@@ -1,0 +1,43 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph0:2013-06:4PH0/1PR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph0
+  title: Edexcel International GCSE Physics (4PH0) — Paper 1 shared with Science (Double Award) 4SC0
+series:
+  normalized: 2013-06
+  year: 2013
+  session_month: 06
+  printed: null
+  source: official-listing
+paper:
+  official_reference: 4PH0/1PR
+  unit_code: 4PH0
+  paper_number_variant: 1PR
+  shared_with:
+variant:
+  official_code: R
+  type: timezone-R
+  note: regional variant of 4PH0/1P|2P; same duration as the non-R paper (printed on cover)
+materials:
+- {"type": "mark-scheme", "path": "ms.pdf", "sha256": "dd2fc772e76c720d2f3df0490863a059680aac7ac17253994e38db3d1462dda9", "size_bytes": 525670, "original_filename": "4PH0_1PR_msc_20130823.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_1PR_msc_20130823.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+- {"type": "question-paper", "path": "qp.pdf", "sha256": "b1835ba6a60ac227d5604b25a5d0d47a0fbf3e4036982fa5a79ae9508c3c4d23", "size_bytes": 686324, "original_filename": "4PH0_1PR_que_20130514.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_1PR_que_20130514.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+identification:
+  methods:
+  - "partner_inference"
+  confidence_rank: 3
+  printed_references_seen:
+  session_printed: null
+  notes:
+  - "cover text did not yield a printed reference; identity (unit + paper number, session) taken from the official Pearson DAM listing label and the exam-date-coded filename; corroborated by sibling print-verified files in the same series"
+  - "cover carries the Science (Double Award) wording, attesting the 4SC0 sharing"
+ingestion:
+  agent: SyllabAI ingestion agent (4SC0 legacy wave)
+  run_date: 2026-09-28
+  source_repo: Pearson qualifications portal content-dam (public DAM listing)
+  verification_status: AI-IDENTIFIED

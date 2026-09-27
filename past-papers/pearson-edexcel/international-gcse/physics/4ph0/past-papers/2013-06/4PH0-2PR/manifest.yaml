@@ -1,0 +1,42 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph0:2013-06:4PH0/2PR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph0
+  title: Edexcel International GCSE Physics (4PH0)
+series:
+  normalized: 2013-06
+  year: 2013
+  session_month: 06
+  printed: null
+  source: official-listing
+paper:
+  official_reference: 4PH0/2PR
+  unit_code: 4PH0
+  paper_number_variant: 2PR
+  shared_with:
+variant:
+  official_code: R
+  type: timezone-R
+  note: regional variant of 4PH0/1P|2P; same duration as the non-R paper (printed on cover)
+materials:
+- {"type": "mark-scheme", "path": "ms.pdf", "sha256": "07ece8f48671ee7d03d8a64361ba0ef0dfab30312abd9e5f54128ea6d22a38a5", "size_bytes": 181932, "original_filename": "4PH0_2PR_msc_20130822.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_2PR_msc_20130822.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+- {"type": "question-paper", "path": "qp.pdf", "sha256": "b4f85b480ba66108ea420d126c53b5f41c802dfc87ca9f0c681f5dde9b4c4fd3", "size_bytes": 1922634, "original_filename": "4PH0_2PR_que_20130605.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_2PR_que_20130605.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+identification:
+  methods:
+  - "partner_inference"
+  confidence_rank: 3
+  printed_references_seen:
+  session_printed: null
+  notes:
+  - "cover text did not yield a printed reference; identity (unit + paper number, session) taken from the official Pearson DAM listing label and the exam-date-coded filename; corroborated by sibling print-verified files in the same series"
+ingestion:
+  agent: SyllabAI ingestion agent (4SC0 legacy wave)
+  run_date: 2026-09-28
+  source_repo: Pearson qualifications portal content-dam (public DAM listing)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,43 @@
+paper_id: pearson-edexcel:international-gcse:physics:4ph0:2016-06:4PH0/2PR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: physics
+specification:
+  folder: 4ph0
+  title: Edexcel International GCSE Physics (4PH0)
+series:
+  normalized: 2016-06
+  year: 2016
+  session_month: 06
+  printed: June 2016
+  source: pdf_text
+paper:
+  official_reference: 4PH0/2PR
+  unit_code: 4PH0
+  paper_number_variant: 2PR
+  shared_with:
+variant:
+  official_code: R
+  type: timezone-R
+  note: regional variant of 4PH0/1P|2P; same duration as the non-R paper (printed on cover)
+materials:
+- {"type": "mark-scheme", "path": "ms.pdf", "sha256": "768cd0d5f319ca8d4bdf90cddc4d3628654aa638fcb06060d8810d8dcd44b970", "size_bytes": 133334, "original_filename": "4PH0_2PR_rms_20160824.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/4PH0_2PR_rms_20160824.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+- {"type": "question-paper", "path": "qp.pdf", "sha256": "5ec4be73cbd66f7e806cabe3f3fbd913c74bd4b1d57f155d70642d962c46fc09", "size_bytes": 193199, "original_filename": "4PH0_2PR_que_20160617.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/4PH0_2PR_que_20160617.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+identification:
+  methods:
+  - "pdf_text"
+  confidence_rank: 0
+  printed_references_seen:
+  - "4PH0/2PR"
+  session_printed: June 2016
+  notes:
+  - "identity verified from the cover print (4PH0/2PR); R-variant Paper 1 covers print BOTH 4PH0/1PR and 4SC0/1PR — the same physical paper served single-award Physics (4PH0) and Science Double Award (4SC0) candidates"
+ingestion:
+  agent: SyllabAI ingestion agent (4SC0 legacy wave)
+  run_date: 2026-09-28
+  source_repo: Pearson qualifications portal content-dam (public DAM listing)
+  verification_status: AI-IDENTIFIED
