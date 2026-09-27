@@ -1,0 +1,42 @@
+paper_id: pearson-edexcel:international-gcse:science-double-award:4sd0:2021-01:4SD0/1BR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: Science (Double Award)
+specification:
+  folder: 4sd0
+  title: Edexcel International GCSE Science (Double Award) (4SD0)
+series:
+  normalized: 2021-01
+  year: 2021
+  session_month: 01
+  printed: January 2021
+  source: pdf_text
+paper:
+  official_reference: 4SD0/1BR
+  unit_code: 4SD0
+  paper_number_variant: 1BR
+variant:
+  official_code: R
+  type: timezone-R
+  note: null
+materials:
+- {"type": "question-paper", "path": "qp.pdf", "sha256": "6313ee6fa0eef2f99f1b463aeaf2d00860ee79b54afea334c0f60a49ad955bf1", "size_bytes": 1354485, "original_filename": "4SD0_1BR_que_20210304.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Science%20(Double%20Award)/2017/exam-materials/4SD0_1BR_que_20210304.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
+- {"type": "mark-scheme", "path": "ms.pdf", "sha256": "2044d284c15626a45b79201f73cf2619d855ca20f4ba90fea4c2329cdfd2cdc8", "size_bytes": 320972, "original_filename": "4SD0_1BR_msc_20210304.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Science%20(Double%20Award)/2017/exam-materials/4SD0_1BR_msc_20210304.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
+identification:
+  methods:
+  - "pdf_text"
+  confidence_rank: 0
+  printed_references_seen:
+  - "4SD0/1BR"
+  session_printed: January 2021
+  notes:
+  - "identity verified from the QP cover print (4SD0/<paper>) and the official Pearson course-materials listing (session + paper label)"
+ingestion:
+  agent: SyllabAI ingestion agent (4SD0 subject onboarding)
+  run_date: 2026-09-27
+  source_repo: Pearson qualifications portal content-dam (public course-materials listing)
+  verification_status: AI-IDENTIFIED

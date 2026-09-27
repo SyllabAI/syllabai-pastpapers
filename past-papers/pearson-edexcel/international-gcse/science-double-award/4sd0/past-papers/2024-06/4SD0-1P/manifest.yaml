@@ -1,0 +1,43 @@
+paper_id: pearson-edexcel:international-gcse:science-double-award:4sd0:2024-06:4SD0/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: Science (Double Award)
+specification:
+  folder: 4sd0
+  title: Edexcel International GCSE Science (Double Award) (4SD0)
+series:
+  normalized: 2024-06
+  year: 2024
+  session_month: 06
+  printed: null
+  source: official-listing
+paper:
+  official_reference: 4SD0/1P
+  unit_code: 4SD0
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: null
+  note: null
+materials:
+- {"type": "question-paper", "path": "qp.pdf", "sha256": "3c1e2eea09258259ce0ae86d6adf24da26a1320e297317c60f64c272839b8454", "size_bytes": 1266863, "original_filename": "4sd0-1p-que-20240523.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Science-(Double-Award)/2017/Exam-materials/4sd0-1p-que-20240523.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
+- {"type": "mark-scheme", "path": "ms.pdf", "sha256": "7ddddfdad22ebac2be39487fdb8e5a2b84e20f4648ad0b248c1e70f44acaeb2b", "size_bytes": 242166, "original_filename": "4sd0-1p-rms-20240822.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Science-(Double-Award)/2017/Exam-materials/4sd0-1p-rms-20240822.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
+identification:
+  methods:
+  - "pdf_text"
+  confidence_rank: 0
+  printed_references_seen:
+  - "4SD0/1PPaper"
+  session_printed: null
+  notes:
+  - "identity verified from the QP cover print (4SD0/<paper>) and the official Pearson course-materials listing (session + paper label)"
+  - "session not printed on cover pages 1-2; taken from the official Pearson listing and the exam-date-coded filename"
+ingestion:
+  agent: SyllabAI ingestion agent (4SD0 subject onboarding)
+  run_date: 2026-09-27
+  source_repo: Pearson qualifications portal content-dam (public course-materials listing)
+  verification_status: AI-IDENTIFIED

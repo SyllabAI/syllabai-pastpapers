@@ -1,0 +1,41 @@
+paper_id: pearson-edexcel:international-gcse:science-double-award:4sd0:2019-06:4SD0/1B
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: Science (Double Award)
+specification:
+  folder: 4sd0
+  title: Edexcel International GCSE Science (Double Award) (4SD0)
+series:
+  normalized: 2019-06
+  year: 2019
+  session_month: 06
+  printed: null
+  source: official-listing
+paper:
+  official_reference: 4SD0/1B
+  unit_code: 4SD0
+  paper_number_variant: 1B
+variant:
+  official_code: B
+  type: null
+  note: null
+materials:
+- {"type": "mark-scheme", "path": "ms.pdf", "sha256": "ddd6c5286d69a3abcc3e5eecaa5f3e641960c217b412445dcfa97ebdbe3d804b", "size_bytes": 159904, "original_filename": "4BI1_1B_rms_20190822.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Biology/2017/exam-materials/4BI1_1B_rms_20190822.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
+- {"type": "question-paper", "path": "qp.pdf", "sha256": "1866780395535e8d8c7295135192dccb3dc2fb51308aaafc7dc395460879166f", "size_bytes": 2320143, "original_filename": "4SD0_1B_que_20190626.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Science%20(Double%20Award)/2017/exam-materials/4SD0_1B_que_20190626.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
+identification:
+  methods:
+  - "partner_inference"
+  confidence_rank: 3
+  printed_references_seen:
+  session_printed: null
+  notes:
+  - "cover is image-only (no text layer); identity (unit + paper number, session) taken from the official Pearson course-materials listing and exam-date-coded filename; corroborated by sibling print-verified files in the same session (wave-8 rank-3 precedent, AUDIT s16)"
+ingestion:
+  agent: SyllabAI ingestion agent (4SD0 subject onboarding)
+  run_date: 2026-09-27
+  source_repo: Pearson qualifications portal content-dam (public course-materials listing)
+  verification_status: AI-IDENTIFIED
