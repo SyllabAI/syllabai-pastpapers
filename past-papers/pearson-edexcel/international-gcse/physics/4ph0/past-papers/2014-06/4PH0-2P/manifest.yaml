@@ -24,38 +24,43 @@ variant:
   type: null
   note: null
 materials:
-- type: mark-scheme
-  path: ms.pdf
-  sha256: 2c5795c6bf0f366b258c9b0948088665e9f281f8028895775f4585c38624cfb1
-  size_bytes: 180775
-  original_filename: June 2014 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 7d3d55f4a567e57d64f3998171ad33e5be7fc3f1f1421b165ca4b14bf19fe1ba
-  size_bytes: 304233
-  original_filename: June 2014 (R) QP - Paper 2P Edexcel Physics IGCSE.pdf
+  sha256: 280146e4b44658c671e23efa5b864e034fc4d2616aa192cde8faeb7290e24216
+  size_bytes: 835991
+  original_filename: Question-paper-Paper-2P-June-2014.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/Question-paper-Paper-2P-June-2014.pdf
+    collected_by: SyllabAI agent (2026-09-28 corpus-fix wave)
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH0/2PR regional paper mis-filed under this dir; the regional paper remains in the sibling 4PH0-2PR dir)
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ef134298177c4d71ead5730d16b1d937d5b2882b7bdda4a4c62c655c0a84129d
+  size_bytes: 263291
+  original_filename: Mark-scheme-Paper-2P-June-2014.pdf
+  source:
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/Mark-scheme-Paper-2P-June-2014.pdf
+    collected_by: SyllabAI agent (2026-09-28 corpus-fix wave)
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH0/2PR regional paper mis-filed under this dir; the regional paper remains in the sibling 4PH0-2PR dir)
 identification:
   methods:
   - pdf_text
+  - pixel_render
   confidence_rank: 0
   printed_references_seen:
-  - 4PH0
+  - KPH0/2P
   - 4PH0/2P
+  - KSC0/2P
+  - 4SC0/2P
   stray_prints: []
-  session_printed: June 2014; June 2014
-  notes: []
+  session_printed: June 2014
+  notes:
+  - "2026-09-28 corpus-fix wave: qp.pdf and ms.pdf previously held the PMT '(R)' file(s) — the 4PH0/2PR regional paper mis-filed under this dir (proven per file: cover prints 2PR, and/or pixel-identical to the official DAM regional scan). Replaced with the official non-R 4PH0/2P downloads from the Pearson DAM; identity of every replacement verified by sha-stable DAM re-download plus cover/pixel checks."
+  - "plain-paper covers print both families (4PH0/2P and 4SC0/2P plus the K-prefixed Certificate codes) — the same physical paper served single-award Physics (4PH0) and Science Double Award (4SC0) candidates; see the sibling 4PH0-2PR dir for the regional variant"
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

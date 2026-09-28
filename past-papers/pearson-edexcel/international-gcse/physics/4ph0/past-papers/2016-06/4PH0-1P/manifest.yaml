@@ -24,41 +24,43 @@ variant:
   type: null
   note: null
 materials:
-- type: mark-scheme
-  path: ms.pdf
-  sha256: 58b19a9b7b31784ea9901902095201cbbb9d271e5fd53cafafd1874b321a4922
-  size_bytes: 236960
-  original_filename: June 2016 (R) MS - Paper 1P Edexcel Physics IGCSE.pdf
-  source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 8bcec11435c9569d4155455882988a9572da8222e60c6bdb618b9211db322db3
-  size_bytes: 173008
-  original_filename: June 2016 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf
+  sha256: 0809498228d28af20bfcf374207f00830d5f8da345b6b737d0a91736ed360996
+  size_bytes: 352244
+  original_filename: 4PH0_1P_que_20160525.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/4PH0_1P_que_20160525.pdf
+    collected_by: SyllabAI agent (2026-09-28 corpus-fix wave)
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH0/1PR regional paper mis-filed under this dir; the regional paper remains in the sibling 4PH0-1PR dir)
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 8fa4584db89f37ddf9adef061dcf69d0ffb6fbd204e830245d6daf06d84309c5
+  size_bytes: 271807
+  original_filename: 4PH0_1P_rms_20160824.pdf
+  source:
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/4PH0_1P_rms_20160824.pdf
+    collected_by: SyllabAI agent (2026-09-28 corpus-fix wave)
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH0/1PR regional paper mis-filed under this dir; the regional paper remains in the sibling 4PH0-1PR dir)
 identification:
   methods:
   - pdf_text
+  - pixel_render
   confidence_rank: 0
   printed_references_seen:
-  - 4PH0
+  - KPH0/1P
   - 4PH0/1P
-  - 4SC0
+  - KSC0/1P
   - 4SC0/1P
-  stray_prints:
-  - 4SC0/1P (alternate-route/legacy print)
+  stray_prints: []
   session_printed: June 2016
-  notes: []
+  notes:
+  - "2026-09-28 corpus-fix wave: qp.pdf and ms.pdf previously held the PMT '(R)' file(s) — the 4PH0/1PR regional paper mis-filed under this dir (proven per file: cover prints 1PR, and/or pixel-identical to the official DAM regional scan). Replaced with the official non-R 4PH0/1P downloads from the Pearson DAM; identity of every replacement verified by sha-stable DAM re-download plus cover/pixel checks."
+  - "plain-paper covers print both families (4PH0/1P and 4SC0/1P plus the K-prefixed Certificate codes) — the same physical paper served single-award Physics (4PH0) and Science Double Award (4SC0) candidates; see the sibling 4PH0-1PR dir for the regional variant"
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

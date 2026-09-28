@@ -26,15 +26,15 @@ variant:
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: 3d61dd4dee8654b8c5bca64ad702c3a1dc1cbb2e188f65844e5507c3ad41786b
-  size_bytes: 128930
-  original_filename: June 2013 (R) MS - Paper 2P Edexcel Physics IGCSE.pdf
+  sha256: 3818184effc5c2bb6895ed8117d782fcc34f45c78598397b8fb6e953dfcd11e4
+  size_bytes: 199745
+  original_filename: 4PH0_2P_msc_20130823.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_2P_msc_20130823.pdf
+    collected_by: SyllabAI agent (2026-09-28 corpus-fix wave)
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH0/2PR regional paper mis-filed under this dir; the regional paper remains in the sibling 4PH0-2PR dir)
 - type: question-paper
   path: qp.pdf
   sha256: 8fe6eac2f801d061eb92b2b680daa2b769f7da8b80db9aafc54d99674516b5b7
@@ -49,13 +49,18 @@ materials:
 identification:
   methods:
   - pdf_text
+  - pixel_render
   confidence_rank: 0
   printed_references_seen:
-  - 4PH0
+  - KPH0/2P
   - 4PH0/2P
+  - KSC0/2P
+  - 4SC0/2P
   stray_prints: []
   session_printed: June 2013
-  notes: []
+  notes:
+  - "2026-09-28 corpus-fix wave: ms.pdf previously held the PMT '(R)' file(s) — the 4PH0/2PR regional paper mis-filed under this dir (proven per file: cover prints 2PR, and/or pixel-identical to the official DAM regional scan). Replaced with the official non-R 4PH0/2P downloads from the Pearson DAM; identity of every replacement verified by sha-stable DAM re-download plus cover/pixel checks."
+  - "plain-paper covers print both families (4PH0/2P and 4SC0/2P plus the K-prefixed Certificate codes) — the same physical paper served single-award Physics (4PH0) and Science Double Award (4SC0) candidates; see the sibling 4PH0-2PR dir for the regional variant"
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
