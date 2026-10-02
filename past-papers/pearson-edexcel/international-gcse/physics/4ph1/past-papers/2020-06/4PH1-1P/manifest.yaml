@@ -26,15 +26,16 @@ variant:
 materials:
 - type: question-paper
   path: qp.pdf
-  sha256: 722e5cf84eebce6b3033e3b88b6f7c51389704b23295bc59e54371d411cbfcad
-  size_bytes: 244801
-  original_filename: June 2020 (R) QP.pdf
+  sha256: 28e1f5bc19c5c8472931d9c5f502f1e94d43a60e36e64a6f36ca4b32fe9d918c
+  size_bytes: 598762
+  original_filename: 4PH1_1P_que_20201114.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2017/exam-materials/4PH1_1P_que_20201114.pdf
+    collected_by: SyllabAI agent (2026-10-03 corpus-fix wave (F-A2 slot completion))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH1/1PR regional paper mis-filed under this
+      dir)
 - type: mark-scheme
   path: ms.pdf
   sha256: 1f2fdf9eceacbe15cf5ffb9a355a80ab5a2a02b50e3d4a76db2883ae41dea791
@@ -59,7 +60,10 @@ identification:
   session_printed: May 2020; June 2020
   notes:
   - '2026-10-02 corpus-fix wave (F-A2): qp.pdf is VERIFIED as the PMT ''(R)'' file — the 4PH1/1PR regional paper mis-filed under this dir (T-C58 three-class verification) — but the official plain document
-    for this sitting is NOT obtainable from the public Pearson content-dam, so the bytes are left unchanged pending an authenticated source; do not ingest this dir off folder names alone.'
+    for this sitting was NOT obtainable from the public Pearson content-dam; do not ingest this dir off folder names alone. — RESOLVED 2026-10-03 (F-A2 slot completion, operator ruling trace 1a0fdbc82e010361 that the
+    2020-06 papers are basically the 2020 November ones): replaced with the official plain document from the Pearson qualifications portal content-dam (identity evidence: cover prints 4PH1/1P + ''Wednesday 20 May 2020'' June-series timetable
+    date, DAM catalog title ''Question paper - Paper 1P - November 2020'', paper code P65064A; question-count pairing with this dir''s November 2020 MS = 11 questions; R-form absent token-level incl.
+    the 4SD0/1PR SDA-twin; sha256 distinct from every mis-filed pin; additionally the same paper is independently pinned in this corpus at 2020-11/4PH1-1P (sha e6da3465b62dbec9, XtremePapers scan — same P65064A, different scan)).'
   - '2026-09-14 wave 8: MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
 ingestion:
   agent: SyllabAI ingestion agent

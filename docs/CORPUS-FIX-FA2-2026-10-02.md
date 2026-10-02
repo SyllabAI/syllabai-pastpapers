@@ -56,3 +56,24 @@ an authenticated source provides the June 2020 / June 2014 4EB0 documents.
 Per the T-C58 registered shape, the T-C56 L1/L2 checks were re-run on the
 touched specs after this commit (results recorded in the records repo pack
 `bench/review/fa2-fix-20261002/`).
+
+
+## 2026-10-03 — slot completion (2 of 3): the June/November 2020 4PH1 pair
+
+Operator ruling (IM trace `1a0fdbc82e010361`): "2020-06 papers are basically 2020 november ones."
+First-hand verified before acceptance: the DAM catalog files titled "Question paper - Paper 1P/2P -
+November 2020" carry covers printed for the June 2020 timetable (1P: "Wednesday 20 May 2020";
+2P: "Friday 12 June 2020") — Pearson administered the printed June 2020 papers in the November 2020
+sitting after the COVID cancellation of June; the dirs' MSs (already November 2020, wave-8 pairing
+note) pair by question count (1P 11 = 11; 2P 8 = 8); 1P is additionally dual-source proven (same
+paper P65064A as the corpus's XtremePapers-sourced 2020-11 scan — different scan, same paper).
+Replaced:
+- `2020-06/4PH1-1P/qp.pdf` ← DAM `4PH1_1P_que_20201114.pdf` (sha256 `28e1f5bc…`, 598,762 bytes)
+- `2020-06/4PH1-2P/qp.pdf` ← DAM `4PH1_2P_que_20201124.pdf` (sha256 `c10b9517…`, 4,224,950 bytes)
+
+Remaining unresolvable (1 of 3): `4EB0-01` 2014-06 ms — the June 2014 4EB0/01 MS is still absent from
+the public DAM (catalog re-scan 2026-10-03: Jan 2012/2014/2015/2016/2019 + Jun 2013/2015/1R present,
+Jun 2014 absent); the operator names PMT as the source ("2014 one, you will find in PMT"), but the
+PMT page is Cloudflare-gated and the CDN object key could not be discovered from this environment
+(288-path probe grid; search backends return host-only URLs; archive/proxy services unreachable) —
+pending the operator supplying the direct URL or the bytes. Dir labels/series unchanged (2020-06).
