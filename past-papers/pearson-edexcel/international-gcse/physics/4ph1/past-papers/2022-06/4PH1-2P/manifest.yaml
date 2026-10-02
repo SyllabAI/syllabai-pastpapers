@@ -37,15 +37,16 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 5b4adb75f34d9837c8286cc07b4ac585727629fa2f1862ed602810065fb34060
-  size_bytes: 1074766
-  original_filename: June 2022 (R) QP_2.pdf
+  sha256: 362e9de898fefe4d9a9c802fc07ea75f6646e396c85abd4fd71c52bd885e05e8
+  size_bytes: 1497922
+  original_filename: 4ph1-2p-pef-20220825.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2017/exam-materials/4ph1-2p-pef-20220825.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH1/2PR regional paper mis-filed under this
+      dir)
 identification:
   methods:
   - pdf_text
@@ -55,7 +56,9 @@ identification:
   - 4PH1/2P
   stray_prints: []
   session_printed: June 2022
-  notes: []
+  notes:
+  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf previously held the PMT ''(R)'' file — the 4PH1/2PR regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: catalog title + cover furniture, session printed June 2022)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

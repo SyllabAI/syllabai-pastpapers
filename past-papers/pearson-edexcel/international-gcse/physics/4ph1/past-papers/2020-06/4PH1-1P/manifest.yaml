@@ -45,7 +45,8 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Physics/MayJune%202020/IGCSE_PHYSICS_2020_MayJune_P1_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining
+      subjects) MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
 identification:
   methods:
   - pdf_text
@@ -57,6 +58,8 @@ identification:
   stray_prints: []
   session_printed: May 2020; June 2020
   notes:
+  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf is VERIFIED as the PMT ''(R)'' file — the 4PH1/1PR regional paper mis-filed under this dir (T-C58 three-class verification) — but the official plain document
+    for this sitting is NOT obtainable from the public Pearson content-dam, so the bytes are left unchanged pending an authenticated source; do not ingest this dir off folder names alone.'
   - '2026-09-14 wave 8: MS prints November 2020; paired with June-2020 dir (COVID June/Nov reuse precedent, P-code pairing)'
 ingestion:
   agent: SyllabAI ingestion agent

@@ -37,15 +37,16 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: d910d0f64dfb533a07ed34ccdf6a96fe1b3c6c6de5ce62d2a2718909875c8abf
-  size_bytes: 795270
-  original_filename: January 2020 (R) QP.pdf
+  sha256: 3ac1cfeed07669509e36628c29f10ac9cfc5b5ba244917104c9df4c452a4131d
+  size_bytes: 1494299
+  original_filename: 4PH1_1P_que_20200305.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2017/exam-materials/4PH1_1P_que_20200305.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH1/1PR regional paper mis-filed under this
+      dir)
 identification:
   methods:
   - pdf_text
@@ -53,9 +54,12 @@ identification:
   printed_references_seen:
   - 4PH1
   - 4PH1/1P
+  - 4SD0/1P
   stray_prints: []
-  session_printed: January 2020; January 2020
-  notes: []
+  session_printed: January 2020
+  notes:
+  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf previously held the PMT ''(R)'' file — the 4PH1/1PR regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: cover prints 4PH1/1P, session printed January 2020)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

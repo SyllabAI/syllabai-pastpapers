@@ -34,15 +34,16 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: mark-scheme
   path: ms.pdf
-  sha256: 046c87588e6190cf5555c5e2bc9df715dced2e448248c5925a44f6a37036b4a6
-  size_bytes: 331871
-  original_filename: June 2016 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  sha256: 2c83c5bc2ab3ad37760a0bbb3dd9a07bef0e03839e30b548e9bd8005aabf8582
+  size_bytes: 354291
+  original_filename: 4EB0_01_rms_20160824.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/English%20Language%20B/2009/Exam%20materials/4EB0_01_rms_20160824.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4EB0/01R regional paper mis-filed under this
+      dir)
 - type: question-paper
   path: qp.pdf
   sha256: 95ee7b6c8179494c6814df45085d46e418fc7fe29f3fe5683114bb82b8722ccb
@@ -62,8 +63,10 @@ identification:
   - 4EB0
   - 4EB0/01
   stray_prints: []
-  session_printed: June 2016; June 2016
-  notes: []
+  session_printed: Summer 2016
+  notes:
+  - '2026-10-02 corpus-fix wave (F-A2): ms.pdf previously held the PMT ''(R)'' file — the 4EB0/01R regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: catalog title + cover furniture, session printed Summer 2016)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

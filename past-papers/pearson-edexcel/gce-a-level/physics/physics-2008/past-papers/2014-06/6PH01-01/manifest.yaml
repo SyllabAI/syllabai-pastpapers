@@ -23,15 +23,16 @@ variant: null
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: ac323755653aac802b894764f0a739ae164d40609892ab56ae5434231d81fd38
-  size_bytes: 130687
-  original_filename: June 2014 (R) MS - Unit 1 Edexcel Physics A-level.pdf
+  sha256: 4b5d73b1a46a9673bfa3f5f4f1fb34fa7c9c8144da54fc41b3c124079522358c
+  size_bytes: 299866
+  original_filename: Mark-scheme-Unit-1-(6PH01)-June-2014.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/A%20Level/Physics/2013/Exam%20materials/Mark-scheme-Unit-1-(6PH01)-June-2014.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 6PH01/01R regional paper mis-filed under
+      this dir)
 - type: question-paper
   path: qp.pdf
   sha256: f92d6257adb99993ed2332a92c11871feb6c2627d232de568fdaddac8df9ce25
@@ -51,10 +52,11 @@ identification:
   - 6PH01
   - 6PH01/01
   stray_prints: []
-  session_printed: June 2014
+  session_printed: Summer 2014
   notes:
-  - cover prints 'Paper 01R' for unit-style code 6PH01; unit refs are /01 (Pearson cover anomaly), ref
-    set to /01
+  - '2026-10-02 corpus-fix wave (F-A2): ms.pdf previously held the PMT ''(R)'' file — the 6PH01/01R regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: catalog title + cover furniture, session printed Summer 2014)'
+  - cover prints 'Paper 01R' for unit-style code 6PH01; unit refs are /01 (Pearson cover anomaly), ref set to /01
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

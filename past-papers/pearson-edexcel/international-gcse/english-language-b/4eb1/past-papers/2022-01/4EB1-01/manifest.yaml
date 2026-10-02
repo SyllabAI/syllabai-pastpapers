@@ -23,15 +23,16 @@ variant: null
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: d328557469624a9f21bc0dde5d18cd029803e3b3afab5f963dad24808bf934c0
-  size_bytes: 222495
-  original_filename: January 2022 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  sha256: 8b0326dabe76dcedd9018eda7b1beffd483f1187b000b1de04a38612b598713d
+  size_bytes: 322731
+  original_filename: 4EB1_01_rms_20220303.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/English%20Language%20B/2016/exam-materials/4EB1_01_rms_20220303.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4EB1/01R regional paper mis-filed under this
+      dir)
 - type: question-paper
   path: qp.pdf
   sha256: 978bdb37f77d1dbe21a44a6378dc42af77df9a6031e809684eee75dd6b8d0b28
@@ -51,8 +52,10 @@ identification:
   - 4EB1
   - 4EB1/01
   stray_prints: []
-  session_printed: January 2022; January 2022
-  notes: []
+  session_printed: January 2022
+  notes:
+  - '2026-10-02 corpus-fix wave (F-A2): ms.pdf previously held the PMT ''(R)'' file — the 4EB1/01R regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: catalog title + cover furniture, session printed January 2022)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

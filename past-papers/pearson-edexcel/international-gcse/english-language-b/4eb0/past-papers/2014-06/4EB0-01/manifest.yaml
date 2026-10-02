@@ -63,7 +63,9 @@ identification:
   - 4EB0/01
   stray_prints: []
   session_printed: May 2014; June 2014
-  notes: []
+  notes:
+  - '2026-10-02 corpus-fix wave (F-A2): ms.pdf is VERIFIED as the PMT ''(R)'' file — the 4EB0/01R regional paper mis-filed under this dir (T-C58 three-class verification) — but the official plain document
+    for this sitting is NOT obtainable from the public Pearson content-dam, so the bytes are left unchanged pending an authenticated source; do not ingest this dir off folder names alone.'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

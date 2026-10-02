@@ -23,15 +23,16 @@ variant: null
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: e3465ed8919d8342b6bac4f0e2d17ddd337615d5125fcfae30a477637355a3b6
-  size_bytes: 130671
-  original_filename: January 2020 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  sha256: 6b49181320fc01f2132b86a34a26919685074a57e4cc67b0c6a0091784999c42
+  size_bytes: 277380
+  original_filename: 4EB1_01_rms_20200305.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/English%20Language%20B/2016/exam-materials/4EB1_01_rms_20200305.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4EB1/01R regional paper mis-filed under this
+      dir)
 - type: question-paper
   path: qp.pdf
   sha256: 74f47e7c74a4c7bc4cfe51b534446bdb92fbb8e420b8258ec8c9a2c27bed5b85
@@ -51,8 +52,10 @@ identification:
   - 4EB1
   - 4EB1/01
   stray_prints: []
-  session_printed: January 2020; January 2020
-  notes: []
+  session_printed: January 2020
+  notes:
+  - '2026-10-02 corpus-fix wave (F-A2): ms.pdf previously held the PMT ''(R)'' file — the 4EB1/01R regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: catalog title + cover furniture, session printed January 2020)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

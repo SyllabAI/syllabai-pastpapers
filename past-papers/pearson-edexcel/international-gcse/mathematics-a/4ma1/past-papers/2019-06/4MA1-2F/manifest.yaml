@@ -37,25 +37,30 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: a8e8a65f73f0c9e51f6eadb91b64f48ba572083ba2d94be598d265d35f45fc79
-  size_bytes: 1804529
-  original_filename: June 2019 (R) QP.pdf
+  sha256: 10a6400baec26c7a01ac759a77bcb3c18f0575cc1ad8173a42d640adea9a250d
+  size_bytes: 1974630
+  original_filename: 4MA1_2F_que_20190607.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: /content/dam/pdf/International%20GCSE/Mathematics%20A/2016/exam-materials/4MA1_2F_que_20190607.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4MA1/2FR regional paper mis-filed under this
+      dir)
 identification:
   methods:
   - pdf_text
   - date_rule
+  - ocr
   confidence_rank: 0
   printed_references_seen:
   - 4MA1
+  - 4MA1/2F
   stray_prints: []
   session_printed: June 2019
   notes:
+  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf previously held the PMT ''(R)'' file — the 4MA1/2FR regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: cover prints 4MA1/2F, session printed June 2019)'
   - date rule -> 4MA1/2F
 ingestion:
   agent: SyllabAI ingestion agent

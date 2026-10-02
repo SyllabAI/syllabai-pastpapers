@@ -23,15 +23,16 @@ variant: null
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: 017786b150decd2d0186d06126d0d9b8ae0a1d983b2fc5f7383950e691c92c81
-  size_bytes: 118319
-  original_filename: June 2013 (R) MS - Unit 2 Edexcel Physics A-level.pdf
+  sha256: b4ed6e0d2072ace8401fe1467ff1c637c8ee88ecae2525dc7ca7c8443fdb2eaa
+  size_bytes: 234891
+  original_filename: 6PH02_01_msc_20130815.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: /content/dam/pdf/A%20Level/Physics/2013/Exam%20materials/6PH02_01_msc_20130815.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 6PH02/01R regional paper mis-filed under
+      this dir)
 - type: question-paper
   path: qp.pdf
   sha256: 13c8223f96c587133546108093d0a798a0b125ca02d0ecde2ff9b3b5a001a991
@@ -51,10 +52,11 @@ identification:
   - 6PH02
   - 6PH02/01
   stray_prints: []
-  session_printed: June 2013
+  session_printed: Summer 2013
   notes:
-  - cover prints 'Paper 01R' for unit-style code 6PH02; unit refs are /01 (Pearson cover anomaly), ref
-    set to /01
+  - '2026-10-02 corpus-fix wave (F-A2): ms.pdf previously held the PMT ''(R)'' file — the 6PH02/01R regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: catalog title + cover furniture, session printed Summer 2013)'
+  - cover prints 'Paper 01R' for unit-style code 6PH02; unit refs are /01 (Pearson cover anomaly), ref set to /01
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

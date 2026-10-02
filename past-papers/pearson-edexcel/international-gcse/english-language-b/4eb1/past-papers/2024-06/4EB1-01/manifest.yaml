@@ -23,15 +23,16 @@ variant: null
 materials:
 - type: mark-scheme
   path: ms.pdf
-  sha256: 3d419a003d520e498f81c8e180241750950d7e2fdd2ef033d266a2313204550f
-  size_bytes: 251040
-  original_filename: June 2024 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  sha256: 583690c8f13acb4af1d75e155e4418a24178d481fe1159f26ae420900d018443
+  size_bytes: 470736
+  original_filename: 4eb1-01-rms-20240822.pdf
   source:
-    source_type: third-party-archive
-    archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_type: official-board-website
+    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/English-Language-B/2016/Exam-materials/4eb1-01-rms-20240822.pdf
+    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
+    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4EB1/01R regional paper mis-filed under this
+      dir)
 - type: question-paper
   path: qp.pdf
   sha256: 7394f77312e8aa87716de08bfc2845750cf225435e0e510dc55588ad87afc21a
@@ -51,8 +52,10 @@ identification:
   printed_references_seen:
   - 4EB1
   stray_prints: []
-  session_printed: June 2024; June 2024
+  session_printed: June 2024
   notes:
+  - '2026-10-02 corpus-fix wave (F-A2): ms.pdf previously held the PMT ''(R)'' file — the 4EB1/01R regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+    portal content-dam (identity evidence: catalog title + cover furniture, session printed June 2024)'
   - date rule -> 4EB1/01
 ingestion:
   agent: SyllabAI ingestion agent
