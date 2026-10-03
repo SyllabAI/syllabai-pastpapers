@@ -77,3 +77,26 @@ Jun 2014 absent); the operator names PMT as the source ("2014 one, you will find
 PMT page is Cloudflare-gated and the CDN object key could not be discovered from this environment
 (288-path probe grid; search backends return host-only URLs; archive/proxy services unreachable) —
 pending the operator supplying the direct URL or the bytes. Dir labels/series unchanged (2020-06).
+
+
+## 2026-10-03 — slot completion (3 of 3): the 4EB0-01 June 2014 MS — F-A2 wave complete
+
+Operator supplied the direct PMT URL (IM trace `1a10278c4e1f2171`) for the last unresolvable slot.
+First-hand verified before acceptance: the file is the plain "Mark Scheme (Results) Summer 2014" for
+"Pearson Edexcel International GCSE in English Language B (4EB0) Paper 01" — cover prints "Paper 01"
+(the mis-filed file's cover prints "Paper 01R"; both covers render-verified and committed to the
+records evidence pack), Publications Code UG038775 vs the mis-filed R file's UG038773, and no "01R"
+token appears anywhere in the extracted text. Pairing with the dir's plain QP (cover "4EB0/01",
+"Thursday 22 May 2014 – Morning", Total Marks 100): the MS Section A total (30 marks) equals the QP
+Q1–Q10 sum (1+3+3+2+3+3+2+4+3+6 = 30); the MS writing grids 10+20+5 = 35 and 25+10 = 35 pair with
+QP Q11 = 35 (Section B) and Q12 = 35 (Section C); MS sections A/B/C match the QP structure. 18 pages;
+PMT watermark present (as already recorded for this dir's other PMT-sourced files). The Pearson
+content-dam does not carry this document (T-C62/T-C71 catalog re-scans: Jun 2014 absent), so PMT —
+the operator's named source for this sitting — is the sanctioned route.
+
+Replaced:
+- `2014-06/4EB0-01/ms.pdf` ← PMT `June 2014 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf`
+  (sha256 `0796517f…`, 63,157 bytes; source_url recorded on the manifest material block)
+
+F-A2 wave status: **3 of 3 slots resolved** (4PH1-1P/2P 2020-06 qp ← official DAM, T-C71;
+4EB0-01 2014-06 ms ← PMT via the operator-supplied URL, T-C73). Dir labels/series unchanged.

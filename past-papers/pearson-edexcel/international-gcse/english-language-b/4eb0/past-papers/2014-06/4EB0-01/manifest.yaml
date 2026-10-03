@@ -34,15 +34,16 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: mark-scheme
   path: ms.pdf
-  sha256: edba020d8e33298048f151bb840cc39958accda4d62f6afc585944cf84a4bf4d
-  size_bytes: 62870
-  original_filename: June 2014 (R) MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
+  sha256: 0796517f320979c5a788a82ddd8cdd72a9ebf1d6a0d66829ad7a112b78c373b0
+  size_bytes: 63157
+  original_filename: June 2014 MS - Paper 1 Edexcel (B) English Language IGCSE.pdf
   source:
     source_type: third-party-archive
     archive: PhysicsAndMathsTutor.com
-    source_url: null
-    collected_by: operator (download date not recorded)
-    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+    source_url: https://pmt.physicsandmathstutor.com/download/English-Language/GCSE/Past-Papers/Edexcel-IGCSE-B/Paper-1/June%202014%20MS%20-%20Paper%201%20Edexcel%20(B)%20English%20Language%20IGCSE.pdf
+    collected_by: SyllabAI agent (2026-10-03 corpus-fix wave (F-A2 slot completion), operator-supplied direct URL)
+    note: official Pearson Edexcel document obtained via PMT (the operator's named source for this
+      sitting); PMT watermark present in the file
 - type: question-paper
   path: qp.pdf
   sha256: d76c222a61f36cdc47f8de0b0ad2577d0d253cd3cbdcdcd2f0822b01d96bb4fc
@@ -65,7 +66,10 @@ identification:
   session_printed: May 2014; June 2014
   notes:
   - '2026-10-02 corpus-fix wave (F-A2): ms.pdf is VERIFIED as the PMT ''(R)'' file — the 4EB0/01R regional paper mis-filed under this dir (T-C58 three-class verification) — but the official plain document
-    for this sitting is NOT obtainable from the public Pearson content-dam, so the bytes are left unchanged pending an authenticated source; do not ingest this dir off folder names alone.'
+    for this sitting was NOT obtainable from the public Pearson content-dam; do not ingest this dir off folder names alone. — RESOLVED 2026-10-03 (F-A2 slot completion, operator-supplied direct PMT URL trace 1a10278c4e1f2171):
+    replaced with the official plain MS obtained via PMT (identity evidence: cover prints ''Mark Scheme (Results) Summer 2014'' + ''in English Language B (4EB0)'' + ''Paper 01'' with no ''01R'' print anywhere in the text;
+    Publications Code UG038775 vs the mis-filed R file''s UG038773; Section A total 30 marks pairs with this dir''s plain QP Q1–Q10 sum 1+3+3+2+3+3+2+4+3+6 = 30; writing grids 10+20+5 = 35 and 25+10 = 35 pair with
+    QP Q11 = 35 and Q12 = 35, QP Total Marks 100; 18pp; sha256 distinct from the mis-filed R pin; cover renders committed to the records evidence pack).'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
