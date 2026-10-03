@@ -1,0 +1,2496 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 7,
+ "totalMarks": 70,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": "Name",
+   "summaryHint": "Answer ALL questions.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Answer ALL questions."
+    },
+    {
+     "type": "para",
+     "md": "Some questions must be answered with a cross in a box . If you change your mind about an"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "and then mark your new answer with a cross ."
+    },
+    {
+     "type": "para",
+     "md": "answer, put a line through the box"
+    },
+    {
+     "type": "para",
+     "md": "1 This question is about elements, compounds and mixtures."
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the element that burns with a lilac flame."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the technique used to separate a mixture of liquids with different"
+      },
+      {
+       "type": "para",
+       "md": "boiling points."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The box gives the names of some substances."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "air helium gallium mercury sulfur dioxide"
+      },
+      {
+       "type": "para",
+       "md": "Choose substances from the box to answer these questions."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the substance that is a mixture."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the substance in Group 3 of the Periodic Table."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why hydrogen chloride is a compound."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 6,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "potassium",
+      "allow": [
+       "symbol"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "fractional distillation",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "air",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "gallium",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": null,
+      "marks": 2,
+      "md": "(two) different elements",
+      "allow": [
+       "(two) different"
+      ],
+      "reject": [
+       "ions for M1"
+      ],
+      "ignore": [],
+      "notes": [
+       "types of atoms",
+       "M2 (no printed marks cell): (chemically) joined/bonded together | REJECT molecules | scores 0 | Total = 6"
+      ],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "Explain",
+   "summaryHint": "This question is about aluminium.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about aluminium."
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Why does solid aluminium conduct electricity?"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "A electrons are free to move in the solid"
+      },
+      {
+       "type": "para",
+       "md": "B electrons and neutrons are free to move in the solid"
+      },
+      {
+       "type": "para",
+       "md": "C electrons and protons are free to move in the solid"
+      },
+      {
+       "type": "para",
+       "md": "D ions are free to move in the solid"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why aluminium is malleable."
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Aluminium is extracted from aluminium oxide by electrolysis."
+      },
+      {
+       "type": "para",
+       "md": "The diagram shows the electrolysis of aluminium oxide."
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "positive electrode"
+      },
+      {
+       "type": "para",
+       "md": "–"
+      },
+      {
+       "type": "para",
+       "md": "negative electrode"
+      },
+      {
+       "type": "para",
+       "md": "molten aluminium oxide"
+      },
+      {
+       "type": "para",
+       "md": "molten aluminium"
+      },
+      {
+       "type": "para",
+       "md": "steel tank"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Why is aluminium not extracted by heating aluminium oxide with carbon?"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "A aluminium is more reactive than carbon"
+      },
+      {
+       "type": "para",
+       "md": "B carbon is an oxidising agent"
+      },
+      {
+       "type": "para",
+       "md": "C the reaction has a low activation energy"
+      },
+      {
+       "type": "para",
+       "md": "D the reaction is explosive"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Aluminium is formed at the negative electrode."
+      },
+      {
+       "type": "para",
+       "md": "Name the product formed at the positive electrode."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest why the electrolysis of aluminium oxide is expensive."
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      }
+     ],
+     "answerLines": 3,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Aluminium is used to make cans for drinks because it is malleable."
+      },
+      {
+       "type": "para",
+       "md": "Give another reason why aluminium is used to make cans for drinks."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 7,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "A (electrons are free to move in the solid)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "B is not the correct answer as neutrons are not",
+       "free to move in the solid",
+       "C is not the correct answer as protons are not free",
+       "to move in the solid",
+       "D is not the correct answer as ions are not free to",
+       "move in the solid"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "layers / rows (of atoms or ions)",
+      "allow": [],
+      "reject": [
+       "negative ions",
+       "molecules",
+       "electrons"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "A (aluminium is more reactive than carbon)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "B is not the correct answer as carbon is not an",
+       "oxidising agent",
+       "C is not the correct answer as the reaction would",
+       "have a very high activation energy",
+       "D is not the correct answer as carbon and",
+       "aluminium oxide do not react"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "oxygen",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": "iii",
+      "marks": 1,
+      "md": "any one from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "aluminium oxide has a high melting point              ACCEPT high",
+       "temperature required",
+       "aluminium oxide needs to be molten",
+       "the process needs a lot of energy",
+       "the process needs a lot of electricity"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "any one from:",
+      "allow": [],
+      "reject": [
+       "will not rust"
+      ],
+      "ignore": [],
+      "notes": [
+       "aluminium is unreactive                               IGNORE high melting",
+       "point",
+       "aluminium has a low density",
+       "aluminium is strong",
+       "aluminium is non-toxic",
+       "aluminium is corrosion resistant",
+       "aluminium can be recycled",
+       "Total = 7",
+       "M2 (no printed marks cell): can slide over one another"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 8,
+   "commandWord": "State",
+   "summaryHint": "This question is about the solubility of salts.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about the solubility of salts."
+    }
+   ],
+   "parts": [
+    {
+     "id": "3a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what is meant by the term saturated solution."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The graph shows the solubilities of sodium chloride and potassium chloride at"
+      },
+      {
+       "type": "para",
+       "md": "different temperatures."
+      },
+      {
+       "type": "para",
+       "md": "60"
+      },
+      {
+       "type": "para",
+       "md": "potassium chloride"
+      },
+      {
+       "type": "para",
+       "md": "55"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "50"
+      },
+      {
+       "type": "para",
+       "md": "sodium chloride"
+      },
+      {
+       "type": "para",
+       "md": "45"
+      },
+      {
+       "type": "para",
+       "md": "Solubility in g"
+      },
+      {
+       "type": "para",
+       "md": "per 100 g of water"
+      },
+      {
+       "type": "para",
+       "md": "40"
+      },
+      {
+       "type": "para",
+       "md": "35"
+      },
+      {
+       "type": "para",
+       "md": "30"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "25"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "40"
+      },
+      {
+       "type": "para",
+       "md": "60"
+      },
+      {
+       "type": "para",
+       "md": "80"
+      },
+      {
+       "type": "para",
+       "md": "100"
+      },
+      {
+       "type": "para",
+       "md": "Temperature in C"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Deduce",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Deduce the temperature at which sodium chloride and potassium chloride"
+      },
+      {
+       "type": "para",
+       "md": "have the same solubility."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "temperature = .............................................................. °C"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "3b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A saturated solution of potassium chloride in 100 g of water is cooled"
+      },
+      {
+       "type": "para",
+       "md": "from 80 °C to 60 °C."
+      },
+      {
+       "type": "para",
+       "md": "Determine the mass, in grams, of potassium chloride that crystallises."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "mass = .............................................................. g"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "3c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student uses this apparatus to determine the solubility of potassium nitrate"
+      },
+      {
+       "type": "para",
+       "md": "in water."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "thermometer"
+      },
+      {
+       "type": "para",
+       "md": "water"
+      },
+      {
+       "type": "para",
+       "md": "potassium nitrate"
+      },
+      {
+       "type": "para",
+       "md": "beaker of hot water"
+      },
+      {
+       "type": "para",
+       "md": "heat"
+      },
+      {
+       "type": "para",
+       "md": "This is the student’s method."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Step 1"
+      },
+      {
+       "type": "para",
+       "md": "add 6.2 g of potassium nitrate to a boiling tube"
+      },
+      {
+       "type": "para",
+       "md": "add 20 cm3 of water to the boiling tube"
+      },
+      {
+       "type": "para",
+       "md": "Step 2"
+      },
+      {
+       "type": "para",
+       "md": "Step 3"
+      },
+      {
+       "type": "para",
+       "md": "\u0007place the boiling tube in a beaker of water"
+      },
+      {
+       "type": "para",
+       "md": "Step 4"
+      },
+      {
+       "type": "para",
+       "md": "\u0007heat the beaker gently, stirring the mixture in the boiling tube"
+      },
+      {
+       "type": "para",
+       "md": "continuously until the potassium nitrate dissolves"
+      },
+      {
+       "type": "para",
+       "md": "Step 5"
+      },
+      {
+       "type": "para",
+       "md": "\u0007remove the boiling tube from the beaker and allow the mixture to cool"
+      },
+      {
+       "type": "para",
+       "md": "Step 6"
+      },
+      {
+       "type": "para",
+       "md": "\u0007record the temperature at which crystals start to form in the boiling tube"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name a piece of apparatus that the student could use in step 2 to measure"
+      },
+      {
+       "type": "para",
+       "md": "20 cm3 of water."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why the student uses a beaker of hot water in step 3, rather"
+      },
+      {
+       "type": "para",
+       "md": "than directly heating the boiling tube with a Bunsen burner."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In step 6, crystals start to form at 32 °C."
+      },
+      {
+       "type": "para",
+       "md": "Calculate the solubility of the solid, in g per 100 g of water, at 32 °C."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "[1.0 cm3 of pure water has a mass of 1.0 g]"
+      },
+      {
+       "type": "para",
+       "md": "solubility = .............................................................. g per 100 g of water"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 8,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "(a solution that) has as much",
+      "allow": [
+       "no more solute"
+      ],
+      "reject": [
+       "‘reacts’"
+      ],
+      "ignore": [],
+      "notes": [
+       "solute /solid /substance as possible dissolved      will dissolve",
+       "(at a particular temperature)"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "47 (°C)",
+      "allow": [
+       "46-48 °C"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "47 - 40",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "measuring cylinder",
+      "allow": [
+       "(volumetric)"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "pipette / burette"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(to ensure) the boiling tube/water bath is evenly",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "heated OR greater control over the heating"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 2,
+      "md": "(6.2 ÷ 20)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(iii)",
+       "M2 (no printed marks cell): 7.0 (g) | ALLOW ecf from M1",
+       "M2 (no printed marks cell): dep on at least one | correct value from M1 | correct answer scores 2 | marks",
+       "M2 (no printed marks cell): (M1 x 100) AND correctly evaluated | correct answer scores 2 | = 31 g per 100 g water                           marks | Total = 8"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 12,
+   "commandWord": "Complete",
+   "summaryHint": "The table gives some properties of the halogens fluorine, chlorine, bromine and iodine.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The table gives some properties of the halogens fluorine, chlorine, bromine"
+    },
+    {
+     "type": "para",
+     "md": "and iodine."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    }
+   ],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the table by giving the predicted properties of astatine."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A sample of fluorine contains two isotopes."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe, in terms of sub-atomic particles, what is meant by the term isotopes."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The two isotopes in this sample of fluorine are 18"
+      },
+      {
+       "type": "para",
+       "md": "9 F and 19"
+      },
+      {
+       "type": "para",
+       "md": "9 F"
+      },
+      {
+       "type": "para",
+       "md": "The relative atomic mass (Ar) of the sample of fluorine is 18.998"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Explain the relative abundances of the two isotopes."
+      },
+      {
+       "type": "para",
+       "md": "You do not need to do a calculation."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student is given colourless solutions of chlorine and sodium bromide."
+      },
+      {
+       "type": "para",
+       "md": "Describe how the student can use these two solutions to show that chlorine is"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "more reactive than bromine."
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why chlorine is more reactive than bromine."
+      },
+      {
+       "type": "para",
+       "md": "Refer to the atomic structures of chlorine and bromine in your answer."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 12,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "(physical state at room temperature) solid",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(colour of halogen) black                            ALLOW very dark grey"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "atoms with the same number of protons",
+      "allow": [],
+      "reject": [
+       ""
+      ],
+      "ignore": [],
+      "notes": [
+       "molecule/compound",
+       "once only"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "19F is much more abundant (than 18F) OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 3,
+      "md": "mix the solutions (of chlorine and the solution",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "of sodium bromide)"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 3,
+      "md": "atoms of chlorine are smaller / have fewer",
+      "allow": [
+       "reverse",
+       "outer"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "shells than atoms of bromine                         argument throughout",
+       "shell/electron is further",
+       "from nucleus",
+       "M2 (no printed marks cell): and different numbers of neutrons",
+       "M2 (no printed marks cell): as the Ar is much closer to 19 than 18",
+       "M2 (no printed marks cell): (the mixture of the two solutions) turns orange | ALLOW any combination | of orange / yellow / | brown | IGNORE other | observations | eg bubbles",
+       "M3 (no printed marks cell): because bromine is formed/produced | IGNORE state of | bromine | REJECT bromide | IGNORE a displacement | reaction occurs",
+       "M3 (no printed marks cell): can be scored by Br2 | as a product in an | equation",
+       "M2 (no printed marks cell): there is therefore more attraction between the | ALLOW less repulsion | nucleus and the outer shell                          (from inner shells) or | less shielding (from | nuclear attraction)",
+       "M3 (no printed marks cell): therefore an electron is more easily | gained/accepted | Total = 12"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": "Give",
+   "summaryHint": "This question is about alcohols.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about alcohols."
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give two conditions needed for the production of ethanol by the fermentation"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "of glucose."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student uses this apparatus to find the molar enthalpy change, ΔH, for the"
+      },
+      {
+       "type": "para",
+       "md": "combustion of propanol, C3H7OH"
+      },
+      {
+       "type": "para",
+       "md": "thermometer"
+      },
+      {
+       "type": "para",
+       "md": "copper can"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "water"
+      },
+      {
+       "type": "para",
+       "md": "spirit burner"
+      },
+      {
+       "type": "para",
+       "md": "propanol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "These are the student’s results."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the heat energy change, Q, in joules."
+      },
+      {
+       "type": "para",
+       "md": "[for water, c = 4.2 J / g / °C]"
+      },
+      {
+       "type": "para",
+       "md": "Q = .............................................................. J"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In a different experiment, the student burns 0.75 g of propanol."
+      },
+      {
+       "type": "para",
+       "md": "The heat energy change for this experiment is 19 500 J."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the molar enthalpy change, ΔH, in kJ / mol."
+      },
+      {
+       "type": "para",
+       "md": "Include a sign in your answer."
+      },
+      {
+       "type": "para",
+       "md": "[for propanol, Mr = 60]"
+      },
+      {
+       "type": "para",
+       "md": "ΔH = .............................................................. kJ / mol"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This is the equation for the combustion of ethanol."
+      },
+      {
+       "type": "para",
+       "md": "C2H5OH + 3O2 → 2CO2 + 3H2O"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain, in terms of bonds broken and bonds made, why this reaction"
+      },
+      {
+       "type": "para",
+       "md": "is exothermic."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw an energy level diagram for this reaction."
+      },
+      {
+       "type": "para",
+       "md": "You should show ΔH as a single-headed arrow."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Energy"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 13,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "any two from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "temperature of 30°C                                ALLOW a range of",
+       "30-40°C",
+       "yeast                                              ALLOW enzymes from",
+       "yeast",
+       "absence of air/oxygen                              ALLOW anaerobic",
+       "aqueous solution"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 3,
+      "md": "(52.8 – 19.5) = 33.3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Correct answer scores 3",
+       "ECF incorrect",
+       "temperature"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 3,
+      "md": "(conversion to kJ) = 19.5 kJ",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 amount propanol = 0.75 ÷ 60 OR 0.0125 (mol)",
+       "M3 -1560 kJ/mol                                    Correct answer scores 3"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 2,
+      "md": "more energy is given out when the bonds are",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "If state/imply that",
+       "made                                               energy required to",
+       "make bonds"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 3,
+      "md": "right-hand line below left-hand line",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): 125 × 4.2 × 33.3",
+       "M3 (no printed marks cell): 17482.5 J | ALLOW any number of | significant figures other | than 1",
+       "M2 (no printed marks cell): than is taken in when the bonds are broken | OR | If state/imply that | energy released when | bonds are broken scores | 0/2 | ACCEPT correct reverse | argument",
+       "M1 (no printed marks cell): breaking bonds is endothermic/takes in energy | and making bonds is exothermic/releases energy",
+       "M2 (no printed marks cell): more energy is released than taken in | M2 dep on M1",
+       "M2 (no printed marks cell): correct names/formulae of both reactants and | products",
+       "M3 (no printed marks cell): ΔH correctly shown as a downward arrow and | labelled (see diagram below) | Total = 13"
+      ],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 10,
+   "commandWord": null,
+   "summaryHint": "This question is about sugars.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about sugars."
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Sugar A has this percentage composition by mass."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "C = 44.7% H = 7.5% O = 47.8%"
+      },
+      {
+       "type": "para",
+       "md": "Determine the empirical formula of sugar A."
+      },
+      {
+       "type": "para",
+       "md": "[Ar values: C = 12 H = 1 O = 16]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "empirical formula = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A 5.00 cm3 sample of blood contains 0.00510 g of glucose, C6H12O6"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the concentration, in mol / dm3, of glucose in this sample."
+      },
+      {
+       "type": "para",
+       "md": "Give your answer to three significant figures."
+      },
+      {
+       "type": "para",
+       "md": "[1 dm3 = 1000 cm3]"
+      },
+      {
+       "type": "para",
+       "md": "[for C6H12O6 Mr = 180]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "concentration = .............................................................. mol / dm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This equation represents the complete combustion of 1 mol of sugar B."
+      },
+      {
+       "type": "para",
+       "md": "B + y O2 → 12CO2 + zH2O"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "8.55 g of sugar B is burned, producing 7200 cm3 of carbon dioxide at rtp."
+      },
+      {
+       "type": "para",
+       "md": "Use the equation to calculate the Mr of sugar B."
+      },
+      {
+       "type": "para",
+       "md": "[one mole of any gas occupies 24 000 cm3 at rtp]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Mr = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 10,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 4,
+      "md": "44.7÷12",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "7.5÷1",
+       "47.8÷16",
+       "0 marks for upside down",
+       "calculation or use of",
+       "atomic numbers"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 3,
+      "md": "(amount of glucose in 5 cm3) = 0.00510 ÷ 180",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "OR 0.00002833 (mol)"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 3,
+      "md": "(amount of CO2) 7200 ÷ 24000 OR 0.3 (mol)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): (moles of each element) 3.725 7.5 2.99",
+       "M3 (no printed marks cell): (ratio) 1.25 : 2.5 : 1",
+       "M4 (no printed marks cell): C5H10O4 | Correct answer scores 4",
+       "M2 (no printed marks cell): (concentration of glucose) = | ALLOW M1×200 | 0.00566667(mol/dm3)",
+       "M3 (no printed marks cell): 0.00567(mol/dm3) | ALLOW ecf from M2 | Correct answer scores 3",
+       "M2 (no printed marks cell): amount of sugar B = 0.025 (mol) | ALLOW M1÷ 12",
+       "M3 (no printed marks cell): (8.55 ÷ 0.025) = 342 | 28.5 scores 2 | Correct answer scores 3 | Total = 10"
+      ],
+      "pages": [
+       10
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 14,
+   "commandWord": "Give",
+   "summaryHint": "This question is about nitric acid.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about nitric acid."
+    },
+    {
+     "type": "para",
+     "md": "This is the equation for a reaction that occurs in the manufacture of nitric acid."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "4NH3(g) + 5O2(g)  4NO(g) + 6H2O(g) ΔH = –900 kJ / mol"
+    },
+    {
+     "type": "para",
+     "md": "After several hours in a closed system, this reaction reaches dynamic equilibrium."
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the meaning of the symbol "
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what is meant by the term dynamic equilibrium."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Typical conditions for this reaction are a temperature of 800 °C and a pressure"
+      },
+      {
+       "type": "para",
+       "md": "of 10 atm."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "7b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 5,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain the effects on rate of reaction and yield of products if the temperature"
+      },
+      {
+       "type": "para",
+       "md": "is changed to 1000 °C but the pressure is kept at 10 atm."
+      },
+      {
+       "type": "para",
+       "md": "rate of reaction"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "yield of products"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 12,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "7b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Lowering the pressure would increase the yield of products."
+      },
+      {
+       "type": "para",
+       "md": "Give a reason why a lower pressure is not used."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "QUESTION 7 CONTINUES ON BACK PAGE"
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "7c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student does a titration using dilute nitric acid and a solution of sodium"
+      },
+      {
+       "type": "para",
+       "md": "hydroxide with a known concentration."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "These are the first four steps in the student’s method."
+      },
+      {
+       "type": "para",
+       "md": "add 25.0 cm3 of nitric acid to a conical flask"
+      },
+      {
+       "type": "para",
+       "md": "•"
+      },
+      {
+       "type": "para",
+       "md": "•"
+      },
+      {
+       "type": "para",
+       "md": "add sodium hydroxide solution to a burette and record the initial volume"
+      },
+      {
+       "type": "para",
+       "md": "•"
+      },
+      {
+       "type": "para",
+       "md": "add a few drops of methyl orange indicator to the flask"
+      },
+      {
+       "type": "para",
+       "md": "•"
+      },
+      {
+       "type": "para",
+       "md": "use the burette to add sodium hydroxide solution to the flask until the"
+      },
+      {
+       "type": "para",
+       "md": "indicator changes colour"
+      },
+      {
+       "type": "para",
+       "md": "Describe how the student could modify their method to obtain an accurate value"
+      },
+      {
+       "type": "para",
+       "md": "for the volume of sodium hydroxide solution needed to neutralise 25.0 cm3 of"
+      },
+      {
+       "type": "para",
+       "md": "nitric acid."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      }
+     ],
+     "answerLines": 16,
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 14,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "(the reaction is) reversible",
+      "allow": [
+       "reaction that"
+      ],
+      "reject": [],
+      "ignore": [
+       "references to",
+       "references to"
+      ],
+      "notes": [
+       "goes both ways/both",
+       "forwards and backwards",
+       "reaction occur",
+       "equilibrium",
+       "reactants turning into",
+       "products and products",
+       "into reactants."
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "the forward and reverse reactions occur at the",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "same/equal rate"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 5,
+      "md": "an explanation linking any 5 of the following:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "rate"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "the rate of reaction would be too slow OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": null,
+      "marks": 5,
+      "md": "a description including any 5 of the following",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "points:",
+       "M2 (no printed marks cell): the concentrations of reactants and products | remain constant                                      ALLOW amounts | REJECT concentrations | of reactants and | products are the same",
+       "M1 (no printed marks cell): rate increases",
+       "M2 (no printed marks cell): particles have increased (kinetic) energy / | particles have energy (on average) greater than | activation energy",
+       "M3 (no printed marks cell): so more frequent (successful) collisions/more | (successful) collisions per unit time | yield",
+       "M4 (no printed marks cell): the (forwards) reaction is exothermic OR the | backwards reaction is endothermic",
+       "M5 (no printed marks cell): (increasing temperature) shifts the reaction in | the endothermic direction",
+       "M6 (no printed marks cell): yield decreases | M6 dep on M4 or M5",
+       "M1 (no printed marks cell): rinse/wash burette with sodium hydroxide | ALLOW remove (air) | (before filling)                                       bubbles (in the burette)",
+       "M2 (no printed marks cell): use a (volumetric) pipette to add (25.0 cm3 of) | nitric acid",
+       "M3 (no printed marks cell): rinse / wash the conical flask (with distilled or | REJECT if rinsed using | deionised water)                                       acid for M3",
+       "M4 (no printed marks cell): use a white tile (underneath the conical flask)",
+       "M5 (no printed marks cell): swirl the flask | IGNORE stir",
+       "M6 (no printed marks cell): (repeat) adding sodium hydroxide dropwise | IGNORE add dropwise | near the end point                                     (from the start)",
+       "M7 (no printed marks cell): record the volume of sodium hydroxide added | (at the end point)",
+       "M8 (no printed marks cell): repeat until concordant results | ALLOW results within | 0.1-0.2 cm3 of one | another | Total = 14"
+      ],
+      "pages": [
+       12
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}
