@@ -1,0 +1,206 @@
+{
+  "postverify_utc": "2026-10-04T09:43:36.334246+00:00",
+  "mode": "READ_ONLY_INDEPENDENT",
+  "results": [
+    {
+      "check": "docs_total == 1023 (1017 + 6 wave)",
+      "pass": true,
+      "detail": "1023"
+    },
+    {
+      "check": "docs census delta == 3 QP + 3 MS SUGGESTED",
+      "pass": true,
+      "detail": "{'REJECTED|MARK_SCHEME': 67, 'VALIDATED|QUESTION_PAPER': 109, 'VALIDATED|EXTERNAL_QUESTIONS': 379, 'SUGGESTED|QUESTION_PAPER': 3, 'VALIDATED|MARK_SCHEME': 109, 'VALIDATED|EXTERNAL_NOTES': 112, 'SUGGESTED|MARK_SCHEME': 3, 'REJECTED|QUESTION_PAPER': 79, 'VALIDATED|SYLLABUS': 162}"
+    },
+    {
+      "check": "chunks rev2 4740/4740 embedded (4672 + 68 wave)",
+      "pass": true,
+      "detail": "{'2': {'chunks': 4740, 'embedded': 4740}}"
+    },
+    {
+      "check": "ep 108 = 95V/13R (104 + 4 VALIDATED inserts)",
+      "pass": true,
+      "detail": "{'REJECTED': 13, 'VALIDATED': 95}"
+    },
+    {
+      "check": "audit 2829 (2814 + 15)",
+      "pass": true,
+      "detail": "2829"
+    },
+    {
+      "check": "teacher_validation_events unchanged 0",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "unlinked chem VALIDATED ep rows == 0 (was 11)",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "SERVING GATE 4,661 == T-C74 pin 4,593 + predicted +68",
+      "pass": true,
+      "detail": "4661"
+    },
+    {
+      "check": "ep 4CH1/1C|June 2025 VALIDATED both links exact",
+      "pass": true,
+      "detail": "[{'id': 'd04c0852-5751-4b38-bf28-ebd74a5d9b96', 'subject_id': 'e56dc9ee-aa74-426f-94a6-4b72d3dc346b', 'validation_state': 'VALIDATED', 'series': 'JUN', 'year': 2025, 'question_paper_document_id': '3c8fbea8-9bd6-512d-bad6-772dcaa65ef2', 'mark_scheme_document_id': 'acc7d673-0bf6-55bb-8cde-7f4eae99e1fa', 'title': '4CH1 4CH1/1C June 2025'}]"
+    },
+    {
+      "check": "ep 4CH1/1C|June 2026 VALIDATED both links exact",
+      "pass": true,
+      "detail": "[{'id': 'ef899774-7aa1-4246-8fb1-99b4d3cdfa95', 'subject_id': 'e56dc9ee-aa74-426f-94a6-4b72d3dc346b', 'validation_state': 'VALIDATED', 'series': 'JUN', 'year': 2026, 'question_paper_document_id': 'c6fbb3ac-4056-5838-8732-b71993d7fe61', 'mark_scheme_document_id': 'a03447d8-7c1b-5fac-92e7-c2e91ca8db3d', 'title': '4CH1 4CH1/1C June 2026'}]"
+    },
+    {
+      "check": "ep 4CH1/2C|June 2026 VALIDATED both links exact",
+      "pass": true,
+      "detail": "[{'id': '9747f44a-6b11-4541-9308-b587ff059fa0', 'subject_id': 'e56dc9ee-aa74-426f-94a6-4b72d3dc346b', 'validation_state': 'VALIDATED', 'series': 'JUN', 'year': 2026, 'question_paper_document_id': 'ea685722-b453-5c5f-8e19-1f4b868bc0b1', 'mark_scheme_document_id': 'b5742cb1-c413-5a66-a782-24f90facda89', 'title': '4CH1 4CH1/2C June 2026'}]"
+    },
+    {
+      "check": "ep 4CH1/2CR|June 2026 VALIDATED both links exact",
+      "pass": true,
+      "detail": "[{'id': 'a1248c15-ab85-42a8-96be-f79c57307b13', 'subject_id': 'e56dc9ee-aa74-426f-94a6-4b72d3dc346b', 'validation_state': 'VALIDATED', 'series': 'JUN', 'year': 2026, 'question_paper_document_id': 'b0660052-3ecc-598f-b1c1-7e970eba8efb', 'mark_scheme_document_id': 'e3252e22-9c18-5af2-890d-32275430eecd', 'title': '4CH1 4CH1/2CR June 2026'}]"
+    },
+    {
+      "check": "11 PLACE-audited heal rows both links present",
+      "pass": true,
+      "detail": "11"
+    },
+    {
+      "check": "doc c6fbb3ac-4056\u2026 SUGGESTED 11 chunks embedded rev2",
+      "pass": true,
+      "detail": "[{'validation_state': 'SUGGESTED', 'kind': 'QUESTION_PAPER', 'checksum': '231c05743b0853aa408ae22103faf2645baca81e44fbc839972adc493abbede3', 'source_uri': '4CH1-1C-202606/qp.pdf', 'doc_version': 1, 'chunks': 11, 'embedded': 11, 'model': 'gemini-embedding-001'}]"
+    },
+    {
+      "check": "doc a03447d8-7c1b\u2026 SUGGESTED 18 chunks embedded rev2",
+      "pass": true,
+      "detail": "[{'validation_state': 'SUGGESTED', 'kind': 'MARK_SCHEME', 'checksum': 'd4febc1650d2632a220e5ed367d05d99880bcf2b5cf73c434eb2ff7aac3c5040', 'source_uri': '4CH1-1C-202606/ms.pdf', 'doc_version': 1, 'chunks': 18, 'embedded': 18, 'model': 'gemini-embedding-001'}]"
+    },
+    {
+      "check": "doc ea685722-b453\u2026 SUGGESTED 9 chunks embedded rev2",
+      "pass": true,
+      "detail": "[{'validation_state': 'SUGGESTED', 'kind': 'QUESTION_PAPER', 'checksum': '713f1fccc169d6b716b0a2713bc07bbf1aa94a34a25e298fd2e6c3b449dcc9a3', 'source_uri': '4CH1-2C-202606/qp.pdf', 'doc_version': 1, 'chunks': 9, 'embedded': 9, 'model': 'gemini-embedding-001'}]"
+    },
+    {
+      "check": "doc b5742cb1-c413\u2026 SUGGESTED 10 chunks embedded rev2",
+      "pass": true,
+      "detail": "[{'validation_state': 'SUGGESTED', 'kind': 'MARK_SCHEME', 'checksum': 'a42a22c4852946905431acf1190775855ad211e616bb380589e9a057fa4d6960', 'source_uri': '4CH1-2C-202606/ms.pdf', 'doc_version': 1, 'chunks': 10, 'embedded': 10, 'model': 'gemini-embedding-001'}]"
+    },
+    {
+      "check": "doc b0660052-3ecc\u2026 SUGGESTED 9 chunks embedded rev2",
+      "pass": true,
+      "detail": "[{'validation_state': 'SUGGESTED', 'kind': 'QUESTION_PAPER', 'checksum': '5ee0d5b49eac889dbc2dc3f7894a4dc3eff8c0808e3ee94f9425e27c0169f980', 'source_uri': '4CH1-2CR-202606/qp.pdf', 'doc_version': 1, 'chunks': 9, 'embedded': 9, 'model': 'gemini-embedding-001'}]"
+    },
+    {
+      "check": "doc e3252e22-9c18\u2026 SUGGESTED 11 chunks embedded rev2",
+      "pass": true,
+      "detail": "[{'validation_state': 'SUGGESTED', 'kind': 'MARK_SCHEME', 'checksum': 'a005acd5e9b80355d7b11492adb598083664f10e076ce557002b2d1911c52b05', 'source_uri': '4CH1-2CR-202606/ms.pdf', 'doc_version': 1, 'chunks': 11, 'embedded': 11, 'model': 'gemini-embedding-001'}]"
+    },
+    {
+      "check": "15 audit rows carry the batch",
+      "pass": true,
+      "detail": "15"
+    },
+    {
+      "check": "audit batch_run_id == the APPLIED run 3507fb0f\u2026",
+      "pass": true,
+      "detail": "{'3507fb0f-317c-4c96-bbd2-0be99ce49e38'}"
+    },
+    {
+      "check": "4 VALIDATE (inserts) + 11 PLACE (heals)",
+      "pass": true,
+      "detail": "4/11"
+    },
+    {
+      "check": "actor_label names the operator as deciding actor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "W5 search 'ammonium carbonate' kind=QUESTION_PAPER returns new-paper hits (10 hits)",
+      "pass": true,
+      "detail": "['4e469ae8-dd34-51f9-ba98-8ad1ea9c6696', '476c5950-3c89-53c7-8233-89f7349a226e', '55445f5f-bb7f-5d74-929e-f56b830e4990', 'a2015ed4-d604-5a45-8f8d-ba23166bd74a', '9b51cf89-ff6d-5c0c-81b3-7c3604925cee', 'c6fbb3ac-4056-5838-8732-b71993d7fe61', '4b865d6f-f4eb-55c2-bd08-7ec828ed5ed6', '5f34eae2-bd3c-5e12-b95e-08b3b7f37d43', '40d34459-e45c-595d-a645-e8f722bcabeb', '1e6a27f5-5c2f-502f-b36f-d03e3a6414ce']"
+    },
+    {
+      "check": "W5 search 'sodium hydroxide' kind=QUESTION_PAPER returns new-paper hits (10 hits)",
+      "pass": true,
+      "detail": "['1fd28254-b644-5910-bc72-b39a7fd2a0a5', 'c6437e05-c992-5844-b3d2-a71991795044', 'b7849fb8-346b-5e0f-82b8-a218b4dbf032', 'a4a8a5e1-dbf6-5e9d-8e02-54d39eca315d', 'f29edeea-3156-5273-a970-9bea7f431541', '9b51cf89-ff6d-5c0c-81b3-7c3604925cee', 'ea685722-b453-5c5f-8e19-1f4b868bc0b1', 'e9ebba09-cfa9-5fcf-86ad-f4624448f4f5', '784055a9-2000-5de7-b625-fcf857d3ad3f', '4a5b9118-cc96-51b8-be82-b5f5c2038595']"
+    },
+    {
+      "check": "W5 search 'ammonium carbonate' kind=MARK_SCHEME returns new-paper hits (10 hits)",
+      "pass": true,
+      "detail": "['1f3bd170-739b-5bc8-a3f5-9f109458aa83', '1e2fa40b-1aea-5ddf-ac79-c1533fa2d132', 'a03447d8-7c1b-5fac-92e7-c2e91ca8db3d', '7195d701-ad3b-5667-8d4c-1dd743021e27', '60bdfdb6-a243-5f51-a1ab-d9de9f81b90a', '1483c404-c30d-511e-a90e-49190bafb442', '39a7499c-389c-5d2b-930c-fc1826272f29', '3be30cc2-2f3d-599c-ac15-90a4926534a5']"
+    }
+  ],
+  "search_probes": [
+    {
+      "probe": 1,
+      "query": "ammonium carbonate",
+      "kind": "QUESTION_PAPER",
+      "hits": 10,
+      "hit_documents": [
+        "4e469ae8-dd34-51f9-ba98-8ad1ea9c6696",
+        "476c5950-3c89-53c7-8233-89f7349a226e",
+        "55445f5f-bb7f-5d74-929e-f56b830e4990",
+        "a2015ed4-d604-5a45-8f8d-ba23166bd74a",
+        "9b51cf89-ff6d-5c0c-81b3-7c3604925cee",
+        "c6fbb3ac-4056-5838-8732-b71993d7fe61",
+        "4b865d6f-f4eb-55c2-bd08-7ec828ed5ed6",
+        "5f34eae2-bd3c-5e12-b95e-08b3b7f37d43",
+        "40d34459-e45c-595d-a645-e8f722bcabeb",
+        "1e6a27f5-5c2f-502f-b36f-d03e3a6414ce"
+      ],
+      "expected_documents": [
+        "c6fbb3ac-4056-5838-8732-b71993d7fe61"
+      ],
+      "pass": true
+    },
+    {
+      "probe": 2,
+      "query": "sodium hydroxide",
+      "kind": "QUESTION_PAPER",
+      "hits": 10,
+      "hit_documents": [
+        "1fd28254-b644-5910-bc72-b39a7fd2a0a5",
+        "c6437e05-c992-5844-b3d2-a71991795044",
+        "b7849fb8-346b-5e0f-82b8-a218b4dbf032",
+        "a4a8a5e1-dbf6-5e9d-8e02-54d39eca315d",
+        "f29edeea-3156-5273-a970-9bea7f431541",
+        "9b51cf89-ff6d-5c0c-81b3-7c3604925cee",
+        "ea685722-b453-5c5f-8e19-1f4b868bc0b1",
+        "e9ebba09-cfa9-5fcf-86ad-f4624448f4f5",
+        "784055a9-2000-5de7-b625-fcf857d3ad3f",
+        "4a5b9118-cc96-51b8-be82-b5f5c2038595"
+      ],
+      "expected_documents": [
+        "ea685722-b453-5c5f-8e19-1f4b868bc0b1",
+        "b0660052-3ecc-598f-b1c1-7e970eba8efb"
+      ],
+      "pass": true
+    },
+    {
+      "probe": 3,
+      "query": "ammonium carbonate",
+      "kind": "MARK_SCHEME",
+      "hits": 10,
+      "hit_documents": [
+        "1f3bd170-739b-5bc8-a3f5-9f109458aa83",
+        "1e2fa40b-1aea-5ddf-ac79-c1533fa2d132",
+        "a03447d8-7c1b-5fac-92e7-c2e91ca8db3d",
+        "7195d701-ad3b-5667-8d4c-1dd743021e27",
+        "60bdfdb6-a243-5f51-a1ab-d9de9f81b90a",
+        "1483c404-c30d-511e-a90e-49190bafb442",
+        "39a7499c-389c-5d2b-930c-fc1826272f29",
+        "3be30cc2-2f3d-599c-ac15-90a4926534a5"
+      ],
+      "expected_documents": [
+        "a03447d8-7c1b-5fac-92e7-c2e91ca8db3d"
+      ],
+      "pass": true
+    }
+  ],
+  "gate": 4661,
+  "coverage_matrix": "tc75_w2_coverage_matrix.json",
+  "applied_report_recovered": "tc75_ep_batch_report_APPLIED_recovered.json"
+}

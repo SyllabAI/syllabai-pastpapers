@@ -1,0 +1,18 @@
+{
+  "batch": "tc75-ingest-wave-20261004",
+  "mode": "EXECUTE",
+  "started_at_utc": "2026-10-04T09:41:31.648217+00:00",
+  "operator_trace_id": "1a106209161c8e75",
+  "plan_sha256": "09b1b1900e9805f3c04e2efb719b3ad9043207ac2813a0600e9be93a1311657a",
+  "ingest_report_status": "APPLIED",
+  "credential_source": "neon-api:pooled-uri (T-C54 pin)",
+  "batch_run_id": "67a6fda1-18f3-4721-9568-70f4b189ee23",
+  "identity": {
+    "database": "neondb",
+    "role": "neondb_owner",
+    "campaign": "T-C04-CAMPAIGN"
+  },
+  "status": "ALREADY_APPLIED",
+  "prior_audit_rows": 15,
+  "wave_ep_rows_present": 4
+}

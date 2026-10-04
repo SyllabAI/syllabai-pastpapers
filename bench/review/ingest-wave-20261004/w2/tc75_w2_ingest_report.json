@@ -1,0 +1,158 @@
+{
+  "instrument": "tc75_w2_ingest",
+  "mode": "EXECUTE",
+  "started_at_utc": "2026-10-04T09:35:51.056922+00:00",
+  "corpus_pin": "b8d53f7",
+  "staging_sha256_verified": "12/12 vs SHA256SUMS-canonical-staging.txt",
+  "staging_docs": 6,
+  "documents_list_len": 1017,
+  "pre_dup_documentIds_present": [],
+  "results": [
+    {
+      "dir": "4CH1-1C-202606",
+      "side": "qp",
+      "kind": "QUESTION_PAPER",
+      "documentId_expected": "c6fbb3ac-4056-5838-8732-b71993d7fe61",
+      "chunks_expected": 11,
+      "ingest": {
+        "id": "1ff648b7-8358-4332-b037-521270030e6f",
+        "documentId": "c6fbb3ac-4056-5838-8732-b71993d7fe61",
+        "duplicate": false,
+        "chunks": 11,
+        "elements": 304,
+        "pages": 28,
+        "kind": "QUESTION_PAPER"
+      },
+      "embed": {
+        "id": "1ff648b7-8358-4332-b037-521270030e6f",
+        "documentId": "c6fbb3ac-4056-5838-8732-b71993d7fe61",
+        "model": "gemini-embedding-001",
+        "embedded": 11,
+        "skipped": 0,
+        "totalChunks": 11
+      }
+    },
+    {
+      "dir": "4CH1-1C-202606",
+      "side": "ms",
+      "kind": "MARK_SCHEME",
+      "documentId_expected": "a03447d8-7c1b-5fac-92e7-c2e91ca8db3d",
+      "chunks_expected": 18,
+      "ingest": {
+        "id": "1399ff61-6768-440d-a95b-d3d87df8ee89",
+        "documentId": "a03447d8-7c1b-5fac-92e7-c2e91ca8db3d",
+        "duplicate": false,
+        "chunks": 18,
+        "elements": 79,
+        "pages": 16,
+        "kind": "MARK_SCHEME"
+      },
+      "embed": {
+        "id": "1399ff61-6768-440d-a95b-d3d87df8ee89",
+        "documentId": "a03447d8-7c1b-5fac-92e7-c2e91ca8db3d",
+        "model": "gemini-embedding-001",
+        "embedded": 18,
+        "skipped": 0,
+        "totalChunks": 18
+      }
+    },
+    {
+      "dir": "4CH1-2C-202606",
+      "side": "qp",
+      "kind": "QUESTION_PAPER",
+      "documentId_expected": "ea685722-b453-5c5f-8e19-1f4b868bc0b1",
+      "chunks_expected": 9,
+      "ingest": {
+        "id": "668dcc73-5562-4e17-a2b8-30ee4755bc8b",
+        "documentId": "ea685722-b453-5c5f-8e19-1f4b868bc0b1",
+        "duplicate": false,
+        "chunks": 9,
+        "elements": 245,
+        "pages": 20,
+        "kind": "QUESTION_PAPER"
+      },
+      "embed": {
+        "id": "668dcc73-5562-4e17-a2b8-30ee4755bc8b",
+        "documentId": "ea685722-b453-5c5f-8e19-1f4b868bc0b1",
+        "model": "gemini-embedding-001",
+        "embedded": 9,
+        "skipped": 0,
+        "totalChunks": 9
+      }
+    },
+    {
+      "dir": "4CH1-2C-202606",
+      "side": "ms",
+      "kind": "MARK_SCHEME",
+      "documentId_expected": "b5742cb1-c413-5a66-a782-24f90facda89",
+      "chunks_expected": 10,
+      "ingest": {
+        "id": "362f460b-a9c2-474d-8f32-c848383d16ef",
+        "documentId": "b5742cb1-c413-5a66-a782-24f90facda89",
+        "duplicate": false,
+        "chunks": 10,
+        "elements": 49,
+        "pages": 10,
+        "kind": "MARK_SCHEME"
+      },
+      "embed": {
+        "id": "362f460b-a9c2-474d-8f32-c848383d16ef",
+        "documentId": "b5742cb1-c413-5a66-a782-24f90facda89",
+        "model": "gemini-embedding-001",
+        "embedded": 10,
+        "skipped": 0,
+        "totalChunks": 10
+      }
+    },
+    {
+      "dir": "4CH1-2CR-202606",
+      "side": "qp",
+      "kind": "QUESTION_PAPER",
+      "documentId_expected": "b0660052-3ecc-598f-b1c1-7e970eba8efb",
+      "chunks_expected": 9,
+      "ingest": {
+        "id": "aa0e4e9f-9c51-4278-9a27-84399b4f0f5f",
+        "documentId": "b0660052-3ecc-598f-b1c1-7e970eba8efb",
+        "duplicate": false,
+        "chunks": 9,
+        "elements": 217,
+        "pages": 20,
+        "kind": "QUESTION_PAPER"
+      },
+      "embed": {
+        "id": "aa0e4e9f-9c51-4278-9a27-84399b4f0f5f",
+        "documentId": "b0660052-3ecc-598f-b1c1-7e970eba8efb",
+        "model": "gemini-embedding-001",
+        "embedded": 9,
+        "skipped": 0,
+        "totalChunks": 9
+      }
+    },
+    {
+      "dir": "4CH1-2CR-202606",
+      "side": "ms",
+      "kind": "MARK_SCHEME",
+      "documentId_expected": "e3252e22-9c18-5af2-890d-32275430eecd",
+      "chunks_expected": 11,
+      "ingest": {
+        "id": "2f28a136-8f85-4897-a995-19d0678f165b",
+        "documentId": "e3252e22-9c18-5af2-890d-32275430eecd",
+        "duplicate": false,
+        "chunks": 11,
+        "elements": 42,
+        "pages": 12,
+        "kind": "MARK_SCHEME"
+      },
+      "embed": {
+        "id": "2f28a136-8f85-4897-a995-19d0678f165b",
+        "documentId": "e3252e22-9c18-5af2-890d-32275430eecd",
+        "model": "gemini-embedding-001",
+        "embedded": 11,
+        "skipped": 0,
+        "totalChunks": 11
+      }
+    }
+  ],
+  "chunks_embedded_total": 68,
+  "status": "APPLIED"
+}

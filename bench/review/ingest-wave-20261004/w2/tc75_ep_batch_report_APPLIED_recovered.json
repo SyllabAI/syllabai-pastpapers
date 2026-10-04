@@ -1,0 +1,114 @@
+{
+  "note": "recovered from content_review_audit by tc75_w2_postverify.py \u2014 the instrument's own report was overwritten by the ALREADY_APPLIED re-run",
+  "batch": "tc75-ingest-wave-20261004",
+  "batch_run_id": "3507fb0f-317c-4c96-bbd2-0be99ce49e38",
+  "finished_at_utc": "2026-10-04T09:41:11.078425+00:00",
+  "audit_rows": [
+    {
+      "action": "VALIDATE",
+      "target_id": "d04c0852-5751-4b38-bf28-ebd74a5d9b96",
+      "act": "ep_insert",
+      "title": "4CH1 4CH1/1C June 2025",
+      "identity": null
+    },
+    {
+      "action": "VALIDATE",
+      "target_id": "ef899774-7aa1-4246-8fb1-99b4d3cdfa95",
+      "act": "ep_insert",
+      "title": "4CH1 4CH1/1C June 2026",
+      "identity": null
+    },
+    {
+      "action": "VALIDATE",
+      "target_id": "9747f44a-6b11-4541-9308-b587ff059fa0",
+      "act": "ep_insert",
+      "title": "4CH1 4CH1/2C June 2026",
+      "identity": null
+    },
+    {
+      "action": "VALIDATE",
+      "target_id": "a1248c15-ab85-42a8-96be-f79c57307b13",
+      "act": "ep_insert",
+      "title": "4CH1 4CH1/2CR June 2026",
+      "identity": null
+    },
+    {
+      "action": "PLACE",
+      "target_id": "1e935cfc-6ed2-424f-9c66-72d6d3532bd6",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH0-1C 2016-01"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "1443db21-4f44-4ec3-87f2-5dce3e1344c6",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH0-1C 2018-01"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "216d1073-756d-4753-af0e-81de951cf24c",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-1CR 2020-01"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "66085c4d-36f5-4c80-a1a3-c91f096a9419",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-1CR 2021-01"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "255ba065-b683-4c58-8b6c-3e948cdf5102",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-2C 2023-11"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "546d03ec-4de6-4e85-9fe3-4a0dc229f2ba",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-1C 2023-11"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "f948dc5f-6fce-410f-9bf4-da2c907ce261",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-1C 2024-11"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "d663471e-0ca6-4dab-a5a0-6b18a0485861",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-2C 2024-11"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "3f72959a-6295-418c-89bb-0ec66b17b93f",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-2C 2025-06"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "31749450-eeb8-4c56-b944-39368b967cdd",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-2C 2025-11"
+    },
+    {
+      "action": "PLACE",
+      "target_id": "97e4a975-c179-4b38-8964-8a4cd1cbdcac",
+      "act": "ep_doc_link_heal",
+      "title": null,
+      "identity": "4CH1-1C 2025-11"
+    }
+  ],
+  "status": "APPLIED"
+}

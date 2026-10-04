@@ -1,0 +1,54 @@
+{
+  "checked_at_utc": "2026-10-04T09:19:13.708749+00:00",
+  "fingerprints": {
+    "jwt_secret": "sha256:a7dfe6e342",
+    "neon_api_key": "sha256:2d3ad939c1",
+    "gemini_key_rotation_spare": "sha256:01ac5264a3"
+  },
+  "neon_user": {
+    "login": "hussaina269a",
+    "id": "c00e4759-5088-4039-adb7-4db91ba86701"
+  },
+  "neon_project": {
+    "id": "billowing-cherry-15418366",
+    "name": "SyllabAI"
+  },
+  "neon_uri": {
+    "host": "ep-ancient-cake-a52e4kfd-pooler.us-east-2.aws.neon.tech",
+    "database": "neondb",
+    "user": "neondb_owner",
+    "pin_match": true
+  },
+  "census_live": {
+    "docs_state_kind": {
+      "REJECTED|MARK_SCHEME": 67,
+      "VALIDATED|QUESTION_PAPER": 109,
+      "VALIDATED|EXTERNAL_QUESTIONS": 379,
+      "VALIDATED|MARK_SCHEME": 109,
+      "VALIDATED|EXTERNAL_NOTES": 112,
+      "REJECTED|QUESTION_PAPER": 79,
+      "VALIDATED|SYLLABUS": 162
+    },
+    "docs_total": 1017,
+    "ep_states": {
+      "REJECTED": 13,
+      "VALIDATED": 91
+    },
+    "ep_total": 104,
+    "chunks": {
+      "2": {
+        "chunks": 4672,
+        "embedded": 4672
+      }
+    },
+    "audit_rows": 2814,
+    "tve": 0,
+    "active_cv": {
+      "356840e6-81e2-49df-8182-93ab6504d591": "4CH1-2017"
+    },
+    "unlinked_chem_validated": 11,
+    "serving_gate": 4593
+  },
+  "core_documents_list_len": 1017,
+  "status": "CRED_VALIDATED"
+}
