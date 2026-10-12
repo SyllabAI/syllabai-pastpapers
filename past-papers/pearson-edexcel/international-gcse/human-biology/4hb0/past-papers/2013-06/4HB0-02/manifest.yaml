@@ -35,6 +35,17 @@ materials:
     source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Human%20Biology/2009/Exam%20materials/4HB0_02_que_20130510.pdf
     collected_by: SyllabAI agent (2026-09-15 wave 11)
     note: official Pearson Edexcel document obtained from the board's content-dam exam-materials repository (official date-coded filename)
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 56b2dae32b3213bb6bb434917e72f5d6a554da35f1ffcc9df87d49fd6ed96619
+  size_bytes: 114013
+  original_filename: 4HB0_02_msc_20130822.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Human%20Biology/2009/Exam%20materials/4HB0_02_msc_20130822.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 repair (trace 1a13111e16f6f6d1); validated: %PDF + pdftotext identity (ref+paper+docclass+year); resolved via pearson_hb0_window'
 identification:
   methods:
   - pdf_text
@@ -44,6 +55,7 @@ identification:
   stray_prints: []
   notes:
   - 'missing-material note: the paired mark scheme is not hosted by any probed source (PMT has no pages for this legacy spec, Pearson content-dam hosts QPs only, SaveMyExams/Paperlords carry no legacy session); ledger row opened'
+  - 'wave 2 (2026-10-13): previously-missing mark-scheme recovered from Pearson qualifications content-dam (qualifications.pearson.com); sha256 56b2dae32b3213bb…; ledger row flipped to normalized (trace 1a13111e16f6f6d1)'
 ingestion:
   agent: SyllabAI agent (wave 11 2026-09-15)
   run_date: '2026-09-15'
