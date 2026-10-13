@@ -35,6 +35,17 @@ materials:
     source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Human%20Biology/2009/Exam%20materials/4HB0_02_que_20120509.pdf
     collected_by: SyllabAI agent (2026-09-15 wave 11)
     note: official Pearson Edexcel document obtained from the board's content-dam exam-materials repository (official date-coded filename)
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ac8fa55430162e5d9962e6dc082dfedb25c917100ea3a4cebd9fbb2f3c5157e3
+  size_bytes: 133474
+  original_filename: 4HB0_02_rms_20120823.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Human%20Biology/2009/Exam%20materials/4HB0_02_rms_20120823.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 DAM enumeration (trace 1a1340576a172ac5); validated: %PDF + pdftotext identity + session-content (session-confirmed)'
 identification:
   methods:
   - date_rule
@@ -44,6 +55,7 @@ identification:
   notes:
   - 'qp.pdf: question paper cover carries no extractable text; identity from the official Pearson date-coded exam-material filename and board content-dam folder'
   - 'missing-material note: the paired mark scheme is not hosted by any probed source (PMT has no pages for this legacy spec, Pearson content-dam hosts QPs only, SaveMyExams/Paperlords carry no legacy session); ledger row opened'
+  - 'wave 2 (2026-10-13): previously-missing mark-scheme recovered via Pearson DAM date-grid; sha256 ac8fa55430162e5d…; ledger flipped (trace 1a1340576a172ac5)'
 operator_ratification:
   status: ratified
   decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
