@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Economics/Nov%202021/IGCSE_ECONOMICS_2021_Nov_P2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 05234c46f604a6e7137755a94ad149ea09992af475b7a6d12cdf3af6c6321f51
+  size_bytes: 605548
+  original_filename: cdn.savemyexams.com (from _reject restore)
+  source:
+    source_type: third-party-archive
+    archive: unmapped ()
+    source_url: cdn.savemyexams.com (from _reject restore)
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-forced-accept); resolved via SME sitemap join (wave-2 recon); adjudication: question-text months false-positive (Aug/Dec 2019 Inter-Milan case); ref verified'
 identification:
   methods:
   - pdf_text
@@ -42,7 +53,9 @@ identification:
   printed_references_seen:
   - 4EC1/02
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 05234c46f604a6e7…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

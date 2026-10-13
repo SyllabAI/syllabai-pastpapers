@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Business%20Studies/Nov%202021/IGCSE_BUSINESS_STUDIES_2021_Nov_P1_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 89c0c53e3e5ab893af6bcdd7a0cbedbbfe6f1637f0c908aa6f4e71cfaaf4a722
+  size_bytes: 525338
+  original_filename: 4bs1-nov-2021-qp-paper-1-edexcel-igcse-business.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/09/4bs1-nov-2021-qp-paper-1-edexcel-igcse-business.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-not-printed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - pdf_text
@@ -42,7 +53,9 @@ identification:
   printed_references_seen:
   - 4BS1/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 89c0c53e3e5ab893…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

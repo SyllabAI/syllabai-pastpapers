@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/ICT/MayJune%202022/IGCSE_ICT_2022_MayJune_P2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 2b688a9111b90a0a8a9213535d865ad8c91c1363843f57969c09c7ed47638210
+  size_bytes: 449491
+  original_filename: 4it1-02-que-20220528.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/11/4it1-02-que-20220528.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-not-printed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - pdf_text
@@ -42,7 +53,9 @@ identification:
   printed_references_seen:
   - 4IT1/02
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 2b688a9111b90a0a…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

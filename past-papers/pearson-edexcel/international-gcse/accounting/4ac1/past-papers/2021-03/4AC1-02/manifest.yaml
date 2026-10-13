@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Accounting/MayJune%202021/IGCSE_ACCOUNTING_2021_MayJune_P2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said MayJune 2021; cover prints March 2021'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ef34f7701ae09f7a4680a737d358317b34144ee6e2d34b255be930e3e781eb4b
+  size_bytes: 191739
+  original_filename: 4AC1_02_msc_20210211.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/12/4AC1_02_msc_20210211.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-confirmed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - pdf_text
@@ -44,6 +55,7 @@ identification:
   stray_prints: []
   notes:
   - catalog said MayJune 2021; cover prints March 2021
+  - 'wave 2 (2026-10-13): previously-missing mark-scheme recovered; sha256 ef34f7701ae09f7a…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

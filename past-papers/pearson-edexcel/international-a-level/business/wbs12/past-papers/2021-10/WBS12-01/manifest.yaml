@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Business/Oct%202021/IAL_IAL_BUSINESS_2021_Oct_U2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 814ec65abb1cf380f3f48f156f3047833b0bde5f2b40eeb223ccc6a9610830d4
+  size_bytes: 507213
+  original_filename: cdn.savemyexams.com (from _reject restore)
+  source:
+    source_type: third-party-archive
+    archive: unmapped ()
+    source_url: cdn.savemyexams.com (from _reject restore)
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-forced-accept); resolved via SME sitemap join (wave-2 recon); adjudication: question-text month false-positive (Jan 2015-2020 chart caption); ref verified'
 identification:
   methods:
   - pdf_text
@@ -42,7 +53,9 @@ identification:
   printed_references_seen:
   - WBS12/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 814ec65abb1cf380…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

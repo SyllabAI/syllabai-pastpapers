@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Human%20Biology/Nov%202021/IGCSE_HUMAN_BIOLOGY_2021_Nov_P2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 75c6566bf4db409ee25f2d3df3252b6b3dac1c7cd3609862a509e6962fc4f1c2
+  size_bytes: 1180850
+  original_filename: 4HB1_02_que_20211208.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Human Biology/Exam-materials/4HB1_02_que_20211208.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-not-printed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - pdf_text
@@ -42,7 +53,9 @@ identification:
   printed_references_seen:
   - 4HB1/02
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 75c6566bf4db409e…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

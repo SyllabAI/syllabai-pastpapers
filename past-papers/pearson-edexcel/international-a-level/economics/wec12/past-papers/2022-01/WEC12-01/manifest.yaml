@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202022/IAL_ECONOMICS_2022_Jan_U2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: b04036dd338025862bb45c355b1c83ee2d42914dde3c2dd3fc4fddd6b4173105
+  size_bytes: 808799
+  original_filename: WEC12_01_que_20220122.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Economics/2018/Exam-materials/WEC12_01_que_20220122.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-confirmed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - pdf_text
@@ -42,7 +53,9 @@ identification:
   printed_references_seen:
   - WEC12/01
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 b04036dd33802586…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Economics/Jan%202024/IAL_ECONOMICS_2024_Jan_U3_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) catalog said Jan 2024; cover prints October 2024'
+- type: question-paper
+  path: qp.pdf
+  sha256: 5bde743cf0e5409fd5b8299ea66444a96ab9c814a2b79c5aaa3117eb7df7ec73
+  size_bytes: 357808
+  original_filename: wec13-01-que-20241025.pdf
+  source:
+    source_type: board-site
+    archive: Pearson qualifications content-dam (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Economics/2018/Exam-materials/wec13-01-que-20241025.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-confirmed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - pdf_text
@@ -44,6 +55,7 @@ identification:
   stray_prints: []
   notes:
   - catalog said Jan 2024; cover prints October 2024
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 5bde743cf0e5409f…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

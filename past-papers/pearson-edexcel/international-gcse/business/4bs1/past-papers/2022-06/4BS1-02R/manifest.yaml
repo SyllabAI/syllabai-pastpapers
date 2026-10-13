@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Business%20Studies/MayJune%202022/IGCSE_BUSINESS_STUDIES_2022_MayJune_P2R_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session MayJune 2022'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5adfcde411c7e035a503f3b6b1d94f958b3305c76d5bbb894d9fbb43028e9aab
+  size_bytes: 224230
+  original_filename: 4bs1-june-2022-ms-paper-2r-edexcel-igcse-business.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/09/4bs1-june-2022-ms-paper-2r-edexcel-igcse-business.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-confirmed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - partner_inference
@@ -44,6 +55,7 @@ identification:
   stray_prints: []
   notes:
   - no printed session; catalog session MayJune 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3
+  - 'wave 2 (2026-10-13): previously-missing mark-scheme recovered; sha256 5adfcde411c7e035…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 operator_ratification:
   status: ratified
   decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>

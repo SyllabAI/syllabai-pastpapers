@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Accounting/Nov%202021/IGCSE_ACCOUNTING_2021_Nov_P2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: question-paper
+  path: qp.pdf
+  sha256: 83c52f7e1e984b591f0bfe9261abab6eacb99ac52ff9aceaddb299639fd7d8a3
+  size_bytes: 370901
+  original_filename: cdn.savemyexams.com (from _reject restore)
+  source:
+    source_type: third-party-archive
+    archive: unmapped ()
+    source_url: cdn.savemyexams.com (from _reject restore)
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-forced-accept); resolved via SME sitemap join (wave-2 recon); adjudication: question-text month false-positive (31 March 2021 income-statement task); cover session lines absent; ref verified'
 identification:
   methods:
   - pdf_text
@@ -42,7 +53,9 @@ identification:
   printed_references_seen:
   - 4AC1/02
   stray_prints: []
-  notes: print-verified from cover (rank 0)
+  notes:
+  - print-verified from cover (rank 0)
+  - 'wave 2 (2026-10-13): previously-missing question-paper recovered; sha256 83c52f7e1e984b59…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 ingestion:
   agent: SyllabAI ingestion agent (wave-17 metadata normalization)
   run_date: '2026-09-15'

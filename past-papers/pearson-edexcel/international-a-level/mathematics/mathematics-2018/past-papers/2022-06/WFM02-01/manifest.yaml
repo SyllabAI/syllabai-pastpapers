@@ -35,6 +35,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Maths/MayJune%202022/IAL_MATHS_2022_MayJune_FP2_QP.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session MayJune 2022'
+- type: mark-scheme
+  path: ms.pdf
+  sha256: fc455bee96d5f246d4e93e36278e62ec06ee376a984c660b9eea8e3631bcbc9a
+  size_bytes: 508284
+  original_filename: wfm02-01-rms-20220818.pdf
+  source:
+    source_type: third-party-archive
+    archive: SaveMyExams CDN (cdn.savemyexams.com)
+    source_url: https://cdn.savemyexams.com/uploads/2023/09/wfm02-01-rms-20220818.pdf
+    collected_by: SyllabAI agent (wave 2 2026-10-13)
+    note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-confirmed); resolved via SME sitemap join (wave-2 recon)'
 identification:
   methods:
   - partner_inference
@@ -44,6 +55,7 @@ identification:
   stray_prints: []
   notes:
   - no printed session; catalog session MayJune 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3
+  - 'wave 2 (2026-10-13): previously-missing mark-scheme recovered; sha256 fc455bee96d5f246…; ledger row flipped to normalized (trace 1a1340576a172ac5)'
 operator_ratification:
   status: ratified
   decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
