@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:biology:4xbi1:2025-06:4WBI1/1B
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE (Modular 2024)
+subject: biology
+specification:
+  folder: 4xbi1
+  title: Edexcel International GCSE Biology (Modular) (4XBI1)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: 13 May 2025
+  source: pdf_text
+paper:
+  official_reference: 4WBI1/1B
+  unit_code: 4WBI1
+  paper_number_variant: 1B
+variant:
+  official_code: B
+  type: standard
+  note: modular-2024 X-series (W-infix paper codes)
+materials:
+- type: pef
+  path: er.pdf
+  sha256: e2031aa6276b382809be1f07a6b0293bdb4dde35054d61195917e0df11225860
+  size_bytes: 228107
+  original_filename: 4wbi1-1b-pef-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2024/Exam-materials/4wbi1-1b-pef-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: que
+  path: qp.pdf
+  sha256: 1bf19567421ff47293148d836a81b2ef0ed32650e7f95960970c10ff68eddad4
+  size_bytes: 1200187
+  original_filename: 4wbi1-1b-que-20250514.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2024/Exam-materials/4wbi1-1b-que-20250514.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: rms
+  path: ms.pdf
+  sha256: fdcb91245c6c286f5ac3272056cedbe9b32ac62031bf33502739d748a74db8d4
+  size_bytes: 455666
+  original_filename: 4wbi1-1b-rms-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Biology/2024/Exam-materials/4wbi1-1b-rms-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+identification:
+  methods:
+  - pdf_text
+  - publisher-listing
+  confidence_rank: 0
+  printed_references_seen:
+  - 4WBI1/1B
+  stray_prints: []
+  notes: identity from printed cover reference + publisher census filename prefix
+ingestion:
+  agent: SyllabAI ingestion agent (modular-24 wave 1)
+  run_date: '2026-10-19'
+  source_repo: qualifications.pearson.com (publisher, first-party)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4xch1:2025-06:4WCH1/1CR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE (Modular 2024)
+subject: chemistry
+specification:
+  folder: 4xch1
+  title: Edexcel International GCSE Chemistry (Modular) (4XCH1)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: 19 May 2025
+  source: pdf_text
+paper:
+  official_reference: 4WCH1/1CR
+  unit_code: 4WCH1
+  paper_number_variant: 1CR
+variant:
+  official_code: R
+  type: timezone-R
+  note: modular-2024 X-series (W-infix paper codes)
+materials:
+- type: pef
+  path: er.pdf
+  sha256: 427ee7f9c68f8ffbbfd7fb4365ea3898d3fc6ca6c307f22bb3fbb7db29413a6d
+  size_bytes: 216148
+  original_filename: 4wch1-1cr-pef-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2024/Exam-materials/4wch1-1cr-pef-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: que
+  path: qp.pdf
+  sha256: de718436e9dd42732ec3997cdb93c3ff99327fdc06a409df51bd3d74e5abedb7
+  size_bytes: 499101
+  original_filename: 4wch1-1cr-que-20250520.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2024/Exam-materials/4wch1-1cr-que-20250520.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: rms
+  path: ms.pdf
+  sha256: 4eebc0fe2d5b5e52894fcd0750b9002c5eab761fddb8e50da3b17c79f4d57379
+  size_bytes: 464946
+  original_filename: 4wch1-1cr-rms-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Chemistry/2024/Exam-materials/4wch1-1cr-rms-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+identification:
+  methods:
+  - pdf_text
+  - publisher-listing
+  confidence_rank: 0
+  printed_references_seen:
+  - 4WCH1/1CR
+  stray_prints: []
+  notes: identity from printed cover reference + publisher census filename prefix
+ingestion:
+  agent: SyllabAI ingestion agent (modular-24 wave 1)
+  run_date: '2026-10-19'
+  source_repo: qualifications.pearson.com (publisher, first-party)
+  verification_status: AI-IDENTIFIED

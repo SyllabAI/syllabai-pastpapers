@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:science-double-award:4xsd1:2025-06:4WSD4/1CR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE (Modular 2024)
+subject: science-double-award
+specification:
+  folder: 4xsd1
+  title: Edexcel International GCSE Science (Double Award) (Modular) (4XSD1)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: 13 June 2025
+  source: pdf_text
+paper:
+  official_reference: 4WSD4/1CR
+  unit_code: 4WSD4
+  paper_number_variant: 1CR
+variant:
+  official_code: R
+  type: timezone-R
+  note: modular-2024 X-series (W-infix paper codes)
+materials:
+- type: pef
+  path: er.pdf
+  sha256: aa95abe60837ab76720e9a58f6b0c2b015fb2e0cea256f653a801447d309bc2a
+  size_bytes: 953465
+  original_filename: 4wsd4-1cr-pef-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Science-(Double-Award)/2024/Exam-materials/4wsd4-1cr-pef-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: que
+  path: qp.pdf
+  sha256: c7131ce32c8ea6f6731dd0d1be6756465b01e8e615222bb83828db2546bf9452
+  size_bytes: 1062988
+  original_filename: 4wsd4-1cr-que-20250614.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Science-(Double-Award)/2024/Exam-materials/4wsd4-1cr-que-20250614.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: rms
+  path: ms.pdf
+  sha256: b6c4ca7ffca7c64e865ce4f71efccf5f8e0bb5e85309ddaa150e07a03fb25550
+  size_bytes: 706875
+  original_filename: 4wsd4-1cr-rms-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Science-(Double-Award)/2024/Exam-materials/4wsd4-1cr-rms-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+identification:
+  methods:
+  - pdf_text
+  - publisher-listing
+  confidence_rank: 0
+  printed_references_seen:
+  - 4WSD4/1CR
+  stray_prints: []
+  notes: identity from printed cover reference + publisher census filename prefix
+ingestion:
+  agent: SyllabAI ingestion agent (modular-24 wave 1)
+  run_date: '2026-10-19'
+  source_repo: qualifications.pearson.com (publisher, first-party)
+  verification_status: AI-IDENTIFIED

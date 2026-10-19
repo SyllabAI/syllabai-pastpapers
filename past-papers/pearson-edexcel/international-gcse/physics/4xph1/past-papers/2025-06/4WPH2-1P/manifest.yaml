@@ -1,0 +1,51 @@
+paper_id: pearson-edexcel:international-gcse:physics:4xph1:2025-06:4WPH2/1P
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE (Modular 2024)
+subject: physics
+specification:
+  folder: 4xph1
+  title: Edexcel International GCSE Physics (Modular) (4XPH1)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: 16 June 2025
+  source: pdf_text
+paper:
+  official_reference: 4WPH2/1P
+  unit_code: 4WPH2
+  paper_number_variant: 1P
+variant:
+  official_code: P
+  type: standard
+  note: modular-2024 X-series (W-infix paper codes)
+materials:
+- type: que
+  path: qp.pdf
+  sha256: 86aa164cb84ea58385bf562f058c03490e23abd41838480f0d301b2c2381df50
+  size_bytes: 837296
+  original_filename: 4wph2-1p-que-20250617.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2024/Exam-materials/4wph2-1p-que-20250617.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+identification:
+  methods:
+  - pdf_text
+  - publisher-listing
+  confidence_rank: 0
+  printed_references_seen:
+  - 4WPH2/1P
+  stray_prints: []
+  notes: identity from printed cover reference + publisher census filename prefix
+ingestion:
+  agent: SyllabAI ingestion agent (modular-24 wave 1)
+  run_date: '2026-10-19'
+  source_repo: qualifications.pearson.com (publisher, first-party)
+  verification_status: AI-IDENTIFIED

@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:physics:4xph1:2025-06:4WPH1/1PR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE (Modular 2024)
+subject: physics
+specification:
+  folder: 4xph1
+  title: Edexcel International GCSE Physics (Modular) (4XPH1)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: 22 May 2025
+  source: pdf_text
+paper:
+  official_reference: 4WPH1/1PR
+  unit_code: 4WPH1
+  paper_number_variant: 1PR
+variant:
+  official_code: R
+  type: timezone-R
+  note: modular-2024 X-series (W-infix paper codes)
+materials:
+- type: pef
+  path: er.pdf
+  sha256: 51b11fab59888b7089edecb4dc694b393e3959d8858d5876fb8a9adc6fd1e5d9
+  size_bytes: 3061917
+  original_filename: 4wph1-1pr-pef-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2024/Exam-materials/4wph1-1pr-pef-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: que
+  path: qp.pdf
+  sha256: cbca6db392e3c25db2d967e49848d0a28a58dbf3d64d7fcd1a388c893b7f5389
+  size_bytes: 1836491
+  original_filename: 4wph1-1pr-que-20250523.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2024/Exam-materials/4wph1-1pr-que-20250523.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: rms
+  path: ms.pdf
+  sha256: 3a011daf15ed8f1b1c070562816de8b8b0981b950eabae9708a3b3b42cad0c74
+  size_bytes: 459771
+  original_filename: 4wph1-1pr-rms-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2024/Exam-materials/4wph1-1pr-rms-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+identification:
+  methods:
+  - pdf_text
+  - publisher-listing
+  confidence_rank: 0
+  printed_references_seen:
+  - 4WPH1/1PR
+  stray_prints: []
+  notes: identity from printed cover reference + publisher census filename prefix
+ingestion:
+  agent: SyllabAI ingestion agent (modular-24 wave 1)
+  run_date: '2026-10-19'
+  source_repo: qualifications.pearson.com (publisher, first-party)
+  verification_status: AI-IDENTIFIED

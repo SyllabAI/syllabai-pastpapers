@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4xmaf-4xmah:2025-06:4WM2F/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE (Modular 2024)
+subject: mathematics-a
+specification:
+  folder: 4xmaf-4xmah
+  title: Edexcel International GCSE Mathematics A (Modular) (4XMAF/4XMAH)
+series:
+  normalized: 2025-06
+  year: '2025'
+  session_month: '06'
+  printed: 4 June 2025
+  source: pdf_text
+paper:
+  official_reference: 4WM2F/01R
+  unit_code: 4WM2F
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: timezone-R
+  note: modular-2024 X-series (W-infix paper codes)
+materials:
+- type: pef
+  path: er.pdf
+  sha256: e679094a3dcd9f8a3e1a2cfd24e2f98b1aa7834e4a2d9877f67d6d02f77089ee
+  size_bytes: 270402
+  original_filename: 4wm2f-01r-pef-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-A/2024/Exam-materials/4wm2f-01r-pef-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: que
+  path: qp.pdf
+  sha256: a84bd1ee4112c27103b034235030b4bc4e70e65ff9b3073ce9fd605f5096cffb
+  size_bytes: 1261093
+  original_filename: 4wm2f-01r-que-20250605.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-A/2024/Exam-materials/4wm2f-01r-que-20250605.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+- type: rms
+  path: ms.pdf
+  sha256: 687e7825677dfe75de9d4fbccb5cb194b8f4e87c3118452783a4d956d9d0b309
+  size_bytes: 479634
+  original_filename: 4wm2f-01r-rms-20250821.pdf
+  source:
+    source_type: publisher
+    archive: Pearson qualifications site (qualifications.pearson.com)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-A/2024/Exam-materials/4wm2f-01r-rms-20250821.pdf
+    collected_by: SyllabAI agent (2026-10-19 modular-24 wave 1)
+    note: 'official Pearson Edexcel document downloaded from the publisher public exam-materials listing'
+identification:
+  methods:
+  - pdf_text
+  - publisher-listing
+  confidence_rank: 0
+  printed_references_seen:
+  - 4WM2F/01R
+  stray_prints: []
+  notes: identity from printed cover reference + publisher census filename prefix
+ingestion:
+  agent: SyllabAI ingestion agent (modular-24 wave 1)
+  run_date: '2026-10-19'
+  source_repo: qualifications.pearson.com (publisher, first-party)
+  verification_status: AI-IDENTIFIED
