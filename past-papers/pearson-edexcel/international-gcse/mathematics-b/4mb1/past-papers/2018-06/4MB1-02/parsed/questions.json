@@ -1,0 +1,4550 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 11,
+ "totalMarks": 100,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "find",
+   "summaryHint": "For concerts in a theatre, people can buy tickets in the Stalls, in the Dress Circle and in the Balcony.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "For concerts in a theatre, people can buy tickets in the Stalls, in the Dress Circle and in"
+    },
+    {
+     "type": "para",
+     "md": "the Balcony."
+    },
+    {
+     "type": "para",
+     "md": "The number of seats in the Stalls is S, the number of seats in the Dress Circle is D and"
+    },
+    {
+     "type": "para",
+     "md": "the number of seats in the Balcony is B where S : D : B = 12 : 9 : 4"
+    },
+    {
+     "type": "para",
+     "md": "Given that B = 600"
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "find the total number of seats in the theatre."
+      },
+      {
+       "type": "para",
+       "md": "The following table gives information about the cost of tickets and the number of tickets"
+      },
+      {
+       "type": "para",
+       "md": "sold for a concert held in the theatre in 2017"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      2
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the total amount of money, in $, paid for all the tickets sold for this concert."
+      },
+      {
+       "type": "para",
+       "md": "For a concert held in 2018, the total amount of money paid for all the tickets sold"
+      },
+      {
+       "type": "para",
+       "md": "was $175 000"
+      },
+      {
+       "type": "para",
+       "md": "For this concert in 2018, the costs of each ticket for a seat in the Stalls, in the"
+      },
+      {
+       "type": "para",
+       "md": "Dress Circle and in the Balcony were the same as the costs in 2017"
+      },
+      {
+       "type": "para",
+       "md": "Also for this concert, the number of tickets sold for seats in the Stalls was the same as in"
+      },
+      {
+       "type": "para",
+       "md": "2017 and the number of tickets sold for seats in the Dress Circle was the same as in 2017"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      2
+     ]
+    },
+    {
+     "id": "1c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the number of tickets sold for seats in the Balcony for the concert in 2018"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      },
+      {
+       "type": "para",
+       "md": "Question 1 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 1 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 1 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 79,
+     "pages": [
+      2,
+      3,
+      4,
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 7,
+     "sum": 7,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "600",
+       "× (12 + 9 + 4 ) oe number of seats",
+       "4"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(= 226) or",
+       "25",
+       "175000 − \"117000\"− \"48600\"",
+       "25"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "2 7",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "open",
+   "marks": 5,
+   "commandWord": null,
+   "summaryHint": "E Diagram NOT DO NOT WRITE IN THIS AREA accurately drawn 11 cm D C O 5 cm A B 12 cm Figure 1 Figure 1 shows a rectangular based right pyramid, ABCDE.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "E"
+    },
+    {
+     "type": "para",
+     "md": "Diagram NOT"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "accurately drawn"
+    },
+    {
+     "type": "para",
+     "md": "11 cm"
+    },
+    {
+     "type": "para",
+     "md": "D"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "O"
+    },
+    {
+     "type": "para",
+     "md": "5 cm"
+    },
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "12 cm"
+    },
+    {
+     "type": "para",
+     "md": "Figure 1"
+    },
+    {
+     "type": "para",
+     "md": "Figure 1 shows a rectangular based right pyramid, ABCDE. The point O is the centre of"
+    },
+    {
+     "type": "para",
+     "md": "the rectangular base so that OE is the perpendicular height of the pyramid."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "AB = 12 cm and BC = 5 cm"
+    },
+    {
+     "type": "para",
+     "md": "AE = BE = CE = DE = 11 cm"
+    },
+    {
+     "type": "para",
+     "md": "Calculate the exact volume of the pyramid."
+    },
+    {
+     "type": "para",
+     "md": "Give your answer in the form p q cm3 where p and q are integers."
+    },
+    {
+     "type": "answer_lines",
+     "count": 5
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 6
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "⎡"
+    },
+    {
+     "type": "para",
+     "md": "⎤"
+    },
+    {
+     "type": "para",
+     "md": "Volume of pyramid ="
+    },
+    {
+     "type": "para",
+     "md": "base area"
+    },
+    {
+     "type": "para",
+     "md": "height"
+    },
+    {
+     "type": "para",
+     "md": "3 ×"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "⎣⎢"
+    },
+    {
+     "type": "para",
+     "md": "⎦⎥"
+    },
+    {
+     "type": "para",
+     "md": "Question 2 continued"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 9
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 9
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 6
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": 5,
+     "sum": 5,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "6² + 2.5² (=42.25) side of triangle in first",
+       "stage to find height of",
+       "3 51",
+       "(E to middle of BC)² = 11² − 2.5² or E-midBC = pyramid",
+       "2",
+       "(E to middle of AB)² = 11² − 6² or E-midAB = 85",
+       "OE 2 =112 − ( (0.5 × \"13\") 2 ) or 11² − 2.5² − 6² oe",
+       "Correct statement for"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "3 35",
+       "OE =",
+       "2"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "V = (12 )( 5 )( OE )",
+       "3 answer of 177.(4823...)"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P5",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "5",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "30 35"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "open",
+   "marks": 5,
+   "commandWord": null,
+   "summaryHint": "⎠⎟ B = 13 3 ⎛ ⎞ ⎛ ⎞ 3 A = ⎝⎜ ⎝⎜ ⎠⎟ 4 1 4 10 − DO NOT WRITE IN THIS AREA 1 0 ⎛ ⎞ Given that A2 – B = ȜI where Ȝ is an integer and I = ⎝⎜ ⎠⎟ 0 1 find the value of a and the value of Ȝ\u0011 DO NOT WRITE IN",
+   "stem": [
+    {
+     "type": "para",
+     "md": "⎠⎟ B = 13"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "⎛"
+    },
+    {
+     "type": "para",
+     "md": "⎞"
+    },
+    {
+     "type": "para",
+     "md": "⎛"
+    },
+    {
+     "type": "para",
+     "md": "⎞"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "A ="
+    },
+    {
+     "type": "para",
+     "md": "⎝⎜"
+    },
+    {
+     "type": "para",
+     "md": "⎝⎜"
+    },
+    {
+     "type": "para",
+     "md": "⎠⎟"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "10"
+    },
+    {
+     "type": "para",
+     "md": "−"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "0"
+    },
+    {
+     "type": "para",
+     "md": "⎛"
+    },
+    {
+     "type": "para",
+     "md": "⎞"
+    },
+    {
+     "type": "para",
+     "md": "Given that A2 – B = ȜI where Ȝ is an integer and I ="
+    },
+    {
+     "type": "para",
+     "md": "⎝⎜"
+    },
+    {
+     "type": "para",
+     "md": "⎠⎟"
+    },
+    {
+     "type": "para",
+     "md": "0"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "find the value of a and the value of Ȝ\u0011"
+    },
+    {
+     "type": "answer_lines",
+     "count": 6
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 9
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 7
+    },
+    {
+     "type": "para",
+     "md": "Question 3 continued"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 9
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 9
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "answer_lines",
+     "count": 6
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": 5,
+     "sum": 5,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 2,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " a 2 + 12 3a − 3 ",
+       "A =",
+       "2",
+       " (-1 eeoo)",
+       " 4a − 4 13 ",
+       "λI"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " a 2 + 12 3a − 3  13 3  1 0",
+       " − =λ ",
+       " 4a − 4 13   4 10  0 1"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "5",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": "Find",
+   "summaryHint": "The Venn diagram shows information about the elements in a universal set, E, and the three sets X, Y and Z.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The Venn diagram shows information about the elements in a universal set, E, and the"
+    },
+    {
+     "type": "para",
+     "md": "three sets X, Y and Z."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "E"
+    },
+    {
+     "type": "para",
+     "md": "X"
+    },
+    {
+     "type": "para",
+     "md": "Y"
+    },
+    {
+     "type": "para",
+     "md": "a"
+    },
+    {
+     "type": "para",
+     "md": "h"
+    },
+    {
+     "type": "para",
+     "md": "f"
+    },
+    {
+     "type": "para",
+     "md": "b"
+    },
+    {
+     "type": "para",
+     "md": "g"
+    },
+    {
+     "type": "para",
+     "md": "c"
+    },
+    {
+     "type": "para",
+     "md": "l"
+    },
+    {
+     "type": "para",
+     "md": "i"
+    },
+    {
+     "type": "para",
+     "md": "k"
+    },
+    {
+     "type": "para",
+     "md": "j"
+    },
+    {
+     "type": "para",
+     "md": "d"
+    },
+    {
+     "type": "para",
+     "md": "e"
+    },
+    {
+     "type": "para",
+     "md": "m"
+    },
+    {
+     "type": "para",
+     "md": "n"
+    },
+    {
+     "type": "para",
+     "md": "Z"
+    },
+    {
+     "type": "para",
+     "md": "Using the information in the Venn diagram, write down the elements in"
+    }
+   ],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "X \u0001Y"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "(X  Y ) \u0001=ү"
+      },
+      {
+       "type": "para",
+       "md": "Find"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "n([X  Y ]ү)"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "n([X \u0001Z] \u0003<ү)"
+      },
+      {
+       "type": "para",
+       "md": "Here are five symbols used in connection with sets."
+      },
+      {
+       "type": "para",
+       "md": "\u0003 \u0003 \u0003 \u0003 \u0003 \u0003 \u0003 \u0003 \u0003 \u0003 \u0003 \u0003 "
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4e",
+     "label": "e",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use one of these symbols to complete the following statement correctly"
+      },
+      {
+       "type": "para",
+       "md": "{d, e} .................................. Z"
+      },
+      {
+       "type": "para",
+       "md": "A letter is chosen at random from E"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4f",
+     "label": "f",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find the probability that this letter is in set Y given that it is in set X."
+      },
+      {
+       "type": "para",
+       "md": "Question 4 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 24,
+     "pages": [
+      10,
+      11
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 6,
+     "sum": 6,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "e",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "f",
+      "sub": null,
+      "marks": 1,
+      "md": "1 6",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "7 truncated or rounded",
+       "0.28(5714...)"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": "Find",
+   "summaryHint": "f and g are two functions such that f : x 6 3 + 5x where x < 0 DO NOT WRITE IN THIS AREA g : x 6 5 4 x − 3 x 2 −",
+   "stem": [
+    {
+     "type": "para",
+     "md": "f and g are two functions such that"
+    },
+    {
+     "type": "para",
+     "md": "f : x 6 3 + 5x where x < 0"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "g : x 6 5"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "−"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "−"
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find the value of a for which f(a) = 0"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Write",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Write down the range of f"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State the value of x that must be excluded from any domain of g"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find the value of x for which f(x) = g(x)"
+      },
+      {
+       "type": "para",
+       "md": "Show your working clearly."
+      },
+      {
+       "type": "para",
+       "md": "Give your answer to 3 significant figures."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5e",
+     "label": "e",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Express the inverse function g–1 in the form g–1 : x 6 …"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      },
+      {
+       "type": "para",
+       "md": "⎡"
+      },
+      {
+       "type": "para",
+       "md": "⎤"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "b"
+      },
+      {
+       "type": "para",
+       "md": "b"
+      },
+      {
+       "type": "para",
+       "md": "ac"
+      },
+      {
+       "type": "para",
+       "md": "4"
+      },
+      {
+       "type": "para",
+       "md": "= −±"
+      },
+      {
+       "type": "para",
+       "md": "−"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "Solutions of"
+      },
+      {
+       "type": "para",
+       "md": "ax"
+      },
+      {
+       "type": "para",
+       "md": "bx"
+      },
+      {
+       "type": "para",
+       "md": "c"
+      },
+      {
+       "type": "para",
+       "md": "0 are"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "="
+      },
+      {
+       "type": "para",
+       "md": "⎢"
+      },
+      {
+       "type": "para",
+       "md": "⎥"
+      },
+      {
+       "type": "para",
+       "md": "a"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "⎢"
+      },
+      {
+       "type": "para",
+       "md": "⎥"
+      },
+      {
+       "type": "para",
+       "md": "⎣"
+      },
+      {
+       "type": "para",
+       "md": "⎦"
+      },
+      {
+       "type": "para",
+       "md": "Question 5 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 5 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 5 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 87,
+     "pages": [
+      12,
+      13,
+      14,
+      15
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 13,
+     "sum": 13,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "f(x) < 3",
+       "notation but not x < 3"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "x=",
+       "3"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "in a correct equation",
+       "15 x 2 + 3 x − 11 ="
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "−3 ± 32 − 4 (15 )( −11) −3 ± 69",
+       "= quadratic",
+       "2 (15 ) 30"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "5",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P10",
+      "part": "e",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "5 − 4x 5− 4y",
+       "y= x= y or x and multiply",
+       "3x − 2 3y − 2",
+       "y(3x – 2) = 5 – 4x",
+       "x(3y – 2) = 5 – 4y"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P11",
+      "part": "e",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "3xy + 4x = 5 + 2y 3xy + 4y = 5 + 2x in x or y"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P12",
+      "part": "e",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "5 + 2x divide.",
+       "5+ 2y",
+       "x= y=",
+       "3y + 4 3x + 4"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P13",
+      "part": "e",
+      "sub": null,
+      "marks": 1,
+      "md": "4 13",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "g −1 : x →",
+       "3x + 4 fully correct form."
+      ],
+      "pages": [
+       8
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "Find",
+   "summaryHint": "The six numbers x y y 12 (x + y) 12 DO NOT WRITE IN THIS AREA are in ascending order of size.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The six numbers"
+    },
+    {
+     "type": "para",
+     "md": "x y y 12 (x + y) 12"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "are in ascending order of size."
+    },
+    {
+     "type": "para",
+     "md": "The mode of the six numbers is 12 and the mean of the six numbers is 9.5"
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find the value of x and the value of y."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Hence find the median of the six numbers."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      },
+      {
+       "type": "para",
+       "md": "Question 6 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 43,
+     "pages": [
+      16,
+      17
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 7,
+     "sum": 7,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "x+ y =",
+       "12"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "x + y + y + 12 + ( x + y ) + 12",
+       "= 9.5",
+       "6"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "eg 2 x + 3 y =",
+       "33",
+       "numerical terms",
+       "simplified",
+       "2 x + 3 (12 − x ) ="
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "dep",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "33",
+       "equations (dependent on",
+       "previous M mark)",
+       "=",
+       "x 3,="
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "5",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Median =",
+       "2 their value of y"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "2 7",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": "Find",
+   "summaryHint": "The points (1, 1), (1, 3) and (0, 3) are the vertices of triangle A.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The points (1, 1), (1, 3) and (0, 3) are the vertices of triangle A."
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "On the grid, draw and label triangle A."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Triangle A is transformed to triangle B by a reflection in the line with equation x = –2"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "On the grid, draw and label triangle B."
+      },
+      {
+       "type": "para",
+       "md": "1"
+      },
+      {
+       "type": "para",
+       "md": "⎛"
+      },
+      {
+       "type": "para",
+       "md": "⎞"
+      },
+      {
+       "type": "para",
+       "md": "Triangle B is transformed to triangle C under the translation"
+      },
+      {
+       "type": "para",
+       "md": "⎝⎜"
+      },
+      {
+       "type": "para",
+       "md": "⎠⎟"
+      },
+      {
+       "type": "para",
+       "md": "3"
+      },
+      {
+       "type": "para",
+       "md": "−"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "On the grid, draw and label triangle C."
+      },
+      {
+       "type": "para",
+       "md": "Triangle C is transformed to triangle D under the transformation with matrix M where"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "M = −"
+      },
+      {
+       "type": "para",
+       "md": "⎛"
+      },
+      {
+       "type": "para",
+       "md": "⎞"
+      },
+      {
+       "type": "para",
+       "md": "⎝⎜"
+      },
+      {
+       "type": "para",
+       "md": "⎠⎟"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "−"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "On the grid, draw and label triangle D."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7e",
+     "label": "e",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find the inverse matrix, M–1, of the matrix M"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7f",
+     "label": "f",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe fully the single transformation represented by the matrix M–1"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      },
+      {
+       "type": "para",
+       "md": "a"
+      },
+      {
+       "type": "para",
+       "md": "b"
+      },
+      {
+       "type": "para",
+       "md": "d"
+      },
+      {
+       "type": "para",
+       "md": "b"
+      },
+      {
+       "type": "para",
+       "md": "⎡"
+      },
+      {
+       "type": "para",
+       "md": "−"
+      },
+      {
+       "type": "para",
+       "md": "⎤"
+      },
+      {
+       "type": "para",
+       "md": "1"
+      },
+      {
+       "type": "para",
+       "md": "⎛"
+      },
+      {
+       "type": "para",
+       "md": "⎞"
+      },
+      {
+       "type": "para",
+       "md": "⎛"
+      },
+      {
+       "type": "para",
+       "md": "⎞"
+      },
+      {
+       "type": "para",
+       "md": "The inverse of matrix"
+      },
+      {
+       "type": "para",
+       "md": "is"
+      },
+      {
+       "type": "para",
+       "md": "⎥"
+      },
+      {
+       "type": "para",
+       "md": "⎢"
+      },
+      {
+       "type": "para",
+       "md": "⎝⎜"
+      },
+      {
+       "type": "para",
+       "md": "⎠⎟"
+      },
+      {
+       "type": "para",
+       "md": "⎝⎜"
+      },
+      {
+       "type": "para",
+       "md": "⎠⎟"
+      },
+      {
+       "type": "para",
+       "md": "c"
+      },
+      {
+       "type": "para",
+       "md": "d"
+      },
+      {
+       "type": "para",
+       "md": "c"
+      },
+      {
+       "type": "para",
+       "md": "a"
+      },
+      {
+       "type": "para",
+       "md": "ad"
+      },
+      {
+       "type": "para",
+       "md": "bc"
+      },
+      {
+       "type": "para",
+       "md": "−"
+      },
+      {
+       "type": "para",
+       "md": "−"
+      },
+      {
+       "type": "para",
+       "md": "⎦"
+      },
+      {
+       "type": "para",
+       "md": "⎣"
+      },
+      {
+       "type": "para",
+       "md": "Question 7 continued"
+      },
+      {
+       "type": "para",
+       "md": "y"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      },
+      {
+       "type": "para",
+       "md": "Turn over for a spare grid if you need to redraw your triangles."
+      },
+      {
+       "type": "para",
+       "md": "Question 7 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 7 continued"
+      },
+      {
+       "type": "para",
+       "md": "Only use this grid if you need to redraw your triangles."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "y"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 55,
+     "pages": [
+      18,
+      19,
+      20,
+      21
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 13,
+     "sum": 13,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "1",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "ONCE only"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "triangle or two correct",
+       "coordinates",
+       "Triangle B drawn"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": null,
+      "marks": 2,
+      "md": "(-1 ee) 2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " −2 0   −4 −4 −3 ",
+       "  ''   '' in any order",
+       " 0 −2   −2 0 0 "
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "8 8 6",
+       " ",
+       " 4 0 0"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "e",
+      "sub": null,
+      "marks": 2,
+      "md": "2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " −0.5 0  1  −2 0 ",
+       " ",
+       "−0.5    oe or column & correct",
+       " 0 4  0 −2 ",
+       "expression for det."
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "f",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P10",
+      "part": "f",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P11",
+      "part": "f",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 8,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "Show that",
+   "summaryHint": "The equation of a curve is y 2 2 3 x ( x 1 ) x 11 x = − − + + 2 3 3 DO NOT WRITE IN THIS AREA The point A on the curve has coordinates (p, q) The gradient of the curve at A is 5",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The equation of a curve is y"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "("
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": ")"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "11"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "="
+    },
+    {
+     "type": "para",
+     "md": "−"
+    },
+    {
+     "type": "para",
+     "md": "−"
+    },
+    {
+     "type": "para",
+     "md": "+"
+    },
+    {
+     "type": "para",
+     "md": "+"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "The point A on the curve has coordinates (p, q)"
+    },
+    {
+     "type": "para",
+     "md": "The gradient of the curve at A is 5"
+    }
+   ],
+   "parts": [
+    {
+     "id": "8a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Show that",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Show that p is a root of the equation"
+      },
+      {
+       "type": "para",
+       "md": "2p3 – 5p2 – p + 6 = 0"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "8b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Show that",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Show that (2p – 3) is a factor of 2p3 – 5p2 – p + 6"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "8c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Hence factorise completely 2p3 – 5p2 – p + 6"
+      },
+      {
+       "type": "para",
+       "md": "Given that p > 3"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "8d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "find the value of q."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 8 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 8 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 8 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 89,
+     "pages": [
+      22,
+      23,
+      24,
+      25
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "1 4 1 2 5 3 1",
+       "y= x − x − x + 11x + term correct) and",
+       "2 2 3 3",
+       "differentiating (at least",
+       "one term correct)"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "dy dy",
+       "= 2 x 3 − x − 5 x 2 + 11 and = 5 when x = p with at least two terms",
+       "dx dx",
+       "differentiated correctly",
+       "giving 2 p 3 − p − 5 p 2 + 11 =",
+       "5"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2 p3 − 5 p 2 − p + 6 =0",
+       "NB: answer given"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2 (1.5 ) − 5 (1.5 ) − (1.5 ) + 6",
+       "3 2",
+       "or by algebraic division"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2 (1.5 ) − 5 (1.5 ) − (1.5 ) + 6 = 0",
+       "3 2",
+       "remainder is zero"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "at least p² in quotient"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "p² − p – 2 correctly"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "factorised"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "4",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "expression",
+       "( 2 ) ( 22 − 1) − ( 2 ) + 11( 2 ) +"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P10",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "=",
+       "2 3",
+       "q",
+       "2 3 3 give q"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P11",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 9,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": "Find",
+   "summaryHint": "ȝa E D Diagram NOT DO NOT WRITE IN THIS AREA accurately drawn Ȝb F C B b DO NOT WRITE IN THIS AREA O A a Figure 2 → = a, OB → = b, FE → = Ȝb and ED → = ȝa, where Ȝ and ȝ are positive constants.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "ȝa"
+    },
+    {
+     "type": "para",
+     "md": "E"
+    },
+    {
+     "type": "para",
+     "md": "D"
+    },
+    {
+     "type": "para",
+     "md": "Diagram NOT"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "accurately drawn"
+    },
+    {
+     "type": "para",
+     "md": "Ȝb"
+    },
+    {
+     "type": "para",
+     "md": "F"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "b"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "O"
+    },
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "a"
+    },
+    {
+     "type": "para",
+     "md": "Figure 2"
+    },
+    {
+     "type": "para",
+     "md": "→ = a, OB"
+    },
+    {
+     "type": "para",
+     "md": "→ = b, FE"
+    },
+    {
+     "type": "para",
+     "md": "→ = Ȝb and ED"
+    },
+    {
+     "type": "para",
+     "md": "→ = ȝa, where Ȝ and ȝ are positive constants."
+    },
+    {
+     "type": "para",
+     "md": "In Figure 2, OA"
+    },
+    {
+     "type": "para",
+     "md": "B is the point of intersection of OC and AF such that OB : OC = AB : AF = 1 : 3"
+    }
+   ],
+   "parts": [
+    {
+     "id": "9a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find, in terms of a or b or a and b, simplifying your answers where possible,"
+      },
+      {
+       "type": "para",
+       "md": "→ (ii) CF"
+      },
+      {
+       "type": "para",
+       "md": "→"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "9a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "AB"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "9b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find, in terms of a,b, Ȝ and where necessary ȝ, simplifying your answers where possible,"
+      },
+      {
+       "type": "para",
+       "md": "→ (ii) AE"
+      },
+      {
+       "type": "para",
+       "md": "→"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "9b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "CD"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "→ = 4CD"
+      },
+      {
+       "type": "para",
+       "md": "→"
+      },
+      {
+       "type": "para",
+       "md": "Given that AE"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "9c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": "find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "find the value of ȝ and the value of Ȝ."
+      },
+      {
+       "type": "para",
+       "md": "Given also that ]a] = 4 cm, ]b] = 1 cm and that the area of the trapezium CDEF is 5 cm2"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      26
+     ]
+    },
+    {
+     "id": "9d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": "calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "calculate the size, in degrees to 3 significant figures, of CFE."
+      },
+      {
+       "type": "para",
+       "md": "Area of trapezium = 1"
+      },
+      {
+       "type": "para",
+       "md": "⎡"
+      },
+      {
+       "type": "para",
+       "md": "⎤"
+      },
+      {
+       "type": "para",
+       "md": "2 ("
+      },
+      {
+       "type": "para",
+       "md": "a"
+      },
+      {
+       "type": "para",
+       "md": "b h"
+      },
+      {
+       "type": "para",
+       "md": ")"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "⎣⎢"
+      },
+      {
+       "type": "para",
+       "md": "⎦⎥"
+      },
+      {
+       "type": "para",
+       "md": "Question 9 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 9 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 9 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 74,
+     "pages": [
+      26,
+      27,
+      28,
+      29
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 13,
+     "sum": 13,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "CD = '− 2a '+ λb + µa or AE= 3' ( b − a ) '+ λb"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "CD = '− 2a '+ λb + µa and AE= 3' ( b − a ) '+ λb  ",
+       "CD and AE"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "−3a + ( 3 + λ ) b",
+       "4 ( µ − 2) ="
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "−3"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "µ= oe",
+       "4"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "4",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       ""
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P10",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P11",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "h=",
+       "13"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P12",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "sin ∠CFE = =",
+       "λ 13"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P13",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "4 13",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 10,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "Complete",
+   "summaryHint": "The equation of a curve is given by 8 2 y x 5 x = − + DO NOT WRITE IN THIS AREA x",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The equation of a curve is given by"
+    },
+    {
+     "type": "para",
+     "md": "8"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "y"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "="
+    },
+    {
+     "type": "para",
+     "md": "−"
+    },
+    {
+     "type": "para",
+     "md": "+"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    }
+   ],
+   "parts": [
+    {
+     "id": "10a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the table of values for y, giving your values of y to 2 decimal places where"
+      },
+      {
+       "type": "para",
+       "md": "necessary."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      30
+     ]
+    },
+    {
+     "id": "10b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "On the grid, plot the points from your completed table and join them to form a"
+      },
+      {
+       "type": "para",
+       "md": "smooth curve."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      30
+     ]
+    },
+    {
+     "id": "10c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "By drawing a suitable straight line on the grid, find an estimate, to 1 decimal"
+      },
+      {
+       "type": "para",
+       "md": "place, for the range of values of x in 0.8 - x - 6 for which 4x3 – 21x2 – 12x + 32 0"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      },
+      {
+       "type": "para",
+       "md": "Question 10 continued"
+      },
+      {
+       "type": "para",
+       "md": "y"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "8 –"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Turn over for a spare grid if you need to redraw your graph."
+      },
+      {
+       "type": "para",
+       "md": "Question 10 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 10 continued"
+      },
+      {
+       "type": "para",
+       "md": "Only use this grid if you need to redraw your graph."
+      },
+      {
+       "type": "para",
+       "md": "y"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "8 –"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 39,
+     "pages": [
+      30,
+      31,
+      32,
+      33
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": ",",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": ",",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 3,
+      "md": "ft 3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Each point missed (−1 eeoo)",
+       "Each missed segment",
+       "Each point incorrectly plotted",
+       "Tramlines",
+       "Very poor curve",
+       "N.B. Accuracy for both plotting and drawing is",
+       "1",
+       "± ss",
+       "2"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "8",
+       "x2 − 5x + = ax + b or x 2 + 8 < 21 x + 3 oe",
+       "x x 4",
+       "4 x3 + 4 ( −5 − a ) x 2 − 4bx + 32 =0 oe"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "to solve for a and b",
+       "8 1",
+       "Or x 2 − 5 x + < x+3",
+       "x 4",
+       "1"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "a=",
+       "4 1",
+       "=",
+       "y x+3",
+       "4"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "5 11",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "ft their graph. Must be",
+       "correct inequality signs"
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 11,
+   "type": "structured",
+   "marks": 9,
+   "commandWord": "Complete",
+   "summaryHint": "A bag contains 6 five cent coins and 9 ten cent coins.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A bag contains 6 five cent coins and 9 ten cent coins."
+    },
+    {
+     "type": "para",
+     "md": "Coins are taken at random from the bag, one at a time without replacement, until the total"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "value of the coins taken from the bag is at least 15 cents."
+    },
+    {
+     "type": "para",
+     "md": "No more coins are then taken from the bag."
+    }
+   ],
+   "parts": [
+    {
+     "id": "11a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the probability tree diagram."
+      },
+      {
+       "type": "para",
+       "md": "First coin"
+      },
+      {
+       "type": "para",
+       "md": "Second coin"
+      },
+      {
+       "type": "para",
+       "md": "Third coin"
+      },
+      {
+       "type": "para",
+       "md": "5 cent"
+      },
+      {
+       "type": "para",
+       "md": "6"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "15"
+      },
+      {
+       "type": "para",
+       "md": "9"
+      },
+      {
+       "type": "para",
+       "md": "15"
+      },
+      {
+       "type": "para",
+       "md": "10 cent"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      34
+     ]
+    },
+    {
+     "id": "11b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the probability that exactly two coins are taken from the bag."
+      },
+      {
+       "type": "para",
+       "md": "A is the event that the total value of the coins taken from the bag is 15 cents."
+      },
+      {
+       "type": "para",
+       "md": "B is the event that the total value of the coins taken from the bag is 20 cents."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      34
+     ]
+    },
+    {
+     "id": "11c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Determine",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Determine which of the events, A or B, is the more likely."
+      },
+      {
+       "type": "para",
+       "md": "Show your working clearly."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "Question 11 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      },
+      {
+       "type": "para",
+       "md": "Question 11 continued"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      }
+     ],
+     "answerLines": 50,
+     "pages": [
+      34,
+      35,
+      36
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 9,
+     "sum": 9,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       ",",
+       "14 14 completed"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       ",",
+       "7 7 oe"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       ",",
+       "13 13"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "× ' ' or × ' ' or × ' ' or ×1 or ×",
+       "5 14 5 7 5 7 5 15 14"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "× ' '+ × ' '+ × ' ' or 1 − ×",
+       "5 14 5 7 5 7 15 14",
+       "6"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "7 and % to 2dp truncated",
+       "or rounded"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2 9  2 5 4  3 3 ",
+       "P(A):  × ' '  +  × ' '× ' '  +  × ' '  oe calculate either 15 (A) or",
+       " 5 14   5 14 13   5 7  20 (B) cents removed",
+       "= 254",
+       "455 0.55(824...)"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2 5 9  3 4 ",
+       "P(B):  × ' '× ' '  +  × ' '  oe = 201 either 15 or 20 ft",
+       " 5 14 13   5 7  455",
+       "0.44(175...)"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "cao 3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "254 201 correct reason dep on",
+       ">",
+       "455 455 both A and B correct"
+      ],
+      "pages": [
+       14
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}

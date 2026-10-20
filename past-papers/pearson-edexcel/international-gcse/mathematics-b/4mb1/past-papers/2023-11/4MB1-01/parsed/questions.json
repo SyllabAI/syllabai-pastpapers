@@ -1,0 +1,5217 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 28,
+ "totalMarks": 100,
+ "marksVerified": false,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 2,
+   "commandWord": "Write",
+   "summaryHint": "A pattern is made with grey and white squares.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A pattern is made with grey and white squares."
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Write",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Write down the order of rotational symmetry for this pattern."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      2
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Shade, on the grid below, exactly 5 squares to make a pattern with 4 lines of"
+      },
+      {
+       "type": "para",
+       "md": "symmetry."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 2,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "A suitable pattern",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 2 marks"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 2,
+   "commandWord": null,
+   "summaryHint": "3 −3 4 3 2 Write down a number from the above list that is DO NOT WRITE IN THIS AREA",
+   "stem": [
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "−3 4"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "Write down a number from the above list that is"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "both a rational number and a natural number,"
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      2
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "an irrational number."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 2,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "with no incorrect values",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "with no incorrect values",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 2 marks"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "open",
+   "marks": 2,
+   "commandWord": null,
+   "summaryHint": "The nth term of a sequence is given by 3 n − 20 2 Find the difference between the 4th term and the 5th term of this sequence.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The nth term of a sequence is given by 3"
+    },
+    {
+     "type": "para",
+     "md": "n −"
+    },
+    {
+     "type": "para",
+     "md": "20"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "Find the difference between the 4th term and the 5th term of this sequence."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 2,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "A correct method to find the 4th term and the 5th term or",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "correct method to find the difference (condone missing",
+       "( 3 x 5 − 20) − (3 x 4 − 20 ) [= 55 –28] or",
+       "2 2",
+       "brackets around the terms), which could be the other way",
+       "( 3 x 5 ) − (3 x 4 ) [= 75 – 48] oe",
+       "2 2",
+       "round eg 28 – 55"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 2 marks"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "open",
+   "marks": 2,
+   "commandWord": null,
+   "summaryHint": "Using ruler and compasses only and showing all your construction lines, construct the bisector of angle FGH H F DO NOT WRITE IN THIS AREA G",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Using ruler and compasses only and showing all your construction lines, construct the"
+    },
+    {
+     "type": "para",
+     "md": "bisector of angle FGH"
+    },
+    {
+     "type": "para",
+     "md": "H"
+    },
+    {
+     "type": "para",
+     "md": "F"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "G"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 2,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for bisector of angle FGH within lines of overlay",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "correct bisector which must be a straight line + construction",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "lines ignore any additional lines eg line drawn from F to H",
+       "wr Total 2 marks"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "open",
+   "marks": 2,
+   "commandWord": null,
+   "summaryHint": "Without using a calculator and showing all your working, work out 2 1 11 ÷ DO NOT WRITE IN THIS AREA 3 5 Give your answer as a mixed number in its simplest form.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Without using a calculator and showing all your working, work out"
+    },
+    {
+     "type": "para",
+     "md": "2 1"
+    },
+    {
+     "type": "para",
+     "md": "11"
+    },
+    {
+     "type": "para",
+     "md": "÷"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    },
+    {
+     "type": "para",
+     "md": "Give your answer as a mixed number in its simplest form."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 2,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "7 5 3 30 + 5 15",
+       "x or = or Note if we see the fractions as a division then the denominators",
+       "3 6 1+ 1 15 + 3 18 7 6 35 7 3 35"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 0,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "3 5 18 6 5 18"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "We must see both the correct top heavy fraction and",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "=1 the correct simplified mixed fraction",
+       "18 18 18",
+       "wr Total 2 marks"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "open",
+   "marks": 2,
+   "commandWord": null,
+   "summaryHint": "Factorise fully 5 mp p DO NOT WRITE IN THIS AREA − 10 2 \b",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Factorise fully 5"
+    },
+    {
+     "type": "para",
+     "md": "mp"
+    },
+    {
+     "type": "para",
+     "md": "p"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "−"
+    },
+    {
+     "type": "para",
+     "md": "10"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 3,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 2,
+      "md": "correct answer",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for 5 ( mp 2 − 2 p ) or p ( 5mp − 10 ) or 5 p ( mp + 2 ) or 5 p (... − ...)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Condone missing closed bracket",
+       "cas Total 2 marks"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "open",
+   "marks": 2,
+   "commandWord": null,
+   "summaryHint": "Harpreet has been given red bricks × × × 2 3 5 7 2 5 DO NOT WRITE IN THIS AREA green bricks × × 2 5 7 2 4 2 blue bricks × × × 2 3 5 7 4 2 3 Harpreet is asked to arrange the bricks in rows according",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Harpreet has been given"
+    },
+    {
+     "type": "para",
+     "md": "red bricks"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    },
+    {
+     "type": "para",
+     "md": "7"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "green bricks"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    },
+    {
+     "type": "para",
+     "md": "7"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "blue bricks"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    },
+    {
+     "type": "para",
+     "md": "7"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "Harpreet is asked to arrange the bricks in rows according to the following rules."
+    },
+    {
+     "type": "para",
+     "md": "Each row must contain just one colour of brick."
+    },
+    {
+     "type": "para",
+     "md": "Each row must contain the same number of bricks."
+    },
+    {
+     "type": "para",
+     "md": "Calculate the maximum number of bricks there can be in a row."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 3,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 2,
+      "md": "Allow 22  53  7 must be their only answer or identified as their",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "answer"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "22  5n  7 or 2m  53  7 where m and n must be",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "non zero integers",
+       "or having the HCF with other values in the working space"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 0,
+      "md": "for finding the LCM only",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 2 marks"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 8,
+   "type": "open",
+   "marks": 2,
+   "commandWord": null,
+   "summaryHint": "Given that a = DO NOT WRITE IN THIS AREA \b",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Given that a ="
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 2,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Condone omission of , missing brackets around the −3 and",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "subtraction of the squares rather than addition.",
+       "eg allow 72 + −32 and 7 2 − −32 and 7 2 − ( −3)",
+       "2",
+       "Implied by 58 or  58 or − 58 or 7.6…."
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "isw if they give the exact value and then 7.6….",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 0,
+      "md": "for  58",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 2 marks"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 9,
+   "type": "open",
+   "marks": 3,
+   "commandWord": null,
+   "summaryHint": "A car travels at an average speed of 80 km/h for 2.5 hours and then travels a further distance of 25 km in 0.5 hours.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A car travels at an average speed of 80 km/h for 2.5 hours and then travels a further"
+    },
+    {
+     "type": "para",
+     "md": "distance of 25 km in 0.5 hours."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "Calculate the average speed, in km/h, of the car for the whole journey."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "............................................................................................. km/h"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 3,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Correct method to find the distance in 2.5 hours (could be",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "any incorrect units"
+      ],
+      "notes": [
+       "80 x 2  = 200 or 80 x 2 + 25  = 225 oe part of calculation to find the total distance or in a correct",
+       "2 2",
+       "calculation to find the average speed)"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Correct method to find speed using total distance/ total time",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "any incorrect units"
+      ],
+      "notes": [
+       "or oe",
+       "2.5 + 0.5 2.5 + 0.5 or allow a distance other than 200 provided it is clearly labelled",
+       "as the distance in the first part of the journey and is not equal to",
+       "80"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "ignore any additional incorrect units",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "isw further calculations for the method marks but not for the",
+       "accuracy mark",
+       "cas Total 3 marks"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 10,
+   "type": "structured",
+   "marks": 3,
+   "commandWord": "complete",
+   "summaryHint": "In a survey, 32 students were asked whether they study either History (H) or Geography (G).",
+   "stem": [
+    {
+     "type": "para",
+     "md": "In a survey, 32 students were asked whether they study either History (H) or"
+    },
+    {
+     "type": "para",
+     "md": "Geography (G)."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "study Geography and 5"
+    },
+    {
+     "type": "para",
+     "md": "x − study History"
+    },
+    {
+     "type": "para",
+     "md": "Given that, of these students, 2"
+    },
+    {
+     "type": "para",
+     "md": "x −"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    }
+   ],
+   "parts": [
+    {
+     "id": "10a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "complete the Venn diagram for this information, giving the missing value in terms"
+      },
+      {
+       "type": "para",
+       "md": "of x"
+      },
+      {
+       "type": "para",
+       "md": "E"
+      },
+      {
+       "type": "para",
+       "md": "G"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "10b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the value of x"
+      },
+      {
+       "type": "para",
+       "md": "x = ............................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 3,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "for 4x – 1 oe (eg 5x – 1 – x) correctly placed",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "4x – 1 in or Allow 35 – 2x oe",
+       "Venn",
+       "diagram"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "correct equation ft their 4x – 1 only.",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "eg x − 5 + x + \"4 x − 1\" = 30 Condone the missing 2 only eg x − 5 + x + \"4 x − 1\" = 32"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 3 marks"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 11,
+   "type": "open",
+   "marks": 3,
+   "commandWord": "Calculate",
+   "summaryHint": "Calculate the mean of the two numbers 4 and 3 6 × .",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Calculate the mean of the two numbers 4"
+    },
+    {
+     "type": "para",
+     "md": "and 3 6"
+    },
+    {
+     "type": "para",
+     "md": "×"
+    },
+    {
+     "type": "para",
+     "md": ". ×"
+    },
+    {
+     "type": "para",
+     "md": "10100"
+    },
+    {
+     "type": "para",
+     "md": "10101"
+    },
+    {
+     "type": "para",
+     "md": "Give your answer in standard form."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 5,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for converting one of the numbers so that it is written as the",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "0.2 x10101 or 18 x10100 same power of ten as the other number (this may be done after",
+       "dividing by 2)",
+       "Implied by 4 x10101 or 40 x10100 oe",
+       "0.4 x10101 + 3.6 x 10101 4 x 10100 + 3.6 x 10101"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Allow correct numbers in any form eg",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2 2",
+       "4 x10100 + 36 x10100",
+       "or oe",
+       "2"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "oe eg 2.0 10101 but not 20 10100 (this implies",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 2,
+      "md": ")",
+      "allow": [
+       "international multiplication symbol of . for x eg 2.10101"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Do not isw",
+       "cas Total 3 marks"
+      ],
+      "pages": [
+       8
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 12,
+   "type": "structured",
+   "marks": 3,
+   "commandWord": "Find",
+   "summaryHint": "y DO NOT WRITE IN THIS AREA 8 7 6 5 4 3 2 1 O x DO NOT WRITE IN THIS AREA 1 2 3 4 , the line with The diagram above shows the line L with equation y mx c equation y = 4 and the line with equation x =",
+   "stem": [
+    {
+     "type": "para",
+     "md": "y"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "8"
+    },
+    {
+     "type": "para",
+     "md": "7"
+    },
+    {
+     "type": "para",
+     "md": "6"
+    },
+    {
+     "type": "para",
+     "md": "5"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "O"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": ", the line with"
+    },
+    {
+     "type": "para",
+     "md": "The diagram above shows the line L with equation y"
+    },
+    {
+     "type": "para",
+     "md": "mx"
+    },
+    {
+     "type": "para",
+     "md": "c"
+    },
+    {
+     "type": "para",
+     "md": "equation y = 4 and the line with equation x = 3"
+    }
+   ],
+   "parts": [
+    {
+     "id": "12a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find the value of m and the value of c"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "m = ............................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "para",
+       "md": "c = ............................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "12b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "On the grid, shade and label the region R defined by"
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": "and"
+      },
+      {
+       "type": "para",
+       "md": "and"
+      },
+      {
+       "type": "para",
+       "md": "y"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "y"
+      },
+      {
+       "type": "para",
+       "md": "mx"
+      },
+      {
+       "type": "para",
+       "md": "c"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "4"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 3,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "cao",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "SCB1 for the wrong way round."
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "cao",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "region Correct region indicated by one of the following",
+       "shaded • correct region shaded",
+       "• correct region labelled as R",
+       "• all of outside region shaded.",
+       "cas Total 3 marks"
+      ],
+      "pages": [
+       8
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 13,
+   "type": "open",
+   "marks": 3,
+   "commandWord": null,
+   "summaryHint": "Simplify x x + + 3 2 2 DO NOT WRITE IN THIS AREA \b",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Simplify"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "+"
+    },
+    {
+     "type": "para",
+     "md": "+"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 4,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 2,
+      "md": "numerator fully factorised and denominator factorised correctly",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "( x + 1)( x + 2 ) does not have to be within a fraction"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for one of the numerator fully factorised or denominator",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "factorised correctly does not have to be within a fraction",
+       "x2"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "(do not isw)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "x+2",
+       "cas Total 3 marks"
+      ],
+      "pages": [
+       8
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 14,
+   "type": "structured",
+   "marks": 4,
+   "commandWord": "Show that",
+   "summaryHint": "A bag contains red pens, blue pens, black pens, green pens and purple pens.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A bag contains red pens, blue pens, black pens, green pens and purple pens."
+    },
+    {
+     "type": "para",
+     "md": "A pen is selected at random from the bag."
+    },
+    {
+     "type": "para",
+     "md": "The table gives information about the probability of the colour of the pen that is"
+    },
+    {
+     "type": "para",
+     "md": "selected."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "Tisam draws a pie chart to show the information about the number of pens of each"
+    },
+    {
+     "type": "para",
+     "md": "colour in the bag. The size of the angle of the sector representing green pens is 50.4°"
+    }
+   ],
+   "parts": [
+    {
+     "id": "14a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Show that",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Show that x = 0.14"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "14b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the value of y"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "y = ............................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 4,
+     "sum": 4,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "oe eg 0.25  50.4  = 0.14",
+      "allow": [
+       "verify eg 0.14 x 360=50.4 or"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "360 90",
+       "0.1 = 3.6 and 14 x 3.6 = 50.4",
+       "provided we also see the 50.4",
+       "Note: allow 0.25 + 0.1 + 3 y + 0.15 + y = 360 − 50.4 to find y",
+       "360",
+       "and then using this value of y to show or verify x = 0.14"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 0,
+      "md": "for using x = 0.14 to find y and then using this",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "value of y to show or verify that x = 0.14"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "equation for y, may also be in terms of x",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "or 0.25 + 0.1 + 3 y + 0.15 + 0.14 + y = 1 oe Allow one missing probability provided we see the",
+       "remaining individual probabilities added to 1",
+       "If converting to degrees and using the sum of the angles",
+       "equals 360",
+       "90 + 36 + 3y + 54 + 50.4 + y = 360"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "For collecting y terms on 1 side and numbers on the",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "other in a correct equation. x must be replaced with",
+       "0.14",
+       "If converting to degrees 4y = 129.6 => y = 32.4"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "oe",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 15,
+   "type": "open",
+   "marks": 4,
+   "commandWord": null,
+   "summaryHint": "A bag contains red counters, blue counters and yellow counters such that = 5 : 2 number of red counters : number of blue counters DO NOT WRITE IN THIS AREA number of blue counters\t: number of yellow",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A bag contains red counters, blue counters and yellow counters such that"
+    },
+    {
+     "type": "para",
+     "md": "= 5 : 2"
+    },
+    {
+     "type": "para",
+     "md": "number of red counters : number of blue counters"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "number of blue counters\t: number of yellow counters\t= 3 : 4"
+    },
+    {
+     "type": "para",
+     "md": "The number of yellow counters in the bag is 56"
+    },
+    {
+     "type": "para",
+     "md": "Calculate the total number of counters in the bag."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 4,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for writing the ratios with a common figure or for writing a",
+      "allow": [
+       "equivalent ratios"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "or correct 3 part ratio",
+       "8 8",
+       "eg 7.5 : 3 and 3 : 4 or 7.5 : 3 : 4 or eg 5 : 2 and 2 : or 5 : 2 :",
+       "3 3",
+       "56",
+       " no. of yellow & blue counters =  x 7  = 98 or for the number of yellow and blue counters",
+       "4",
+       "56 or for the number of blue counters which may be written in the ratio",
+       " number of blue counters = x 3 = 42 oe ie 42 : 56",
+       "4",
+       "56",
+       "eg x 7 − 56  = 42",
+       "4"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Finding the value of 1 part eg 56/(the number for yellow in their",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " = 7 or  = 14 or 8  = 21",
+       "56 56",
+       "eg ratio)",
+       "8 4",
+       "3 or for finding the number of red counters or red and blue counters",
+       "\"42\" ft their number of blue counters provided this is from a correct",
+       "or  number of red counters =  x 5  = 105",
+       "2 method or clearly labelled or identified as total number of blue",
+       "\"42\" counters",
+       "or  no. of red & blue counters = x 7  = 147",
+       "2"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Implies the previous method marks.",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A complete method to find the total number of counters in the bag",
+       " 8",
+       "or  5 + 2 +  x \"21\" (where values in inverted commas must come from a correct method)",
+       " 3",
+       "or 56 ",
+       " their ratio value for yellow ",
+       "sum of their ratio parts ",
+       "8 4",
+       "eg 56  or 56 ",
+       "15 + 6 + 8 7.5 + 3 + 4",
+       "8",
+       "or 56  3",
+       "5+ 2+ 8",
+       "3",
+       "or 56 + \"42\"+ \"105\""
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 4 marks"
+      ],
+      "pages": [
+       10
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 16,
+   "type": "open",
+   "marks": 4,
+   "commandWord": null,
+   "summaryHint": "Here is hexagon ABCDEF ( ) 2 1 cm x + DO NOT WRITE IN THIS AREA ( ) 3 4 cm x + AB x 1 cm AF x 2 3 4 DE x FE = 5 cm x = 2 cm The perimeter of the hexagon is 40 cm.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Here is hexagon ABCDEF"
+    },
+    {
+     "type": "para",
+     "md": "("
+    },
+    {
+     "type": "para",
+     "md": ")"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "1 cm"
+    },
+    {
+     "type": "para",
+     "md": "x +"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "("
+    },
+    {
+     "type": "para",
+     "md": ")"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "4 cm"
+    },
+    {
+     "type": "para",
+     "md": "x +"
+    },
+    {
+     "type": "para",
+     "md": "AB"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "1 cm"
+    },
+    {
+     "type": "para",
+     "md": "AF"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "DE"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "FE"
+    },
+    {
+     "type": "para",
+     "md": "= 5 cm"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "= 2 cm"
+    },
+    {
+     "type": "para",
+     "md": "The perimeter of the hexagon is 40 cm."
+    },
+    {
+     "type": "para",
+     "md": "Find the area, in cm2, of the hexagon."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "............................................................................................. cm2"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 4,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "condone CD to be 3x+1 (for this mark only) may be implied by",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "15",
+       "16x + 10 = 40 or x =",
+       "8",
+       "40 − 8"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "method to solve correct equation (this may imply the previous",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "method mark)",
+       "16"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for correct expression for the area, may be in terms of x or with",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "their x value substituted, in which may be simplified, ft their value of",
+       "( 2 x + 1)( 3x + 4 ) + 2 x ( 3x − 1) oe x provided working is shown",
+       "or ( 2 x + 1)( 3x + 4 − 2 x ) + 5 x x 2 x oe eg",
+       "( 2 x + 1)( x + 4 ) + 10 x 2 ( 2 x \"2\"+ 1) x ( 3 x \"2\"+ 4 ) + (5 x \"2\"− ( 2 x \"2\"+ 1) ) x ( 2 x \"2\") oe",
+       "eg ( 2 x \"2\"+ 1) x ( 3 x \"2\"+ 4 ) + ( 3 x \"2\"− 1) x ( 2 x \"2\") or 5 x10 + 5 x 4",
+       "or 5 x ( 3x + 4 ) − ( 5 x − (2 x + 1) )( x + 4 ) oe",
+       "or ( 2 x \"2\"+ 1) x ( 3 x \"2\"+ 4 − 2 x \"2 ) + ( 5 x \"2\") x ( 2 x \"2\") oe",
+       "5 x ( 3x + 4 ) − ( 3x − 1)( x + 4 )",
+       "eg ( 2 x \"2\"+ 1) x (\"2\"+ 4 ) + ( 5 x \"2\") x ( 2 x \"2\") or 5 x 6 + 10 x 4",
+       "Or",
+       "12 x 2 + 9 x + 4 or ( 5 x \"2\") x ( 3 x \"2\"+ 4 ) − ( 5 x \"2\"− (2 x \"2\"+ 1) ) x (\"2\"+ 4 ) oe",
+       "eg ( 5 x \"2\") x ( 3 x \"2\"+ 4 ) − ( 3 x \"2\"− 1) x (\"2\"+ 4 ) or 10 x10 − 5 x 6",
+       "or 12 x \"2\"2 + 9 x \"2\"+ 4"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "SC B2 for an answer of 51.3125, 63.0625, 70.5625 Accept values",
+       "that are rounded to 1dp",
+       "cas Total 4 marks"
+      ],
+      "pages": [
+       11
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 17,
+   "type": "structured",
+   "marks": 4,
+   "commandWord": "Calculate",
+   "summaryHint": "3 1 2 1 B A DO NOT WRITE IN THIS AREA 4 3 2 7",
+   "stem": [
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "1"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "7"
+    }
+   ],
+   "parts": [
+    {
+     "id": "17a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate 3A – 2B"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "\u001a"
+      },
+      {
+       "type": "para",
+       "md": "\u001a"
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "para",
+       "md": "\u001a"
+      },
+      {
+       "type": "para",
+       "md": "\u001a"
+      },
+      {
+       "type": "para",
+       "md": "\u001b"
+      },
+      {
+       "type": "para",
+       "md": "10"
+      },
+      {
+       "type": "para",
+       "md": "8"
+      },
+      {
+       "type": "para",
+       "md": "3"
+      },
+      {
+       "type": "para",
+       "md": "1"
+      },
+      {
+       "type": "para",
+       "md": "p"
+      },
+      {
+       "type": "para",
+       "md": "3"
+      },
+      {
+       "type": "para",
+       "md": "\u001a"
+      },
+      {
+       "type": "para",
+       "md": "7 C"
+      },
+      {
+       "type": "para",
+       "md": "BC"
+      },
+      {
+       "type": "para",
+       "md": "B"
+      },
+      {
+       "type": "para",
+       "md": "\u001b"
+      },
+      {
+       "type": "para",
+       "md": "\u0019\u0018"
+      },
+      {
+       "type": "para",
+       "md": "32"
+      },
+      {
+       "type": "para",
+       "md": "1"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "4"
+      },
+      {
+       "type": "para",
+       "md": "1"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "17b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the value of p"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "p = ............................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 4,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "Fully correct matrix",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " ",
+       " 8 −5  (B1 for 2 or 3 correct entries in a matrix of correct order)"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "A correct equation or  −3 p − 4 ",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "",
+       " 2 p + 28 "
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 4 marks"
+      ],
+      "pages": [
+       12
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 18,
+   "type": "open",
+   "marks": 4,
+   "commandWord": null,
+   "summaryHint": "A Diagram NOT DO NOT WRITE IN THIS AREA accurately drawn B 75° O C OABC is a sector of a circle, centre O, with ∠AOC = 75° The arc length ABC = 54 cm.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "Diagram NOT"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "accurately drawn"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "75°"
+    },
+    {
+     "type": "para",
+     "md": "O"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "OABC is a sector of a circle, centre O, with ∠AOC = 75°"
+    },
+    {
+     "type": "para",
+     "md": "The arc length ABC = 54 cm."
+    },
+    {
+     "type": "para",
+     "md": "Calculate the area, in cm2 to 2 significant figures, of the sector."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "............................................................................................. cm2"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 4,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "For a correct equation with one unknown",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "x 2 r = 54",
+       "360",
+       "54  19440 648 ",
+       "r =  = = = 129.6  or",
+       "x 2  150 ",
+       "75 5"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Correct method to find r or  r in a correct",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "54  19440 648  equation",
+       "r=  = = = 41.2529...",
+       "x 2  150 5 ",
+       "75",
+       "360"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "ft their value for r or  r if working is shown",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "x  (\"41.2529......\")",
+       "2",
+       "Area =",
+       "360"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "awrt 1100 (1113.83…)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "If an answer is given in the range in the working",
+       "and then rounded incorrectly award full marks",
+       "cas Total 4 marks",
+       "Q Working Answer Mark Notes"
+      ],
+      "pages": [
+       12
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 19,
+   "type": "open",
+   "marks": 4,
+   "commandWord": null,
+   "summaryHint": "The diagram shows two mathematically similar solids, A and B Diagram NOT DO NOT WRITE IN THIS AREA accurately drawn A B The volume of solid B is 43% less than the volume of solid A The total surface",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The diagram shows two mathematically similar solids, A and B"
+    },
+    {
+     "type": "para",
+     "md": "Diagram NOT"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "accurately drawn"
+    },
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "The volume of solid B is 43% less than the volume of solid A"
+    },
+    {
+     "type": "para",
+     "md": "The total surface area of solid A is 700 cm2"
+    },
+    {
+     "type": "para",
+     "md": "Work out the total surface area, in cm2 to 3 significant figures, of solid B"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "............................................................................................. cm2"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 11,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Correct SF oe fraction or decimal may be",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 3,
+      "md": "for 3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "within a calculation eg 1003/573 or (1 – 0.43)",
+       "Volume scale factor B to A = 100/57 (=1.75…) oe Not for 57% 3",
+       "0.572 or"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "1st step to find the SF for area",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "( 57 ) x 700",
+       "3 2",
+       "3",
+       "or",
+       "Condone use of 0.43 instead of 0.57 eg",
+       "( 100 )",
+       "2",
+       "100 / 57  = 1.206... or (100 / 57 )  = 3.077(8...) oe",
+       "3 2 3",
+       "3",
+       "0.43  = 0.754(7...)  or 0.432  = 0.1849 or",
+       "or",
+       "100 / 43  = 1.324(8...)  or (100 / 43)  = 5.408...",
+       "3 2",
+       "2",
+       " 100 "
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Correct method to find an area SF from a  3  or",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2",
+       "volume SF when Volume SF is 0.57 or 0.43  57 ",
+       "or 2",
+       " 100 ",
+       "(\"1.206\")  = 1.454(6...) or \"3.077...\"  = 1.454(6...) oe",
+       "3",
+       "2",
+       "If Volume SF = 0.43 3",
+       "  or",
+       "Area SF =  57 ",
+       "(\"0.754(7)\") or 3 \"0.1849 \"  = 0.569(6) ( 100 )",
+       "2 2",
+       "3",
+       "700 ",
+       "( 57 )",
+       "or 3",
+       "2",
+       "(\"1.324(8)\") or \"5.408...\"  = 1.755...",
+       "2 3"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P5",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "awrt 480 to 483",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "or If an answer is given in the range in the working and then rounded",
+       "700  \"1.454...\" incorrectly award full marks"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P6",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for recognition that the volume scale factor is 0.57",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Volume scale factor B to A = 100/57 (=1.75…) oe May be seen in a calculation"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P7",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "3"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P8",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "",
+       "( 700 ) x 0.57   = 21.9(3...)",
+       "3",
+       "eg  3 Allow use of 0.43 instead of 0.57",
+       " If Volume SF = 0.43 then 700 x 3 0.43  = 19.9(6...) "
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P9",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "awrt 480 to 483",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2",
+       "If an answer is given in the range in the working and then rounded",
+       "incorrectly award full marks",
+       "cas Total 4 marks"
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 20,
+   "type": "open",
+   "marks": 5,
+   "commandWord": null,
+   "summaryHint": "X DO NOT WRITE IN THIS AREA Diagram NOT 4 cm accurately drawn B 5 cm P C A 2 cm D A, B, C and D are four points on a circle.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "X"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "Diagram NOT"
+    },
+    {
+     "type": "para",
+     "md": "4 cm"
+    },
+    {
+     "type": "para",
+     "md": "accurately drawn"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "5 cm"
+    },
+    {
+     "type": "para",
+     "md": "P"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "2 cm"
+    },
+    {
+     "type": "para",
+     "md": "D"
+    },
+    {
+     "type": "para",
+     "md": "A, B, C and D are four points on a circle."
+    },
+    {
+     "type": "para",
+     "md": "P is the midpoint of AB"
+    },
+    {
+     "type": "para",
+     "md": "APBX is a straight line."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DCX is a straight line."
+    },
+    {
+     "type": "para",
+     "md": "∠PCX = 115°"
+    },
+    {
+     "type": "para",
+     "md": "BX = 4 cm CX = 5 cm DC = 2 cm"
+    },
+    {
+     "type": "para",
+     "md": "Calculate, in degrees to one decimal place, ∠BPC"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": ".............................................................................................°"
+    },
+    {
+     "type": "para",
+     "md": "BPC"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 5,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "use chord theorem correctly to form a",
+      "allow": [
+       "use of letters eg x where x has been"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "correct equation with one unknown",
+       "clearly identified eg allow 4 x = 7 x 5 where x is",
+       "clearly identified as AX"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Correct value for PB may be un-simplified",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "\"− 4",
+       "\"",
+       "1 35 − 16 May be on the diagram",
+       "PB = x  = 2.375 oe eg PB = 4  = 2.375",
+       "2 4 2"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Fully correct method to enable sin BPC to",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "=",
+       "4 + \"2.375\" 5 be found.",
+       "ft their PB (or PX) provided PB (or PX) is from a",
+       "correct method or clearly labelled or identified as",
+       "PB (or PX) with working shown",
+       "PB (or PX) must be a numerical value"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "A correct expression for sin BPC",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "sin BPC = x 5  = 0.7108...",
+       "( 4 + \"2.375\") ft their PB (or PX) provided PB (or PX) is from a",
+       "correct method or clearly labelled or identified as",
+       "PB (or PX) with working shown",
+       "PB (or PX) must be a numerical value"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P5",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "awrt 45.1 to 45.3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "If an answer is given in the range in the working",
+       "and then rounded incorrectly award full marks",
+       "cas Total 5 marks"
+      ],
+      "pages": [
+       14
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 21,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": null,
+   "summaryHint": "Express 3 2 in the form p x q r where p, q and r are integers to x x + + ( ) 2 6 9 be found.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "21a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Express 3"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "in the form p x"
+      },
+      {
+       "type": "para",
+       "md": "q"
+      },
+      {
+       "type": "para",
+       "md": "r"
+      },
+      {
+       "type": "para",
+       "md": "where p, q and r are integers to"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "("
+      },
+      {
+       "type": "para",
+       "md": ")"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "6"
+      },
+      {
+       "type": "para",
+       "md": "9"
+      },
+      {
+       "type": "para",
+       "md": "be found."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "21b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Hence, or otherwise, solve the equation 3"
+      },
+      {
+       "type": "para",
+       "md": "without using a calculator."
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "x"
+      },
+      {
+       "type": "para",
+       "md": "6"
+      },
+      {
+       "type": "para",
+       "md": "9"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "Show your working clearly."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 5,
+     "sum": 7,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "(where …… is any number or no number)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "(where …… is any number or no number)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " "
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "condone 3 ( x + 1) + ( −12 )",
+      "allow": [
+       "p = 3, q = 1, r = –12"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2 2"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "if using answer to part a then allow follow",
+      "allow": [
+       "use of formula – no errors and"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "( x + 1) = or ( x + 1)2 = 4 or",
+       "2",
+       "3 through of their r and p values provided",
+       "(3x + 9)(x – 1) or (x + 3)(3x – 3) or (x + 3)(x – 1) oe −r",
+       "0",
+       "p",
+       "substitution no more simplified than",
+       "−2  16",
+       "seen in the working",
+       "2"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "being awarded (allow if the",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "method is seen in the working space for",
+       "part (a))"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "for multiplying out p(x + q)2 + r to obtain",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "px2 + 2pqx + pq2 + r oe"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "for equating coefficients and making 2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "p= 3 2pq = 6 oe pq2 + r = – 9 oe correct statements",
+       "3 ( x + 1) − 12",
+       "2"
+      ],
+      "pages": [
+       15
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "MS-POINTS-DONT-CLOSE",
+    "PART-MARKS-MISMATCH"
+   ]
+  },
+  {
+   "number": 22,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": "Find",
+   "summaryHint": "A particle is moving along a straight line.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A particle is moving along a straight line. At time t seconds, the displacement, x metres,"
+    },
+    {
+     "type": "para",
+     "md": "of the particle from a fixed point O on the line is given by"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "t"
+    },
+    {
+     "type": "para",
+     "md": "t"
+    },
+    {
+     "type": "para",
+     "md": "t"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "8"
+    },
+    {
+     "type": "para",
+     "md": "15"
+    },
+    {
+     "type": "para",
+     "md": "At time t seconds, the velocity of the particle is v m/s"
+    }
+   ],
+   "parts": [
+    {
+     "id": "22a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find an expression for v in terms of t"
+      },
+      {
+       "type": "para",
+       "md": "v = ............................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "22b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Find",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Find the least speed, in m/s, of the particle."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "............................................................................................. m/s"
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 8,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "for 6t 2 or  16t",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "do not isw an answer of 12t – 16",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "for 12t or  16 allow if seen in (a) only if",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "used in (b)",
+       "4"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "sets their a = 0 leading to a value for t",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "3"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "allow 13/3 awrt 4.3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Note: we have not told the candidates that we",
+       "must see working therefore a correct answer",
+       "with no working scores full marks, an answer of",
+       "4  4 13 ",
+       "scores 2 marks and an answer of  , ",
+       "3 3 3 ",
+       "13",
+       "without identifying the oe scores 2 marks",
+       "3",
+       "ALT  16 "
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "1st step to completing the square ft their (a)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "6t −   ... if a 3 term quadratic",
+       " 6x 2 ",
+       " 4  13"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "Completing the square ft their (a) if a 3 term",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "6t −  + quadratic",
+       " 3 3"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "allow 13/3 awrt 4.3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cas Total 5 marks",
+       "Q Working Answer Mark Notes"
+      ],
+      "pages": [
+       16
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "PART-MARKS-MISMATCH"
+   ]
+  },
+  {
+   "number": 23,
+   "type": "open",
+   "marks": 6,
+   "commandWord": null,
+   "summaryHint": "C DO NOT WRITE IN THIS AREA Diagram NOT accurately drawn O E 102° 54° A B D In the diagram, A, B, and C are points on a circle, centre O DBE is the tangent to the circle at the point B DO NOT WRITE",
+   "stem": [
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "Diagram NOT"
+    },
+    {
+     "type": "para",
+     "md": "accurately drawn"
+    },
+    {
+     "type": "para",
+     "md": "O"
+    },
+    {
+     "type": "para",
+     "md": "E"
+    },
+    {
+     "type": "para",
+     "md": "102°"
+    },
+    {
+     "type": "para",
+     "md": "54°"
+    },
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "D"
+    },
+    {
+     "type": "para",
+     "md": "In the diagram, A, B, and C are points on a circle, centre O"
+    },
+    {
+     "type": "para",
+     "md": "DBE is the tangent to the circle at the point B"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "102"
+    },
+    {
+     "type": "para",
+     "md": "54"
+    },
+    {
+     "type": "para",
+     "md": "AOB"
+    },
+    {
+     "type": "para",
+     "md": "EBC"
+    },
+    {
+     "type": "para",
+     "md": "Find, in degrees, the size of ∠OCA"
+    },
+    {
+     "type": "para",
+     "md": "Give reasons for each stage of your working."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "............................................................................................. °"
+    },
+    {
+     "type": "para",
+     "md": "OCA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 8,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "We can not mix and match",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "OBC = 90 − 54  = 36 CAB = 54 OBC = 90 − 54  = 36 methods but we award to the",
+       "scheme that is the most benefit",
+       "to the candidate."
+      ],
+      "pages": [
+       17
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "ACB =  = 51",
+       "2 eg  = 108 Angles must be clearly labelled",
+       "(180 − 102 ) = 39",
+       "OAB =   or otherwise identified with no",
+       "2 ambiguity or contradiction on"
+      ],
+      "pages": [
+       17
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "the diagram.",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "eg eg Only accept one letter if:",
+       "OCA = \"51\"− \"36\" OCA = A = 15 O = 258",
+       "or OCA = \"54\"− \"39\" 180 − ( 360 − 102 − \"108\") B = 36 C = 51",
+       "OCA = 360 − (360 − 102) − \"36\"− \"51\" 2"
+      ],
+      "pages": [
+       17
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Note values of 36 and 15 can come from incorrect working. Some candidates incorrectly think that These marks are independent of",
+       "triangles COB and COA are congruent and that COB = COA which method is used"
+      ],
+      "pages": [
+       17
+      ]
+     },
+     {
+      "id": "P5",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       17
+      ]
+     },
+     {
+      "id": "P6",
+      "part": null,
+      "sub": null,
+      "marks": 2,
+      "md": "At least 2 correct reasons related",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Then 180 − 36 − = 15 to their calculations, one of which",
+       "2 must be a circle theorem."
+      ],
+      "pages": [
+       17
+      ]
+     },
+     {
+      "id": "P7",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for 1 correct reason related to",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "To help if you are seeing 129 then check carefully their calculation.",
+       "Angle between tangent and radius (diameter) is 90° Note: We can allow symbols for the",
+       "Angle at the centre is 2 × (double) angle at circumference / angle at circumference is ½ angle at words ‘triangle’, ‘angle’ and ‘sum’",
+       "centre",
+       "Base angles in an isosceles triangle (are equal)",
+       "Angles in a triangle add to 180°",
+       "Angles around a point add up to 360°",
+       "Angles on a line add to 180°",
+       "Alternate segment theorem",
+       "Angles in a quadrilateral add to 360°",
+       "cas Total 6 marks",
+       "Q Working Answer Mark Notes"
+      ],
+      "pages": [
+       17
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 24,
+   "type": "open",
+   "marks": 6,
+   "commandWord": null,
+   "summaryHint": "A box contains n buttons.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A box contains n buttons."
+    },
+    {
+     "type": "para",
+     "md": "The buttons are either red or blue such that"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "number of red buttons : number of blue buttons = 3 : 5"
+    },
+    {
+     "type": "para",
+     "md": "A sample of 2 buttons is taken at random from the bag."
+    },
+    {
+     "type": "para",
+     "md": "Given that the probability of the 2 buttons being the same colour is 10"
+    },
+    {
+     "type": "para",
+     "md": "19"
+    },
+    {
+     "type": "para",
+     "md": "find the value of n"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "n = ............................................................................................."
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": 6,
+     "sum": 6,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "For correct use of ratio to find a correct probability",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "P(1st Red) = or P(1st Blue) =",
+       "8 8 for the 1st button or the correct number of red or blue on",
+       "the first selection."
+      ],
+      "pages": [
+       18
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "For finding an algebraic expression for the probability",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "n −1 n −1 of two red or two blue buttons",
+       "3 8 3n 8",
+       "P(both Red) = x oe eg x pn − 1 pn",
+       "8 n −1 8n n − 1 Allow p x or p x where 0 < p < 1",
+       "5 5 n −1 n",
+       "n −1 n −1 qn − 1 qn",
+       "5 8 5n 8 Allow p x or p x",
+       "or P(both Blue) = x oe eg x",
+       "8 n −1 8n n − 1 n −1 n",
+       "5 3 where 0 < p < 1 and p+q = 1",
+       "n −1 n −1",
+       "3 8 5 8",
+       "or P(one of each colour) = x or x oe",
+       "8 n −1 8 n −1"
+      ],
+      "pages": [
+       18
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "implies previous M1 for algebraic expression for",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "n −1 n −1 P(2 red) + Prob(2 Blue) or 2 × P( red) × Prob( Blue)",
+       "3 8 5 8",
+       "x + x oe pn − 1 qn − 1 pn qn",
+       "8 n −1 8 n −1 Allow p x + qx or p x + qx",
+       "5 n −1 n −1 n n",
+       "n −1 where 0 < p < 1 and p+q = 1",
+       "3 8",
+       "or 2 x x oe",
+       "8 n −1"
+      ],
+      "pages": [
+       18
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "implies the previous method marks a correct equation",
+      "allow": [
+       "p x + qx"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "n −1 n −1 with their ratio for",
+       "3 8 5 8 10",
+       "x + x = oe P(2red)+Prob(2Blue)=10/19 or 2×P(red)×Prob(Blue)=9/19",
+       "8 n − 1 8 n − 1 19",
+       "pn − 1 qn − 1",
+       "3 8 n −1 9",
+       "5",
+       "or 2 x x = oe n −1 n −1",
+       "8 n − 1 19 where 0 < p < 1 and p+q = 1",
+       "9 25 10"
+      ],
+      "pages": [
+       18
+      ]
+     },
+     {
+      "id": "P5",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "multiplying throughout by n – 1 or n and n – 1 to",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "8 8 19 remove the denominator to form a correct linear or",
+       "3 3  5 5  10 3 2 quadratic equation without terms in n on the denominator.",
+       "n  n − 1 + n  n − 1 = n(n − 1) or n = 9n oe",
+       "8 8  8 8  19 32 Note: if all terms are on one side, condone the missing‘=0’"
+      ],
+      "pages": [
+       18
+      ]
+     },
+     {
+      "id": "P6",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "cao (ie must have discounted n = 0 if found)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Note: An answer of 96 with no obvious incorrect working",
+       "gets all 6 marks",
+       "Q Working USING n = 8x Answer Mark Notes"
+      ],
+      "pages": [
+       18
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 25,
+   "type": "open",
+   "marks": 3,
+   "commandWord": null,
+   "summaryHint": "Make h the subject of p = h DO NOT WRITE IN THIS AREA \b",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Make h the subject of p"
+    },
+    {
+     "type": "para",
+     "md": "="
+    },
+    {
+     "type": "para",
+     "md": "h"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    },
+    {
+     "type": "answer_lines",
+     "count": 1
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 3,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Multiply by h and collect terms in h on one side. Allow one sign error",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "or or separate the fraction and isolate the term in h. Allow one sign error",
+       "5 −5",
+       "= p − 2 or = 2− p",
+       "h h"
+      ],
+      "pages": [
+       20
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "taking h out as a common factor (dep on two different terms in h)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "or multiplying throughout by h (if separated the fraction and isolated the",
+       "term in h)",
+       "5 −5"
+      ],
+      "pages": [
+       20
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "allow h =",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "p−2 2− p",
+       "5 −5",
+       "Do not isw but condone or on the answer line, provided",
+       "p−2 2− p",
+       "5 −5",
+       "h= or h = has been seen in the working space",
+       "p−2 2− p",
+       "cas Total 3 marks",
+       "Q Working Answer Mark Notes",
+       "( 4 x + 6 ) = ( 6 x + 4 ) + ( 3x ) − 2 x 3x x ( 6 x + 4 ) cos 60",
+       "2 2 2"
+      ],
+      "pages": [
+       20
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 26,
+   "type": "open",
+   "marks": 6,
+   "commandWord": null,
+   "summaryHint": "B DO NOT WRITE IN THIS AREA Diagram NOT accurately drawn 60° A C The diagram shows triangle ABC AB x 4 6 cm BC x 3 cm AC x 6 4 cm  ACB \u001b 60 DO NOT WRITE IN THIS AREA Find the area, in cm2 to 3",
+   "stem": [
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "Diagram NOT"
+    },
+    {
+     "type": "para",
+     "md": "accurately drawn"
+    },
+    {
+     "type": "para",
+     "md": "60°"
+    },
+    {
+     "type": "para",
+     "md": "A"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "The diagram shows triangle ABC"
+    },
+    {
+     "type": "para",
+     "md": "AB"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "6"
+    },
+    {
+     "type": "para",
+     "md": "cm"
+    },
+    {
+     "type": "para",
+     "md": "BC"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "cm"
+    },
+    {
+     "type": "para",
+     "md": "AC"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "6"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "cm"
+    },
+    {
+     "type": "para",
+     "md": ""
+    },
+    {
+     "type": "para",
+     "md": "ACB"
+    },
+    {
+     "type": "para",
+     "md": "\u001b"
+    },
+    {
+     "type": "para",
+     "md": "60"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "Find the area, in cm2 to 3 significant figures, of triangle ABC"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "............................................................................................. cm2"
+    },
+    {
+     "type": "para",
+     "md": "\b"
+    }
+   ],
+   "parts": [],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 6,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "for correct substitution into the cosine rule",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Only condone missing brackets around the 6x+4 and 4x+6 if",
+       "oe",
+       "recovered",
+       "or cos 60 = (",
+       "6 x + 4 ) + ( 3x ) − ( 4 x + 6 )",
+       "2 2 2",
+       "oe Note having sin instead of cos is not considered a misread",
+       "2 x 3x x ( 6 x + 4 )"
+      ],
+      "pages": [
+       21
+      ]
+     },
+     {
+      "id": "P2",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Two out of three correct terms in 3TQ or",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "or",
+       "16 x 2 + 36 = 36 x 2 + 16 + 9 x 2 − 18 x 2 − 12 x Expand brackets in a correct equation.",
+       "or Condone two incorrect or missing terms (likely to be having one or",
+       "1 36 x 2 + 48 x + 16 + 9 x 2 − 16 x 2 − 48 x − 36 two signs incorrect on the last two terms eg",
+       "= oe 16 x 2 + 48 x + 36 = 36 x 2 + 48 x + 16 + 9 x 2 + 18 x 2 + 12 x",
+       "2 36 x 2 + 24 x",
+       "1 29 x 2 − 20",
+       "eg =",
+       "2 36 x 2 + 24 x"
+      ],
+      "pages": [
+       21
+      ]
+     },
+     {
+      "id": "P3",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "implies previous method marks",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Simplifying to get correct 3TQ"
+      ],
+      "pages": [
+       21
+      ]
+     },
+     {
+      "id": "P4",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Attempt to solve their three term quadratic, if the quadratic is",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "incorrect the method must be shown.",
+       "For factorisation must multiply out to give 2 of the terms. Allow",
+       "one error if using quadratic equation.",
+       "Implied by x = 2 if previous method mark awarded"
+      ],
+      "pages": [
+       21
+      ]
+     },
+     {
+      "id": "P5",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "indep Correct method to find the area of the triangle may be in",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "oe terms of x or with their x value substituted, ft their value of x.",
+       "2 If x ≠ 2 the working must be shown",
+       "1",
+       "or ( 6 x \"2\"+ 4 )( 3 x \"2\") sin 60",
+       "2",
+       "(4 x + 6) + (3 x) + (6 x + 4)  13 x + 10 ",
+       "s=  =",
+       "or",
+       "2 ",
+       "with",
+       "2 (4 x \"2\"+ 6) + (3 x \"2\") + (6 x \"2\"+ 4)",
+       "s=  = 18 with",
+       "\" s \"x (\" s \"− ( 4 x + 6 ) ) x (\" s \"− 3 x ) x (\" s \"− ( 6 x + 4 ) ) 2",
+       "\"18\"x (\"18\"− ( 4 x \"2\"+ 6 ) ) x (\"18\"− ( 3 x \"2\") ) x (\"18\"− ( 6 x \"2\"+ 4 ) )"
+      ],
+      "pages": [
+       21
+      ]
+     },
+     {
+      "id": "P6",
+      "part": null,
+      "sub": null,
+      "marks": 1,
+      "md": "Condone 24 3 If an answer is given in the range in the",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "working and then rounded incorrectly award full marks",
+       "cas Total 6 marks",
+       "Q Working Answer Mark Notes"
+      ],
+      "pages": [
+       21
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 27,
+   "type": "structured",
+   "marks": 3,
+   "commandWord": "Write",
+   "summaryHint": "Write 8 in the form a b where a and b are prime numbers.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "27a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Write",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Write"
+      },
+      {
+       "type": "para",
+       "md": "8 in the form a b where a and b are prime numbers."
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      23
+     ]
+    },
+    {
+     "id": "27b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Without using your calculator and showing all your working"
+      },
+      {
+       "type": "para",
+       "md": "express 6"
+      },
+      {
+       "type": "para",
+       "md": "2 3"
+      },
+      {
+       "type": "para",
+       "md": "where p and q are integers."
+      },
+      {
+       "type": "para",
+       "md": "in the form"
+      },
+      {
+       "type": "para",
+       "md": "p"
+      },
+      {
+       "type": "para",
+       "md": "q"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "3 2"
+      },
+      {
+       "type": "para",
+       "md": "8"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 3,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "accept a = 2, b = 2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       22
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "Correct method to rationalise the denominator",
+      "allow": [
+       "x or or",
+       "the denominator to be simplified to 10"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "x",
+       "2 2 6+2 3 − 2 6 2 +2 6",
+       "2 − 2 2",
+       "6+2 3 3 2 + 8",
+       "x or",
+       "(",
+       "6+2 3 3 2 + 8 )( ) or",
+       "3 2− 8 3 2+ 8 ( ) ( )",
+       "2 2",
+       "3 2 − 8",
+       "6+2 3 3 2 +2 2",
+       "x oe",
+       "3 2 − \"2 2 \" 3 2 + \"2 2 \"",
+       "6+2 3",
+       "Or 3 2+ 6",
+       "2",
+       "6"
+      ],
+      "pages": [
+       22
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 0,
+      "md": "for + 6 as no method seen to rationalise the denominator",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "2"
+      ],
+      "pages": [
+       22
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "dep on M mark awarded and no incorrect working seen",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "wr Total 3 marks",
+       "Q Working Answer Mark Notes"
+      ],
+      "pages": [
+       22
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 28,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": null,
+   "summaryHint": "x x x x f ( ) 12 4 25 14 3 2 = DO NOT WRITE IN THIS AREA",
+   "stem": [
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "x"
+    },
+    {
+     "type": "para",
+     "md": "f ( )"
+    },
+    {
+     "type": "para",
+     "md": "12"
+    },
+    {
+     "type": "para",
+     "md": "4"
+    },
+    {
+     "type": "para",
+     "md": "25"
+    },
+    {
+     "type": "para",
+     "md": "14"
+    },
+    {
+     "type": "para",
+     "md": "3"
+    },
+    {
+     "type": "para",
+     "md": "2"
+    },
+    {
+     "type": "para",
+     "md": "="
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    }
+   ],
+   "parts": [
+    {
+     "id": "28a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use the factor theorem to show that (3x − 4) is not a factor of f(x)"
+      },
+      {
+       "type": "para",
+       "md": "g(x) = f(x) − 2"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      24
+     ]
+    },
+    {
+     "id": "28b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Factorise fully g(x)"
+      },
+      {
+       "type": "para",
+       "md": "Show clear algebraic working."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "\b"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 6,
+     "sum": 7,
+     "verified": false
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "allow 1.3 or 1.33 for this mark only",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "12   − 4   − 25   + 14 256 64 100",
+       "3 3 3 Allow − − + 14 but do not allow 2",
+       "9 9 3",
+       "without prior working"
+      ],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "f =20",
+       "3 Correct evaluation (to 2) and recognition that",
+       "this is not equal to zero or indicating that they",
+       "know that for it to be a factor then it should be",
+       "equal to 0 ie not just for = 2 therefore not a factor",
+       "Credit can be given for work seen in part (a) if not seen in part (b)"
+      ],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "for realising 3x – 4 is a factor and getting 4x2",
+      "allow": [
+       "( 2 x − 1) and 6x2 or ( 2 x + 3) and 6x2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Division by ( 3 x − 4 ) giving a first term of",
+       " 1",
+       "4x 2 Allow  x −  and 12x2 etc",
+       "eg  2",
+       "4/3 12 –4 –25 12 May be seen as part of long division of synthetic",
+       "16 16 –12 long division (in which case look for the first",
+       "12 –9 0 correct non zero term on the bottom row).",
+       "12"
+      ],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "a correct quadratic ( 6 x 2 − 11x + 4 ) or",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "( 6 x + x − 12) or ( 4 x + 4 x − 3) or",
+       "2 2",
+       "(12 x + 2 x − 24 ) etc",
+       "2"
+      ],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "Correct factorisation of their quotient which",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "must be a 3TQ"
+      ],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "dep on first 2 method marks",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "b",
+      "sub": null,
+      "marks": 0,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       " 3  2  2"
+      ],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "b",
+      "sub": null,
+      "marks": 0,
+      "md": "if they go on to solve but",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       23
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "if solve and",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "identify correct answer on the answer line",
+       "Pearson Education Limited. Registered company number 872828",
+       "with its registered office at 80 Strand, London, WC2R 0RL, United Kingdom"
+      ],
+      "pages": [
+       23
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed",
+   "flags": [
+    "MS-POINTS-DONT-CLOSE",
+    "PART-MARKS-MISMATCH"
+   ]
+  }
+ ]
+}

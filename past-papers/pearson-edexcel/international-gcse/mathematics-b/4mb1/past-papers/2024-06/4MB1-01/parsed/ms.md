@@ -171,7 +171,7 @@
   - Note: BT can be used for BT
   - Note: tan10 = or 20 x tan10 = BT oe
   - Note: 20
-- **P2** (1 mark) — for TAB = 10 (may be seen on diagram) 
+  - Note: 20 20  M1 for TAB = 10 (may be seen on diagram) 
   - Note: or tan 80 = or BT = oe  
   - Note: BT tan 80  or cos10 = 20 
   - Note: BT 20  AT 
@@ -187,7 +187,7 @@
   - Note:  BT sin 80 sin10 
   - Note:  
   - Note:  
-- **P3** (1 mark) — awrt 3.5 allow answer of 3.4 or 3.6 from correct
+- **P2** (1 mark) — awrt 3.5 allow answer of 3.4 or 3.6 from correct
   - Note: cas
   - Note: working
 
@@ -398,7 +398,6 @@
   - Note: Or 2 x "82.8" =
   - Note: n
 - **P4** (1 mark)
-- **P5** (1 mark) — for forming a pair of simultaneous equations in x
   - Note: n 2 n
   - Note: 180 ( n − 2 ) x − 54 360
   - Note: Or 2 x = and =
@@ -432,7 +431,6 @@
   - Note: SC B1 for awrt 3.6 or 16 [from 6 = or
   - Note: 3.3753
   - Note: 6 = k 3 3.375 ]
-- **P4** (1 mark) — for squaring out the brackets on the numerator
 
 **Total for Question 19: 3 marks**
 
@@ -440,7 +438,8 @@
 
 ### 20
 
-- **P1** (1 mark) — for multiplying by or or
+- **P1** (1 mark) — for squaring out the brackets on the numerator
+- **P2** (1 mark) — for multiplying by or or
   - Note: x or x or 45 − 3 3 5 −3 5 −1
   - Note: 45 + 3 45 − 3 3 5 +3 3 5 −3
   - Note: 3 − 45 3−3 5 1− 5
@@ -448,9 +447,9 @@
   - Note: x 3 − 45 3−3 5 1− 5
   - Note: 5 +1 5 −1
   - Note: earlier
-- **P2** (1 mark) — for changing 45 to 3 5 this may be seen earlier
+- **P3** (1 mark) — for changing 45 to 3 5 this may be seen earlier
   - Note: 36 36 4 or for simplifying the denominator to an integer
-- **P3** (1 mark) — dep on 3 M marks awarded
+- **P4** (1 mark) — dep on 3 M marks awarded
 
 **Total for Question 20: 4 marks**
 
@@ -504,7 +503,7 @@
 - **P3** (1 mark) — indep Attempt to invert divisor and multiply.
   - Note: ( 3x − 2 )( x + 4 ) 7 x − 14
   - Note: −5 − 4 x 4x + 5  4x + 5 
-  - Note: wr A1allow or −  
+- **P4** (1 mark) — or −  
   - Note: x+4 −x − 4  x+4 
 
 **Total for Question 22: 4 marks**
@@ -539,7 +538,7 @@
 - **P1** (2 marks) — for method to find the correct area scale factor
   - Note:  30000   25 
   - Note:  3   =  or  6480  3 18.64...  30000  5 31.07...  
-- **P2** (1 mark) — for 3 = or or 3 = or 
+  - Note:  6480   9   M1 for 3 = or or 3 = or 
   - Note: 2  30000  5 31.07...  6480  3 18.64...  
   - Note:  6480   9   2 2 
   - Note:  3   =   6480   30000 
@@ -552,10 +551,10 @@
   - Note: 25
   - Note: SA B + SA B = 8432 or
   - Note: 9
-- **P3** (1 mark) — dep on at least one of the previous M marks awarded. For
+- **P2** (1 mark) — dep on at least one of the previous M marks awarded. For
   - Note: SA A + SA A = 8432 equation using their area SF
   - Note: 25
-- **P4** (1 mark)
+  - Note: May be implied by award of the 4th M1
   - Note: 25 8432 − SAB 9 SAB
   - Note: Or = or =
   - Note: 9 SAB 25 8432 − SAB
@@ -568,13 +567,13 @@
   - Note: 8432
   - Note: SA A =
   - Note: 9
-- **P5** (1 mark) — dep on previous M mark. For making SAB the subject or correct
+- **P3** (1 mark) — dep on previous M mark. For making SAB the subject or correct
   - Note: +1 method to calculate SAB
   - Note: 25
   - Note: 9
   - Note: or  SAB  x 8432  = 2232
   - Note: 34
-- **P6** (1 mark) — awrt 2230
+- **P4** (1 mark) — awrt 2230
 
 **Total for Question 24: 5 marks**
 
@@ -682,5 +681,7 @@
 - **P4** (1 mark) — for substituting x = 3, their value of b and y = 4.4
   - Note: a = 4.4 − 6 x 3−1 + 9 x 3−2 oe into y = a + bx −1 − 9 x −2
 - **P5** (1 mark) — oe
+  - Note: Pearson Education Limited. Registered company number 872828
+  - Note: with its registered office at 80 Strand, London, WC2R 0RL, United Kingdom
 
 **Total for Question 27: 5 marks**
