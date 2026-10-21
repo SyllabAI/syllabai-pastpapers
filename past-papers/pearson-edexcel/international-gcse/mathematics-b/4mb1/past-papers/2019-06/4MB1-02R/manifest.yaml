@@ -37,8 +37,8 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: d964548fbe4e63e30c998fc5edf8ce6a500dc653b02684d839ed5da65a5a4125
-  size_bytes: 2469386
+  sha256: 43e05b1dc1d04c1b4f7df3bcbc018c5412ac21c29981bf1ef6fe26879b2de76b
+  size_bytes: 3398115
   original_filename: June 2019 (R) QP.pdf
   source:
     source_type: third-party-archive
@@ -56,6 +56,7 @@ identification:
   stray_prints: []
   session_printed: June 2019
   notes:
+  - '2026-10-21 OCR repair lane (r0): qp.pdf replaced by a faithful OCR sandwich - original page rasters preserved + invisible tesseract 5.5.0 text layer (300dpi, psm3+psm6 merged, DejaVuSans render_mode=3). Original scan sha256 d964548fbe4e63e30c998fc5edf8ce6a500dc653b02684d839ed5da65a5a4125 (git history). Text-layer census: 11/11 QP footers + paper total 100; two-pass OCR byte-identical; round-trip asserted. Scripts: syllabai-parser-side r0 lane + pdflane QP-footer span patch.'
   - '2026-09-12 file-gap wave (F7): missing qp.pdf fetched from PMT CDN and print-checked - code match: scan+dir+filename; session evidence: no-session-evidence (None); sha256 d964548fbe4e63e3...'
 ingestion:
   agent: SyllabAI ingestion agent
