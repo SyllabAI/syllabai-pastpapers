@@ -374,3 +374,40 @@ fully-imaged subject lane. The bucket-B topical ingestion wave remains HELD
 - Raw sampling post-push: 10 INDEX.jsonl + 20 PNGs byte/sha-verified against
   `main` (scripts/pp_2121_rawcheck.py).
 - Scripts: `scripts/pp_2121_{canon,render,place,qa,rawcheck,doc}.py`.
+
+
+---
+
+# Phase 4b addendum — post-push census correction: 2023-11 gap found and closed (Task 35, 2026-10-25)
+
+## Disclosure
+
+The Phase 4 addendum above (commit `76fe3882b6`) declared 4MA1 image coverage
+complete over "all 21 sessions". A full tree census run immediately after the
+push **disproved that claim**: the canonical corpus holds **19 sessions** (not
+21 — the earlier Phase-2c/3 inventories miscounted), and the four
+`2023-11` dirs (4MA1-1F/1H/2F/2H) were still imageless. 2023-11 had been
+missed by every prior inventory for the same reason as 2020-11/2021-11:
+**exam-mate has no rows for it** (exam-mate "Winter 2023" = January 2023, the
+last January series, already imaged in the lane-B waves; November 2023 — the
+first November sitting after the January series ended — was never listed).
+
+## Closure (same renderer-only route, commit `63cac3020`)
+
+- 4 dirs / **387 PNGs** + images/INDEX.jsonl each, rendered from the canonical
+  manifest-verified repo blobs (identity chain: official_reference /
+  series.normalized "2023-11" / blob sha256+size / PDF page-1 paper reference;
+  covers print "November 2023" — mapping verified, not inferred).
+- INDEX parsed.season "November" (canonical printed series; rowless in
+  exam-mate), same convention as 2020-11/2021-11.
+
+## Corrected totals (verified by full census at `63cac3020`)
+
+- 19 canonical sessions (2018-06 .. 2026-06), **130 paper dirs — 130 with
+  images beside PDFs. 4MA1 is COMPLETE.**
+- Final wave total: 44 dirs, **3,672 PNGs** in 7 session commits
+  (6 x 2020/2021 + 1 x 2023-11); 3,672/3,672 INDEX rows sha256+bytes verified
+  against the pushed blobs; raw sampling 12 dirs / 24 files / 0 failures.
+- The 4 qp-only dirs (2020-06 Foundation, no MS canonically published) stand
+  as disclosed in Phase 4.
+- Bucket-B topical ingestion wave remains HELD (operator decision, unchanged).

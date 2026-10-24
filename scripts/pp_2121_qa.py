@@ -28,11 +28,12 @@ SESSION_UNITS = {
                 "4MA1-2F", "4MA1-2FR", "4MA1-2H", "4MA1-2HR"],
     "2021-06": ["4MA1-1F", "4MA1-1H", "4MA1-2F", "4MA1-2H"],
     "2021-11": ["4MA1-1F", "4MA1-1H", "4MA1-2F", "4MA1-2H"],
+    "2023-11": ["4MA1-1F", "4MA1-1H", "4MA1-2F", "4MA1-2H"],
 }
 
 
 def main():
-    state = json.load(open(f"{ROOT}/pp2026_placement/wave2121_commits.json"))
+    state = json.load(open(f"{ROOT}/pp2026_placement/wave2121b_commits.json"))
     base, tip = state["base"], state["commits"][-1]["commit"]
     fails = 0
 
@@ -74,10 +75,18 @@ def main():
             print(f"  {s}/{u}: png={len(png_files)} idx={len(rows)} "
                   f"(qp={n_kind['qp']} ms={n_kind['ms']}) OK")
 
-    led = sum(c["rows"] for c in state["commits"])
+    led, led_dirs = 0, 0
+    for st in ("wave2121_commits.json", "wave2121b_commits.json"):
+        try:
+            s = json.load(open(f"{ROOT}/pp2026_placement/{st}"))
+            led += s["total_rows"]
+            led_dirs += sum(c["dirs"] for c in s["commits"])
+        except FileNotFoundError:
+            pass
     print(f"\ntotal rows verified sha+bytes: {total_rows} "
-          f"(ledger: {led}, state total: {state['total_rows']}); failures: {fails}")
-    if total_rows != led or total_rows != state["total_rows"]:
+          f"(ledgers: {led}, state total: {state['total_rows']}); "
+          f"failures: {fails}")
+    if total_rows != led:
         print("LEDGER MISMATCH")
         fails += 1
     return 1 if fails else 0

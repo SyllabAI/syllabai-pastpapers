@@ -38,7 +38,7 @@ PP = f"{ROOT}/syllabai-pastpapers"
 WORK = f"{ROOT}/pp2026_placement/wave2121"
 PP_BASE = ("past-papers/pearson-edexcel/international-gcse/mathematics-a/"
            "4ma1/past-papers")
-BASE_EXPECT = "3632b0e6bab58d20da0e30369c6c99c64923a7bf"
+BASE_EXPECT = "76fe3882b66c6fd795d0cf09cb9aba6420c5cdb1"
 
 # season, session, {unit: exam-mate row id or None}
 SESSIONS = [
@@ -57,6 +57,13 @@ SESSIONS = [
     ("Summer", "2021-06", {"1F": "39493", "1H": "39494",
                            "2F": "39495", "2H": "39496"}),
     ("November", "2021-11", {"1F": None, "1H": None,
+                             "2F": None, "2H": None}),
+    # 2023-11 extension: post-push census (Task 35) found the 4 November-2023
+    # dirs imageless too — missed by the Phase-2c/3 session inventories. No
+    # exam-mate rows (Winter 2023 = January 2023, the last January series;
+    # November 2023 was never listed). First November sitting after the
+    # January series ended.
+    ("November", "2023-11", {"1F": None, "1H": None,
                              "2F": None, "2H": None}),
 ]
 

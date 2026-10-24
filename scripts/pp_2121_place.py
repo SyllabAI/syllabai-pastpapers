@@ -14,8 +14,8 @@ import sys
 ROOT = "/home/z/my-project"
 PP = f"{ROOT}/syllabai-pastpapers"
 WORK = f"{ROOT}/pp2026_placement/wave2121"
-STATE = f"{ROOT}/pp2026_placement/wave2121_commits.json"
-BASE_EXPECT = "3632b0e6bab58d20da0e30369c6c99c64923a7bf"
+STATE = f"{ROOT}/pp2026_placement/wave2121b_commits.json"
+BASE_EXPECT = "76fe3882b66c6fd795d0cf09cb9aba6420c5cdb1"
 
 from PIL import Image  # noqa: E402
 
@@ -144,7 +144,14 @@ def main():
     for session in sorted(by_sess):
         root = git("rev-parse", f"{parent}^{{tree}}").strip()
         n_sess = 0
+        n_dirs = 0
         for rec in sorted(by_sess[session], key=lambda r: r["unit"]):
+            unit_path = rec["dest_path"]
+            unit_entries = tree_entries(f"{parent}:{unit_path}")
+            if any(l.split("\t", 1)[1] == "images" for l in unit_entries):
+                print(f"  skip {unit_path} (images/ already present)",
+                      flush=True)
+                continue
             rows = build_rows(rec, base, qa)
             idx = ("\n".join(json.dumps(r, ensure_ascii=False,
                                         separators=(",", ":"))
@@ -152,10 +159,6 @@ def main():
             ldir = f"{WORK}/{rec['session']}_{rec['unit']}"
             with open(f"{ldir}/images_INDEX.jsonl", "wb") as f:
                 f.write(idx)
-            unit_path = rec["dest_path"]
-            unit_entries = tree_entries(f"{parent}:{unit_path}")
-            if any(l.split("\t", 1)[1] == "images" for l in unit_entries):
-                raise RuntimeError(f"{unit_path} already has images/")
             sub_trees = {}
             for kind in ("qp", "ms"):
                 lines = []
@@ -180,20 +183,25 @@ def main():
                                             f"040000 tree {img_sha}\timages"))
             root = splice(root, unit_path.split("/"), new_unit)
             n_sess += len(rows)
+            n_dirs += 1
             total_pngs += len(rows)
             print(f"  {rec['session']}_{rec['unit']}: {len(rows)} rows -> "
                   f"{unit_path}", flush=True)
+        if n_dirs == 0:
+            print(f"== {session}: nothing to place, no commit", flush=True)
+            continue
         commit = git("commit-tree", root, "-p", parent, "-m",
                      f"images(4MA1): place {n_sess} final-wave question renders "
-                     f"beside pdfs ({session} session, {len(by_sess[session])} "
-                     f"paper dirs) - renderer-only completion of the dead-URL "
-                     f"2020/2021 sessions (exam-mate media dead; canonical "
+                     f"beside pdfs ({session} session, {n_dirs} "
+                     f"paper dirs) - renderer-only completion of the imageless "
+                     f"sessions missed by the earlier lane-B inventories (exam-mate "
+                     f"media dead or session unlisted; canonical "
                      f"manifest-verified repo PDFs rendered directly; Winter "
                      f"rows = canonical January series per established mapping); "
                      f"images/INDEX.jsonl per dir; no manifest/pdf changes").strip()
         print(f"== {session}: commit {commit} ({n_sess} rows)", flush=True)
         commits.append({"session": session, "commit": commit, "rows": n_sess,
-                        "dirs": len(by_sess[session])})
+                        "dirs": n_dirs})
         parent = commit
 
     json.dump({"base": base, "commits": commits, "total_rows": total_pngs,

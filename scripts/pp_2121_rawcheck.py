@@ -16,7 +16,8 @@ SAMPLES = [("2020-01", "4MA1-1H"), ("2020-01", "4MA1-2FR"),
            ("2020-06", "4MA1-1F"), ("2020-06", "4MA1-2HR"),
            ("2020-11", "4MA1-1FR"), ("2020-11", "4MA1-2H"),
            ("2021-01", "4MA1-2F"), ("2021-01", "4MA1-1HR"),
-           ("2021-06", "4MA1-1H"), ("2021-11", "4MA1-2H")]
+           ("2021-06", "4MA1-1H"), ("2021-11", "4MA1-2H"),
+           ("2023-11", "4MA1-1F"), ("2023-11", "4MA1-2H")]
 
 
 def gitout(*a):
@@ -34,7 +35,7 @@ def fetch(url):
 
 def main():
     state = json.load(open("/home/z/my-project/pp2026_placement/"
-                           "wave2121_commits.json"))
+                           "wave2121b_commits.json"))
     tip = state["commits"][-1]["commit"]
     fails = 0
     for s, u in SAMPLES:
