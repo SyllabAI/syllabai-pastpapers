@@ -252,3 +252,60 @@ listed them), 2024-01 + 2025-01 (not ingested — see above). Everything else
 - dims_off_vs_paperjson: 1,412/1,476 differ <=1 px (same raster rounding as all
   prior waves; Pillow-actual dims recorded).
 - Scripts: `scripts/pp_refetch_{probe,canon,render,place,qa,rawcheck}.py`.
+
+
+---
+
+# Phase 3 addendum — Winter 2024/2025 rows resolved: November sessions, images placed (Task 34, 2026-10-25)
+
+Operator: "add them in a PDF-ingestion wave" (referring to the 6 Winter rows left
+blocked by the Phase 2c addendum).
+
+## Premise correction (supersedes the Phase 2c "NOT placed" rationale)
+
+Phase 2c treated Winter 2024/2025 as January 2024/2025 and reported the sessions
+"2024-01 and 2025-01 do not exist in this repo... never ingested". Evidence now
+shows **no January 2024/2025 International GCSE sessions exist AT ALL**: Pearson
+discontinued the January series after January 2023; the winter sitting became
+**November** from Nov 2023 (corpus itself has 2023-11; Pearson CDN, PMT and
+independent hubs list no January 2024/2025 4MA1 — verified by 248-URL brute-force
+probes over both Pearson DAM path styles plus source listings). Exam-mate's
+"Winter" season maps to January only for <=2023; **Winter 2024/2025 rows are the
+November 2024/2025 papers** — the canonical dirs already in this repo
+(`2024-11`: 1H/2H; `2025-11`: 1F/1H/2F/2H — unit sets match the lane-B rows
+exactly). No PDF ingestion wave was required; the corpus was already complete.
+
+## What was placed (2 session commits, 6 dirs, 578 PNGs + images/INDEX.jsonl each)
+
+| session | dirs | rows | commit |
+|---------|------|------|--------|
+| 2024-11 | 2 (1H, 2H) | 170 | `1eb83f9cb` |
+| 2025-11 | 4 (1F, 1H, 2F, 2H) | 408 | `f1874ec99` |
+
+- Refetch route = Task 33's: canonical Paperlords blobs extracted from the repo
+  into the lane-B working set (junk Accounting bytes replaced locally), 5-link
+  identity chain (manifest official_reference / series.normalized+printed
+  "November YYYY" / blob sha256+size / page-1 paper reference). Renders from
+  canonical bytes; `render.source_pdf` = canonical blob provenance; INDEX rows
+  keep parsed.season "Winter" (exam-mate row identity) with the mapping note in
+  the render provenance.
+- Note: 2024-11 4MA1-1H ms.pdf is a genuine 11-page condensed mark scheme
+  (canonical blob, cover text verified); its 11 images are page-level.
+- 2025-11 4MA1-2H qp has 38 question crops + 4 kept pages (marker detection
+  partial); page-level kept pages preserve full coverage as designed.
+
+## Coverage after Phase 3
+
+Every 4MA1 paper dir in the corpus (2018-06 .. 2026-06, all 21 sessions) now has
+images beside PDFs, EXCEPT: 2020-01, 2020-06, 2020-11, 2021-01, 2021-06, 2021-11
+(lane-B URLs dead / downloads failed; PDFs canonically present — a future
+renderer-only wave can cover them from canonical blobs exactly like Tasks 33/34)
+and 2024-11/2025-11 are now DONE. The bucket-B topical ingestion wave remains
+HELD (operator decision, unchanged).
+
+## QA (all green)
+
+- diff scope base..tip: 584 paths, 0 outside the 6 expected `images/` subtrees.
+- 578/578 INDEX rows sha256+bytes verified against the pushed blobs.
+- dims_off_vs_paperjson: 548/578 differ <=1 px (raster rounding, as all waves).
+- Scripts: `scripts/pp_nov_{canon,render,place,qa}.py`.
