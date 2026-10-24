@@ -64,3 +64,55 @@ with a per-dir `images/INDEX.jsonl` (corpus ledger schema + provenance).
 - Spot-checked full chain: INDEX row -> git blob sha256 == ledger sha256 == recomputed sha256.
 - Scripts: `scripts/pp_place_join.py` (join tables), `scripts/pp_place_commit.py` (placement),
   `scripts/pp_place_batches.sh` (batch runner). Working data: pp2026_placement/*.json[l].
+
+
+---
+
+# Phase 2 addendum — 4MA1 lane-B renders + SPM recount (Task 31, 2026-10-25)
+
+Operator bundle: "go phase 2, recount SPM, hold bucket-B".
+
+## Phase 2 — 4MA1 Summer 2026 question renders (lane-B)
+
+- Placed commit: `da29adb9` on top of this report's base. 4 paper dirs:
+  `2026-06/4MA1-{1H,1HR,2H,2HR}` — 420 PNGs + `images/INDEX.jsonl` each
+  (1H 105, 1HR 110, 2H 106, 2HR 99 rows = 420).
+- Render provenance: crops rendered locally from exam-mate full-paper PDF byte-copies
+  (lane-B working set, unversioned). Canonical repo PDFs are Paperlords bytes of the SAME
+  upstream original_filename; byte shas differ (exam-mate re-save) but page counts verified
+  equal per paper/kind via pypdf (28/29, 28/32, 32/26, 28/29).
+- INDEX rows carry `render` provenance (source_pdf url+sha256+bytes, render_kind
+  page|question-crop, per-crop questions[] with bbox anchors, tool) and `src` pointing at the
+  lane-B working set + paper.json. Ledger schema otherwise aligned with Phase-1 rows
+  (null url/qid/topics for renders is intentional — these are not exam-mate question-bank assets).
+- Verification: all 420 files sha256+bytes EXACT vs lane-B paper.json; dims recomputed with
+  Pillow and recorded as-actual (418/420 differ from paper.json's recorded dims by <=1 px —
+  raster rounding; paper.json values were approximate).
+- Files: `images/{qp,ms}/*.png` (question crops `qp_qNN_pMM[_cont].png`, kept full pages
+  `qp_pMM.png` for covers/instructions/answer-book leaves). No manifest or pdf changes.
+- lane-B remainder status: 62/75 discovered papers have local PDFs; the 15 papers with no
+  resolved URL are ALL 2020 sessions (exam-mate lists the rows but hosts no PDFs — Summer 2020
+  sat not, Winter 2020 not hosted); 13 papers (2021 sessions + 2HR Winter 2020) had URLs but
+  failed downloads. Corpus impact: ZERO — this repo already holds canonical PDFs for every
+  4MA1 session 2018-06..2026-06 (19 sessions), incl. all 2020/2021 sessions. URL resolution is
+  therefore a no-op for the corpus and was not pursued further.
+
+## SPM recount (Task 25 QA flag, closed)
+
+- Commit `3da2f2fd3` message claimed "SPM x8 subjects (1,984 PNGs...)".
+- Recount from origin trees (scripts/spm_recount.py): 1,344 PNG files == 1,344 INDEX.jsonl
+  rows, with EXACT relative-path set equality in all 8 subjects
+  (Geography 218, Pendidikan Syariah Islamiah 114, Sejarah 319, Ekonomi 313,
+  Tasawwur Islam 108, Pendidikan Islam 34, Bahasa Melayu 132, Pendidikan Al-Quran 106).
+  Repo-1 questions.jsonl: 590 questions across the 8 subjects.
+- VERDICT: no images are missing; the 1,984 figure in the commit message is unsupported
+  (delta 640). Tree + ledger are authoritative and consistent. Note: SPM INDEX rows use
+  kind "question"/"answer" (unlike "qp"/"ms" in the topical bank).
+
+## Decisions recorded (operator, 2026-10-25)
+
+- Phase 2 (4MA1 lane-B placement): DONE by this addendum's commits.
+- Phase 3 (bucket-B PDF ingestion wave): HELD — no ingestion, no placement for the
+  43,411 unmatched rows until the operator opens that wave.
+- Main-bank 2020+ topical (paywalled years): Route B retained (untopical bank 27 subjects
+  2020-2026); Route A (subscription login) not pursued.
