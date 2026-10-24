@@ -309,3 +309,68 @@ HELD (operator decision, unchanged).
 - 578/578 INDEX rows sha256+bytes verified against the pushed blobs.
 - dims_off_vs_paperjson: 548/578 differ <=1 px (raster rounding, as all waves).
 - Scripts: `scripts/pp_nov_{canon,render,place,qa}.py`.
+
+
+---
+
+# Phase 4 addendum — final 2020/2021 renderer-only wave: 4MA1 image coverage complete (Task 35, 2026-10-25)
+
+Operator: "run that final 2020/2021 wave to fully complete 4MA1".
+
+## Scope
+
+The six remaining imageless sessions (2020-01, 2020-06, 2020-11, 2021-01,
+2021-06, 2021-11 — exam-mate media URLs dead since the original lane-B harvest)
+hold **40 paper dirs**, all with canonical PDFs + manifests already in the repo.
+Renderer-only wave: canonical blobs rendered directly, no PDF ingestion.
+
+## Identity mapping (verified, not inferred)
+
+- exam-mate Winter 2020/2021 rows = canonical **January** 2020/2021 series
+  (exam-mate Winter = January for <=2023; established by the 2022 wave: Winter
+  2022 rows live in `2022-01` with exam-mate URL exam-date 2022-01-18). 8 rows
+  each, unit sets match exactly (1F/1FR/1H/1HR/2F/2FR/2H/2HR).
+- exam-mate Summer 2020 rows (8) -> `2020-06`; Summer 2021 rows (4) -> `2021-06`
+  (FR variants not listed by exam-mate for Summer 2021; canonical dirs match).
+- `2020-11` (8 dirs) and `2021-11` (4 dirs) have **no exam-mate rows** (exam-mate
+  lists only Winter/Summer 4MA1 rows for this era); rendered directly from the
+  canonical November dirs. INDEX rows for these use parsed.season "November"
+  (canonical printed series); row-mapped dirs keep the exam-mate season label
+  per the Phase-3 convention.
+- COVID-era note (from the manifests themselves): the June 2020 sitting was
+  cancelled; `2020-06`/`2020-11` papers are the November-2020-window reuse
+  (series.printed "May 2020; June 2020; November 2020"; MS covers print
+  "Mark Scheme (Results) November 2020"). Identity chain per paper stayed
+  strict: manifest official_reference / series.normalized / blob sha256+size /
+  PDF page-1 paper reference.
+- **qp-only dirs (4)**: `2020-06` Foundation 1F/1FR/2F/2FR have no mark scheme
+  in the canonical corpus (no June-2020 Foundation MS was published; the
+  manifests carry QP only). These 4 dirs get `images/qp/` + INDEX.jsonl with
+  **no `images/ms/` subtree** — placed exactly as ingested, nothing fabricated.
+
+## What was placed (6 session commits, 40 dirs, 3285 PNGs + images/INDEX.jsonl each)
+
+| session | dirs | rows | commit |
+|---------|------|------|--------|
+| 2020-01 | 8 | 547 | `e6c5c4a14` |
+| 2020-06 | 8 | 559 | `81840e1f2` |
+| 2020-11 | 8 | 723 | `378cc389a` |
+| 2021-01 | 8 | 697 | `00e4a778d` |
+| 2021-06 | 4 | 405 | `6d705a053` |
+| 2021-11 | 4 | 354 | `93abbb82f` |
+
+## Coverage after Phase 4
+
+**Every 4MA1 paper dir in the corpus (2018-06 .. 2026-06, all 21 sessions, 100%
+of dirs) now has question-level page renders beside PDFs.** 4MA1 is the first
+fully-imaged subject lane. The bucket-B topical ingestion wave remains HELD
+(operator decision, unchanged).
+
+## QA (all green)
+
+- diff scope base..tip: only the 40 expected `images/` subtrees changed.
+- 3285/3285 INDEX rows sha256+bytes verified against the pushed blobs.
+- dims_off_vs_paperjson: 3123/3285 differ <=1 px (raster rounding, as all waves).
+- Raw sampling post-push: 10 INDEX.jsonl + 20 PNGs byte/sha-verified against
+  `main` (scripts/pp_2121_rawcheck.py).
+- Scripts: `scripts/pp_2121_{canon,render,place,qa,rawcheck,doc}.py`.
