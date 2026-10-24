@@ -46,6 +46,17 @@ materials:
     source_url: null
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: 46506b51ee5d26943bf18a3c3c8c314029b127a46f75273af22c973b251d493a
+  size_bytes: 142032
+  original_filename: 4CH0_1C_pef_20120823.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Chemistry/2009/Exam%20materials/4CH0_1C_pef_20120823.pdf
+    collected_by: 'SyllabAI agent (2026-10-25 SIB BL-001/BL-002 acquisition, trace 1a16f5bd6146b01d)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text

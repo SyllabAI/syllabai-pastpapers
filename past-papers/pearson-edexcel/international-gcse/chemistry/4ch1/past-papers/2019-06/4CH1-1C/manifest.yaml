@@ -49,6 +49,17 @@ materials:
     collected_by: operator (download date not recorded)
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
       present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: e14628f8506f3979c7e22873175135eeaa372fe111c613c821e4c25c3cd19ff0
+  size_bytes: 2841780
+  original_filename: 4CH1_1C_pef_20190822.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Chemistry/2017/exam-materials/4CH1_1C_pef_20190822.pdf
+    collected_by: 'SyllabAI agent (2026-10-25 SIB BL-001/BL-002 acquisition, trace 1a16f5bd6146b01d)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
