@@ -116,3 +116,61 @@ Operator bundle: "go phase 2, recount SPM, hold bucket-B".
   43,411 unmatched rows until the operator opens that wave.
 - Main-bank 2020+ topical (paywalled years): Route B retained (untopical bank 27 subjects
   2020-2026); Route A (subscription login) not pursued.
+
+
+---
+
+# Phase 2b addendum — 4MA1 2022-2024 lane-B renders (Task 32, 2026-10-25)
+
+Operator: "run the 2022-2025 4MA1 renders".
+
+## What was placed
+
+- 5 per-session commits on top of the Phase-2 chain, 37 paper dirs, 3,685 PNGs +
+  images/INDEX.jsonl each:
+  `2022-01` 8 dirs 781 rows (88ff81e9), `2022-06` 8 dirs 793 rows (c6d0df0e),
+  `2023-01` 8 dirs 804 rows (951a61f7), `2023-06` 8 dirs 808 rows (f82996d1),
+  `2024-06` 5 dirs 499 rows (e534111a).
+- NOTE on sessions: exam-mate labels the Edexcel **January** series "Winter"; all lane-B
+  Winter rows are January papers (proven per-PDF: exam-mate URL filenames `Jan-22-P1H-QP.pdf`,
+  `4ma1-1h-que-20230111.pdf` = 11 Jan 2023 exam date). Dest sessions are the canonical
+  2022-01/2023-01 dirs. INDEX rows keep parsed.season "Winter" (exam-mate row naming) with a
+  source_pdf note explaining the January mapping. The repo's 2023-11/2024-11/2025-11 November
+  sessions have no lane-B counterpart (exam-mate never listed them).
+- Ledger schema identical to the 2026 rows (render provenance block, source_pdf url+sha+bytes,
+  render_kind, questions[] anchors); QA: 3,547/3,685 dims differ from paper.json's recorded
+  values by <=1 px (same raster rounding as 2026; actual Pillow dims recorded).
+
+## Identity verification (why these 37 are trustworthy)
+
+Every placed dir passed a 4-link identity chain:
+1. exam-mate URL filename session == lane-B dirname session (May/June->06, Jan->01,
+   exam-date months mapped: 04/05/06->06, 01->01, 10/11->11);
+2. dest dir exists canonically in this repo;
+3. page-count equality lane-B PDF vs canonical repo PDF for BOTH qp.pdf and ms.pdf
+   (pypdf) — all 74 PDFs matched;
+4. raster sha256+bytes re-verified at placement time (0 mismatches).
+
+## What was NOT placed (17 misfiled lane-B dirs — reported, never inferred)
+
+The lane-B working set contains 17 dirs whose PDFs are byte-identical copies of ONE junk
+paper: an exam-mate-hosted `0985-Accounting-(9-1)-June-2026-Question-Paper--22.pdf` /
+`...-Mark-Scheme--22.pdf` pair (sha 430ba088de / 5588b1be44). Root cause: exam-mate's own
+viewer-URL resolver served that Accounting pair for 17 Edexcel-maths rows (2024 Summer H
+family, ALL Summer 2025, Winter 2024/2025 H+F rows) — the URLs are still visible in the
+lane-B paper_urls.json. Also affected: the 4 F/FR Summer-2026 dirs (so the genuine June-2026
+1F/1FR/2F/2FR renders remain un-harvested; the H family 2026 was placed in Phase 2 from
+clean URLs). These 17 dirs were excluded from rendering/placement entirely.
+Re-fetch candidates for a future wave (fresh exam-mate resolver run, verify URL filename
+before download): 1H/1HR/2H/2HR Summer 2024, all 8 Summer 2025, 1H/2H Winter 2024,
+1F/2F/1H/2H Winter 2025, and the 4 F/FR Summer 2026 papers.
+
+## Coverage after this addendum
+
+4MA1 images now co-located with PDFs for: 2018-06..2019-06 (topical bank, Phase 1),
+2022-01, 2022-06, 2023-01, 2023-06, 2024-06 (partial: 5/8 units), 2026-06 (partial: 4/8
+units, H family). Still imageless: 2020-01, 2020-06, 2020-11, 2021-01, 2021-06, 2021-11
+(lane-B had URLs but downloads failed; PDFs canonically present), 2024-06 (1H/1HR/2H/2HR
+missing - misfiled junk), 2024-11, 2025-06, 2025-11, 2026-06 (F/FR units). Sessions
+2019-11 and 2022-11 do not exist in this repo (January series is the winter sitting for
+those years).
