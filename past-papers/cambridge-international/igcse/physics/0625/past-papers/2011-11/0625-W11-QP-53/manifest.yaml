@@ -1,0 +1,67 @@
+paper_id: cambridge-international:igcse:physics:0625:2011-11:0625/53
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: physics
+specification:
+  folder: '0625'
+  title: Cambridge IGCSE Physics (0625)
+series:
+  normalized: 2011-11
+  year: '2011'
+  session_month: '11'
+  printed: October/November 2011
+  source: pdf+filename
+paper:
+  official_reference: 0625/53
+  unit_code: '0625'
+  paper_number: '5'
+  paper_number_variant: '53'
+  variant: '3'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: bd4f9d619abfb8cc77d2f5638d297d867f042fd8520827058a7cb3bc441350a9
+  size_bytes: 124585
+  original_filename: 0625_w11_qp_53.pdf
+  pages: 12
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Physics%20(0625)/0625_w11_qp_53.pdf
+    collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: d2f1346ac995e5f06f10b0be23b49b44d3d6fa27d0b64ecbb38a12ec9cafe04b
+  size_bytes: 109620
+  original_filename: 0625_w11_ms_53.pdf
+  pages: 3
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Physics%20(0625)/0625_w11_ms_53.pdf
+    collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0625/53
+  stray_prints: []
+  session_printed: October/November 2011
+  notes:
+  - '2026-10-25 bucket-B PDF-ingestion wave (operator direction: ''PDF-ingestion wave''); source listings
+    crawled from XtremePapers CAIE subject dirs; every material print-checked for syllabus code, session
+    and component before acceptance'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-25'
+  source_repo: XtremePapers (CAIE section)
+  verification_status: AI-IDENTIFIED
