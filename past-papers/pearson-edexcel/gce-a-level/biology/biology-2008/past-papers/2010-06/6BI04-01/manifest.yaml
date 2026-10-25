@@ -1,0 +1,67 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2010-06:6BI04/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2010-06
+  year: '2010'
+  session_month: '06'
+  printed: June 2010
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI04/01
+  unit_code: 6BI04
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 34b9bc2c1af2c7be9a16086f0dfbae1747aa417cb549f335fc92ca33d666ba94
+  size_bytes: 142409
+  pages: 21
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI04_01_msc_20100714.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 51ed7245cd014a9663cd844bd67ef9ef47f7d904b9e34df8c65dbadb49f73afd
+  size_bytes: 551322
+  pages: 24
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI04_01_que_20100616.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6BI04/01
+  stray_prints: []
+  session_printed: June 2010
+  notes:
+  - ref=6BI04/01 session=June 2010
+  - ref=6BI04/01 session=June 2010
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE-science-lanes PDF-ingestion wave
+  verification_status: AI-IDENTIFIED
+  notes: []
