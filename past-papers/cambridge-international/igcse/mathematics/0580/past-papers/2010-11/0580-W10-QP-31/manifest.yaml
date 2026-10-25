@@ -1,0 +1,67 @@
+paper_id: cambridge-international:igcse:mathematics:0580:2010-11:0580/31
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: mathematics
+specification:
+  folder: 0580
+  title: Cambridge IGCSE Mathematics (0580)
+series:
+  normalized: 2010-11
+  year: '2010'
+  session_month: '11'
+  printed: October/November 2010
+  source: pdf+filename
+paper:
+  official_reference: 0580/31
+  unit_code: 0580
+  paper_number: '3'
+  paper_number_variant: '31'
+  variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: f1924e3703d4cdcac3df9734ef5b7761d4f7af2ea72ea6a163a814c55fef269b
+  size_bytes: 268027
+  original_filename: 0580_w10_qp_31.pdf
+  pages: 16
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Mathematics%20(0580)/0580_w10_qp_31.pdf
+    collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5b052360717c5b524ebfe0008e79681ce90968a55ad79f65821107d1e7b461b5
+  size_bytes: 138857
+  original_filename: 0580_w10_ms_31.pdf
+  pages: 4
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Mathematics%20(0580)/0580_w10_ms_31.pdf
+    collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 0580/31
+  stray_prints: []
+  session_printed: October/November 2010
+  notes:
+  - '2026-10-25 bucket-B PDF-ingestion wave (operator direction: ''PDF-ingestion wave''); source listings
+    crawled from XtremePapers CAIE subject dirs; every material print-checked for syllabus code, session
+    and component before acceptance'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-25'
+  source_repo: XtremePapers (CAIE section)
+  verification_status: AI-IDENTIFIED
