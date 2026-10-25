@@ -1,0 +1,74 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma0:2019-01:4MA0/1F
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma0
+  title: Edexcel International GCSE Mathematics A (4MA0)
+series:
+  normalized: 2019-01
+  year: '2019'
+  session_month: '01'
+  printed: January 2019
+  source: visual+index-row
+paper:
+  official_reference: 4MA0/1F
+  unit_code: 4MA0
+  paper_number_variant: 1F
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 8ec1e57c4cb17949aa48a8d9c4089c582ef14532ea1d49b28613fa5d22981e13
+  size_bytes: 570546
+  original_filename: 4MA0_1F_msc_20190307.pdf
+  pages: 19
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Mathematics A/2009/Exam
+      materials/4MA0_1F_msc_20190307.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel mark-scheme; identity verified from printed PDF text (spec code, paper
+      reference, session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 5db8c478e2a542ba4aa90fd5b90171e4a201c76bda7b7e23bd830703d9bc41c7
+  size_bytes: 1070771
+  original_filename: 4MA0_1F_que_20190110.pdf
+  pages: 20
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Mathematics A/2009/Exam
+      materials/4MA0_1F_que_20190110.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel question-paper; identity verified by rendered-cover visual check (scanned
+      cover, no text layer) + Pearson index row of record
+identification:
+  methods:
+  - pdf_text
+  - visual
+  confidence_rank: 1
+  printed_references_seen:
+  - 4MA0/1F
+  - P55640A
+  stray_prints: []
+  session_printed: January 2019
+  notes:
+  - 'QP cover (scanned image) visual check: cover renders ''4MA0/1F'', ''Monday 7 January 2019'', Mathematics
+    A, Foundation Tier, P55640A'
+  - series month from Pearson catalog row of record; QP cover prints the exam date rather than the series
+    phrase
+  - 'index rows of record: QP ''Question paper - Paper 1F - January 2019'', MS ''Mark scheme - Paper 1F
+    - January 2019'' (Algolia qualifications-uk_LIVE_master-content, gating=false)'
+ingestion:
+  agent: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+  run_date: '2026-10-26'

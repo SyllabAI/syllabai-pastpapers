@@ -1,0 +1,68 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma0:2018-06:4MA0/4HR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma0
+  title: Edexcel International GCSE Mathematics A (4MA0)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: pdf_text+index-row
+paper:
+  official_reference: 4MA0/4HR
+  unit_code: 4MA0
+  paper_number_variant: 4HR
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 35bba3ae4f9072463a891c9d8231b904dbfed22713fabc809033ea37b975a240
+  size_bytes: 693846
+  original_filename: 4MA0_4HR_rms_20180822.pdf
+  pages: 18
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Mathematics A/2009/Exam
+      materials/4MA0_4HR_rms_20180822.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel mark-scheme; identity verified from printed PDF text (spec code, paper
+      reference, session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 6776cf79657343628102a6361ad122a01459528335a8cae567e63da2ce749d66
+  size_bytes: 318619
+  original_filename: 4MA0_4HR_que_20180608.pdf
+  pages: 24
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Mathematics A/2009/Exam
+      materials/4MA0_4HR_que_20180608.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel question-paper; identity verified from printed PDF text (spec code,
+      paper reference, session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA0/4HR
+  stray_prints: []
+  session_printed: June 2018
+  notes:
+  - 'index rows of record: QP ''Question paper - Paper 4HR - June 2018'', MS ''Mark scheme - Paper 4HR
+    - June 2018'' (Algolia qualifications-uk_LIVE_master-content, gating=false)'
+ingestion:
+  agent: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+  run_date: '2026-10-26'

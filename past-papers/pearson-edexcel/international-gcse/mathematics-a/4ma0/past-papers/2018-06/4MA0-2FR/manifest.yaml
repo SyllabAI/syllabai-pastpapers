@@ -1,0 +1,68 @@
+paper_id: pearson-edexcel:international-gcse:mathematics-a:4ma0:2018-06:4MA0/2FR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: mathematics-a
+specification:
+  folder: 4ma0
+  title: Edexcel International GCSE Mathematics A (4MA0)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: pdf_text+index-row
+paper:
+  official_reference: 4MA0/2FR
+  unit_code: 4MA0
+  paper_number_variant: 2FR
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c5d009b5f50b967bae928426fa2ac2d7537755c1f927f537cf871a10da9e424a
+  size_bytes: 645838
+  original_filename: 4MA0_2FR_rms_20180822.pdf
+  pages: 14
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Mathematics A/2009/Exam
+      materials/4MA0_2FR_rms_20180822.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel mark-scheme; identity verified from printed PDF text (spec code, paper
+      reference, session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 5390ad609738fa373cb179f7d6b5cd0a9de5f0983c85f5a7e76139c59b492a7f
+  size_bytes: 275027
+  original_filename: 4MA0_2FR_que_20180608.pdf
+  pages: 24
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Mathematics A/2009/Exam
+      materials/4MA0_2FR_que_20180608.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel question-paper; identity verified from printed PDF text (spec code,
+      paper reference, session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4MA0/2FR
+  stray_prints: []
+  session_printed: June 2018
+  notes:
+  - 'index rows of record: QP ''Question paper - Paper 2FR - June 2018'', MS ''Mark scheme - Paper 2FR
+    - June 2018'' (Algolia qualifications-uk_LIVE_master-content, gating=false)'
+ingestion:
+  agent: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+  run_date: '2026-10-26'
