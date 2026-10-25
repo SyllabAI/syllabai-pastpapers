@@ -1,0 +1,68 @@
+paper_id: pearson-edexcel:international-gcse:chemistry:4ch0:2018-06:4CH0/2CR
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-gcse
+  name: International GCSE
+subject: chemistry
+specification:
+  folder: 4ch0
+  title: Edexcel International GCSE Chemistry (4CH0)
+series:
+  normalized: 2018-06
+  year: '2018'
+  session_month: '06'
+  printed: June 2018
+  source: pdf_text+index-row
+paper:
+  official_reference: 4CH0/2CR
+  unit_code: 4CH0
+  paper_number_variant: 2CR
+variant:
+  official_code: R
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c141faf42f2914ab7700ead5d183a52b7f5ea535451f2b3867be03638ef370c9
+  size_bytes: 346801
+  original_filename: 4CH0_2CR_rms_20180822.pdf
+  pages: 17
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Chemistry/2011/Exam
+      materials/4CH0_2CR_rms_20180822.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel mark-scheme; identity verified from printed PDF text (spec code, paper
+      reference, session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 8c549b6ca2e9e8fdec5529c6575f2b9d6ba8bcfbddbef45f4d036f0af483b437
+  size_bytes: 146542
+  original_filename: 4CH0_2CR_que_20180614.pdf
+  pages: 20
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International GCSE/Chemistry/2011/Exam
+      materials/4CH0_2CR_que_20180614.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel question-paper; identity verified from printed PDF text (spec code,
+      paper reference, session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 4CH0/2CR
+  stray_prints: []
+  session_printed: June 2018
+  notes:
+  - 'index rows of record: QP ''Question paper - Paper 2CR - June 2018'', MS ''Mark scheme - Paper 2CR
+    - June 2018'' (Algolia qualifications-uk_LIVE_master-content, gating=false)'
+ingestion:
+  agent: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+  run_date: '2026-10-26'
