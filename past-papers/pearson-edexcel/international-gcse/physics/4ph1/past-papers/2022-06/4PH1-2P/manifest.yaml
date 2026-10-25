@@ -37,16 +37,17 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 362e9de898fefe4d9a9c802fc07ea75f6646e396c85abd4fd71c52bd885e05e8
-  size_bytes: 1497922
-  original_filename: 4ph1-2p-pef-20220825.pdf
+  sha256: 210d97236e5ff757ffa57605694e225f4ccf2861d2a39abc2b15e8556a444826
+  size_bytes: 1014788
+  original_filename: IGCSE_PHYSICS_2022_MayJune_P2_QP.pdf
   source:
-    source_type: official-board-website
-    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
-    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2017/exam-materials/4ph1-2p-pef-20220825.pdf
-    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
-    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH1/2PR regional paper mis-filed under this
-      dir)
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Physics/MayJune%202022/IGCSE_PHYSICS_2022_MayJune_P2_QP.pdf
+    collected_by: SyllabAI agent (2026-10-25 mislabel-repair wave)
+    note: official Pearson Edexcel question paper; content-verified before landing (cover variant 2P;
+      footer marks sum 70; QP log number P70953A matches the mark scheme of record's 'Question Paper Log
+      Number' line)
 identification:
   methods:
   - pdf_text
@@ -57,8 +58,14 @@ identification:
   stray_prints: []
   session_printed: June 2022
   notes:
-  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf previously held the PMT ''(R)'' file — the 4PH1/2PR regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf previously held the PMT ''(R)'' file — the 4PH1/2PR regional
+    paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
     portal content-dam (identity evidence: catalog title + cover furniture, session printed June 2022)'
+  - '2026-10-25 mislabel-repair wave (Task 15): qp.pdf previously held a wrong Pearson DAM artifact staged
+    by the 2026-10-02 corpus-fix wave (F-A2) — 4ph1-2p-pef-20220825.pdf (Pearson examiners'' report staged
+    as question paper) — whose sha256 faithfully matched this manifest, so the defect was invisible to
+    byte-level checks. Content-level cover sweep (physics-intake sweep receipt) flagged it; replaced with
+    the content-verified plain question paper above.'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'

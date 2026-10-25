@@ -37,16 +37,17 @@ materials:
     note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: question-paper
   path: qp.pdf
-  sha256: 48a8e20e744a5205bb4b160bf6a436f8cc967660698eaffb8139d5f723c8c58d
-  size_bytes: 631125
-  original_filename: 4ph1-1p-rms-20230824.pdf
+  sha256: 8a872d304ddb3eb03c54b6c404841858e494c0c5449eb33fa04747d7a2dc82c3
+  size_bytes: 787119
+  original_filename: IGCSE_PHYSICS_2023_MayJune_P1_QP.pdf
   source:
-    source_type: official-board-website
-    archive: Pearson qualifications portal (qualifications.pearson.com content-dam)
-    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Physics/2017/Exam-materials/4ph1-1p-rms-20230824.pdf
-    collected_by: SyllabAI agent (2026-10-02 corpus-fix wave (F-A2))
-    note: official Pearson Edexcel document downloaded directly from the board's public DAM; replaces the PMT '(R)' file previously stored here (that PDF is the 4PH1/1PR regional paper mis-filed under this
-      dir)
+    source_type: third-party-archive
+    archive: Paperlords (paperlords.org archive CDN)
+    source_url: https://archive.paperlords.org/library/IGCSE/Physics/MayJune%202023/IGCSE_PHYSICS_2023_MayJune_P1_QP.pdf
+    collected_by: SyllabAI agent (2026-10-25 mislabel-repair wave)
+    note: official Pearson Edexcel question paper; content-verified before landing (cover variant 1P;
+      footer marks sum 110; QP log number P71955A matches the mark scheme of record's 'Question Paper
+      Log Number' line)
 - type: examiner-report
   path: er.pdf
   sha256: b448b7664fde0f1da7367e2519cdc8c1d15770258227e995acb2236607e0f98b
@@ -57,8 +58,8 @@ materials:
     archive: Paperlords (paperlords.org archive CDN)
     source_url: https://archive.paperlords.org/library/IGCSE/Physics/MayJune%202023/IGCSE_PHYSICS_2023_MayJune_P1_ER.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining
-      subjects)'
+    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
+      2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
 identification:
   methods:
   - pdf_text
@@ -69,9 +70,15 @@ identification:
   stray_prints: []
   session_printed: Summer 2023
   notes:
-  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf previously held the PMT ''(R)'' file — the 4PH1/1PR regional paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
+  - '2026-10-02 corpus-fix wave (F-A2): qp.pdf previously held the PMT ''(R)'' file — the 4PH1/1PR regional
+    paper mis-filed under this dir — replaced with the official plain document from the Pearson qualifications
     portal content-dam (identity evidence: catalog title + cover furniture, session printed Summer 2023)'
   - '2026-09-14 wave 8: additional material added from Paperlords (2026-09-14 wave 8)'
+  - '2026-10-25 mislabel-repair wave (Task 15): qp.pdf previously held a wrong Pearson DAM artifact staged
+    by the 2026-10-02 corpus-fix wave (F-A2) — 4ph1-1p-rms-20230824.pdf (Pearson mark scheme staged as
+    question paper) — whose sha256 faithfully matched this manifest, so the defect was invisible to byte-level
+    checks. Content-level cover sweep (physics-intake sweep receipt) flagged it; replaced with the content-verified
+    plain question paper above.'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
