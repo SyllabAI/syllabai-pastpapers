@@ -690,3 +690,58 @@ exactly the Phase-6 delta, nothing more.
   working data `pp2026_placement/wave_backfill/`.
 
 Post-push raw verification is recorded in the push report below.
+## Phase-8 addendum — placement wave for the 102 already-exist classes RATIFIED and EXECUTED (Task 42, 2026-10-26)
+
+Operator direction: **"ratify the placement wave for the 102 already-exist classes"** — releases the
+disposition queued by [EDXCEL-TRANCHE-2026-10-26.md](EDXCEL-TRANCHE-2026-10-26.md) ("102 already-exist
+classes (2,957 rows) — placement-wave candidates ... Queued for the next placement wave with these
+remap rules"). Base `a410c6773` (Task-41 tip), tip `4dfb98a88`.
+
+### Scope (recomputed, fingerprint-exact)
+
+- Source: the Task-40 back-fill join's unmatched ledger filtered to the class table's `exists=True`
+  rows -> exactly **102 (code, unit, session) classes / 2,957 unmatched lines**, per-rule split
+  identical to the tranche docs: gce-direct 995 (WMA01 bank C1-C4/CxR -> 6663-6666 dirs),
+  igcse-direct 1,259 (4MB0/4MB1/4PM1 `NR` labels -> existing `-0NR` dirs), ial09-unit 628
+  (plain `W*01/N` rows 2014-06/2015-06 -> existing `W*0N-01` dirs), ial-c12c34-split 75
+  (`Cx(IAL)` 2014-01 -> WMA01/02-01).
+- Full ledger rows re-pulled from the source INDEXes by (repo, subject-dir, qid, paper_ref):
+  2,957/2,957 recovered per-key exact, 0 non-qp/ms, 0 `(url,kind)` collapses, 0 sha conflicts,
+  **0 rows already in their target INDEX** (nothing double-placed).
+- Targets: **100 paper dirs across 17 lanes** (4mb0, 4mb1, 4pm1, 6663, 6664, 6665, 6666,
+  wbi02, wbi04, wbi05, wch02, wch04, wch05, wma01, wma02, wph02, wph05); source dirs all inside
+  the pinned banks (`repo1 @ 1944b81a` 4_IGCSE/40_Mathematics_B_4MB0_, `repo2 @ 563df542`
+  6_A-LEVEL/61_Biology_WBI01_ + 63_Chemistry_WCH01_ + 65_Maths_Core_WMA01_WMA02_ +
+  70_Physics_WPH01_, 21_IGCSE_9-1_/634_Further_Pure + 637_Mathematics_B). All 2,957 source
+  blobs present (repo2: 1,228 bulk-fetched via multi-SHA chunks).
+
+### Placement semantics (one important discovery)
+
+Task 41's "already exist" meant the **paper dir exists (manifest + PDFs)** — not that it was imaged.
+At base, 44/100 target dirs already carried `images/INDEX.jsonl` (renderer or earlier bank waves) and
+56/100 (all 54 GCE 6663-6666 dirs 2009-01..2015-06 + 4PM1-01R/02R 2019-06) had **no images/ tree at
+all**. The wave therefore ran both placement modes:
+
+- **merge (44 dirs)**: existing INDEX rows preserved byte-verbatim (old blob is a byte-prefix of the
+  new blob), old qp/ms entries untouched, new rows appended (Phase-1 schema + src pins);
+- **create (56 dirs)**: `images/{qp,ms}/` + `images/INDEX.jsonl` built fresh from the new rows only
+  (the dir's manifest/PDF subtree untouched).
+
+One commit per lane (17 commits, chain `4dfb98a88`); no manifest/pdf changes anywhere.
+
+### QA (all green, pre-push)
+
+- diff `a410c6773..4dfb98a88`: **3,013 additions (2,957 PNGs + 56 fresh INDEXes) + 44 INDEX
+  modifications, 0 deletions**; every path inside `*/images/`; every commit touches only its own
+  lane subtree.
+- All 100 dirs: INDEX row file set == `images/` tree file set; no NEW `(url,kind)` duplicates
+  (pre-existing renderer rows with `url: null` are identical at base and tip — nothing grew).
+- Three-way hash agreement for all 2,957 placed rows: tree blob sha256 == INDEX row == source
+  ledger row (152.0 MB total; collision renames needed: 0).
+- Ancestor probes identical to base: cambridge-international, wbi01, mathematics-a, chemistry,
+  4MB0-01 2018-06, docs, scripts.
+- Scripts: `scripts/wave_placement42/` (extract42, blobmaps42, place42, qa42, push42); working
+  data `pp2026_placement/wave_placement42/`.
+
+Post-push raw verification is recorded in the push report below.
+
