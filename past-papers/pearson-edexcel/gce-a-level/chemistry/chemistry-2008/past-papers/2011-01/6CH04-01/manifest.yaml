@@ -1,0 +1,67 @@
+paper_id: pearson-edexcel:gce-a-level:chemistry:chemistry-2008:2011-01:6CH04/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: chemistry
+specification:
+  folder: chemistry-2008
+  title: Edexcel GCE Chemistry (2008 spec, legacy)
+series:
+  normalized: 2011-01
+  year: '2011'
+  session_month: '01'
+  printed: January 2011
+  source: pdf_text+index-row
+paper:
+  official_reference: 6CH04/01
+  unit_code: 6CH04
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: c05088395d6197103b7a0b9c1d7949a3155d07a27d60dd629673d32910671dd3
+  size_bytes: 193425
+  pages: 22
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH04_01_rms_20110309.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 7a3055711836130bdff1ded44217ea65072ff50472dd7c7a2567fb4d81edf79f
+  size_bytes: 335712
+  pages: 24
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH04_01_que_20110126.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6CH04/01
+  stray_prints: []
+  session_printed: January 2011
+  notes:
+  - ref=6CH04/01 session=January 2011
+  - ref=6CH04/01 session=January 2011
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE-science-lanes PDF-ingestion wave
+  verification_status: AI-IDENTIFIED
+  notes: []

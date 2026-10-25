@@ -1,0 +1,57 @@
+paper_id: pearson-edexcel:gce-a-level:chemistry:chemistry-2008:2013-06:6CH04/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: chemistry
+specification:
+  folder: chemistry-2008
+  title: Edexcel GCE Chemistry (2008 spec, legacy)
+series:
+  normalized: 2013-06
+  year: '2013'
+  session_month: '06'
+  printed: June 2013
+  source: pdf_text+index-row
+paper:
+  official_reference: 6CH04/01R
+  unit_code: 6CH04
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 01de2ff0bea81b3879718b58e43703cc15f16094ce887135c2c4ff3ea68967b6
+  size_bytes: 568314
+  pages: 24
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH04_01R_que_20130612.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6CH04
+  stray_prints: []
+  session_printed: null
+  notes:
+  - 'r-discovered: Pearson CDN served the regional-variant file under the plain-paper
+    catalog row; printed code verified'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE-science-lanes PDF-ingestion wave
+  verification_status: AI-IDENTIFIED
+  notes:
+  - 'Single-material dir: mark-scheme not publicly available at ingestion time (Pearson
+    catalog + PMT + XtremePapers checked); disclosed, not fabricated.'
