@@ -1,0 +1,2410 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 7,
+ "totalMarks": 70,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": "Name",
+   "summaryHint": "Answer ALL questions.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Answer ALL questions."
+    },
+    {
+     "type": "para",
+     "md": "1 A student is given a mixture of salt solution and sand."
+    },
+    {
+     "type": "para",
+     "md": "She wants to obtain pure water from the mixture."
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "She separates the sand from the salt solution."
+      },
+      {
+       "type": "para",
+       "md": "Which method of separation should she use?"
+      },
+      {
+       "type": "para",
+       "md": "A crystallisation"
+      },
+      {
+       "type": "para",
+       "md": "B filtration"
+      },
+      {
+       "type": "para",
+       "md": "C fractional distillation"
+      },
+      {
+       "type": "para",
+       "md": "D simple distillation"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The student then uses this apparatus to obtain pure water from the salt solution."
+      },
+      {
+       "type": "para",
+       "md": "X"
+      },
+      {
+       "type": "para",
+       "md": "water out"
+      },
+      {
+       "type": "para",
+       "md": "Y"
+      },
+      {
+       "type": "para",
+       "md": "water in"
+      },
+      {
+       "type": "para",
+       "md": "flask"
+      },
+      {
+       "type": "para",
+       "md": "Z"
+      },
+      {
+       "type": "para",
+       "md": "salt solution"
+      },
+      {
+       "type": "para",
+       "md": "heat"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the pieces of apparatus labelled X, Y and Z."
+      },
+      {
+       "type": "para",
+       "md": "X ................................................................................................................................................................................................................................................................................"
+      },
+      {
+       "type": "para",
+       "md": "Y................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "Z ................................................................................................................................................................................................................................................................................"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "1b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what remains in the flask when the separation is complete."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 5,
+     "sum": 5,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "B filtration is the correct answer because it will",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "enable sand to be separated from salt solution                                 comp",
+       "A is not correct because crystallisation will not",
+       "enable sand to be separated from salt solution",
+       "C is not correct because fractional distillation will",
+       "not enable sand to be separated from salt solution",
+       "D is not correct because simple distillation will not",
+       "enable sand to be separated from salt solution"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 3,
+      "md": "X is a thermometer",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cler",
+       "Y is a (Liebig) condenser",
+       "Z is a beaker"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "salt",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cler"
+      ],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "Which",
+   "summaryHint": "In a chromatography experiment a student uses samples of three pure food dyes, blue (B), red (R) and yellow (Y).",
+   "stem": [
+    {
+     "type": "para",
+     "md": "In a chromatography experiment a student uses samples of three pure food dyes,"
+    },
+    {
+     "type": "para",
+     "md": "blue (B), red (R) and yellow (Y)."
+    },
+    {
+     "type": "para",
+     "md": "He also uses samples of four unknown substances, S, T, U and V."
+    },
+    {
+     "type": "para",
+     "md": "The student puts a small drop of each substance on the pencil line."
+    },
+    {
+     "type": "para",
+     "md": "The diagram shows the student’s chromatogram at the end of the experiment."
+    },
+    {
+     "type": "para",
+     "md": "solvent front"
+    },
+    {
+     "type": "para",
+     "md": "at end"
+    },
+    {
+     "type": "para",
+     "md": "pencil line"
+    },
+    {
+     "type": "para",
+     "md": "B"
+    },
+    {
+     "type": "para",
+     "md": "R"
+    },
+    {
+     "type": "para",
+     "md": "Y"
+    },
+    {
+     "type": "para",
+     "md": "S"
+    },
+    {
+     "type": "para",
+     "md": "T"
+    },
+    {
+     "type": "para",
+     "md": "U"
+    },
+    {
+     "type": "para",
+     "md": "V"
+    },
+    {
+     "type": "para",
+     "md": "solvent level"
+    },
+    {
+     "type": "para",
+     "md": "at start"
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Which",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which of the unknown substances contains only one food dye?"
+      },
+      {
+       "type": "para",
+       "md": "A substance S"
+      },
+      {
+       "type": "para",
+       "md": "B substance T"
+      },
+      {
+       "type": "para",
+       "md": "C substance U"
+      },
+      {
+       "type": "para",
+       "md": "D substance V"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain which pure food dyes are in substance V."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "2c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the Rf value of the yellow food dye Y."
+      },
+      {
+       "type": "para",
+       "md": "Rf = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "2c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State how the chromatogram suggests that the yellow food dye Y is less soluble"
+      },
+      {
+       "type": "para",
+       "md": "in the solvent than the red food dye R."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 7,
+     "sum": 7,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "A substance S is the correct answer because S",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "only contains one dye as it produces only one spot                                 comp",
+       "B is not correct because T does not only contain",
+       "one dye as it produces two spots",
+       "C is not correct because U does not only contain",
+       "one dye as it produces three spots",
+       "D is not correct because V does not only contain",
+       "one dye as it produces two spots"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "explanation containing following points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "grad"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 3,
+      "md": "correct measurement of distance moved by spot Y",
+      "allow": [
+       "5.7-6.1"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "exp"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "spot from yellow food dye/Y does not move as far",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "ORA",
+       "as spot from red food dye/R OWTTE                                                   exp",
+       "M1 (no printed marks cell): (V contains) blue/B and red/R (dyes)",
+       "M2 (no printed marks cell): because V has spots at same height as those | from blue/B and red/R OWTTE",
+       "M2 (no printed marks cell): correct measurement of distance moved by | ALLOW 8.7-9.1 | solvent",
+       "M3 (no printed marks cell): use and evaluation of | Rf = distance moved by spot Y                        ALLOW 1-4 sig fig | distance moved by solvent                       ALLOW ECF from M1 M2 | only if Rf < 1"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 10,
+   "commandWord": "Identify",
+   "summaryHint": "The box gives the names of some metals.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "3a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The box gives the names of some metals."
+      },
+      {
+       "type": "para",
+       "md": "calcium copper iron magnesium silver zinc"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the metal from the box that burns with a bright white flame."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In the Earth, metals are found either in ores or as uncombined elements."
+      },
+      {
+       "type": "para",
+       "md": "Explain which metal from the box is most likely to be found as an"
+      },
+      {
+       "type": "para",
+       "md": "uncombined element."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This is the order of reactivity of four metals."
+      },
+      {
+       "type": "para",
+       "md": "most reactive"
+      },
+      {
+       "type": "para",
+       "md": "aluminium"
+      },
+      {
+       "type": "para",
+       "md": "iron"
+      },
+      {
+       "type": "para",
+       "md": "lead"
+      },
+      {
+       "type": "para",
+       "md": "copper"
+      },
+      {
+       "type": "para",
+       "md": "least reactive"
+      },
+      {
+       "type": "para",
+       "md": "The method used to obtain a metal from its oxide depends on the reactivity of the metal."
+      },
+      {
+       "type": "para",
+       "md": "Two possible methods are"
+      },
+      {
+       "type": "para",
+       "md": "Method 1 heating the metal oxide with carbon"
+      },
+      {
+       "type": "para",
+       "md": "Method 2 electrolysis"
+      },
+      {
+       "type": "para",
+       "md": "Explain which method should be used to obtain lead from lead(II) oxide, PbO"
+      },
+      {
+       "type": "para",
+       "md": "Include an equation for the formation of lead in your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows the arrangement of the particles in a pure metal."
+      },
+      {
+       "type": "para",
+       "md": "Metals are often made into alloys to make them harder."
+      },
+      {
+       "type": "para",
+       "md": "Explain why alloys are harder than pure metals."
+      },
+      {
+       "type": "para",
+       "md": "Draw a diagram to support your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 10,
+     "sum": 10,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "magnesium",
+      "allow": [
+       "Mg"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cler"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "explanation including the following points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "grad"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 3,
+      "md": "explanation including the following points:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "exp"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": null,
+      "marks": 4,
+      "md": "Explanation containing the following points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "exp",
+       "Pure metal:                                             REJECT molecules once",
+       "only",
+       "M1 (no printed marks cell): silver",
+       "M2 (no printed marks cell): because it is the least reactive (of the metals) | ALLOW it is very | unreactive",
+       "M1 (no printed marks cell): Method 1/ heating the metal oxide/lead(II) | oxide with carbon",
+       "M2 (no printed marks cell): (because) lead is less reactive than iron (and | ALLOW carbon is more | iron is obtained from iron oxide by carbon            reactive than lead | extraction) | ACCEPT reverse | arguments",
+       "M3 (no printed marks cell): 2PbO + C  2Pb + CO2 | ALLOW PbO + CO  Pb | + CO2 | ALLOW PbO + C  Pb | +CO",
+       "M1 (no printed marks cell): (particles/ions/atoms are same size in a regular | arrangement so) layers can easily slide over each | other | Alloy:",
+       "M2 (no printed marks cell): diagram of alloy structure showing minimum of | three layers with at least one different sized circle",
+       "M3 (no printed marks cell): (having different sized particles/ions/atoms) | ALLOW disrupts the | disrupts/breaks up regular arrangement OWTTE        lattice / layers / rows | (of particles/ions | /atoms)",
+       "M4 (no printed marks cell): so hard(er) for layers to slide over each other | ALLOW layers cannot | slide over each other | IGNORE references to | strength/breaking of | forces/(metallic) bonds"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 15,
+   "commandWord": "Give",
+   "summaryHint": "Alcohols contain the functional group —OH",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Alcohols contain the functional group —OH"
+    }
+   ],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the structural formula of the alcohol that contains one carbon atom."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Ethanol (C2H5OH) is an alcohol that can be obtained from glucose (C6H12O6)."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the process that converts glucose into ethanol."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 4,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why this process is carried out in the absence of air and at a temperature"
+      },
+      {
+       "type": "para",
+       "md": "below 40 °C."
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table gives information about some organic compounds in the same homologous series."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "4c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the table by giving the missing information."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "4c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the homologous series that contains these compounds."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "4d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The compounds in the table can react with alcohols to form esters."
+      },
+      {
+       "type": "para",
+       "md": "When preparing esters, a small amount of concentrated sulfuric acid is also used."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "4d-i",
+     "label": "d",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State the purpose of the acid."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "4d-ii",
+     "label": "d",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw the displayed formula of the ester that forms when propanoic acid reacts"
+      },
+      {
+       "type": "para",
+       "md": "with ethanol."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "4d-iii",
+     "label": "d",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Esters have particular uses that depend on their properties."
+      },
+      {
+       "type": "para",
+       "md": "Give an example of a property and use of esters."
+      },
+      {
+       "type": "para",
+       "md": "property............................................................................................................................................................................................................................................................"
+      },
+      {
+       "type": "para",
+       "md": "use..........................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 15,
+     "sum": 15,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "CH3OH",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "displayed"
+      ],
+      "notes": [
+       "formula                   grad"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "fermentation",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "cler"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 4,
+      "md": "Explanation including four from",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "i",
+      "marks": 3,
+      "md": "grad",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M1",
+       "M2 C3H6O2",
+       "M3 butanoic acid"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "carboxylic (acids)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "grad"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "(acid acts as) a catalyst/to speed up reaction",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "references to"
+      ],
+      "notes": [
+       "activation energy           grad",
+       "(ii)",
+       "exp"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": "i",
+      "marks": 2,
+      "md": "ester linkage",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 rest of molecule fully correct                M2 DEP M1"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": "iii",
+      "marks": 2,
+      "md": "(Property:) distinctive/sweet/fruity smell",
+      "allow": [
+       "volatile"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "exp",
+       "M1 (no printed marks cell): fermentation/reaction/respiration needs to be | ALLOW | exp | anaerobic                                            M1 in air ethanol would | react with oxygen / be | oxidised",
+       "M2 (no printed marks cell): because in air / aerobic conditions ethanol not | M2 in air ethanol would | produced                                             form ethanoic acid | /carboxylic | acid/vinegar",
+       "M3 (no printed marks cell): because in air / aerobic conditions CO2 and H2O | are produced",
+       "M4 (no printed marks cell): (if temperature above 40 ℃/too high) enzymes | (in yeast) become denatured/lose their structure | OWTTE",
+       "M5 (no printed marks cell): causing fermentation/reaction to slow down | ALLOW reference to | /stop                                                optimum temperature | (between 30 ℃ and | 40 ℃)",
+       "M2 (no printed marks cell): used in perfumes/flavourings | ALLOW any correct use | eg in making soaps/ in | solvents (for | paints/varnishes)"
+      ],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 15,
+   "commandWord": "Explain",
+   "summaryHint": "The organic compound butadiene is a colourless gas used in the manufacture of synthetic rubber for tyres.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The organic compound butadiene is a colourless gas used in the manufacture of"
+    },
+    {
+     "type": "para",
+     "md": "synthetic rubber for tyres."
+    },
+    {
+     "type": "para",
+     "md": "The displayed formula of butadiene is"
+    },
+    {
+     "type": "para",
+     "md": "H"
+    },
+    {
+     "type": "para",
+     "md": "H"
+    },
+    {
+     "type": "para",
+     "md": "H"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "H"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "C"
+    },
+    {
+     "type": "para",
+     "md": "H"
+    },
+    {
+     "type": "para",
+     "md": "H"
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why butadiene is described as an unsaturated hydrocarbon."
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Butadiene reacts with bromine water."
+      },
+      {
+       "type": "para",
+       "md": "State the colour change that occurs during this reaction."
+      },
+      {
+       "type": "para",
+       "md": "from ............................................................................................................................... to ..............................................................................................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The equation for the reaction between butadiene and bromine can be shown"
+      },
+      {
+       "type": "para",
+       "md": "using displayed formulae."
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "Br →"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "+ 2Br"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "Br"
+      },
+      {
+       "type": "para",
+       "md": "Br"
+      },
+      {
+       "type": "para",
+       "md": "Br"
+      },
+      {
+       "type": "para",
+       "md": "Br"
+      },
+      {
+       "type": "para",
+       "md": "The table gives some bond energies."
+      },
+      {
+       "type": "para",
+       "md": "Use this information to calculate the enthalpy change, ΔH, for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "Include a sign in your answer."
+      },
+      {
+       "type": "para",
+       "md": "ΔH = ................................ kJ/mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 7,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A scientist does an investigation to find out if butadiene would be a good fuel."
+      },
+      {
+       "type": "para",
+       "md": "He burns a sample of butadiene gas and observes that carbon forms as black soot."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "5c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the equation to explain the scientist’s observation."
+      },
+      {
+       "type": "para",
+       "md": "2C4H6 + 7O2 → ..........C + 4CO + 2CO2 + ..........H2O"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "5c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain how one of the products, other than carbon, may cause a problem."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "5c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The equation for the combustion of butadiene in excess oxygen is"
+      },
+      {
+       "type": "para",
+       "md": "2C4H6 + 11O2 → 8CO2 + 6H2O"
+      },
+      {
+       "type": "para",
+       "md": "The enthalpy change for this reaction, ΔH, is – 3446 kJ/mol."
+      },
+      {
+       "type": "para",
+       "md": "Complete the energy profile diagram for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "Label the enthalpy change for this reaction, ΔH, and the activation energy."
+      },
+      {
+       "type": "para",
+       "md": "2C4H6 + 11O2"
+      },
+      {
+       "type": "para",
+       "md": "Energy"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 15,
+     "sum": 15,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 3,
+      "md": "Explanation including following points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "grad"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "from orange to colourless",
+      "allow": [
+       "yellow for"
+      ],
+      "reject": [],
+      "ignore": [
+       "clear"
+      ],
+      "notes": [
+       "orange or any             grad",
+       "combination of",
+       "orange/yellow"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 4,
+      "md": "calculation including following steps",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Exp"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "2 C4H6 + 7 O2 2C + 4 CO + 2 CO2+ 6H2O",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Exp"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": "ii",
+      "marks": 2,
+      "md": "Explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": "iii",
+      "marks": 4,
+      "md": "Exp",
+      "allow": [
+       "3446 for H"
+      ],
+      "reject": [
+       "arrow pointing",
+       "arrow pointing"
+      ],
+      "ignore": [],
+      "notes": [
+       "M1 horizontal line below level of reactants with 8 CO2 + 6 H2O",
+       "M2 profile curve rising from reactants level to form “hump” and",
+       "then falling down to products level",
+       "M3 activation energy correctly shown and labelled                 ALLOW double headed",
+       "arrow",
+       "downwards",
+       "M4 H correctly shown and labelled                                ALLOW double headed",
+       "arrow",
+       "upwards",
+       "label",
+       "an endothermic",
+       "reaction profile can",
+       "score M2 M3 M4 ECF",
+       "M1 (no printed marks cell): (unsaturated because) | ALLOW contains C=C | contains (carbon to carbon) double bond(s)",
+       "M2 (no printed marks cell): (hydrocarbon because) | REJECT molecules | contains (the elements/atoms) carbon and hydrogen",
+       "M3 (no printed marks cell): only | M3 DEP on carbon and | hydrogen",
+       "M1 (no printed marks cell): calculation of energy involved in bond breaking in reactants",
+       "M2 (no printed marks cell): calculation of energy involved in bond making in products",
+       "M3 (no printed marks cell): evaluation of difference | ECF from M1 and M2",
+       "M4 (no printed marks cell): correct answer and sign | Example calculation",
+       "M1 (no printed marks cell): 2(612) + 1(348) + 6(412) + 2(193) OR 4430 | IGNORE signs in M1 and",
+       "M2 (no printed marks cell): M2",
+       "M2 (no printed marks cell): 3(348) + 6(412) + 4(276) OR 4620 | ACCEPT | 2(612) + 2(193) OR 1610 | for M1 and | 2(348) + 4(276) OR 1800 | for M2",
+       "M3 (no printed marks cell): (4620 - 4430 = ) 190 | IGNORE sign | ACCEPT (1800 – 1610 = ) | 190",
+       "M4 (no printed marks cell): -190",
+       "M3 (no printed marks cell): M4 ECF from M1 and",
+       "M2 (no printed marks cell): If M1 > M2 answer for",
+       "M4 (no printed marks cell): must be positive | If M1 < M2 answer for",
+       "M4 (no printed marks cell): must be negative | -190 with or without | working scores 4 | (+) 190 with or without | working scores 3",
+       "M2 (no printed marks cell): DEP M1 correct or | Exp",
+       "M1 (no printed marks cell): CO/carbon monoxide | missing",
+       "M2 (no printed marks cell): is poisonous/toxic/reduces capacity of blood to carry oxygen | ACCEPT prevents blood | OWTTE           from carrying oxygen | OWTTE | ALLOW correct | explanation in terms of | haemoglobin eg | OR                                                                prevents haemoglobin | from carrying oxygen /",
+       "M1 (no printed marks cell): CO2/carbon dioxide | forms | carboxyhaemoglobin",
+       "M2 (no printed marks cell): is a greenhouse gas/contributes to global warming/ | contributes to climate change OWTTE"
+      ],
+      "pages": [
+       11
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "Suggest",
+   "summaryHint": "A student is provided with a bottle containing a colourless solution X.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A student is provided with a bottle containing a colourless solution X."
+    },
+    {
+     "type": "para",
+     "md": "Solution X is thought to be dilute sulfuric acid of concentration 0.10 mol/dm3."
+    },
+    {
+     "type": "para",
+     "md": "The student does some experiments on samples of solution X to try to show that it is"
+    },
+    {
+     "type": "para",
+     "md": "dilute sulfuric acid."
+    },
+    {
+     "type": "para",
+     "md": "The student adds a few drops of litmus to a sample of solution X."
+    },
+    {
+     "type": "para",
+     "md": "The litmus turns red."
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The student knows that the products of the electrolysis of dilute sulfuric acid are"
+      },
+      {
+       "type": "para",
+       "md": "hydrogen and oxygen."
+      },
+      {
+       "type": "para",
+       "md": "She carries out the electrolysis using this apparatus."
+      },
+      {
+       "type": "para",
+       "md": "oxygen"
+      },
+      {
+       "type": "para",
+       "md": "hydrogen"
+      },
+      {
+       "type": "para",
+       "md": "solution X"
+      },
+      {
+       "type": "para",
+       "md": "graphite cathode"
+      },
+      {
+       "type": "para",
+       "md": "graphite anode"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "−"
+      },
+      {
+       "type": "para",
+       "md": "power supply"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "6a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest why the student does not use zinc electrodes in her experiment."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what is observed at both the anode and the cathode during the electrolysis."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Which",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which of these tests shows that the gas formed at the cathode is hydrogen?"
+      },
+      {
+       "type": "para",
+       "md": "A a glowing splint relights"
+      },
+      {
+       "type": "para",
+       "md": "B a burning splint gives a squeaky pop"
+      },
+      {
+       "type": "para",
+       "md": "C a burning splint goes out"
+      },
+      {
+       "type": "para",
+       "md": "D limewater turns cloudy"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe a test to show that solution X contains sulfate ions."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The student then does a titration to see if the concentration of the dilute sulfuric acid"
+      },
+      {
+       "type": "para",
+       "md": "is 0.10 mol/dm3."
+      },
+      {
+       "type": "para",
+       "md": "She measures 25.0 cm3 of potassium hydroxide solution into a conical flask, and"
+      },
+      {
+       "type": "para",
+       "md": "then adds a few drops of indicator solution."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "6c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the piece of apparatus the student should use to measure 25.0 cm3 of"
+      },
+      {
+       "type": "para",
+       "md": "the potassium hydroxide solution."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "6c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The concentration of potassium hydroxide in the solution is 0.125 mol/dm3."
+      },
+      {
+       "type": "para",
+       "md": "Calculate the amount, in mol, of KOH in 25.0 cm3 of this solution."
+      },
+      {
+       "type": "para",
+       "md": "amount = .............................................................. mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "6c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The equation for the reaction in the titration is"
+      },
+      {
+       "type": "para",
+       "md": "H2SO4 + 2KOH → K2SO4 + 2H2O"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the volume, in cm3, of 0.10 mol/dm3 sulfuric acid needed to neutralise"
+      },
+      {
+       "type": "para",
+       "md": "25.0 cm3 of the potassium hydroxide solution."
+      },
+      {
+       "type": "para",
+       "md": "volume of sulfuric acid = .............................................................. cm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "zinc would react with sulfuric acid/solution X",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "zinc is too"
+      ],
+      "notes": [
+       "reactive               grad"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "bubbles",
+      "allow": [
+       "fizzing /"
+      ],
+      "reject": [],
+      "ignore": [
+       "gas evolved",
+       "incorrectly"
+      ],
+      "notes": [
+       "effervescence          grad",
+       "named gas"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "B",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "a burning splint gives a squeaky pop is correct",
+       "because this is the test for hydrogen                                      comp",
+       "not the test for hydrogen",
+       "C   is incorrect because a burning splint goes out is",
+       "not the test for hydrogen",
+       "D   is incorrect because limewater turns cloudy is",
+       "not the test for hydrogen"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "add barium chloride/BaCl2",
+      "allow": [
+       "barium"
+      ],
+      "reject": [
+       "add H2SO4"
+      ],
+      "ignore": [
+       "references to"
+      ],
+      "notes": [
+       "nitrate/Ba(NO3)2       Grad",
+       "adding (dilute)",
+       "HCl/HNO3"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "(graduated) pipette",
+      "allow": [
+       "burette"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Cler"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "ii",
+      "marks": 2,
+      "md": "= 0.003125 / 3.125 x10-3",
+      "allow": [
+       "any number of"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "sig figs except one         Exp",
+       "If no division by 1000",
+       "giving answer of 3.125",
+       "award 1 mark",
+       "correct answer with no",
+       "working scores 2"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "c",
+      "sub": "iii",
+      "marks": 3,
+      "md": "calculation with following steps",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Exp",
+       "P4 (no printed marks cell): description including",
+       "M2 (no printed marks cell): white ppt forms | M2 DEP M1",
+       "P6 (no printed marks cell): calculation with following steps",
+       "M1 (no printed marks cell): setting out of how to calculate n(KOH)",
+       "M2 (no printed marks cell): evaluation | Example calculation",
+       "M1 (no printed marks cell): n(KOH) = 0.125 x 25 ÷ 1000",
+       "M1 (no printed marks cell): calculate n (H2SO4) = M2 from (i) ÷ 2",
+       "M2 (no printed marks cell): calculate vol H2SO4 = (M1 x 1000) ÷ 0.10",
+       "M3 (no printed marks cell): evaluation of volume | Example calculation",
+       "M1 (no printed marks cell): 0.003125 ÷ 2 = 0.0015625 / 1.5625 x10-3",
+       "M2 (no printed marks cell): 0.0015625 x 1000 ÷ 0.10 | Mark ECF from M1",
+       "M3 (no printed marks cell): = 15.625/15.63/15.6 /16 (cm3) | Mark ECF from M2 | ALLOW any number of | sig figs except one | correct answer with no | working scores 3 | Do not penalise not | multiplying by 1000 in",
+       "P8 (no printed marks cell): if they have not | divided by 1000 in (ii) | 31.25/31.3/31 scores 2 | 62.5/63 scores 2"
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "Predict",
+   "summaryHint": "This question is about reactions involving gases.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about reactions involving gases."
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Potassium carbonate reacts with dilute hydrochloric acid to produce carbon dioxide gas."
+      },
+      {
+       "type": "para",
+       "md": "The equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "K2CO3(s) + 2HCl(aq) → 2KCl(aq) + H2O(l) + CO2(g)"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the volume, in cm3, of carbon dioxide gas produced when 6.9 g of"
+      },
+      {
+       "type": "para",
+       "md": "potassium carbonate reacts with excess dilute hydrochloric acid."
+      },
+      {
+       "type": "para",
+       "md": "[Mr of K2CO3 = 138]"
+      },
+      {
+       "type": "para",
+       "md": "[molar volume of CO2 at rtp = 24 dm3]"
+      },
+      {
+       "type": "para",
+       "md": "volume = .............................................................. cm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This reaction involving gases is in dynamic equilibrium at a temperature of 225 °C."
+      },
+      {
+       "type": "para",
+       "md": "H2(g) + CO2(g)  CO(g) + H2O(g) ΔH = + 41 kJ/mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      23
+     ]
+    },
+    {
+     "id": "7b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Predict",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Predict the effect on the yield of CO(g) at equilibrium when the temperature is"
+      },
+      {
+       "type": "para",
+       "md": "increased without changing the pressure."
+      },
+      {
+       "type": "para",
+       "md": "Give a reason for your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      23
+     ]
+    },
+    {
+     "id": "7b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Predict",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Predict the effect on the yield of CO(g) at equilibrium when the pressure is"
+      },
+      {
+       "type": "para",
+       "md": "increased without changing the temperature."
+      },
+      {
+       "type": "para",
+       "md": "Give a reason for your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 7,
+     "sum": 7,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 3,
+      "md": "calculation with following steps",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Exp"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "higher yield of CO",
+      "allow": [
+       "more CO is"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "produced                      Exp"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "no effect (on yield) OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Exp",
+       "M1 (no printed marks cell): calculation of n(K2CO3)",
+       "M2 (no printed marks cell): deduction of n(CO2) and | vol(CO2) by multiplying by 24 (dm3)",
+       "M3 (no printed marks cell): correct evaluation of volume in cm3 | Example calculation",
+       "M1 (no printed marks cell): n(K2CO3) = 6.9 ÷ 138 OR 0.05",
+       "M2 (no printed marks cell): vol(CO2) = 0.05 x 24 (dm3) | Mark ECF from M1",
+       "M3 (no printed marks cell): 1200 (cm3) | correct answer with no | working scores 3 | 1.2 scores 2 marks",
+       "P2 (no printed marks cell): (i)",
+       "M2 (no printed marks cell): because (equilibrium shifts to the right as the | IGNORE references to | forward) reaction is endothermic                     Le Chatelier’s Principle | eg increasing | temperature favours | the forward reaction",
+       "M2 (no printed marks cell): DEP M1 correct or | missing",
+       "M2 (no printed marks cell): because equal numbers of moles/molecules (of | M2 DEP M1 correct or | gas) on both sides                                   missing"
+      ],
+      "pages": [
+       14
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}

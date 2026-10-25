@@ -6,13 +6,14 @@
  },
  "questionCount": 7,
  "totalMarks": 70,
- "marksVerified": false,
+ "marksVerified": true,
  "questions": [
   {
    "number": 1,
    "type": "structured",
    "marks": 5,
-   "commandWord": null,
+   "commandWord": "Identify",
+   "summaryHint": "hour 15 minutes reference Chemistry PAPER: 2C You must have: Total Marks Calculator, ruler Instructions •\tUse black ink or ball-point pen.",
    "stem": [
     {
      "type": "para",
@@ -202,7 +203,7 @@
      "sub": null,
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Identify",
      "prompt": [
       {
        "type": "para",
@@ -224,7 +225,7 @@
      "sub": null,
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Identify",
      "prompt": [
       {
        "type": "para",
@@ -246,7 +247,7 @@
      "sub": null,
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Name",
      "prompt": [
       {
        "type": "para",
@@ -268,7 +269,7 @@
      "sub": null,
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "State",
      "prompt": [
       {
        "type": "para",
@@ -290,7 +291,7 @@
      "sub": null,
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Which",
      "prompt": [
       {
        "type": "para",
@@ -413,6 +414,7 @@
       "notes": [
        "reactive element in Group 1 and fluorine is the",
        "most reactive element in Group 7",
+       "A is not correct because lithium is not the most",
        "reactive element in Group 1",
        "B is not correct because astatine is not the most",
        "reactive element in Group 7",
@@ -433,7 +435,8 @@
    "number": 2,
    "type": "structured",
    "marks": 11,
-   "commandWord": null,
+   "commandWord": "Name",
+   "summaryHint": "The box lists words that may be used to explain the term saturated solution.",
    "stem": [],
    "parts": [
     {
@@ -538,7 +541,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Name",
      "prompt": [
       {
        "type": "para",
@@ -564,7 +567,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Suggest",
      "prompt": [
       {
        "type": "para",
@@ -590,7 +593,7 @@
      "sub": "iii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Suggest",
      "prompt": [
       {
        "type": "para",
@@ -772,7 +775,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "State",
      "prompt": [
       {
        "type": "para",
@@ -794,7 +797,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Calculate",
      "prompt": [
       {
        "type": "para",
@@ -820,7 +823,7 @@
      "sub": "iii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Suggest",
      "prompt": [
       {
        "type": "para",
@@ -859,10 +862,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M1 as much solute as possible in (a certain volume",
-       "of) the solvent OWTTE",
-       "M2 at a particular / given / constant temperature",
-       "OWTTE"
+       "(A saturated solution is one which contains)"
       ],
       "pages": [
        5
@@ -917,8 +917,8 @@
      },
      {
       "id": "M2",
-      "part": null,
-      "sub": null,
+      "part": "b",
+      "sub": "iv",
       "marks": 2,
       "md": "(so solubility = 4.5 x 10) = 45 (g per 100 g of water) ALLOW M1×10",
       "allow": [],
@@ -959,15 +959,7 @@
       ],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M2 (so 124 x 2.5) = 310 (g dissolves in 250 g water)        ALLOW ecf from M1",
-       "307.5-312.5 with no",
-       "working scores 2",
-       "marks",
-       "If solid A used 1 mark",
-       "for correct answer of",
-       "262-268g"
-      ],
+      "notes": [],
       "pages": [
        6
       ]
@@ -982,7 +974,10 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M1 (no printed marks cell): 4.5 (g solid in 10 g water)"
+       "M1 (no printed marks cell): as much solute as possible in (a certain volume | of) the solvent OWTTE",
+       "M2 (no printed marks cell): at a particular / given / constant temperature | OWTTE",
+       "M1 (no printed marks cell): 4.5 (g solid in 10 g water)",
+       "M2 (no printed marks cell): (so 124 x 2.5) = 310 (g dissolves in 250 g water) | ALLOW ecf from M1 | 307.5-312.5 with no | working scores 2 | marks | ALLOW M1×2.5 | If solid A used 1 mark | for correct answer of | 262-268g"
       ],
       "pages": [
        6
@@ -991,16 +986,14 @@
     ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 3,
    "type": "structured",
    "marks": 8,
-   "commandWord": null,
+   "commandWord": "Complete",
+   "summaryHint": "Sulfur dioxide (SO2) and hydrogen sulfide (H2S) are both gases.",
    "stem": [
     {
      "type": "para",
@@ -1018,7 +1011,7 @@
      "sub": "i",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Complete",
      "prompt": [
       {
        "type": "para",
@@ -1040,7 +1033,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "State",
      "prompt": [
       {
        "type": "para",
@@ -1132,7 +1125,7 @@
      "sub": "i",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -1158,7 +1151,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 3,
-     "commandWord": null,
+     "commandWord": "Deduce",
      "prompt": [
       {
        "type": "para",
@@ -1197,8 +1190,8 @@
     "points": [
      {
       "id": "M1",
-      "part": null,
-      "sub": null,
+      "part": "a",
+      "sub": "i",
       "marks": 2,
       "md": "all state symbols correct",
       "allow": [
@@ -1206,10 +1199,7 @@
       ],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M2 balancing correct",
-       "multiples/fractions"
-      ],
+      "notes": [],
       "pages": [
        7
       ]
@@ -1241,12 +1231,7 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M1 sulfur/(pale yellow) solid forms nearer to sulfur",
-       "dioxide side/closer to left OWTTE ORA",
-       "M2 so hydrogen sulfide particles moved / diffused",
-       "further (in same time) OWTTE ORA"
-      ],
+      "notes": [],
       "pages": [
        7
       ]
@@ -1261,9 +1246,12 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M2 Mr of SO2 = (32 +16 + 16) = 64",
-       "M3 statement of relationship eg the higher the          ACCEPT reverse",
-       "P1 (no printed marks cell): 2H2S (g) + SO2 (g)  3 S (s) + 2 H2O (l)"
+       "P1 (no printed marks cell): 2H2S (g) + SO2 (g)  3 S (s) + 2 H2O (l)",
+       "M2 (no printed marks cell): balancing correct | ALLOW | multiples/fractions",
+       "M1 (no printed marks cell): sulfur/(pale yellow) solid forms nearer to sulfur | dioxide side/closer to left OWTTE ORA",
+       "M2 (no printed marks cell): so hydrogen sulfide particles moved / diffused | further (in same time) OWTTE ORA",
+       "M2 (no printed marks cell): Mr of SO2 = (32 +16 + 16) = 64",
+       "M3 (no printed marks cell): statement of relationship eg the higher the | ACCEPT reverse | Mr the slower the gas diffuses                          argument"
       ],
       "pages": [
        7
@@ -1272,16 +1260,14 @@
     ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 4,
    "type": "structured",
    "marks": 13,
-   "commandWord": null,
+   "commandWord": "State",
+   "summaryHint": "This question is about ionic compounds.",
    "stem": [
     {
      "type": "para",
@@ -1295,7 +1281,7 @@
      "sub": null,
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "State",
      "prompt": [
       {
        "type": "para",
@@ -1393,7 +1379,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Identify",
      "prompt": [
       {
        "type": "para",
@@ -1415,7 +1401,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -1437,7 +1423,7 @@
      "sub": null,
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -1545,8 +1531,7 @@
       "ignore": [],
       "notes": [
        "formulae correct but in",
-       "wrong order",
-       "M2 (anion) SO4 2-"
+       "wrong order"
       ],
       "pages": [
        8
@@ -1557,16 +1542,12 @@
       "part": "b",
       "sub": null,
       "marks": 3,
-      "md": "potassium ion",
+      "md": "potassium ion ALLOW any combination",
       "allow": [],
       "reject": [],
       "ignore": [],
       "notes": [
-       "of dots and crosses",
-       "M2 oxide ion",
-       "M3 (K)+ and (O)2-",
-       "If only outer shells",
-       "shows – max 2"
+       "of dots and crosses"
       ],
       "pages": [
        8
@@ -1614,8 +1595,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "move",
-       "M2 (in solid) ions cannot move"
+       "move"
       ],
       "pages": [
        9
@@ -1633,14 +1613,13 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M2 Y is hydrogen / H2                                 If both given but wrong",
-       "way round or unclear",
-       "which is which allow 1",
-       "mark from M1 and M2",
-       "M3 2Cl -  Cl2 + 2e (-)                               2H2O → O2 + 4H+ + 4e(-)",
-       "or",
-       "4OH-→O2 + 2H2O + 4e(-)",
-       "M4 2H+ + 2e (-)  H2"
+       "M2 (no printed marks cell): (anion) SO4 2-",
+       "M2 (no printed marks cell): oxide ion",
+       "M3 (no printed marks cell): (K)+ and (O)2- | If only outer shells | shows – max 2",
+       "M2 (no printed marks cell): (in solid) ions cannot move",
+       "M2 (no printed marks cell): Y is hydrogen / H2 | If both given but wrong | way round or unclear | which is which allow 1 | mark from M1 and M2",
+       "M3 (no printed marks cell): 2Cl -  Cl2 + 2e (-) | 2H2O → O2 + 4H+ + 4e(-) | or | 4OH-→O2 + 2H2O + 4e(-)",
+       "M4 (no printed marks cell): 2H+ + 2e (-)  H2"
       ],
       "pages": [
        9
@@ -1655,7 +1634,8 @@
    "number": 5,
    "type": "structured",
    "marks": 12,
-   "commandWord": null,
+   "commandWord": "State",
+   "summaryHint": "Metals are found in the Earth’s crust either as uncombined elements or in metal compounds in rocks.",
    "stem": [
     {
      "type": "para",
@@ -1745,7 +1725,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "State",
      "prompt": [
       {
        "type": "para",
@@ -1771,7 +1751,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Name",
      "prompt": [
       {
        "type": "para",
@@ -1815,7 +1795,7 @@
      "sub": "i",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -1841,7 +1821,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -1867,7 +1847,7 @@
      "sub": null,
      "type": "open",
      "marks": 3,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -1953,7 +1933,8 @@
       "marks": 1,
       "md": "gold/platinum",
       "allow": [
-       "silver/copper"
+       "silver/copper",
+       "symbols"
       ],
       "reject": [],
       "ignore": [],
@@ -1971,12 +1952,7 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M1 electrolysis",
-       "M2 (because) calcium is more reactive than carbon   ALLOW reverse",
-       "OR carbon cannot displace calcium                   argument",
-       "M2 dep on M1"
-      ],
+      "notes": [],
       "pages": [
        10
       ]
@@ -1990,12 +1966,7 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M1 carbon extraction",
-       "M2 (because) carbon is more reactive than lead OR   ALLOW reverse",
-       "carbon can displace lead                            argument",
-       "M2 dep on M1"
-      ],
+      "notes": [],
       "pages": [
        10
       ]
@@ -2010,10 +1981,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "particles",
-       "M2 particles labelled atoms or (positive) ions",
-       "(malleable because)",
-       "M3 layers can slide over each other"
+       "particles"
       ],
       "pages": [
        11
@@ -2029,20 +1997,19 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M2 moles of Al2O3",
-       "M3 calculation of mass of aluminium",
-       "exemplar",
-       "M1 102",
-       "M2 1275÷102 OR 12.5(moles)                         ALLOW M1×2",
-       "M3 (12.5×2×27) = 675g                              ALLOW ecf from M2",
-       "675g without working",
-       "scores 3",
-       "0.675 without working",
-       "scores 2",
-       "337.5 without working",
-       "scores 2",
-       "1350 without working",
-       "scores 2"
+       "M1 (no printed marks cell): electrolysis",
+       "M2 (no printed marks cell): (because) calcium is more reactive than carbon | ALLOW reverse | OR carbon cannot displace calcium                   argument",
+       "M2 (no printed marks cell): dep on M1",
+       "M1 (no printed marks cell): carbon extraction",
+       "M2 (no printed marks cell): (because) carbon is more reactive than lead OR | ALLOW reverse | carbon can displace lead                            argument",
+       "M2 (no printed marks cell): dep on M1",
+       "M2 (no printed marks cell): particles labelled atoms or (positive) ions | (malleable because)",
+       "M3 (no printed marks cell): layers can slide over each other",
+       "M2 (no printed marks cell): moles of Al2O3",
+       "M3 (no printed marks cell): calculation of mass of aluminium | exemplar",
+       "M1 (no printed marks cell): 102",
+       "M2 (no printed marks cell): 1275÷102 OR 12.5(moles) | ALLOW M1×2 | ALLOW ecf from M1",
+       "M3 (no printed marks cell): (12.5×2×27) = 675g | ALLOW ecf from M2 | 675g without working | scores 3 | 0.675 without working | scores 2 | 337.5 without working | scores 2 | 1350 without working | scores 2"
       ],
       "pages": [
        11
@@ -2057,7 +2024,8 @@
    "number": 6,
    "type": "structured",
    "marks": 11,
-   "commandWord": null,
+   "commandWord": "Give",
+   "summaryHint": "This question is about alcohols, carboxylic acids and esters.",
    "stem": [
     {
      "type": "para",
@@ -2113,7 +2081,7 @@
      "sub": null,
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -2297,7 +2265,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "State",
      "prompt": [
       {
        "type": "para",
@@ -2397,7 +2365,7 @@
      "sub": "iii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -2417,11 +2385,52 @@
    "markScheme": {
     "totals": {
      "printed": 11,
-     "sum": 6,
-     "verified": false
+     "sum": 11,
+     "verified": true
     },
     "guidance": [],
     "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "C is the only correct answer as temperature used is",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "300°C and pressure is 65 atm (60-70 atm)",
+       "A is incorrect because 35°C and 300 atm are not the",
+       "correct conditions",
+       "B is incorrect because 65°C and 300 atm are not the",
+       "correct conditions",
+       "D is incorrect because 300°C and 35 atm are not",
+       "the correct conditions"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "formula must be fully",
+      "allow": [
+       "fully displayed"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "displayed",
+       "formula for butan-2-ol"
+      ],
+      "pages": [
+       12
+      ]
+     },
      {
       "id": "M1",
       "part": "c",
@@ -2433,11 +2442,7 @@
       "ignore": [],
       "notes": [
        "1000",
-       "= 0.018",
-       "M2 conc(CH3COOH) = 0.018 x 1000                       ALLOW ecf from M1",
-       "25",
-       "= 0.72 (mol/dm 3)                  0.72 (mol/dm3) without",
-       "working scores 2"
+       "= 0.018"
       ],
       "pages": [
        12
@@ -2445,8 +2450,8 @@
      },
      {
       "id": "M2",
-      "part": null,
-      "sub": null,
+      "part": "c",
+      "sub": "ii",
       "marks": 2,
       "md": "vol(CO2) = 0.0015 x 24000 = 36 (cm3)",
       "allow": [
@@ -2459,6 +2464,27 @@
        "working scores 2",
        "72 (cm3) without",
        "working scores 1"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "B C2H5OH is the only correct answer",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is not correct because CH3OH could not form the",
+       "ester ethyl propanoate",
+       "C is not correct because C 3H7OH could not form the",
+       "ester ethyl propanoate",
+       "D is not correct because C4H9OH could not form the",
+       "ester ethyl propanoate"
       ],
       "pages": [
        12
@@ -2482,6 +2508,22 @@
       ]
      },
      {
+      "id": "M1",
+      "part": "e",
+      "sub": "ii",
+      "marks": 2,
+      "md": "",
+      "allow": [
+       "OH"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
       "id": "P5",
       "part": "e",
       "sub": "iii",
@@ -2493,11 +2535,9 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "P1 (no printed marks cell): 1 | C is the only correct answer as temperature used is | 300°C and pressure is 65 atm (60-70 atm) | correct conditions | B is incorrect because 65°C and 300 atm are not the | correct conditions | D is incorrect because 300°C and 35 atm are not | the correct conditions",
-       "P2 (no printed marks cell): 1 | formula must be fully | displayed | formula for butan-2-ol",
+       "M2 (no printed marks cell): conc(CH3COOH) = 0.018 x 1000 | ALLOW ecf from M1 | 25 | = 0.72 (mol/dm 3)                  0.72 (mol/dm3) without | working scores 2",
        "M1 (no printed marks cell): mol(CO2) = (0.0030÷2) = 0.0015",
-       "P3 (no printed marks cell): B C2H5OH is the only correct answer | 1 | ester ethyl propanoate | C is not correct because C 3H7OH could not form the | ester ethyl propanoate | D is not correct because C4H9OH could not form the | ester ethyl propanoate",
-       "M1 (no printed marks cell): 2 | M2                                                   ACCEPT in either order"
+       "M2 (no printed marks cell): ACCEPT in either order | ALLOW -OH"
       ],
       "pages": [
        13
@@ -2506,18 +2546,14 @@
     ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "MS-POINTS-DONT-CLOSE",
-    "PART-MARKS-MISMATCH",
-    "MS-PART-NO-POINTS"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 7,
    "type": "structured",
    "marks": 10,
-   "commandWord": null,
+   "commandWord": "Draw",
+   "summaryHint": "Hydrogen gas and iodine gas react together to form hydrogen iodide gas.",
    "stem": [
     {
      "type": "para",
@@ -2638,7 +2674,7 @@
      "sub": null,
      "type": "open",
      "marks": 3,
-     "commandWord": null,
+     "commandWord": "Draw",
      "prompt": [
       {
        "type": "para",
@@ -2662,8 +2698,8 @@
    "markScheme": {
     "totals": {
      "printed": 10,
-     "sum": 4,
-     "verified": false
+     "sum": 10,
+     "verified": true
     },
     "guidance": [],
     "points": [
@@ -2679,9 +2715,7 @@
        "comments"
       ],
       "notes": [
-       "about rate",
-       "M2 because same number of moles (of gas) on both      M2 dep on M1",
-       "sides of equation"
+       "about rate"
       ],
       "pages": [
        14
@@ -2696,11 +2730,59 @@
       "allow": [],
       "reject": [],
       "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "b",
+      "sub": null,
+      "marks": 3,
+      "md": "bonds made = (2 x 562) OR 1124 (ignore sign)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 3,
+      "md": "right hand line below left hand line",
+      "allow": [],
+      "reject": [
+       "arrow pointing",
+       "arrow pointing"
+      ],
+      "ignore": [],
       "notes": [
-       "M2 because catalyst increases rate of both forward    M2 dep on M1",
-       "and backward reactions by same amount",
-       "M1 (no printed marks cell): bonds broken = (436 + 158) OR 594 (ignore sign) | M2 bonds made = (2 x 562) OR 1124 (ignore sign) | 3 | M3 ∆H = -530 (kJ/mol)                                 -530 with no working | scores 3 | +530 or 530 with no | working scores 2 | +32 or 32 with no | working scores 2 | 3",
-       "M1 (no printed marks cell): right hand line below left hand line | M2 correct names/formulae of reactants and            ALLOW reactants and | products                                          products | M3 enthalpy change, ∆H correctly shown and            ACCEPT line with no | labelled with arrow pointing down                 arrow head / double | arrow head if | -ΔH or -530 is labelled | REJECT arrow pointing | upwards | If the answer to (b) is positive | M1 right hand line above left hand line | M2 correct names/formulae of reactants and            ALLOW reactants and | products                                          products | M3 enthalpy change, ∆H correctly shown and            ACCEPT line with no | labelled with arrow pointing up                   arrow head / double | arrow head if | (+)ΔH or +530 is | labelled | REJECT arrow pointing | downwards"
+       "M2 correct names/formulae of reactants and            ALLOW reactants and",
+       "products                                          products",
+       "M3 enthalpy change, ∆H correctly shown and            ACCEPT line with no",
+       "labelled with arrow pointing down                 arrow head / double",
+       "arrow head if",
+       "-ΔH or -530 is labelled",
+       "upwards",
+       "If the answer to (b) is positive",
+       "M1 right hand line above left hand line",
+       "M2 correct names/formulae of reactants and            ALLOW reactants and",
+       "products                                          products",
+       "M3 enthalpy change, ∆H correctly shown and            ACCEPT line with no",
+       "labelled with arrow pointing up                   arrow head / double",
+       "arrow head if",
+       "(+)ΔH or +530 is",
+       "labelled",
+       "downwards",
+       "M2 (no printed marks cell): because same number of moles (of gas) on both | M2 dep on M1 | sides of equation",
+       "M2 (no printed marks cell): because catalyst increases rate of both forward | M2 dep on M1 | and backward reactions by same amount",
+       "M1 (no printed marks cell): bonds broken = (436 + 158) OR 594 (ignore sign)",
+       "M3 (no printed marks cell): ∆H = -530 (kJ/mol) | -530 with no working | scores 3 | +530 or 530 with no | working scores 2 | +32 or 32 with no | working scores 2"
       ],
       "pages": [
        14
@@ -2709,11 +2791,7 @@
     ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "MS-POINTS-DONT-CLOSE",
-    "MS-PART-NO-POINTS"
-   ]
+   "provenance": "pdf-parsed"
   }
  ]
 }

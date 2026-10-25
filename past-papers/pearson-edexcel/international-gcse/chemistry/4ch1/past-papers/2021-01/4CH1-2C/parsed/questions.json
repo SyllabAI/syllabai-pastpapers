@@ -1,0 +1,2492 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 7,
+ "totalMarks": 70,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": "Give",
+   "summaryHint": "Answer ALL questions.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Answer ALL questions. Write your answers in the spaces provided."
+    },
+    {
+     "type": "para",
+     "md": "1 The diagram shows an atom of an element."
+    },
+    {
+     "type": "para",
+     "md": "Y"
+    },
+    {
+     "type": "para",
+     "md": "+"
+    },
+    {
+     "type": "para",
+     "md": "++"
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "What is the name of the particle labelled Y?"
+      },
+      {
+       "type": "para",
+       "md": "A electron"
+      },
+      {
+       "type": "para",
+       "md": "B ion"
+      },
+      {
+       "type": "para",
+       "md": "C neutron"
+      },
+      {
+       "type": "para",
+       "md": "D proton"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the mass number of this atom."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name this element."
+      },
+      {
+       "type": "para",
+       "md": "Use the Periodic Table on page 2 to help you."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "There are two isotopes of this element."
+      },
+      {
+       "type": "para",
+       "md": "Give one way, in terms of sub-atomic particles, that these isotopes are the same"
+      },
+      {
+       "type": "para",
+       "md": "and one way that they are different."
+      },
+      {
+       "type": "para",
+       "md": "same ...................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "different ..........................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 5,
+     "sum": 5,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "D",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "D is the correct answer because protons occur in",
+       "the nucleus and have a positive charge.",
+       "A is not the correct answer since electrons occur",
+       "in the energy levels.",
+       "B is not the answer since ions do not occur in the",
+       "nucleus.",
+       "C is not the correct answer since neutrons have",
+       "no charge."
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "7",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "lithium",
+      "allow": [
+       "Li"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "same number of protons",
+      "allow": [
+       "same number"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "of electrons",
+       "M2 (no printed marks cell): different number of neutrons | IGNORE references to | mass number and | atomic number."
+      ],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": "Name",
+   "summaryHint": "This question is about gases.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about gases."
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The box gives the names of some gases."
+      },
+      {
+       "type": "para",
+       "md": "argon carbon dioxide hydrogen nitrogen oxygen"
+      },
+      {
+       "type": "para",
+       "md": "Use gases from the box to answer these questions."
+      },
+      {
+       "type": "para",
+       "md": "Each gas may be used once, more than once or not at all."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the most abundant gas in the Earth’s atmosphere."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the gas that is a compound."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the least reactive of the gases."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2a-iv",
+     "label": "a",
+     "sub": "iv",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the gas formed by the complete combustion of hydrocarbons."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe the test for hydrogen gas."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 5,
+     "sum": 5,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "nitrogen",
+      "allow": [
+       "N2/N"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "carbon dioxide",
+      "allow": [
+       "CO2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "argon",
+      "allow": [
+       "Ar"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "a",
+      "sub": "iv",
+      "marks": 1,
+      "md": "carbon dioxide",
+      "allow": [
+       "CO2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "lighted splint (produces squeaky) pop",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 8,
+   "commandWord": "Give",
+   "summaryHint": "This question is about carboxylic acids.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about carboxylic acids."
+    },
+    {
+     "type": "para",
+     "md": "Solutions of carboxylic acids react with magnesium metal to form hydrogen gas."
+    },
+    {
+     "type": "para",
+     "md": "A student uses this apparatus to investigate the time taken to produce 10 cm3 of"
+    },
+    {
+     "type": "para",
+     "md": "hydrogen gas from different carboxylic acids."
+    },
+    {
+     "type": "para",
+     "md": "carboxylic acid solution"
+    },
+    {
+     "type": "para",
+     "md": "magnesium"
+    },
+    {
+     "type": "para",
+     "md": "This is the student’s method."
+    },
+    {
+     "type": "para",
+     "md": ""
+    },
+    {
+     "type": "para",
+     "md": "pour some carboxylic acid solution into a conical flask"
+    },
+    {
+     "type": "para",
+     "md": ""
+    },
+    {
+     "type": "para",
+     "md": "add some magnesium powder"
+    },
+    {
+     "type": "para",
+     "md": ""
+    },
+    {
+     "type": "para",
+     "md": "quickly connect the gas syringe and start a timer"
+    },
+    {
+     "type": "para",
+     "md": "record the time taken to collect 10 cm3 of hydrogen gas"
+    },
+    {
+     "type": "para",
+     "md": ""
+    },
+    {
+     "type": "para",
+     "md": "The student repeats the method with three other carboxylic acids."
+    }
+   ],
+   "parts": [
+    {
+     "id": "3a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "All the carboxylic acids are of the same concentration."
+      },
+      {
+       "type": "para",
+       "md": "Give two other variables the student should control in his investigation."
+      },
+      {
+       "type": "para",
+       "md": "1................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "2................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why it is important to connect the gas syringe quickly."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table shows the student’s results."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "3b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the mean (average) time for propanoic acid to produce 10 cm3 of"
+      },
+      {
+       "type": "para",
+       "md": "hydrogen gas."
+      },
+      {
+       "type": "para",
+       "md": "mean time = ............................................................................. s"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "3b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Deduce",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Deduce the relationship between the number of carbon atoms in the"
+      },
+      {
+       "type": "para",
+       "md": "molecule and the time taken to produce 10 cm3 of hydrogen gas."
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      }
+     ],
+     "answerLines": 3,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "3c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "An ester is formed by adding ethanoic acid to ethanol in the presence of sulfuric acid."
+      },
+      {
+       "type": "para",
+       "md": "Give the displayed formula of the ester produced when ethanoic acid reacts"
+      },
+      {
+       "type": "para",
+       "md": "with ethanol."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 8,
+     "sum": 8,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 2,
+      "md": "Any two from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "so as little gas as possible escapes",
+      "allow": [
+       "so no gas"
+      ],
+      "reject": [
+       "references to"
+      ],
+      "ignore": [
+       "references to"
+      ],
+      "notes": [
+       "escapes",
+       "accuracy",
+       "gas getting in"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "(69 + 70 + 71) ÷ 3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Answer of 70 with or",
+       "without working scores"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "as the (number of) carbons increases the time (to",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "produce 10 cm3 of hydrogen) increases ORA"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 2,
+      "md": "ester linkage as a displayed",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "structure",
+       "M1 (no printed marks cell): volume of acid",
+       "M2 (no printed marks cell): temperature",
+       "M3 (no printed marks cell): mass / moles of magnesium",
+       "M4 (no printed marks cell): surface area / size of pieces of magnesium",
+       "M2 (no printed marks cell): 70s | 2 | Answer of 76 or 75.8 or | 75.75 with or without | working scores 1",
+       "M2 (no printed marks cell): rest of molecule correct as a fully displayed | structure"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 9,
+   "commandWord": "Complete",
+   "summaryHint": "This question is about sodium and potassium.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about sodium and potassium."
+    },
+    {
+     "type": "para",
+     "md": "A trough is filled with water and a few drops of phenolphthalein indicator are added."
+    }
+   ],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A small piece of sodium is dropped into the water. One of the products of the"
+      },
+      {
+       "type": "para",
+       "md": "reaction is an alkali."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the chemical equation for the reaction of sodium with water."
+      },
+      {
+       "type": "para",
+       "md": "_____Na(.........................) + ______H2O(l) → _____NaOH(.........................) + H2(g)"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the ion that causes the solution to become alkaline."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give three observations that would be made when sodium reacts with water."
+      },
+      {
+       "type": "para",
+       "md": "1................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "2................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "3................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 3,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why potassium is more reactive than sodium."
+      },
+      {
+       "type": "para",
+       "md": "Refer to the electronic configurations of the atoms in your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 10
+      }
+     ],
+     "answerLines": 10,
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 9,
+     "sum": 9,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 2,
+      "md": "2 Na(s) + 2 H2O(l) → 2 NaOH(aq) + H2(g)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M1 correct balancing numbers                          ALLOW multiples or",
+       "fractions.",
+       "M2 (s) and (aq) for state symbols"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "hydroxide or OH-",
+      "allow": [],
+      "reject": [
+       "OH"
+      ],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 3,
+      "md": "Any three from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 3,
+      "md": "electron configuration of sodium is 2,8,1 and",
+      "allow": [
+       "the outer shell",
+       "potassium has",
+       "larger atom /"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "electron configuration of potassium is 2,8,8,1        is further from the",
+       "nucleus",
+       "more shells",
+       "larger atomic radius",
+       "M1 (no printed marks cell): the sodium moves (on the surface) | ALLOW sodium floats",
+       "M2 (no printed marks cell): effervescence or bubbles (of gas) | IGNORE gas or | hydrogen produced",
+       "M3 (no printed marks cell): (indicator or phenolphthalein or water) turns | IGNORE initial colour | pink                                                  of indicator | ALLOW the sodium",
+       "M4 (no printed marks cell): the sodium gets smaller | disappears / (appears | to) dissolve",
+       "M5 (no printed marks cell): the sodium melts or turns into a ball",
+       "M2 (no printed marks cell): outer electron less attracted (to the nucleus of | potassium)",
+       "M3 (no printed marks cell): therefore (outer shell electron) is more easily | ALLOW reverse | lost                                                  argument for sodium"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 14,
+   "commandWord": "Explain",
+   "summaryHint": "This question is about the metal aluminium.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about the metal aluminium."
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Aluminium is malleable and conducts electricity."
+      },
+      {
+       "type": "para",
+       "md": "The diagram shows the arrangement of the ions in aluminium metal."
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "aluminium ion"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why aluminium is malleable."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why aluminium conducts electricity."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Aluminium cannot be extracted by heating a mixture of carbon and aluminium oxide."
+      },
+      {
+       "type": "para",
+       "md": "Give a reason why heating a mixture of aluminium oxide and carbon does not"
+      },
+      {
+       "type": "para",
+       "md": "produce aluminium."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Aluminium is extracted industrially by the electrolysis of molten aluminium oxide"
+      },
+      {
+       "type": "para",
+       "md": "Al2O3 at a temperature of about 950 °C."
+      },
+      {
+       "type": "para",
+       "md": "Aluminium metal forms at the negative electrode and oxygen gas forms at the"
+      },
+      {
+       "type": "para",
+       "md": "positive electrode. The positive and negative electrodes are made of graphite."
+      },
+      {
+       "type": "para",
+       "md": "The diagram shows the apparatus used."
+      },
+      {
+       "type": "para",
+       "md": "positive graphite electrode"
+      },
+      {
+       "type": "para",
+       "md": "molten aluminium oxide"
+      },
+      {
+       "type": "para",
+       "md": "molten aluminium metal"
+      },
+      {
+       "type": "para",
+       "md": "negative graphite electrode"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain how aluminium metal forms at the negative electrode."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Write",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Write an ionic half-equation for the formation of oxygen gas at the"
+      },
+      {
+       "type": "para",
+       "md": "positive electrode."
+      },
+      {
+       "type": "para",
+       "md": ".............................................................. → .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest why carbon dioxide gas is also produced at the positive electrode."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Aluminium reacts with iron(III) oxide. The reaction is exothermic."
+      },
+      {
+       "type": "para",
+       "md": "The equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "2Al + Fe2O3 → Al2O3 + 2Fe"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5d-i",
+     "label": "d",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State how the equation shows that iron(III) oxide is reduced."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5d-ii",
+     "label": "d",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw an energy level diagram for the reaction between aluminium and iron(III) oxide."
+      },
+      {
+       "type": "para",
+       "md": "Energy"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 14,
+     "sum": 14,
+     "verified": true
+    },
+    "guidance": [
+     "M2 dependent on",
+     "mention of electrons in"
+    ],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "i",
+      "marks": 2,
+      "md": "layers / rows (of atoms / ions)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "delocalised electrons",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "aluminium is more reactive than carbon",
+      "allow": [
+       "references to",
+       "carbon is less"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "position in reactivity",
+       "series e.g. aluminium is",
+       "higher in reactivity",
+       "series than carbon.",
+       "reactive than",
+       "aluminium"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 2,
+      "md": "aluminium / Al3+ions are attracted to the negative",
+      "allow": [
+       "Al3+ + 3e-→Al"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "electrode / cathode (because they are positively",
+       "charged)"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "2O2- → O2 + 4e-",
+      "allow": [
+       "2O2- - 4e- → O2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "iii",
+      "marks": 2,
+      "md": "electrodes are made of carbon",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "iron oxide loses oxygen",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "references to"
+      ],
+      "notes": [
+       "electrons"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "d",
+      "sub": "i",
+      "marks": 3,
+      "md": "(ii)",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "horizontal axis",
+       "activation"
+      ],
+      "notes": [
+       "drawn",
+       "energy if shown",
+       "M1 right hand line below left hand line",
+       "M2 correct name / formula of both reactants",
+       "M3 correct name / formula of both products",
+       "If only use words",
+       "reactants (on left) and",
+       "products (on right)",
+       "award 1 mark from M2",
+       "and M3",
+       "M2 and M3 can be",
+       "scored from an",
+       "endothermic diagram",
+       "M2 (no printed marks cell): can slide over one another | M2 is dependent on | mention of layers / | rows in M1",
+       "M2 (no printed marks cell): can move / can flow / are free to move (throughout | IGNORE references to | the structure)                                          charge or current | IGNORE free electrons",
+       "M1 (no printed marks cell): M1",
+       "M2 (no printed marks cell): where they gain electrons (forming aluminium) | IGNORE references to | reduction",
+       "M2 (no printed marks cell): which reacts with / burns in oxygen"
+      ],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 15,
+   "commandWord": "Describe",
+   "summaryHint": "This question is about the insoluble salt silver chloride (AgCl).",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about the insoluble salt silver chloride (AgCl)."
+    },
+    {
+     "type": "para",
+     "md": "Silver chloride can be made by the reaction between copper(II) chloride and silver nitrate."
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe how a student could prepare a pure, dry sample of silver chloride starting"
+      },
+      {
+       "type": "para",
+       "md": "with copper(II) chloride solution and silver nitrate solution."
+      },
+      {
+       "type": "answer_lines",
+       "count": 12
+      }
+     ],
+     "answerLines": 12,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student investigates the quantity of silver chloride produced when different"
+      },
+      {
+       "type": "para",
+       "md": "volumes of silver nitrate solution are added to copper(II) chloride solution."
+      },
+      {
+       "type": "para",
+       "md": "This is the student’s method."
+      },
+      {
+       "type": "para",
+       "md": "pour 5.0 cm3 of copper(II) chloride solution into a test tube"
+      },
+      {
+       "type": "para",
+       "md": "·"
+      },
+      {
+       "type": "para",
+       "md": "add 1.0 cm3 of silver nitrate solution to the test tube"
+      },
+      {
+       "type": "para",
+       "md": "·"
+      },
+      {
+       "type": "para",
+       "md": "·"
+      },
+      {
+       "type": "para",
+       "md": "allow the silver chloride precipitate to settle"
+      },
+      {
+       "type": "para",
+       "md": "·"
+      },
+      {
+       "type": "para",
+       "md": "measure the height of the precipitate"
+      },
+      {
+       "type": "para",
+       "md": "The student repeats the method using different volumes of silver nitrate solution."
+      },
+      {
+       "type": "para",
+       "md": "The table shows the student’s results."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "6b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Plot",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Plot the student’s results."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw two straight lines of best fit, ignoring the anomalous result."
+      },
+      {
+       "type": "para",
+       "md": "4"
+      },
+      {
+       "type": "para",
+       "md": "3"
+      },
+      {
+       "type": "para",
+       "md": "Height of"
+      },
+      {
+       "type": "para",
+       "md": "precipitate"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "in cm"
+      },
+      {
+       "type": "para",
+       "md": "1"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "1"
+      },
+      {
+       "type": "para",
+       "md": "2"
+      },
+      {
+       "type": "para",
+       "md": "3"
+      },
+      {
+       "type": "para",
+       "md": "4"
+      },
+      {
+       "type": "para",
+       "md": "5"
+      },
+      {
+       "type": "para",
+       "md": "6"
+      },
+      {
+       "type": "para",
+       "md": "7"
+      },
+      {
+       "type": "para",
+       "md": "8"
+      },
+      {
+       "type": "para",
+       "md": "Volume of silver nitrate added in cm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest a mistake the student made to cause the anomalous result."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6b-iv",
+     "label": "b",
+     "sub": "iv",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why the last three heights are the same."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      19
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The equation for the reaction between copper(II) chloride and silver nitrate is"
+      },
+      {
+       "type": "para",
+       "md": "CuCl2(aq) + 2AgNO3(aq) → 2AgCl(s) + Cu(NO3)2(aq)"
+      },
+      {
+       "type": "para",
+       "md": "A student measures 25.0 cm3 of 0.500 mol/dm3 copper(II) chloride solution and"
+      },
+      {
+       "type": "para",
+       "md": "reacts it with silver nitrate solution."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "6c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name a piece of apparatus suitable for measuring 25.0 cm3 of"
+      },
+      {
+       "type": "para",
+       "md": "copper(II) chloride solution."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "6c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the maximum mass, in grams, of silver chloride that could be produced."
+      },
+      {
+       "type": "para",
+       "md": "[Mr of AgCl = 143.5]"
+      },
+      {
+       "type": "para",
+       "md": "maximum mass = ............................................................... g"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "6c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In an experiment using different solutions, the mass of silver chloride"
+      },
+      {
+       "type": "para",
+       "md": "produced is 0.744 g."
+      },
+      {
+       "type": "para",
+       "md": "The maximum mass of silver chloride that could be produced is 0.850 g."
+      },
+      {
+       "type": "para",
+       "md": "Calculate the percentage yield."
+      },
+      {
+       "type": "para",
+       "md": "percentage yield = ............................................................... %"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 15,
+     "sum": 15,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 4,
+      "md": "mix / stir / add (silver nitrate and copper (II)",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "references"
+      ],
+      "notes": [
+       "chloride)                                             to heating"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "and M2 all points correctly plotted to ± half a",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Deduct 1 mark for",
+       "square                                                every incorrect point."
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "two straight lines of best fit which must meet",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "at",
+       "3 cm and 6 cm3"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "b",
+      "sub": "iii",
+      "marks": 1,
+      "md": "Any one from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "the precipitate wasn’t left to settle (for long       ALLOW measured",
+       "enough)                                               the height too early",
+       "the tube was on a slant",
+       "not enough / less than 3.0 cm3 of silver nitrate      IGNORE references",
+       "added                                                 to human error",
+       "unqualified"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "iv",
+      "marks": 1,
+      "md": "all the copper [(II)] chloride has reacted",
+      "allow": [
+       "the silver"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "nitrate is in excess /",
+       "not all the silver",
+       "nitrate has reacted"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "Any one from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "burette                                              ALLOW measuring",
+       "cylinder",
+       "(volumetric) pipette                                 REJECT beaker"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 3,
+      "md": "Example calculation",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "iii",
+      "marks": 2,
+      "md": "(0.744 ÷ 0.850) × 100",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): filter (the silver chloride)",
+       "M3 (no printed marks cell): wash with (deionised / distilled) water",
+       "M4 (no printed marks cell): dry in a warm oven or dry with filter paper or | leave / allow to dry (on a windowsill) or dry in a | desiccator | If evaporation is | mentioned to form | crystals max = 1",
+       "M1 (no printed marks cell): moles of coper chloride = (25 x 0.50) ÷ 1000 OR | 0.0125 moles",
+       "M2 (no printed marks cell): moles of silver chloride = 0.0250 | ALLOW answer to M1 | x2",
+       "M3 (no printed marks cell): mass of silver chloride = 3.59 g | ALLOW answer to M1 | or M2 × 143.5 | ALLOW 2 or more | significant figures | Correct answer of 3.59 | g scores 3 marks",
+       "M2 (no printed marks cell): 87.5(%) | ALLOW 2 or more | significant figures"
+      ],
+      "pages": [
+       11
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 14,
+   "commandWord": "Explain",
+   "summaryHint": "This question is about octane (C8H18) which is produced in the gasoline fraction during fractional distillation of crude oil.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about octane (C8H18) which is produced in the gasoline fraction during"
+    },
+    {
+     "type": "para",
+     "md": "fractional distillation of crude oil."
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows a fractionating column."
+      },
+      {
+       "type": "para",
+       "md": "gasoline"
+      },
+      {
+       "type": "para",
+       "md": "crude oil"
+      },
+      {
+       "type": "para",
+       "md": "Describe how crude oil is separated into fractions in the fractionating column."
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Octane can also be produced by the process of cracking."
+      },
+      {
+       "type": "para",
+       "md": "Give the conditions for cracking."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "7c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 8,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A car is driven at constant speed for 4.00 km."
+      },
+      {
+       "type": "para",
+       "md": "The exhaust gases are collected and their volume at room temperature"
+      },
+      {
+       "type": "para",
+       "md": "and pressure (rtp) is 5.02 × 105 cm3."
+      },
+      {
+       "type": "para",
+       "md": "The exhaust gases include carbon dioxide and oxides of nitrogen."
+      },
+      {
+       "type": "para",
+       "md": "The carbon dioxide is removed from the exhaust gases. The volume of the"
+      },
+      {
+       "type": "para",
+       "md": "remaining gases at rtp is 2.96 × 105 cm3."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "7c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain how oxides of nitrogen form in a car engine."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "7c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why oxides of nitrogen should not be released into the atmosphere."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "7c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 5,
+     "commandWord": "Show that",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Show that the car produces less than 100 g of carbon dioxide per km."
+      },
+      {
+       "type": "para",
+       "md": "[molar volume of carbon dioxide at rtp = 24 000 cm3]"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 14,
+     "sum": 14,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 4,
+      "md": "crude oil is heated / vapourised",
+      "allow": [
+       "boiled"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "temperature of 600°C - 700°C",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 2,
+      "md": "nitrogen (from the air) reacts / combines with",
+      "allow": [],
+      "reject": [
+       "any implication"
+      ],
+      "ignore": [],
+      "notes": [
+       "oxygen (from the air)                               that oxygen or",
+       "nitrogen come from",
+       "the fuel."
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "Any one from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "acid rain",
+       "respiratory problems"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
+      "sub": "iii",
+      "marks": 5,
+      "md": "Example calculation",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): vapours / gases / compounds / hydrocarbons | rise up the column",
+       "M3 (no printed marks cell): the column is hotter at the bottom than the | ALLOW temperature | top                                              gradient of the column | ALLOW vapours /",
+       "M4 (no printed marks cell): vapours / compounds / hydrocarbons | compounds / | condense at their boiling point                  hydrocarbons / | condense at different | heights | ALLOW the vapours / | compounds / | hydrocarbons / | fractions have different | boiling points.",
+       "M2 (no printed marks cell): catalyst of silica / alumina | ALLOW | aluminosilicates / | zeolites / silicon | dioxide / aluminium | oxide | IGNORE references to | pressure",
+       "M2 (no printed marks cell): at high temperatures (in the car engine)",
+       "M1 (no printed marks cell): volume of carbon dioxide = 206 000 cm3 / | 2.06×105 cm3 / 206 dm3",
+       "M2 (no printed marks cell): volume of carbon dioxide per km = 51 500 cm3/ | Division by 4 can | 5.15×104 cm3 / 51.5 dm3                             happen in M1, M2, M3 | or M5 | ALLOW M1 ÷ 4",
+       "M3 (no printed marks cell): (51 500 ÷ 24 000) = 2.15 moles | ALLOW M2 or",
+       "M1 (no printed marks cell): ÷ 24 000",
+       "M4 (no printed marks cell): Mr of carbon dioxide is 44",
+       "M5 (no printed marks cell): mass of carbon dioxide per Km = 94.4 g | ALLOW 94 – 95 g | ALLOW ecf from | incorrect Mr | Correct answer of 94 – | 95 g scores 5 marks."
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}
