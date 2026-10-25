@@ -1,0 +1,57 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2013-06:6BI05/01R
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2013-06
+  year: '2013'
+  session_month: '06'
+  printed: June 2013
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI05/01R
+  unit_code: 6BI05
+  paper_number_variant: 01R
+variant:
+  official_code: R
+  type: regional
+  note: R = regional variant (Pearson convention)
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: f9941f7e297432ab72fee06645171006c6213909cca2395c8acfc955fe1814e5
+  size_bytes: 4985563
+  pages: 40
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI05_01R_que_20130617.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6BI05
+  stray_prints: []
+  session_printed: null
+  notes:
+  - 'r-discovered: Pearson CDN served the regional-variant file under the plain-paper
+    catalog row; printed code verified'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE-science-lanes PDF-ingestion wave
+  verification_status: AI-IDENTIFIED
+  notes:
+  - 'Single-material dir: mark-scheme not publicly available at ingestion time (Pearson
+    catalog + PMT + XtremePapers checked); disclosed, not fabricated.'
