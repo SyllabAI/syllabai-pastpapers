@@ -24,6 +24,17 @@ variant:
   type: null
   note: null
 materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: f8146c358798981376499c455e9aceb29065ccbfa7102b6a625b956a341f8a0a
+  size_bytes: 198982
+  original_filename: June 2013 QP_2.pdf
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: null
+    collected_by: operator (download date not recorded)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be present in the file
 - type: mark-scheme
   path: ms.pdf
   sha256: 3904d1adf87f35286cf45b1e1c5e283e33e9559579b3d1031a44915bfbd47638
@@ -43,7 +54,8 @@ identification:
   - 4MA0
   stray_prints: []
   session_printed: June 2013
-  notes: []
+  notes:
+  - '2026-10-25 Task 37 (operator ratification "Adopt"): qp.pdf adopted from misfiled phantom dir 2013-06/4MA0-2H; blob visually confirmed as 4MA0/4H (cover "Mathematics A Paper 4H", KMA0/4H, P42071A, Tue 21 May 2013) and pairs with the MS in this dir (PMT filenames "June 2013 QP_2.pdf" / "June 2013 MS_2.pdf"); phantom dir removed per docs/IMAGES-PLACEMENT-2026-10-25.md Phase-5 addendum'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-09-11'
