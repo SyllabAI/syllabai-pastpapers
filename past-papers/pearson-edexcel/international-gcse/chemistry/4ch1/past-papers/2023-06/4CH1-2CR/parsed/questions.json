@@ -1,0 +1,2640 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 7,
+ "totalMarks": 70,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": "Which",
+   "summaryHint": "The table lists three subatomic particles.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table lists three subatomic particles."
+      },
+      {
+       "type": "para",
+       "md": "Complete the table by giving the missing information."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows the position of some elements in the Periodic Table."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Use the Periodic Table on page 2 to help you answer this question."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "How are elements arranged in the Periodic Table?"
+      },
+      {
+       "type": "para",
+       "md": "A increasing atomic number"
+      },
+      {
+       "type": "para",
+       "md": "B increasing melting point"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "C increasing reactivity"
+      },
+      {
+       "type": "para",
+       "md": "D increasing relative atomic mass"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "1b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Which",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which statement is correct about the position of phosphorus, P, in the"
+      },
+      {
+       "type": "para",
+       "md": "Periodic Table?"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "A Group 2 and Period 5"
+      },
+      {
+       "type": "para",
+       "md": "B Group 3 and Period 5"
+      },
+      {
+       "type": "para",
+       "md": "C Group 5 and Period 2"
+      },
+      {
+       "type": "para",
+       "md": "D Group 5 and Period 3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "1b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain which of the four elements in the diagram is least reactive."
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 6,
+     "sum": 6,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "Subatomic Relative Relative All 4 correct = (2)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "particle           mass          charge             2 or 3 correct = (1)",
+       "0 or 1 correct = (0)",
+       "proton              1             +1",
+       "neutron             1              0",
+       "electron          0.0005           −1"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "A increasing atomic number",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "B is incorrect as elements are not arranged in order",
+       "of increasing melting point",
+       "C is incorrect as elements are not arranged in order",
+       "of increasing reactivity",
+       "D is incorrect as elements are not arranged in order",
+       "of increasing relative atomic mass"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "D Group 5 Period 3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is incorrect as phosphorus is not in Group 2 and",
+       "Period 5",
+       "B is incorrect as phosphorus is not in Group 3 and",
+       "Period 5",
+       "C is incorrect as phosphorus is not in Group 5 and",
+       "Period 2"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "iii",
+      "marks": 2,
+      "md": "Xe / xenon",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): because it has a full outer shell (of | M2 dep on M1 | electrons) / 8 electrons in the outer | shell                                                  IGNORE refs to noble | gas"
+      ],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "Complete",
+   "summaryHint": "The table gives some information about the halogens, fluorine, chlorine, bromine and iodine.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The table gives some information about the halogens, fluorine, chlorine, bromine"
+    },
+    {
+     "type": "para",
+     "md": "and iodine."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the table by giving the missing information."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe a test to show that a colourless liquid is an alkene."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "2c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student is given an aqueous solution of chlorine and an aqueous solution of"
+      },
+      {
+       "type": "para",
+       "md": "sodium iodide."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "The student mixes the two solutions."
+      },
+      {
+       "type": "para",
+       "md": "Explain the colour change that occurs."
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 7,
+     "sum": 7,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "Physical state at",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Colour",
+       "room temperature",
+       "gas             pale green / yellow",
+       "gas                   green",
+       "liquid               red-brown",
+       "solid                  grey"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "bromine water / bromine solution",
+      "allow": [
+       "aqueous bromine"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 3,
+      "md": "(mixture) turns (from colourless) to brown",
+      "allow": [
+       "red-brown / orange-"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "brown",
+       "M2 (no printed marks cell): turns colourless / decolourised | IGNORE any starting colour",
+       "M2 (no printed marks cell): is dep on mention of | bromine in M1",
+       "M2 (no printed marks cell): iodine / I2 is displaced | REJECT iodide | OR                                                IGNORE a displacement | reaction occurs | (chlorine reacts with iodide ions) to produce / | form iodine                                       M2 can be scored by I2 as a | product in a balanced | equation or by a word | equation",
+       "M3 (no printed marks cell): (because) chlorine is more reactive (than | ALLOW reverse argument | iodine) | REJECT iodide, except if | already penalised in M2"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": "Identify",
+   "summaryHint": "The box gives the names of some metals.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "3a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The box gives the names of some metals."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "aluminium calcium gold magnesium silver zinc"
+      },
+      {
+       "type": "para",
+       "md": "Use words from the box to answer these questions."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the metal that burns with a bright white flame."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain which metal is most likely to be found in the Earth as an"
+      },
+      {
+       "type": "para",
+       "md": "uncombined element."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Steel is an alloy of iron and carbon."
+      },
+      {
+       "type": "para",
+       "md": "The diagram shows how the particles are arranged in steel."
+      },
+      {
+       "type": "para",
+       "md": "iron atom"
+      },
+      {
+       "type": "para",
+       "md": "carbon atom"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what is meant by the term alloy."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why an alloy is less malleable than a pure metal."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 6,
+     "sum": 6,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "magnesium",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "gold",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "silver"
+      ],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "(an alloy is) a mixture of metals",
+      "allow": [],
+      "reject": [
+       "references to"
+      ],
+      "ignore": [],
+      "notes": [
+       "(an alloy is) a mixture of a metal and another metal   ALLOW (an alloy is) a",
+       "mixture of a metal and",
+       "carbon",
+       "compounds / combining",
+       "of metals"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "the regular arrangement of atoms is distorted /",
+      "allow": [
+       "lattice / layers",
+       "the atoms are"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "disrupted / disturbed OWTTE                            / rows of atoms are",
+       "disrupted / distorted /",
+       "are less regular / are",
+       "OR                                                     irregular",
+       "carbon atoms are smaller than iron                     ALLOW carbon and iron",
+       "atoms / because iron atoms are larger                  atoms are of different",
+       "than carbon atoms                                      sizes",
+       "not the same size / the",
+       "atoms are different",
+       "sizes",
+       "M2 (no printed marks cell): is the least reactive | M2 DEP on M1 | ALLOW it is (the most) | unreactive",
+       "M2 (no printed marks cell): (therefore) it is more difficult for | IGNORE references to | the atoms/layers to slide over one                     the strength of metallic | another                                                bonds"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 9,
+   "commandWord": "Give",
+   "summaryHint": "The diagram shows a fractionating column used to separate crude oil into fractions.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows a fractionating column used to separate crude oil"
+      },
+      {
+       "type": "para",
+       "md": "into fractions."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "refinery gases"
+      },
+      {
+       "type": "para",
+       "md": "gasoline"
+      },
+      {
+       "type": "para",
+       "md": "kerosene"
+      },
+      {
+       "type": "para",
+       "md": "diesel"
+      },
+      {
+       "type": "para",
+       "md": "crude oil"
+      },
+      {
+       "type": "para",
+       "md": "fuel oil"
+      },
+      {
+       "type": "para",
+       "md": "bitumen"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give one use for refinery gases and one use for bitumen."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "refinery gases"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "bitumen"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why refinery gases rise to the top of the column."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what must happen to the crude oil before it is pumped into the column."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "There is a low demand for some of the hydrocarbons obtained from crude oil."
+      },
+      {
+       "type": "para",
+       "md": "Catalytic cracking can be used to convert low‑demand hydrocarbons into more"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "useful products."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the conditions needed for cracking."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "4b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The cracking of tetradecane is shown in the equation."
+      },
+      {
+       "type": "para",
+       "md": "C14H30 → 2C3H6 + C8H18"
+      },
+      {
+       "type": "para",
+       "md": "Explain why there is a high demand for both of the products."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 9,
+     "sum": 9,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 2,
+      "md": "refinery gases: (fuel for) heating / cooking",
+      "allow": [
+       "bottled gas"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "bitumen: tar / road surfacing / road building          ALLOW roads",
+       "/ roofing"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "any one from:",
+      "allow": [],
+      "reject": [
+       "refs to melting"
+      ],
+      "ignore": [],
+      "notes": [
+       "refinery gases have the low(est) boiling point         ALLOW they are the",
+       "most volatile",
+       "refinery gases do not condense in the column           point"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "it is heated / vaporised",
+      "allow": [
+       "boiled"
+      ],
+      "reject": [],
+      "ignore": [
+       "any"
+      ],
+      "notes": [
+       "temperatures given"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "temperature 600 − 700°C",
+      "allow": [
+       "any temperature"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "in the range"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": "ii",
+      "marks": 3,
+      "md": "an explanation containing any three of the following",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "points:",
+       "M2 (no printed marks cell): catalyst alumina / silica / zeolites / aluminium | IGNORE pressures | oxide / silicon dioxide",
+       "M1 (no printed marks cell): alkenes / propene / C3H6 can be used to make | ALLOW used to make | (addition) polymers / plastics                         poly(propene) | ALLOW to make | alcohols / propanol | IGNORE used as fuels",
+       "M2 (no printed marks cell): (because) they have double bonds / are | unsaturated",
+       "M3 (no printed marks cell): shorter alkanes / octane / C8H18 are used as | fuels / petrol",
+       "M4 (no printed marks cell): (because) they have lower boiling points / are | more flammable"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": "Describe",
+   "summaryHint": "This question is about the insoluble salt, lead(II) bromide.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about the insoluble salt, lead(II) bromide."
+    },
+    {
+     "type": "para",
+     "md": "Lead(II) bromide can be made by a precipitation reaction."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "This is the equation for the reaction."
+    },
+    {
+     "type": "para",
+     "md": "Pb(NO3)2(aq) + 2KBr(aq) → PbBr2(s) + 2KNO3(aq)"
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe how solutions of lead nitrate and potassium bromide can be used to"
+      },
+      {
+       "type": "para",
+       "md": "make a pure, dry sample of lead(II) bromide."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 12,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A solution containing 0.150 mol of lead(II) nitrate is reacted with an excess of"
+      },
+      {
+       "type": "para",
+       "md": "potassium bromide solution."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "A mass of 49.6 g of pure, dry lead(II) bromide is produced."
+      },
+      {
+       "type": "para",
+       "md": "Show, by calculation, that the percentage yield of lead(II) bromide is 90.1%."
+      },
+      {
+       "type": "para",
+       "md": "[for PbBr2, Mr = 367]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student investigates the change in electrical conductivity as dilute"
+      },
+      {
+       "type": "para",
+       "md": "lead(II) nitrate solution is added to dilute potassium bromide solution."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "This is the student’s method."
+      },
+      {
+       "type": "para",
+       "md": "Step 1\tadd 50 cm3 of potassium bromide solution to a beaker"
+      },
+      {
+       "type": "para",
+       "md": "Step 2\tmeasure the electrical conductivity of the solution"
+      },
+      {
+       "type": "para",
+       "md": "Step 3\tadd 10 cm3 of lead(II) nitrate solution to the beaker"
+      },
+      {
+       "type": "para",
+       "md": "Step 4\tstir the mixture"
+      },
+      {
+       "type": "para",
+       "md": "Step 5\tmeasure the electrical conductivity of the mixture"
+      },
+      {
+       "type": "para",
+       "md": "Repeat steps 3, 4 and 5 until a total of 50 cm3 of lead(II) nitrate solution has"
+      },
+      {
+       "type": "para",
+       "md": "been added."
+      },
+      {
+       "type": "para",
+       "md": "The table shows the student’s results."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Plot",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Plot the student’s results on the grid."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw a line of best fit, ignoring the anomalous result."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "10.00"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "9.80"
+      },
+      {
+       "type": "para",
+       "md": "9.60"
+      },
+      {
+       "type": "para",
+       "md": "Electrical"
+      },
+      {
+       "type": "para",
+       "md": "conductivity"
+      },
+      {
+       "type": "para",
+       "md": "in arbitrary units"
+      },
+      {
+       "type": "para",
+       "md": "9.40"
+      },
+      {
+       "type": "para",
+       "md": "9.20"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "9.00"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "10"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "30"
+      },
+      {
+       "type": "para",
+       "md": "40"
+      },
+      {
+       "type": "para",
+       "md": "50"
+      },
+      {
+       "type": "para",
+       "md": "Total volume of lead(II) nitrate in cm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14,
+      15
+     ]
+    },
+    {
+     "id": "5c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain the shape of the graph."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5c-iv",
+     "label": "c",
+     "sub": "iv",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest a mistake the student could have made to cause the"
+      },
+      {
+       "type": "para",
+       "md": "anomalous result."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5c-v",
+     "label": "c",
+     "sub": "v",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Further 10 cm3 volumes of lead(II) nitrate are added to the beaker so the"
+      },
+      {
+       "type": "para",
+       "md": "lead(II) nitrate is in excess."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Predict what will happen to the conductivity of the mixture when the"
+      },
+      {
+       "type": "para",
+       "md": "lead(II) nitrate is in excess."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "5d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows the electrolysis of molten lead(II) bromide, PbBr2"
+      },
+      {
+       "type": "para",
+       "md": "–"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "A"
+      },
+      {
+       "type": "para",
+       "md": "B"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "crucible"
+      },
+      {
+       "type": "para",
+       "md": "molten lead(II) bromide"
+      },
+      {
+       "type": "para",
+       "md": "This is the ionic half‑equation for the formation of bromine at electrode A."
+      },
+      {
+       "type": "para",
+       "md": "2Br− → Br2 + 2e−"
+      },
+      {
+       "type": "para",
+       "md": "Give a reason why this half‑equation shows oxidation."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 13,
+     "sum": 13,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 4,
+      "md": "mix / react the two solutions (together)",
+      "allow": [],
+      "reject": [
+       "an indication that"
+      ],
+      "ignore": [
+       "volumes",
+       "heating at this"
+      ],
+      "notes": [
+       "stage",
+       "solids are mixed for M1"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "0.150 × 367 OR 55.05 g",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "all 6 points plotted ± half a square",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "straight line of best fit ignoring the anomalous",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "result at volume = 20 cm3"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "iii",
+      "marks": 2,
+      "md": "the conductivity decreases (when the volume",
+      "allow": [
+       "negative",
+       "the conductivity"
+      ],
+      "reject": [
+       "directly"
+      ],
+      "ignore": [
+       "proportional"
+      ],
+      "notes": [
+       "of lead(II) nitrate added increases)             /inversely proportional",
+       "proportional",
+       "correlation between",
+       "volume of lead(II) nitrate",
+       "and electrical conductivity",
+       "increases when the volume",
+       "of lead(II) nitrate decrease"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "iv",
+      "marks": 1,
+      "md": "the student forgot to stir the mixture",
+      "allow": [
+       "the student didn’t",
+       "enough time for the"
+      ],
+      "reject": [
+       "the student added"
+      ],
+      "ignore": [],
+      "notes": [
+       "reaction to take place",
+       "before measuring",
+       "conductivity",
+       "less / too little lead(iI)",
+       "nitrate solution"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "v",
+      "marks": 1,
+      "md": "the conductivity would increase",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "electrons are lost (from bromide",
+      "allow": [],
+      "reject": [
+       "bromine / bromine"
+      ],
+      "ignore": [],
+      "notes": [
+       "ions)                                            ions lose electrons",
+       "M2 (no printed marks cell): filter (the solid lead bromide)",
+       "M3 (no printed marks cell): wash (using deionised water) | IGNORE any washing before | filtering",
+       "M4 (no printed marks cell): method of drying | eg leave to dry / dry in an | oven / leave in a warm | place / dry with filter | paper | REJECT direct heating of | final product for M4 | REJECT if solid is washed | again after drying for M4 | Methods of producing a | soluble salt eg evaporating | after mixing, leaving | solutions in an evaporating | basin scores M1 only",
+       "M2 (no printed marks cell): (49.6 ÷ 55.05) × 100",
+       "M1 (no printed marks cell): (49.6 ÷ 367) OR 0.1351 | ALLOW 0.135",
+       "M2 (no printed marks cell): (0.1351 ÷ 0.150) x 100 | ALLOW a final answer of | 90% by either method | REJECT | (49.6 ÷ 0.15) = 330.67 | (330.67 ÷ 367) x 100 | for both marks",
+       "M2 (no printed marks cell): there are fewer ions in the mixture | ALLOW ions are being | removed (as lead(II) | bromide is formed)"
+      ],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 15,
+   "commandWord": "Describe",
+   "summaryHint": "Describe the forces of attraction in metallic bonding.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "6a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe the forces of attraction in metallic bonding."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "When a small piece of potassium is added to water, bubbles of hydrogen gas"
+      },
+      {
+       "type": "para",
+       "md": "are observed."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the test for hydrogen gas."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give two other observations that would be made."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why lithium is less reactive than potassium."
+      },
+      {
+       "type": "para",
+       "md": "Refer to atomic structure in your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This is the equation for the reaction between sodium and water."
+      },
+      {
+       "type": "para",
+       "md": "2Na(s) + 2H2O(l) → 2NaOH(aq) + H2(g)"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "A mass of 0.750 g of sodium is reacted with an excess of water."
+      },
+      {
+       "type": "para",
+       "md": "Calculate the volume of hydrogen gas produced, in cm3, at room temperature."
+      },
+      {
+       "type": "para",
+       "md": "[molar volume of hydrogen at rtp = 24 000 cm3]"
+      },
+      {
+       "type": "para",
+       "md": "[for Na, Ar = 23]"
+      },
+      {
+       "type": "para",
+       "md": "Give your answer to three significant figures."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "volume of hydrogen = .............................................................. cm3"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "6e",
+     "label": "e",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This is the equation for the reaction between sodium hydroxide and sulfuric acid."
+      },
+      {
+       "type": "para",
+       "md": "2NaOH + H2SO4 → Na2SO4 + 2H2O"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "A volume of 25.0 cm3 of sodium hydroxide solution is completely neutralised by"
+      },
+      {
+       "type": "para",
+       "md": "16.3 cm3 of 0.0500 mol / dm3 sulfuric acid."
+      },
+      {
+       "type": "para",
+       "md": "Calculate the concentration of the sodium hydroxide solution in mol / dm3."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "concentration = .............................................................. mol / dm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 15,
+     "sum": 15,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "(electrostatic attraction between)",
+      "allow": [
+       "(electrostatic attraction"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "positive ions                                  between positive) nuclei of (metal)",
+       "atoms"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "(squeaky) pop with lighted splint/lit with a",
+      "allow": [],
+      "reject": [
+       "use of glowing splint"
+      ],
+      "ignore": [
+       "just ‘burns with a squeaky pop’"
+      ],
+      "notes": [
+       "(Bunsen) flame"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "any two from:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": null,
+      "marks": 3,
+      "md": "an explanation linking the following",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "points:"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": null,
+      "marks": 4,
+      "md": "(moles of sodium) 0.75 ÷ 23 OR 0.0326",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "moles"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "e",
+      "sub": null,
+      "marks": 3,
+      "md": "(moles of sulfuric acid)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(16.3 × 0.0500) ÷ 1000 OR 0.000815         ALLOW 8.15 x 10-4 (moles)",
+       "M2 (no printed marks cell): (and) delocalised electrons | REJECT any references to ionic bonding | / sharing of electrons / intermolecular | forces for both marks",
+       "M1 (no printed marks cell): lilac / purple flame | ALLOW flame | REJECT other colours",
+       "M2 (no printed marks cell): potassium melts / turns into a ball",
+       "M3 (no printed marks cell): potassium moves on the surface | ALLOW floats",
+       "M4 (no printed marks cell): potassium gets smaller | ALLOW potassium disappears / dissolves | IGNORE fizzing / bubbles etc",
+       "M1 (no printed marks cell): lithium has fewer shells than potassium | ALLOW lithium has smaller atoms than | potassium | ALLOW (outer shell) electron in lithium | is closer to the nucleus | ALLOW correct electron configurations | REJECT ‘fewer outer shells’",
+       "M2 (no printed marks cell): outer shell / outer electron in lithium | ALLOW outer shell / outer electron in | is more strongly attracted to the nucleus      lithium is less shielded (by inner shells) | ACCEPT valence electron",
+       "M3 (no printed marks cell): (so in lithium the outer shell) electron | is less easily lost | ALLOW reverse argument throughout | for potassium",
+       "M2 (no printed marks cell): (moles of hydrogen) 0.0326 ÷ 2 | ALLOW M1 ÷ 2",
+       "M3 (no printed marks cell): (volume of hydrogen) 391.304 (cm3) | ALLOW M2 × 24 000 | REJECT incorrect rounding / use of 1SF | once in M1 – M3",
+       "M4 (no printed marks cell): 391 (cm3) | ALLOW M3 to 3 significant figures, | provided some attempt at calculation | 391 (cm3) scores 4 marks | If M1 is rounded to 0.033 moles, final | answer of 396 (cm3) scores 4 marks | If M2 is absent, final answer of 782 / | 783 (cm3) scores 3 marks | If x 2 instead of ÷ 2 in M2 , final answer | of 1560 (cm3) scores 3 marks",
+       "M2 (no printed marks cell): (moles of sodium hydroxide) = 0.00163 | ALLOW M1 × 2",
+       "M3 (no printed marks cell): 0.0652 (mol/dm3) | ALLOW M2 ÷ 0.025 | 0.0652 (mol/dm3) scores 3 marks | ALLOW any SF except 1SF | If M2 is absent, final answer of 0.0326 | (mol/dm3) scores 2 marks | If ÷ 2 instead of x 2 in M2 , final answer | of 0.0163 (mol/dm3) scores 2 marks | REJECT 16.3 / 25.0 = 0.652 (mol/dm3) | for all 3 marks"
+      ],
+      "pages": [
+       11
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 14,
+   "commandWord": "Give",
+   "summaryHint": "Methanol is made by the reaction between hydrogen and carbon monoxide.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Methanol is made by the reaction between hydrogen and carbon monoxide."
+    },
+    {
+     "type": "para",
+     "md": "This is the equation for the reaction."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "ΔH = −119 kJ / mol"
+    },
+    {
+     "type": "para",
+     "md": "2H2(g) + CO(g)  CH3OH(g)"
+    },
+    {
+     "type": "para",
+     "md": "A mixture of hydrogen and carbon monoxide is left until dynamic equilibrium"
+    },
+    {
+     "type": "para",
+     "md": "is reached."
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give two characteristics of a reaction at dynamic equilibrium."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "7a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a reason why adding a catalyst does not affect the yield of methanol."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 3,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "7a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The temperature of the reaction mixture is decreased at constant pressure."
+      },
+      {
+       "type": "para",
+       "md": "Explain the effect of this change on the yield of methanol."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "7a-iv",
+     "label": "a",
+     "sub": "iv",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The pressure of the reaction mixture is increased at constant temperature."
+      },
+      {
+       "type": "para",
+       "md": "Explain the effect of this change on the yield of methanol."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This equation shows the displayed formulae for the reactants and product."
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "The table gives the bond energies for the bonds in the reactants and product."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "7b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Show that",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Show that the molar enthalpy change, ΔH, for the reaction is −119 kJ / mol."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "7b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why this reaction is exothermic."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      22
+     ]
+    },
+    {
+     "id": "7c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows the displayed formula of an ester that is made from methanol"
+      },
+      {
+       "type": "para",
+       "md": "and a carboxylic acid."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      23
+     ]
+    },
+    {
+     "id": "7c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw a circle around the functional group of the ester."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      23
+     ]
+    },
+    {
+     "id": "7c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the displayed formula of the carboxylic acid used to make this ester."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 14,
+     "sum": 14,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "i",
+      "marks": 2,
+      "md": "the forward and reverse reactions occur",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "at the same rate"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "a catalyst increases the rate of (both) the",
+      "allow": [
+       "has the same effect on"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "forwards and the reverse reaction equally           the rate of forward and reverse",
+       "reaction"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "iii",
+      "marks": 2,
+      "md": "yield increases",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "iv",
+      "marks": 2,
+      "md": "yield increases",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 3,
+      "md": "(bonds broken) = 436 + 436 + 1072 OR 1944",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "an explanation that links together",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "the following two points:"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "",
+      "allow": [],
+      "reject": [
+       "OH not displayed"
+      ],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): so the concentrations of reactants and | ALLOW so the moles of | products remain constant                            reactants and products remain | constant | REJECT so the concentrations of | reactants and products are the | same",
+       "M2 (no printed marks cell): the (forward) reaction is exothermic | ALLOW the reverse reaction is | endothermic | IGNORE any references to Le | Chatelier’s Principle (moves / | shifts)",
+       "M2 (no printed marks cell): dep on M1 correct or missing",
+       "M2 (no printed marks cell): there are more moles of (gaseous) reactants | IGNORE any references to Le | than products / there are fewer (gaseous) moles     Chatelier’s Principle (moves | on the right hand side / there are 3 moles (of      /shifts) | gas) on the left and 1 mole (of gas) on the right | ORA                                                 M2 dep on M1 correct or missing",
+       "M2 (no printed marks cell): (bonds formed) = 414 + 414 + 414 + 358 + 463 | OR 2063",
+       "M3 (no printed marks cell): 1944 – 2063 (= – 119)",
+       "M1 (no printed marks cell): more energy is given out when | IGNORE refs to numbers of | the bonds are made                                bonds",
+       "M2 (no printed marks cell): than is taken in when the bonds | are broken ORA",
+       "M1 (no printed marks cell): breaking bonds is endothermic / takes in | energy AND making bonds is exothermic / | releases energy",
+       "M2 (no printed marks cell): the energy released is more than the energy | DEP on M1 | taken in | If state / imply that energy | required to make bonds | If state / imply that energy | released when bonds are | broken scores 0"
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}
