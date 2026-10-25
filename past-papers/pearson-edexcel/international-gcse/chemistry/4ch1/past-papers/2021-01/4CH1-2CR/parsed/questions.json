@@ -1,0 +1,2783 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 8,
+ "totalMarks": 70,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": "Give",
+   "summaryHint": "Answer ALL questions.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Answer ALL questions."
+    },
+    {
+     "type": "para",
+     "md": "1 Substances can exist as solids, liquids or gases."
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the change of state that occurs when a substance melts."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the word equation for the sublimation of iodine."
+      },
+      {
+       "type": "para",
+       "md": "iodine (s) → iodine (...........)"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The circle in the diagram represents a particle."
+      },
+      {
+       "type": "para",
+       "md": "Complete the diagram to show the arrangement of particles in a gas."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table lists some statements about particles."
+      },
+      {
+       "type": "para",
+       "md": "Place ticks () in boxes to show which two statements are correct for"
+      },
+      {
+       "type": "para",
+       "md": "water particles."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 5,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "(from) solid to liquid",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "iodine (s)  iodine (g)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "(diagram showing) particles well spread out with",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "none touching"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": null,
+      "marks": 2,
+      "md": "Statement Tick",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "the particles only vibrate",
+       "the particles do not move",
+       "the particles have no gaps between",
+       "them",
+       "the particles move randomly              ",
+       "the particles have more energy than      ",
+       "in ice",
+       "the particles have a regular",
+       "arrangement",
+       "tick in 4th box (1)",
+       "tick in 5th box (1)",
+       "if more than two ticks deduct 1 mark for each",
+       "incorrect tick",
+       "(Total for Question 1 = 5)"
+      ],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 9,
+   "commandWord": "Predict",
+   "summaryHint": "This question is about elements in Group 7 and their compounds.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about elements in Group 7 and their compounds."
+    },
+    {
+     "type": "para",
+     "md": "The table gives information about some of these elements."
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Predict",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Predict the colour of fluorine at room temperature."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "How many of the elements in the table are liquids at room temperature (20 °C)?"
+      },
+      {
+       "type": "para",
+       "md": "A 0"
+      },
+      {
+       "type": "para",
+       "md": "B 1"
+      },
+      {
+       "type": "para",
+       "md": "C 2"
+      },
+      {
+       "type": "para",
+       "md": "D 3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The element astatine is below iodine in Group 7."
+      },
+      {
+       "type": "para",
+       "md": "Predict the formula of a molecule of astatine."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Sea water contains bromide ions."
+      },
+      {
+       "type": "para",
+       "md": "Bromine can be obtained by bubbling chlorine through a sample of sea water."
+      },
+      {
+       "type": "para",
+       "md": "The ionic equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "Cl2(g) + 2Br–(aq) → 2Cl–(aq) + Br2(aq)"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain which species acts as an oxidising agent in this reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The reaction occurs because chlorine is more reactive than bromine."
+      },
+      {
+       "type": "para",
+       "md": "Bromine is below chlorine in Group 7."
+      },
+      {
+       "type": "para",
+       "md": "Explain the decrease in reactivity from chlorine to bromine."
+      },
+      {
+       "type": "answer_lines",
+       "count": 6
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Elements in Group 7 react with elements in Group 1 to form ionic compounds."
+      },
+      {
+       "type": "para",
+       "md": "Which pair of ions both have the electronic configuration 2.8.8?"
+      },
+      {
+       "type": "para",
+       "md": "A Li+ and Cl–"
+      },
+      {
+       "type": "para",
+       "md": "B K+ and F–"
+      },
+      {
+       "type": "para",
+       "md": "C Li+ and F–"
+      },
+      {
+       "type": "para",
+       "md": "D K+ and Cl–"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 9,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "(pale/light) yellow",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "The correct answer is B 1 as bromine is the",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "only liquid at room temperature (20 °C)",
+       "A 0 is incorrect because bromine is a liquid at",
+       "room temperature (20 °C)",
+       "C 2 is incorrect because bromine is the only liquid",
+       "at room temperature (20 °C)",
+       "D 3 is incorrect because bromine is the only liquid",
+       "at room temperature (20 °C)"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "At2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": "ii",
+      "marks": 3,
+      "md": "explanation containing three of following points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "The correct answer is D K+ and Cl– because both",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "have electronic configuration of 2.8.8",
+       "A is not correct because Li+ does not have",
+       "electronic configuration of 2.8.8",
+       "B is not correct because F– does not have",
+       "electronic configuration of 2.8.8",
+       "C is not correct because neither Li+ nor F– have",
+       "electronic configuration of 2.8.8",
+       "(Total for Question 2 = 9)",
+       "M1 (no printed marks cell): oxidising agent is chlorine/Cl2",
+       "M2 (no printed marks cell): because chlorine/Cl2 gains electron(s)/is | ACCEPT because | reduced                                               bromide ions/Br– lose | electrons/are oxidised | REJECT bromine ions",
+       "M2 (no printed marks cell): DEP M1 correct or | missing",
+       "M1 (no printed marks cell): bromine and chlorine react by gaining | electron/forming 1- or negative ion",
+       "M2 (no printed marks cell): bromine atom larger (than chlorine atom) | ALLOW bromine has | larger atomic radius | ALLOW bromine outer | (electron) shell further | from nucleus | ALLOW bromine atom | has more (electron) | shells (than chlorine)",
+       "M3 (no printed marks cell): bromine (atom) has smaller/weaker attraction | (from nucleus) for (outer shell) electrons (than | chlorine) OWTTE",
+       "M4 (no printed marks cell): so (bromine has) less tendency to gain | electron/form negative ion (so less reactive than | chlorine) OWTTE                                     ALLOW reverse | argument for chlorine | in M2 M3 M4"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": "Explain",
+   "summaryHint": "Explain why metals conduct electricity but covalent compounds do not conduct electricity.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "3a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why metals conduct electricity but covalent compounds do not conduct"
+      },
+      {
+       "type": "para",
+       "md": "electricity."
+      },
+      {
+       "type": "answer_lines",
+       "count": 8
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Hydrogen chloride, HCl, is a covalent substance."
+      },
+      {
+       "type": "para",
+       "md": "When hydrogen chloride is added to water, a solution of dilute hydrochloric acid"
+      },
+      {
+       "type": "para",
+       "md": "is formed."
+      },
+      {
+       "type": "para",
+       "md": "This solution does conduct electricity."
+      },
+      {
+       "type": "para",
+       "md": "Name the type of particle in the solution of the dilute hydrochloric acid that"
+      },
+      {
+       "type": "para",
+       "md": "allows it to conduct electricity."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The teacher uses this apparatus to investigate the electrolysis of a solution of"
+      },
+      {
+       "type": "para",
+       "md": "dilute hydrochloric acid."
+      },
+      {
+       "type": "para",
+       "md": "The ammeter measures the current."
+      },
+      {
+       "type": "para",
+       "md": "variable power supply"
+      },
+      {
+       "type": "para",
+       "md": "ammeter"
+      },
+      {
+       "type": "para",
+       "md": "gas syringe Y"
+      },
+      {
+       "type": "para",
+       "md": "gas syringe X"
+      },
+      {
+       "type": "para",
+       "md": "positive electrode"
+      },
+      {
+       "type": "para",
+       "md": "negative electrode"
+      },
+      {
+       "type": "para",
+       "md": "solution of dilute"
+      },
+      {
+       "type": "para",
+       "md": "hydrochloric acid"
+      },
+      {
+       "type": "para",
+       "md": "The teacher wants to find out if there is a relationship between current and"
+      },
+      {
+       "type": "para",
+       "md": "volume of gas collected at each electrode."
+      },
+      {
+       "type": "para",
+       "md": "She adjusts the power supply until the current is 0.1 amp."
+      },
+      {
+       "type": "para",
+       "md": "After 5 minutes she records the volume of gas collected in syringe X and syringe Y."
+      },
+      {
+       "type": "para",
+       "md": "The teacher repeats the experiment several times, using a different current"
+      },
+      {
+       "type": "para",
+       "md": "each time."
+      },
+      {
+       "type": "para",
+       "md": "The table gives the teacher’s results for syringe Y."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7,
+      8
+     ]
+    },
+    {
+     "id": "3c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Plot",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Plot the results for syringe Y."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw a circle around the anomalous result."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw a line of best fit."
+      },
+      {
+       "type": "para",
+       "md": "80"
+      },
+      {
+       "type": "para",
+       "md": "70"
+      },
+      {
+       "type": "para",
+       "md": "60"
+      },
+      {
+       "type": "para",
+       "md": "Volume of gas in syringe Y in cm3"
+      },
+      {
+       "type": "para",
+       "md": "50"
+      },
+      {
+       "type": "para",
+       "md": "40"
+      },
+      {
+       "type": "para",
+       "md": "30"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "10"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "0.1"
+      },
+      {
+       "type": "para",
+       "md": "0.2"
+      },
+      {
+       "type": "para",
+       "md": "0.3"
+      },
+      {
+       "type": "para",
+       "md": "0.4"
+      },
+      {
+       "type": "para",
+       "md": "0.5"
+      },
+      {
+       "type": "para",
+       "md": "0.6"
+      },
+      {
+       "type": "para",
+       "md": "0.7"
+      },
+      {
+       "type": "para",
+       "md": "0.8"
+      },
+      {
+       "type": "para",
+       "md": "0.0"
+      },
+      {
+       "type": "para",
+       "md": "Current in amp"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "3c-iv",
+     "label": "c",
+     "sub": "iv",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain a possible cause of the anomalous result, other than misreading the"
+      },
+      {
+       "type": "para",
+       "md": "apparatus."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3c-v",
+     "label": "c",
+     "sub": "v",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Deduce",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Deduce the relationship between current and volume of gas collected in"
+      },
+      {
+       "type": "para",
+       "md": "syringe Y."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The ionic half‑equation for the reaction that produces the gas in syringe X is"
+      },
+      {
+       "type": "para",
+       "md": "2Cl– → Cl2 + 2e–"
+      },
+      {
+       "type": "para",
+       "md": "The ionic half‑equation for the reaction that produces the gas in syringe Y is"
+      },
+      {
+       "type": "para",
+       "md": "2H+ + 2e– → H2"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3d-i",
+     "label": "d",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest how these ionic half‑equations show that the volume of"
+      },
+      {
+       "type": "para",
+       "md": "chlorine collected in syringe X should be the same as the volume of hydrogen"
+      },
+      {
+       "type": "para",
+       "md": "collected in syringe Y."
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      }
+     ],
+     "answerLines": 3,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "3d-ii",
+     "label": "d",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest why the volume of chlorine collected in syringe X is always less than"
+      },
+      {
+       "type": "para",
+       "md": "the volume of hydrogen collected in syringe Y."
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      }
+     ],
+     "answerLines": 3,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 13,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 4,
+      "md": "Explanation including the following points:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(metals)"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "ion(s)",
+      "allow": [
+       "hydrogen ion/H+",
+       "chloride ion/Cl_"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "all points plotted correctly (within half a small",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "square)"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "point at (0.4, 25) circled",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": "iii",
+      "marks": 1,
+      "md": "straight line of best fit through origin drawn with",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "ruler"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": "iv",
+      "marks": 2,
+      "md": "explanation linking",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "c",
+      "sub": "v",
+      "marks": 1,
+      "md": "the greater the current the greater the volume (of",
+      "allow": [
+       "directly",
+       "positive"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "gas)                                                  proportional",
+       "correlation"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "(transfer of two/same number of electrons produces)",
+      "allow": [
+       "molecules for"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "one mole of chlorine/Cl2 and one mole of hydrogen/H2   ALLOW same number",
+       "of moles of chlorine/Cl2",
+       "and hydrogen/H2",
+       "moles"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "chlorine dissolves/soluble in acid/solution",
+      "allow": [
+       ""
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "dissolves/soluble in",
+       "water",
+       "(Total for Question 3 = 13)",
+       "M1 (no printed marks cell): contain delocalised electrons | IGNORE free | electrons/sea of | electrons",
+       "M2 (no printed marks cell): (which) move/flow/are mobile/are free to | move (through the metal structure)                 M2 dependent on | mention of electrons | If any mention of | ions/atoms moving | and two from | cannot score M1 M2 | (covalent compounds)",
+       "M3 (no printed marks cell): contain neutral molecules / molecules with no | ALLOW do not contain | overall charge                                     ions",
+       "M4 (no printed marks cell): electrons held (tightly) in covalent bonds (so) | ALLOW there are no | delocalised electrons",
+       "M5 (no printed marks cell): no electrons free to move (so do not conduct) | If state ions present | cannot score M3 M4",
+       "M5 (no printed marks cell): M5",
+       "M1 (no printed marks cell): the volume/reading is less than expected",
+       "M2 (no printed marks cell): because the current was less than 0.4A / some | ALLOW reading taken | gas escaped/ there was a leak                         before 5 minutes"
+      ],
+      "pages": [
+       8
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "Name",
+   "summaryHint": "This question is about alcohols, carboxylic acids and esters.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about alcohols, carboxylic acids and esters."
+    }
+   ],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table gives information about some alcohols."
+      },
+      {
+       "type": "para",
+       "md": "Complete the table by giving the missing information."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Ethanol can be oxidised to ethanoic acid by heating with potassium dichromate(VI)"
+      },
+      {
+       "type": "para",
+       "md": "and another reagent."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the other reagent."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State the colour change that occurs during this reaction."
+      },
+      {
+       "type": "para",
+       "md": "from .............................................................................................................................. to .............................................................................................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Alcohols react with carboxylic acids to form esters."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the ester that forms when ethanol reacts with ethanoic acid."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "4c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the equation for the reaction between methanol and ethanoic acid."
+      },
+      {
+       "type": "para",
+       "md": "CH3OH + ............................................................................................................ → ............................................................................................................ + H2O"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 7,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "Name Structural Relative",
+      "allow": [
+       "correct names"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "formula      formula",
+       "mass",
+       "methanol       CH3OH        32",
+       "ethanol        C2H5OH       46 (1)",
+       "butanol (1)    C4H9OH       74",
+       "of isomers"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "sulfuric acid",
+      "allow": [
+       "H2SO4"
+      ],
+      "reject": [],
+      "ignore": [
+       "reference to"
+      ],
+      "notes": [
+       "If oxidation number",
+       "given must be correct",
+       "concentration"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "from orange to green",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "ethyl ethanoate",
+      "allow": [
+       "as one word"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": "ii",
+      "marks": 2,
+      "md": "CH3OH + CH3COOH  CH3COOCH3 + H2O",
+      "allow": [
+       "displayed"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "formula",
+       "M1 (no printed marks cell): CH3COOH",
+       "M2 (no printed marks cell): CH3COOCH3 | (Total for Question 4 = 7)"
+      ],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": null,
+   "summaryHint": "Hydrogen peroxide solution decomposes slowly at room temperature to form water and oxygen.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Hydrogen peroxide solution decomposes slowly at room temperature to form water"
+    },
+    {
+     "type": "para",
+     "md": "and oxygen."
+    },
+    {
+     "type": "para",
+     "md": "The equation for the reaction is"
+    },
+    {
+     "type": "para",
+     "md": "2H2O2 → 2H2O + O2"
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A catalyst increases the rate of this reaction."
+      },
+      {
+       "type": "para",
+       "md": "State one other property of a catalyst."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student has samples of three solids, X, Y and Z."
+      },
+      {
+       "type": "para",
+       "md": "The student uses this apparatus to find out which solids act as catalysts in the"
+      },
+      {
+       "type": "para",
+       "md": "decomposition of hydrogen peroxide solution."
+      },
+      {
+       "type": "para",
+       "md": "hydrogen peroxide"
+      },
+      {
+       "type": "para",
+       "md": "solution"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "40"
+      },
+      {
+       "type": "para",
+       "md": "60"
+      },
+      {
+       "type": "para",
+       "md": "80"
+      },
+      {
+       "type": "para",
+       "md": "100"
+      },
+      {
+       "type": "para",
+       "md": "oxygen"
+      },
+      {
+       "type": "para",
+       "md": "Describe the method that the student should use to find out which solids act"
+      },
+      {
+       "type": "para",
+       "md": "as catalysts."
+      },
+      {
+       "type": "answer_lines",
+       "count": 19
+      }
+     ],
+     "answerLines": 19,
+     "pages": [
+      12,
+      13
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The decomposition of hydrogen peroxide solution is exothermic."
+      },
+      {
+       "type": "para",
+       "md": "On the diagram, draw and label the reaction profiles for the reaction"
+      },
+      {
+       "type": "para",
+       "md": " without a catalyst"
+      },
+      {
+       "type": "para",
+       "md": " with a catalyst"
+      },
+      {
+       "type": "para",
+       "md": "2H2O2"
+      },
+      {
+       "type": "para",
+       "md": "Energy"
+      },
+      {
+       "type": "para",
+       "md": "2H2O + O2"
+      },
+      {
+       "type": "para",
+       "md": "Progress of the reaction"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "5d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The equation for the reaction can be shown using displayed formulae."
+      },
+      {
+       "type": "para",
+       "md": "O ΔH = –204 kJ"
+      },
+      {
+       "type": "para",
+       "md": "H → 2 H"
+      },
+      {
+       "type": "para",
+       "md": "2 H"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "H + O"
+      },
+      {
+       "type": "para",
+       "md": "The table gives the bond energies for two of the bonds."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5d-i",
+     "label": "d",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use this information to calculate the total amount of energy needed to break"
+      },
+      {
+       "type": "para",
+       "md": "all the bonds in two moles of H2O2"
+      },
+      {
+       "type": "para",
+       "md": "energy needed = .............................................................. kJ"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5d-ii",
+     "label": "d",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use this information to calculate the total amount of energy released when all"
+      },
+      {
+       "type": "para",
+       "md": "the bonds in two moles of H2O are formed."
+      },
+      {
+       "type": "para",
+       "md": "energy released = .............................................................. kJ"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "5d-iii",
+     "label": "d",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use the value of ΔH and your answers for (i) and (ii) to calculate the"
+      },
+      {
+       "type": "para",
+       "md": "bond energy, in kJ/mol, for the O"
+      },
+      {
+       "type": "para",
+       "md": "O bond."
+      },
+      {
+       "type": "para",
+       "md": "bond energy = .............................................................. kJ/mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 13,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "a catalyst is chemically unchanged at the end of",
+      "allow": [
+       "(provides",
+       "not used up in"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "the reaction                                          alternative route for",
+       "reaction of) lower",
+       "activation energy",
+       "reaction"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 6,
+      "md": "description including six of the following points:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": null,
+      "marks": 2,
+      "md": "labelled profile curve drawn for reaction without catalyst",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "must start from",
+       "reactants energy level",
+       "and end at products"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "energy needed= [(4 x 463) + 2(146)] = 2144",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "sign"
+      ],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "energy released = [(4 x 463)] = 1852",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "sign"
+      ],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "d",
+      "sub": "iii",
+      "marks": 2,
+      "md": "for showing equation linking between",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(i), (ii), O=O bond energy and H",
+       "M1 (no printed marks cell): do experiment using hydrogen peroxide | solution only/without X/Y/Z",
+       "M2 (no printed marks cell): use known volume of hydrogen peroxide | solution OWTTE",
+       "M3 (no printed marks cell): (and) measure time for certain volume of | ALLOW measure time | oxygen gas to be collected OR measure volume of       until no more oxygen | gas collected in a certain time period OWTTE          produced",
+       "M4 (no printed marks cell): repeat using same volume of hydrogen | ALLOW amount | peroxide solution",
+       "M5 (no printed marks cell): with known mass/amount of solid X (then Y, | then Z)",
+       "M6 (no printed marks cell): measure time for same volume of oxygen gas | to be collected OR measure volume of gas | collected in same time period (with solid/X/Y/Z | present)",
+       "M7 (no printed marks cell): after reaction (remove solid/X/Y/Z by filtration | and dry) find mass of solid/X/Y/Z /check if mass | unchanged | ALLOW reference to",
+       "M8 (no printed marks cell): reference to reduced time (for certain volume | increased rate | of oxygen gas to be collected) OR increased | volume of gas (collected in a certain time period) | means X/Y/Z (possible) catalyst (1)",
+       "M2 (no printed marks cell): labelled profile curve drawn with lower activation energy | energy level | for reaction with catalyst",
+       "M2 (no printed marks cell): correct calculation | Example:",
+       "M1 (no printed marks cell): [1852+ (O=O)] - 2144 = 204 | OR (O=O) = 2144 – 1852 + 204                                    Mark CSQ on (i) and (ii)",
+       "M2 (no printed marks cell): (O=O) = 496 | -496 scores 1 mark | (Total for Question 5 = 13)"
+      ],
+      "pages": [
+       11
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 10,
+   "commandWord": "Name",
+   "summaryHint": "A student does a titration using dilute sulfuric acid to find the concentration of a solution of potassium hydroxide.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A student does a titration using dilute sulfuric acid to find the concentration of a"
+    },
+    {
+     "type": "para",
+     "md": "solution of potassium hydroxide."
+    },
+    {
+     "type": "para",
+     "md": "The student adds 25.0 cm3 of the potassium hydroxide solution to a conical flask."
+    },
+    {
+     "type": "para",
+     "md": "He then adds a few drops of methyl orange indicator."
+    },
+    {
+     "type": "para",
+     "md": "The student does the titration four times."
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the piece of apparatus the student should use to add the"
+      },
+      {
+       "type": "para",
+       "md": "potassium hydroxide solution."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "What is the colour of methyl orange in an alkaline solution?"
+      },
+      {
+       "type": "para",
+       "md": "."
+      },
+      {
+       "type": "para",
+       "md": "A blue"
+      },
+      {
+       "type": "para",
+       "md": "B orange"
+      },
+      {
+       "type": "para",
+       "md": "C red"
+      },
+      {
+       "type": "para",
+       "md": "D yellow"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The table shows the student’s results."
+      },
+      {
+       "type": "para",
+       "md": "Concordant results are those within 0.20 cm3 of each other."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Place ticks () in the table to show which results are concordant."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use the concordant results to calculate the mean (average) volume of"
+      },
+      {
+       "type": "para",
+       "md": "acid added."
+      },
+      {
+       "type": "para",
+       "md": "mean volume = .............................................................. cm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This table shows the student’s results for another titration."
+      },
+      {
+       "type": "para",
+       "md": "The equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "2KOH + H2SO4 → K2SO4 + 2H2O"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the amount, in moles, of KOH in 25.0 cm3 of the potassium hydroxide"
+      },
+      {
+       "type": "para",
+       "md": "solution."
+      },
+      {
+       "type": "para",
+       "md": "amount of KOH = .............................................................. mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the amount, in moles, of H2SO4 in 21.20 cm3 of sulfuric acid."
+      },
+      {
+       "type": "para",
+       "md": "amount of H2SO4 = .............................................................. mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "6c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the concentration, in mol/dm3, of the sulfuric acid."
+      },
+      {
+       "type": "para",
+       "md": "concentration of sulfuric acid = .............................................................. mol/dm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 10,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "pipette",
+      "allow": [
+       "graduated"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "pipette"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "The correct answer is D yellow because",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "methyl orange is yellow in alkaline solution",
+       "A is incorrect because methyl orange is not blue in",
+       "alkaline solution",
+       "B is incorrect because methyl orange is not",
+       "orange in alkaline solution",
+       "C is incorrect because methyl orange is not red in",
+       "alkaline solution"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "ticks under titration numbers 1, 2 and 4",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "1            2              3         4",
+       "20.65        20.60           20.90    20.55",
+       "                                    "
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "(20 .65 + 20.60 + 20.55)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "=",
+       "M1 CSQ on results",
+       "3                                        ticked"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "i",
+      "marks": 2,
+      "md": "mol (KOH) = 0.0370 x 25",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "1000"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M2",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "from (i) divided by 2",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "expected answer 4.625 x 10   -4",
+       "/ 0.0004625    ALLOW any number of",
+       "sig fig except one"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "c",
+      "sub": "iii",
+      "marks": 2,
+      "md": "answer to (ii) x 1000",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "21.20",
+       "M2 (no printed marks cell): 20.60 | M2 CSQ on correct | calculation from M1 | Answer to M2 must be | correct to 2dp | 20.60 without working | scores 2 | 20.6 with or without | working scores 1 | If no ticks then | only use of 2 or 3 | concordant titres can | score M1 and M2 in (ii) | If only one tick | then M2 can be scored | for averaging two or | more titre values | correctly",
+       "M2 (no printed marks cell): = 9.25 x 10 -4 / 0.000925 | ALLOW any number of | sig fig except one | If no division by 1000 | giving answer of | 0.925 award 1 mark | correct answer with no | working scores 2",
+       "M2 (no printed marks cell): correctly evaluated | expected answer if (i) and (ii) correct 0.0218   ACCEPT any number of | sig fig except one | (unless ECF answer is | exactly 1 sig fig) | correct answer with no | working scores 2 | (Total for Question 6 = 10)"
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 6,
+   "commandWord": "Calculate",
+   "summaryHint": "A sample of a gaseous hydrocarbon, X, has a volume of 600 cm3 at room temperature and pressure (rtp).",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A sample of a gaseous hydrocarbon, X, has a volume of 600 cm3 at room temperature"
+    },
+    {
+     "type": "para",
+     "md": "and pressure (rtp)."
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the amount, in moles, of hydrocarbon X in the sample."
+      },
+      {
+       "type": "para",
+       "md": "[molar volume of a gas = 24 000 cm3 at rtp]"
+      },
+      {
+       "type": "para",
+       "md": "amount of hydrocarbon X = .............................................................. mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The mass of the sample of hydrocarbon X is 1.45 g."
+      },
+      {
+       "type": "para",
+       "md": "Show that the relative molecular mass (Mr) of X is 58"
+      },
+      {
+       "type": "para",
+       "md": "Mr = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Hydrocarbon X is an alkane."
+      },
+      {
+       "type": "para",
+       "md": "Show that the molecular formula of X is C4H10"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the displayed formula of the branched‑chain isomer of hydrocarbon X."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 6,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "use of amount in moles = volume of gas",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "molar volume"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "statement/use of amount in moles = mass Mr",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "molecular formula = C4H10 = (4 x 12) + (10 x 1) = 58",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "alkane general formula = CnH2n+2",
+       "so"
+      ],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "(Total for Question 7 = 6)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): correct evaluation | Example calculation",
+       "M1 (no printed marks cell): amount in moles = 600 | 24000",
+       "M2 (no printed marks cell): = 0.025 (mol) | 0.025 with no working | scores 2 | REJECT 0.03 for M2",
+       "M2 (no printed marks cell): substitution and correct evaluation: | Mr = 1.45      = 58 | 0.025",
+       "M1 (no printed marks cell): (nx12) + (2n+2)x1 = 58 so 14n = 56",
+       "M2 (no printed marks cell): n =4 so C4H10"
+      ],
+      "pages": [
+       14
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 8,
+   "type": "structured",
+   "marks": 7,
+   "commandWord": "Give",
+   "summaryHint": "This question is about ammonia gas, NH3",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about ammonia gas, NH3"
+    }
+   ],
+   "parts": [
+    {
+     "id": "8a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Ammonia can be prepared in a laboratory from the reaction between"
+      },
+      {
+       "type": "para",
+       "md": "ammonium chloride, NH4Cl, and sodium hydroxide. The other products of the"
+      },
+      {
+       "type": "para",
+       "md": "reaction are sodium chloride and water."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "8a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a chemical equation for this reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "8a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a test for ammonia gas."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "8b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In industry, ammonia is produced from nitrogen and hydrogen."
+      },
+      {
+       "type": "para",
+       "md": "The equation for this reaction is"
+      },
+      {
+       "type": "para",
+       "md": "N2(g) + 3H2(g)  2NH3(g)"
+      },
+      {
+       "type": "para",
+       "md": "In a sealed container, the reaction can reach a position of dynamic equilibrium."
+      },
+      {
+       "type": "para",
+       "md": "Explain the meaning of the term dynamic equilibrium."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "8c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The graph shows the percentage yield of ammonia at equilibrium for different"
+      },
+      {
+       "type": "para",
+       "md": "temperatures and pressures."
+      },
+      {
+       "type": "para",
+       "md": "80"
+      },
+      {
+       "type": "para",
+       "md": "350 °C"
+      },
+      {
+       "type": "para",
+       "md": "70"
+      },
+      {
+       "type": "para",
+       "md": "60"
+      },
+      {
+       "type": "para",
+       "md": "450 °C"
+      },
+      {
+       "type": "para",
+       "md": "50"
+      },
+      {
+       "type": "para",
+       "md": "Percentage yield"
+      },
+      {
+       "type": "para",
+       "md": "of ammonia at"
+      },
+      {
+       "type": "para",
+       "md": "40"
+      },
+      {
+       "type": "para",
+       "md": "equilibrium"
+      },
+      {
+       "type": "para",
+       "md": "550 °C"
+      },
+      {
+       "type": "para",
+       "md": "30"
+      },
+      {
+       "type": "para",
+       "md": "20"
+      },
+      {
+       "type": "para",
+       "md": "10"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "0"
+      },
+      {
+       "type": "para",
+       "md": "100"
+      },
+      {
+       "type": "para",
+       "md": "200"
+      },
+      {
+       "type": "para",
+       "md": "300"
+      },
+      {
+       "type": "para",
+       "md": "400"
+      },
+      {
+       "type": "para",
+       "md": "Pressure in atmospheres"
+      },
+      {
+       "type": "para",
+       "md": "Using the graph, explain if the forward reaction is exothermic or endothermic."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 7,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "NH4Cl + NaOH  NaCl + NH3 + H2O",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "moist/damp red litmus paper",
+      "allow": [
+       "moist/damp"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "universal indicator",
+       "paper"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "forward and backward/reverse reactions are",
+      "allow": [
+       "reaction is"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "taking place at same rate                         taking place in both",
+       "directions at same rate"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": null,
+      "marks": 2,
+      "md": "an explanation linking following two points:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): turns blue",
+       "P2 (no printed marks cell): an explanation linking following two points:",
+       "M2 (no printed marks cell): the concentrations of reactants and products | REJECT concentrations | remain constant                                   of the reactants and | products are | equal/the same",
+       "M1 (no printed marks cell): as temperature decreases yield of ammonia | ALLOW as | (formed in forward reaction) increases            temperature decreases | equilibrium position | shifts in forward | direction/(from left) to | right (producing more | ammonia) | IGNORE references to | pressure | ALLOW reverse | arguments | IGNORE references to",
+       "M2 (no printed marks cell): so forward reaction is exothermic | Le | Chatelier’s Principle",
+       "M2 (no printed marks cell): DEP M1 | (Total for Question 8 = 7) | Total for Paper = 70 marks"
+      ],
+      "pages": [
+       15
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}

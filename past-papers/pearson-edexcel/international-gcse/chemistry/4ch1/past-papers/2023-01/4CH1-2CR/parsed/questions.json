@@ -1,0 +1,2562 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 8,
+ "totalMarks": 70,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 4,
+   "commandWord": "Give",
+   "summaryHint": "Answer ALL questions.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Answer ALL questions."
+    },
+    {
+     "type": "para",
+     "md": "Some questions must be answered with a cross in a box . If you change your mind about an"
+    },
+    {
+     "type": "para",
+     "md": "and then mark your new answer with a cross ."
+    },
+    {
+     "type": "para",
+     "md": "answer, put a line through the box"
+    },
+    {
+     "type": "para",
+     "md": "1 In this question the answer to each part is a number."
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the pH value of a neutral solution."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give a pH value of a weakly acidic solution."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the number of the Group in the Periodic Table that contains the elements"
+      },
+      {
+       "type": "para",
+       "md": "that do not readily react."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the number of different elements present in glucose, C6H12O6"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 4,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "7",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "any value ≥4 but <7",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "0",
+      "allow": [
+       "Group 8"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "d",
+      "sub": null,
+      "marks": 1,
+      "md": "3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(Total for Question 1 = 4 marks)"
+      ],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": "State",
+   "summaryHint": "The solubility of a solid depends on the solvent used.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "The solubility of a solid depends on the solvent used."
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State one other factor that affects the solubility."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "A student wants to find the solubility of a salt in water."
+      },
+      {
+       "type": "para",
+       "md": "The steps in the student’s method are not in the correct order."
+      },
+      {
+       "type": "para",
+       "md": "Step A \u0007gently heat the evaporating basin and solution to remove all the water"
+      },
+      {
+       "type": "para",
+       "md": "Step B \u0007filter to obtain 50.0 cm3 of saturated solution"
+      },
+      {
+       "type": "para",
+       "md": "Step C \u0007record the mass of the evaporating basin and salt solution"
+      },
+      {
+       "type": "para",
+       "md": "Step D \u0007record the mass of an empty evaporating basin"
+      },
+      {
+       "type": "para",
+       "md": "Step E \u0007record the mass of the evaporating basin and the dry salt"
+      },
+      {
+       "type": "para",
+       "md": "Step F \u0007put 50.0 cm3 of water into a beaker"
+      },
+      {
+       "type": "para",
+       "md": "Step G \u0007add the salt to the water a little at a time and stir until no more dissolves"
+      },
+      {
+       "type": "para",
+       "md": "Step H \u0007pour the 50.0 cm3 of saturated salt solution into the evaporating basin"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The flowchart shows the correct order of some of the steps."
+      },
+      {
+       "type": "para",
+       "md": "Complete the flowchart by putting the remaining steps in the correct order."
+      },
+      {
+       "type": "para",
+       "md": "F"
+      },
+      {
+       "type": "para",
+       "md": "B"
+      },
+      {
+       "type": "para",
+       "md": "D"
+      },
+      {
+       "type": "para",
+       "md": "E"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "These are the student’s results."
+      },
+      {
+       "type": "para",
+       "md": "mass of empty evaporating basin"
+      },
+      {
+       "type": "para",
+       "md": "= 60.5 g"
+      },
+      {
+       "type": "para",
+       "md": "mass of evaporating basin and dry salt = 78.1 g"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the solubility of the salt in grams per 100 g of water."
+      },
+      {
+       "type": "para",
+       "md": "[1.00 cm3 of water has a mass of 1.00 g]"
+      },
+      {
+       "type": "para",
+       "md": "solubility = .............................................................. grams per 100 g of water"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 5,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "temperature",
+      "allow": [
+       "volume/amount"
+      ],
+      "reject": [],
+      "ignore": [
+       "concentration",
+       "stirring"
+      ],
+      "notes": [
+       "of solvent"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "M1 G in correct place",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 H C A in correct places"
+      ],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "mass of dry salt",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(= 78.1 − 60.5 =) 17.6 (g)",
+       "M2 (no printed marks cell): solubility = (17.6 × 2) = 35.2 (g per 100 g of | ALLOW ECF from M1 | water) | correct answer with no working | scores 2 | (Total for Question 2 = 5 marks)"
+      ],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 9,
+   "commandWord": "Calculate",
+   "summaryHint": "When 10.0 kg of a solid fuel is burned, the heat energy produced is 3.28 × 105 kJ.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "When 10.0 kg of a solid fuel is burned, the heat energy produced is 3.28 × 105 kJ."
+    }
+   ],
+   "parts": [
+    {
+     "id": "3a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the heat energy, in kJ/mol, produced by the fuel."
+      },
+      {
+       "type": "para",
+       "md": "You should assume that the fuel is pure carbon."
+      },
+      {
+       "type": "para",
+       "md": "Give your answer to three significant figures."
+      },
+      {
+       "type": "para",
+       "md": "[for carbon, Ar = 12]"
+      },
+      {
+       "type": "para",
+       "md": "heat energy = .............................................................. kJ/mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 6,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The fuel actually contains some impurities, including sulfur."
+      },
+      {
+       "type": "para",
+       "md": "There is 600 g of sulfur in 20 kg of fuel."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the percentage of sulfur in the fuel."
+      },
+      {
+       "type": "para",
+       "md": "percentage of sulfur = ..............................................................%"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "When the fuel burns, the 600 g of sulfur produces sulfur dioxide gas."
+      },
+      {
+       "type": "para",
+       "md": "S + O2 → SO2"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the volume, in cm3, of sulfur dioxide gas that would be produced at"
+      },
+      {
+       "type": "para",
+       "md": "room temperature and pressure (rtp) when the fuel burns."
+      },
+      {
+       "type": "para",
+       "md": "[for a gas, molar volume = 24 dm3 at rtp]"
+      },
+      {
+       "type": "para",
+       "md": "volume of sulfur dioxide = .............................................................. cm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "3b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State the name of the environmental problem caused by sulfur dioxide in"
+      },
+      {
+       "type": "para",
+       "md": "the atmosphere."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 9,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 3,
+      "md": "calculating heat energy in kJ/g",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "= (3.28 × 105 ÷ 10 000) OR 32.8"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "600",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "× 100",
+       "20 000",
+       "OR     0.6    × 100",
+       "20"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 3,
+      "md": "mol of sulfur = 600 ÷ 32 OR 18.75",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "b",
+      "sub": "iii",
+      "marks": 1,
+      "md": "acid rain",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "any effects"
+      ],
+      "notes": [
+       "(Total for Question 3 = 9 marks)",
+       "M2 (no printed marks cell): calculating heat energy in kJ/mol | = (M1 × 12) OR 393.6",
+       "M3 (no printed marks cell): = 394 OR 3.94 × 102 kJ/mol | IGNORE sign",
+       "M3 (no printed marks cell): subsumes M2",
+       "M1 (no printed marks cell): calculating amount of carbon | = 10 000 ÷ 12 OR 833.3",
+       "M2 (no printed marks cell): calculating heat energy in kJ/mol | = (3.28 × 105 ÷ M1) OR 393.6",
+       "M3 (no printed marks cell): = 394 OR 3.94 × 102 kJ/mol | IGNORE sign",
+       "M3 (no printed marks cell): subsumes M2 | correct answer with no working | scores 3",
+       "M2 (no printed marks cell): = 3 (%) | ALLOW ECF from incorrect | conversion of units in M1 | correct answer with no working | scores 2",
+       "M2 (no printed marks cell): vol SO2 = M1 × 24 OR 450 (dm3) | ALLOW ECF from incorrect Ar in M1",
+       "M3 (no printed marks cell): = 450 000 OR 4.5 × 105 (cm3) | ALLOW ECF M2 (dm 3) × 1000",
+       "M3 (no printed marks cell): subsumes M2 | correct answer with no working | scores 3"
+      ],
+      "pages": [
+       5
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 9,
+   "commandWord": "Name",
+   "summaryHint": "Hand sanitiser liquids are used regularly to reduce the spread of infections.",
+   "stem": [],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Hand sanitiser liquids are used regularly to reduce the spread of infections."
+      },
+      {
+       "type": "para",
+       "md": "Three compounds P, Q and R are often present in these liquids."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "4a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "What type of formula is shown for P?"
+      },
+      {
+       "type": "para",
+       "md": "A a displayed formula"
+      },
+      {
+       "type": "para",
+       "md": "B an empirical formula"
+      },
+      {
+       "type": "para",
+       "md": "C a molecular formula"
+      },
+      {
+       "type": "para",
+       "md": "D a structural formula"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "4a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Compounds P, Q and R are members of the same homologous series."
+      },
+      {
+       "type": "para",
+       "md": "Give two properties of a homologous series."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "4a-iii",
+     "label": "a",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the homologous series that contains compounds P, Q and R."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "4a-iv",
+     "label": "a",
+     "sub": "iv",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the name of compound Q."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Diols and dicarboxylic acids react together in polymerisation reactions to"
+      },
+      {
+       "type": "para",
+       "md": "form polyesters."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "4b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain the name given to the type of polymerisation that occurs in"
+      },
+      {
+       "type": "para",
+       "md": "these reactions."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "id": "4b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the equation for the polymerisation reaction by giving the"
+      },
+      {
+       "type": "para",
+       "md": "displayed formula of the repeat unit of the polymer."
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": "n"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": ""
+      },
+      {
+       "type": "para",
+       "md": "n"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "n"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "2n H2O"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 9,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "The correct answer is D a structural formula",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is incorrect because CH3CH2OH is not a displayed",
+       "formula",
+       "B is incorrect because CH3CH2OH is not an",
+       "empirical formula",
+       "C is incorrect because CH3CH2OH is not a molecular",
+       "formula"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "Any two from the following:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "a",
+      "sub": "iii",
+      "marks": 1,
+      "md": "alcohol(s)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "a",
+      "sub": "iv",
+      "marks": 1,
+      "md": "propan-1-ol",
+      "allow": [
+       "1-propanol",
+       "propanol"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "M1 correct ester linkage shown",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 rest of repeat unit fully correct   M2 DEP M1",
+       "(Total for Question 4 = 9 marks)",
+       "M1 (no printed marks cell): same general formula",
+       "M2 (no printed marks cell): each member differs from the next by CH2",
+       "M3 (no printed marks cell): same functional group",
+       "M4 (no printed marks cell): similar chemical properties/reactions",
+       "M5 (no printed marks cell): trend/gradation in physical properties OWTTE | ACCEPT named physical | property eg boiling point",
+       "M1 (no printed marks cell): condensation (polymerisation)",
+       "M2 (no printed marks cell): because water also | ALLOW small molecule | produced/eliminated/removed/lost                     also produced/ | eliminated/removed/ | lost"
+      ],
+      "pages": [
+       7
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "Complete",
+   "summaryHint": "This question is about the element phosphorus and some of its compounds.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about the element phosphorus and some of its compounds."
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The atomic number of phosphorus is 15"
+      },
+      {
+       "type": "para",
+       "md": "Give the electronic configuration of an atom of phosphorus."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calcium phosphide is an ionic compound used in pest control."
+      },
+      {
+       "type": "para",
+       "md": "The formula of a calcium ion is Ca2+"
+      },
+      {
+       "type": "para",
+       "md": "Explain why the formula of calcium phosphide is Ca3P2"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calcium phosphide can be produced by heating calcium phosphate with carbon."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the equation for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "Ca3(PO4)2 + ....................... C → Ca3P2 + ....................... CO"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain the role of carbon in the reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calcium phosphide reacts with water to form calcium hydroxide and"
+      },
+      {
+       "type": "para",
+       "md": "phosphine, PH3"
+      },
+      {
+       "type": "para",
+       "md": "Give a chemical equation for this reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "5e",
+     "label": "e",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why calcium phosphide has a high melting point."
+      },
+      {
+       "type": "para",
+       "md": "You should refer to structure and bonding in your answer."
+      },
+      {
+       "type": "answer_lines",
+       "count": 12
+      }
+     ],
+     "answerLines": 12,
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 11,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "2.8.5",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "formula of phosphide ion is P3−",
+      "allow": [
+       "P−3",
+       "charge on"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "phosphide ion is 3-/-3"
+      ],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "Ca3(PO4)2 + 8 C → Ca3P2 + 8 CO",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "ii",
+      "marks": 2,
+      "md": "explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "d",
+      "sub": null,
+      "marks": 2,
+      "md": "Ca3P2 + 6H2O → 3Ca(OH)2 + 2PH3",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       8
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "e",
+      "sub": null,
+      "marks": 3,
+      "md": "explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 (no printed marks cell): charges on three calcium/Ca2+ ions balance / | ALLOW reference to | cancel out charges on two phosphide/P 3− ions     three calcium atoms | OWTTE | each lost two electrons | /(total of) six electrons | which were gained by | two phosphorus atoms | (to attain full outer | shells) OWTTE | Any reference to sharing | of electrons/covalent | bonding scores 0",
+       "M1 (no printed marks cell): (carbon acts as a) reducing agent",
+       "M2 (no printed marks cell): (because) calcium phosphate/Ca3(PO4)2 loses | ALLOW (because) carbon | oxygen                                            gains oxygen / is | oxidised | ALLOW carbon removes | oxygen from calcium | phosphate/Ca3(PO4)2 | IGNORE references to | reactivity series / | displacement reactions",
+       "M2 (no printed marks cell): DEP M1 correct or | missing",
+       "M1 (no printed marks cell): all formulae correct",
+       "M2 (no printed marks cell): correct balancing | M2 DEP M1 | ALLOW multiples and | fractions",
+       "M1 (no printed marks cell): giant (ionic) structure | ACCEPT giant (ionic) | lattice",
+       "M2 (no printed marks cell): strong forces of attraction between | ACCEPT between Ca2+ | oppositely charged ions                             and P3− | ACCEPT between | positive and negative | ions | ALLOW strong ionic | bonds",
+       "M3 (no printed marks cell): which require a lot of (heat/thermal) energy | IGNORE more energy | to break/overcome | 0 marks if any mention | of covalent bonds, | intermolecular forces or | molecules | (Total for Question 5 = 11 marks)"
+      ],
+      "pages": [
+       9
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 13,
+   "commandWord": "Explain",
+   "summaryHint": "Iron metal was discovered several thousand years ago.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Iron metal was discovered several thousand years ago. Iron is produced industrially"
+    },
+    {
+     "type": "para",
+     "md": "from iron(III) oxide by extraction using carbon."
+    },
+    {
+     "type": "para",
+     "md": "Sodium is a metal in Group 1 of the Periodic Table. Sodium was discovered by"
+    },
+    {
+     "type": "para",
+     "md": "Sir Humphrey Davy in 1807. It is produced industrially by the electrolysis of"
+    },
+    {
+     "type": "para",
+     "md": "sodium chloride."
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain, using the reactivity series, why carbon can be used to extract iron"
+      },
+      {
+       "type": "para",
+       "md": "from iron(III) oxide."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Suggest",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Suggest why sodium was not discovered until 1807."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 7,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The diagram shows a simplified version of the Downs cell, which can be used to"
+      },
+      {
+       "type": "para",
+       "md": "produce sodium industrially. The electrolyte is molten sodium chloride."
+      },
+      {
+       "type": "para",
+       "md": "sodium chloride added"
+      },
+      {
+       "type": "para",
+       "md": "chlorine gas"
+      },
+      {
+       "type": "para",
+       "md": "molten sodium"
+      },
+      {
+       "type": "para",
+       "md": "electrolyte"
+      },
+      {
+       "type": "para",
+       "md": "steel cathode"
+      },
+      {
+       "type": "para",
+       "md": "steel cathode"
+      },
+      {
+       "type": "para",
+       "md": "carbon anode"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why the molten electrolyte conducts electricity."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "6b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "What is the formula of the cation in the electrolyte?"
+      },
+      {
+       "type": "para",
+       "md": "A H+"
+      },
+      {
+       "type": "para",
+       "md": "B Cl–"
+      },
+      {
+       "type": "para",
+       "md": "C Na+"
+      },
+      {
+       "type": "para",
+       "md": "D OH–"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "6b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "During the production of sodium, small explosions can be heard."
+      },
+      {
+       "type": "para",
+       "md": "Explain why using sodium chloride that is not completely dry could cause"
+      },
+      {
+       "type": "para",
+       "md": "these small explosions."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "6b-iv",
+     "label": "b",
+     "sub": "iv",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give ionic half-equations for the reactions at the anode and cathode."
+      },
+      {
+       "type": "para",
+       "md": "anode . ................................................................................................................................................................................................................................................................"
+      },
+      {
+       "type": "para",
+       "md": "cathode ............................................................................................................................................................................................................................................................"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why the reactivity of metals in Group 1 increases from lithium"
+      },
+      {
+       "type": "para",
+       "md": "to potassium."
+      },
+      {
+       "type": "answer_lines",
+       "count": 7
+      }
+     ],
+     "answerLines": 7,
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 13,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 2,
+      "md": "explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "electricity not been discovered OWTTE",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "electrolysis not discovered"
+      ],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "If refs to electrons moving then scores 0"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "The correct answer is C",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Na+",
+       "A is incorrect because H+ ions not present",
+       "in molten sodium chloride",
+       "B is incorrect because Cl− ion is not a cation",
+       "D is incorrect because OH− ion not present",
+       "in molten sodium chloride"
+      ],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "b",
+      "sub": "iii",
+      "marks": 2,
+      "md": "explanation including",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "iv",
+      "marks": 2,
+      "md": "(anode) 2Cl−  Cl2 + 2e(−)",
+      "allow": [
+       "2Cl− − 2e(−)  Cl2"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       10
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": null,
+      "marks": 3,
+      "md": "explanation including",
+      "allow": [
+       "reverse arguments"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M1 (no printed marks cell): carbon above iron in reactivity series | ALLOW carbon is more reactive than iron | ACCEPT reverse arguments",
+       "M2 (no printed marks cell): so carbon can remove oxygen from | ALLOW carbon can reduce iron(III)oxide | iron(III) oxide | ALLOW carbon can displace iron (from | iron(III) oxide)",
+       "M1 (no printed marks cell): ions",
+       "M2 (no printed marks cell): can move | M2 DEP M1",
+       "M1 (no printed marks cell): water/moisture reacts with sodium",
+       "M2 (no printed marks cell): to produce hydrogen (which | ignites/burns/reacts in oxygen/air causing | the small explosions)",
+       "M2 (no printed marks cell): (cathode) (2)Na+ + (2)e(−)  (2)Na | both half-equations correct but order | reversed scores 1",
+       "M1 (no printed marks cell): outer electron in potassium (atom) is further | ALLOW potassium (atom) has | away (from nucleus)                                more (electron) shells than | lithium (atom) | ALLOW potassium (atom) larger | than lithium (atom) | ALLOW potassium has greater | atomic radius",
+       "M2 (no printed marks cell): outer electron in potassium (atom) less | strongly attracted by nucleus OWTTE",
+       "M3 (no printed marks cell): so (outer) electron more easily lost OWTTE | (Total for Question 6 = 13 marks)"
+      ],
+      "pages": [
+       11
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "Give",
+   "summaryHint": "A student is asked to find the concentration of a solution of nitric acid by doing a titration.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A student is asked to find the concentration of a solution of nitric acid by doing"
+    },
+    {
+     "type": "para",
+     "md": "a titration."
+    },
+    {
+     "type": "para",
+     "md": "The student is provided with sodium hydroxide solution with a concentration of"
+    },
+    {
+     "type": "para",
+     "md": "0.350 mol/dm3"
+    },
+    {
+     "type": "para",
+     "md": "These are the first four steps in the student’s method."
+    },
+    {
+     "type": "para",
+     "md": "use a pipette to add exactly 25.0 cm3 of the nitric acid solution to a conical flask"
+    },
+    {
+     "type": "para",
+     "md": "•"
+    },
+    {
+     "type": "para",
+     "md": "placed on a white tile"
+    },
+    {
+     "type": "para",
+     "md": "•"
+    },
+    {
+     "type": "para",
+     "md": "add a few drops of indicator to the flask"
+    },
+    {
+     "type": "para",
+     "md": "•"
+    },
+    {
+     "type": "para",
+     "md": "use a burette to add sodium hydroxide solution to the flask until the indicator has"
+    },
+    {
+     "type": "para",
+     "md": "changed colour"
+    },
+    {
+     "type": "para",
+     "md": "•"
+    },
+    {
+     "type": "para",
+     "md": "record the volume needed for the indicator to change colour"
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the reason for using the white tile."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "7b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Universal indicator is not a suitable indicator to use in a titration."
+      },
+      {
+       "type": "para",
+       "md": "Complete the table to show the name of a suitable indicator and its final colour in"
+      },
+      {
+       "type": "para",
+       "md": "this titration."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    },
+    {
+     "id": "7c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The student wants to obtain an accurate value for the volume of"
+      },
+      {
+       "type": "para",
+       "md": "sodium hydroxide solution needed to neutralise the 25.0 cm3 of nitric acid."
+      },
+      {
+       "type": "para",
+       "md": "Describe all the further steps the student should take."
+      },
+      {
+       "type": "answer_lines",
+       "count": 15
+      }
+     ],
+     "answerLines": 15,
+     "pages": [
+      17
+     ]
+    },
+    {
+     "id": "7d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This is a summary of the student’s results."
+      },
+      {
+       "type": "para",
+       "md": "volume of HNO3 used = 25.0 cm3"
+      },
+      {
+       "type": "para",
+       "md": "concentration of NaOH solution = 0.350 mol/dm3"
+      },
+      {
+       "type": "para",
+       "md": "volume of NaOH solution needed for neutralisation = 18.80 cm3"
+      },
+      {
+       "type": "para",
+       "md": "The equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "HNO3 + NaOH → NaNO3 + H2O"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7d-i",
+     "label": "d",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the amount, in moles, of NaOH that reacts."
+      },
+      {
+       "type": "para",
+       "md": "amount of NaOH = .............................................................. mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7d-ii",
+     "label": "d",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Determine",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Determine the amount, in moles, of HNO3 that reacts."
+      },
+      {
+       "type": "para",
+       "md": "amount of HNO3 = .............................................................. mol"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    },
+    {
+     "id": "7d-iii",
+     "label": "d",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the concentration, in mol/dm3, of the HNO3"
+      },
+      {
+       "type": "para",
+       "md": "concentration = .............................................................. mol/dm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 11,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "to (more) easily/clearly see the colour change",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(at end point) OWTTE"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "litmus",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "M2 DEP M1"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
+      "sub": null,
+      "marks": 5,
+      "md": "Description including any five from the following",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "moles of NaOH = (0.350 × 18.80) = 0.00658",
+      "allow": [
+       "6.58 × 10−3"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "(1000)"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "amount of HNO3 = 0.00658",
+      "allow": [
+       "ECF from (i)"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "d",
+      "sub": "iii",
+      "marks": 1,
+      "md": "conc. of HNO3 = 0.00658 × 1000 = 0.263(2)",
+      "allow": [
+       "ECF from (ii)",
+       "2, 3 or 4 sig figs throughout"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "25.0",
+       "If not divided by 1000 in (i) do not",
+       "penalise if not multiplied by 1000",
+       "in (iii)",
+       "Penalise use of 1 sig fig once only",
+       "(Total for Question 7 = 11 marks)",
+       "M2 (no printed marks cell): blue | ALLOW purple",
+       "M1 (no printed marks cell): methyl orange",
+       "M2 (no printed marks cell): yellow | ALLOW orange",
+       "M1 (no printed marks cell): phenolphthalein",
+       "M2 (no printed marks cell): pink | ALLOW any other suitable indicator | and correct final colour",
+       "M1 (no printed marks cell): rinse/wash the conical flask (with | REJECT if rinsed/washed using | distilled/deionised water)                          solution",
+       "M2 (no printed marks cell): (repeat titration/experiment) adding sodium | IGNORE names of indicators and | hydroxide (from burette) slowly/dropwise (near      any colour changes | end point)",
+       "M3 (no printed marks cell): swirling flask | ALLOW shaking/stirring",
+       "M4 (no printed marks cell): record initial and final volume burette | ALLOW reference to subtraction of | reading (at end point) /record volume sodium        initial and final readings | hydroxide added (at end point)",
+       "M5 (no printed marks cell): repeat until obtain concordant results | ALLOW results within 0.2 cm3 (or | less)",
+       "M6 (no printed marks cell): find mean/average (of concordant results)"
+      ],
+      "pages": [
+       12
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 8,
+   "type": "structured",
+   "marks": 8,
+   "commandWord": "Calculate",
+   "summaryHint": "This question is about reactions involving nitrogen.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about reactions involving nitrogen."
+    }
+   ],
+   "parts": [
+    {
+     "id": "8a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In a car engine, nitrogen reacts with oxygen to form nitrogen monoxide."
+      },
+      {
+       "type": "para",
+       "md": "The equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "N2 + O2 → 2NO ΔH = +181 kJ"
+      },
+      {
+       "type": "para",
+       "md": "Draw a labelled reaction profile diagram showing ΔH and the activation energy"
+      },
+      {
+       "type": "para",
+       "md": "for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "Energy"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      20
+     ]
+    },
+    {
+     "id": "8b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "In the Haber process, nitrogen reacts with hydrogen to form ammonia."
+      },
+      {
+       "type": "para",
+       "md": "This equation represents the reaction."
+      },
+      {
+       "type": "para",
+       "md": "H → 2 H"
+      },
+      {
+       "type": "para",
+       "md": "N + 3 H"
+      },
+      {
+       "type": "para",
+       "md": "N"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "N"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "The table gives values of some bond energies."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "8b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the total amount of energy, in kJ, needed to break the bonds in"
+      },
+      {
+       "type": "para",
+       "md": "the reactants."
+      },
+      {
+       "type": "para",
+       "md": "energy needed = .............................................................. kJ"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "8b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the total amount of energy, in kJ, released in forming the bonds in"
+      },
+      {
+       "type": "para",
+       "md": "the product."
+      },
+      {
+       "type": "para",
+       "md": "energy released = .............................................................. kJ"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "id": "8b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the enthalpy change, ΔH, for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "You should include a sign in your answer."
+      },
+      {
+       "type": "para",
+       "md": "ΔH = .............................................................. kJ"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": null,
+     "sum": 8,
+     "verified": true,
+     "verifiedAgainst": "qp-printed"
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 4,
+      "md": "diagram including the following",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 1,
+      "md": "{944 + (3 × 436) =} 2252",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "any sign"
+      ],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "{6 × 391 =} 2346",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "any sign"
+      ],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "iii",
+      "marks": 2,
+      "md": "difference between (i) and (ii)",
+      "allow": [],
+      "reject": [],
+      "ignore": [
+       "any sign"
+      ],
+      "notes": [
+       "expected value = 94",
+       "M1 (no printed marks cell): horizontal lines showing energy levels | labelled N2 + O2 and 2NO",
+       "M2 (no printed marks cell): level of 2NO /products above level of N2 | + O2 /reactants",
+       "M3 (no printed marks cell): ΔH correctly shown between reactants | ALLOW vertical line with/without | and products and labelled                     arrowheads | If single arrowhead must point from level | of reactants to level of products",
+       "M4 (no printed marks cell): activation energy correctly shown and | Must be from level of reactants to top of | labelled                                      “hump” | ALLOW vertical line with/without | arrowheads | If single arrowhead must point from level | of reactants to top of “hump” | IGNORE any label on a horizontal axis | If diagram for exothermic reaction drawn | can score M1 M3 M4",
+       "M2 (no printed marks cell): − 94 | ALLOW ECF from (i) and (ii) | If (ii) > (i) sign should be − | If (i) > (ii) sign should be + | (Total for Question 8 = 8 marks) | (Total for Paper = 70 marks)"
+      ],
+      "pages": [
+       13
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}

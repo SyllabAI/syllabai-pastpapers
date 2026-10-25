@@ -6,13 +6,14 @@
  },
  "questionCount": 7,
  "totalMarks": 70,
- "marksVerified": false,
+ "marksVerified": true,
  "questions": [
   {
    "number": 1,
    "type": "structured",
    "marks": 4,
-   "commandWord": null,
+   "commandWord": "Which",
+   "summaryHint": "DO NOT WRITE IN THIS AREA DO NOT WRITE IN THIS AREA DO NOT WRITE IN THIS AREA Answer ALL questions.",
    "stem": [
     {
      "type": "para",
@@ -80,7 +81,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Which",
      "prompt": [
       {
        "type": "para",
@@ -178,7 +179,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -204,7 +205,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Calculate",
      "prompt": [
       {
        "type": "para",
@@ -247,6 +248,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
+       "A is not the correct answer because sulfur is not in",
        "period 2",
        "C is not the correct answer because sulfur is not in",
        "period 4",
@@ -267,6 +269,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
+       "A is not the correct answer because the charge on",
        "a sulfide ion is not 1+",
        "B is not the correct answer because the charge on",
        "a sulfide ion is not 2+",
@@ -284,7 +287,10 @@
       "marks": 1,
       "md": "the reaction has a high activation energy",
       "allow": [
-       "to give zinc and"
+       "to give zinc and",
+       "speeds reaction",
+       "the reaction is",
+       "gains kinetic"
       ],
       "reject": [],
       "ignore": [
@@ -331,6 +337,7 @@
    "type": "structured",
    "marks": 6,
    "commandWord": null,
+   "summaryHint": "The diagram represents an atom of an element.",
    "stem": [],
    "parts": [
     {
@@ -580,6 +587,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
+       "A is not the correct answer because electrons are",
        "not in the nucleus",
        "B is not the correct answer as ions are not in the",
        "nucleus",
@@ -600,6 +608,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
+       "A is not the correct answer because the proton",
        "number = 4",
        "B is not the correct answer as there are 5 neutrons",
        "D is not the correct answer because 13 is the",
@@ -644,13 +653,8 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M2 6.925/6.93/6.9                                     ALLOW 2 or more",
-       "significant figures",
-       "without working scores",
-       "2 marks",
-       "correct method scores",
-       "M1",
-       "working scores 0"
+       "M2 (no printed marks cell): 6.925/6.93/6.9 | ALLOW 2 or more | significant figures | Answer 6.925/6.93/6.9 | without working scores | 2 marks | Answer of 7 with | correct method scores",
+       "M1 (no printed marks cell): Answer of 7 without | working scores 0"
       ],
       "pages": [
        5
@@ -665,7 +669,8 @@
    "number": 3,
    "type": "structured",
    "marks": 12,
-   "commandWord": null,
+   "commandWord": "Explain",
+   "summaryHint": "This question is about magnesium metal and its compounds.",
    "stem": [
     {
      "type": "para",
@@ -709,7 +714,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -757,7 +762,7 @@
      "sub": "i",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Complete",
      "prompt": [
       {
        "type": "para",
@@ -783,7 +788,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -871,7 +876,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -905,7 +910,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -927,7 +932,7 @@
      "sub": "iii",
      "type": "open",
      "marks": 3,
-     "commandWord": null,
+     "commandWord": "Calculate",
      "prompt": [
       {
        "type": "para",
@@ -962,9 +967,7 @@
      "sum": 12,
      "verified": true
     },
-    "guidance": [
-     "M2 (atoms/ions) can slide over one another REJECT references to"
-    ],
+    "guidance": [],
     "points": [
      {
       "id": "M1",
@@ -979,9 +982,7 @@
        "proton for M1"
       ],
       "ignore": [],
-      "notes": [
-       "M2 (delocalised) electron"
-      ],
+      "notes": [],
       "pages": [
        6
       ]
@@ -1011,12 +1012,7 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M1 balancing                                        ALLOW multiples or",
-       "fractions – O2 must also",
-       "be changed to score.",
-       "M2 state symbols"
-      ],
+      "notes": [],
       "pages": [
        6
       ]
@@ -1082,12 +1078,12 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M2 amount of magnesium = 0.050 ÷ 2 OR 0.025         ALLOW ecf M1 ÷ 2",
-       "(mol)",
-       "M3 0.025 × 24 = 0.60 g/0.6 g                        ALLOW ecf M2 × 24",
-       "without working scores",
-       "3",
-       "working scores 2"
+       "M2 (no printed marks cell): (delocalised) electron",
+       "M2 (no printed marks cell): (atoms/ions) can slide over one another | REJECT references to | intermolecular forces",
+       "M1 (no printed marks cell): balancing | ALLOW multiples or | fractions – O2 must also | be changed to score.",
+       "M2 (no printed marks cell): state symbols",
+       "M2 (no printed marks cell): amount of magnesium = 0.050 ÷ 2 OR 0.025 | ALLOW ecf M1 ÷ 2 | (mol)",
+       "M3 (no printed marks cell): 0.025 × 24 = 0.60 g/0.6 g | ALLOW ecf M2 × 24 | Answer of 0.60 g | without working scores | 3 | Answer of 1.20 g with | working scores 2"
       ],
       "pages": [
        6
@@ -1102,7 +1098,8 @@
    "number": 4,
    "type": "structured",
    "marks": 8,
-   "commandWord": null,
+   "commandWord": "Explain",
+   "summaryHint": "This question is about the manufacture of ethanol by the fermentation of glucose.",
    "stem": [
     {
      "type": "para",
@@ -1146,7 +1143,7 @@
      "sub": null,
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -1172,7 +1169,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Complete",
      "prompt": [
       {
        "type": "para",
@@ -1233,9 +1230,7 @@
      "sum": 8,
      "verified": true
     },
-    "guidance": [
-     "M3 (percentage yield) = 125/1000 × 100 = 12.5% Allow ecf for M3"
-    ],
+    "guidance": [],
     "points": [
      {
       "id": "M1",
@@ -1247,13 +1242,9 @@
        "values within the"
       ],
       "reject": [],
-      "ignore": [
-       ""
-      ],
+      "ignore": [],
       "notes": [
-       "range of 30°C- 40°C",
-       "M2 (enzymes from) yeast                                 ALLOW zymase",
-       "glucose/anaerobic/pressure"
+       "range of 30°C- 40°C"
       ],
       "pages": [
        7
@@ -1271,11 +1262,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "oxidised",
-       "M2 to form ethanoic acid                                ALLOW to form carboxylic",
-       "acid ALLOW to form vinegar",
-       "M1 ethanol would not be formed",
-       "M2 CO2 and H2O would form"
+       "oxidised"
       ],
       "pages": [
        7
@@ -1307,12 +1294,16 @@
       "notes": [
        "Answer of 12.5% without",
        "working scores 3 marks",
-       "M1 (theoretical moles of ethanol from glucose) = 500",
-       "x 2 = 1000",
-       "M2 (100% yield) = 46 000 g                              ALLOW ecf from M1",
-       "M3 (percentage yield) = (5750 ÷ 46 000) × 100 = 12.5%   ALLOW ecf from M2",
-       "M1 moles of ethanol from mass = 5750/46 = 125",
-       "M2 theoretical moles of ethanol = 500 x 2 = 1000"
+       "M2 (no printed marks cell): (enzymes from) yeast | ALLOW zymase | IGNORE | glucose/anaerobic/pressure",
+       "M2 (no printed marks cell): to form ethanoic acid | ALLOW to form carboxylic | acid ALLOW to form vinegar",
+       "M1 (no printed marks cell): ethanol would not be formed",
+       "M2 (no printed marks cell): CO2 and H2O would form",
+       "M1 (no printed marks cell): (theoretical moles of ethanol from glucose) = 500 | x 2 = 1000",
+       "M2 (no printed marks cell): (100% yield) = 46 000 g | ALLOW ecf from M1",
+       "M3 (no printed marks cell): (percentage yield) = (5750 ÷ 46 000) × 100 = 12.5% | ALLOW ecf from M2",
+       "M1 (no printed marks cell): moles of ethanol from mass = 5750/46 = 125",
+       "M2 (no printed marks cell): theoretical moles of ethanol = 500 x 2 = 1000",
+       "M3 (no printed marks cell): (percentage yield) = 125/1000 × 100 = 12.5% | Allow ecf for M3"
       ],
       "pages": [
        7
@@ -1327,7 +1318,8 @@
    "number": 5,
    "type": "structured",
    "marks": 14,
-   "commandWord": null,
+   "commandWord": "Name",
+   "summaryHint": "Sodium sulfate can be prepared by the reaction between sodium hydroxide solution and sodium hydrogensulfate (NaHSO4) solution.",
    "stem": [
     {
      "type": "para",
@@ -1373,7 +1365,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Name",
      "prompt": [
       {
        "type": "para",
@@ -1399,7 +1391,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 5,
-     "commandWord": null,
+     "commandWord": "Describe",
      "prompt": [
       {
        "type": "para",
@@ -1570,9 +1562,7 @@
      "sum": 14,
      "verified": true
     },
-    "guidance": [
-     "M4 x = 10 Allow ecf for M4 if"
-    ],
+    "guidance": [],
     "points": [
      {
       "id": "P1",
@@ -1606,13 +1596,7 @@
       ],
       "ignore": [],
       "notes": [
-       "for M1",
-       "M2 add sodium hydrogensulfate until the indicator",
-       "changes colour",
-       "M3 swirl (the conical flask)",
-       "M4 add sodium hydrogensulfate dropwise near to",
-       "the endpoint/end",
-       "M5 repeat until concordant results"
+       "for M1"
       ],
       "pages": [
        8
@@ -1628,22 +1612,10 @@
        "heat until"
       ],
       "reject": [],
-      "ignore": [
-       "washing with"
-      ],
+      "ignore": [],
       "notes": [
        "solution forms/crystallisation point is reached          volume is about half",
-       "original volume",
-       "M2 cool and crystallise/leave to crystallise",
-       "M3 pour off any excess liquid                            ALLOW filter",
-       "water",
-       "M4 leave in a warm place to dry                          ALLOW leave to dry OR",
-       "dry using a desiccator",
-       "OR warm oven",
-       "OR dry between pieces",
-       "of filter paper",
-       "If heated to dryness",
-       "then MAX 1 MARK"
+       "original volume"
       ],
       "pages": [
        8
@@ -1661,10 +1633,20 @@
       "notes": [
        "Answer of 10 without",
        "working scores 4",
-       "M2 mass of water = 3.6 g",
-       "M3 moles of sodium sulfate = 0.02 AND moles of",
-       "water = 0.20",
-       "M1 (no printed marks cell): mass of sodium sulfate = 2.84g | M2 mass of hydrated salt = 6.44g | M3 Mr of hydrated salt = 6.44/0.02 = 322 | M4 xH2O = 322-142 = 180 so x = 10"
+       "M2 (no printed marks cell): add sodium hydrogensulfate until the indicator | changes colour",
+       "M3 (no printed marks cell): swirl (the conical flask)",
+       "M4 (no printed marks cell): add sodium hydrogensulfate dropwise near to | the endpoint/end",
+       "M5 (no printed marks cell): repeat until concordant results",
+       "M2 (no printed marks cell): cool and crystallise/leave to crystallise",
+       "M3 (no printed marks cell): pour off any excess liquid | ALLOW filter | IGNORE washing with | water",
+       "M4 (no printed marks cell): leave in a warm place to dry | ALLOW leave to dry OR | dry using a desiccator | OR warm oven | OR dry between pieces | of filter paper | If heated to dryness | then MAX 1 MARK",
+       "M2 (no printed marks cell): mass of water = 3.6 g",
+       "M3 (no printed marks cell): moles of sodium sulfate = 0.02 AND moles of | water = 0.20",
+       "M4 (no printed marks cell): x = 10 | Allow ecf for M4 if | dividing by the smallest | number but only if x is | given as a whole",
+       "M1 (no printed marks cell): mass of sodium sulfate = 2.84g",
+       "M2 (no printed marks cell): mass of hydrated salt = 6.44g",
+       "M3 (no printed marks cell): Mr of hydrated salt = 6.44/0.02 = 322",
+       "M4 (no printed marks cell): xH2O = 322-142 = 180 so x = 10"
       ],
       "pages": [
        9
@@ -1679,7 +1661,8 @@
    "number": 6,
    "type": "structured",
    "marks": 11,
-   "commandWord": null,
+   "commandWord": "Name",
+   "summaryHint": "This question is about electrolysis.",
    "stem": [
     {
      "type": "para",
@@ -1759,7 +1742,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Name",
      "prompt": [
       {
        "type": "para",
@@ -1781,7 +1764,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -1803,7 +1786,7 @@
      "sub": "iii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -1833,7 +1816,7 @@
      "sub": "iv",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -1959,7 +1942,7 @@
      "sub": "i",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -2114,8 +2097,8 @@
      },
      {
       "id": "P5",
-      "part": "v",
-      "sub": null,
+      "part": "a",
+      "sub": "v",
       "marks": 3,
       "md": "0.0237 g",
       "allow": [],
@@ -2124,13 +2107,7 @@
       "notes": [
        "correct answer (to 3 sig",
        "figs) without working",
-       "scores 3",
-       "M1 (moles of oxygen) 17.80 ÷ 24 000 OR 0.000742",
-       "M2 Mr of oxygen = 32",
-       "M3 0.0237 g                                       ALLOW ecf from M1 and",
-       "M2",
-       "answer must be to 3 sig",
-       "figs for M3"
+       "scores 3"
       ],
       "pages": [
        10
@@ -2157,7 +2134,8 @@
       "marks": 1,
       "md": "Hydrogen/it is less reactive than sodium ORA",
       "allow": [
-       "H+ ions are more"
+       "H+ ions are more",
+       "hydrogen is"
       ],
       "reject": [],
       "ignore": [],
@@ -2182,9 +2160,11 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "M2 OH− / hydroxide ions are present in solution   ALLOW solution is",
-       "sodium hydroxide",
-       "alkaline"
+       "M1 (no printed marks cell): (moles of oxygen) 17.80 ÷ 24 000 OR 0.000742",
+       "M2 (no printed marks cell): Mr of oxygen = 32",
+       "M3 (no printed marks cell): 0.0237 g | ALLOW ecf from M1 and",
+       "M2 (no printed marks cell): answer must be to 3 sig | figs for M3",
+       "M2 (no printed marks cell): OH− / hydroxide ions are present in solution | ALLOW solution is | sodium hydroxide | ALLOW the solution is | alkaline"
       ],
       "pages": [
        10
@@ -2193,17 +2173,14 @@
     ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "PART-MARKS-MISMATCH",
-    "MS-POINT-UNKNOWN-PART"
-   ]
+   "provenance": "pdf-parsed"
   },
   {
    "number": 7,
    "type": "structured",
    "marks": 15,
-   "commandWord": null,
+   "commandWord": "Predict",
+   "summaryHint": "Gaseous ethanol is manufactured by reacting ethene gas with steam.",
    "stem": [
     {
      "type": "para",
@@ -2267,7 +2244,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Predict",
      "prompt": [
       {
        "type": "para",
@@ -2429,7 +2406,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Explain",
      "prompt": [
       {
        "type": "para",
@@ -2455,7 +2432,7 @@
      "sub": "iii",
      "type": "open",
      "marks": 3,
-     "commandWord": null,
+     "commandWord": "Draw",
      "prompt": [
       {
        "type": "para",
@@ -2507,7 +2484,7 @@
      "sub": "i",
      "type": "open",
      "marks": 2,
-     "commandWord": null,
+     "commandWord": "Complete",
      "prompt": [
       {
        "type": "para",
@@ -2625,7 +2602,7 @@
      "sub": "ii",
      "type": "open",
      "marks": 1,
-     "commandWord": null,
+     "commandWord": "Give",
      "prompt": [
       {
        "type": "para",
@@ -2645,8 +2622,8 @@
    "markScheme": {
     "totals": {
      "printed": 15,
-     "sum": 13,
-     "verified": false
+     "sum": 15,
+     "verified": true
     },
     "guidance": [],
     "points": [
@@ -2662,8 +2639,7 @@
       "reject": [],
       "ignore": [],
       "notes": [
-       "side                                                           reaction",
-       "M2 which is the side with more moles (of gas)                  ALLOW molecules"
+       "side                                                           reaction"
       ],
       "pages": [
        11
@@ -2678,10 +2654,7 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M2 as (adding a catalyst) increases the rate of the forwards",
-       "and backwards reactions equally"
-      ],
+      "notes": [],
       "pages": [
        11
       ]
@@ -2697,25 +2670,22 @@
       "ignore": [],
       "notes": [
        "answer of −41 with",
-       "no working scores 3",
-       "M2 (bonds formed) (5 × 414) + 346 + 358 + 463 OR 3237",
-       "answer of -40 with",
-       "M3 sum of bonds broken − sum of bonds formed OR −41 /mol       no working scores 0",
-       "M1 (bonds broken) 614 + (2 × 463) OR 1540",
-       "M2 (bonds formed) 414 + 346 + 358 + 463 OR 1581",
-       "M3 sum of bonds broken − sum of bonds formed OR −41",
-       "kJ/mol",
-       "M1 more energy is given out when the bonds are made            If state/imply that",
-       "energy required to",
-       "make bonds scores 0",
-       "M2 than is taken in when the bonds are broken                  If state/imply that",
-       "energy released",
-       "when bonds are",
-       "broken scores 0",
-       "M1 Breaking bonds is endothermic/takes in energy and",
-       "making bonds is exothermic/releases energy",
-       "M2 More energy is released than taken in                       M2 dep on M1"
+       "no working scores 3"
       ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "An explanation that links together the following two points:",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
       "pages": [
        11
       ]
@@ -2729,10 +2699,7 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M2 correct names/formulae of both reactants and products",
-       "M3 ΔH correctly shown and labelled"
-      ],
+      "notes": [],
       "pages": [
        12
       ]
@@ -2746,15 +2713,13 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [
-       "M2 rest of molecule correct"
-      ],
+      "notes": [],
       "pages": [
        12
       ]
      },
      {
-      "id": "P1",
+      "id": "P2",
       "part": "c",
       "sub": "ii",
       "marks": 1,
@@ -2762,7 +2727,22 @@
       "allow": [],
       "reject": [],
       "ignore": [],
-      "notes": [],
+      "notes": [
+       "M2 (no printed marks cell): which is the side with more moles (of gas) | ALLOW molecules",
+       "M2 (no printed marks cell): as (adding a catalyst) increases the rate of the forwards | and backwards reactions equally",
+       "M2 (no printed marks cell): (bonds formed) (5 × 414) + 346 + 358 + 463 OR 3237 | answer of -40 with",
+       "M3 (no printed marks cell): sum of bonds broken − sum of bonds formed OR −41 /mol | no working scores 0",
+       "M1 (no printed marks cell): (bonds broken) 614 + (2 × 463) OR 1540",
+       "M2 (no printed marks cell): (bonds formed) 414 + 346 + 358 + 463 OR 1581",
+       "M3 (no printed marks cell): sum of bonds broken − sum of bonds formed OR −41 | kJ/mol",
+       "M1 (no printed marks cell): more energy is given out when the bonds are made | If state/imply that | energy required to | make bonds scores 0",
+       "M2 (no printed marks cell): than is taken in when the bonds are broken | If state/imply that | energy released | when bonds are | broken scores 0",
+       "M1 (no printed marks cell): Breaking bonds is endothermic/takes in energy and | making bonds is exothermic/releases energy",
+       "M2 (no printed marks cell): More energy is released than taken in | M2 dep on M1",
+       "M2 (no printed marks cell): correct names/formulae of both reactants and products",
+       "M3 (no printed marks cell): ΔH correctly shown and labelled",
+       "M2 (no printed marks cell): rest of molecule correct"
+      ],
       "pages": [
        12
       ]
@@ -2770,11 +2750,7 @@
     ],
     "provenance": "pdf-parsed"
    },
-   "provenance": "pdf-parsed",
-   "flags": [
-    "MS-POINTS-DONT-CLOSE",
-    "PART-MARKS-MISMATCH"
-   ]
+   "provenance": "pdf-parsed"
   }
  ]
 }
