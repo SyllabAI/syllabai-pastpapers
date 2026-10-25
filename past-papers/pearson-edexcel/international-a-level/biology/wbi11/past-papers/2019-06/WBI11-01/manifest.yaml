@@ -1,0 +1,66 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi11:2019-06:WBI11/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi11
+  title: Edexcel International Advanced Level Biology (WBI11)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+  printed: June 2019
+  source: pdf_text+index-row
+paper:
+  official_reference: WBI11/01
+  unit_code: WBI11
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0e4b04ad388049bf09a69aa21beca66d3016d34f1001a4a692d19d26052b5051
+  size_bytes: 564401
+  original_filename: wbi11-01-rms-20190815.pdf
+  pages: 28
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Biology/2018/Exam-materials/wbi11-01-rms-20190815.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel mark-scheme; identity verified from printed PDF text (spec code, paper
+      reference, session)
+- type: question-paper
+  path: qp.pdf
+  sha256: f5a19e24822711a704456d720778c53eec2c6da82d9d363f181d70c3497e671a
+  size_bytes: 906139
+  original_filename: WBI11_01_que_20190522.pdf
+  pages: 28
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Biology/2018/Exam-materials/WBI11_01_que_20190522.pdf
+    collected_by: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+    note: official Pearson Edexcel question-paper; identity verified from printed PDF text (spec code,
+      paper reference, session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - WBI11/01
+  stray_prints: []
+  session_printed: June 2019
+  notes:
+  - 'index rows of record: QP ''Question paper - Unit 1 (WBI11) - June 2019'', MS ''Mark scheme - Unit
+    1 (WBI11) - June 2019'' (Algolia qualifications-uk_LIVE_master-content, gating=false)'
+ingestion:
+  agent: SyllabAI agent (2026-10-26 Edexcel-tranche PDF-ingestion wave)
+  run_date: '2026-10-26'
