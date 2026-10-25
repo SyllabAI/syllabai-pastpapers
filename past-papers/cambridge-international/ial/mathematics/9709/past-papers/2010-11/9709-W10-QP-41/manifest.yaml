@@ -1,0 +1,67 @@
+paper_id: cambridge-international:ial:mathematics:9709:2010-11:9709/41
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS and A Level
+subject: mathematics
+specification:
+  folder: '9709'
+  title: Cambridge International AS and A Level Mathematics (9709)
+series:
+  normalized: 2010-11
+  year: '2010'
+  session_month: '11'
+  printed: October/November 2010
+  source: pdf+filename
+paper:
+  official_reference: 9709/41
+  unit_code: '9709'
+  paper_number: '4'
+  paper_number_variant: '41'
+  variant: '1'
+materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: f82050614d08120ab0afdef6f45e69cef1e90617f159a9dd7979f1b9917c6520
+  size_bytes: 99213
+  original_filename: 9709_w10_qp_41.pdf
+  pages: 4
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Mathematics%20(9709)/9709_w10_qp_41.pdf
+    collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 1724d6487458d5b23baf8c22072ac0d1b62ad9884a786610a8cf56ed67f0960c
+  size_bytes: 128098
+  original_filename: 9709_w10_ms_41.pdf
+  pages: 6
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Mathematics%20(9709)/9709_w10_ms_41.pdf
+    collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 9709/41
+  stray_prints: []
+  session_printed: October/November 2010
+  notes:
+  - '2026-10-25 bucket-B PDF-ingestion wave (operator direction: ''PDF-ingestion wave''); source listings
+    crawled from XtremePapers CAIE subject dirs; every material print-checked for syllabus code, session
+    and component before acceptance'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-25'
+  source_repo: XtremePapers (CAIE section)
+  verification_status: AI-IDENTIFIED
