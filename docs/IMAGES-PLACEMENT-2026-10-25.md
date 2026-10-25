@@ -625,3 +625,68 @@ no new INDEX fields were introduced (schema identical to Phase-1).
 
 Post-push raw verification is recorded in the push report (INDEX + PNG byte sampling against
 raw.githubusercontent at the pushed tip).
+
+# Phase-7 addendum — back-fill wave: the +8,415 multi-part rows placed (Task 40, 2026-10-26)
+
+Operator instruction: **"back-fill wave for the +8,415 multi-part rows"** — ratifies the
+follow-up wave left as an operator decision by the Phase-6 addendum ("Already-shipped
+dirs: 35,320 join rows match dirs imaged by earlier waves (vs 26,905 rows Phase-1 placed
+into them). The +8,415 delta = multi-part images the Phase-1 dedupe key collapsed plus
+rows matching renderer-imaged dirs.").
+
+## Join reproduction (fingerprint-exact)
+
+The wave-2 join was re-run verbatim (Phase-1 `pp_place_join.py` route + the corrected
+dedupe key `(url, kind)` + the BUCKET-B remap rules) against base `04df741df`
+(`scripts/wave_backfill/join3.py`; sources pinned `repo1 @ 1944b81a`, `repo2 @ 563df542`
+exactly as Phase-6). Reproduction is **exact on all four fingerprint numbers**:
+rows matching pre-wave-2 shipped dirs **35,320**, rows already present in their INDEX
+**26,905**, delta **8,415**, unmatched **10,159** with the per-code table identical to
+Phase-6; sha conflicts at the corrected key **0**. The back-fill set is therefore
+exactly the Phase-6 delta, nothing more.
+
+## Placed (merge into shipped state)
+
+- **8,414 PNGs** (qp 5499, ms 2915) into **916 already-imaged
+  paper dirs** across **23 lanes**, ~587 MB, as **23 per-lane commits** chained on main
+  (base `04df741df` -> tip `e2e35dd89`); rows == files, one ledger row = one image.
+- **Merge semantics** (unlike waves 1-2, these dirs are shipped state): existing
+  `images/INDEX.jsonl` rows are preserved **byte-verbatim** (QA proves the new blob
+  starts with the old blob) and the new rows are appended with the identical Phase-1
+  schema (url/kind/qid/.../file + src pins); existing `images/qp|ms` entries are
+  preserved verbatim and new files are added under collision-safe `_vN` names; renders
+  and bank crops coexist in renderer-imaged dirs, each row carrying its own provenance.
+- 1 delta row excluded, reported, nothing inferred: `4MA0/2F_Winter_2014_Q10`
+  answer crop whose image file is absent from its source tree
+  (`missing_source_rows3.json`; same disposition class as wave-2's two missing rows).
+
+| lane | files | lane | files | lane | files |
+|---|---:|---|---:|---|---:|
+| 0580 | 436 | 0620 | 596 | 0625 | 475 |
+| 4bi0 | 601 | 4bi1 | 171 | 4ch0 | 743 |
+| 4ch1 | 70 | 4ma0 | 164 | 4ma1 | 70 |
+| 4mb0 | 197 | 4mb1 | 23 | 4ph0 | 667 |
+| 4ph1 | 54 | 4pm0 | 44 | 9701 | 1147 |
+| 9702 | 909 | 9709 | 873 | wbi01 | 301 |
+| wch01 | 331 | wch11 | 61 | wma01 | 378 |
+| wph01 | 80 | wph11 | 23 |  | 0 |
+
+(4ma0 shows 164 here vs 165 delta rows: the excluded missing-source row was 4ma0.)
+
+## QA (all green, pre-push)
+
+- diff `04df741df..e2e35dd89`: **8,414 additions (PNGs) + 916 INDEX.jsonl modifications,
+  0 deletions**, every path inside `*/images/{qp,ms}/*.png` or `*/images/INDEX.jsonl`.
+- Per dir (916): merged INDEX row count == tree file count, INDEX file set == tree file
+  set; every new row carries the Phase-1 schema + src pins (`repo1 @ 1944b81a`,
+  `repo2 @ 563df542`); no `(url,kind)` duplicate against the dir's existing rows.
+- Existing rows byte-verbatim: new INDEX blob starts with the old INDEX blob in all 916
+  dirs; every pre-existing `images/qp|ms` tree entry unchanged.
+- All 8,414 placed blobs re-read from the pastpapers object store and re-hashed:
+  sha256 == INDEX == source ledger, 0 mismatches.
+- Ancestor probes identical to base: wbi02, wch02, wma02, 4pm1, wbi11 lanes, 9701/2016-03
+  session, docs tree.
+- Scripts: `scripts/wave_backfill/` (join3, blob_maps3, prefetch3, place3, qa3, push3);
+  working data `pp2026_placement/wave_backfill/`.
+
+Post-push raw verification is recorded in the push report below.
