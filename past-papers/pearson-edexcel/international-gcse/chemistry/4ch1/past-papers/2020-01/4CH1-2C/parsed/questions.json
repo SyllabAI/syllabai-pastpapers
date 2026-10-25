@@ -1,0 +1,2580 @@
+{
+ "schema": "syllabai.pastpaper.atoms/1.1",
+ "source": {
+  "qp": "qp.pdf",
+  "ms": "ms.pdf"
+ },
+ "questionCount": 7,
+ "totalMarks": 70,
+ "marksVerified": true,
+ "questions": [
+  {
+   "number": 1,
+   "type": "structured",
+   "marks": 5,
+   "commandWord": "Name",
+   "summaryHint": "Answer ALL questions.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Answer ALL questions."
+    },
+    {
+     "type": "para",
+     "md": "1 This question is about elements, compounds and mixtures."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    }
+   ],
+   "parts": [
+    {
+     "id": "1a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the element that burns with a lilac flame."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the technique used to separate the mixture of colours in black ink."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The box gives the names of some substances."
+      },
+      {
+       "type": "para",
+       "md": "air bromine magnesium neon sodium chloride sulfur"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Choose substances from the box to answer these questions."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the compound."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the mixture."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    },
+    {
+     "id": "1c-iii",
+     "label": "c",
+     "sub": "iii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Identify",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Identify the non‑metal element that is a solid at room temperature."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 5,
+     "sum": 5,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "potassium",
+      "allow": [
+       "K"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "(paper) chromatography",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "sodium chloride",
+      "allow": [
+       "NaCl"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "air",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": "iii",
+      "marks": 1,
+      "md": "sulfur",
+      "allow": [
+       "S"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       4
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 2,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "Name",
+   "summaryHint": "Crude oil is a mixture of hydrocarbons.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Crude oil is a mixture of hydrocarbons."
+    }
+   ],
+   "parts": [
+    {
+     "id": "2a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the process used to separate crude oil into fractions."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give one use of the kerosene fraction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "One of the hydrocarbons in the refinery gas fraction is an alkane with the"
+      },
+      {
+       "type": "para",
+       "md": "structural formula CH3CH2CH2CH3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the name of this alkane."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the relative molecular mass (Mr) of this alkane."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Mr = .............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "One of the alkanes in the gasoline fraction has the displayed formula"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      },
+      {
+       "type": "para",
+       "md": "H"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2d-i",
+     "label": "d",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Determine",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Determine the molecular formula of this alkane."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2d-ii",
+     "label": "d",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the general formula for the alkanes."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      4
+     ]
+    },
+    {
+     "id": "2e",
+     "label": "e",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Catalytic cracking is used to convert long‑chain alkanes into shorter‑chain alkanes."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2e-i",
+     "label": "e",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Name",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Name the catalyst used in catalytic cracking."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2e-ii",
+     "label": "e",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why it is necessary to convert long‑chain alkanes into shorter‑chain alkanes."
+      },
+      {
+       "type": "answer_lines",
+       "count": 5
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 6,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "id": "2f",
+     "label": "f",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Catalytic cracking also produces alkenes."
+      },
+      {
+       "type": "para",
+       "md": "C11H24 can undergo cracking to give pentane (C5H12) and two different alkenes."
+      },
+      {
+       "type": "para",
+       "md": "Complete the equation for this cracking reaction."
+      },
+      {
+       "type": "para",
+       "md": "C11H24 → C5H12 + ............................................................... + ..............................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "fractional distillation",
+      "allow": [
+       ""
+      ],
+      "reject": [],
+      "ignore": [
+       "distillation alone"
+      ],
+      "notes": [
+       "fractionation/fractionating"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 1,
+      "md": "aircraft fuel/jet fuel/paraffin or fuel for lamps/",
+      "allow": [
+       "heating oil",
+       "cooking fuel"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "heaters"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "butane",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "Spelling must be correct"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 1,
+      "md": "(Mr = 4 x 12 + 10 x 1 =) 58",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "C7H16",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "d",
+      "sub": "ii",
+      "marks": 1,
+      "md": "CnH2n + 2",
+      "allow": [
+       "different letters"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "to n / uppercase"
+      ],
+      "pages": [
+       5
+      ]
+     },
+     {
+      "id": "P7",
+      "part": "e",
+      "sub": "i",
+      "marks": 1,
+      "md": "alumina / silica",
+      "allow": [
+       "aluminium"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "oxide / silicon dioxide /",
+       "Al2O3 / SiO2 / zeolite(s) /",
+       "aluminosilicate(s)"
+      ],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P8",
+      "part": "e",
+      "sub": "ii",
+      "marks": 2,
+      "md": "An explanation that links the following two points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       6
+      ]
+     },
+     {
+      "id": "P9",
+      "part": "f",
+      "sub": null,
+      "marks": 2,
+      "md": "(C11H24  C5H12) + C2H4 + C4H8",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "alkenes can be in either",
+       "order",
+       "M1 (no printed marks cell): greater demand for short chain alkanes (than | ALLOW short chain | long chain alkanes)                                  alkanes are more useful | (than long chain | alkanes) | ALLOW short chain | alkanes needed for | specific uses e.g. petrol",
+       "M2 (no printed marks cell): more long-chain alkanes than are needed / too | great a supply of /surplus of long-chain alkanes | not enough short chain alkanes to meet demands",
+       "M1 (no printed marks cell): C2H4",
+       "M2 (no printed marks cell): C4H8 | ALLOW 1 mark for | C6H12 / 2C3H6 | / C3H6 + C3H6 | ALLOW correct | displayed formulae"
+      ],
+      "pages": [
+       6
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 3,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "State",
+   "summaryHint": "This question is about copper and its compounds.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about copper and its compounds."
+    }
+   ],
+   "parts": [
+    {
+     "id": "3a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Copper is a metal used for electrical wiring."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "Explain why copper is a good conductor of electricity."
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "This apparatus is used to investigate the electrolysis of copper(II) sulfate solution with"
+      },
+      {
+       "type": "para",
+       "md": "graphite electrodes."
+      },
+      {
+       "type": "para",
+       "md": "power supply"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "–"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "lamp"
+      },
+      {
+       "type": "para",
+       "md": "negative electrode"
+      },
+      {
+       "type": "para",
+       "md": "positive electrode"
+      },
+      {
+       "type": "para",
+       "md": "copper(II) sulfate solution"
+      },
+      {
+       "type": "para",
+       "md": "Copper forms at the negative electrode and oxygen forms at the positive electrode."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State what would be observed at each electrode."
+      },
+      {
+       "type": "para",
+       "md": "negative electrode ................................................................................................................................................................................................................................"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "positive electrode ..................................................................................................................................................................................................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The ionic half‑equation for the reaction at the negative electrode is"
+      },
+      {
+       "type": "para",
+       "md": "Cu2+ + 2e– → Cu"
+      },
+      {
+       "type": "para",
+       "md": "State why this is a reduction reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      6
+     ]
+    },
+    {
+     "id": "3b-iii",
+     "label": "b",
+     "sub": "iii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain why the copper(II) sulfate solution becomes paler blue during the electrolysis."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 4
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      7
+     ]
+    },
+    {
+     "id": "3c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "When hydrated copper(II) sulfate crystals are heated, anhydrous copper(II) sulfate forms."
+      },
+      {
+       "type": "para",
+       "md": "A mass of 12.5 g of hydrated copper(II) sulfate crystals is heated in a crucible until"
+      },
+      {
+       "type": "para",
+       "md": "all the water of crystallisation is removed."
+      },
+      {
+       "type": "para",
+       "md": "A mass of 8.0 g of anhydrous copper(II) sulfate forms."
+      },
+      {
+       "type": "para",
+       "md": "Show by calculation that the formula of hydrated copper(II) sulfate is CuSO4.5H2O"
+      },
+      {
+       "type": "para",
+       "md": "[Mr of CuSO4 = 159.5 Mr of H2O = 18]"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "An explanation that links the following two points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "M1",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "brown/pink/pink-brown solid formed",
+      "allow": [
+       "brown/pink",
+       "red-brown"
+      ],
+      "reject": [
+       "orange",
+       "precipitate"
+      ],
+      "ignore": [],
+      "notes": [
+       "coating/deposit on the",
+       "electrode"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "copper ion(s)/Cu2+ gains electrons",
+      "allow": [
+       "oxidation state of",
+       "electrons are gained"
+      ],
+      "reject": [
+       "copper/Cu gains"
+      ],
+      "ignore": [
+       "references to loss"
+      ],
+      "notes": [
+       "copper goes down / goes",
+       "from +2 to 0",
+       "of oxygen",
+       "electrons"
+      ],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "iii",
+      "marks": 2,
+      "md": "An explanation that links the following two points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       7
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": null,
+      "marks": 4,
+      "md": "•",
+      "allow": [
+       "alternative"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "calculate the mass of water removed",
+       "•   calculate the amount, in moles, of CuSO4   methods which show",
+       "•   calculate the amount, in moles, of water   that the answer is 5",
+       "•   divide amount of H2O by amount of CuSO4",
+       "Example calculation",
+       "M1 (no printed marks cell): electrons are delocalised | IGNORE sea of electrons | /free electrons",
+       "M2 (no printed marks cell): (electrons) can move/can flow/are mobile | REJECT cations/atoms | move for both marks",
+       "M2 (no printed marks cell): dep on M1 or mention of | electrons i.e. ‘electrons | move’ scores 1 mark",
+       "M2 (no printed marks cell): bubbles/fizzing/effervescence | ALLOW 1 mark if both | observations correct but at | incorrect electrodes | IGNORE gas produced | /evolved/released | IGNORE name of gas",
+       "M1 (no printed marks cell): the (blue) colour is caused by copper | ions/Cu2+",
+       "M2 (no printed marks cell): copper ions/Cu2+ are being discharged/ | ACCEPT concentration | removed from the solution                            of copper ions/Cu2+ | decreases | ALLOW copper ions/Cu2+ | form copper",
+       "M1 (no printed marks cell): (12.5 – 8.0) = 4.5 (g)",
+       "M2 (no printed marks cell): n(CuSO4) = 8.0 ÷ 159.5 = 0.05(0) (mol)",
+       "M3 (no printed marks cell): n(H2O) = 4.5 ÷ 18 = 0.25 (mol)",
+       "M4 (no printed marks cell): 0.25 ÷ 0.05(0) (= 5)"
+      ],
+      "pages": [
+       8
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 4,
+   "type": "structured",
+   "marks": 9,
+   "commandWord": "Give",
+   "summaryHint": "A student investigates the reaction between sodium hydroxide solution and dilute sulfuric acid.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "A student investigates the reaction between sodium hydroxide solution and dilute sulfuric acid."
+    },
+    {
+     "type": "para",
+     "md": "He does a titration to find the concentration of the sulfuric acid."
+    },
+    {
+     "type": "para",
+     "md": "DO NOT WRITE IN THIS AREA"
+    },
+    {
+     "type": "para",
+     "md": "This is his plan for the titration. There are some mistakes and omissions in his plan."
+    },
+    {
+     "type": "para",
+     "md": "● rinse a conical flask with the sodium hydroxide solution"
+    },
+    {
+     "type": "para",
+     "md": "● use a measuring cylinder to measure out 25 cm3 of the sodium hydroxide solution"
+    },
+    {
+     "type": "para",
+     "md": "and add it to the conical flask"
+    },
+    {
+     "type": "para",
+     "md": "● add a few drops of methyl orange indicator to the conical flask"
+    },
+    {
+     "type": "para",
+     "md": "● rinse a burette with water and then fill it with the sulfuric acid"
+    },
+    {
+     "type": "para",
+     "md": "● add the acid from the burette to the conical flask until the indicator changes"
+    },
+    {
+     "type": "para",
+     "md": "colour at the end‑point of the titration"
+    },
+    {
+     "type": "para",
+     "md": "● record the final burette reading"
+    }
+   ],
+   "parts": [
+    {
+     "id": "4a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the colour change of the methyl orange indicator at the end‑point."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "from ........................................................................................................... to ..........................................................................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "4b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe four changes that the student could make to improve his plan."
+      },
+      {
+       "type": "para",
+       "md": "1................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "2................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "3................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      },
+      {
+       "type": "para",
+       "md": "4..................................................................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 8,
+     "pages": [
+      8
+     ]
+    },
+    {
+     "id": "4c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The student then does the titration correctly."
+      },
+      {
+       "type": "para",
+       "md": "He finds that 16.70 cm3 of the dilute sulfuric acid neutralises 25.0 cm3 of"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "sodium hydroxide solution of concentration 0.200 mol/dm3"
+      },
+      {
+       "type": "para",
+       "md": "The equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "2NaOH + H2SO4 → Na2SO4 + 2H2O"
+      },
+      {
+       "type": "para",
+       "md": "Calculate the concentration, in mol/dm3, of the sulfuric acid."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "concentration of sulfuric acid = .............................................................. mol/dm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 9,
+     "sum": 9,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": null,
+      "marks": 2,
+      "md": "(from) yellow",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "b",
+      "sub": null,
+      "marks": 4,
+      "md": "A description that makes reference to any four of",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "the following points"
+      ],
+      "pages": [
+       9
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "c",
+      "sub": null,
+      "marks": 3,
+      "md": "•",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "calculate the amount, in moles, of sodium",
+       "hydroxide",
+       "•   calculate the amount, in moles, of sulfuric acid",
+       "•   calculate the concentration of sulfuric acid",
+       "Example calculation",
+       "M2 (no printed marks cell): (to) orange | ACCEPT red | ALLOW pink | 1 mark for two correct | colours in the wrong | order",
+       "M1 (no printed marks cell): he should not rinse flask with sodium hydroxide | solution or he should rinse flask with water",
+       "M2 (no printed marks cell): he should use a pipette to measure out the | ACCEPT he should use a | sodium hydroxide solution                             pipette instead of a | measuring cylinder",
+       "M3 (no printed marks cell): he should not rinse the burette with water | or he should rinse the burette with sulfuric acid",
+       "M4 (no printed marks cell): he should record the initial burette reading",
+       "M5 (no printed marks cell): he should place a white tile under the flask | ALLOW white paper",
+       "M6 (no printed marks cell): he should swirl the flask whilst adding the acid | IGNORE stir",
+       "M7 (no printed marks cell): he should add the acid dropwise near the | end-point",
+       "M8 (no printed marks cell): repeat the titration (to obtain an average/ | concordant results)",
+       "M1 (no printed marks cell): n(NaOH) = 0.0250 × 0.200 or 0.005 (mol)",
+       "M2 (no printed marks cell): n(H2SO4) = 0.005 ÷ 2 or 0.0025 (mol) | answer to M1 ÷ 2",
+       "M3 (no printed marks cell): concn = (0.0025 ÷ 0.0167) = 0.150 (mol/dm3) | answer to M2÷0.0167 | ALLOW 0.1497 or any | number of sig fig except | one | Correct answer without | working scores 3 | ACCEPT alternative | methods"
+      ],
+      "pages": [
+       10
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 5,
+   "type": "structured",
+   "marks": 8,
+   "commandWord": "Which",
+   "summaryHint": "Oxygen can be prepared from hydrogen peroxide using a catalyst.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Oxygen can be prepared from hydrogen peroxide using a catalyst."
+    }
+   ],
+   "parts": [
+    {
+     "id": "5a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Which",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Which is a correct statement about oxygen?"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "A it burns with a squeaky pop"
+      },
+      {
+       "type": "para",
+       "md": "B it relights a glowing splint"
+      },
+      {
+       "type": "para",
+       "md": "C it turns blue litmus red"
+      },
+      {
+       "type": "para",
+       "md": "D it turns limewater milky"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Explain",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Explain how a catalyst increases the rate of a reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 3
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 4,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "The equation for the preparation of oxygen from hydrogen peroxide is"
+      },
+      {
+       "type": "para",
+       "md": "2H2O2 → 2H2O + O2"
+      },
+      {
+       "type": "para",
+       "md": "This equation can also be written using displayed formulae to show all the"
+      },
+      {
+       "type": "para",
+       "md": "covalent bonds in the molecules."
+      },
+      {
+       "type": "para",
+       "md": "2H—O—O—H → 2H—O—H + O"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "The table gives the bond energies for these bonds."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      10
+     ]
+    },
+    {
+     "id": "5c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Use the values in the table to calculate the enthalpy change, ΔH, for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "Include a sign in your answer."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "ΔH = .............................................................. kJ"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      11
+     ]
+    },
+    {
+     "id": "5c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the energy level diagram to show the position of the products and"
+      },
+      {
+       "type": "para",
+       "md": "the enthalpy change, ΔH, for the reaction."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "2H2O2"
+      },
+      {
+       "type": "para",
+       "md": "energy"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 8,
+     "sum": 8,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": null,
+      "marks": 1,
+      "md": "B it relights a glowing splint",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is incorrect as this is the test for hydrogen",
+       "C is incorrect as oxygen is not an acidic gas",
+       "D is incorrect as this is the test for carbon dioxide"
+      ],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": null,
+      "marks": 2,
+      "md": "An explanation that links the following two points",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       11
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "c",
+      "sub": "i",
+      "marks": 3,
+      "md": "•",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "find energy needed to break bonds",
+       "•    find energy released when bonds form",
+       "•    correct subtraction to find ΔH",
+       "Example calculation"
+      ],
+      "pages": [
+       12
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": "ii",
+      "marks": 2,
+      "md": "Energy 2H2O2",
+      "allow": [],
+      "reject": [
+       "arrow pointing"
+      ],
+      "ignore": [
+       "any attempts at"
+      ],
+      "notes": [
+       "¯¯¯¯¯¯¯¯¯¯¯",
+       "ΔH",
+       "2H2O + O2",
+       "¯¯¯¯¯¯¯¯¯¯¯",
+       "M1 horizontal line to show products in correct         Mark CQ on sign in (i)",
+       "position and correctly labelled",
+       "M2 vertical line in correct position and labelled ΔH   ACCEPT double headed",
+       "arrow or arrow pointing",
+       "from reactants level to",
+       "products level",
+       "from products level to",
+       "reactants level",
+       "including activation energy",
+       "M1 (no printed marks cell): provides an alternative pathway OWTTE",
+       "M2 (no printed marks cell): with a lower activation energy OWTTE | ACCEPT more collisions | with energy greater | than the activation | energy | ALLOW lowers the | energy needed to start | the reaction",
+       "M1 (no printed marks cell): (4 x 463) + (2 x 143) OR 2138 (kJ) | ACCEPT (2 x 143)/286 | for M1",
+       "M2 (no printed marks cell): (4 x 463) + 498 OR 2350 (kJ) | and 498 for M2 | IGNORE any signs in M1 | and M2",
+       "M3 (no printed marks cell): — 212 (kJ) OR M1 – M2 correctly evaluated | — 212 with or without | working scores 3 | (+) 212 with or without | working scores 2"
+      ],
+      "pages": [
+       12
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 6,
+   "type": "structured",
+   "marks": 11,
+   "commandWord": "State",
+   "summaryHint": "Ethanol, C2H5OH, can be manufactured from ethene and steam using a phosphoric acid catalyst.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "Ethanol, C2H5OH, can be manufactured from ethene and steam using a phosphoric acid catalyst."
+    }
+   ],
+   "parts": [
+    {
+     "id": "6a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State the temperature and pressure used in this manufacturing process."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "temperature . ..............................................................................................................................................................................................................................................."
+      },
+      {
+       "type": "para",
+       "md": "pressure . .........................................................................................................................................................................................................................................................."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Draw",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Draw the displayed formula of ethanol."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6b",
+     "label": "b",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Ethanol burns in a plentiful supply of air to form carbon dioxide and water."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the chemical equation for this reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "When the air supply is limited, incomplete combustion occurs and"
+      },
+      {
+       "type": "para",
+       "md": "carbon monoxide forms."
+      },
+      {
+       "type": "para",
+       "md": "State why carbon monoxide is poisonous to humans."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "When ethanol reacts with ethanoic acid, an ester forms."
+      },
+      {
+       "type": "para",
+       "md": "Give the name of this ester."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      12
+     ]
+    },
+    {
+     "id": "6d",
+     "label": "d",
+     "sub": null,
+     "type": "open",
+     "marks": 4,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Butanedioic acid and ethanediol react together to form a polyester and water."
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "6d-i",
+     "label": "d",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the name of this type of polymerisation."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      13
+     ]
+    },
+    {
+     "id": "6d-ii",
+     "label": "d",
+     "sub": "ii",
+     "type": "open",
+     "marks": 3,
+     "commandWord": "Complete",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Complete the equation."
+      },
+      {
+       "type": "para",
+       "md": "Show only one repeat unit of the polyester."
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "O"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "CH2CH2"
+      },
+      {
+       "type": "para",
+       "md": "C"
+      },
+      {
+       "type": "para",
+       "md": "OH"
+      },
+      {
+       "type": "para",
+       "md": "HO"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "+"
+      },
+      {
+       "type": "para",
+       "md": "HO"
+      },
+      {
+       "type": "para",
+       "md": "CH2CH2"
+      },
+      {
+       "type": "para",
+       "md": "OH"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 11,
+     "sum": 11,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "M1",
+      "part": "a",
+      "sub": "i",
+      "marks": 2,
+      "md": "300 (oC)",
+      "allow": [
+       "any",
+       "any correct"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "temperature or range",
+       "250 to 350 inclusive.",
+       "alternative unit and",
+       "quantity"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "ii",
+      "marks": 1,
+      "md": "All bonds including bond",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "between O and H must",
+       "be shown."
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "b",
+      "sub": "i",
+      "marks": 2,
+      "md": "C2H5OH + 3O2  2CO2 + 3H2O",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "ii",
+      "marks": 1,
+      "md": "prevents blood from carrying oxygen/ reduces the",
+      "allow": [
+       "references to"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "capacity of blood to carry oxygen OWTTE            combining with",
+       "haemoglobin in red",
+       "blood cells or forming",
+       "carboxyhaemoglobin"
+      ],
+      "pages": [
+       13
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "c",
+      "sub": null,
+      "marks": 1,
+      "md": "ethyl ethanoate",
+      "allow": [
+       "ethyl acetate"
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "d",
+      "sub": "i",
+      "marks": 1,
+      "md": "condensation (polymerisation)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       14
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "d",
+      "sub": "ii",
+      "marks": 3,
+      "md": "",
+      "allow": [
+       ""
+      ],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "+ 2H2O",
+       "M2 (no printed marks cell): 60 to 70 (atm) | ACCEPT any pressure or | range 60 to 70 inclusive | ACCEPT any correct | alternative unit and | quantity",
+       "M1 (no printed marks cell): all formulae correct | ALLOW C2H6O for | ethanol",
+       "M2 (no printed marks cell): balancing of correct formulae | ACCEPT multiples and | fractions | IGNORE state symbols | even if incorrect",
+       "M2 (no printed marks cell): dep on M1",
+       "M1 (no printed marks cell): correct ester link | for M1 and M2",
+       "M2 (no printed marks cell): rest of polymer structure correct with extension | bonds",
+       "M3 (no printed marks cell): 2H2O | If brackets and n | present equation must | be fully balanced with n | in front of each reactant | and 2nH2O for full | marks, otherwise max 2 | If dimer is drawn with | OH at one end and | COOH at the other a | mark can be awarded | for H2O without the 2 as | this equation is then | balanced, so M1 and M3 | can be awarded."
+      ],
+      "pages": [
+       14
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  },
+  {
+   "number": 7,
+   "type": "structured",
+   "marks": 15,
+   "commandWord": "Give",
+   "summaryHint": "This question is about some Group 2 elements and their compounds.",
+   "stem": [
+    {
+     "type": "para",
+     "md": "This question is about some Group 2 elements and their compounds."
+    }
+   ],
+   "parts": [
+    {
+     "id": "7a",
+     "label": "a",
+     "sub": null,
+     "type": "open",
+     "marks": 3,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calcium reacts with water to produce calcium hydroxide and hydrogen gas."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "7a-i",
+     "label": "a",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give the word equation for this reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "7a-ii",
+     "label": "a",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "State",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "State two observations that would be made during this reaction."
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 2,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "7b-i",
+     "label": "b",
+     "sub": "i",
+     "type": "open",
+     "marks": 5,
+     "commandWord": "Describe",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Describe how a pure, dry sample of the insoluble salt, barium sulfate, could be"
+      },
+      {
+       "type": "para",
+       "md": "made from the two solids sodium sulfate and barium chloride."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 9
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "answer_lines",
+       "count": 2
+      }
+     ],
+     "answerLines": 11,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "7b-ii",
+     "label": "b",
+     "sub": "ii",
+     "type": "open",
+     "marks": 2,
+     "commandWord": "Give",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Give an ionic equation for the reaction that occurs."
+      },
+      {
+       "type": "para",
+       "md": "Include state symbols in your equation."
+      },
+      {
+       "type": "answer_lines",
+       "count": 1
+      }
+     ],
+     "answerLines": 1,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "id": "7c",
+     "label": "c",
+     "sub": null,
+     "type": "open",
+     "marks": 5,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "When magnesium nitrate is heated, magnesium oxide, nitrogen dioxide and"
+      },
+      {
+       "type": "para",
+       "md": "oxygen form."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "The equation for the reaction is"
+      },
+      {
+       "type": "para",
+       "md": "2Mg(NO3)2(s) → 2MgO(s) + 4NO2(g) + O2(g)"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "7c-i",
+     "label": "c",
+     "sub": "i",
+     "type": "open",
+     "marks": 1,
+     "commandWord": null,
+     "prompt": [
+      {
+       "type": "para",
+       "md": "What is the name for this type of reaction?"
+      },
+      {
+       "type": "para",
+       "md": "A addition"
+      },
+      {
+       "type": "para",
+       "md": "B combustion"
+      },
+      {
+       "type": "para",
+       "md": "C decomposition"
+      },
+      {
+       "type": "para",
+       "md": "D neutralisation"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "id": "7c-ii",
+     "label": "c",
+     "sub": "ii",
+     "type": "open",
+     "marks": 4,
+     "commandWord": "Calculate",
+     "prompt": [
+      {
+       "type": "para",
+       "md": "Calculate the total volume, in dm3, of gas produced at rtp when 7.7 g of"
+      },
+      {
+       "type": "para",
+       "md": "magnesium nitrate completely reacts."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "[Assume that the molar volume of a gas at rtp is 24 dm3]"
+      },
+      {
+       "type": "para",
+       "md": "[Mr of Mg(NO3)2 = 148]"
+      },
+      {
+       "type": "para",
+       "md": "Give your answer to two significant figures."
+      },
+      {
+       "type": "para",
+       "md": "DO NOT WRITE IN THIS AREA"
+      },
+      {
+       "type": "para",
+       "md": "total volume of gas = ................................................ dm3"
+      }
+     ],
+     "answerLines": 0,
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "markScheme": {
+    "totals": {
+     "printed": 15,
+     "sum": 15,
+     "verified": true
+    },
+    "guidance": [],
+    "points": [
+     {
+      "id": "P1",
+      "part": "a",
+      "sub": "i",
+      "marks": 1,
+      "md": "calcium + water  calcium hydroxide + hydrogen",
+      "allow": [
+       "fully correct"
+      ],
+      "reject": [],
+      "ignore": [
+       "state symbols even"
+      ],
+      "notes": [
+       "balanced chemical equation.",
+       "Ca + 2H2O  Ca(OH)2 + H2",
+       "if incorrect"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P2",
+      "part": "a",
+      "sub": "ii",
+      "marks": 2,
+      "md": "Any two from",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P3",
+      "part": "b",
+      "sub": "i",
+      "marks": 5,
+      "md": "A description that makes reference to the",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "following five points"
+      ],
+      "pages": [
+       15
+      ]
+     },
+     {
+      "id": "P4",
+      "part": "b",
+      "sub": "ii",
+      "marks": 2,
+      "md": "Ba2+(aq) + SO42-(aq)  BaSO4(s)",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "If formulae incorrect or full",
+       "equation given (even if"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P5",
+      "part": "c",
+      "sub": "i",
+      "marks": 1,
+      "md": "C decomposition",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "A is incorrect as it is not an addition reaction",
+       "B is incorrect as oxygen is not a reactant",
+       "D is incorrect as nothing is neutralised here"
+      ],
+      "pages": [
+       16
+      ]
+     },
+     {
+      "id": "P6",
+      "part": "c",
+      "sub": "ii",
+      "marks": 4,
+      "md": "•",
+      "allow": [],
+      "reject": [],
+      "ignore": [],
+      "notes": [
+       "calculate the amount, in moles, of",
+       "magnesium nitrate",
+       "•   use the equation to find the total amount, in",
+       "moles, of gas produced",
+       "•   multiply this amount by 24",
+       "•   answer given to two significant figures",
+       "Example calculation",
+       "M1 (no printed marks cell): effervescence/fizzing/bubbles | IGNORE gas given off",
+       "M2 (no printed marks cell): calcium/metal/solid disappears/becomes | ALLOW calcium/metal | smaller OWTTE                                    /solid dissolves",
+       "M3 (no printed marks cell): test tube/beaker feels warm/hot | ALLOW heat produced | /temperature increases",
+       "M1 (no printed marks cell): dissolve each of the solids in water/make a | ALLOW M1 and M2 if just | solution of each of the solids                   one of the solids is dissolved | in water and then the other | solid is added to it.",
+       "M2 (no printed marks cell): mix/add (the two solutions together) | M2 dep on M1 or on | reference to the solutions | being mixed",
+       "M3 (no printed marks cell): filter (the mixture) | If implication is that filtering | is to obtain crystals from the | solution no M3",
+       "M4 (no printed marks cell): wash the precipitate/solid/barium sulfate | /salt/residue (with water)",
+       "M5 (no printed marks cell): suitable method of drying the solid | e.g. dry in a (warm) | oven/dry between filter | papers | ALLOW leave to dry | REJECT hot oven or direct | heating (with Bunsen burner) | If evaporation of solution to | form crystals do not award",
+       "M4 (no printed marks cell): but allow M5 for suitable | drying method",
+       "M1 (no printed marks cell): all formulae correct | incorrect) M2 can still be | awarded for correct state",
+       "M2 (no printed marks cell): state symbols correct | symbols. If NaCl in equation | must be (aq).",
+       "M1 (no printed marks cell): n(magnesium nitrate) = 7.7 ÷ 148 or 0.052 (mol)",
+       "M2 (no printed marks cell): n(gas) = 5 x 0.052 ÷ 2 or 0.13 (mol)",
+       "P7 (no printed marks cell): answer to M1 ÷2",
+       "M3 (no printed marks cell): Total volume of gas = 0.13 x 24 or 3.12 | answer to M2 x 24",
+       "M4 (no printed marks cell): 3.1(dm3) | answer to M3 to 2 sig | fig | Allow any number of sig | fig for M1, M2 and M3 | 3.1 without working | scores 4 | 3.12 without working | scores 3"
+      ],
+      "pages": [
+       16
+      ]
+     }
+    ],
+    "provenance": "pdf-parsed"
+   },
+   "provenance": "pdf-parsed"
+  }
+ ]
+}
