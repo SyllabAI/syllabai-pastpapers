@@ -492,3 +492,31 @@ Same route as Phases 4/4b: `pp_laneb_render_lib.py` question-crop raster at
 - Raw sampling post-push: scripts/wave_4ch0_4ma0/wave_rawcheck.py
   (results recorded in the push report).
 - Scripts: `scripts/wave_4ch0_4ma0/wave_{find_targets,canon,render,place,qa,rawcheck,doc}.py`.
+
+## Phase-5 addendum — dispositions RATIFIED and EXECUTED (Task 37, 2026-10-25)
+
+Operator ratification received ("Adopt"). Both proposed dispositions were
+executed on base `23ef837ba` via pure tree surgery (no checkout; manifests
+and sha256 identities treated as canonical; author identity inherited from
+the base commit):
+
+1. `2013-06/4MA0-2H` → **adopted into `2013-06/4MA0-4H`** (commit `394308c7f7aa2e7148790ee2951e0d7807036741`).
+   The stray QP blob (git `eb41b230`, sha256 `f8146c3587…`, 198,982 B, PMT
+   "June 2013 QP_2.pdf") now sits in the 4H dir as `qp.pdf`; the 4H manifest
+   gained the question-paper materials row (sha256/size/provenance carried
+   from the stray's manifest) plus an identification note recording the
+   ratification and the visual identity evidence (cover "Mathematics A Paper
+   4H", KMA0/4H, P42071A, Tue 21 May 2013; MS filename pair "June 2013
+   MS_2.pdf"). The phantom dir was deleted.
+2. `2015-06/4MA0-1H` → **deleted** (commit `e34aa357e217485c781beec6a69b4f4e8e13d36c`): duplicate PMT-stamped 3H
+   scan (cover "Paper 3H", KMA0/3H, P44388A, Thu 21 May 2015); the canonical
+   3H QP+MS remain in `2015-06/4MA0-3H` (imaged this phase, commit
+   `1f79e8a61`).
+
+**4ma0 is now 96/96 dirs imaged — COMPLETE**, joining 4ma1/4bi0/4pm0/4ph0/
+4ch0 as fully-imaged lanes. QA: diff scope `23ef837ba..<C>` is exactly the
+two session dirs + this doc (4+2+1 paths); the new 4H manifest yaml-validates
+with 2 material rows (qp `f8146c3587…` 198,982 B + ms `3904d1ad…` 361,444 B)
+and the blob re-hashes to the recorded sha256; lane census 96 paper dirs, all
+with manifest + images; raw.githubusercontent sampling recorded in the push
+report. Scripts: `scripts/wave_4ma0_hygiene/`.
