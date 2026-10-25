@@ -520,3 +520,108 @@ with 2 material rows (qp `f8146c3587…` 198,982 B + ms `3904d1ad…` 361,444 B)
 and the blob re-hashes to the recorded sha256; lane census 96 paper dirs, all
 with manifest + images; raw.githubusercontent sampling recorded in the push
 report. Scripts: `scripts/wave_4ma0_hygiene/`.
+
+# Phase-6 addendum — placement wave: bucket-B follow-up executed (Task 39, 2026-10-25)
+
+Operator direction: **"Placement wave"** — opens the placement follow-up quantified in
+docs/BUCKET-B-INGESTION-2026-10-25.md ("27,973 of the 28,424 CIE unmatched rows now have
+their exact paper dir … the 451 unresolvable rows stay reported"). The Phase-1 placement
+route (exact session/paper join, images/{qp,ms}/*.png + images/INDEX.jsonl per dir, no
+manifest changes) is applied to the post-bucket-B tree with the remap rules that doc
+recorded for this wave.
+
+## Sources + join
+
+- Source snapshots pinned exactly as Phase-1: `syllabai-experimental @ 1944b81a`,
+  `syllabai-experimental-2 @ 563df542` (repo1's remote has since advanced to b2c31f9d —
+  undergroundmathematics-only delta, topical banks untouched; verified before pinning).
+- Join re-run verbatim (scripts/pp_place_join.py route, wave-2 copy
+  `wave_placement2/pp_place_join2.py`) against the full tip tree.
+- **Dedupe key corrected**: Phase-1 deduped on `(qid,kind,page)`, which silently collapsed
+  multi-part questions — the ledger's row identity is the IMAGE FILE (`url`), and several
+  page images share one qid+page. Audit (`dedupe_audit.json`): 11,027
+  same-dest groups with DISTINCT files vs 1,913 true cross-repo mirrors; the
+  old key reported 17,730 "sha conflicts" that are really distinct multi-part images.
+  Wave-2 dedupes on `(url,kind)` (repo2 preferred, Phase-1's scan order preserved);
+  sha conflicts at the corrected key: **0**.
+- Remap rules applied exactly as recorded in BUCKET-B-INGESTION-2026-10-25.md:
+  bank `W*01 "N(IAL)"` (N>=2) -> `W*0N-01`; bank `W*11 "N(IAL)"` -> `W*1N-01`;
+  WMA01-bank `WMA02/C12(IAL)` -> `WMA01-01`, `WMA02/C34(IAL)` -> `WMA02-01`; 0620/0625
+  pre-2016 practical `4V -> 5V` (variant sessions) with inventory-grounded fallback to
+  the bare `5` dir in legacy sessions. `plain C1-C4 -> GCE 6663-6666` resolves nothing
+  (no such lanes exist) and stays reported, as do R/WITHDR variants and the WME01/WST01/
+  WFM01 banks (no lanes in the corpus).
+
+## Placed (this wave)
+
+- **31,328 PNGs** into **1,234 paper dirs** (rows == files, one ledger row = one
+  image), 31,328 verified inline against ledger sha256 at fetch,
+  ~1.159 GB, across **24 per-lane commits** chained on main (base
+  `0f1f61b9a` → tip `bb89296b4`).
+
+| lane | files | dirs | sessions | commit | note |
+|---|---:|---:|---|---|---|
+| 0580 | 5,139 | 148 | 13 | `2652daccc` |  |
+| 0620 | 3,615 | 141 | 14 | `29b204375` | practical remap 822 rows |
+| 0625 | 4,098 | 142 | 14 | `781c98056` | practical remap 1095 rows |
+| 9701 | 4,442 | 215 | 14 | `2818e904e` |  |
+| 9702 | 4,600 | 212 | 14 | `9e93a7001` |  |
+| 9709 | 3,813 | 228 | 13 | `35bad5918` |  |
+| WBI02 | 499 | 12 | 12 | `5693e4bc5` | remap rows 499 |
+| WBI03 | 175 | 8 | 8 | `8aa9f40b5` | remap rows 175 |
+| WBI04 | 482 | 11 | 11 | `86fa08e09` | remap rows 482 |
+| WBI05 | 490 | 11 | 11 | `ce7e65760` | remap rows 490 |
+| WBI06 | 154 | 7 | 7 | `b6c981a36` | remap rows 154 |
+| WCH02 | 575 | 12 | 12 | `0239e3e22` | remap rows 575 |
+| WCH03 | 194 | 7 | 7 | `1a115f1b8` | remap rows 194 |
+| WCH04 | 582 | 11 | 11 | `ae942d6fc` | remap rows 582 |
+| WCH05 | 692 | 12 | 12 | `0578338fb` | remap rows 692 |
+| WCH06 | 200 | 7 | 7 | `a0c3ebc86` | remap rows 200 |
+| WCH12 | 60 | 1 | 1 | `c07621dda` | remap rows 60 |
+| WMA02 | 338 | 11 | 11 | `8eb7b6e08` | remap rows 338 |
+| WPH02 | 336 | 9 | 9 | `498ce41fb` | remap rows 336 |
+| WPH03 | 76 | 5 | 5 | `2f162c7d2` | remap rows 76 |
+| WPH04 | 311 | 9 | 9 | `e4084fd5d` | remap rows 311 |
+| WPH05 | 366 | 10 | 10 | `9d94162be` | remap rows 366 |
+| WPH06 | 53 | 4 | 4 | `a46b6cc97` | remap rows 53 |
+| WPH12 | 38 | 1 | 1 | `bb89296b4` | remap rows 38 |
+
+Remapped rows total 7,538 (5,621 W*01-family + 1,917 0620/0625 practical). INDEX rows carry the original
+`paper_ref` (e.g. `WBI01/2(IAL)_Winter_2015_Q5`), so every remap stays auditable from the row;
+no new INDEX fields were introduced (schema identical to Phase-1).
+
+## Not placed (reported, nothing inferred)
+
+- **10,159 ledger lines unmatched** (all `no_paper_dir`), CIE 1,171 / Edexcel+other 8,988.
+  Per code: 0580 128, 0620 342, 0625 252, 4CH0 161, 4MA0 704, 4MB0 1,142, 4MB1 257, 4PM1 48, 9701 123, 9702 231, 9709 95, WBI01 2,118, WBI11 151, WCH01 2,467, WMA01 1,104, WPH01 836.
+  CIE = 44 (code,session,unit) groups:
+  (a) 2009-06/2009-11 legacy-label rows (exam-mate `11/21/31…` variant-style labels where
+  the archive holds single-variant papers named `1/2/3…`); the strip-X1 rule that named the
+  ingested dirs was recorded for ingestion naming, not for the placement join, so these stay
+  reported pending an operator-sanctioned join rule; (b) rows for the 17 unresolvable units
+  disclosed in the bucket-B report; (c) 9702 W09 units 11/12 (question papers absent from the
+  source inventory; only ms-only dirs exist).
+- **2 ledger rows excluded**: image file absent from the source tree
+  (`missing_source_rows.json`; 0620 + 0625 answer crops).
+- **Already-shipped dirs: 35,320 join rows match dirs imaged by earlier waves** (vs 26,905
+  rows Phase-1 placed into them). The +8,415 delta = multi-part images the Phase-1 dedupe key
+  collapsed plus rows matching renderer-imaged dirs. NOT back-filled here (their INDEX.jsonl
+  files are shipped state; completing them is an operator decision for a follow-up wave).
+
+## QA (all green, pre-push)
+
+- diff `0f1f61b9a..bb89296b4`: 32,562 additions (31,328 png + 1,234 INDEX), **0 modifications, 0 deletions**, every added path
+  inside `*/images/{qp,ms}/*.png` or `*/images/INDEX.jsonl`.
+- Per-dir (1,234 dirs): INDEX row count == tree file count, INDEX file set == tree file
+  set (prefix-aware), all rows carry the Phase-1 schema, src pins verified on every row (repo1@1944b81a ×17,452, repo2@563df542 ×13,876).
+- All 31,328 placed blobs re-read from the pastpapers object store and re-hashed: sha256
+  == INDEX == ledger, 0 mismatches.
+- Ancestor probes identical to base: 9701/2016-03, 0580/2016-06 + 2016-11, wbi01 lane, wch01
+  lane, 4ma0 lane, docs tree.
+- Manifest counts per lane unchanged (additions only); images/INDEX.jsonl dirs at tip:
+  2,663 (1,429 + 1,234).
+- Scripts: `wave_placement2/` (label_survey, dedupe_audit, join2, build_blob_maps2,
+  prefetch_blobs2, place_commit2, place_qa2); working data `pp2026_placement/wave_placement2/`.
+
+Post-push raw verification is recorded in the push report (INDEX + PNG byte sampling against
+raw.githubusercontent at the pushed tip).
