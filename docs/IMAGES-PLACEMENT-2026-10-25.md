@@ -411,3 +411,84 @@ first November sitting after the January series ended — was never listed).
 - The 4 qp-only dirs (2020-06 Foundation, no MS canonically published) stand
   as disclosed in Phase 4.
 - Bucket-B topical ingestion wave remains HELD (operator decision, unchanged).
+
+
+---
+
+# Phase 5 addendum — 4ch0 + 4ma0 renderer-only completion; two phantom dirs found (Task 36, 2026-10-25)
+
+Operator instruction: "renderer-only wave on 4ch0's 1 missing dir + 4ma0's 4
+(completes those lanes)" — the residual imageless dirs left by the repo-wide
+tree-verified census at `36c4c91e0`.
+
+## Canon identity chain (before any render)
+
+Every dir's manifest was re-verified (official_reference / series.normalized /
+blob sha256+size / PDF page-1 text). Result:
+
+- `4ch0 2016-01/4CH0-1C` — VERIFIED (page-1 prints "January 2016", ref
+  4CH0/1C). Imageless since the Phase-1 wave because exam-mate has no row for
+  this paper (lane otherwise fully covered by corpus rows 2011-06..2019-01).
+- `4ma0 2015-06/4MA0-3H`, `4MA0-3HR` — VERIFIED (page-1 text carries refs).
+  Imageless because their exam-mate rows had no exact unit match in the
+  Phase-1 join (3HR) / the session's rows were partially unmatched.
+- `4ma0 2013-06/4MA0-2H` — **PHANTOM DIR.** The blob is the **4MA0/4H
+  question paper**: cover renders "Mathematics A Paper 4H", Paper Reference
+  4MA0/4H, KMA0/4H, P42071A, "Tuesday 21 May 2013" (visual identity check;
+  text layer is CID-garbled, extraction useless). The manifest is
+  `date_rule`-guessed from the filename "June 2013 QP_2.pdf"
+  (confidence_rank 5, AI-IDENTIFIED, printed_references_seen empty, F3 audit
+  note "queued for operator ratification"). 4MA0 has no 2H paper (units are
+  1F/2F/3H/4H + R). The real `2013-06/4MA0-4H` dir (confidence_rank 0,
+  pdf_text-identified) holds `ms.pdf` + corpus images but **no qp.pdf** —
+  this stray dir is its missing QP ("QP_2" = PMT's second Higher paper = 4H;
+  same "_2" suffix on the 4H MS filename).
+- `4ma0 2015-06/4MA0-1H` — **PHANTOM DIR.** The blob is a **duplicate scan of
+  4MA0/3H**: cover renders "Paper 3H", 4MA0/3H, KMA0/3H, P44388A,
+  "Thursday 21 May 2015" (visual check; scan carries PMT stamps, no useful
+  text layer). Same date_rule/filename-guess provenance ("June 2015
+  QP_2.pdf"). The real `2015-06/4MA0-3H` dir (confidence_rank 0) already held
+  an official-source QP + MS and is completed below. 4MA0 has no 1H paper.
+
+Per repo discipline (identification corrections need operator ratification;
+never silently infer/replace/pair) the two phantom dirs received **no
+images and no mutation** — they are reported for adjudication below.
+
+## Placed (renderer-only, canonical blobs)
+
+| dir | qp | ms | rows | commit |
+|-----|----|----|------|--------|
+| 4CH0-1C 2016-01 | 32pp/46e | 26pp/27e | 73 | `1b7ac2012` |
+| 4MA0-3H 2015-06 | 28pp/51e | 20pp/43e | 94 | `1f79e8a61` |
+| 4MA0-3HR 2015-06 | 24pp/46e | 17pp/39e | 85 | `1f79e8a61` |
+| **total** | | | **252** | 2 session commits |
+
+Same route as Phases 4/4b: `pp_laneb_render_lib.py` question-crop raster at
+150 dpi from canonical manifest-verified repo blobs; per-dir
+`images/INDEX.jsonl` with render provenance; no manifest/pdf changes.
+
+## Lane status after this wave
+
+- **4ch0: 40/40 dirs imaged — COMPLETE** (fourth fully-imaged lane alongside
+  4ma1/4bi0/4pm0/4ph0).
+- **4ma0: 96/98.** The 2 remaining unimaged dirs are the phantom duplicates
+  above, deliberately left untouched. Proposed dispositions (awaiting
+  operator ratification, none executed):
+  1. `2013-06/4MA0-2H`: adopt its qp.pdf blob (sha256 f8146c3587, manifest
+     sha matches) into `2013-06/4MA0-4H` (materials row insertion) and delete
+     the phantom dir; or hold as-is.
+  2. `2015-06/4MA0-1H`: delete (pure duplicate of the 3H scan already
+     canonically held in `2015-06/4MA0-3H`); or hold as-is.
+  After ratification+removal the lane is 96/96 complete.
+
+## QA (all green, pre-push)
+
+- diff scope base..tip: only the 3 expected `images/` subtrees changed
+  (255 paths = 252 PNGs + 3 INDEX.jsonl; 0 outside).
+- INDEX file-set == tree PNG file-set per dir; 252/252 INDEX rows sha256+bytes
+  verified against the pushed blobs.
+- dims_off_vs_paperjson: 252/252 differ by exactly +1 px (fitz rect rounding
+  vs PIL-measured true size; INDEX rows carry the PIL-measured true dims).
+- Raw sampling post-push: scripts/wave_4ch0_4ma0/wave_rawcheck.py
+  (results recorded in the push report).
+- Scripts: `scripts/wave_4ch0_4ma0/wave_{find_targets,canon,render,place,qa,rawcheck,doc}.py`.
