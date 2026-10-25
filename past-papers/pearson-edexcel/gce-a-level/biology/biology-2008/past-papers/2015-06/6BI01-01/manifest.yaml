@@ -1,0 +1,68 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2015-06:6BI01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2015-06
+  year: '2015'
+  session_month: '06'
+  printed: June 2015
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI01/01
+  unit_code: 6BI01
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: e4c964c2474a16af620036f8add577f9c05253985b55df08755ca0aa346e3027
+  size_bytes: 196326
+  pages: 22
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A-Level/Biology/2013/Exam-materials/6BI01_01_msc_20150812.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 37f024f580236aa43a16f428daf5fa3166c99d4763338c290fa9688f9fa65c7e
+  size_bytes: 279452
+  pages: 24
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://pmt.physicsandmathstutor.com/download/Biology/A-level/Past-Papers/Edexcel-IAL/Unit-1/June
+      2015 QP - Unit 1 Edexcel Biology A-level.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file; identity verified from the artifact
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6BI01/01
+  stray_prints: []
+  session_printed: May 2015; Summer 2015
+  notes:
+  - ref=6BI01/01 session=May 2015 [PMT fill]
+  - ref=6BI01(ref-not-printed) session=Summer 2015
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE-science-lanes PDF-ingestion wave
+  verification_status: AI-IDENTIFIED
+  notes: []

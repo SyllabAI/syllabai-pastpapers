@@ -1,0 +1,68 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2009-01:6BI01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2009-01
+  year: '2009'
+  session_month: '01'
+  printed: January 2009
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI01/01
+  unit_code: 6BI01
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0f382eced753cd696882bd20bb8bead4f35d39a6d3d226c28e1c2f0e4479f416
+  size_bytes: 219182
+  pages: 33
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI01-6BI02-GCE-Biology-msc-20090312-US020818.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: b5abe2e5cf05f0b25bdfdb453ab3d2ae776e2b4779fc4c5acd83f2f08dad1b6e
+  size_bytes: 116799
+  pages: 24
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://pmt.physicsandmathstutor.com/download/Biology/A-level/Past-Papers/Edexcel-IAL/Unit-1/January
+      2009 QP - Unit 1 Edexcel Biology A-level.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file; identity verified from the artifact
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6BI01/01
+  stray_prints: []
+  session_printed: January 2009
+  notes:
+  - ref=6BI01/01 session=January 2009 [PMT fill]
+  - ref=6BI01(ref-not-printed) session=January 2009
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE-science-lanes PDF-ingestion wave
+  verification_status: AI-IDENTIFIED
+  notes: []

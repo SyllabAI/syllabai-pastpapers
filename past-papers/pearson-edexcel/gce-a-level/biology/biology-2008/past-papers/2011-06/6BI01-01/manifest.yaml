@@ -1,0 +1,67 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2011-06:6BI01/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2011-06
+  year: '2011'
+  session_month: '06'
+  printed: June 2011
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI01/01
+  unit_code: 6BI01
+  paper_number_variant: '01'
+variant:
+  official_code: null
+  type: null
+  note: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 38a2e36b5bfb067d54b9352ebf7884ce0f3f3455b752094775f4827d9fa37e70
+  size_bytes: 325464
+  pages: 20
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI01_01_rms_20110817.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 8224fb1683c3896f7a063181283765ae7a6c0063750c1200d1d4dc3cc4b1c7ae
+  size_bytes: 494931
+  pages: 28
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI01_01_que_20110516.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE-science-lanes PDF-ingestion wave)
+    note: official Pearson Edexcel document; identity verified from the artifact (printed
+      paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 6BI01/01
+  stray_prints: []
+  session_printed: June 2011; May 2011
+  notes:
+  - ref=6BI01/01 session=May 2011
+  - ref=6BI01(ref-not-printed) session=June 2011
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE-science-lanes PDF-ingestion wave
+  verification_status: AI-IDENTIFIED
+  notes: []
