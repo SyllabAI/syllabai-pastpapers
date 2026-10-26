@@ -1,0 +1,66 @@
+paper_id: pearson-edexcel:international-a-level:chemistry:wch03:2019-06:WCH03/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: chemistry
+specification:
+  folder: wch03
+  title: Pearson Edexcel International Advanced Level Chemistry (legacy spec)
+series:
+  normalized: 2019-06
+  year: '2019'
+  session_month: '06'
+  printed: June 2019
+  source: pdf_text+index-row
+paper:
+  official_reference: WCH03/01
+  unit_code: WCH03
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0df2e3e420f874f5c1f2d5c859c60a754e802b4b7919fbdba6f66744b402aa06
+  size_bytes: 196519
+  pages: 23
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/International Advanced Level/Chemistry/2013/Exam materials/WCH03_01_rms_20190815.pdf
+    collected_by: SyllabAI agent (2026-10-26 WBI03/WCH03 unit-3 tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+- type: question-paper
+  path: qp.pdf
+  sha256: 62190aa40543092afe1c067bc51999d8648bd891f2e5c0411bc24baf28c47ede
+  size_bytes: 2107531
+  pages: 20
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/International Advanced Level/Chemistry/2013/Exam materials/WCH03_01_que_20190508.pdf
+    collected_by: SyllabAI agent (2026-10-26 WBI03/WCH03 unit-3 tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+identification:
+  methods:
+  - pdf_text
+  - visual-render
+  confidence_rank: 1
+  printed_references_seen:
+  - 'WCH03) Paper 01 Chemistry Laboratory Skills I (MS cover)'
+  stray_prints: []
+  session_printed: Summer 2019 (MS cover); QP sitting date Tuesday 7 May 2019
+  notes:
+  - 'QP is a scan with no text layer (0 chars extractable over 20 pages);
+    identity from rendered-cover visual check: paper reference WCH03/01,
+    Pearson Edexcel International Advanced Level Chemistry Advanced Subsidiary
+    Unit 3: Chemistry Laboratory Skills I, sitting Tuesday 7 May 2019 (June
+    2019 series), P55637A (c)2019 Pearson Education Ltd'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 WBI03/WCH03 unit-3 tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []

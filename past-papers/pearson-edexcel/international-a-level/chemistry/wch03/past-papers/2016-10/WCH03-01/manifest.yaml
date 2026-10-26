@@ -1,0 +1,66 @@
+paper_id: pearson-edexcel:international-a-level:chemistry:wch03:2016-10:WCH03/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: chemistry
+specification:
+  folder: wch03
+  title: Pearson Edexcel International Advanced Level Chemistry (legacy spec)
+series:
+  normalized: 2016-10
+  year: '2016'
+  session_month: '10'
+  printed: October 2016
+  source: pdf_text+index-row
+paper:
+  official_reference: WCH03/01
+  unit_code: WCH03
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: f28ef3cc17689664fb4658f327a4231dc594bcfa63fe740a4b934010c5c5c1e4
+  size_bytes: 240734
+  pages: 20
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/International Advanced Level/Chemistry/2013/Exam materials/WCH03_01_msc_20170222.pdf
+    collected_by: SyllabAI agent (2026-10-26 WBI03/WCH03 unit-3 tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+- type: question-paper
+  path: qp.pdf
+  sha256: 9fd5ed4c06d9cf2c7a4d35c777b55a32bf2ef3f5de1b37e06348756ea4da7a10
+  size_bytes: 225608
+  pages: 16
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/International Advanced Level/Chemistry/2013/Exam materials/WCH03_01_que_20161107.pdf
+    collected_by: SyllabAI agent (2026-10-26 WBI03/WCH03 unit-3 tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 'WCH03/01'
+  - 'WCH03) (cover: International GCE in Chemistry (WCH03) Paper 1)'
+  - 'WCH03_01_1610 (footer token)'
+  stray_prints: []
+  session_printed: October 2016 (MS cover); QP sitting date Monday 7 November 2016
+  notes:
+  - 'QP cover prints the sitting date Monday 7 November 2016; the catalog row
+    and MS cover identify the series as October 2016 (IAL October-series
+    sittings extend into early November) - series.normalized 2016-10 per row
+    of record'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 WBI03/WCH03 unit-3 tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []
