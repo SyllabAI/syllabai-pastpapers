@@ -22,6 +22,19 @@ paper:
   paper_number_variant: '13'
   variant: '3'
 materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 439ba5deedd1a362c18f662b30355d16c2cc80583119b65466c94c8c8ffc15f4
+  size_bytes: 87534
+  original_filename: 9609_s23_qp_13.pdf
+  pages: 4
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Business%20(9609)/9609_s23_qp_13.pdf
+    collected_by: SyllabAI agent (2026-10-26 band-wave-1 CIE QP-pairing wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
 - type: mark-scheme
   path: ms.pdf
   sha256: 438ee924b1de73c10d6912b299783180b5a94186c2820ca6cdb66ec6d2892a7e
@@ -56,6 +69,7 @@ identification:
   session_printed: May/June 2023
   notes:
   - '2026-10-26 band-wave-1 CIE MS fetch wave (operator order: ''CIE 9609/0455 MS fetch''; G-1 gap ledger adr040-g1-msfetch-r0); printed page-1 checks: syllabus code + component + year + Mark Scheme wording'
+  - '2026-10-26 band-wave-1 CIE QP-pairing wave: qp.pdf collected and paired with ms.pdf; pairing evidence = printed code+component+session+year equality on page 1 of both documents (all 68 pairs pass; ledger in wave doc)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-10-26'

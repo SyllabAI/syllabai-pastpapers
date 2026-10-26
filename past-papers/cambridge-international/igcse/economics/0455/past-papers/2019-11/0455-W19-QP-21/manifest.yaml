@@ -22,6 +22,19 @@ paper:
   paper_number_variant: '21'
   variant: '1'
 materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 7c18652a40f471fe5199a278233d04f31c4319123763d8a678c7521c3b5ff616
+  size_bytes: 213569
+  original_filename: 0455_w19_qp_21.pdf
+  pages: 8
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Economics%20(0455)/0455_w19_qp_21.pdf
+    collected_by: SyllabAI agent (2026-10-26 band-wave-1 CIE QP-pairing wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
 - type: mark-scheme
   path: ms.pdf
   sha256: 37b6b70822c1db5031e18e3bff7d502c004c673205e20f10256faa9470c394ce
@@ -56,6 +69,7 @@ identification:
   session_printed: Oct/Nov 2019
   notes:
   - '2026-10-26 band-wave-1 CIE MS fetch wave (operator order: ''CIE 9609/0455 MS fetch''; G-1 gap ledger adr040-g1-msfetch-r0); printed page-1 checks: syllabus code + component + year + Mark Scheme wording'
+  - '2026-10-26 band-wave-1 CIE QP-pairing wave: qp.pdf collected and paired with ms.pdf; pairing evidence = printed code+component+session+year equality on page 1 of both documents (all 68 pairs pass; ledger in wave doc)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-10-26'

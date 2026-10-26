@@ -22,6 +22,19 @@ paper:
   paper_number_variant: '12'
   variant: '2'
 materials:
+- type: question-paper
+  path: qp.pdf
+  sha256: 614c3bdfd8c6bd55a6ce38170164d8283a3bf67c20e05bbe25a2b00c55177acc
+  size_bytes: 84535
+  original_filename: 9609_s20_qp_12.pdf
+  pages: 4
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Business%20(9609)/9609_s20_qp_12.pdf
+    collected_by: SyllabAI agent (2026-10-26 band-wave-1 CIE QP-pairing wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component checks applied before acceptance
 - type: mark-scheme
   path: ms.pdf
   sha256: 7e5ca2543c24bb97253791e74b8e44b40e4117408ed5c50bf5349a9ab16ace96
@@ -45,6 +58,7 @@ identification:
   notes:
   - '2026-10-26 band-wave-1 CIE MS fetch wave (operator order: ''CIE 9609/0455 MS fetch''; G-1 gap ledger adr040-g1-msfetch-r0); printed page-1 checks: syllabus code + component + year + Mark Scheme wording'
   - 'June 2020 series mark scheme published without a sitting (COVID-19 pandemic); printed identity checks passed against the published document'
+  - '2026-10-26 band-wave-1 CIE QP-pairing wave: qp.pdf collected and paired with ms.pdf; pairing evidence = printed code+component+session+year equality on page 1 of both documents (all 68 pairs pass; ledger in wave doc)'
 ingestion:
   agent: SyllabAI ingestion agent
   run_date: '2026-10-26'
