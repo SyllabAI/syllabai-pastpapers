@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2012-01:6BI07/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2012-01
+  year: '2012'
+  session_month: '01'
+  printed: January 2012
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI07/01
+  unit_code: 6BI07
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: ba9a235b45f3ccdd434b1f01a16619403bb43e6162daf23778d27b39e3b5fe07
+  size_bytes: 286541
+  pages: 9
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI07_01_msc_20120215.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: a394fe18644a6493fbcbf49a82e62c1c47b6b7ad37229d27cff07922ee4ea838
+  size_bytes: 109251
+  pages: 16
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI07_01_que_20120307.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6BI07 (unit code)'
+  - '6BI07/01'
+  stray_prints: []
+  session_printed: January 2012
+  notes:
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE 3B/6B written-alternative tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []

@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2010-06:6BI08/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2010-06
+  year: '2010'
+  session_month: '06'
+  printed: June 2010
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI08/01
+  unit_code: 6BI08
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 73d0fb4de51e7c1f699f23b13356a1d4142be99420c8677d230d90bc3e9e307d
+  size_bytes: 118540
+  pages: 13
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI08_01_msc_20100714.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: b58e4a08e0b6ab2d5a666893dd00ca13e3f22ffe866892d503129e275032ae8a
+  size_bytes: 382844
+  pages: 16
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI08_01_que_20100518.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6BI08/01'
+  - '6BI08/1'
+  stray_prints: []
+  session_printed: June 2010; May 2010; Summer 2010
+  notes:
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE 3B/6B written-alternative tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []

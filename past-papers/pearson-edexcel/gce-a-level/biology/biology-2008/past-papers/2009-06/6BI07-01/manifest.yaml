@@ -1,0 +1,67 @@
+paper_id: pearson-edexcel:gce-a-level:biology:biology-2008:2009-06:6BI07/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: biology
+specification:
+  folder: biology-2008
+  title: Edexcel GCE Biology (2008 spec, legacy)
+series:
+  normalized: 2009-06
+  year: '2009'
+  session_month: '06'
+  printed: June 2009
+  source: pdf_text+index-row
+paper:
+  official_reference: 6BI07/01
+  unit_code: 6BI07
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: fd09ad25af914edce12fb728327fac96b7cfc652adcafa80033f95337e06b23d
+  size_bytes: 132141
+  pages: 10
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://pmt.physicsandmathstutor.com/download/Biology/A-level/Past-Papers/Edexcel-IAL/Unit-3/January 2009 MS - Unit 3 Edexcel Biology A-level.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: bd39771b3861990507055f1a0f5a07ff5a7206e446e72a3b487cc363284d4e54
+  size_bytes: 259851
+  pages: 16
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Biology/2013/Exam materials/6BI07_01_que_20090514.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6BI07/01'
+  stray_prints: []
+  session_printed: May 2009; Summer 2009
+  notes:
+  - 'MS obtained from PMT under the listing label January-2009 MS (Unit 3
+    Edexcel Biology A-level); the document itself prints Mark Scheme Summer
+    2009 + 6BI07/01 and its content matches the June-2009 QP (beetroot
+    membrane practical) - re-routed to 2009-06 by printed evidence, PMT
+    listing label rejected'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE 3B/6B written-alternative tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []
