@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:gce-a-level:chemistry:chemistry-2008:2011-06:6CH08/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: chemistry
+specification:
+  folder: chemistry-2008
+  title: Edexcel GCE Chemistry (2008 spec, legacy)
+series:
+  normalized: 2011-06
+  year: '2011'
+  session_month: '06'
+  printed: June 2011
+  source: pdf_text+index-row
+paper:
+  official_reference: 6CH08/01
+  unit_code: 6CH08
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 7b682d62ce9ed71fc676e6007abd3c556161e308f67bb02bdf838442b34c5976
+  size_bytes: 182563
+  pages: 14
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH08_01_rms_20110817.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: 1e37bec72e9e2a4163d2137b22cd10d12f23bf57c5873fe08c07b45edad63a12
+  size_bytes: 286942
+  pages: 12
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH08_01_que_20110607.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6CH08/01'
+  stray_prints: []
+  session_printed: June 2011
+  notes:
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE 3B/6B written-alternative tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []

@@ -1,0 +1,63 @@
+paper_id: pearson-edexcel:gce-a-level:chemistry:chemistry-2008:2013-01:6CH07/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: chemistry
+specification:
+  folder: chemistry-2008
+  title: Edexcel GCE Chemistry (2008 spec, legacy)
+series:
+  normalized: 2013-01
+  year: '2013'
+  session_month: '01'
+  printed: January 2013
+  source: pdf_text+index-row
+paper:
+  official_reference: 6CH07/01
+  unit_code: 6CH07
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 5414fc65cea75ae90020c3d942defd018b0fa40cdd3b67206761cfac985a7ff6
+  size_bytes: 284409
+  pages: 14
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH07_01_rms_20130307.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+- type: question-paper
+  path: qp.pdf
+  sha256: e45c9b68466d7d1eaf93104f357ec9136f786c28872520b509c8c32b83212106
+  size_bytes: 514028
+  pages: 16
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH07_01_que_20130107.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6CH07 (unit code)'
+  - '6CH07/01'
+  stray_prints: []
+  session_printed: January 2013
+  notes:
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE 3B/6B written-alternative tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []

@@ -1,0 +1,62 @@
+paper_id: pearson-edexcel:gce-a-level:chemistry:chemistry-2008:2009-06:6CH07/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: gce-a-level
+  name: GCE (Advanced Level)
+subject: chemistry
+specification:
+  folder: chemistry-2008
+  title: Edexcel GCE Chemistry (2008 spec, legacy)
+series:
+  normalized: 2009-06
+  year: '2009'
+  session_month: '06'
+  printed: June 2009
+  source: pdf_text+index-row
+paper:
+  official_reference: 6CH07/01
+  unit_code: 6CH07
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2e923734186cff0c17dc494eb0317389df2a9a5f22fbacfd637546966eb35b87
+  size_bytes: 173211
+  pages: 14
+  source:
+    source_type: third-party-archive
+    archive: PhysicsAndMathsTutor.com
+    source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/A-level/Past-Papers/Edexcel-IAL/Unit-3/June 2009 MS - Unit 3 Edexcel Chemistry A-level.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document obtained via PMT; PMT watermark may be
+      present in the file
+- type: question-paper
+  path: qp.pdf
+  sha256: 05294aeec4b79ef00f5b923964aaa00cc75d1ff296db42ca6d0f7741a67c5706
+  size_bytes: 406954
+  pages: 16
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/A Level/Chemistry/2013/Exam materials/6CH07_01_que_20090515.pdf
+    collected_by: SyllabAI agent (2026-10-26 GCE 3B/6B written-alternative tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+      (printed paper reference + session)
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - '6CH07/01'
+  stray_prints: []
+  session_printed: May 2009; Summer 2009
+  notes:
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 GCE 3B/6B written-alternative tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []
