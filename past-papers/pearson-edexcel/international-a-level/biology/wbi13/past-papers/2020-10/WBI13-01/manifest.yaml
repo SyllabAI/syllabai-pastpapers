@@ -1,0 +1,73 @@
+paper_id: pearson-edexcel:international-a-level:biology:wbi13:2020-10:WBI13/01
+exam_board:
+  id: pearson-edexcel
+  name: Pearson Edexcel
+qualification:
+  family: international-a-level
+  name: International Advanced Level
+subject: biology
+specification:
+  folder: wbi13
+  title: Edexcel International Advanced Level Biology (WBI13)
+series:
+  normalized: 2020-10
+  year: '2020'
+  session_month: '10'
+  printed: October 2020
+  source: pdf_text+index-row
+paper:
+  official_reference: WBI13/01
+  unit_code: WBI13
+  paper_number_variant: '01'
+variant: null
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 0239878de6ef6e5e650a3fe1e2a33cf6b83cbc8823a5e4480ad988a708042437
+  size_bytes: 270188
+  pages: 14
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/International Advanced Level/Biology/2018/Exam-materials/WBI13_01_msc_20210113.pdf
+    collected_by: SyllabAI agent (2026-10-26 WBI13/WCH13/WPH13 unit-3 tranche wave)
+    note: official Pearson Edexcel document (provisional mark-scheme generation per the catalog row 'Provisional Mark scheme - Unit 3 (WBI13) - October 2020'); identity verified from the artifact
+- type: question-paper
+  path: qp.pdf
+  sha256: 7db1d6857cb86ab2275cedb90714c9cd5ad2db0773bdffbee5ea2e5d592c06dd
+  size_bytes: 975916
+  pages: 20
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: /content/dam/pdf/International Advanced Level/Biology/2018/Exam-materials/WBI13_01_que_20201014.pdf
+    collected_by: SyllabAI agent (2026-10-26 WBI13/WCH13/WPH13 unit-3 tranche wave)
+    note: official Pearson Edexcel document; identity verified from the artifact
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  - 'WBI13/01 (QP cover)'
+  - 'Biology (WBI13) Paper 01: Practical Skills in Biology I (MS cover)'
+  stray_prints: []
+  session_printed: October 2020 (MS cover); QP cover prints Monday 4 May 2020 (May-2020 print stock)
+  notes:
+  - 'QP cover prints the May-2020 sitting date (Monday 4 May 2020) because the
+    October 2020 unit-3 sitting reused the printed June-2020 stock after the
+    summer-2020 cancellation; series-of-record October 2020 follows the
+    official Pearson catalog row (file classed under the October 2020 series,
+    uploaded 2020-10-14), corroborated by the MS cover print ''October 2020''
+    and by the corpus''s operator-ratified sibling October-2020 unit-3 dirs
+    (WCH13-01/WPH13-01 2020-10 QPs likewise print May-2020 sitting dates; see
+    wch13 2020-10 F20 ratification)'
+  - 'MS is the provisional (msc) generation, the only mark scheme published for
+    the October 2020 WBI13 sitting; content-paired to this QP (MS Q1(a)
+    intake-of-water answer matches QP Q1(a) plant-tissue osmosis item; 50-mark
+    total printed on the QP)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-26'
+  wave: 2026-10-26 WBI13/WCH13/WPH13 unit-3 tranche wave
+  verification_status: AI-IDENTIFIED
+  notes: []
