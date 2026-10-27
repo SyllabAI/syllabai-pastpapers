@@ -46,6 +46,18 @@ materials:
     source_url: https://pmt.physicsandmathstutor.com/download/Chemistry/GCSE/Past-Papers/CIE/Paper-1/International/MS/June%202023%20(v1)%20MS.pdf
     collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
     note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 10b619a3263e0cd6d0e5ee37bbfc42a93f23931c0c462698b93d74dcbaeed529
+  size_bytes: 4762200
+  original_filename: 0620_s23_er.pdf
+  pages: 69
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Chemistry%20(0620)/0620_s23_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for May/June 2023 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods: ['pdf_text', 'coded-date']
   confidence_rank: 0
