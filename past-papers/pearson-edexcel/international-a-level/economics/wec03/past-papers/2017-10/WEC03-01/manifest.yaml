@@ -46,6 +46,17 @@ materials:
     source_url: https://cdn.savemyexams.com/uploads/2022/03/wec03_01_msc_oct-2017_edexcel-ial-economics.pdf
     collected_by: SyllabAI agent (2026-09-15 wave 11)
     note: official Pearson Edexcel document obtained from the SaveMyExams structured past-paper index; print-verified before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 647e94c2d782e61b219f28275be13fc1faff3bbe785985fd414717a3c524f244
+  size_bytes: 110740
+  original_filename: WEC03_01_pef_20180124.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Economics/2013/Exam%20materials/WEC03_01_pef_20180124.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
