@@ -48,6 +48,18 @@ materials:
     collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
       + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 9c232dded23645d3d5b6257047fd143667ac6abcca91f394e352475addf74d6c
+  size_bytes: 4041339
+  original_filename: 0625_s17_er.pdf
+  pages: 58
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Physics%20(0625)/0625_s17_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for May/June 2017 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text
