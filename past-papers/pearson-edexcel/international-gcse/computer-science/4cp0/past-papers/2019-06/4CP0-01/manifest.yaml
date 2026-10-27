@@ -43,6 +43,17 @@ materials:
     source_url: https://papers.xtremepape.rs/Edexcel/International%20GCSE/Computer%20Science/2019%20Jun/Question-paper/Questionpaper-Paper01-June2019.pdf
     collected_by: SyllabAI agent (2026-09-12 other-source wave; operator authorization - rows PMT could not satisfy may use other sources; files fetched from the XtremePapers public directory tree, print-verified before acceptance)
     note: official Pearson Edexcel document obtained via XtremePapers; watermark or scan artifacts may be present
+- type: examiner-report
+  path: er.pdf
+  sha256: 64040c047b4a3c2fc559555b647a85b01ef1437d774a06b19b6dfd2ff2543c8f
+  size_bytes: 177241
+  original_filename: 4CP0_01_pef_20190822.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/computer-science/2017/Exam-materials/4CP0_01_pef_20190822.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
