@@ -50,6 +50,18 @@ materials:
       3)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
       + page-count + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: fe2028ec6acdbb6cdf84442a57dd33a81a1f5c052e1c38f67676101f78de2c4e
+  size_bytes: 1540398
+  original_filename: 0580_m22_er.pdf
+  pages: 23
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Mathematics%20(0580)/0580_m22_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for Feb/March 2022 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text

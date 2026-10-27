@@ -48,6 +48,18 @@ materials:
     collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
       + page-count + printed code/session/component checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 8d57b205dadf527985982a80fa1f8da55c79b6145002e322ceed6183b88ed7c3
+  size_bytes: 2860569
+  original_filename: 0580_w10_er.pdf
+  pages: 65
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Mathematics%20(0580)/0580_w10_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for October/November 2010 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text

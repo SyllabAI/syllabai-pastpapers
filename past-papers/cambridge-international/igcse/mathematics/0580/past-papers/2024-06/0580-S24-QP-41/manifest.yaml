@@ -50,6 +50,18 @@ materials:
       3)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
       + page-count + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: c710994dec9e5c18cb9ec7acb81d26d96d26f8f79f032e30dc882944c5f5adeb
+  size_bytes: 1121859
+  original_filename: 0580_s24_er.pdf
+  pages: 66
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Mathematics%20(0580)/0580_s24_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for May/June 2024 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text
