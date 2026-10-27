@@ -46,6 +46,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Mathematics%20A/Nov%202024/IGCSE_MATHEMATICS_A_2024_Nov_Higher_P2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: dd7f83b793bae3e4cae0d95fea18bad5f58fcbbf83b3c7f8e3e7674b8aeb6e21
+  size_bytes: 289662
+  original_filename: 4ma1-2h-pef-20250123.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Mathematics-A/2016/Exam-materials/4ma1-2h-pef-20250123.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
