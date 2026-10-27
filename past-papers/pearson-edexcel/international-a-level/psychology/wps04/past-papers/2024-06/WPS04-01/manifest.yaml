@@ -46,6 +46,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Psychology/MayJune%202024/IAL_PSYCHOLOGY_2024_MayJune_U4_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 20712fbc161d4b5c6430fab81595a5d379d8fc18eecbdcf94303a0b7f0ebdf63
+  size_bytes: 10693099
+  original_filename: wps04-01-pef-20240815.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Psychology/2015/Exam-materials/wps04-01-pef-20240815.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
