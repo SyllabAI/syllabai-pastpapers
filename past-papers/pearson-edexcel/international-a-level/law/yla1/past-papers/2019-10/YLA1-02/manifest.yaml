@@ -49,6 +49,17 @@ materials:
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected
       2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)
       catalog said Oct 2019; cover prints November 2019'
+- type: examiner-report
+  path: er.pdf
+  sha256: 899117273cafccc42039b39ac0fef390a22350e84047ebcba95e0f51b9e356dc
+  size_bytes: 8147482
+  original_filename: YLA1_02_pef_20200123.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Law/2015/Exam-materials/YLA1_02_pef_20200123.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
