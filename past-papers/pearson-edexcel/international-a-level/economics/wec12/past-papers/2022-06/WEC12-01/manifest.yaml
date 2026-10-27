@@ -46,6 +46,17 @@ materials:
     source_url: https://qualifications.pearson.com/content/dam/pdf/International Advanced Level/Economics/2018/Exam-materials/wec12-01-que-20220520.pdf
     collected_by: SyllabAI agent (wave 2 2026-10-13)
     note: 'recovered by wave 2 (2026-10-13, trace 1a1340576a172ac5); validated: %PDF + pdftotext identity (session-confirmed); resolved via SME sitemap join (wave-2 recon)'
+- type: examiner-report
+  path: er.pdf
+  sha256: a3d10e92137ae3ed99d1c71d48e32db6911994ea2cfc2abf149c228d0c1d3eaa
+  size_bytes: 7779440
+  original_filename: wec12-01-pef-20220818.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Economics/2018/Exam-materials/wec12-01-pef-20220818.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
