@@ -35,6 +35,18 @@ materials:
     collected_by: SyllabAI agent (2026-10-26 band-wave-1 CIE MS fetch wave)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
       + page-count + printed code/session/component checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: b2a3cce3a6eb7120c49e477d4fef1457599b3a98f3e4e8e6b515a4bc8fea5ade
+  size_bytes: 2904067
+  original_filename: 9609_s23_er.pdf
+  pages: 41
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Business%20(9609)/9609_s23_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for May/June 2023 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text
