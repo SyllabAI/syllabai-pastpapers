@@ -50,6 +50,18 @@ materials:
       ial papers and mark schemes)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
       + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 7cd8799b04292c9fb34dffcf2ef6a6ac3d91aadc10f852d709d22115ee36e273
+  size_bytes: 4013605
+  original_filename: 9702_w21_er.pdf
+  pages: 57
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Physics%20(9702)/9702_w21_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for October/November 2021 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text
