@@ -1,0 +1,70 @@
+paper_id: cambridge-international:igcse:economics:0455:2021-03:0455/22
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: economics
+specification:
+  folder: '0455'
+  title: Cambridge IGCSE Economics (0455)
+series:
+  normalized: 2021-03
+  year: '2021'
+  session_month: '03'
+  printed: March 2021
+  source: pdf+filename
+paper:
+  official_reference: 0455/22
+  unit_code: '0455'
+  paper_number: '2'
+  paper_number_variant: '22'
+  variant: '2'
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 2cf974443ad1a8bb9779527741a6e1b0db53774893b1729a6a811323a4a98af5
+  size_bytes: 376814
+  pages: 29
+  original_filename: 0455_m21_ms_22.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Economics%20(0455)/0455_m21_ms_22.pdf
+    collected_by: SyllabAI agent (2026-10-27 band-wave G-3 CIE 0455 corpus extension wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component page-1 checks + full-text third-party-watermark scan
+      passed before acceptance; byte-parity anchors vs the wave-1 of-record bytes verified (0455_s20_ms_21/w20_ms_21/w20_ms_22
+      sha256 equal)
+- type: question-paper
+  path: qp.pdf
+  sha256: 3499992ea3bb3ebf0881a887cdd67ef8f3e119a97ee4973126add43debd1ad8a
+  size_bytes: 110631
+  pages: 8
+  original_filename: 0455_m21_qp_22.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Economics%20(0455)/0455_m21_qp_22.pdf
+    collected_by: SyllabAI agent (2026-10-27 band-wave G-3 CIE 0455 corpus extension wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component page-1 checks + full-text third-party-watermark scan
+      passed before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen: []
+  stray_prints: []
+  session_printed: March 2021
+  notes:
+  - 2026-10-27 band-wave G-3 CIE 0455 corpus extension wave (gate G-3 of ADR-040; extends docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md
+    beyond the 2020-11 sessions)
+  - 'QP/MS pairing evidence: printed code+component+year equality on both page 1s (ms 0455/22 + qp 0455/22
+    + 2021); pairing_ok=true'
+  - 'printed series on MS page 1: ''March 2021''; on QP page 1: ''February/March 2021'' (disclosed verbatim,
+    no normalization)'
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-27'
