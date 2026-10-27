@@ -35,6 +35,18 @@ materials:
     collected_by: SyllabAI agent (2026-10-26 band-wave-1 CIE MS fetch wave)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
       + page-count + printed code/session/component checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 71dee844942e8f3ec23cf952bab878bc095638162c70f980d7ddfefd7a8d1197
+  size_bytes: 1420943
+  original_filename: 0455_s18_er.pdf
+  pages: 21
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Economics%20(0455)/0455_s18_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for May/June 2018 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text
