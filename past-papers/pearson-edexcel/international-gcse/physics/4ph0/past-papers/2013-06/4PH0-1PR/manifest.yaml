@@ -27,6 +27,17 @@ variant:
 materials:
 - {"type": "mark-scheme", "path": "ms.pdf", "sha256": "dd2fc772e76c720d2f3df0490863a059680aac7ac17253994e38db3d1462dda9", "size_bytes": 525670, "original_filename": "4PH0_1PR_msc_20130823.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_1PR_msc_20130823.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
 - {"type": "question-paper", "path": "qp.pdf", "sha256": "b1835ba6a60ac227d5604b25a5d0d47a0fbf3e4036982fa5a79ae9508c3c4d23", "size_bytes": 686324, "original_filename": "4PH0_1PR_que_20130514.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_1PR_que_20130514.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+- type: examiner-report
+  path: er.pdf
+  sha256: 349bf799dc42ed75712f91342e8c0bf5f5e7b6349c144ae025e1f35fec02a4bf
+  size_bytes: 157062
+  original_filename: 4PH0_1PR_pef_20130822.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Physics/2011/Exam%20materials/4PH0_1PR_pef_20130822.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - "partner_inference"

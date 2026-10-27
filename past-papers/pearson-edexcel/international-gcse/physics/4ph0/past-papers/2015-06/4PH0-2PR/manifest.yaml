@@ -27,6 +27,17 @@ variant:
 materials:
 - {"type": "mark-scheme", "path": "ms.pdf", "sha256": "f6033a250fda5b9585fcbe4220a6ce232dece79aff4fd5531a7f5b853dbdc5e1", "size_bytes": 459009, "original_filename": "4PH0_2PR_msc_20150819.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/4PH0_2PR_msc_20150819.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
 - {"type": "question-paper", "path": "qp.pdf", "sha256": "adc25448c65ab8e6432a26cd589964982e4156ad0b363dfdfb3af05033a3a758", "size_bytes": 526694, "original_filename": "4PH0_2PR_que_20150612.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/4PH0_2PR_que_20150612.pdf", "collected_by": "SyllabAI agent (2026-09-28 4SC0 legacy wave)", "note": "official Pearson Edexcel document downloaded directly from the board's public DAM"}}
+- type: examiner-report
+  path: er.pdf
+  sha256: e27d1d4d77e29035b32ed6e7cf94cd79f64d9c81af4a780a46dc8f409f042a0d
+  size_bytes: 110414
+  original_filename: 4PH0_2PR_pef_20150819.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/Edexcel%20Certificate/Physics/2011/Exam%20materials/4PH0_2PR_pef_20150819.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - "pdf_text"
