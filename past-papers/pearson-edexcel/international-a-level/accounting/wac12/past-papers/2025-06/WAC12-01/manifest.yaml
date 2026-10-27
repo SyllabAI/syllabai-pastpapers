@@ -46,6 +46,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Accounting/June%202025/IAL_ACCOUNTING_2025_June_U2_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 447906607075e05493369e372fddc7c0b66e8ed8c0e52887cacd396275bd25b8
+  size_bytes: 304354
+  original_filename: wac12-01-pef-20250814.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Accounting/2015/Exam-materials/wac12-01-pef-20250814.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
