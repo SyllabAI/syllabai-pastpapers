@@ -46,6 +46,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IGCSE/Accounting/MayJune%202022/IGCSE_ACCOUNTING_2022_MayJune_P1R_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)  [1 byte-distinct co-located candidate(s) dropped: same identity, distinct generations]'
+- type: examiner-report
+  path: er.pdf
+  sha256: b7473719462e863ea75d6c2510748dce34e7bf222de499881dacd369d6380567
+  size_bytes: 166802
+  original_filename: 4ac1-01-pef-20220825.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Accounting/2017/Exam-materials/4ac1-01-pef-20220825.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
