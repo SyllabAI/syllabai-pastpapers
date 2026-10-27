@@ -26,6 +26,17 @@ variant:
 materials:
 - {"type": "question-paper", "path": "qp.pdf", "sha256": "d518d13b432b3b6c6b8f64b5db0ed1285c1b1dfda98bf0ae6d164ee02c761d5d", "size_bytes": 1513075, "original_filename": "4sd0-1pr-que-20230114.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Science%20(Double%20Award)/2017/exam-materials/4sd0-1pr-que-20230114.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
 - {"type": "mark-scheme", "path": "ms.pdf", "sha256": "84060ab0f8353b9c3fc6f73a0d5962b59a7a9f776dc5b8ceb1c058d6389f4505", "size_bytes": 736396, "original_filename": "4sd0-1pr-rms-20230302.pdf", "source": {"source_type": "official-board-website", "archive": "Pearson qualifications portal (qualifications.pearson.com content-dam)", "source_url": "https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Science%20(Double%20Award)/2017/exam-materials/4sd0-1pr-rms-20230302.pdf", "collected_by": "SyllabAI agent (2026-09-27 4SD0 subject onboarding)", "note": "official Pearson Edexcel document downloaded directly from the board's public course-materials listing"}}
+- type: examiner-report
+  path: er.pdf
+  sha256: eec3daba9b06646c653afef740916b40f8b0c8a7c3cbbff7ff93c30a23ecd195
+  size_bytes: 616260
+  original_filename: 4sd0-1pr-pef-20230302.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/Science%20%28Double%20Award%29/2017/exam-materials/4sd0-1pr-pef-20230302.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - "pdf_text"
