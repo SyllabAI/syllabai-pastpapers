@@ -1,0 +1,69 @@
+paper_id: cambridge-international:igcse:economics:0455:2024-11:0455/22
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: igcse
+  name: Cambridge IGCSE
+subject: economics
+specification:
+  folder: '0455'
+  title: Cambridge IGCSE Economics (0455)
+series:
+  normalized: 2024-11
+  year: '2024'
+  session_month: '11'
+  printed: October/November 2024
+  source: pdf+filename
+paper:
+  official_reference: 0455/22
+  unit_code: '0455'
+  paper_number: '2'
+  paper_number_variant: '22'
+  variant: '2'
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 042f21031b4672d66eaf1c1bd7c748988439d8bf287496a35fe1038c9658b770
+  size_bytes: 305639
+  pages: 25
+  original_filename: 0455_w24_ms_22.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Economics%20(0455)/0455_w24_ms_22.pdf
+    collected_by: SyllabAI agent (2026-10-27 band-wave G-3 CIE 0455 corpus extension wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component page-1 checks + full-text third-party-watermark scan
+      passed before acceptance; byte-parity anchors vs the wave-1 of-record bytes verified (0455_s20_ms_21/w20_ms_21/w20_ms_22
+      sha256 equal)
+- type: question-paper
+  path: qp.pdf
+  sha256: 05f360e4da6e040b6fdee8c6e2c5968bb655b9afa94ae7b9ac4202ea2d0b031a
+  size_bytes: 176656
+  pages: 8
+  original_filename: 0455_w24_qp_22.pdf
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/IGCSE/Economics%20(0455)/0455_w24_qp_22.pdf
+    collected_by: SyllabAI agent (2026-10-27 band-wave G-3 CIE 0455 corpus extension wave)
+    note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
+      + page-count + printed code/session/component page-1 checks + full-text third-party-watermark scan
+      passed before acceptance
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen: []
+  stray_prints: []
+  session_printed: October/November 2024
+  notes:
+  - 2026-10-27 band-wave G-3 CIE 0455 corpus extension wave (gate G-3 of ADR-040; extends docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md
+    beyond the 2020-11 sessions)
+  - 'QP/MS pairing evidence: printed code+component+year equality on both page 1s (ms 0455/22 + qp 0455/22
+    + 2024); pairing_ok=true'
+  - 'printed series on MS page 1: ''October/November 2024''; on QP page 1: ''October/November 2024'''
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: '2026-10-27'
