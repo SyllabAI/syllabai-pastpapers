@@ -48,6 +48,18 @@ materials:
     collected_by: SyllabAI agent (2026-10-25 bucket-B PDF-ingestion wave)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic
       + page-count + printed code/session/component checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 5290fc970e4f49bef0379e743b566f6295680ea2b780701b7f0842c316184018
+  size_bytes: 3567631
+  original_filename: 9709_s10_er.pdf
+  pages: 56
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Mathematics%20(9709)/9709_s10_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 CIE-side ER tranche; operator-designated source pmt attempted first - no CIE examiner-report inventory on the pmt pages or file host; XtremePapers CAIE section is the established CIE source of record per docs/T-SM-ROLLOUT-CIE-WAVE1-MSFETCH-2026-10-26.md)'
+    note: 'official Cambridge International (UCLES) examiner report for May/June 2010 - a syllabus-level session document whose printed sections cover the session''s papers; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed code/session/ER-class checks applied before acceptance'
 identification:
   methods:
   - pdf_text
