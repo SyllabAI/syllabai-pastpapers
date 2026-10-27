@@ -46,6 +46,17 @@ materials:
     source_url: https://archive.paperlords.org/library/IAL/Biology/Jan%202025/IAL_BIOLOGY_2025_Jan_U6_MS.pdf
     collected_by: SyllabAI agent (2026-09-14 wave 8)
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+- type: examiner-report
+  path: er.pdf
+  sha256: 137ca57e2b02b16ad5dee4f06e4a9651696fdf7e0755b7381cd81223c6c39daa
+  size_bytes: 237609
+  original_filename: wbi16-01-pef-20250306.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International-Advanced-Level/Biology/2018/Exam-materials/wbi16-01-pef-20250306.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
