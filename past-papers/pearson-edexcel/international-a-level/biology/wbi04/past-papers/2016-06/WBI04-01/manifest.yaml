@@ -45,6 +45,17 @@ materials:
     downloaded_at: 2026-09-14T00:00:00Z
     collected_by: SyllabAI agent (wave 10 2026-09-14)
     note: official Pearson Edexcel document obtained via PMT legacy back-catalog (wave 10); PMT watermark may be present in the file
+- type: examiner-report
+  path: er.pdf
+  sha256: 259842a197b5fb3bcdc73cb9926603cf726e22dc3316ed5bbe5bef5ae2a53d19
+  size_bytes: 7032217
+  original_filename: WBI04_01_pef_20160817.pdf
+  source:
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Biology/2013/Exam%20materials/WBI04_01_pef_20160817.pdf
+    collected_by: 'SyllabAI agent (2026-10-27 corpus-wide ER wave, gateway trace 1a179c5a2d9627c9)'
+    note: 'official Pearson Edexcel examiner report (post-examination feedback); identity verified from printed PDF text (spec code, paper reference, session)'
 identification:
   methods:
   - pdf_text
