@@ -50,6 +50,18 @@ materials:
       ial papers and mark schemes)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
       + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 4154b1169af0e2ef6ee7f97c79b3199712ac88da211133ec0e8dd33bacceb7b9
+  size_bytes: 7696483
+  original_filename: 9709_w22_er.pdf
+  pages: 59
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Mathematics-9709/2022-Oct-Nov/9709_w22_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-28 CIE ER gap-fill wave; source: pastpapers.co CIE archive - the session was disclosed not-on-source by the parallel CIE-ER-TRANCHE (XtremePapers); byte-identity with official-site assets verified on the June-2024 control set (0580 8c4fba62 / 9701 2165ea95 sha256 match))'
+    note: 'official Cambridge International (UCLES) examiner report for the whole 2022-11 session - a syllabus-level session document; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed syllabus-code/session checks applied before acceptance'
 identification:
   methods:
   - pdf_text

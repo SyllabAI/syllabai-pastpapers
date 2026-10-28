@@ -48,6 +48,18 @@ materials:
     collected_by: SyllabAI agent (2026-09-13 Cambridge wave 2; operator direction - proceed with wave 2 and reach back to 2016-2020)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
       + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: bac12e536eaa96a8fc3d2b5926955d7faba25fa7f8c2c49eb7dd800149068e70
+  size_bytes: 1625288
+  original_filename: 9709_m18_er.pdf
+  pages: 26
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/A-Level/Mathematics-9709/2018-March/9709_m18_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-28 CIE ER gap-fill wave; source: pastpapers.co CIE archive - the session was disclosed not-on-source by the parallel CIE-ER-TRANCHE (XtremePapers); byte-identity with official-site assets verified on the June-2024 control set (0580 8c4fba62 / 9701 2165ea95 sha256 match))'
+    note: 'official Cambridge International (UCLES) examiner report for the whole 2018-03 session - a syllabus-level session document; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed syllabus-code/session checks applied before acceptance'
 identification:
   methods:
   - pdf_text

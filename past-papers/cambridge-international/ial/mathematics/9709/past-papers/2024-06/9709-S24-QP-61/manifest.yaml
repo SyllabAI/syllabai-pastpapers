@@ -50,6 +50,18 @@ materials:
       ial papers and mark schemes)
     note: official Cambridge International (UCLES) document served via third-party archive; PDF magic + page-count
       + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: 4c2d9912b610511cf7755c49f7d2c0df2463aa73d6e288b1ebee197ce2a57f8c
+  size_bytes: 2254837
+  original_filename: 9709_s24_er.pdf
+  pages: 60
+  source:
+    source_type: official-publisher
+    archive: Cambridge International official website
+    source_url: https://www.cambridgeinternational.org/Images/567737-june-2024-examiner-report.pdf
+    collected_by: 'SyllabAI agent (2026-10-28 CIE ER gap-fill wave; source: official cambridgeinternational.org /Images/ asset URLs - the parallel CIE-ER-TRANCHE disclosed 2024-06 as not-on-source for this lane; downloaded directly from the official site and verified here)'
+    note: 'official Cambridge International (UCLES) examiner report for the whole 2024-06 session - a syllabus-level session document; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed syllabus-code/session checks applied before acceptance'
 identification:
   methods:
   - pdf_text
