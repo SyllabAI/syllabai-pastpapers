@@ -745,3 +745,31 @@ One commit per lane (17 commits, chain `4dfb98a88`); no manifest/pdf changes any
 
 Post-push raw verification is recorded in the push report below.
 
+
+
+## Phase 6 — trim stage v1 re-render (Task 42, 2026-10-28)
+
+Operator review vs native exam-mate crops found the pp_2121-family renders
+visually heavier than the real thing: full page-width slices kept the
+"DO NOT WRITE IN THIS AREA" hatched sidebars, the barcode/page-number footer
+zone and outer white margins. A deterministic trim stage was added and the
+entire pp_2121-family output re-rendered in place.
+
+- Scope: all 47 renderer-created dirs / 3,924 PNGs (7x 4MA1 2020-2023 session
+  commits from the pp_2121 wave + the Task-36 4MA0/4CH0 completion dirs).
+- Method (scripts/wave_trim47/trim_lib.py, pure pixel functions, fixed
+  thresholds — same input gives byte-identical output):
+  1. per source page, content-band detection on ink projection profiles;
+     x-band via max-ink sub-band at min-gap 6px + edge-stub drop
+     (stub <15% width and <25% of main-band ink), guards >=50% width and
+     >=60% ink share else no trim; y-band at min-gap 14px, guards >=40%
+     height and >=70% ink share;
+  2. question-crop rows re-rasterized from the committed INDEX bbox
+     (geometry preserved 1:1), intersected with the page band;
+  3. ink-bbox + 10px white pad on every output.
+- Fidelity: filenames, row order, question sequence and source_pdf identity
+  unchanged; ledger sha256/bytes/dims updated; render.trim provenance added.
+- QA (scripts/wave_trim47/qa.py): ALL GREEN — 47 dirs, 3,924 rows verified
+  (sha/bytes vs staged files), dims <= old (3 rows +1px height = the accepted
+  fitz round(clip*zoom) under-count artifact from Tasks 36/37), bytes
+  317.0 MB -> 257.4 MB (-19%).
