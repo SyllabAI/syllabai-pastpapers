@@ -46,6 +46,18 @@ materials:
     source_url: https://pmt.physicsandmathstutor.com/download/Physics/GCSE/Past-Papers/CIE/Paper-2/International/MS/June%202025%20(v3)%20MS.pdf
     collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
     note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: a77546b65894a2ea1b8aa3be22af4a7f247f6cee601b4c094fe7387208ec6fe2
+  size_bytes: 3123009
+  original_filename: 0625_s25_er.pdf
+  pages: 60
+  source:
+    source_type: third-party-archive
+    archive: pastpapers.co CIE archive
+    source_url: https://pastpapers.co/cie/IGCSE/Physics-0625/2025-May-June/0625_s25_er.pdf
+    collected_by: 'SyllabAI agent (2026-10-28 CIE ER gap-fill wave; source: pastpapers.co CIE archive - the session was disclosed not-on-source by the parallel CIE-ER-TRANCHE (XtremePapers); byte-identity with official-site assets verified on the June-2024 control set (0580 8c4fba62 / 9701 2165ea95 sha256 match))'
+    note: 'official Cambridge International (UCLES) examiner report for the whole 2025-06 session - a syllabus-level session document; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed syllabus-code/session checks applied before acceptance'
 identification:
   methods: ['pdf_text', 'coded-date']
   confidence_rank: 0
