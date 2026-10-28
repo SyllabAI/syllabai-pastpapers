@@ -1,0 +1,63 @@
+paper_id: 'cambridge-international:ial:business:9609:2026-03:9609/22'
+exam_board:
+  id: cambridge-international
+  name: Cambridge Assessment International Education
+qualification:
+  family: ial
+  name: Cambridge International AS & A Level
+subject: business
+specification:
+  folder: 9609
+  title: Cambridge International AS & A Level Business (9609)
+series:
+  normalized: 2026-03
+  year: 2026
+  session_month: 03
+  printed: February/March 2026
+  source: pdf+filename
+paper:
+  official_reference: 9609/22
+  unit_code: 9609
+  paper_number: 2
+  paper_number_variant: 22
+  variant: 2
+materials:
+- type: mark-scheme
+  path: ms.pdf
+  sha256: 3035ef4d80c80287e0458aeb4fe618a376fc8fde2aa77cea4794a56260561c75
+  size_bytes: 453591
+  original_filename: 9609_m26_ms_22.pdf
+  pages: 33
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Business%20(9609)/9609_m26_ms_22.pdf.pdf
+    collected_by: 'SyllabAI agent (2026-10-28 G-3 CIE 9609 corpus extension wave; operator order ''proceed with G-3 (CIE corpus)'')'
+    note: 'official Cambridge International (UCLES) document served via third-party archive; a thin ''xtremepape.rs'' provenance footer is present in the page footer of the served bytes - the same stamp is carried by the wave-1 of-record parity anchors, so it is provenance-neutral of record; PDF magic + page count + printed code/session/component checks applied before acceptance'
+- type: question-paper
+  path: qp.pdf
+  sha256: 42db6a4ac220a2642c4d7207dcebc0e73a79e32fc79f60014a3849e08a9beec8
+  size_bytes: 163315
+  original_filename: 9609_m26_qp_22.pdf
+  pages: 4
+  source:
+    source_type: third-party-archive
+    archive: XtremePapers (CAIE section)
+    source_url: https://papers.xtremepape.rs/CAIE/AS%20and%20A%20Level/Business%20(9609)/9609_m26_qp_22.pdf.pdf
+    collected_by: 'SyllabAI agent (2026-10-28 G-3 CIE 9609 corpus extension wave; operator order ''proceed with G-3 (CIE corpus)'')'
+    note: 'official Cambridge International (UCLES) document served via third-party archive; a thin ''xtremepape.rs'' provenance footer is present in the page footer of the served bytes - the same stamp is carried by the wave-1 of-record parity anchors, so it is provenance-neutral of record; PDF magic + page count + printed code/session/component checks applied before acceptance'
+identification:
+  methods:
+  - pdf_text
+  confidence_rank: 0
+  printed_references_seen:
+  stray_prints:
+  - xtremepape.rs provenance footer (thin, page footer; also present on wave-1 of-record parity anchors)
+  session_printed: February/March 2026
+  notes:
+  - 2026-10-28 G-3 CIE 9609 corpus extension wave (receipt adr040-g3-cie9609-corpus-r0); printed page-1 checks: syllabus code + component + year + Mark Scheme/Question Paper wording
+ingestion:
+  agent: SyllabAI ingestion agent
+  run_date: 2026-10-28
+  source_repo: XtremePapers (CAIE section)
+  verification_status: AI-IDENTIFIED
