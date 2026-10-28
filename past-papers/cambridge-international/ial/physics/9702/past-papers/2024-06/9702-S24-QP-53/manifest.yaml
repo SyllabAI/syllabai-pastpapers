@@ -46,6 +46,18 @@ materials:
     source_url: https://pmt.physicsandmathstutor.com/download/Physics/A-level/Past-Papers/CAIE/Paper-5/MS/June%202024%20(v3)%20MS.pdf
     collected_by: SyllabAI agent (2026-09-13 Cambridge wave 6; operator direction - check pmt for any remaining Cambridge igcse/ial papers)
     note: official Cambridge International (UCLES) document served via third-party archive (PMT); PDF magic + page-count + printed code/session checks applied before acceptance
+- type: examiner-report
+  path: er.pdf
+  sha256: f8ce2c6cd4ee2befa4b2819010aa8efe49393484bc56d6a85753098ff2dec425
+  size_bytes: 2324428
+  original_filename: 9702_s24_er.pdf
+  pages: 69
+  source:
+    source_type: official-publisher
+    archive: Cambridge International official website
+    source_url: https://www.cambridgeinternational.org/Images/567861-june-2024-examiner-report.pdf
+    collected_by: 'SyllabAI agent (2026-10-28 CIE ER gap-fill wave; source: official cambridgeinternational.org /Images/ asset URLs - the parallel CIE-ER-TRANCHE disclosed 2024-06 as not-on-source for this lane; downloaded directly from the official site and verified here)'
+    note: 'official Cambridge International (UCLES) examiner report for the whole 2024-06 session - a syllabus-level session document; the same identity-verified blob is placed in every paper dir of this session; PDF magic + page-count + printed syllabus-code/session checks applied before acceptance'
 identification:
   methods: ['pdf_text', 'coded-date']
   confidence_rank: 0
