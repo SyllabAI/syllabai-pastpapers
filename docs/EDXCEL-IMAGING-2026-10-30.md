@@ -1,4 +1,84 @@
-# WCH11–16 imaging wave — 2026-10-30 (v2 redo of record)
+# Edexcel imaging pipeline — format of record: **trim v3** (updated 2026-10-31)
+
+Operator directive (2026-10-31): *"Save the pipeline in the syllabai-pastpapers
+repo this time."* — the trim stage is committed as a repo artifact so it can
+never again be lost with a recycled session workspace.
+
+> **SUPERSESSION NOTICE.** The v2 format documented in the historical sections
+> below is **no longer the format of record**. Forensic review of the trim-v3
+> gold images (4MA1 sessions 2020-01/2020-06/2020-11/2021-01/2021-06/2021-11/
+> 2023-11, produced by the lost original `pp_2121_trim_lib.py` and operator-
+> ratified on 2026-10-28) showed v2 deviated from the ratified format on six
+> points: v2 kept the `(Total for Question N ...)` footers (v3 excludes them),
+> rendered at 240 dpi (v3: 150 dpi), emitted no page rows (v3 keeps QP cover +
+> formula sheet and MS front matter as full-page rows), white-outed the MS
+> Q-number cell at char level (v3 keeps the cell — masking it broke the table
+> border), padded 8px (v3: ink bbox + 10px), and used a different INDEX schema
+> (`render_kind:"question"` + `bbox_pt/masks_pt` vs v3
+> `render_kind:"question-crop"` + `questions[{q, cont, trim, bbox, marks}]`).
+> The original trim library was lost; it has been **rebuilt from the operator-
+> ratified rule set** and validated pixel-level against the gold corpus
+> (acceptance below). All past and future imaging waves now use trim v3.
+
+## The trim-v3 crop stage (11 rules, gold-verified)
+
+1. **Slice unit = whole question** (`qp_qNN_pMM.png`); `(a)/(b)/(i)` part
+   markers stay inside the crop; `(1)/(2)` marks labels on answer lines stay.
+2. **Question numbers never appear in QP crops** — the number word rect is
+   white-out; the masked gutter column then naturally drops out of the ink bbox.
+3. **`(Total for Question N is X marks)` footers are excluded** — and used as
+   region ends, so the shared rough-working banner after each footer belongs to
+   no slice.
+4. **Page furniture is excluded by geometry, not white-out**: PMT watermark,
+   DO-NOT-WRITE strips, page numbers, Turn over, barcode and the grey page
+   frame fall outside the content sweep + body x-clip; the frame stroke
+   legitimately appears only where a region reaches it.
+5. **Crop = ink bbox tight + 10px white pad** (not full width; QP crops are
+   ~600–1100px wide), clamped to the region.
+6. **Cross-page questions continue as `_cont` slices** only where real ink
+   continues; blank segments are dropped (a `BLANK PAGE` stamp page emits no
+   row).
+7. **Non-question pages stay as full-page rows** (`render_kind:"page"`,
+   1241×1754 @150 dpi): QP cover + formula sheet (`qp_p01/p02`), MS front
+   matter (`ms_p01..p04`; Q1 opens at `ms_p05`).
+8. **MS crops keep the Q-number cell** (white-out would break the table
+   border — deliberate reversal of v2) and snap to the mark-scheme table row
+   borders; MS content pages are landscape (842×595 pt, crops up to ~1750px),
+   front matter portrait — visual-space normalization for rotated pages.
+9. **150 dpi** everywhere.
+10. **Render source = the canonical in-repo PDF blob**, sha256-verified against
+    `manifest.yaml` + a page-1 paper-reference text check; marker detection is
+    a DP longest-increasing chain over candidate gutter integers (bold, size
+    gate) with word-level recovery of numbers fused into text spans, so
+    coordinate-axis digits cannot poison the chain; the gate requires the chain
+    to be exactly `1..N`.
+11. **INDEX contract**: one row per file; `render.kind` qp/ms;
+    `render_kind:"page"|"question-crop"`; crop rows carry
+    `questions:[{q, cont, trim:"v3", bbox:[y0,y1] (PDF points), marks}]`;
+    `source_pdf` carries the canonical blob sha256 + provenance note; every row
+    self-describes its tool string; INDEX file-set must equal the committed
+    tree (INDEX==tree QA).
+
+## Repo artifact
+
+- `scripts/pp_2121_trim_lib.py` — the trim-v3 renderer (rebuilt 2026-10-31;
+  lane-agnostic: unit code, season and paper variant are taken from each dir's
+  `manifest.yaml`).
+
+## Acceptance (rebuild vs the gold corpus)
+
+Fixture: 4MA1 2020-06 1H (60 gold PNGs + INDEX on main, session re-rendered
+from the canonical in-repo PDFs): **50/58 name-matched files byte-identical**;
+2 within antialiasing noise (2 pixels, Δ=1 gray level); 6 differ by exactly
+one blank edge row (an irrecoverable two-path snap inconsistency inside the
+lost original; the rebuild uses the majority path everywhere); 0 unexplained
+diffs. Both known gold defects are fixed by design: the swallowed Q20 now gets
+its own `qp_q20_p22.png` (number white-out, footer excluded, `q:20` INDEX row;
+the empty q19 cont segment is dropped) and the `BLANK PAGE` page emits no row.
+
+---
+
+# HISTORICAL — WCH11–16 imaging wave, 2026-10-30 (v2 format; SUPERSEDED by trim v3 above)
 
 Operator direction: **"an imaging wave opened"** — releases the #2 finding of
 [EDXCEL-COVERAGE-AUDIT-2026-10-30.md](EDXCEL-COVERAGE-AUDIT-2026-10-30.md). Wave scope:
