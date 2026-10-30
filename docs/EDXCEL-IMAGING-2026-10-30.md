@@ -118,3 +118,95 @@ now in the ratified exam-mate slice format.
 `wbi11–16` (134 dirs), `wph11–16` (144), `mathematics-2018` (291), `4sd0` (72),
 `4ec1/4ac1/4bs1/4cp0/4cm1/4it1/4ea1/4et1/4ge1/4hb0/4hb1` and the `4x*` modular lanes —
 now to be run on the **v2 crop stage**, PDFs all in-repo.
+
+---
+
+# mathematics-2018 imaging wave — 2026-10-30 (v2 crop stage, first imaging wave)
+
+Operator directive (same day): the wave queue from the coverage audit —
+`wph11–16` (144 dirs), `wbi11–16` (134), `mathematics-2018` (291) — to run on the
+**v2 crop stage**. WPH and WBI shipped first (14 commits, `37cd8f63..ace317a7`,
+`4d8b4bb2..8003727c`); this section covers the `mathematics-2018` lane.
+
+## The v2 renderer had to be rebuilt — and is now a repo artifact
+
+The original session-workspace renderer (`scripts/wave_wch_v2/render_v2.py`, per the
+WCH section above) produced the WCH redo + WPH + WBI waves but was never committed
+("the repo carries the artifacts, not the tool") and was lost with the recycled
+session sandbox. For this wave it was **rebuilt from the ratified spec and the pushed
+WBI artifacts**, validated against the committed `WBI11-01 2019-01` slices before use
+(52/52 file-list parity, all dims within ±5 px, `bbox_pt` median max-delta 1.05 pt,
+max 1.5 pt; number-out/parts-kept/footer-kept verified visually), and — breaking with
+the old policy — **committed to the repo** so the crop stage can never be lost again:
+
+- `scripts/pp_v2_render_lib.py` — the renderer (frame/marker/label/footer detection,
+  band splitting, cross-page cont, masking, 240 dpi trim)
+- `scripts/pp_v2_render.py` — per-dir driver (manifest verification, INDEX rows)
+- `scripts/pp_v2_render_all.py` — batch driver (resume/shard, per-dir error capture)
+- `scripts/pp_v2_qa.py` — pre-push QA gates
+
+Template variants handled (all found empirically in the lane): WBI-style continuous
+tables (mode A) vs math boxed-table+notes mark schemes (mode B, chosen by
+higher-question-count arbitration); QP numbers as margin glyphs, in-frame `1.`,
+fused `2. Answer this question...` spans (word-level marker detection); MS labels
+`1.`, `1.(a)`, `5. (a)`, `8 (a)`, `8 (a) (i)`, `12.(a)`, bare `10`, letter rows
+`4a`, part-only rows `(b)` (kept visible), `Q`-header tables, rotated 2019 pages;
+footers `(Total for Question N is X marks)` and the math form `(Total N marks)`;
+inner answer-area rules and rounded-corner arcs capped out; PMT watermark, margin
+hatch, running headers and page numbers excluded via frame geometry.
+
+## Wave numbers (229 paper dirs / 10,015 slices, 14 unit-family commits)
+
+| family | dirs | slices | commit |
+|---|---:|---:|---|
+| wdm11 | 9 | 253 | `c536c6bc6` |
+| wfm01 | 15 | 697 | `7f7d6bd1d` |
+| wfm02 | 15 | 646 | `35b0c7ae7` |
+| wfm03 | 13 | 638 | `311a188f2` |
+| wma11 | 25 | 1,329 | `db986a25a` |
+| wma12 | 19 | 1,041 | `8b3b362d6` |
+| wma13 | 16 | 824 | `bf7e07b9b` |
+| wma14 | 16 | 843 | `73fd0e4e1` |
+| wme01 | 24 | 979 | `2ac29645f` |
+| wme02 | 15 | 597 | `b8e3b9379` |
+| wme03 | 10 | 398 | `61e12d8b4` |
+| wst01 | 22 | 761 | `a09f9931b` |
+| wst02 | 19 | 648 | `d65eff92a` |
+| wst03 | 11 | 361 | `66f720d44` |
+| **total** | **229** | **10,015** | base `8003727c` → tip `66f720d44` |
+
+Pure tree surgery (`hash-object --stdin-paths` + Python-built tree objects +
+bottom-up splice + `commit-tree`); each dir's `images/` subtree created fresh
+(first imaging wave — no prior images existed in this lane); no manifest/pdf
+mutations; main never rewritten.
+
+## QA (all green, pre-push)
+
+Per dir: INDEX rows == PNG fileset (both directions); every PNG sha256 re-hashed
+from disk == its INDEX row; bytes and width/height verified against the actual
+files; `render_kind:"question"` in 100 % of rows (zero page rows); naming
+`{qp,ms}/{qp,ms}_qNN_pMM[_cont].png` with exactly one non-cont first slice per
+question and conts strictly after it; qp/ms question-count cross-check per dir.
+Diff scope `8003727c..66f720d44` = 10,244 paths, all inside
+`mathematics-2018/past-papers/*/DIR/images/`; excluded dirs and the `wbi11` lane
+byte-identical to base.
+
+## Exclusion queue: 62 dirs left unmutated, pending operator ratification
+
+The v2 gates refuse to place a dir whose question detection is not provably
+complete (markers must form exactly 1..N with no gap-swallowing; QP and MS must
+agree on the question count) — the same principle as the wch14/15/16 2019-06
+old-spec hold. 61 dirs hit template variants the rebuilt renderer does not yet
+parse (mostly 2020–2026 mechanics/decision mark schemes with scattered or fused
+label columns, and the 2025–2026 `01A` variant papers); 1 dir
+(`2020-10/WME03-01`) is empty in the repo (no qp.pdf, no ms.pdf — nothing to
+render). The full list (61 gate-refused): 2019-06/WMA12-01, 2019-10/WST01-01, 2020-01/WMA11-01, 2020-01/WMA12-01, 2020-06/WMA13-01, 2020-10/WMA13-01, 2021-01/WMA11-01, 2021-01/WST01-01, 2021-06/WMA14-01, 2021-06/WME01-01, 2021-06/WME02-01, 2021-06/WST02-01, 2021-10/WMA14-01, 2021-10/WME02-01, 2022-01/WDM11-01, 2022-01/WFM01-01, 2022-01/WMA12-01, 2022-01/WMA13-01, 2022-01/WME02-01, 2022-01/WST02-01, 2022-06/WFM02-01, 2022-06/WME02-01, 2022-06/WST03-01, 2022-10/WMA14-01, 2022-10/WME02-01, 2023-01/WME02-01, 2023-01/WST03-01, 2023-06/WMA13-01, 2023-06/WME02-01, 2024-01/WME02-01, 2024-01/WME03-01, 2024-06/WFM02-01, 2024-06/WMA12-01, 2024-06/WMA12-01R, 2024-06/WMA13-01, 2024-06/WST01-01, 2024-10/WMA13-01, 2024-10/WST01-01, 2024-10/WST02-01, 2025-01/WFM02-01, 2025-01/WFM03-01, 2025-01/WME02-01, 2025-06/WFM01-01, 2025-06/WFM02-01, 2025-06/WMA12-01, 2025-06/WME01-01, 2025-10/WMA12-01, 2025-10/WMA12-01A, 2025-10/WMA14-01, 2025-10/WMA14-01A, 2025-10/WST02-01, 2026-01/WDM11-01, 2026-01/WMA11-01, 2026-01/WMA12-01A, 2026-01/WMA13-01, 2026-01/WMA14-01, 2026-01/WMA14-01A, 2026-06/WFM03-01, 2026-06/WFM03-01A, 2026-06/WMA13-01, 2026-06/WME02-01.
+Plus the empty dir 2020-10/WME03-01 (no qp.pdf, no ms.pdf — nothing to render). Proposed dispositions:
+(a) extend the v2 label grammar per class and re-run the gate, or (b) ratify
+manual slicing. Until then the 61 dirs stay unimaged and unmutated; the lane
+stands at 229/291 (78.7 %) imaged in the ratified format.
+
+## Post-wave queue
+
+`4sd0` (72 dirs), `4ec1/4ac1/4bs1/4cp0/4cm1/4it1/4ea1/4et1/4ge1/4hb0/4hb1` and the
+`4x*` modular lanes — all on the committed v2 crop stage.
