@@ -290,3 +290,56 @@ stands at 229/291 (78.7 %) imaged in the ratified format.
 
 `4sd0` (72 dirs), `4ec1/4ac1/4bs1/4cp0/4cm1/4it1/4ea1/4et1/4ge1/4hb0/4hb1` and the
 `4x*` modular lanes — all on the committed v2 crop stage.
+
+## WCH11–16 trim-v3 redo — executed 2026-10-31
+
+Operator directives: *"Save the pipeline in the syllabai-pastpapers repo this
+time. And fire the WCH11–16 redo."* All 142 renderer-wave dirs re-rendered from the canonical in-repo PDFs by
+`scripts/pp_2121_trim_lib.py` (trim v3, gold-accepted) and each dir's
+`images/` subtree replaced by six corrective per-unit commits
+(base `a31b7022` → tip `b8646788`; main never rewritten; superseded v2 blobs
+unreferenced). The 3 placement-original dirs (exam-mate CDN images) and the
+3 ratification-pending 2019-06 old-spec misfiles were not touched.
+
+| lane | dirs | files | INDEX rows | commit |
+|---|---:|---:|---:|---|
+| wch11 | 24 | 1,998 | 1,974 | `539031487` |
+| wch12 | 25 | 1,964 | 1,939 | `1713e30ac` |
+| wch13 | 26 | 971 | 945 | `0dc922189` |
+| wch14 | 23 | 1,934 | 1,911 | `8ec40fffb` |
+| wch15 | 22 | 1,899 | 1,877 | `d92ff8f0e` |
+| wch16 | 22 | 812 | 790 | `b8646788b` |
+| **total** | **142** | **9,578** | **9,436** | |
+
+Rows: 665 `render_kind:"page"` (QP cover + formula sheet, MS front matter —
+restored; v2 had zero) + 8,771 `render_kind:"question-crop"` at 150 dpi.
+
+### IAL template generalizations added to the lib (4MA1 gold parity re-proven
+### after each change: 50/58 byte-identical, 8 known-benign pixel deviations)
+
+- per-page rotation normalization (2019-era MS pages carry `rotation=90` with
+  either visual or unrotated coordinates, decided per page, never per rect);
+- QP markers: `*N` asterisk-typo family (wch12/14/15), `N:`/`N.` colon/dot
+  numbers (2025+), covering-span chosen by max horizontal overlap with Bold
+  preference (`*17` = Regular asterisk span + Bold digits span), size window
+  10.5–12.6, gutter x1 ≤ 80;
+- footers: `(Total for Question N = M marks)` (2019 IAL uses `=`), singular
+  `1 mark`, region closes at the footer line;
+- frameless QP pages (mid-paper instruction covers, 2026 `01A` inserts):
+  sweep falls back to header/footer word bands;
+- section-restart numbering (2026 `01A` variants number both sections 1..4):
+  DP run decomposition, every run must be exactly 1..n, unmatched candidates
+  refuse the dir;
+- MS label column drift (x0 58/54/48/32 across templates) + leading-number
+  labels (`4(a)`, `1(a)(ii)`, `*20`);
+- qp-only rendering for the six cancelled 2020-06 dirs (real QP, no MS exists;
+  paper_ref falls back to the printed `Paper Reference WCH14/01` where the
+  manifest variant field omits the leading zero, `WCH14/1`).
+
+### Post-push QA (on live bytes)
+
+- every staged dir: INDEX file-set == tree, every PNG sha256 re-hashed from
+  disk == its INDEX row, 142/142 dirs (9,436 rows);
+- live probes at tip `b8646788`: pushed PNG sha256 == INDEX sha256, rows carry
+  the trim-v3 tool string, placement-original dirs still byte-identical CDN
+  rows with no `render` key.
