@@ -343,3 +343,107 @@ restored; v2 had zero) + 8,771 `render_kind:"question-crop"` at 150 dpi.
 - live probes at tip `b8646788`: pushed PNG sha256 == INDEX sha256, rows carry
   the trim-v3 tool string, placement-original dirs still byte-identical CDN
   rows with no `render` key.
+
+---
+
+# WPH11–16 + WBI11–16 trim-v3 redo — executed 2026-10-31 (decision A)
+
+Operator decision **"A (trim-v3 everywhere)"** (2026-10-31): the ratified
+trim-v3 format becomes the family standard, superseding the v2-format WPH and
+WBI waves. All 278 v2 dirs (wph11..wph16 144, wbi11..wbi16 134; census:
+100 % `render_kind:"question"` @240 dpi) were re-rendered from the canonical
+in-repo PDFs by `scripts/pp_2121_trim_lib.py`; 262 dirs placed by twelve
+per-unit corrective commits (base `2f97e4621a` → tip `38824fed5`;
+main never rewritten; superseded v2 blobs unreferenced). 16 dirs hit template
+variants the gates refuse — the same principle as the mathematics-2018
+62-dir exclusion queue — and are listed below, unmutated.
+
+| lane | dirs | INDEX rows | commit |
+|---|---:|---:|---|
+| wbi11 | 24 | 1536 | `3610ad7a9` |
+| wbi12 | 23 | 1554 | `1ec74785f` |
+| wbi13 | 21 | 730 | `d60bf4db4` |
+| wbi14 | 21 | 1337 | `500321329` |
+| wbi15 | 19 | 1265 | `7552fb95a` |
+| wbi16 | 20 | 777 | `880447c83` |
+| wph11 | 26 | 1567 | `8b7fd00f3` |
+| wph12 | 23 | 1355 | `60818ded4` |
+| wph13 | 25 | 676 | `299c8056b` |
+| wph14 | 22 | 1423 | `7b17d76bb` |
+| wph15 | 17 | 1135 | `45e35a270` |
+| wph16 | 21 | 615 | `38824fed5` |
+| **total** | **262** | **13,970** | 12 commits |
+
+Rows: 1,271 `render_kind:"page"` (QP covers + formula/data sheets, MS front
+matter) + 12,699 `render_kind:"question-crop"` at 150 dpi; 4 cancelled/no-MS
+sessions (wph12/wph13 2020-06, wbi14 2025-10/2026-01) shipped qp-only.
+
+## IAL generalizations added to the lib (4MA1 gold parity re-proven after
+## every change: 50/58 byte-identical, 8 known-benign deviations, 0 real)
+
+- **rotation normalization** now via `page.remove_rotation()` (the v2-proven
+  approach; pixmap byte-identity verified on the 2019 rotated pages),
+  decided per page — rotated pages whose coordinates are already visual are
+  left untouched;
+- **QP marker zone frame-relative** (v2 rule: `[frame.x0-14, frame.x0+20]`,
+  `x1 <= frame.x0+34`, frame y-span) — excludes bold list digits on
+  DO-NOT-WRITE pages; plus a frame sanity guard rejecting strokes whose bbox
+  extends off-page (a wbi12 2025-10 01A graph rule at x0=-189 hijacked the
+  zone); absolute-window fallback for frameless 01A inserts;
+- **footers generalized**: `(Total for Question N = M marks)` (IAL uses `=`)
+  and singular `1 mark`;
+- **MS labels anchored per page** at the table's left edge (capital
+  `Question` header word, else the leftmost wide rule, else the paper-level
+  modal label x0 for headerless continuation pages) — label columns drift
+  from x0=32 (WCH) to 139 (wbi13 2022 tables); window `[anchor-10,
+  anchor+45]`; fused part-group labels (`1(a)(i)`, `2(a)`, `13(a)`, `*14`)
+  accepted unconditionally, bare/dot labels (`1`, `10`, `14*`) only on
+  table-hosting pages (wide rules or the `Question`+`number` header pair),
+  leftmost-on-baseline — this kills cover list digits (`1:`), Level-table
+  numbers, and answer values sharing the label column x (`29 000 to 30 000`);
+- **section-restart DP runs** (2026 `01A` variants number both sections
+  1..8) with the run structure arbitrated against the OTHER side's
+  footer-derived section structure as a PREFIX (some 01A MS PDFs cover only
+  section A — v2 shipped the same scope); leftover same-q repeats,
+  off-column strays and answer-column ghosts are absorbed; under-detection
+  fails via the run-max check;
+- paper-reference check extended to pages 1–3 (cover-sheet QPs and 2025-06
+  wph15 carry the reference on a later page);
+- qp-only rendering for the cancelled/no-MS sessions (driver level).
+
+## Gate-refusal queue: 16 dirs left unmutated, pending operator ratification
+
+| dir | gate refusal |
+|---|---|
+| wbi13 2020-10 WBI13-01 | TrimError |
+| wbi13 2023-06 WBI13-01 | TrimError |
+| wbi14 2026-06 WBI14-01 | TrimError |
+| wbi15 2025-06 WBI15-01 | TrimError |
+| wbi15 2026-06 WBI15-01A | TrimError |
+| wbi16 2019-06 WBI16-01 | TrimError |
+| wph12 2022-01 WPH12-01 | TrimError |
+| wph12 2025-10 WPH12-01A | TrimError |
+| wph14 2019-06 WPH14-01 | TrimError |
+| wph14 2025-10 WPH14-01A | TrimError |
+| wph15 2019-06 WPH15-01 | TrimError |
+| wph15 2021-01 WPH15-01 | TrimError |
+| wph15 2025-10 WPH15-01 | TrimError |
+| wph15 2025-10 WPH15-01A | TrimError |
+| wph15 2026-01 WPH15-01 | TrimError |
+| wph16 2019-06 WPH16-01 | TrimError |
+
+3 of the 16 are **scanned QPs with no text layer** (wbi14 2026-06,
+wph15/wph16 2019-06) — not processable by the text-geometry pipeline (OCR
+route would need an operator decision). The 13 template-variant refusals are
+dominated by 2025-10/2026 01A MS tables and wbi13/wbi15/wph16 multi-section
+mark schemes whose label grammar still escapes the anchored-window rules.
+Proposed dispositions: (a) extend the label grammar per class and re-run the
+gates, or (b) ratify manual slicing; until then the dirs stay v2-imaged and
+untouched.
+
+## Queue (updated)
+
+`mathematics-2018` v2→trim-v3 redo (229 dirs + the 61-dir gate-refused set,
+now to be re-gated on the trim-v3 rules), `4sd0` (72), and the remaining
+`4ec1/4ac1/4bs1/4cp0/4cm1/4it1/4ea1/4et1/4ge1/4hb0/4hb1` + `4x*` modular
+lanes — all on the committed trim-v3 stage.

@@ -97,7 +97,15 @@ NOTE_STR = (
     "render body-only by the same rule; supersedes the same-day trim-v2 images"
 )
 
-FOOTER_RE = re.compile(r"\(Total for Question (\d+) is (\d+) marks\)")
+FOOTER_RE = re.compile(
+    r"\(Total for Question (\d+) (?:is|=) (\d+) marks?\)")
+QP_MARKER_RE = re.compile(r"(\*?\d{1,2})[:.]?")
+# science MS labels: one or more part groups REQUIRED ('1(a)(i)', '2(a)',
+# '13(a)', '1a', '*14') — bare digits are NOT question labels
+RE_MS_LABEL_SCI = re.compile(r"^\*?(\d{1,3})(?:\([a-z0-9ivx]+\)|[a-z])+$")
+# math boxed-table forms: '1.', '1.(a)', '5. (a)', '8 (a)', bare '10'
+RE_MS_LABEL_DOT = re.compile(
+    r"^\*?(\d{1,2})[\s.]*((?:\([a-z0-9ivx]+\)|[a-z])(?:[\s.]*(?:\([a-z0-9ivx]+\)|[a-z]))*)?[\s.*]*$")
 
 
 # ---------------------------------------------------------------- helpers --
@@ -161,18 +169,47 @@ def spans_of(page):
     return out
 
 
+# ------------------------------------------------- rotation normalization --
+def page_view(page):
+    """Normalize rotated pages IN PLACE (v2-proven: page.remove_rotation())
+    so text, drawing and pixmap coordinates all live in visual space.
+    Per-page decision (never per rect): a rotated page whose word y0s exceed
+    the visual rect height carries UNROTATED text coordinates and needs the
+    normalization; rotated pages whose coordinates are already visual are
+    left untouched (removing their rotation would rotate correct content).
+    Pixmap byte-identity verified on the 2019 rotated WBI pages."""
+    rot = page.rotation % 360
+    if rot == 0:
+        return page
+    ws = page.get_text("words")
+    if not any(w[1] > page.rect.height + 1 for w in ws):
+        return page
+    page.remove_rotation()
+    return page
+
+
+def pv_drawings(pv):
+    return pv.get_drawings()
+
+
 class TrimError(Exception):
     pass
 
 
 # ============================================================= QP side ====
-def qp_frame_rect(page):
-    """The grey rounded frame: widest stroked path."""
+def qp_frame_rect(pv):
+    """The grey rounded frame: widest stroked path. Sanity guard: the frame
+    lives INSIDE the page — paths whose bbox extends far off-page (graph
+    rules, oversized table strokes, e.g. x0=-189 on wbi12 2025-10 01A p8)
+    are rejected so the frame-relative marker zone stays honest."""
+    pw, ph = pv.rect.width, pv.rect.height
     best = None
-    for d in page.get_drawings():
+    for d in pv_drawings(pv):
         if d["type"] == "s":
             r = d["rect"]
             if r.width > 400 and r.height > 400:
+                if r.x0 < -10 or r.y0 < -10 or r.x1 > pw + 10 or r.y1 > ph + 10:
+                    continue
                 if best is None or r.width > best["rect"].width:
                     best = d
     if best is None:
@@ -199,7 +236,7 @@ def qp_body_extent_all(doc):
     from collections import Counter
     ext = []
     for page in doc:
-        for d in page.get_drawings():
+        for d in pv_drawings(page_view(page)):
             r = d["rect"]
             if r.height < 2 and r.width > 300:
                 ext.append((round(r.x0, 2), round(r.x1, 2)))
@@ -218,13 +255,25 @@ def qp_xclip(page, body):
     return bx0 - 1.0, bx1 + 1.0
 
 
-def qp_sweep_bounds(page):
-    """content sweep [top, bottom] in pt (furniture-anchored)."""
-    (fr, fw) = qp_frame_rect(page)
+def qp_sweep_bounds(pv):
+    """content sweep [top, bottom] in pt (furniture-anchored). Frameless
+    pages (2026 01A instruction inserts): fall back to header/footer word
+    bands (WCH 2026-01 pattern)."""
+    try:
+        (fr, fw) = qp_frame_rect(pv)
+    except TrimError:
+        top_ext = bot_ext = None
+        for w in words_of(pv):
+            if w[3] <= 100.0:
+                top_ext = w[3] if top_ext is None else max(top_ext, w[3])
+            if w[1] >= 750.0:
+                bot_ext = w[1] if bot_ext is None else min(bot_ext, w[1])
+        return ((top_ext + 2.0) if top_ext is not None else 0.0,
+                (bot_ext - 2.0) if bot_ext is not None else 842.0)
     half = fw / 2.0 + 0.5
     top_ext = None
     bot_ext = None
-    for w in words_of(page):
+    for w in words_of(pv):
         if w[3] <= fr.y0:                       # whole word above frame
             top_ext = w[3] if top_ext is None else max(top_ext, w[3])
         if w[1] >= fr.y1:                       # whole word below frame
@@ -234,20 +283,34 @@ def qp_sweep_bounds(page):
     return top, bot
 
 
-def qp_markers(page):
-    """Candidate question-number markers: [(q, y0, x0, x1, font)] left gutter.
+def qp_markers(pv):
+    """Candidate question-number markers: [(q, y0, y1, x0, x1, font)] gutter.
 
-    Word-based (a number can be merged into one span with its text, e.g.
-    '20\\t R and S are two similar solid shapes.'); the size/bold gates come
-    from the covering span, which kills small non-bold axis-label digits.
-    """
-    spans = spans_of(page)
+    Word-based (a number can be merged into one span with its text); the
+    size/bold gates come from the covering span, which kills small non-bold
+    axis-label digits. Zone rules adopted from the v2 renderer (proven on
+    the shipped WPH/WBI waves): frame-relative gutter band
+    [frame.x0-14, frame.x0+20] with x1 <= frame.x0+34 and the frame's own
+    y-span — this excludes bold list digits on DO-NOT-WRITE/notes pages
+    (wph11 2024-06 p27 '1' at x0=67.8) that absolute windows let through.
+    Frameless pages (2026 01A inserts): absolute fallback window
+    x1 <= 90, 17 <= y0, y1 <= 797. '*N'/'N:'/'N.' spellings accepted;
+    size window 10.5-12.6 (2019-era IAL gutters sit at x0 42-83)."""
+    spans = spans_of(pv)
+    try:
+        fr, _fw = qp_frame_rect(pv)
+        zx0, zx1 = fr.x0 - 14.0, fr.x0 + 20.0
+        xx1 = fr.x0 + 34.0
+        zy0, zy1 = fr.y0 - 2.0, fr.y1 + 2.0
+    except TrimError:
+        zx0, zx1, xx1, zy0, zy1 = 0.0, 90.0, 90.0, 17.0, 797.0
     out = []
-    for w in words_of(page):
+    for w in words_of(pv):
         x0, y0, x1, y1, t = w[0], w[1], w[2], w[3], w[4]
-        if not t.isdigit() or len(t) > 2:
+        core = QP_MARKER_RE.fullmatch(t.strip())
+        if core is None or len(core.group(1).lstrip("*")) > 2:
             continue
-        if x1 > 60 or y0 < 17 or y1 > 797:
+        if not (zx0 <= x0 <= zx1) or x1 > xx1 or y0 < zy0 or y1 > zy1:
             continue
         cover = None
         for sp in spans:
@@ -258,11 +321,11 @@ def qp_markers(page):
                 break
         if cover is None:
             continue
-        if not (11.5 <= cover["size"] <= 12.6):
+        if not (10.5 <= cover["size"] <= 12.6):
             continue
         if "Bold" not in cover["font"]:
             continue
-        out.append((int(t), y0, y1, x0, x1, cover["font"]))
+        out.append((int(core.group(1).lstrip("*")), y0, y1, x0, x1, cover["font"]))
     return out
 
 
@@ -274,6 +337,8 @@ def qp_dp_chain(all_markers):
             cands.append((pno, y0, y1, q, x0, x1))
     cands.sort(key=lambda c: (c[0], c[1], c[4]))
     n = len(cands)
+    if n == 0:
+        return []
     dp = [1] * n
     prev = [-1] * n
     for i in range(n):
@@ -290,10 +355,10 @@ def qp_dp_chain(all_markers):
     return chain
 
 
-def qp_footers(page):
-    """{q: (line_y0, marks)} from '(Total for Question N is M marks)' lines."""
+def qp_footers(pv):
+    """{q: (line_y0, marks)} from '(Total for Question N is|= M marks)' lines."""
     out = {}
-    d = page.get_text("dict")
+    d = pv.get_text("dict")
     for blk in d["blocks"]:
         if blk["type"] != 0:
             continue
@@ -312,24 +377,48 @@ def qp_apply_whiteouts(page, number_rects):
         page.draw_rect(fitz.Rect(r), color=None, fill=(1, 1, 1), overlay=True)
 
 
+def qp_footer_structure(doc):
+    """Section structure [n1, n2, ...] from the printed '(Total for Question
+    N ...)' footer sequences; None unless every footer run is exactly 1..n."""
+    footer_by_page = {p: qp_footers(page_view(doc[p])) for p in range(len(doc))}
+    foot_seq = []
+    for p in range(len(doc)):
+        for q, (fy0, _m) in footer_by_page.get(p, {}).items():
+            foot_seq.append((p, fy0, q))
+    foot_seq.sort()
+    foot_runs, cur, last = [], [], 0
+    for (_p, _y, q) in foot_seq:
+        if q <= last:
+            if cur:
+                foot_runs.append(cur)
+            cur, last = [], 0
+        cur.append(q)
+        last = q
+    if cur:
+        foot_runs.append(cur)
+    if foot_runs and all(r == list(range(1, len(r) + 1)) for r in foot_runs):
+        return [max(r) for r in foot_runs]
+    return None
+
+
 def render_qp(doc, paper_meta):
     """Render QP side. Returns (rows, files) where files = {name: bytes}."""
     rows, files = [], {}
     n_pages = len(doc)
 
     # ---- markers per page + DP chain
-    per_page = {p: qp_markers(doc[p]) for p in range(n_pages)}
-    chain = qp_dp_chain(per_page)
-    qs = [c[3] for c in chain]
-    if qs != list(range(1, len(qs) + 1)):
-        raise TrimError(f"QP marker chain not 1..N: {qs}")
-    n_q = len(qs)
+    per_page = {p: qp_markers(page_view(doc[p])) for p in range(n_pages)}
+    footer_by_page = {p: qp_footers(page_view(doc[p])) for p in range(n_pages)}
+    # expected QP run structure from the printed footers; used only when
+    # every footer run validates as exactly 1..n
+    expected_qp = qp_footer_structure(doc)
+    runs = _dp_runs(per_page, qp_dp_chain, "QP", expected_runs=expected_qp)
+    all_marks = [c for run in runs for c in run]
+    n_q = len(all_marks)
 
     marker_by_page = {}
-    for (pno, y0, y1, q, x0, x1) in chain:
+    for (pno, y0, y1, q, x0, x1) in all_marks:
         marker_by_page.setdefault(pno, []).append((q, y0))
-
-    footer_by_page = {p: qp_footers(doc[p]) for p in range(n_pages)}
 
     # global open-question tracking: a question opens at its marker and
     # closes when its footer line is seen (cont zones attach to open qs)
@@ -345,7 +434,7 @@ def render_qp(doc, paper_meta):
 
     files_meta = []   # (name, page, kind, payload)
 
-    first_marker_page = chain[0][0] if chain else None
+    first_marker_page = all_marks[0][0] if all_marks else None
     body_extent = qp_body_extent_all(doc)
 
     for p in range(n_pages):
@@ -361,10 +450,10 @@ def render_qp(doc, paper_meta):
             files_meta.append(("page", pno, None, name, data, None))
             continue
 
-        sweep_top, sweep_bot = qp_sweep_bounds(page)
+        sweep_top, sweep_bot = qp_sweep_bounds(page_view(page))
 
         # ---- number white-out rects for this page's chain markers
-        chain_marks = {(c[0], c[3]): (c[1], c[2], c[4], c[5]) for c in chain}
+        chain_marks = {(c[0], c[3]): (c[1], c[2], c[4], c[5]) for c in all_marks}
         num_rects = []
         for (q, y0, y1, x0, x1, font) in per_page.get(p, []):
             cm = chain_marks.get((p, q))
@@ -473,10 +562,10 @@ def render_qp(doc, paper_meta):
 
 
 # ============================================================= MS side ====
-def ms_borders(page):
+def ms_borders(pv):
     """Full-width horizontal table borders: [(y0, y1, x0, x1)]."""
     segs = {}
-    for d in page.get_drawings():
+    for d in pv_drawings(pv):
         if d["type"] != "f":
             continue
         r = d["rect"]
@@ -495,27 +584,107 @@ def ms_borders(page):
     return out
 
 
-def ms_markers(page):
-    """Q-column integer words: [(q, y0, x0, x1)]."""
+def ms_markers(pv, fallback_anchor=None):
+    """Q-column label candidates: [(q, y0, x0, x1)].
+
+    v2-grounded IAL rules (proven on the shipped WPH/WBI v2 waves):
+    - the label column is anchored PER PAGE at the table's left edge (the
+      capital 'Question' header word, else the leftmost wide table rule) —
+      label columns drift from x0=32 (WCH) to 139 (wbi13 2022 tables);
+      window = [anchor-10, anchor+55], outer sanity [20, ...];
+    - fused part-group labels ('1(a)(i)', '2(a)', '13(a)', '*14') are
+      accepted unconditionally (RE_MS_LABEL_SCI);
+    - bare/dot labels ('1', '10', '12.', '*14') ONLY on table-hosting pages
+      (wide rules or the capital 'Question'+'number' header pair), only
+      when the word is the leftmost on its baseline, only inside the
+      anchored window — this kills cover/list digits ('1:'), Level-table
+      numbers, and answer values sharing the label column x ('29 000');
+    - 'N:' forms die by regex (':' not in the dot-class)."""
+    words = words_of(pv)
+    borders = ms_borders(pv)
+    qwords = [w for w in words if w[4].strip() == "Question" and 20 <= w[0] < 260]
+    header_pair = False
+    anchor = None
+    if qwords:
+        qw = min(qwords, key=lambda w: w[0])
+        anchor = qw[0]
+        for w in words:
+            if w[4].strip().lower() == "number" and w[0] < 260 \
+                    and abs(w[1] - qw[1]) < 40.0:
+                header_pair = True
+                break
+    if anchor is None and borders:
+        anchor = min(b[2] for b in borders)
+    if anchor is None:
+        anchor = fallback_anchor   # paper-level modal label x0 (continuation
+        # pages without headers/rules, e.g. wph15 2025-10 MS p7)
+    hosts = bool(borders) or header_pair
     out = []
-    for sp in spans_of(page):
-        t = sp["text"].strip()
-        if not t.isdigit() or len(t) > 2:
-            continue
-        x0, y0, x1, y1 = sp["bbox"]
-        if not (72 <= x0 <= 115 and x1 <= 120):
-            continue
-        out.append((int(t), y0, x0, x1))
+    if anchor is not None:
+        lo, hi = max(20.0, anchor - 10.0), anchor + 45.0
+        xhi = anchor + 130.0
+        for w in words:
+            x0, y0, x1, y1, t = w[0], w[1], w[2], w[3], w[4]
+            t = t.strip()
+            if not (lo <= x0 <= hi and x1 <= xhi):
+                continue
+            m = RE_MS_LABEL_SCI.match(t)
+            if m:
+                q = int(m.group(1))
+            elif hosts and _leftmost_on_line(words, w):
+                m2 = RE_MS_LABEL_DOT.match(t)
+                if not m2:
+                    continue
+                q = int(m2.group(1))
+            else:
+                continue
+            if q == 0 or q > 60:
+                continue
+            out.append((q, y0, x0, x1))
     return out
+
+
+def _ms_hosts_table(pv):
+    """A page hosts a question table when it carries wide table rules or the
+    capital 'Question' + 'number'/'Number' header pair (stacked or same
+    line, both in the left band). Lowercase body-text 'question' does NOT
+    count (wph11 2019-01 p4 guidance page fired the loose check)."""
+    if ms_borders(pv):
+        return True
+    qs = [w for w in words_of(pv)
+          if w[4].strip() == "Question" and w[0] < 150]
+    if not qs:
+        return False
+    ns = [w for w in words_of(pv)
+          if w[4].strip().lower() == "number" and w[0] < 150]
+    for q in qs:
+        for n in ns:
+            if abs(q[1] - n[1]) < 40.0:
+                return True
+    return False
+
+
+def _leftmost_on_line(words, w):
+    """v2 rule: no other word starts left of this one on roughly the same
+    baseline (0.6 x height tolerance)."""
+    x0, y0, x1, y1 = w[0], w[1], w[2], w[3]
+    for o in words:
+        if o is w:
+            continue
+        if abs(o[1] - y0) < (y1 - y0) * 0.6 and o[0] < x0 - 1:
+            return False
+    return True
 
 
 def ms_dp_chain(all_markers):
     cands = []
     for pno, ms in all_markers.items():
         for (q, y0, x0, x1) in ms:
-            cands.append((pno, y0, q))
+            cands.append((pno, y0, q, x0))
     cands.sort(key=lambda c: (c[0], c[1]))
     n = len(cands)
+    if n == 0:
+        return []
     dp = [1] * n
     prev = [-1] * n
     for i in range(n):
@@ -532,7 +701,80 @@ def ms_dp_chain(all_markers):
     return chain
 
 
-def ms_total_rows(page, borders):
+def _dp_runs(per_page, dp_fn, tag, expected_runs=None):
+    """Decompose marker candidates into maximal strictly-increasing DP runs
+    (section-restart support: 2026 01A variants number both sections 1..n).
+
+    Each run must be exactly 1..n. Candidates covered by a run — same-q
+    repeats of part-labelled rows (mode-A '1(a)(i)' tables) and in-table
+    strays between the run's first and last marker — are absorbed; leftovers
+    on pages before the first run's first page (front-matter guidance
+    numbering) are dropped.
+
+    expected_runs: the OTHER side's run structure ([n1, n2, ...] per-run
+    maxima, None = unknown). The runs must form a PREFIX of the expected
+    structure (fewer runs is legitimate: some 01A MS PDFs cover only
+    section A — v2 shipped the same scope; a shorter run that is not
+    exactly 1..n still fails). Extra runs beyond the expected structure
+    are artifacts and fail the dir."""
+    pool = {p: list(v) for p, v in per_page.items()}
+    runs = []
+    first_page = None
+    while any(pool.values()):
+        if expected_runs is not None and len(runs) >= len(expected_runs):
+            break   # structure satisfied: leftovers handled below
+        chain = dp_fn(pool)
+        if not chain:
+            if expected_runs is None:
+                raise TrimError(f"{tag}: unmatched marker candidates remain "
+                                f"(first: {sorted((p, c) for p, ms in pool.items() for c in ms)[:4]})")
+            break
+        qs = [c[3] if len(c) == 6 else c[2] for c in chain]
+        if qs != list(range(1, len(qs) + 1)):
+            if expected_runs is None:
+                raise TrimError(f"{tag} marker run not 1..N: {qs[:12]}")
+            break   # remaining candidates are repeats/strays — handled below
+        if first_page is None:
+            first_page = chain[0][0]
+        runs.append(chain)
+        p0, y0f = chain[0][0], chain[0][1]
+        p1, y1l = chain[-1][0], chain[-1][1]
+        qmax = max(qs)
+        for p in list(pool):
+            keep = []
+            for c in pool[p]:
+                q, y0 = c[0], c[1]
+                after = (p > p0) or (p == p0 and y0 >= y0f - 0.5)
+                before = (p < p1) or (p == p1 and y0 <= y1l + 0.5)
+                if after and before and 1 <= q <= qmax:
+                    continue   # absorbed by this run
+                keep.append(c)
+            pool[p] = keep
+        for p in list(pool):
+            if p < first_page:
+                pool[p] = []
+    # leftovers after the expected structure is met: same-q repeats and
+    # off-column strays are absorbed; on-column impossible values refuse
+    if expected_runs is not None:
+        if len(runs) > len(expected_runs):
+            raise TrimError(f"{tag}: {len(runs)} marker runs vs {len(expected_runs)} "
+                            f"expected (other side's structure)")
+        for r, want in zip(runs, expected_runs):
+            got = max(c[3] if len(c) == 6 else c[2] for c in r)
+            if got != want:
+                raise TrimError(f"{tag}: run max {got} != expected {want}")
+    if pool and any(pool.values()):
+        if not runs:
+            raise TrimError(f"{tag}: no valid 1..N marker run but candidates "
+                            f"remain (detection failure)")
+        # prefix check already passed: absorb every leftover (same-q repeat
+        # rows, off-column strays, answer values sharing the label column
+        # like the '29 000 to 30 000' ghost). Under-detection is caught by
+        # the run-max check above, not here.
+    return runs
+
+
+def ms_total_rows(pv, borders):
     """Row indices whose content is the question's 'Total N marks' line.
     The Total label lives in the last table column (x > 600pt) — anchoring
     there avoids false hits from the words total/marks inside answers."""
@@ -540,7 +782,7 @@ def ms_total_rows(page, borders):
     ys = [b[0] for b in borders]
     rows = set()
     seen = {}
-    for w in page.get_text("words"):
+    for w in words_of(pv):
         t = w[4].strip().lower()
         if t in ("total", "marks") and w[0] > 600:
             i = bisect.bisect_right(ys, w[1]) - 1
@@ -552,23 +794,39 @@ def ms_total_rows(page, borders):
     return rows
 
 
-def render_ms(doc, paper_meta):
+def render_ms(doc, paper_meta, expected_runs=None):
     rows, files = [], {}
     files_meta = []
     n_pages = len(doc)
 
-    per_page = {p: ms_markers(doc[p]) for p in range(n_pages)}
-    chain = ms_dp_chain(per_page)
-    qs = [c[2] for c in chain]
-    if qs != list(range(1, len(qs) + 1)):
-        raise TrimError(f"MS marker chain not 1..N: {qs}")
-    first_marker_page = chain[0][0]
+    # paper-level modal label anchor: continuation pages without header or
+    # rules reuse the modal label-column x0 of the anchored pages
+    from collections import Counter as _C
+    _anchors = []
+    for p in range(n_pages):
+        _pv = page_view(doc[p])
+        _w = words_of(_pv)
+        _qw = [w for w in _w if w[4].strip() == "Question" and 20 <= w[0] < 260]
+        if _qw:
+            _anchors.append(min(_qw, key=lambda w: w[0])[0])
+        else:
+            _b = ms_borders(_pv)
+            if _b:
+                _anchors.append(min(b[2] for b in _b))
+    fallback_anchor = None
+    if _anchors:
+        fallback_anchor = _C(round(a) for a in _anchors).most_common(1)[0][0]
+    per_page = {p: ms_markers(page_view(doc[p]), fallback_anchor=fallback_anchor)
+                for p in range(n_pages)}
+    runs = _dp_runs(per_page, ms_dp_chain, "MS", expected_runs=expected_runs)
+    all_marks = [c for run in runs for c in run]
+    first_marker_page = all_marks[0][0]
     marker_by_page = {}
-    for (pno, y0, q) in chain:
+    for (pno, y0, q, _x0) in all_marks:
         marker_by_page.setdefault(pno, []).append((q, y0))
 
     # borders per page
-    borders_by_page = {p: ms_borders(doc[p]) for p in range(n_pages)}
+    borders_by_page = {p: ms_borders(page_view(doc[p])) for p in range(n_pages)}
 
     open_q = 0
     open_at_page = {}
@@ -630,8 +888,11 @@ def render_ms(doc, paper_meta):
         # leading cont zone: rows above first marker row; a total-marks row
         # of the open question caps the zone (its line is excluded, like QP
         # footers)
-        total_rows = ms_total_rows(page, borders)
+        total_rows = ms_total_rows(page_view(page), borders)
         if markers:
+            if not borders:
+                raise TrimError(f"MS p{pno}: {len(markers)} markers on a page "
+                                f"with no table borders (template variant)")
             first_ri = blocks[0][1]
             cap_ri = first_ri
             for tr in sorted(total_rows):
@@ -802,10 +1063,13 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                   "path": repo_dir, "paper_json": None}
 
     doc = fitz.open(qp_path)
-    # page-1 paper-reference check
+    # paper-reference check on page 1, or page 2 for cover-sheet QPs (some
+    # QPs open with an information cover; the printed reference sits on the
+    # first content page)
     p1 = doc[0].get_text("text")
-    if manifest["paper"]["official_reference"] not in p1.replace("\n", " "):
-        raise TrimError("page-1 text does not carry the paper reference")
+    _pages = " ".join(doc[i].get_text("text") for i in range(min(3, len(doc))))
+    if manifest["paper"]["official_reference"] not in _pages.replace("\n", " "):
+        raise TrimError("page-1/2 text does not carry the paper reference")
     all_rows = {}
     for tag in ("qp", "ms"):
         d = doc if tag == "qp" else fitz.open(ms_path)
@@ -823,7 +1087,11 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
         if tag == "qp":
             rows, files = render_qp(d, paper_meta)
         else:
-            rows, files = render_ms(d, paper_meta)
+            # expected MS run structure = the QP's (footer-derived section
+            # structure; extra MS runs are level-table artifacts, missing
+            # runs are detection failures)
+            expected = qp_footer_structure(doc)
+            rows, files = render_ms(d, paper_meta, expected_runs=expected)
         os.makedirs(f"{out_dir}/images/{tag}", exist_ok=True)
         for name, data in files.items():
             with open(f"{out_dir}/images/{tag}/{name}", "wb") as f:
