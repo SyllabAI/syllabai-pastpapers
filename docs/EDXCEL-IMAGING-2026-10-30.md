@@ -447,3 +447,148 @@ untouched.
 now to be re-gated on the trim-v3 rules), `4sd0` (72), and the remaining
 `4ec1/4ac1/4bs1/4cp0/4cm1/4it1/4ea1/4et1/4ge1/4hb0/4hb1` + `4x*` modular
 lanes — all on the committed trim-v3 stage.
+
+
+---
+
+# mathematics-2018 trim-v3 redo — executed 2026-11-02 (decision A)
+
+Operator directive: *"Proceed with the mathematics-2018 v2→trim-v3 redo
+(229 dirs + re-gating the 61 previously refused)."* All 290 renderable
+lane dirs (229 v2-imaged + 61 previously gate-refused + the empty
+2020-10/WME03-01 excluded) were re-gated on the trim-v3 rules; **269 dirs
+placed** by fourteen per-family corrective commits (base `06cec7981a` →
+family tip `3726e5841`; docs + lib commit on top; main never rewritten;
+superseded v2 blobs unreferenced).
+
+| family | dirs | files | INDEX rows | commit |
+|---|---:|---:|---:|---|
+| wdm11 | 10 | 498 | 488 | `e4c7408689` |
+| wfm01 | 14 | 796 | 782 | `241c5437d6` |
+| wfm02 | 16 | 871 | 855 | `84ce676d4e` |
+| wfm03 | 15 | 800 | 785 | `cae9ae9485` |
+| wma11 | 27 | 1,674 | 1,647 | `82a8922a76` |
+| wma12 | 26 | 1,653 | 1,627 | `d60b53cf98` |
+| wma13 | 22 | 1,339 | 1,317 | `d473a7a34d` |
+| wma14 | 21 | 1,282 | 1,261 | `751ceae2f8` |
+| wme01 | 25 | 1,286 | 1,261 | `7b733e686b` |
+| wme02 | 21 | 1,067 | 1,046 | `53d9517ec1` |
+| wme03 | 11 | 549 | 538 | `ea67eb8a4b` |
+| wst01 | 26 | 1,110 | 1,084 | `73190b52f8` |
+| wst02 | 22 | 931 | 909 | `38c573ef7a` |
+| wst03 | 13 | 526 | 513 | `3726e58413` |
+| **total** | **269** | **14,382** | **14,113** | |
+
+Rows: 1,783 `render_kind:"page"` (QP covers + formula sheets, MS front
+matter) + 12,330 `render_kind:"question-crop"` at 150 dpi. 5 qp-only
+(2020-06 WFM01/02/03, WST02/03 — no MS exists) and 4 ms-only (2019-06
+WME01-01, 2020-10 WFM02/03-01 + WST03-01 — no QP exists) sessions render
+the existing side, mirroring the v2 wave scope.
+
+## Re-gate of the 61 previously refused dirs
+
+- **51 pass** the trim-v3 gates and are imaged for the first time (placed
+  inside their family commits above).
+- **10 still refuse** (listed in the queue below) — stay unimaged.
+- **11 v2-imaged dirs newly refuse** under the trim-v3 gates (strictly
+  stronger than the v2 gates: footer cross-checks, run-max arbitration,
+  the under-render guard) — per the established principle they stay
+  v2-imaged and untouched, queued for operator ratification.
+
+## mathematics-2018 generalizations added to `scripts/pp_2121_trim_lib.py`
+
+4MA1 gold parity re-proven byte-identical after every change (50/58
+byte-identical, 2 antialias-noise, 6 one-blank-edge-row, 0 real diffs):
+
+1. **anonymous math footers** `(Total N marks)` (90 of 290 lane QPs carry
+   no question number): the line closes the currently-open question
+   positionally — event-scan per page in y order; numbered-footer papers
+   are byte-identical to the pre-anon logic;
+2. **MS expected run structure from the QP's own validated DP marker
+   runs** when the footers are anonymous (footer-derived structure is
+   used when numbered) — same run-max arbitration as numbered papers;
+3. QP gutter x-cap `frame.x0+36` (was +34): TimesNewRoman `10.` gutters
+   reach `frame.x0+34.5` (wma11 2021-10 p30 q10);
+4. double-dot gutters `N..` (2020 COVID-session QPs: wma12 2020-01,
+   wma13 2020-06/2020-10 print `3..`, `6..`);
+5. **trailing-stray trim**: the DP maximizes chain length, so one
+   on-column stray above the last real marker (wdm11 2023-01 `11` on
+   p17, wma11 2025-10 `12` on p30) invalidated whole chains — the chain
+   is cut to its longest `1..k` prefix; strays flow to the leftover
+   absorber and the run-max check still catches under-detection;
+6. **contiguous-extension prefix merge** of leftover chains (expected
+   and no-expected modes): a leftover chain led by k+1, k+2, ... merges
+   into the last run, trailing strays stay pooled;
+7. MS label window low side `-14` (was `-10`): mathematics-2018
+   templates draw the label column LEFT of the table's leftmost rule on
+   some continuation pages (wme01 2025-06 p12: labels x0=85.1, rules
+   x0=96.4 — the -10 window missed the bare `5` by 1.3pt);
+8. **stacked-label same-band cut**: two chain markers inside one border
+   band (the row separator between them narrower than the border gate;
+   wme02 2019-01 p8 `3`@139.7 and `4`@156.6) — the earlier question's
+   block is cut at the next marker's label top;
+9. **above-first-rule clamp**: a marker poking over the header row's
+   bottom rule (wme02 2023-01 `1`@71.2 vs rule@72.0) maps to the
+   table's first row band;
+10. **under-render guard**: any chain question that emits zero rows
+    refuses the dir — silent partial-question output is impossible
+    (wma13 2025-06 01A tail: labels below the last table rule would
+    need a borderless-tail renderer; queued, not improvised);
+11. qp-only / ms-only session driver mode (`sides` parameter).
+
+## QA (all green, pre-push)
+
+Per dir: INDEX file-set == tree file-set; every PNG sha256 re-hashed
+from disk == its INDEX row (+bytes+dims); slice naming and cont
+ordering; per-side question sets == 1..N; QP footer cross-checks
+(numbered max-q and math-form footer-line count vs detected max);
+qp/ms question-count agreement; INDEX schema (trim v3 qentries,
+source sha == canonical manifest sha, tool string); diff scope =
+exactly the 269 placed dirs' `images/` paths; all 22 unplaced dirs'
+subtrees byte-identical to base. 2,133 checks, 0 failures.
+
+## Gate-refusal queue: 21 dirs unmutated, pending operator ratification
+
+| dir | v2 state | refusal |
+|---|---|---|
+| 2019-06/WMA12-01 | refused | paper-ref check: QP pages 1-3 do not carry `WMA12/01` (old-spec cover — same class as the wch14/15/16 2019-06 holds) |
+| 2020-10/WFM01-01 | v2-imaged (ms-only) | MS marker chain not 1..N (q8 label undetected) |
+| 2021-01/WMA11-01 | refused | MS run max 10 vs QP expected 9 (QP q10 marker undetected) |
+| 2021-10/WFM03-01 | v2-imaged | MS run max 7 vs QP expected 8 |
+| 2022-01/WDM11-01 | refused | MS run max 8 vs QP expected 7 (MS ghost q8) |
+| 2022-01/WFM01-01 | refused | MS run max 8 vs QP expected 9 |
+| 2022-01/WME02-01 | refused | MS run max 6 vs QP expected 7 |
+| 2022-06/WFM02-02 | v2-imaged (ms-only) | paper-ref check on MS pages 1-3 |
+| 2022-06/WME02-01 | refused | MS run max 6 vs QP expected 8 |
+| 2023-10/WMA12-01 | v2-imaged | MS run max 8 vs QP expected 10 |
+| 2024-10/WMA13-01 | refused | MS run max 8 vs QP expected 9 |
+| 2024-10/WME01-01 | v2-imaged | MS run max 8 vs QP expected 7 (MS ghost q8) |
+| 2024-10/WST02-01 | refused | MS run max 3 vs QP expected 7 |
+| 2025-01/WFM02-01 | refused | MS run max 6 vs QP expected 8 |
+| 2025-01/WMA14-01 | v2-imaged | MS run max 10 vs QP expected 9 |
+| 2025-01/WME02-01 | refused | MS run max 6 vs QP expected 8 |
+| 2025-06/WFM02-01A | v2-imaged | MS run max 7 vs QP expected 8 |
+| 2025-06/WMA13-01A | v2-imaged | under-render guard: q2/q3 labels sit below the last table rule (borderless-tail MS region) |
+| 2025-06/WMA14-01A | v2-imaged | MS run max 9 vs QP expected 10 |
+| 2026-01/WME02-01A | v2-imaged | MS run max 6 vs QP expected 7 |
+| 2026-06/WFM01-01A | v2-imaged | under-render guard: q1 below the last table rule |
+
+Proposed dispositions: (a) extend the pipeline per class — a
+borderless-tail MS renderer for the below-last-rule label regions
+(2025-06 WMA13-01A, 2026-06 WFM01-01A), per-template MS label grammars
+for the run-max mismatches (dominated by WME02/WFM02 2021-2026 tables),
+and manifest/identification review for the two paper-ref cases — then
+re-run the gates; or (b) ratify manual slicing. Until then the dirs stay
+exactly as they are (11 v2-imaged, 10 unimaged).
+
+## Post-redo lane state
+
+269/291 dirs in trim-v3 (92.4%); with the 11 v2-imaged queued dirs,
+280/291 dirs are imaged (96.2%); 10 dirs remain unimaged (refusal
+queue). Previously: 229/291 in v2 (78.7%).
+
+## Queue (updated)
+
+`4sd0` (72), and the remaining
+`4ec1/4ac1/4bs1/4cp0/4cm1/4it1/4ea1/4et1/4ge1/4hb0/4hb1` + `4x*` modular
+lanes — all on the committed trim-v3 stage.

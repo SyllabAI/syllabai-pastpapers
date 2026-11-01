@@ -99,7 +99,14 @@ NOTE_STR = (
 
 FOOTER_RE = re.compile(
     r"\(Total for Question (\d+) (?:is|=) (\d+) marks?\)")
-QP_MARKER_RE = re.compile(r"(\*?\d{1,2})[:.]?")
+# math-lane footer form: '(Total 4 marks)' — no question number; the line
+# closes the currently-open question positionally (first footer line below
+# the question's marker). fullmatch on the stripped line text so body-text
+# mentions of totals cannot fire.
+ANON_FOOTER_RE = re.compile(r"\(Total (\d+) marks?\)")
+# 2020 COVID-session QPs print double-dot gutters ('3..', '6..') — allow up
+# to two trailing ./: spellings (wma12 2020-01, wma13 2020-06/2020-10)
+QP_MARKER_RE = re.compile(r"(\*?\d{1,2})[.:]{0,2}")
 # science MS labels: one or more part groups REQUIRED ('1(a)(i)', '2(a)',
 # '13(a)', '1a', '*14') — bare digits are NOT question labels
 RE_MS_LABEL_SCI = re.compile(r"^\*?(\d{1,3})(?:\([a-z0-9ivx]+\)|[a-z])+$")
@@ -290,9 +297,12 @@ def qp_markers(pv):
     size/bold gates come from the covering span, which kills small non-bold
     axis-label digits. Zone rules adopted from the v2 renderer (proven on
     the shipped WPH/WBI waves): frame-relative gutter band
-    [frame.x0-14, frame.x0+20] with x1 <= frame.x0+34 and the frame's own
+    [frame.x0-14, frame.x0+20] with x1 <= frame.x0+36 and the frame's own
     y-span — this excludes bold list digits on DO-NOT-WRITE/notes pages
     (wph11 2024-06 p27 '1' at x0=67.8) that absolute windows let through.
+    mathematics-2018 note: the cap is 36 (not the v2 34) — TimesNewRoman
+    '10.' gutters reach x1 = frame.x0+34.5 (wma11 2021-10 p30 q10);
+    gold parity re-proven byte-identical after the widening.
     Frameless pages (2026 01A inserts): absolute fallback window
     x1 <= 90, 17 <= y0, y1 <= 797. '*N'/'N:'/'N.' spellings accepted;
     size window 10.5-12.6 (2019-era IAL gutters sit at x0 42-83)."""
@@ -300,7 +310,7 @@ def qp_markers(pv):
     try:
         fr, _fw = qp_frame_rect(pv)
         zx0, zx1 = fr.x0 - 14.0, fr.x0 + 20.0
-        xx1 = fr.x0 + 34.0
+        xx1 = fr.x0 + 36.0
         zy0, zy1 = fr.y0 - 2.0, fr.y1 + 2.0
     except TrimError:
         zx0, zx1, xx1, zy0, zy1 = 0.0, 90.0, 90.0, 17.0, 797.0
@@ -370,6 +380,30 @@ def qp_footers(pv):
     return out
 
 
+def qp_footer_events(pv):
+    """[(y0, q_or_None, marks)] merged numbered + anonymous footer lines,
+    sorted by y0. Anonymous = the math-lane '(Total N marks)' form (line's
+    whole stripped text is the footer — fullmatch, so body-text totals
+    cannot fire); it closes the currently-open question positionally.
+    Numbered lines keep the exact FOOTER_RE semantics (search)."""
+    out = []
+    d = pv.get_text("dict")
+    for blk in d["blocks"]:
+        if blk["type"] != 0:
+            continue
+        for ln in blk["lines"]:
+            txt = "".join(s["text"] for s in ln["spans"])
+            m = FOOTER_RE.search(txt)
+            if m:
+                out.append((ln["bbox"][1], int(m.group(1)), int(m.group(2))))
+                continue
+            ma = ANON_FOOTER_RE.fullmatch(txt.strip())
+            if ma:
+                out.append((ln["bbox"][1], None, int(ma.group(1))))
+    out.sort(key=lambda e: e[0])
+    return out
+
+
 def qp_apply_whiteouts(page, number_rects):
     """Rasterize page with furniture + number white-outs applied via redaction."""
     rects = qp_whiteout_rects(page) + number_rects
@@ -401,8 +435,11 @@ def qp_footer_structure(doc):
     return None
 
 
-def render_qp(doc, paper_meta):
-    """Render QP side. Returns (rows, files) where files = {name: bytes}."""
+def render_qp(doc, paper_meta, return_runs=False):
+    """Render QP side. Returns (rows, files) — or (rows, files, runs) with
+    return_runs=True (runs = the validated DP marker runs, used by the
+    session driver as the MS-side expected structure when the QP footers
+    are the anonymous math form)."""
     rows, files = [], {}
     n_pages = len(doc)
 
@@ -420,17 +457,31 @@ def render_qp(doc, paper_meta):
     for (pno, y0, y1, q, x0, x1) in all_marks:
         marker_by_page.setdefault(pno, []).append((q, y0))
 
+    # footer events (numbered + anonymous math form) per page
+    events_by_page = {p: qp_footer_events(page_view(doc[p]))
+                      for p in range(n_pages)}
+
     # global open-question tracking: a question opens at its marker and
-    # closes when its footer line is seen (cont zones attach to open qs)
+    # closes when its footer line is seen (cont zones attach to open qs).
+    # Event-scan per page in y order; anonymous footers close whatever
+    # question is open at their y (math form carries no question number).
+    # Numbered-only papers behave exactly as the pre-anon logic: markers set
+    # open_q in y order, footer q closes only when q == open_q.
     open_q = 0
     open_after = {}
     for p in range(n_pages):
         open_after[p] = open_q
-        for (q, y0) in marker_by_page.get(p, []):
-            open_q = q
-        for q in footer_by_page.get(p, {}):
-            if q == open_q:
-                open_q = 0
+        evs = ([(y0, 0, q) for (q, y0) in marker_by_page.get(p, [])] +
+               [(y0, 1, q) for (y0, q, _m) in events_by_page.get(p, [])])
+        for (_y, isf, q) in sorted(evs):
+            if isf:
+                if q is not None:
+                    if q == open_q:
+                        open_q = 0
+                elif open_q:
+                    open_q = 0
+            else:
+                open_q = q
 
     files_meta = []   # (name, page, kind, payload)
 
@@ -462,25 +513,60 @@ def render_qp(doc, paper_meta):
 
         # ---- regions (in pt) BEFORE white-out, then rasterize+whiteout, then crop
         regions = []   # (q, cont_flag, y0, y1, marks)
+        page_events = events_by_page.get(p, [])
         if markers:
             cont_zone = (sweep_top, markers[0][1] - 8.0)
             openq = open_after[p]
             if openq:
                 fy0 = footers.get(openq, (None, None))[0]
-                cy1 = min(sweep_bot, fy0 - 2.0) if fy0 is not None else sweep_bot
-                marks = footers.get(openq, (None, None))[1] if fy0 is not None else None
+                marks = footers.get(openq, (None, None))[1] \
+                    if fy0 is not None else None
+                if fy0 is not None:
+                    cy1 = min(sweep_bot, fy0 - 2.0)
+                else:
+                    # anonymous math form: the open question's footer sits
+                    # above the page's first chain marker (a footer below it
+                    # would belong to that marker's question)
+                    af = next(((y0, m) for (y0, q, m) in page_events
+                               if q is None and y0 < markers[0][1]), None)
+                    if af:
+                        cy1 = min(sweep_bot, af[0] - 2.0)
+                        marks = af[1]
+                    else:
+                        cy1 = sweep_bot
                 regions.append((openq, True, sweep_top, cy1, marks))
             for i, (q, my0) in enumerate(markers):
                 ry0 = max(sweep_top, my0 - 8.0)
                 f = footers.get(q)
-                ry1 = min(sweep_bot, f[0] - 2.0) if f else sweep_bot
-                regions.append((q, False, ry0, ry1, f[1] if f else None))
+                if f:
+                    ry1 = min(sweep_bot, f[0] - 2.0)
+                    fmarks = f[1]
+                else:
+                    af = next(((y0, m) for (y0, _q, m) in page_events
+                               if _q is None and y0 > my0), None)
+                    if af:
+                        ry1 = min(sweep_bot, af[0] - 2.0)
+                        fmarks = af[1]
+                    else:
+                        ry1 = sweep_bot
+                        fmarks = None
+                regions.append((q, False, ry0, ry1, fmarks))
         else:
             openq = open_after[p]
             if openq:
                 f = footers.get(openq)
-                cy1 = min(sweep_bot, f[0] - 2.0) if f else sweep_bot
-                marks = f[1] if f else None
+                if f:
+                    cy1 = min(sweep_bot, f[0] - 2.0)
+                    marks = f[1]
+                else:
+                    af = next(((y0, m) for (y0, _q, m) in page_events
+                               if _q is None), None)
+                    if af:
+                        cy1 = min(sweep_bot, af[0] - 2.0)
+                        marks = af[1]
+                    else:
+                        cy1 = sweep_bot
+                        marks = None
                 regions.append((openq, True, sweep_top, cy1, marks))
 
         if not regions:
@@ -558,6 +644,8 @@ def render_qp(doc, paper_meta):
                 qentry["marks"] = marks
             row["render"]["questions"] = [qentry]
         rows.append(row)
+    if return_runs:
+        return rows, files, runs
     return rows, files
 
 
@@ -621,7 +709,12 @@ def ms_markers(pv, fallback_anchor=None):
     hosts = bool(borders) or header_pair
     out = []
     if anchor is not None:
-        lo, hi = max(20.0, anchor - 10.0), anchor + 45.0
+        # low side -14 (not the v2 -10): mathematics-2018 templates draw the
+        # label column LEFT of the table's leftmost rule on some continuation
+        # pages (wme01 2025-06 p12: labels x0=85.1, rules x0=96.4 — the -10
+        # window missed the bare '5' by 1.3pt); leftmost-on-line + hosts +
+        # the DP run gates still protect the column
+        lo, hi = max(20.0, anchor - 14.0), anchor + 45.0
         xhi = anchor + 130.0
         for w in words:
             x0, y0, x1, y1, t = w[0], w[1], w[2], w[3], w[4]
@@ -701,6 +794,29 @@ def ms_dp_chain(all_markers):
     return chain
 
 
+def _absorb_window(pool, chain):
+    """Absorb candidates inside a run's window (same-q repeats of
+    part-labelled rows and in-table strays between the chain's first and
+    last marker). Mutates pool in place."""
+    p0, y0f = chain[0][0], chain[0][1]
+    p1, y1l = chain[-1][0], chain[-1][1]
+    qmax = max(c[3] if len(c) == 6 else c[2] for c in chain)
+    for p in list(pool):
+        keep = []
+        for c in pool[p]:
+            q, y0 = c[0], c[1]
+            after = (p > p0) or (p == p0 and y0 >= y0f - 0.5)
+            before = (p < p1) or (p == p1 and y0 <= y1l + 0.5)
+            if after and before and 1 <= q <= qmax:
+                continue   # absorbed by this run
+            keep.append(c)
+        pool[p] = keep
+
+
+def _q_of(c):
+    return c[3] if len(c) == 6 else c[2]
+
+
 def _dp_runs(per_page, dp_fn, tag, expected_runs=None):
     """Decompose marker candidates into maximal strictly-increasing DP runs
     (section-restart support: 2026 01A variants number both sections 1..n).
@@ -716,40 +832,87 @@ def _dp_runs(per_page, dp_fn, tag, expected_runs=None):
     structure (fewer runs is legitimate: some 01A MS PDFs cover only
     section A — v2 shipped the same scope; a shorter run that is not
     exactly 1..n still fails). Extra runs beyond the expected structure
-    are artifacts and fail the dir."""
+    are artifacts and fail the dir.
+
+    expected_runs=None (math-lane '(Total N marks)' footers carry no
+    numbers, so no QP structure is derivable): a chain that CONTIGUOUSLY
+    extends the last run (k+1, k+2, ...) merges into it (the run window
+    ends at the chain's last marker; same-q repeat rows printed below it
+    on continuation pages were left in the pool); beyond-window same-q
+    repeats (q <= last run max) are absorbed once and the DP retried —
+    genuine section restarts chain as their own 1..n run before this
+    branch is ever reached; anything else refuses (strict, unchanged)."""
     pool = {p: list(v) for p, v in per_page.items()}
     runs = []
     first_page = None
     while any(pool.values()):
-        if expected_runs is not None and len(runs) >= len(expected_runs):
-            break   # structure satisfied: leftovers handled below
         chain = dp_fn(pool)
         if not chain:
             if expected_runs is None:
                 raise TrimError(f"{tag}: unmatched marker candidates remain "
                                 f"(first: {sorted((p, c) for p, ms in pool.items() for c in ms)[:4]})")
             break
-        qs = [c[3] if len(c) == 6 else c[2] for c in chain]
+        qs = [_q_of(c) for c in chain]
         if qs != list(range(1, len(qs) + 1)):
+            # contiguous-extension prefix merge (both expected modes): a
+            # leftover chain led by k+1, k+2, ... extends the last run;
+            # trailing strays inside the same chain stay pooled
+            if runs:
+                last = runs[-1]
+                lmax = max(_q_of(c) for c in last)
+                m = 0
+                while m < len(qs) and qs[m] == lmax + 1 + m:
+                    m += 1
+                if m:
+                    runs[-1] = last + chain[:m]
+                    _absorb_window(pool, chain[:m])
+                    continue
             if expected_runs is None:
+                # no expected structure: beyond-window same-q repeats
+                # (q <= last run max) are absorbed once and the DP retried;
+                # anything else refuses (strict)
+                if not runs:
+                    raise TrimError(f"{tag} marker run not 1..N: {qs[:12]}")
+                removed = False
+                pend = (last[-1][0], last[-1][1])
+                for p in list(pool):
+                    keep = []
+                    for c in pool[p]:
+                        if (p, c[1]) > pend and _q_of(c) <= lmax:
+                            removed = True
+                            continue   # beyond-window same-q repeat
+                        keep.append(c)
+                    pool[p] = keep
+                if removed:
+                    continue
                 raise TrimError(f"{tag} marker run not 1..N: {qs[:12]}")
-            break   # remaining candidates are repeats/strays — handled below
+            # expected_runs is not None — trailing-stray trim: the DP
+            # maximizes length, so ONE on-column stray above the last real
+            # marker (wdm11 2023-01 '11' on p17, wma11 2025-10 '12' on p30)
+            # extends the chain past 1..n and invalidates it whole. Trim the
+            # chain to its longest 1..k prefix — the stray tail stays in the
+            # pool for the leftover absorber, and the run-max check against
+            # expected_runs still catches under-detection. When the expected
+            # structure is already met, stop here (leftovers handled below).
+            if len(runs) >= len(expected_runs):
+                break
+            k = 0
+            while k < len(qs) and qs[k] == k + 1:
+                k += 1
+            if not k:
+                break   # chain starts with a stray — repeats/strays path
+            chain = chain[:k]
+            qs = qs[:k]
+        elif len(runs) >= (len(expected_runs) if expected_runs is not None
+                           else len(runs) + 1):
+            # a full 1..n chain beyond the expected structure (or any full
+            # chain with no expected structure after the first — math-form
+            # papers have no sections) — stop, leftovers handled below
+            break
         if first_page is None:
             first_page = chain[0][0]
         runs.append(chain)
-        p0, y0f = chain[0][0], chain[0][1]
-        p1, y1l = chain[-1][0], chain[-1][1]
-        qmax = max(qs)
-        for p in list(pool):
-            keep = []
-            for c in pool[p]:
-                q, y0 = c[0], c[1]
-                after = (p > p0) or (p == p0 and y0 >= y0f - 0.5)
-                before = (p < p1) or (p == p1 and y0 <= y1l + 0.5)
-                if after and before and 1 <= q <= qmax:
-                    continue   # absorbed by this run
-                keep.append(c)
-            pool[p] = keep
+        _absorb_window(pool, chain)
         for p in list(pool):
             if p < first_page:
                 pool[p] = []
@@ -861,14 +1024,27 @@ def render_ms(doc, paper_meta, expected_runs=None):
             i = bisect.bisect_right(ys, y) - 1
             return i
 
-        blocks = []   # (q, top_border_idx, next_marker_border_idx)
+        blocks = []   # (q, top_border_idx, next_marker_border_idx, cut_y0)
         for i, (q, my0) in enumerate(markers):
-            ri = row_index(my0)
+            # a marker may sit a hair ABOVE the first detected rule (the
+            # label baseline pokes over the header row's bottom border,
+            # wme02 2023-01 '1'@71.2 vs rule@72.0; wfm03 2021-06 '4'@27.3
+            # vs rule@28.3) — its band is the table's first row
+            ri = max(0, row_index(my0))
+            cut_y0 = None
             if i + 1 < len(markers):
                 nri = row_index(markers[i + 1][1])
+                # stacked labels: two chain markers inside ONE border band
+                # (the table's row separator between them is narrower than
+                # the border gate) — the earlier question's block is cut at
+                # the next marker's label top (wme02 2019-01 p8: '3'@139.7
+                # and '4'@156.6 share the 138.2..174.7 band)
+                if nri == ri:
+                    cut_y0 = markers[i + 1][1]
+                    nri = ri + 1
             else:
                 nri = len(borders) - 1   # until last border (table end)
-            blocks.append((q, ri, nri))
+            blocks.append((q, ri, nri, cut_y0))
 
         # vertical border x bands for blank-row detection (verticals are
         # drawn as many short ~0.5pt fill segments)
@@ -920,7 +1096,7 @@ def render_ms(doc, paper_meta, expected_runs=None):
                                    f"ms_q{open_at_page[p]:02d}_p{pno:02d}_cont.png",
                                    crop, None))
 
-        for (q, ri, nri) in blocks:
+        for (q, ri, nri, cut_y0) in blocks:
             top_b = borders[ri]
             # block bottom = the question's OWN total-marks row top border
             # (the LAST total row inside the block span — an earlier total
@@ -961,6 +1137,8 @@ def render_ms(doc, paper_meta, expected_runs=None):
             # single-row blocks cut at the bottom border's first pixel row;
             # multi-row blocks leave one blank row above it (gold-verified)
             y1px = int(math.floor(bottom_b[0] * K)) - (0 if not interior else 1)
+            if cut_y0 is not None:
+                y1px = min(y1px, int(math.floor(cut_y0 * K)))
             if y1px <= y0px:
                 continue
             sub = arr[y0px:y1px, :, :]
@@ -973,6 +1151,21 @@ def render_ms(doc, paper_meta, expected_runs=None):
                        round(bottom_b[0] - (bottom_b[1] - bottom_b[0]), 1)]
             files_meta.append(("question-crop", pno, (q, False, bbox_pt, None),
                                f"ms_q{q:02d}_p{pno:02d}.png", crop, None))
+
+    # under-render guard: every chain question must emit at least one row
+    # (marker present but block dropped = silent content loss — refuse the
+    # dir rather than ship a partial question; wma13 2025-06 01A tail:
+    # labels below the last table rule need a borderless-tail renderer,
+    # queued for operator ratification instead)
+    _emitted = set()
+    for (_k, _p, pl, _n, _a, _x) in files_meta:
+        if pl is not None:
+            _emitted.add(pl[0])
+    for run in runs:
+        for c in run:
+            if _q_of(c) not in _emitted:
+                raise TrimError(f"MS q{_q_of(c)}: chain marker rendered no "
+                                f"rows (under-render guard)")
 
     for (kind, pno, payload, name, arr, _x) in files_meta:
         data = arr if isinstance(arr, bytes) else png_bytes(arr)
@@ -1011,68 +1204,73 @@ def render_ms(doc, paper_meta, expected_runs=None):
 MONTH_SEASON = {"01": "January", "06": "Summer", "10": "October", "11": "November"}
 
 
-def paper_meta_from(manifest, qp_sha, qp_bytes_len, ms_sha, ms_bytes_len,
-                    repo_head, repo_qp_path, repo_ms_path, session, paper_code):
+def paper_meta_from(manifest, sides, shas, repo_head, repo_dir,
+                    session, paper_code):
     season = MONTH_SEASON.get(session.split("-")[1], session.split("-")[1])
     year = int(session.split("-")[0])
     paper_ref = f"{manifest['paper']['official_reference']}_{season}_{year}"
     syllabus = manifest["paper"].get("unit_code") or "4MA1"
 
-    def meta(kind, sha, blen, path):
+    def meta(kind, sha, blen):
         return {"url": None, "sha256": sha, "bytes": blen, "note": NOTE_STR}
-    return {
+    out = {
         "paper_ref": paper_ref,
         "parsed_base": {"syllabus": syllabus, "paper": paper_code,
                         "season": season, "year": year, "question": None},
-        "qp": meta("qp", qp_sha, qp_bytes_len, repo_qp_path),
-        "ms": meta("ms", ms_sha, ms_bytes_len, repo_ms_path),
     }
+    for tag in sides:
+        out[tag] = meta(tag, shas[tag][0], shas[tag][1])
+    return out
 
 
 def render_session(qp_path, ms_path, manifest, session, paper_code,
-                   repo_dir, head_sha, out_dir):
+                   repo_dir, head_sha, out_dir, sides=("qp", "ms")):
     """Render one paper dir -> images/INDEX.jsonl + qp/ ms/ PNGs under out_dir.
 
-    Self-cleaning: any pre-existing out_dir/images tree is wiped first so the
-    emitted tree always equals the INDEX exactly (INDEX==tree contract holds
-    across re-runs; no stale files from earlier iterations can survive).
+    sides: which PDFs exist for this dir ('qp', 'ms' — qp-only cancelled /
+    ms-only sessions render the existing side only, mirroring the v2 wave
+    scope). Self-cleaning: any pre-existing out_dir/images tree is wiped
+    first so the emitted tree always equals the INDEX exactly (INDEX==tree
+    contract holds across re-runs; no stale files from earlier iterations
+    can survive).
     """
     import os
     import shutil
     if os.path.isdir(f"{out_dir}/images"):
         shutil.rmtree(f"{out_dir}/images")
     os.makedirs(f"{out_dir}/images", exist_ok=True)
-    qpb = open(qp_path, "rb").read()
-    msb = open(ms_path, "rb").read()
-    qp_sha, ms_sha = sha256_bytes(qpb), sha256_bytes(msb)
+    blobs, shas = {}, {}
+    for tag in sides:
+        b = open(qp_path if tag == "qp" else ms_path, "rb").read()
+        blobs[tag] = b
+        shas[tag] = (sha256_bytes(b), len(b))
     # manifest verification
     for m in manifest["materials"]:
         p = m["path"]
-        if p == "qp.pdf":
-            assert m["sha256"] == qp_sha, "qp.pdf sha mismatch vs manifest"
-            assert m["size_bytes"] == len(qpb)
-        if p == "ms.pdf":
-            assert m["sha256"] == ms_sha, "ms.pdf sha mismatch vs manifest"
-            assert m["size_bytes"] == len(msb)
+        if p == "qp.pdf" and "qp" in sides:
+            assert m["sha256"] == shas["qp"][0], "qp.pdf sha mismatch vs manifest"
+            assert m["size_bytes"] == shas["qp"][1]
+        if p == "ms.pdf" and "ms" in sides:
+            assert m["sha256"] == shas["ms"][0], "ms.pdf sha mismatch vs manifest"
+            assert m["size_bytes"] == shas["ms"][1]
 
-    meta = paper_meta_from(manifest, qp_sha, len(qpb), ms_sha, len(msb),
-                           head_sha,
-                           f"{repo_dir}/qp.pdf", f"{repo_dir}/ms.pdf",
+    meta = paper_meta_from(manifest, sides, shas, head_sha, repo_dir,
                            session, paper_code)
     src_common = {"repo": f"syllabai-pastpapers@{head_sha[:10]}",
                   "path": repo_dir, "paper_json": None}
 
-    doc = fitz.open(qp_path)
-    # paper-reference check on page 1, or page 2 for cover-sheet QPs (some
-    # QPs open with an information cover; the printed reference sits on the
-    # first content page)
-    p1 = doc[0].get_text("text")
-    _pages = " ".join(doc[i].get_text("text") for i in range(min(3, len(doc))))
+    # paper-reference check on pages 1-3 of the side being rendered (qp
+    # preferred; ms-only sessions verify against the mark scheme, which
+    # prints the paper reference in its header block)
+    ref_doc = fitz.open(qp_path if "qp" in sides else ms_path)
+    _pages = " ".join(ref_doc[i].get_text("text")
+                      for i in range(min(3, len(ref_doc))))
     if manifest["paper"]["official_reference"] not in _pages.replace("\n", " "):
         raise TrimError("page-1/2 text does not carry the paper reference")
+    ref_doc.close()
     all_rows = {}
-    for tag in ("qp", "ms"):
-        d = doc if tag == "qp" else fitz.open(ms_path)
+    for tag in sides:
+        d = fitz.open(qp_path if tag == "qp" else ms_path)
         m = dict(meta)
         m["parsed"] = dict(meta["parsed_base"])
         paper_meta = {
@@ -1085,22 +1283,29 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                     "paper_json": f"wave2121_trim/{session}_{paper_code}/paper.json"},
         }
         if tag == "qp":
-            rows, files = render_qp(d, paper_meta)
+            rows, files, qp_runs = render_qp(d, paper_meta, return_runs=True)
+            ms_expected_runs = [max(_q_of(c) for c in run)
+                                for run in qp_runs]
         else:
-            # expected MS run structure = the QP's (footer-derived section
-            # structure; extra MS runs are level-table artifacts, missing
-            # runs are detection failures)
-            expected = qp_footer_structure(doc)
+            # expected MS run structure = the QP's footer-derived section
+            # structure when the footers are numbered; the anonymous math
+            # form '(Total N marks)' carries no numbers, so the QP's own
+            # validated DP marker runs are the structure instead (same
+            # run-max arbitration, gold-verified side); extra MS runs are
+            # level-table artifacts, missing runs are detection failures;
+            # ms-only dirs pass None = single 1..N chain required)
+            expected = qp_footer_structure(fitz.open(qp_path)) \
+                if "qp" in sides else None
+            if expected is None and "qp" in sides:
+                expected = ms_expected_runs
             rows, files = render_ms(d, paper_meta, expected_runs=expected)
         os.makedirs(f"{out_dir}/images/{tag}", exist_ok=True)
         for name, data in files.items():
             with open(f"{out_dir}/images/{tag}/{name}", "wb") as f:
                 f.write(data)
         all_rows[tag] = rows
-        if tag == "ms":
-            d.close()
-    doc.close()
-    rows = all_rows["qp"] + all_rows["ms"]
+        d.close()
+    rows = [r for tag in sides for r in all_rows[tag]]
     os.makedirs(f"{out_dir}/images", exist_ok=True)
     with open(f"{out_dir}/images/INDEX.jsonl", "w") as f:
         for r in rows:
