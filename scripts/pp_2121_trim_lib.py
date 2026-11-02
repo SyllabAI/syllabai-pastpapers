@@ -713,19 +713,27 @@ def ms_markers(pv, fallback_anchor=None):
         # label column LEFT of the table's leftmost rule on some continuation
         # pages (wme01 2025-06 p12: labels x0=85.1, rules x0=96.4 — the -10
         # window missed the bare '5' by 1.3pt); leftmost-on-line + hosts +
-        # the DP run gates still protect the column
-        lo, hi = max(20.0, anchor - 14.0), anchor + 45.0
+        # the DP run gates still protect the column.
+        # Task 44 ratification: the absolute sanity clamp drops 20 -> 10 —
+        # wst02 2024-10 prints its label column at x0=15.4 (q4) with the
+        # 'Question' header at x0=5, so anchor-14 went below the old 20
+        # clamp; the DP run gates still protect the column.
+        lo, hi = max(10.0, anchor - 14.0), anchor + 45.0
         xhi = anchor + 130.0
         for w in words:
             x0, y0, x1, y1, t = w[0], w[1], w[2], w[3], w[4]
             t = t.strip()
             if not (lo <= x0 <= hi and x1 <= xhi):
                 continue
-            m = RE_MS_LABEL_SCI.match(t)
+            # Task 44: fused part rows print '+' between part groups
+            # ('7(a)(i)+(ii)', wfm02 2025-01) — layout, not content;
+            # normalize so the existing grammars match
+            tn = re.sub(r"\)\s*\+\s*\(", ")(", t)
+            m = RE_MS_LABEL_SCI.match(tn)
             if m:
                 q = int(m.group(1))
             elif hosts and _leftmost_on_line(words, w):
-                m2 = RE_MS_LABEL_DOT.match(t)
+                m2 = RE_MS_LABEL_DOT.match(tn)
                 if not m2:
                     continue
                 q = int(m2.group(1))
@@ -785,7 +793,17 @@ def ms_dp_chain(all_markers):
             if cands[j][2] < cands[i][2] and dp[j] + 1 > dp[i]:
                 dp[i] = dp[j] + 1
                 prev[i] = j
-    end = max(range(n), key=lambda i: dp[i])
+    maxdp = max(dp)
+    # Task 44 tie-break: among equal-length chain ends prefer the smallest
+    # question number, then the LATEST position. The DP is length-only, so
+    # an on-column ghost digit reached earlier in the document used to win
+    # the tie and invalidate the run (wma12 2023-10 S10-subscript '10'@p17
+    # vs real '10.(i)(a)'@p21; wma13 2024-10 table '40' vs real '9'@p23;
+    # wfm01 2020-10 work-digit '9'@p18 vs real '8(i)'@p21; wfm03 2021-10
+    # discriminant '36' vs real '8(a)'@p23; wma14-01A '20' vs real '10'@p29;
+    # wme02-01A 2026 '23' vs real '7(a)'@p16).
+    end = min((i for i in range(n) if dp[i] == maxdp),
+              key=lambda i: (cands[i][2], -cands[i][0], -cands[i][1]))
     chain = []
     while end != -1:
         chain.append(cands[end])
@@ -860,9 +878,17 @@ def _dp_runs(per_page, dp_fn, tag, expected_runs=None):
             if runs:
                 last = runs[-1]
                 lmax = max(_q_of(c) for c in last)
+                # Task 44 position gate: a contiguous extension must start
+                # AFTER the run's last marker — an earlier on-column ghost
+                # (wma11 2021-01 '10'@p17 with run end p22, wma14 2025-01
+                # '10'@p7 with run end p25) must not merge into the run
+                lp, ly = last[-1][0], last[-1][1]
+                starts_after = ((chain[0][0] > lp) or
+                                (chain[0][0] == lp and chain[0][1] > ly))
                 m = 0
-                while m < len(qs) and qs[m] == lmax + 1 + m:
-                    m += 1
+                if starts_after:
+                    while m < len(qs) and qs[m] == lmax + 1 + m:
+                        m += 1
                 if m:
                     runs[-1] = last + chain[:m]
                     _absorb_window(pool, chain[:m])
@@ -875,12 +901,26 @@ def _dp_runs(per_page, dp_fn, tag, expected_runs=None):
                     raise TrimError(f"{tag} marker run not 1..N: {qs[:12]}")
                 removed = False
                 pend = (last[-1][0], last[-1][1])
+                pstart = (last[0][0], last[0][1])
                 for p in list(pool):
                     keep = []
                     for c in pool[p]:
-                        if (p, c[1]) > pend and _q_of(c) <= lmax:
+                        pos = (p, c[1])
+                        # pool candidates are MARKER-format tuples: q is
+                        # c[0] (the DP-format accessor _q_of does not apply
+                        # here — latent original bug: it read x0/y1, so the
+                        # beyond-window absorb never fired)
+                        if pos > pend and c[0] <= lmax:
+                            removed = True   # beyond-window same-q repeat
+                            continue
+                        # Task 44: leftovers INSIDE a settled 1..n run's
+                        # span are strictly dominated (the DP would have
+                        # chained them had they extended it): work-digit
+                        # ghosts like wfm01 2020-10 '9'@p18 or wma12
+                        # 2019-06 '27'@p16 — absorb and retry
+                        if pstart <= pos <= pend:
                             removed = True
-                            continue   # beyond-window same-q repeat
+                            continue
                         keep.append(c)
                     pool[p] = keep
                 if removed:
@@ -981,6 +1021,16 @@ def render_ms(doc, paper_meta, expected_runs=None):
         fallback_anchor = _C(round(a) for a in _anchors).most_common(1)[0][0]
     per_page = {p: ms_markers(page_view(doc[p]), fallback_anchor=fallback_anchor)
                 for p in range(n_pages)}
+    if expected_runs is not None:
+        # Task 44: with a QP-verified expected structure (printed numbered
+        # footers, or anonymous footers whose count equals the QP DP run
+        # maxima — cross-checked in QA), on-column candidates ABOVE the
+        # expected maximum are table/answer values that can only poison
+        # the DP (wme02 '24/25' mass ratios and '10/18/59', wfm02-01A
+        # stacked-fraction '11/16', wdm11 ghost '8', wme01 2024-10 '8')
+        cap = max(expected_runs)
+        per_page = {p: [c for c in v if c[0] <= cap]
+                    for p, v in per_page.items()}
     runs = _dp_runs(per_page, ms_dp_chain, "MS", expected_runs=expected_runs)
     all_marks = [c for run in runs for c in run]
     first_marker_page = all_marks[0][0]
@@ -1025,7 +1075,22 @@ def render_ms(doc, paper_meta, expected_runs=None):
             return i
 
         blocks = []   # (q, top_border_idx, next_marker_border_idx, cut_y0)
+        # Task 44 borderless-tail classification: a chain marker printed
+        # BELOW the last table rule (or on a rule-less page) has no row
+        # band — the borderless-tail renderer crops [label top-8, next
+        # label top-8 | page bottom-2] instead (wma13 2025-06 01A q2/q3,
+        # wfm01 2026-06 01A q1). Markers CLEARLY ABOVE the first rule
+        # (>3pt — the established sub-2pt header-row pokes keep their
+        # first-band mapping) are also borderless (wma11 2021-01 q9 label
+        # 296pt above the only detected rule)
+        bless_flags = []
         for i, (q, my0) in enumerate(markers):
+            bless_flags.append(
+                (not borders) or (my0 > borders[-1][1]) or
+                (my0 < borders[0][0] - 3.0))
+        for i, (q, my0) in enumerate(markers):
+            if bless_flags[i]:
+                continue
             # a marker may sit a hair ABOVE the first detected rule (the
             # label baseline pokes over the header row's bottom border,
             # wme02 2023-01 '1'@71.2 vs rule@72.0; wfm03 2021-06 '4'@27.3
@@ -1067,17 +1132,29 @@ def render_ms(doc, paper_meta, expected_runs=None):
         total_rows = ms_total_rows(page_view(page), borders)
         if markers:
             if not borders:
-                raise TrimError(f"MS p{pno}: {len(markers)} markers on a page "
-                                f"with no table borders (template variant)")
-            first_ri = blocks[0][1]
-            cap_ri = first_ri
-            for tr in sorted(total_rows):
-                if tr < first_ri:
-                    cap_ri = min(cap_ri, tr)
-                    break
-            zone_top_px = (int(math.floor(borders[cap_ri][0] * K)) - 1
-                           if cap_ri < len(borders) else 0)
-            zone = (0.0, zone_top_px / K)
+                # Task 44: rule-less marker page — borderless-tail renderer
+                # handles the blocks; the cont zone ends at the first label
+                zone = (0.0, max(0.0, markers[0][1] - 8.0))
+            elif bless_flags[0]:
+                # first marker sits below the last rule: the open question's
+                # cont zone extends to its region top (a total-marks row
+                # above still caps the zone, line excluded)
+                zone_top = markers[0][1] - 8.0
+                for tr in sorted(total_rows):
+                    if borders[tr][0] < zone_top:
+                        zone_top = borders[tr][0]
+                        break
+                zone = (0.0, max(0.0, zone_top))
+            else:
+                first_ri = blocks[0][1]
+                cap_ri = first_ri
+                for tr in sorted(total_rows):
+                    if tr < first_ri:
+                        cap_ri = min(cap_ri, tr)
+                        break
+                zone_top_px = (int(math.floor(borders[cap_ri][0] * K)) - 1
+                               if cap_ri < len(borders) else 0)
+                zone = (0.0, zone_top_px / K)
         else:
             zone = (0.0, page.rect.height - 2.0)
         # cont crop: ink bbox of zone +/- 10px
@@ -1152,11 +1229,45 @@ def render_ms(doc, paper_meta, expected_runs=None):
             files_meta.append(("question-crop", pno, (q, False, bbox_pt, None),
                                f"ms_q{q:02d}_p{pno:02d}.png", crop, None))
 
+        # Task 44 borderless-tail blocks: chain markers printed BELOW the
+        # last table rule (or on rule-less pages). Region = [label top-8
+        # (never above the last rule's bottom edge), next label top-8 |
+        # page bottom-2]; crop = ink bbox +/- 10px inside the region.
+        for i, (q, my0) in enumerate(markers):
+            if not bless_flags[i]:
+                continue
+            top_pt = my0 - 8.0
+            if not borders:
+                top_pt = max(top_pt, 2.0)
+            elif my0 > borders[-1][1]:
+                # below the last rule: never reach above the rule's bottom
+                # edge (the tabled blocks above own that ink)
+                top_pt = max(top_pt, borders[-1][1])
+            # clearly above the first rule: no clamp — nothing above the
+            # marker belongs to this block but the cont zone above it
+            nxt = next((m[1] for m in markers[i + 1:]), None)
+            bot_pt = ((nxt - 8.0) if nxt is not None
+                      else (page.rect.height - 2.0))
+            ry0px = max(0, int(math.floor(top_pt * K)))
+            ry1px = min(arr.shape[0], int(math.ceil(bot_pt * K)))
+            if ry1px <= ry0px:
+                continue
+            sub = arr[ry0px:ry1px, :, :]
+            bb = ink_bbox(sub)
+            if bb is None:
+                continue
+            bx0, by0, bx1, by1 = bb
+            crop = sub[max(0, by0 - PAD_PX):by1 + PAD_PX,
+                       max(0, bx0 - PAD_PX):bx1 + PAD_PX, :]
+            bbox_pt = [round(top_pt, 1), round(bot_pt, 1)]
+            files_meta.append(("question-crop", pno,
+                               (q, False, bbox_pt, None),
+                               f"ms_q{q:02d}_p{pno:02d}.png", crop, None))
+
     # under-render guard: every chain question must emit at least one row
     # (marker present but block dropped = silent content loss — refuse the
-    # dir rather than ship a partial question; wma13 2025-06 01A tail:
-    # labels below the last table rule need a borderless-tail renderer,
-    # queued for operator ratification instead)
+    # dir rather than ship a partial question; the borderless-tail renderer
+    # above resolves the below-last-rule label class, Task 44 ratified)
     _emitted = set()
     for (_k, _p, pl, _n, _a, _x) in files_meta:
         if pl is not None:
@@ -1224,7 +1335,8 @@ def paper_meta_from(manifest, sides, shas, repo_head, repo_dir,
 
 
 def render_session(qp_path, ms_path, manifest, session, paper_code,
-                   repo_dir, head_sha, out_dir, sides=("qp", "ms")):
+                   repo_dir, head_sha, out_dir, sides=("qp", "ms"),
+                   ref_check="text"):
     """Render one paper dir -> images/INDEX.jsonl + qp/ ms/ PNGs under out_dir.
 
     sides: which PDFs exist for this dir ('qp', 'ms' — qp-only cancelled /
@@ -1233,6 +1345,13 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
     first so the emitted tree always equals the INDEX exactly (INDEX==tree
     contract holds across re-runs; no stale files from earlier iterations
     can survive).
+
+    ref_check: 'text' (default) requires the manifest official_reference in
+    pages 1-3 of the side being rendered; 'ratified' skips the literal-text
+    check for dirs whose identification was operator-ratified on visual
+    cover evidence (Task 44: 2019-06 WMA12-01 — scanned QP+MS covers print
+    the reference but carry no text layer / split-ref wording; 2022-06
+    WFM02-02 — MS cover reads 'F2 (WFM02) Paper 02').
     """
     import os
     import shutil
@@ -1262,12 +1381,13 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
     # paper-reference check on pages 1-3 of the side being rendered (qp
     # preferred; ms-only sessions verify against the mark scheme, which
     # prints the paper reference in its header block)
-    ref_doc = fitz.open(qp_path if "qp" in sides else ms_path)
-    _pages = " ".join(ref_doc[i].get_text("text")
-                      for i in range(min(3, len(ref_doc))))
-    if manifest["paper"]["official_reference"] not in _pages.replace("\n", " "):
-        raise TrimError("page-1/2 text does not carry the paper reference")
-    ref_doc.close()
+    if ref_check == "text":
+        ref_doc = fitz.open(qp_path if "qp" in sides else ms_path)
+        _pages = " ".join(ref_doc[i].get_text("text")
+                          for i in range(min(3, len(ref_doc))))
+        if manifest["paper"]["official_reference"] not in _pages.replace("\n", " "):
+            raise TrimError("page-1/2 text does not carry the paper reference")
+        ref_doc.close()
     all_rows = {}
     for tag in sides:
         d = fitz.open(qp_path if tag == "qp" else ms_path)

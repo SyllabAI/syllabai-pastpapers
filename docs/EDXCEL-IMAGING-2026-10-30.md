@@ -592,3 +592,104 @@ queue). Previously: 229/291 in v2 (78.7%).
 `4sd0` (72), and the remaining
 `4ec1/4ac1/4bs1/4cp0/4cm1/4it1/4ea1/4et1/4ge1/4hb0/4hb1` + `4x*` modular
 lanes — all on the committed trim-v3 stage.
+---
+
+# mathematics-2018 refusal-queue dispositions — RATIFIED and EXECUTED 2026-11-02 (Task 44)
+
+Operator directive: *"ratify the refusal-queue dispositions (borderless-tail
+MS renderer is the biggest recoverable class)."* Per the Task-37 precedent,
+ratification = execution. All 21 queued dirs were re-gated on the frozen
+trim-v3 lib (`scripts/pp_2121_trim_lib.py` @ `e84f7ed7`) with per-dir
+instrumentation; every documented refusal reproduced exactly, and word-level
++ visual forensics assigned each dir a root cause. 20 of the 21 dirs now
+image cleanly on the ratified rules; 1 dir is a **source defect** (not a
+renderer problem) and stays unimaged pending a replacement MS.
+
+## Per-dir dispositions (all executed)
+
+| dir | refusal | root cause | disposition executed |
+|---|---|---|---|
+| 2019-06/WMA12-01 | paper-ref | QP is an 11-page pure scan (11 chars/page, no text layer, no vector geometry); cover visually prints `WMA12/01`, Tue 18 Jun 2019, Pure Mathematics P2, P62721A | **identification ratified on visual cover evidence**; QP side unprocessable by the text-geometry pipeline (OCR route remains an open operator decision, unchanged from the Task-43 queue note); MS side imaged trim-v3 (ref check skipped as `ratified`) |
+| 2020-10/WFM01-01 | chain not 1..N (q8) | DP end-selection tie: work-digit ghost `9`@p18 tied with the real `8(i)`@p21 at chain length 8 and the first-max tie-break picked the ghost | ms-only run is now the real `1..8` (the MS genuinely ends at q8; the `9` is inside the q7 work) |
+| 2021-01/WMA11-01 | run max 10 vs 9 | ghost `10`@p17 merged into the settled `1..9` run via the position-unchecked contiguous-extension merge (the QP is genuinely 9 questions — `Question 9` continuation pages + 9 anonymous footers) | merge position gate + expected cap |
+| 2021-10/WFM03-01 | run max 7 vs 8 | DP tie: discriminant ghost `36`@p22 vs real `8(a)`@p23 | tie-break (smaller end-q) |
+| 2022-01/WDM11-01 | run max 8 vs [7,7] | ghost `8`@p13 (table value) extended section A's chain past the QP's validated `1..7`+`1..7` structure (14 anonymous footers == 7+7) | expected cap `q <= max(expected)` |
+| 2022-01/WFM01-01 | run max 8 vs 9 | **SOURCE DEFECT**: the archived MS ends at q8(e) Way 2 on p21 (of 21 pages); the QP is complete and has 9 real gutter markers + 9 anonymous footers — the MS's q9 rows are absent from the PDF | **not recoverable by rendering** — flagged for the operator: needs a replacement MS from another archive; the QP side COULD be imaged qp-only if desired (not executed — the dir stays fully unimaged) |
+| 2022-01/WME02-01 | run max 6 vs 7 | ghost `24`/`25` (mass-ratio values) built a longer DP chain than the real `7a`@p14 | expected cap |
+| 2022-06/WFM02-02 | paper-ref (ms-only) | MS cover reads "Further Pure Mathematics F2 (WFM02) Paper 02" — the literal ref is split across lines | **identification ratified on visual cover evidence**; ref check skipped as `ratified` |
+| 2022-06/WME02-01 | run max 6 vs 8 | ghosts `10`/`18`/`59` vs real `7a`@p13, `8a`@p14 | expected cap |
+| 2023-10/WMA12-01 | run max 8 vs 10 | DP tie at equal q: `S10`-subscript `10`@p17 (guidance text) vs real `10.(i)(a)`@p21 — first-max picked the earlier ghost | tie-break: smallest end-q, then LATEST position |
+| 2024-10/WMA13-01 | run max 8 vs 9 | DP tie: table value `40`@p22 vs real `9`@p23 | tie-break |
+| 2024-10/WME01-01 | run max 8 vs 7 | ghost `8` (marks column) inside the chain; numbered footers [7] authoritative | expected cap |
+| 2024-10/WST02-01 | run not 1..N (q4) | label column at x0=15.4 with the `Question` header at x0=5 — the absolute sanity clamp `max(20, anchor-14)` killed the real `4` | clamp lowered 20 -> 10 (per-page anchor + leftmost + DP gates unchanged) |
+| 2025-01/WFM02-01 | run max 6 vs 8 | fused part-row label `7(a)(i)+(ii)` rejected by the part grammars (`+` between part groups) | grammars normalize `)+(` -> `)(` before matching |
+| 2025-01/WMA14-01 | run max 10 vs 9 | ghost `10`@p7 merged into the settled `1..9` run (numbered footers [9] authoritative) | merge position gate + expected cap |
+| 2025-01/WME02-01 | run max 6 vs 8 | ghosts `26`/`56` vs real `7a`@p13 | expected cap |
+| 2025-06/WFM02-01A | run max 7 vs 8 | ghosts `11`/`16` (a stacked fraction `11/16` in the label window) vs real `8(a)`@p18 | expected cap |
+| 2025-06/WMA13-01A | under-render guard | q1's mark table renders from borders, but q2/q3/q4 guidance rows print BELOW the last table rule with `N.` labels | **borderless-tail MS renderer**: blocks = [label top-8, next label top-8 \| page bottom-2], ink-bbox +10px |
+| 2025-06/WMA14-01A | run max 9 vs 10 | DP tie: `20` text ghost@p26 vs real `10`@p29 | tie-break |
+| 2026-01/WME02-01A | run max 6 vs [7,7] | DP tie: ghost `23`@p13 vs real `7(a)`@p16 (section A); the 01A MS covers section A only (legitimate prefix per the existing rule) | tie-break |
+| 2026-06/WFM01-01A | under-render guard | q1..q3 guidance rows below the last rule on p6 | borderless-tail MS renderer |
+
+## Lib generalizations added to `scripts/pp_2121_trim_lib.py` (all gold-parity re-proven)
+
+1. **MS DP end-selection tie-break**: among equal-length chain ends prefer
+   the smallest question number, then the LATEST position (six dirs).
+2. **Contiguous-extension position gate**: a leftover chain merges into the
+   last run only if it starts AFTER the run's last marker (two dirs).
+3. **Expected-structure cap**: with a QP-verified expected structure
+   (numbered footers, or anonymous footers count == DP run maxima —
+   cross-checked in QA), on-column candidates above the expected maximum
+   are dropped before the DP (five dirs).
+4. **Settled-run leftover absorption**: inside a settled `1..n` run's span,
+   any non-chain leftover is strictly dominated and absorbed (ms-only
+   strays: wfm01 2020-10 `9`@p18, wma12 2019-06 `27`@p16). This also fixes
+   a latent original bug: the pool is marker-format (`q` at index 0), the
+   old code read index 2 (x0/y1), so the beyond-window same-q absorb never
+   fired.
+5. **Label-window low clamp 20 -> 10** (wst02 2024-10 label column at
+   x0=15.4).
+6. **Fused part rows**: `)+(` normalized to `)(` before the part grammars
+   (wfm02 2025-01 `7(a)(i)+(ii)`).
+7. **Borderless-tail MS renderer**: chain markers printed BELOW the last
+   table rule (never above the rule's bottom edge), CLEARLY ABOVE the first
+   rule (>3pt; the established sub-2pt header-row pokes keep their
+   first-band mapping), or on rule-less pages render as
+   [label top-8, next label top-8 | page bottom-2] ink-bbox crops; the
+   open question's cont zone caps at the first label's region top.
+8. **Paper-ref `ref_check="ratified"` mode** for the two visually
+   identified covers.
+9. WMA11-01 2021-01's q9 main block: the marker sits 296pt above the only
+   detected rule — resolved by the above-first-rule borderless path (was:
+   empty row span, silently only conts).
+
+**Gold parity re-proven after every change**: the patched lib's 4MA1
+2020-06 1H output is byte-identical to the frozen gold-verified lib
+(59/59 files), and matches the gold fixtures at the documented acceptance
+(50/58 byte-identical incl. 6 page rows, 2 antialias-noise, 6
+one-blank-edge-row, 0 real diffs, plus the two documented intentional
+deviations: `qp_q20_p22.png` emitted, gold's `qp_q19_p22_cont.png` /
+`qp_q25_p28_cont.png` not reproduced).
+
+## QA (all green, pre-push)
+
+Per dir: INDEX file-set == tree file-set; every PNG sha256+bytes+dims
+re-hashed from disk; slice naming; per-side question sets == 1..N (with
+the two-section wdm11 [7,7] double-numbering); cont/page ordering; QP
+footer cross-checks (numbered max-q; anonymous footer-line count == sum of
+QP DP run maxima); qp/ms qmax agreement; INDEX schema (trim v3 qentries,
+source sha == canonical manifest sha, tool/note strings, src.repo/path);
+diff scope == exactly the 20 dirs' `images/` paths + docs/lib. **13,611
+checks, 0 failures.**
+
+## Post-ratification lane state
+
+289/291 mathematics-2018 dirs are trim-v3 (99.3%); 290/291 imaged
+(99.7%). The single remaining gap is 2022-01/WFM01-01 (source defect —
+the archived MS is missing its q9 rows; needs a replacement PDF, not a
+renderer change). 2019-06/WMA12-01 is imaged MS-side only (QP is a pure
+scan; the OCR route remains an open operator decision).
+
+Family commits (base `06cec798..`-style chain on `9ee54268`): see the
+eleven `images(<unit>): trim-v3 refusal-queue redo` commits plus this
+docs+lib commit.
