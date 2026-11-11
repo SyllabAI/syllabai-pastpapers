@@ -236,10 +236,19 @@ def qp_whiteout_rects(page):
     return rects
 
 
-def qp_body_extent_all(doc):
+def qp_body_extent_all(doc, mode="modal"):
     """Paper-level body x-extent: the modal x-extent of horizontal line
     elements across ALL pages (separators / answer rules share the body
-    bounds). Per-page charts/short rules must not shrink it."""
+    bounds). Per-page charts/short rules must not shrink it.
+
+    mode='modal' (default; the ratified gold standard): pure modal vote.
+    mode='widest-family' (Task-46 operator-ratified generalization,
+    EDXCEL-IMAGING-2026-10-30): vote among the widest recurring extent
+    family — extents with width >= 0.9x the widest >300pt extent — instead
+    of the pure mode. Gold-identical on 4MA1 2020-06 1H (byte-identity
+    re-proved at ratification); corrective on the legacy science QP
+    template where ~313pt fill bands (type 'f') win the pure mode and
+    x-amputate every question crop."""
     from collections import Counter
     ext = []
     for page in doc:
@@ -248,6 +257,9 @@ def qp_body_extent_all(doc):
             if r.height < 2 and r.width > 300:
                 ext.append((round(r.x0, 2), round(r.x1, 2)))
     if ext:
+        if mode == "widest-family":
+            widest = max(x1 - x0 for (x0, x1) in ext)
+            ext = [e for e in ext if (e[1] - e[0]) >= 0.9 * widest]
         (x0, x1), _ = Counter(ext).most_common(1)[0]
         if x1 - x0 > 300:
             return x0, x1
@@ -435,11 +447,12 @@ def qp_footer_structure(doc):
     return None
 
 
-def render_qp(doc, paper_meta, return_runs=False):
+def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal"):
     """Render QP side. Returns (rows, files) — or (rows, files, runs) with
     return_runs=True (runs = the validated DP marker runs, used by the
     session driver as the MS-side expected structure when the QP footers
-    are the anonymous math form)."""
+    are the anonymous math form). body_extent_mode passes through to
+    qp_body_extent_all ('modal' default = ratified gold standard)."""
     rows, files = [], {}
     n_pages = len(doc)
 
@@ -486,7 +499,7 @@ def render_qp(doc, paper_meta, return_runs=False):
     files_meta = []   # (name, page, kind, payload)
 
     first_marker_page = all_marks[0][0] if all_marks else None
-    body_extent = qp_body_extent_all(doc)
+    body_extent = qp_body_extent_all(doc, mode=body_extent_mode)
 
     for p in range(n_pages):
         page = doc[p]
@@ -1336,7 +1349,7 @@ def paper_meta_from(manifest, sides, shas, repo_head, repo_dir,
 
 def render_session(qp_path, ms_path, manifest, session, paper_code,
                    repo_dir, head_sha, out_dir, sides=("qp", "ms"),
-                   ref_check="text"):
+                   ref_check="text", body_extent_mode="modal"):
     """Render one paper dir -> images/INDEX.jsonl + qp/ ms/ PNGs under out_dir.
 
     sides: which PDFs exist for this dir ('qp', 'ms' — qp-only cancelled /
@@ -1403,7 +1416,9 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                     "paper_json": f"wave2121_trim/{session}_{paper_code}/paper.json"},
         }
         if tag == "qp":
-            rows, files, qp_runs = render_qp(d, paper_meta, return_runs=True)
+            rows, files, qp_runs = render_qp(
+                d, paper_meta, return_runs=True,
+                body_extent_mode=body_extent_mode)
             ms_expected_runs = [max(_q_of(c) for c in run)
                                 for run in qp_runs]
         else:
