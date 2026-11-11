@@ -788,3 +788,41 @@ refused dirs verified git-clean (untouched).
 
 Commits: 2 image commits (source-disposition dirs; QP-deferred dirs) + this
 docs commit. Base `814ad6307d`.
+
+## Ratification executed (Task 46 addendum, 2026-11-12)
+
+Operator directive: *"ratify"*. Candidate 1 (widest recurring extent family,
+width >= 0.9x the widest >300pt extent) ratified and executed; candidates 2/3
+not needed.
+
+- **Lib** (`500635eb`): `qp_body_extent_all` gains `mode='widest-family'`
+  (default `'modal'` untouched — frozen standard, all shipped waves
+  byte-stable). `render_qp`/`render_session` pass it through.
+- **4MA1 2020-06 1H re-proof: PASS** — candidate render == frozen-standard
+  render byte-for-byte (60 files = 59 PNGs + INDEX.jsonl, 0 diffs; extents
+  coincide `(42.52, 552.76)`: modal == widest == family on the math
+  template). Measurement context: the in-repo 4MA1-1H images dir is the
+  Task-42 **trim-v2-era** render (`src.repo @41097cc15a`, rows self-identify
+  "trim v2"); a control run shows the same pre-existing 59-row/8-PNG delta
+  for the frozen `modal` standard against that dir, unchanged by the
+  candidate (both modes identical) — so the re-proof is stated against the
+  frozen standard's own output, the only well-defined gate for a v3 lib.
+- **Corrective measurement (all 12 QP-deferred dirs)**: pure modal won by
+  312–432pt fill bands in every dir vs the true 504–511pt body-rule family;
+  family vote selects the rule extent in all 12. 2018-01/4PH0-1P (a refusal
+  dir, out of scope) would resolve to a 460.5pt family — noted for the
+  marker-chain route.
+- **Append wave** (`6d5da107`): the 12 text-layer QP sides rendered
+  `ref_check=text` (the literal gate PASSes in all 12) +
+  `body_extent_mode='widest-family'`; **358 rows appended** (26 page +
+  332 crops); existing topical + ms v3 rows byte-verbatim (git diff +358/−0);
+  crop widths median/max 1087px = the full ~510pt body (amputation class
+  would be 650–850px); visual spot checks on both legacy template eras
+  clean. QA over 1,288 rows: **0 failures**. The broken-CMap 2013-06 /
+  2015-06 1P QPs verified git-pristine (Task-44 precedent stands; OCR route
+  still open).
+- **Still queued (separate route, not covered by this ratification):** the
+  7 MS marker-chain refusal dirs — per-dir root cause → instrumentation
+  generalization → 4MA1 gold re-proof, then operator ratification.
+
+Base `500635eb`.
