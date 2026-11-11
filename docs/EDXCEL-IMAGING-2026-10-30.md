@@ -693,3 +693,98 @@ scan; the OCR route remains an open operator decision).
 Family commits (base `06cec798..`-style chain on `9ee54268`): see the
 eleven `images(<unit>): trim-v3 refusal-queue redo` commits plus this
 docs+lib commit.
+
+---
+
+# 4SC0 legacy physics wave — 4ph0 1-series trim-v3 MS-side imaging — 2026-11-12 (Task 46)
+
+Operator directive: *"4SC0 legacy physics wave suggested by the lane doc"* —
+docs/4SD0-2026-09-27.md: "A 4SC0 legacy wave is the natural follow-up for the
+physics course."
+
+## Scope
+
+Per the 4SC0-WAVE-2026-09-28.md structural finding, legacy 4SC0 (Science
+Double Award, 2009 spec) was assessed via the single sciences' Paper 1s; no
+4SC0-named question papers exist (a `4sc0` folder would be fabrication), and
+the demo's double-award physics course wires `international-gcse/physics/4ph0`
+with the 1-series filter (`1P`/`1PR`). Wave set: **22 dirs** = `4PH0-1P`
+(16 sessions 2011-06..2019-01) + `4PH0-1PR` (6 R sessions 2013-06..2018-06).
+The 2-series (`2P`/`2PR`) belongs to the single-physics course's legacy
+archive and is out of scope here.
+
+## Census (at base `814ad6307d`)
+
+- Materials: 21 dirs qp+ms; `2015-06/4PH0-1PR` ms-only (the June-2015 1PR QP
+  is absent from Pearson's DAM — 4SC0-wave-doc gap).
+- `images/`: every dir holds exam-mate topical-bank rows only (925 rows;
+  0 trim-v3, 0 legacy-renderer rows), so the wave-3 backfill convention
+  applies: **existing rows preserved byte-verbatim, trim-v3 rows/files
+  appended** (staging render + merge-append; the lib's rmtree self-clean is
+  bypassed for the live dir).
+- QP page-1/2 text probe: 18 dirs pass; 3 covers carry a broken ToUnicode
+  CMap (`2013-06/4PH0-1P`, `2013-06/4PH0-1PR`, `2015-06/4PH0-1P` — the
+  wave-8 / CORPUS-FIX broken-text-map class).
+
+## Dispositions executed
+
+1. **MS sides imaged trim-v3: 15 dirs, 488 rows** (41 `render_kind:"page"`
+   front-matter rows + 447 question crops). `ref_check="ratified"` for all
+   15: MS covers print the reference without the slash form, so the literal
+   page-1/2 text gate cannot pass; identity = manifest
+   `official_reference` + materials sha256 verified at render, plus visual
+   cover/spot checks on both legacy template eras (2011 Verdana, 2016+
+   Trebuchet — crops clean: Q-number cell kept, table borders intact).
+2. **QP sides unmutated everywhere.**
+   - `2013-06/4PH0-1P`, `2015-06/4PH0-1P`: QP gate refuses (broken CMap;
+     marker runs `[6]` / `[9]`) → ms-only per the ratified Task-44
+     WMA12-01 precedent (OCR route remains an open operator decision).
+   - `2015-06/4PH0-1PR`: no QP exists (DAM gap).
+   - **12 text-layer QPs deferred on a measured renderer-template defect:**
+     `qp_body_extent_all` takes the **modal** x-extent of >300pt-wide line
+     drawings as the body column — gold-derived on the 4MA1 template where
+     answer rules dominate that population. On the legacy science QP
+     template the vote is won by ~313pt-wide **fill bands** (type `'f'`;
+     e.g. 2016-01: `(173.88, 486.82)` ×106 vs the true rule extent
+     `(42.48, 552.72)` ×13), so every question crop is **x-amputated**
+     (modal extent 313–409pt vs true 510pt in all 12 dirs; crops lose
+     ~90–130pt left / ~60–70pt right: stems, part labels, answer-line
+     prefixes). Per the frozen-standard protocol no lib change was
+     improvised; the QP sides stay unrendered pending operator ratification
+     of a body-extent generalization (proposal below).
+3. **Refusal queue — 7 dirs left unmutated, MS marker-chain gaps:**
+   `2013-06/4PH0-1PR` [missing 5, 10], `2014-01/4PH0-1P` [9],
+   `2014-06/4PH0-1PR` [6], `2016-06/4PH0-1P` [10], `2017-01/4PH0-1P` [7],
+   `2017-06/4PH0-1P` [3, 8, 9], `2018-01/4PH0-1P` [1, 10]. Forensics: every
+   missing marker exists as a text token but sits at a page-top first-row
+   position (y≈86–113) or page-bottom (y≈788) of a continued MS table — the
+   Task-44 borderless/near-rule family. Needs the ratified-instrumentation
+   route (per-dir root cause → generalization → 4MA1 gold re-proof).
+
+## Proposal for operator ratification (body-extent generalization)
+
+Candidates (each must re-prove 4MA1 2020-06 1H byte-identity before
+execution, per the frozen-standard protocol):
+
+1. Vote among the widest recurring extent family (width ≥ 0.9× the widest
+   >300pt extent) instead of the pure mode;
+2. Union of extents containing ≥50% of the DP marker tokens' x-positions;
+3. Per-page body extent with a paper-level fallback.
+
+Whichever is ratified re-opens the 12 deferred QP sides as an append wave
+(deterministic re-render; merge-append leaves the shipped MS rows
+untouched).
+
+## QA (all green, pre-push)
+
+Per dir: INDEX==tree (1,177 rows total = 689 topical preserved byte-verbatim
+prefix + 488 v3 appended); every PNG sha256+bytes re-hashed (1,177 files) +
+dims re-checked on all v3 rows; slice naming (side-prefixed, page-consistent
+field); cont↔base integrity; per-side question chains == 1..N (ms side);
+row page ordering per side; schema parity vs the 4SD0-1B ms-only reference
+(field-set identity); provenance (src.repo `@814ad6307d`, src.path,
+source_pdf sha256/bytes == manifest materials rows). **0 failures.** The 7
+refused dirs verified git-clean (untouched).
+
+Commits: 2 image commits (source-disposition dirs; QP-deferred dirs) + this
+docs commit. Base `814ad6307d`.
