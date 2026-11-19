@@ -826,3 +826,60 @@ not needed.
   generalization → 4MA1 gold re-proof, then operator ratification.
 
 Base `500635eb`.
+
+## Marker-chain forensics route (Task 46 addendum 2, 2026-11-12)
+
+Operator directive: *"start the marker-chain forensics route"*. Scope: the
+7-dir MS marker-chain refusal queue. Route executed: per-dir root cause →
+generalization (`d1453792`) → 4MA1 gold re-proof. **Execution of the 7-dir
+append wave awaits operator ratification.**
+
+### Per-dir root cause (every missing marker located and gate-classified)
+
+All 10 missing markers are real, visible labels rejected by the candidate
+gates — two families:
+
+- **Family A — label left of the anchor window (9 of 10).** Continued-table
+  first-row labels print 14.1–21.3pt LEFT of the page anchor (the
+  'Question' header x0), so the ratified `anchor−14` low side misses them
+  by 0.1–7.3pt: 2013-06/1PR q5 (0.1pt), 2016-06/1P q10 (0.3pt), 2018-01/1P
+  q1 (1.6pt), 2017-06/1P q9 (2.0pt), q3 (2.2pt), 2017-01/1P q7 (4.3pt),
+  2014-01/1P q9 (4.4pt), 2018-01/1P q10 (4.2pt), 2014-06/1PR q6 (7.3pt).
+  Every token is page-top (y≈80–113), leftmost-on-line, hosts=True — the
+  Task-44 borderless/near-rule family, deeper than the ratified wme01
+  2025-06 −10→−14 widening. Visual check (2013-06 p11): the label cell has
+  no left rule; the 'Question' header sits centered ~14pt right of the
+  column text.
+- **Family B — vertical multi-digit label (1 of 10).** 2013-06/1PR q10
+  (p17): the narrow 2013-era cell wraps '10 (a)' ONE DIGIT PER LINE —
+  '1'/'0' stacked, '(a'/')' stacked (visually verified) — so PyMuPDF yields
+  no '10' token at all. The invisible phantom '10' on p18 (y≈64, x=28.9,
+  in the text layer but NOT rendered) is correctly excluded and stays
+  excluded under the generalization.
+
+### Generalization (`d1453792`): `ms_markers` mode `'legacy24'`
+
+Default `'task44'` untouched. `'legacy24'` = (a) window low side −14→−24;
+(b) vertical digit-stack composition (near-equal x0 ≤3pt, adjacent
+baselines 0.3–3× height, bbox union, read top-to-bottom). Both stay behind
+the unchanged leftmost-on-line + hosts + regex + DP 1..N gates.
+
+### Proof (all green)
+
+- **Chains**: all 7 dirs flip refusal → COMPLETE 1..N — 2013-06/1PR 1..14,
+  2014-01/1P 1..13, 2014-06/1PR 1..9, 2016-06/1P 1..12, 2017-01/1P 1..13,
+  2017-06/1P 1..11, 2018-01/1P 1..14.
+- **4MA1 2020-06 1H gold A/B**: `legacy24` render == `task44` render
+  byte-for-byte (60 files, 0 diffs).
+- **Shipped-dir inertness**: 2016-01/4PH0-1P (27 ms rows) + 2013-01/4PH0-1P
+  (31 ms rows) MS sides re-render byte-identical vs shipped INDEX sha256
+  under BOTH modes (also re-proves Task-46 wave reproducibility after the
+  2026-11-20 sandbox rebuild; repo restored from origin @6e1d8a62).
+- **Staging renders (no repo mutation)**: 215 projected rows (20 page +
+  195 crops): 32/36/31/34/32/30/20 per dir.
+
+### Proposed execution (on ratification)
+
+7-dir MS append wave, `ref_check='ratified'` (same disposition as the 15
+shipped Task-46 MS sides), `ms_marker_mode='legacy24'`, merge-append
+byte-verbatim, full QA gate, then docs close-out. Base `d1453792`.
