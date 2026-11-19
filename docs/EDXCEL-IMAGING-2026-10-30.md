@@ -883,3 +883,45 @@ the unchanged leftmost-on-line + hosts + regex + DP 1..N gates.
 7-dir MS append wave, `ref_check='ratified'` (same disposition as the 15
 shipped Task-46 MS sides), `ms_marker_mode='legacy24'`, merge-append
 byte-verbatim, full QA gate, then docs close-out. Base `d1453792`.
+
+## Ratification executed (Task 46 addendum 3, 2026-11-20)
+
+Operator directive: *"ratify"* — the 7-dir MS append wave proposed in
+addendum 2 is executed.
+
+- **Wave** (`4f65366a`): all 7 refusal dirs rendered `sides=('ms',)`,
+  `ref_check='ratified'`, `ms_marker_mode='legacy24'` (lib `d1453792ee`);
+  **215 rows appended** merge-append byte-verbatim (+215/−0): 20 page +
+  195 crops — 2013-06/4PH0-1PR 32 = 3+29, 2014-01/4PH0-1P 36 = 3+33,
+  2014-06/4PH0-1PR 31 = 2+29, 2016-06/4PH0-1P 34 = 3+31, 2017-01/4PH0-1P
+  32 = 3+29, 2017-06/4PH0-1P 30 = 3+27, 2018-01/4PH0-1P 20 = 3+17 —
+  row counts and chains 1..14/13/9/12/13/11/14 matching the pre-wave
+  staging projection exactly. The 9 family-A first-row labels and the
+  family-B vertical digit-stack '10' are now chain members; the refusal
+  queue is **empty**.
+- **Execution discipline**: two-phase executor (Phase A renders to /tmp
+  staging + verifies every documented projection with zero repo mutation,
+  aborts on any deviation; Phase B merge-appends + copies + cleans). Phase A
+  correctly aborted once on an executor-side pre-flight bug (staging
+  `INDEX.jsonl` counted as a filename collision) with the repo untouched;
+  re-run clean end-to-end.
+- **QA gate (10 checks, 0 failures)**: git census = exactly 7 INDEX
+  modified + 215 new ms PNGs, nothing else; INDEX prefix byte-verbatim vs
+  HEAD; INDEX==tree per dir; full sha256+bytes rehash of every row file in
+  the 7 dirs (legacy topical + v3, 538 files) + PNG IHDR dims on all 215 v3
+  rows; side-prefixed naming + page-field consistency + cont↔base
+  integrity; per-dir chains 1..N; v3 block page order non-decreasing;
+  schema field-set parity vs the shipped Task-46 4PH0 v3 ms rows
+  (row/render/question keysets, `tool` inside `render`); provenance
+  `src.repo @d1453792ee`, `src.path <dir>/ms.pdf`, `source_pdf`
+  sha256/bytes == manifest ms.pdf row, parsed paper/year/season fields; and
+  `qp/` sides, the broken-CMap preserved dirs (2013-06, 2015-06 4PH0-1P)
+  and the 4MA1 gold dir all untouched.
+- **Visual spot checks 3/3**: family-B digit-stack crop (2013-06/1PR q10
+  p17 — '1'/'0' and '(a'/')' stacked, label column fully inside the crop);
+  deepest family-A miss (2014-06/1PR q6 p18, 7.3pt — continued-table first
+  row with the 'Question number' header and left rule intact); 2018-01/1P
+  q1 p4 (continued-table first row, label complete).
+
+QA scripts: `scripts/mc_wave_exec.py` (two-phase executor),
+`scripts/mc_wave_qa.py` (gate). Base `d1453792`; image commit `4f65366a`.
