@@ -685,7 +685,62 @@ def ms_borders(pv):
     return out
 
 
-def ms_markers(pv, fallback_anchor=None):
+def _compose_vertical_digit_stacks(words):
+    """Task-46 marker-chain route (legacy science MS): the narrow 2013-era
+    label cell wraps multi-digit labels ONE DIGIT PER LINE — '10 (a)'
+    renders as '1' above '0' and '(a' above ')' (4PH0-1PR 2013-06 p17,
+    visually verified). PyMuPDF therefore yields separate single-digit
+    words on stacked baselines and no '10' token exists for the DP chain.
+    Compose vertical digit stacks: consecutive single-digit words with
+    near-equal x0 (<=3pt) and adjacent baselines (0.3-3x the top digit's
+    height) merge into one word (bbox = union, text read top-to-bottom).
+    The composed token then flows through the unchanged window/leftmost/
+    hosts/regex gates; the DP 1..N run gates still protect the chain
+    (a wrong composition breaks contiguity and refuses)."""
+    digs = [w for w in words if len(w[4].strip()) == 1 and w[4].strip().isdigit()]
+    used = set()
+    out = []
+    by_x = {}
+    for w in digs:
+        by_x.setdefault(round(w[0]), []).append(w)
+    for w in words:
+        if w in used:
+            continue
+        t = w[4].strip()
+        if len(t) == 1 and t.isdigit() and not any(w in v for v in [used]):
+            # walk downward from this digit
+            chain = [w]
+            cur = w
+            while True:
+                h = cur[3] - cur[1]
+                nxt = None
+                for cand in sorted(
+                        [w for bx in range(round(cur[0]) - 1, round(cur[0]) + 2)
+                         for w in by_x.get(bx, [])],
+                        key=lambda z: z[1]):
+                    if cand is cur or cand in used or cand in chain:
+                        continue
+                    gap = (cand[1] - cur[1]) / h if h > 0 else 99.0
+                    if abs(cand[0] - cur[0]) <= 3.0 and 0.3 <= gap <= 3.0:
+                        nxt = cand
+                        break
+                if nxt is None:
+                    break
+                chain.append(nxt)
+                cur = nxt
+            if len(chain) > 1:
+                for c in chain:
+                    used.add(c)
+                comp = (min(c[0] for c in chain), min(c[1] for c in chain),
+                        max(c[2] for c in chain), max(c[3] for c in chain),
+                        "".join(c[4].strip() for c in chain))
+                out.append(comp)
+                continue
+        out.append(w)
+    return out
+
+
+def ms_markers(pv, fallback_anchor=None, mode="task44"):
     """Q-column label candidates: [(q, y0, x0, x1)].
 
     v2-grounded IAL rules (proven on the shipped WPH/WBI v2 waves):
@@ -700,8 +755,21 @@ def ms_markers(pv, fallback_anchor=None):
       when the word is the leftmost on its baseline, only inside the
       anchored window — this kills cover/list digits ('1:'), Level-table
       numbers, and answer values sharing the label column x ('29 000');
-    - 'N:' forms die by regex (':' not in the dot-class)."""
-    words = words_of(pv)
+    - 'N:' forms die by regex (':' not in the dot-class).
+
+    mode='task44' (default; the ratified standard): current zone rules.
+    mode='legacy24' (Task-46 marker-chain route generalization, proposed
+    for operator ratification): two legacy-science-MS extensions — (a) the
+    window low side widens -14 -> -24: on continued-table first rows the
+    legacy template prints the label 14.1-21.3pt LEFT of the page anchor
+    (2013-2018 4PH0 MS families; measured in 6 dirs), so the ratified
+    window misses it by 0.1-7.3pt; (b) vertical digit stacks compose
+    (see _compose_vertical_digit_stacks). Both extensions stay behind the
+    unchanged leftmost-on-line + hosts + regex + DP 1..N gates."""
+    if mode == "legacy24":
+        words = _compose_vertical_digit_stacks(words_of(pv))
+    else:
+        words = words_of(pv)
     borders = ms_borders(pv)
     qwords = [w for w in words if w[4].strip() == "Question" and 20 <= w[0] < 260]
     header_pair = False
@@ -731,7 +799,11 @@ def ms_markers(pv, fallback_anchor=None):
         # wst02 2024-10 prints its label column at x0=15.4 (q4) with the
         # 'Question' header at x0=5, so anchor-14 went below the old 20
         # clamp; the DP run gates still protect the column.
-        lo, hi = max(10.0, anchor - 14.0), anchor + 45.0
+        # Task 46 marker-chain route: mode 'legacy24' widens the low side
+        # -14 -> -24 (legacy continued-table first-row labels sit 14.1-21.3pt
+        # left of the anchor; measured 2013-2018 4PH0 MS).
+        lo, hi = (max(10.0, anchor - (24.0 if mode == "legacy24" else 14.0)),
+                  anchor + 45.0)
         xhi = anchor + 130.0
         for w in words:
             x0, y0, x1, y1, t = w[0], w[1], w[2], w[3], w[4]
@@ -1010,7 +1082,7 @@ def ms_total_rows(pv, borders):
     return rows
 
 
-def render_ms(doc, paper_meta, expected_runs=None):
+def render_ms(doc, paper_meta, expected_runs=None, ms_marker_mode="task44"):
     rows, files = [], {}
     files_meta = []
     n_pages = len(doc)
@@ -1032,7 +1104,8 @@ def render_ms(doc, paper_meta, expected_runs=None):
     fallback_anchor = None
     if _anchors:
         fallback_anchor = _C(round(a) for a in _anchors).most_common(1)[0][0]
-    per_page = {p: ms_markers(page_view(doc[p]), fallback_anchor=fallback_anchor)
+    per_page = {p: ms_markers(page_view(doc[p]), fallback_anchor=fallback_anchor,
+                              mode=ms_marker_mode)
                 for p in range(n_pages)}
     if expected_runs is not None:
         # Task 44: with a QP-verified expected structure (printed numbered
@@ -1349,7 +1422,8 @@ def paper_meta_from(manifest, sides, shas, repo_head, repo_dir,
 
 def render_session(qp_path, ms_path, manifest, session, paper_code,
                    repo_dir, head_sha, out_dir, sides=("qp", "ms"),
-                   ref_check="text", body_extent_mode="modal"):
+                   ref_check="text", body_extent_mode="modal",
+                   ms_marker_mode="task44"):
     """Render one paper dir -> images/INDEX.jsonl + qp/ ms/ PNGs under out_dir.
 
     sides: which PDFs exist for this dir ('qp', 'ms' — qp-only cancelled /
@@ -1433,7 +1507,8 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                 if "qp" in sides else None
             if expected is None and "qp" in sides:
                 expected = ms_expected_runs
-            rows, files = render_ms(d, paper_meta, expected_runs=expected)
+            rows, files = render_ms(d, paper_meta, expected_runs=expected,
+                                    ms_marker_mode=ms_marker_mode)
         os.makedirs(f"{out_dir}/images/{tag}", exist_ok=True)
         for name, data in files.items():
             with open(f"{out_dir}/images/{tag}/{name}", "wb") as f:
