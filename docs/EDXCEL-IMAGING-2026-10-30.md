@@ -1018,3 +1018,75 @@ chains 1..14, page order, schema parity vs shipped QP v3 rows, provenance
 at the lib head, preserved-side checks), then docs close-out.
 
 Base `f9933af6`.
+
+## Ratification executed (Task 46 addendum 5, 2026-11-20)
+
+Operator directive `ratify` 2026-11-20: the 3-dir QP append wave proposed at
+the end of addendum 4 was executed per that proposal, on the two-phase
+executor discipline (abort-before-mutation, zero repo change on any Phase A
+failure).
+
+### Execution (commit recorded below as the images commit)
+
+Protocol exactly as proposed: `sides=('qp',)`, `ref_check='ratified'`,
+`body_extent_mode='widest-family'`, `qp_text_source='ocr'`, provenance head
+`c18c35096d` (the lib commit). Merge-append byte-verbatim (+93/-0) of the
+staging INDEX lines into each live `images/INDEX.jsonl`, staging `qp/` PNGs
+copied into the live `images/qp/`, staging rmtree'd. Row distribution
+matching the addendum-4 staging projection exactly:
+
+- `2013-06/4PH0-1P`: +32 rows (2 page + 30 crops), chain COMPLETE 1..14,
+  footer marks sum 120 over 14 questions;
+- `2013-06/4PH0-1PR`: +30 rows (2 page + 28 crops), chain COMPLETE 1..14,
+  marks 120/14;
+- `2015-06/4PH0-1P`: +31 rows (2 page + 29 crops), chain COMPLETE 1..14,
+  marks 120/14.
+
+Total **93 rows = 6 page + 87 crops**. Phase A additionally re-verified the
+renders byte-identical against the addendum-4 proposal staging
+(`/tmp/ocr_route/stage_*`, rendered at head `0000000000`): row-for-row
+equality modulo `src.repo`, i.e. the PNG bytes and every recorded field are
+reproduction-stable across runs.
+
+### QA (10 gates, 0 failures, pre-push)
+
+1. git census: exactly 3 `images/INDEX.jsonl` modified + 93 new
+   `images/qp/*.png`, nothing else; 2. INDEX prefix byte-verbatim vs HEAD
+   (`git show`), appended block contiguous and re-serializable (32/30/31);
+   3. INDEX == tree per dir over the whole images tree (legacy + v3 ms +
+   v3 qp); 4. full rehash of EVERY row file in the 3 dirs (legacy + shipped
+   v3 ms 43/32/35 + new v3 qp) + PNG IHDR dims on all v3 rows; 5. v3 qp
+   naming (`qp/qp_pNN.png` pages, `qp/qp_qNN_pNN[_cont].png` crops,
+   page-field and cont-flag consistency, cont page >= base page); 6. chains
+   1..14 + marks 120/14 per dir; 7. v3 qp block page order non-decreasing;
+   8. schema parity vs shipped QP v3 reference 2016-01/4PH0-1P (27 rows):
+   row/render keyset identity, question keysets restricted to the two
+   attested variants (with/without `marks`); 9. provenance: `src.repo`
+   `@c18c35096d`, `src.path` `<rel>/qp.pdf`, `paper_json`,
+   `source_pdf` sha256/bytes == manifest `qp.pdf`, tool-string parity,
+   parsed season/year/paper; 10. isolation: changes confined to the 3
+   target dirs' `images/`, every `ms/` file untouched, 4MA1 gold untouched,
+   total 93 rows.
+
+### Visual spot checks (3/3)
+
+`2013-06/1P` q1 crop (`qp_q01_p03.png`): gutter digit `1` white-out clean,
+(a)/(b) + (i)/(ii) part markers kept, right-margin marks `(1)` per part,
+no footer. `2015-06/1P` q2 p5 cont (`qp_q02_p05_cont.png`): bottom cut above
+the recovered footer line, part markers and marks `(1)/(3)/(1)/(2)/(2)`
+intact. Parity control: shipped `2016-01/4PH0-1P` `qp_q02_p05_cont.png`
+shows the identical top frame-corner arc remnant — the trim-v3 standard
+form, confirming the OCR-route crops match the shipped healthy-text
+convention.
+
+### Disposition
+
+The Task-44 broken-CMap refusal (2013-06/1P, 2013-06/1PR, 2015-06/1P QP
+sides) is fully discharged: both QP sides of the two preserved dirs and the
+QP side of the marker-chain wave dir now carry v3 rows produced from the
+OCR text source, behind the unchanged zone/DP/footer-structure gates. The
+4PH0 legacy refusal queue is now empty in full (marker-chain MS queue
+cleared at addendum 3; broken-CMap QP queue cleared here). Remaining open
+items: none under Task 46.
+
+Base `c18c3509`.
