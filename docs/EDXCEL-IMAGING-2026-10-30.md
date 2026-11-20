@@ -925,3 +925,96 @@ addendum 2 is executed.
 
 QA scripts: `scripts/mc_wave_exec.py` (two-phase executor),
 `scripts/mc_wave_qa.py` (gate). Base `d1453792`; image commit `4f65366a`.
+
+## Broken-CMap OCR route (Task 46 addendum 4, 2026-11-20)
+
+Operator directive: *"Proceed"* (following the marker-chain wave ratification).
+Scope: the broken-CMap QP queue — `2013-06/4PH0-1P`, `2015-06/4PH0-1P` (the
+Task-46 refusal dispositions) plus `2013-06/4PH0-1PR` whose QP carries the
+same defect (census: 3 broken covers; its QP was never separately
+dispositioned) — 3 QPs total; `2015-06/4PH0-1PR` has no QP at all (DAM gap).
+Route: per-dir root cause → instrumentation generalization → 4MA1 gold
+re-proof → staging projections. **The 3-dir QP append wave (93 projected
+rows) awaits operator ratification.**
+
+Environment note: the sandbox restore between sessions had re-cloned the
+repo with HEAD walked back to an old Task-37 commit; GitHub `main` was
+verified authoritative at `f9933af6` (ls-remote), the working tree
+recovered by a fresh sparse re-clone, and the shipped state re-verified
+(addendum-3 tail present, 215 wave rows present, lib at `d1453792`).
+
+### Per-dir root cause (reproduced, not inherited)
+
+Every extracted token on these QPs is mojibake — covers AND bodies (cover
+samples: `/A;`, `D.`, `$*/`; body footers 0 hits on every page vs 12 on the
+healthy 2016-01 calibration dir; `qp_footer_structure` None; lib
+`qp_markers` finds 1–3 fake markers and the DP chains reproduce the
+recorded Task-46 refusal exactly: `[6]`, `[9]`, `[9]` — the "marker runs
+[6] / [9]"). The embedded fonts' ToUnicode CMaps are corrupt while the
+vector geometry (frames, rules — `qp_frame_rect`, body extents) and the
+rasters are clean, so the pixel pipeline is sound and only the text source
+is dead. OCR reads the real content (cover: "Pearson Edexcel … Physics …
+Paper: 1P", with a consistent stylized-font '4'→'K' misread — hence
+`ref_check='ratified'` per the WMA12-01 precedent).
+
+### Route evidence (tesseract 5.5.0, read-only probes)
+
+- **Gutter markers**: left-strip + zone-gated full-page OCR recover exactly
+  the 14 true markers per dir — x≈42.7–43.4, y≈63.6 (q1 87.4) page-top
+  first-row, height 7.92–8.16pt, ink fraction 0.415–0.65 (bold) — and
+  nothing else in the frame-relative zone. 1..14 matches the shipped MS
+  chain max (14) in all 3 dirs.
+- **Footers**: full-page OCR line reconstruction recovers 14/14 numbered
+  footers for both 2013 dirs and 13/14 for 2015-06 at 300dpi; the missed
+  q13 footer ('(Total for Question 13 = 13 marks)') recovers at 400dpi —
+  the producer therefore runs at 400dpi. Marks sum to exactly **120 marks
+  per paper in all 3 dirs** (the shipped MS rows carry no marks on this
+  template, so the 120-sum is the marks cross-check).
+
+### Generalization (lib): `render_session(..., qp_text_source='ocr')`
+
+Default `'pdf'` untouched — with no attachment every override returns
+exactly the pre-OCR behavior. `'ocr'` attaches tesseract-derived text per
+page (`ocr_doc_text`: 400dpi grayscale raster → TSV words in PDF-pt coords
+with per-word ink fractions → y-grouped, x-sorted line texts) keyed by
+page.xref; `words_of`/`spans_of`/`qp_footers`/`qp_footer_events` serve it
+transparently (synthetic spans: size = height×1.4 — gutter digits
+7.92–8.16pt → ~11.1–11.4 inside the 10.5–12.6 gate; font `'OCR-Bold'` at
+ink ≥ 0.30 — the bold-face proxy, calibrated on the route evidence).
+`page_view`'s rotation check now routes through `words_of` (default-
+identical). Everything else is unchanged: frame-relative zone gates,
+QP_MARKER_RE, DP 1..N, footer-structure run-max validation, whiteouts,
+region cuts, ink bbox. Two producer guards found by staging: line words
+must x-sort within the y-group (baseline jitter scrambled footer reading
+order at v1) and footers may split across OCR line pairs (pair-join
+fallback in the footer overrides).
+
+### Proofs (all green)
+
+- **4MA1 2020-06 1H gold A/B**: candidate lib render == frozen `d1453792`
+  lib render byte-for-byte (59 rows, 0 diffs).
+- **Shipped-dir inertness**: 2016-01/4PH0-1P QP side re-rendered under the
+  candidate lib (default path) — 27 shipped rows, 0 mismatches
+  (sha256/bytes/dims/page/kind/questions + file bytes).
+- **Body extent**: modal == widest-family == `(42.39, 552.63)` on all 3
+  broken QPs (the true rule family wins both modes here; wave renders use
+  the ratified `'widest-family'` for template-family consistency).
+
+### Staging projections (no repo mutation)
+
+`ref_check='ratified'`, `body_extent_mode='widest-family'`,
+`qp_text_source='ocr'`: **93 rows = 6 page + 87 crops** — 2013-06/1P
+32 (2+30), 2013-06/1PR 30 (2+28), 2015-06/1P 31 (2+29); chains COMPLETE
+1..14 in all 3; footer marks carried on the closing windows, sums 120/120/
+120; visual checks 2/2 (q1 crop: gutter digit white-out, part markers
+kept, no footer; q2 p5 cont: bottom cut above the recovered footer line).
+
+### Proposed execution (on ratification)
+
+3-dir QP append wave (93 projected rows), merge-append byte-verbatim — the
+shipped MS sides and topical rows stay untouched — full QA gate (census,
+prefix byte-verbatim vs HEAD, INDEX==tree, rehash+dims, naming/cont↔base,
+chains 1..14, page order, schema parity vs shipped QP v3 rows, provenance
+at the lib head, preserved-side checks), then docs close-out.
+
+Base `f9933af6`.

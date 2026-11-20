@@ -160,11 +160,118 @@ def gray(arr):
     return np.asarray(Image.fromarray(arr, "RGB").convert("L"))
 
 
+# ------------------------------------------ OCR text-source attachment -----
+# Task-46 broken-CMap route (EDXCEL-IMAGING-2026-10-30): three legacy 4PH0
+# QPs (2013-06/1P, 2013-06/1PR, 2015-06/1P) embed fonts whose ToUnicode
+# CMaps are corrupt — every extracted token is mojibake (covers AND bodies;
+# footers/markers unrecoverable from the text layer) while the vector
+# geometry (frames, rules) and the rasters are clean. The attachment below
+# substitutes tesseract-OCR-derived words/lines for the PDF text layer,
+# per page, behind an explicit opt-in: render_session(...,
+# qp_text_source='ocr'). Default paths never consult it — with no
+# attachment registered for a page, every override below returns exactly
+# what the pre-OCR code returned (byte-identity re-proven on the 4MA1 gold
+# fixture and on shipped healthy-text dirs).
+_OCR_TEXT = {}   # page.xref -> {'words': [(x0,y0,x1,y1,text,ink)], 'lines': [(y0, text)]}
+
+OCR_DPI = 400            # route evidence: recovers the 300-dpi-missed footer
+OCR_SIZE_FACTOR = 1.4    # glyph bbox height -> font-size estimate (cap height ~0.7 em; route evidence: gutter digit h 7.92-8.16pt -> size ~11.1-11.4, inside the 10.5-12.6 gate)
+OCR_BOLD_INK = 0.30      # ink-fraction proxy for the bold-face gate (route evidence: all 42 true gutter markers 0.415-0.65; regular text ~0.15-0.25)
+
+FOOTER_RE_OCR = re.compile(
+    r"Total\s+for\s+Question\s+(\d{1,2})\s+(?:(?:is|=)\s+)?(\d{1,2})\s*marks",
+    re.I)   # OCR drops the 'is'/'=' connector and the leading paren
+
+
+def attach_ocr_text(doc, pages):
+    """Register OCR-derived text for pages of an open fitz doc.
+
+    pages: {page_index: {'words': [(x0,y0,x1,y1,text,ink)],
+                         'lines': [(y0, text)]}} — coordinates in PDF pt
+    (visual space). Keys off page.xref so the overrides transparently
+    serve every consumer (qp_markers, qp_footers, sweeps, whiteouts)."""
+    for pno, t in pages.items():
+        _OCR_TEXT[doc[pno].xref] = t
+
+
+def detach_ocr_text(doc):
+    for p in doc:
+        _OCR_TEXT.pop(p.xref, None)
+
+
+def ocr_doc_text(doc, dpi=OCR_DPI, psm="6"):
+    """Tesseract-based text producer for broken-CMap pages.
+
+    Per page: 400 dpi grayscale raster -> TSV words (PDF-pt coords) with
+    per-word ink fractions (boldness proxy) -> y-grouped line texts.
+    Returns the attach_ocr_text page map."""
+    import csv
+    import os
+    import subprocess
+    import tempfile
+    z = dpi / 72.0
+    out = {}
+    for p in range(len(doc)):
+        page = page_view(doc[p])
+        pix = page.get_pixmap(dpi=dpi, colorspace=fitz.csGRAY)
+        arr = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height,
+                                                                 pix.width)
+        with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as f:
+            f.write(pix.tobytes("png"))
+            tmp = f.name
+        try:
+            r = subprocess.run(["tesseract", tmp, "stdout", "--psm", psm,
+                                "tsv"], capture_output=True, text=True,
+                               timeout=180)
+        finally:
+            os.unlink(tmp)
+        words = []
+        for row in csv.reader(io.StringIO(r.stdout), delimiter="\t"):
+            if len(row) >= 12 and row[0] == "5" and row[11].strip():
+                x0, y0 = int(row[6]) / z, int(row[7]) / z
+                x1, y1 = x0 + int(row[8]) / z, y0 + int(row[9]) / z
+                c0, r0 = max(0, int(x0 * z)), max(0, int(y0 * z))
+                c1 = min(arr.shape[1], int(math.ceil(x1 * z)))
+                r1 = min(arr.shape[0], int(math.ceil(y1 * z)))
+                sub = arr[r0:r1, c0:c1]
+                ink = float((sub < 128).mean()) if sub.size else 0.0
+                words.append([x0, y0, x1, y1, row[11], ink])
+        # y-grouped lines: sort by (y0, x0) for grouping, then x-sort within
+        # each group (baseline jitter must not scramble reading order)
+        words.sort(key=lambda w: (w[1], w[0]))
+        lines, cur, anchor = [], [], None
+        for w in words:
+            if anchor is None or w[1] - anchor > 4.0:
+                if cur:
+                    cur.sort(key=lambda v: v[0])
+                    lines.append((anchor, " ".join(v[4] for v in cur)))
+                cur, anchor = [], w[1]
+            cur.append(w)
+        if cur:
+            cur.sort(key=lambda v: v[0])
+            lines.append((anchor, " ".join(v[4] for v in cur)))
+        out[p] = {"words": [tuple(w) for w in words], "lines": lines}
+    return out
+
+
+def _ocr_span(word):
+    x0, y0, x1, y1, t, ink = word
+    return {"bbox": (x0, y0, x1, y1), "size": (y1 - y0) * OCR_SIZE_FACTOR,
+            "font": "OCR-Bold" if ink >= OCR_BOLD_INK else "OCR-Regular",
+            "text": t}
+
+
 def words_of(page):
+    att = _OCR_TEXT.get(page.xref)
+    if att is not None:
+        return [(w[0], w[1], w[2], w[3], w[4], 0, 0, 0) for w in att["words"]]
     return page.get_text("words")
 
 
 def spans_of(page):
+    att = _OCR_TEXT.get(page.xref)
+    if att is not None:
+        return [_ocr_span(w) for w in att["words"]]
     out = []
     d = page.get_text("dict")
     for blk in d["blocks"]:
@@ -188,7 +295,7 @@ def page_view(page):
     rot = page.rotation % 360
     if rot == 0:
         return page
-    ws = page.get_text("words")
+    ws = words_of(page)
     if not any(w[1] > page.rect.height + 1 for w in ws):
         return page
     page.remove_rotation()
@@ -380,6 +487,20 @@ def qp_dp_chain(all_markers):
 def qp_footers(pv):
     """{q: (line_y0, marks)} from '(Total for Question N is|= M marks)' lines."""
     out = {}
+    att = _OCR_TEXT.get(pv.xref)
+    if att is not None:
+        lns = att["lines"]
+        for i, (ly0, txt) in enumerate(lns):
+            m = FOOTER_RE.search(txt) or FOOTER_RE_OCR.search(txt)
+            if m:
+                out[int(m.group(1))] = (ly0, int(m.group(2)))
+                continue
+            if i + 1 < len(lns):   # footer split across two OCR lines
+                m = (FOOTER_RE.search(txt + " " + lns[i + 1][1]) or
+                     FOOTER_RE_OCR.search(txt + " " + lns[i + 1][1]))
+                if m:
+                    out[int(m.group(1))] = (ly0, int(m.group(2)))
+        return out
     d = pv.get_text("dict")
     for blk in d["blocks"]:
         if blk["type"] != 0:
@@ -399,6 +520,25 @@ def qp_footer_events(pv):
     cannot fire); it closes the currently-open question positionally.
     Numbered lines keep the exact FOOTER_RE semantics (search)."""
     out = []
+    att = _OCR_TEXT.get(pv.xref)
+    if att is not None:
+        lns = att["lines"]
+        for i, (ly0, txt) in enumerate(lns):
+            m = FOOTER_RE.search(txt) or FOOTER_RE_OCR.search(txt)
+            if m:
+                out.append((ly0, int(m.group(1)), int(m.group(2))))
+                continue
+            ma = ANON_FOOTER_RE.fullmatch(txt.strip())
+            if ma:
+                out.append((ly0, None, int(ma.group(1))))
+                continue
+            if i + 1 < len(lns):   # footer split across two OCR lines
+                joined = txt + " " + lns[i + 1][1]
+                m = FOOTER_RE.search(joined) or FOOTER_RE_OCR.search(joined)
+                if m:
+                    out.append((ly0, int(m.group(1)), int(m.group(2))))
+        out.sort(key=lambda e: e[0])
+        return out
     d = pv.get_text("dict")
     for blk in d["blocks"]:
         if blk["type"] != 0:
@@ -1423,7 +1563,7 @@ def paper_meta_from(manifest, sides, shas, repo_head, repo_dir,
 def render_session(qp_path, ms_path, manifest, session, paper_code,
                    repo_dir, head_sha, out_dir, sides=("qp", "ms"),
                    ref_check="text", body_extent_mode="modal",
-                   ms_marker_mode="task44"):
+                   ms_marker_mode="task44", qp_text_source="pdf"):
     """Render one paper dir -> images/INDEX.jsonl + qp/ ms/ PNGs under out_dir.
 
     sides: which PDFs exist for this dir ('qp', 'ms' — qp-only cancelled /
@@ -1432,6 +1572,11 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
     first so the emitted tree always equals the INDEX exactly (INDEX==tree
     contract holds across re-runs; no stale files from earlier iterations
     can survive).
+
+    qp_text_source: 'pdf' (default — the frozen standard) or 'ocr' (the
+    Task-46 broken-CMap route: tesseract-derived words/lines are attached
+    for the QP's pages before rendering, see ocr_doc_text; opt-in only,
+    default paths byte-identical).
 
     ref_check: 'text' (default) requires the manifest official_reference in
     pages 1-3 of the side being rendered; 'ratified' skips the literal-text
@@ -1490,9 +1635,15 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                     "paper_json": f"wave2121_trim/{session}_{paper_code}/paper.json"},
         }
         if tag == "qp":
-            rows, files, qp_runs = render_qp(
-                d, paper_meta, return_runs=True,
-                body_extent_mode=body_extent_mode)
+            if qp_text_source == "ocr":
+                attach_ocr_text(d, ocr_doc_text(d))
+            try:
+                rows, files, qp_runs = render_qp(
+                    d, paper_meta, return_runs=True,
+                    body_extent_mode=body_extent_mode)
+            finally:
+                if qp_text_source == "ocr":
+                    detach_ocr_text(d)
             ms_expected_runs = [max(_q_of(c) for c in run)
                                 for run in qp_runs]
         else:
