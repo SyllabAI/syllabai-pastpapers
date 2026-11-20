@@ -261,6 +261,90 @@ def _ocr_span(word):
             "text": t}
 
 
+# ------------------------------------------- scan-route frame synthesis ----
+# Task-46 scan route (EDXCEL-IMAGING-2026-10-30): a pure-scan QP (route dir
+# 2019-06/WMA12-01 — no text layer beyond 'PMT' stamps, no vector geometry
+# at all) prints its page frame and answer rules as raster ink only, so the
+# vector-anchored frame/sweep/body paths cannot fire. The synthesis below
+# reconstructs the frame from the raster, behind the explicit opt-in
+# render_session(..., qp_scan='raster') used together with
+# qp_text_source='ocr' (asserted). Default paths never consult it.
+SCAN_DARK = 200     # stroke threshold: the printed frame reads ~150-190 grey at 150 dpi
+SCAN_VRUN = 400.0   # min vertical stroke run (pt) — frame sides (measured 745-755 pt)
+SCAN_DPI = 150      # raster working resolution (== the render K)
+
+_SCAN_FRAME = {}    # page.xref -> fitz.Rect or None (detached after render)
+
+
+def scan_frame_rect(pv):
+    """Raster-synthesized page frame: the outermost pair of vertical stroke
+    columns (longest dark<SCAN_DARK run per column > SCAN_VRUN pt at
+    SCAN_DPI) bounds the printed frame; y0/y1 from the strokes' own spans.
+    Measured on the route dir: every body page (36.0, 36.0, 558.7, 792.0),
+    6 stroke columns in 3 clusters (left side; the Leave-blank separator
+    523.7-524.2 inside the pair; right side). Raises TrimError when no
+    qualifying strokes exist (vector instruction inserts keep their
+    word-band fallback). Cached per page.xref (None = not found)."""
+    if pv.xref in _SCAN_FRAME:
+        cached = _SCAN_FRAME[pv.xref]
+        if cached is None:
+            raise TrimError("scan frame not found")
+        return cached, 1.0
+    z = SCAN_DPI / 72.0
+    pix = pv.get_pixmap(dpi=SCAN_DPI, colorspace=fitz.csGRAY)
+    arr = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height,
+                                                             pix.width)
+    dark = arr < SCAN_DARK
+    cols = []
+    for x in range(dark.shape[1]):
+        col = dark[:, x]
+        d = np.diff(np.concatenate(([False], col, [False])).astype(np.int8))
+        st = np.where(d == 1)[0]
+        en = np.where(d == -1)[0]
+        if len(st) == 0:
+            continue
+        lens = en - st
+        i = int(np.argmax(lens))
+        if lens[i] / z > SCAN_VRUN:
+            cols.append((x / z, st[i] / z, en[i] / z))
+    rect = None
+    if len(cols) >= 2:
+        x0 = min(c[0] for c in cols)
+        x1 = max(c[0] for c in cols)
+        y0 = min(c[1] for c in cols)
+        y1 = max(c[2] for c in cols)
+        if (x1 - x0) > 400 and (y1 - y0) > 400:
+            rect = fitz.Rect(x0, y0, x1, y1)
+    _SCAN_FRAME[pv.xref] = rect
+    if rect is None:
+        raise TrimError("scan frame not found")
+    return rect, 1.0
+
+
+def detach_scan_frames(doc):
+    for p in doc:
+        _SCAN_FRAME.pop(p.xref, None)
+
+
+def _scan_body_extents(doc):
+    """Per-page scan-frame x-spans for the body-extent vote (scan mode).
+    The shipped text-template semantics (sibling 2021-10/WMA11-01: modal
+    vector rule extent (36.37, 559.28) == the frame width) reproduce as the
+    synthesized frame's outermost stroke pair — measured (36.0, 558.7) on
+    the route dir, within 0.6 pt of the sibling. The dotted answer rules
+    are deliberately NOT voted on rasters: their faint ink merges with the
+    frame strokes in per-row first/last measures, so the vote pool would be
+    dominated by dotted-line fragments that do not bound the body."""
+    out = []
+    for page in doc:
+        try:
+            fr, _fw = scan_frame_rect(page_view(page))
+            out.append((round(fr.x0, 2), round(fr.x1, 2)))
+        except TrimError:
+            continue
+    return out
+
+
 def words_of(page):
     att = _OCR_TEXT.get(page.xref)
     if att is not None:
@@ -343,10 +427,14 @@ def qp_whiteout_rects(page):
     return rects
 
 
-def qp_body_extent_all(doc, mode="modal"):
+def qp_body_extent_all(doc, mode="modal", scan_mode=False):
     """Paper-level body x-extent: the modal x-extent of horizontal line
     elements across ALL pages (separators / answer rules share the body
     bounds). Per-page charts/short rules must not shrink it.
+    scan_mode (Task-46 scan route): when the vector pool is empty (pure
+    scan), vote the synthesized raster frames' x-spans instead — the
+    frame-width band, matching the shipped text-template semantics
+    (sibling modal == frame width).
 
     mode='modal' (default; the ratified gold standard): pure modal vote.
     mode='widest-family' (Task-46 operator-ratified generalization,
@@ -370,6 +458,12 @@ def qp_body_extent_all(doc, mode="modal"):
         (x0, x1), _ = Counter(ext).most_common(1)[0]
         if x1 - x0 > 300:
             return x0, x1
+    if scan_mode:
+        ext = _scan_body_extents(doc)
+        if ext:
+            (x0, x1), _ = Counter(ext).most_common(1)[0]
+            if x1 - x0 > 300:
+                return x0, x1
     raise TrimError("body extent not derivable")
 
 
@@ -381,21 +475,31 @@ def qp_xclip(page, body):
     return bx0 - 1.0, bx1 + 1.0
 
 
-def qp_sweep_bounds(pv):
+def qp_sweep_bounds(pv, scan_mode=False):
     """content sweep [top, bottom] in pt (furniture-anchored). Frameless
     pages (2026 01A instruction inserts): fall back to header/footer word
-    bands (WCH 2026-01 pattern)."""
+    bands (WCH 2026-01 pattern). scan_mode (Task-46 scan route): pure-scan
+    pages synthesize the frame from raster strokes before the word-band
+    fallback (the fixed 100/750 pt bands would amputate the question stem
+    on the scan layout, where content starts at y~62.6)."""
     try:
         (fr, fw) = qp_frame_rect(pv)
     except TrimError:
-        top_ext = bot_ext = None
-        for w in words_of(pv):
-            if w[3] <= 100.0:
-                top_ext = w[3] if top_ext is None else max(top_ext, w[3])
-            if w[1] >= 750.0:
-                bot_ext = w[1] if bot_ext is None else min(bot_ext, w[1])
-        return ((top_ext + 2.0) if top_ext is not None else 0.0,
-                (bot_ext - 2.0) if bot_ext is not None else 842.0)
+        fr = None
+        if scan_mode:
+            try:
+                (fr, fw) = scan_frame_rect(pv)
+            except TrimError:
+                fr = None
+        if fr is None:
+            top_ext = bot_ext = None
+            for w in words_of(pv):
+                if w[3] <= 100.0:
+                    top_ext = w[3] if top_ext is None else max(top_ext, w[3])
+                if w[1] >= 750.0:
+                    bot_ext = w[1] if bot_ext is None else min(bot_ext, w[1])
+            return ((top_ext + 2.0) if top_ext is not None else 0.0,
+                    (bot_ext - 2.0) if bot_ext is not None else 842.0)
     half = fw / 2.0 + 0.5
     top_ext = None
     bot_ext = None
@@ -409,7 +513,7 @@ def qp_sweep_bounds(pv):
     return top, bot
 
 
-def qp_markers(pv):
+def qp_markers(pv, scan_mode=False):
     """Candidate question-number markers: [(q, y0, y1, x0, x1, font)] gutter.
 
     Word-based (a number can be merged into one span with its text); the
@@ -424,7 +528,13 @@ def qp_markers(pv):
     gold parity re-proven byte-identical after the widening.
     Frameless pages (2026 01A inserts): absolute fallback window
     x1 <= 90, 17 <= y0, y1 <= 797. '*N'/'N:'/'N.' spellings accepted;
-    size window 10.5-12.6 (2019-era IAL gutters sit at x0 42-83)."""
+    size window 10.5-12.6 (2019-era IAL gutters sit at x0 42-83).
+    scan_mode (Task-46 scan route): the frame synthesizes from raster
+    strokes when the vector frame is absent, and the Bold requirement is
+    waived — the route dir's printed gutter digits are regular weight
+    (OCR ink 0.208-0.341, straddling the 4PH0-calibrated 0.30 proxy), and
+    the zone/size/regex gates alone admitted exactly the 1..10 chain with
+    zero false candidates there (junk fails size or window)."""
     spans = spans_of(pv)
     try:
         fr, _fw = qp_frame_rect(pv)
@@ -432,7 +542,18 @@ def qp_markers(pv):
         xx1 = fr.x0 + 36.0
         zy0, zy1 = fr.y0 - 2.0, fr.y1 + 2.0
     except TrimError:
-        zx0, zx1, xx1, zy0, zy1 = 0.0, 90.0, 90.0, 17.0, 797.0
+        fr = None
+        if scan_mode:
+            try:
+                fr, _fw = scan_frame_rect(pv)
+            except TrimError:
+                fr = None
+        if fr is not None:
+            zx0, zx1 = fr.x0 - 14.0, fr.x0 + 20.0
+            xx1 = fr.x0 + 36.0
+            zy0, zy1 = fr.y0 - 2.0, fr.y1 + 2.0
+        else:
+            zx0, zx1, xx1, zy0, zy1 = 0.0, 90.0, 90.0, 17.0, 797.0
     out = []
     for w in words_of(pv):
         x0, y0, x1, y1, t = w[0], w[1], w[2], w[3], w[4]
@@ -452,7 +573,7 @@ def qp_markers(pv):
             continue
         if not (10.5 <= cover["size"] <= 12.6):
             continue
-        if "Bold" not in cover["font"]:
+        if "Bold" not in cover["font"] and not scan_mode:
             continue
         out.append((int(core.group(1).lstrip("*")), y0, y1, x0, x1, cover["font"]))
     return out
@@ -587,17 +708,21 @@ def qp_footer_structure(doc):
     return None
 
 
-def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal"):
+def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal",
+              scan_mode=False):
     """Render QP side. Returns (rows, files) — or (rows, files, runs) with
     return_runs=True (runs = the validated DP marker runs, used by the
     session driver as the MS-side expected structure when the QP footers
     are the anonymous math form). body_extent_mode passes through to
-    qp_body_extent_all ('modal' default = ratified gold standard)."""
+    qp_body_extent_all ('modal' default = ratified gold standard).
+    scan_mode (Task-46 scan route) threads the raster-frame synthesis
+    through markers/sweep/body-extent; for pure-scan QPs only."""
     rows, files = [], {}
     n_pages = len(doc)
 
     # ---- markers per page + DP chain
-    per_page = {p: qp_markers(page_view(doc[p])) for p in range(n_pages)}
+    per_page = {p: qp_markers(page_view(doc[p]), scan_mode)
+                for p in range(n_pages)}
     footer_by_page = {p: qp_footers(page_view(doc[p])) for p in range(n_pages)}
     # expected QP run structure from the printed footers; used only when
     # every footer run validates as exactly 1..n
@@ -620,6 +745,14 @@ def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal"):
     # question is open at their y (math form carries no question number).
     # Numbered-only papers behave exactly as the pre-anon logic: markers set
     # open_q in y order, footer q closes only when q == open_q.
+    # scan_mode (Task-46 scan route): footerless templates never close the
+    # open question, so every later page would sprout a furniture-only cont
+    # strip above its first marker. There, a DIFFERENT question's marker
+    # terminates the open question at the previous page's end (route-dir
+    # evidence: each question occupies exactly one page — markers p2..p11
+    # for q1..q10, the strip above every marker carries only frame/'Leave
+    # blank' furniture) — its cont region is suppressed. Default paths are
+    # untouched (the rule fires only under qp_scan='raster').
     open_q = 0
     open_after = {}
     for p in range(n_pages):
@@ -634,12 +767,15 @@ def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal"):
                 elif open_q:
                     open_q = 0
             else:
+                if scan_mode and open_q and q != open_q:
+                    open_after[p] = 0   # marker-terminated open question
                 open_q = q
 
     files_meta = []   # (name, page, kind, payload)
 
     first_marker_page = all_marks[0][0] if all_marks else None
-    body_extent = qp_body_extent_all(doc, mode=body_extent_mode)
+    body_extent = qp_body_extent_all(doc, mode=body_extent_mode,
+                                     scan_mode=scan_mode)
 
     for p in range(n_pages):
         page = doc[p]
@@ -654,7 +790,7 @@ def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal"):
             files_meta.append(("page", pno, None, name, data, None))
             continue
 
-        sweep_top, sweep_bot = qp_sweep_bounds(page_view(page))
+        sweep_top, sweep_bot = qp_sweep_bounds(page_view(page), scan_mode)
 
         # ---- number white-out rects for this page's chain markers
         chain_marks = {(c[0], c[3]): (c[1], c[2], c[4], c[5]) for c in all_marks}
@@ -1563,7 +1699,8 @@ def paper_meta_from(manifest, sides, shas, repo_head, repo_dir,
 def render_session(qp_path, ms_path, manifest, session, paper_code,
                    repo_dir, head_sha, out_dir, sides=("qp", "ms"),
                    ref_check="text", body_extent_mode="modal",
-                   ms_marker_mode="task44", qp_text_source="pdf"):
+                   ms_marker_mode="task44", qp_text_source="pdf",
+                   qp_scan="off"):
     """Render one paper dir -> images/INDEX.jsonl + qp/ ms/ PNGs under out_dir.
 
     sides: which PDFs exist for this dir ('qp', 'ms' — qp-only cancelled /
@@ -1577,6 +1714,13 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
     Task-46 broken-CMap route: tesseract-derived words/lines are attached
     for the QP's pages before rendering, see ocr_doc_text; opt-in only,
     default paths byte-identical).
+
+    qp_scan: 'off' (default — the frozen standard) or 'raster' (the Task-46
+    scan route for pure-scan QPs: the page frame synthesizes from raster
+    strokes — scan_frame_rect — so sweep/markers/body-extent work without
+    vector geometry, and the marker Bold requirement is waived behind the
+    unchanged zone/size/regex/DP gates). Requires qp_text_source='ocr'
+    (asserted) and a QP with no vector frame; default paths byte-identical.
 
     ref_check: 'text' (default) requires the manifest official_reference in
     pages 1-3 of the side being rendered; 'ratified' skips the literal-text
@@ -1635,15 +1779,19 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                     "paper_json": f"wave2121_trim/{session}_{paper_code}/paper.json"},
         }
         if tag == "qp":
+            if qp_scan == "raster" and qp_text_source != "ocr":
+                raise ValueError("qp_scan='raster' requires qp_text_source='ocr'")
             if qp_text_source == "ocr":
                 attach_ocr_text(d, ocr_doc_text(d))
             try:
                 rows, files, qp_runs = render_qp(
                     d, paper_meta, return_runs=True,
-                    body_extent_mode=body_extent_mode)
+                    body_extent_mode=body_extent_mode,
+                    scan_mode=(qp_scan == "raster"))
             finally:
                 if qp_text_source == "ocr":
                     detach_ocr_text(d)
+                detach_scan_frames(d)
             ms_expected_runs = [max(_q_of(c) for c in run)
                                 for run in qp_runs]
         else:

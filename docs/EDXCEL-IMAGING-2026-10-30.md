@@ -1090,3 +1090,114 @@ cleared at addendum 3; broken-CMap QP queue cleared here). Remaining open
 items: none under Task 46.
 
 Base `c18c3509`.
+
+## Scan-QP OCR route (Task 46 addendum 6, 2026-11-20)
+
+Operator directive `option 2` 2026-11-20: extend the broken-CMap OCR
+mechanism to the route the Task-44 disposition left open — the pure-scan
+QP of `2019-06/WMA12-01` (MS side shipped trim-v3 at addendum 3's family;
+QP refused). Same discipline as addendum 4: per-dir forensics, lib
+generalization behind an opt-in, gold/shipped re-proofs, staging — wave
+execution awaits operator ratification.
+
+### Per-dir forensics (all reproduced on the frozen lib, no mutation)
+
+The Task-44 characterization holds exactly: 11 pages, **zero vector
+drawings on every page**, text layer = 3 words/page (`PMT` stamps; 33
+total), one full-page raster per page (1190x1684 px on 595x842 pt ==
+**~144 dpi native**). Page anatomy (raster-measured at 150 dpi, identical
+on all 10 body pages p2..p11): the printed frame survives as raster ink —
+vertical strokes at x 36.0-36.5 (left), 523.7-524.2 (the Leave-blank
+separator, inside the frame), 558.2-558.7 (right); top edge y=36.0;
+side strokes run to y=792.0; synthesized frame rect **(36.0, 36.0, 558.7,
+792.0)**. The 'Leave blank' column sits between separator and right
+stroke; the DO-NOT-WRITE hatch strip (OCR junk words at x~574) and the
+PMT stamps live outside the frame. p2 carries the header 'Answer all
+questions. Write your answers in the spaces provided.' (y 62.8-72); p3+
+are headerless, content starting at y~62.6. Structure: one question per
+page — gutter markers `1.`..`10.` on p2..p11 (OCR sizes 11.59-12.10,
+inside the 10.5-12.6 gate; x0 54.4-55.8 inside the frame-relative zone).
+**The paper is footerless**: visual band inspection (p2/p9/p11 at 2x)
+shows no '(Total N marks)' lines — unlike the same-family text sibling
+2021-10/WMA11-01, whose anonymous footers sit at y0=765.2, x 426-505.5
+carrying marks 5,5,6,5,8,10,10,10,9,7. Marks print only as per-part
+`(N)` annotations at x 493-506.5.
+
+Refusal reproduction (frozen lib `b869f1bb`): `ref_check='text'` ->
+`page-1/2 text does not carry the paper reference` (the Task-44 recorded
+class; the OCR cover line recovers 'Paper Reference WMA12/01' — printed
+on p1 y~189 — corroborating the ratified identification, but the check
+reads the raw layer so `ref_check='ratified'` remains the mechanism);
+`ref_check='ratified'` -> `body extent not derivable` (markers 0 under
+the Bold gate: the scan's printed gutter digits are regular weight, OCR
+ink 0.208-0.341 straddling the 4PH0-calibrated 0.30 proxy — only 2/10
+pass; and the frameless sweep fallback would amputate the stems anyway:
+its fixed 100 pt band starts below the question text, sweep_top
+100.5-101.4 vs stem y0 62.6-90.7).
+
+### Generalization (lib): `render_session(..., qp_scan='raster')`
+
+Opt-in (with `qp_text_source='ocr'`, asserted; default `'off'`
+byte-identical). `scan_frame_rect` synthesizes the page frame from the
+raster (outermost vertical stroke pair, dark<200 runs >400 pt at 150 dpi,
+cached per page.xref, detached after render) and threads through
+`qp_sweep_bounds`/`qp_markers`/`qp_body_extent_all` wherever the vector
+frame is absent: sweep takes the frame path (PMT above, barcode band
+below -> regions start at marker-8, stems intact, barcode excluded);
+body extent = the synthesized frames' x-span vote **(36.0, 558.7)** —
+the shipped text-template semantics, matching the sibling's vector modal
+**(36.37, 559.28)** within 0.6 pt (dotted answer rules are deliberately
+not voted on rasters: their faint ink merges with the frame strokes in
+per-row first/last measures); the marker Bold requirement is waived in
+scan mode — zone/size/regex/DP gates unchanged (on the route dir they
+admit exactly the 1..10 chain, zero false candidates; junk fails size or
+window). Footerless open-question semantics: in scan mode a DIFFERENT
+question's marker terminates the open question at the previous page's
+end (route evidence: one question per page; the strip above every marker
+carries only frame/'Leave blank' furniture) — without it, footerless
+templates sprout furniture-only cont strips on every later page.
+
+### Proofs (all green)
+
+- **4MA1 2020-06 1H gold A/B**: candidate lib == frozen `b869f1bb` lib,
+  default params, both sides — 60 files, 0 diffs (byte-for-byte).
+- **Sibling 2021-10/WMA11-01 QP** (text QP, same template family):
+  re-rendered at its shipped head `06cec79867` — 32 rows byte-identical
+  (rows + PNG hashes).
+- **WMA12-01 MS side**: re-rendered at its shipped head `9ee54268ba` —
+  35 rows byte-identical.
+- **4PH0 2013-06/4PH0-1P QP** (broken-CMap OCR route, scan flag off):
+  re-rendered at its shipped head `c18c35096d` — 32 rows byte-identical.
+
+### Staging projections (no repo mutation)
+
+`ref_check='ratified'`, `qp_text_source='ocr'`, `qp_scan='raster'`,
+default `modal` extent: **11 rows = 1 page + 10 crops** — `qp_p01.png`
+(cover) + `qp_q01_p02.png`..`qp_q10_p11.png` (one question per page);
+chain COMPLETE 1..10; no cont rows; no marks (footerless template —
+nothing to recover; the printed per-part marks are inside the crops).
+Crop dims 1112 px wide (the sibling's 1114 px class; ink bbox between
+the frame strokes) x 1490-1563 px tall. Visual checks 3/3: q1 (gutter
+white-out, header excluded, stem intact from the first line, part
+markers + `(2)` marks kept, frame strokes as shipped); q2 (stem intact,
+'blank' top-right sliver == the shipped sibling crop's own form);
+sibling crop parity control.
+
+### Proposed execution (on ratification)
+
+1-dir QP append wave (11 projected rows), merge-append byte-verbatim —
+the shipped MS side stays untouched — full QA gate (census 1 INDEX + 11
+PNG, prefix byte-verbatim vs HEAD, INDEX==tree, rehash+dims, naming,
+chain 1..10 + page=q+1 mapping, v3 block page order, schema parity vs
+shipped QP v3 rows — the no-marks keyset is attested in the shipped
+reference, provenance at the lib head, isolation: MS side + gold + all
+other dirs untouched), then docs close-out.
+
+Quality disclosure: the scan's native resolution is ~144 dpi, so the
+150 dpi crops are ~1:1 with the scan — softer than the vector-rendered
+sibling crops; accepted as the only recoverable signal for this dir.
+Sandbox note: a mid-session rebuild wiped /tmp and the clone; the repo
+was re-fetched to `b869f1bb` (blob:none, tree-only delta) and the needed
+cones re-materialized before forensics resumed.
+
+Base `b869f1bb`.
