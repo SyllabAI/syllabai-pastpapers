@@ -1201,3 +1201,59 @@ was re-fetched to `b869f1bb` (blob:none, tree-only delta) and the needed
 cones re-materialized before forensics resumed.
 
 Base `b869f1bb`.
+
+## Ratification executed (Task 46 addendum 6, 2026-11-20)
+
+Operator directive: *"ratify"*. The 1-dir QP append wave of the pure-scan
+2019-06/WMA12-01 route executed exactly per the proposed execution above
+(`ref_check='ratified'`, `body_extent_mode='modal'`, `qp_text_source='ocr'`,
+`qp_scan='raster'` at the lib head `86e49759e2`, `sides=('qp',)`): 11 rows
+appended merge-append byte-verbatim (+11/-0) at the images commit
+`36b67aff` — 1 page (`qp_p01` cover) + 10 crops (q1..q10 on p2..p11, one
+question per page); chain COMPLETE 1..10; footerless 2019 template — no
+conts, no marks, question keyset {bbox,cont,q,trim}; crop dims
+1112x1490-1563 exactly as staged.
+
+Phase A re-verified the execution renders byte-identical vs the ratified
+staging (row-for-row equality modulo `src.repo`, PNG bytes
+reproduction-stable). QA gate 10 checks, 0 failures: git census (1 INDEX
++ 11 PNG, confined to the dir), INDEX prefix byte-verbatim vs HEAD,
+INDEX==tree (46 rows), full rehash of the shipped v3 ms 35 rows + the new
+v3 qp rows incl. PNG dims, naming/page-field (page == q+1), chain 1..10,
+qp block page order, schema parity vs the shipped ms rows + the sibling
+2021-10/WMA11-01 qp attestation (31 crops; the no-marks keyset attested),
+provenance (src.repo @86e49759e2, src.path, paper_json, source_pdf
+sha256/bytes vs the on-disk qp.pdf, tool/paper_ref/parsed parity),
+isolation (ms/ byte-verbatim, gold untouched, no changes outside the
+target dir).
+
+Visual checks on the fresh staging: the cover re-confirms every Task-44
+identification field (WMA12/01, Tue 18 Jun 2019, Pure Mathematics P2,
+P62721A) and prints "There are 10 questions in this question paper.
+The total mark for this paper is 75" — independent corroboration of the
+1..10 chain; the printed gutter markers '1.'..'10.' were rendered
+straight from the source pages at the OCR-detected coordinates (real
+ink, regular weight — the scan-mode Bold waiver) and the emitted crops
+carry the shipped convention's question-number white-out (the sibling
+crop's left-strip structure is identical: frame stroke + body text, no
+gutter digit); the edge strips contain only the 2 px frame strokes
+(cols 11-12 / 1099-1100, pixel-stable across all 10 crops).
+
+Executor notes: (1) a second mid-session sandbox rebuild restored the
+clone stale (2026-10-25 state); the repo was re-fetched to `86e49759`
+(blob:none) and the needed cones re-materialized, and all five route
+proofs plus the staging render were re-run green on the restored tree
+before execution. (2) The two-phase executor aborted once at a Phase B
+checker bug (the post-append tree expectation omitted the 35 shipped ms
+files) — the append and PNG copies themselves verified byte-exact in
+the same run; the check was fixed and the authoritative 10-gate QA then
+validated the full post-condition from scratch.
+
+Disposition: the Task-44 WMA12-01 QP refusal (pure scan, paper-ref
+class) is fully discharged; the OCR-route operator decision is closed;
+2019-06/WMA12-01 is fully imaged on both sides. The 2026-11-02 lane
+counts stand (289/291 dirs trim-v3, 290/291 imaged) — the single
+remaining gap stays 2022-01/WFM01-01 (source defect: the archived MS is
+missing its q9 rows; needs a replacement PDF, not a renderer change).
+
+Base `86e49759`.
