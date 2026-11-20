@@ -37,15 +37,15 @@ materials:
     note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects) no printed session; catalog session Jan 2022'
 - type: mark-scheme
   path: ms.pdf
-  sha256: 5a568d1775dafc0447c8ec983d70babd72cded6bc30235748cd7e122c2744ca7
-  size_bytes: 607465
-  original_filename: IAL_MATHS_2022_Jan_FP1_MS.pdf
+  sha256: a7848d9304cd2bc51f2bbde0f5ed2e7320fbe93595dc42ff60b7fbab97ee03a6
+  size_bytes: 511421
+  original_filename: WFM01_01_rms_20220303.pdf
   source:
-    source_type: third-party-archive
-    archive: Paperlords (paperlords.org archive CDN)
-    source_url: https://archive.paperlords.org/library/IAL/Maths/Jan%202022/IAL_MATHS_2022_Jan_FP1_MS.pdf
-    collected_by: SyllabAI agent (2026-09-14 wave 8)
-    note: 'official Pearson Edexcel document obtained from Paperlords (paperlords.org archive CDN); collected 2026-09-14 wave 8 (operator direction: update Edexcel to latest exam season + cover remaining subjects)'
+    source_type: official-board-site
+    archive: Pearson Qualifications (qualifications.pearson.com CDN)
+    source_url: https://qualifications.pearson.com/content/dam/pdf/International%20Advanced%20Level/Mathematics/2018/Exam-materials/WFM01_01_rms_20220303.pdf
+    collected_by: 'SyllabAI agent (2026-11-20 Task-46 addendum 7 replacement wave, operator direction: search online for a replacement MS)'
+    note: 'REPLACEMENT (Task-46 addendum 7, operator ratification 2026-11-20 of the wrong-unit-MS finding): the wave-8 Paperlords MS (sha 5a568d17..., 607465 B, 21 pp, DocTitle January 2008, Author yilmaz_c) carried an F1 cover over WFM03/F3 Jan-2022 MS body content (plain-English signatures identical to the healthy 2022-01/WFM03-01 ms.pdf on p4/p7/p9/p14/p15/p18: cosh 4x q1, arsech q3, reduction q6, conic/polar q8) and was unusable for WFM01-01; docs recorded the symptom as q9 rows absent / MS run max 8 vs QP expected 9. This official Pearson results mark scheme (22 pp, q1..q9 complete incl. the induction q9 the QP expects, DocTitle Mark Scheme - Unit 1 (WFM01) - January 2022, publishing batch 2022-03-03 = the already-ratified ER batch WFM01_01_pef_20220303.pdf) content-matches the dir QP on q1/q2/q4/q6/q7/q8/q9; mirrors: SaveMyExams CDN byte-identical (same sha256), PMT recompressed (same content)'
 - type: examiner-report
   path: er.pdf
   sha256: 4960b33fa9a7cfb79a0452b7a1935ea0fbef95e5409ebae13d89449c9edd3de1
