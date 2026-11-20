@@ -1416,3 +1416,70 @@ Remaining candidates: the dir's QP side (separate candidate wave; its
 own per-dir forensics pending) and the lane-wide QP-only option.
 
 Base `86e49759`.
+
+## QP-side forensics + staging projection: 2022-01/WFM01-01 (Task 46 addendum 9, 2026-11-21)
+
+Operator directive: *"proceed"* (2026-11-21, the addendum-8 next
+candidate: the dir's QP side; the lane-wide QP-only option stays open).
+
+### Forensics (frozen lib untouched)
+
+The dir QP is the genuine InDesign-produced WFM01/01 (P71099A, created
+2021-06-01, 36 pp): the cover PRINTS "Paper reference WFM01/01 —
+Further Pure Mathematics F1" and pdftotext recovers it on p1 (the
+addendum-7 upgrade note stands; the manifest identification note "no
+text layer / CMap issue" is wrong for this source — every page
+extracts, 298-word cover and 43-52-word continuation pages; the
+identification-note upgrade belongs to a separate manifest decision).
+Structure: 9 questions in per-question page blocks with "Leave blank /
+Question N continued" continuation pages — q1 p2(+p3), q2 p4(+p5-7),
+q3 p8(+p9-11), q4 p12(+p13-15), q5 p16(+p17-19), q6 p20(+p21-23),
+q7 p24(+p25-27), q8 p28(+p29-31), q9 p32(+p33-36); per-question totals
+"(Total for Question N is M marks)" print at each block end
+(p3/p7/p11/p15/p19/p23/p27/p31/p36) — the footered 2022 template
+(vs the footerless 2019 WMA12-01 template).
+
+### Staging projection (render_session sides=('qp',), ref_check='text',
+all other frozen defaults; lib 86e49759e2)
+
+ref_check='text' passes on the printed cover reference (no 'ratified'
+bypass). 36 rows = 1 page (qp_p01 cover 1241x1754) + 35 question-crops
+= 9 base (q1 p2, q2 p4, q3 p8, q4 p12, q5 p16, q6 p20, q7 p24, q8 p28,
+q9 p32) + 26 cont (1/3/3/3/3/3/3/3/4 per q); chain COMPLETE 1..9;
+under-render guard green. Marks recorded on each block's last cont:
+5/8/5/8/8/8/9/10/14, sum 75 == the cover's "total mark for this paper
+is 75" == the MS-side 75. Keyset parity vs the shipped 2023-01/WFM01-01
+qp rows (same footered template family): base {bbox,cont,q,trim},
+total-carrying conts {bbox,cont,q,trim,marks}. Crop band 1113 px (this
+source prints its 'Leave blank'/Q2 gutter INSIDE the ink band, vs the
+2023-01 sibling's 1087 band — per-paper ink extents; the frozen lib
+reproduces both byte-identically); heights 1472-1589. Reproduction: two
+independent render runs emit the staging INDEX byte-identical.
+Inertness proofs at the same head: re-render 2023-01/WFM01-01 qp = 32
+rows byte-identical vs shipped; 2021-10/WMA11-01 qp = 32 rows
+byte-identical; 2019-06/WMA12-01 ms = 35 rows byte-identical.
+Visual checks (4 crops read): cover identification fields clean
+(WFM01/01, Further Pure Mathematics F1, "There are 9 questions ... The
+total mark for this paper is 75", P71099A); q1 base = matrix M + "(5)"
++ answer rules with the gutter-marker white-out; q2_p07_cont =
+"Question 2 continued" + rules + the Leave-blank/Q2 gutter band
+(marks=8 recorded, total-line pixels excluded per the shipped
+convention); q9 base = the induction scheme (a) 5 + (b) 4 + (c) 5,
+content-parity with the shipped MS q9 rows.
+
+### Proposed append-wave execution (awaits operator ratify)
+
+1-dir QP placement wave into the dir that now carries the shipped MS
+images: merge-append 36 qp rows to `images/INDEX.jsonl` (byte-verbatim
+after the 30 shipped ms rows) + `images/qp/` (36 PNGs) from the staging
+tree at head `86e49759e2` (src.repo `syllabai-pastpapers@86e49759e2`;
+source_pdf sha256 `b0f64505...`/1,028,971 B vs the on-disk qp.pdf),
+single images commit, then the 10-gate QA (census, INDEX prefix
+byte-verbatim vs HEAD + INDEX==tree 66 rows, full rehash + dims on the
+36 new rows, naming/page-field, chain 1..9, qp block page order,
+schema parity vs the shipped 2023-01/WFM01-01 qp rows + the 2021-10
+WMA11-01 qp attestation, provenance, isolation vs ms/ + er.pdf/
+manifest/other dirs). The manifest identification-note upgrade stays a
+separate candidate.
+
+Base `86e49759`.
