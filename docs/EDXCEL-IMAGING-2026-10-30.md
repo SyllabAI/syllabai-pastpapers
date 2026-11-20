@@ -1257,3 +1257,111 @@ remaining gap stays 2022-01/WFM01-01 (source defect: the archived MS is
 missing its q9 rows; needs a replacement PDF, not a renderer change).
 
 Base `86e49759`.
+
+## MS replacement: wrong-unit root cause + official swap (Task 46 addendum 7, 2026-11-20)
+
+Operator directives: *"Serach online for 2022-01/WFM01-01 MS PDF"* then
+*"ratify"* (same day, the swap + forensics scope; the images append wave
+stays a separate decision).
+
+### The deeper finding (forensics, frozen lib untouched)
+
+The Task-46 record ("the archived MS ends at q8(e) Way 2 on p21 of 21;
+the MS's q9 rows are absent") was a symptom, not the disease. Re-forensics
+against the swap candidates proved the wave-8 Paperlords MS (sha
+5a568d17..., 607,465 B, 21 pp, DocTitle "January 2008", Author "yilmaz_c",
+Acrobat PDFMaker 21 for Word, created 2022-02-14) is the WRONG UNIT's
+mark scheme:
+
+- its body is the January 2022 WFM03 (F3) MS: plain-English page
+  signatures on p4/p7/p9/p14/p15/p18 are identical to the healthy
+  sibling 2022-01/WFM03-01/ms.pdf (q1 cosh 4x expansion, q3 arsech,
+  q6 e^x sin^n reduction, q8 conic/polar x = 12cos(theta)/(4+5sin(theta))),
+  behind a cover page that prints "Further Pure Mathematics F1 (WFM01)"
+  (p1 replaced / Word re-export; p20-21 pagination drifts vs the WFM03
+  copy while p2/p3/p7/p11/p15-p18 extract identically);
+- WFM03-01 itself is healthy: its QP prints 8 questions totalling 75,
+  matching its own F3-cover MS q1..q8 — no action needed there;
+- the dir's QP is genuine WFM01/01: the cover PRINTS "Paper reference
+  WFM01/01 — Further Pure Mathematics F1" and pdftotext recovers it
+  (contradicting the manifest identification note "no text layer / CMap
+  issue" — the rank-3 identification can be upgraded on this printed
+  evidence; the ratified attribution itself stands, being
+  content-independent of the MS defect); 9 questions, per-question
+  totals 5+8+5+8+8+8+9+10+14 = 75, F1 content (q1 det M, q2 |z1| and
+  z1/z2, q4 roots 4±3i, q5 rotation 60 deg, q6 alpha+beta, q7 normal
+  4x-9y+65=0, q8 f(x) interpolation table, q9 induction
+  sum r^3 = n^2(n+1)^2/4).
+
+### The replacement (search + verification)
+
+Official Pearson CDN, same 2022-03-03 publishing batch as the
+already-ratified ER: `WFM01_01_rms_20220303.pdf` — sha256
+`a7848d9304cd2bc51f2bbde0f5ed2e7320fbe93595dc42ff60b7fbab97ee03a6`,
+511,421 B, 22 pp, DocTitle "Mark Scheme - Unit 1 (WFM01) - January 2022",
+created 2022-03-08. Mirrors: SaveMyExams CDN byte-identical (same
+sha256); PMT recompressed (same content, same creation date/producer).
+Content parity vs the dir QP verified on q1/q2/q4/q6/q7/q8/q9 (det M,
+complex division, roots 4±3i, alpha+beta = -5/A and -12/A, the normal
+4x-9y+65=0, the f(x) table, the induction scheme ending "(14 marks)");
+the guidance page states "The total number of marks for the paper is 75".
+
+### Swap executed (operator "ratify", 2026-11-20)
+
+`2022-01/WFM01-01/ms.pdf` replaced with the official PDF; the manifest
+mark-scheme entry re-sourced `official-board-site` (new sha256/size/
+original_filename + a full-provenance note recording the wrong-unit root
+cause and the mirrors); YAML re-parsed; manifest<->disk sha/bytes
+equality asserted; qp.pdf/er.pdf/identification/operator_ratification
+untouched.
+
+### Staging projection (render forensics, lib 86e49759e2 frozen)
+
+`render_session(sides=('ms',), ref_check='text')` — the official cover
+carries the paper reference in its text layer, so the frozen-standard
+text check passes with no 'ratified' bypass. 30 rows = 7 page (p1 cover,
+p2-3 board boilerplate, p4-7 general marking instructions) + 23
+question-crop = 9 base (q1 p8, q2 p9, q3 p11, q4 p12, q5 p14, q6 p16,
+q7 p17, q8 p18, q9 p20 — the official template restarts its
+"Question | Scheme | Marks" table per question) + 14 cont: 8 are the
+~60 px header strips above each new question's first block (the same
+strip class the shipped dirs carry, e.g. WMA12-01 `q2_p10_cont`
+bbox [0.0, 73.4]); 5 are real mid-question tails q2_p10 / q4_p13 /
+q5_p15 / q8_p19 / q9_p21 bbox [0.0, 839.9]; 1 trailing `q9_p22_cont`
+594x60 = the p22 Pearson copyright line (the shipped trailing-cont
+precedent: WMA12-01 `q10_p26_cont`, 2023-01 WFM01-01 `q9_p25_cont`).
+Chain COMPLETE 1..9 (fused part labels '9(a)' etc. via the ratified
+grammar); question keyset {bbox,cont,q,trim} (no marks — the shipped MS
+keysets); this template prints its totals as "(Total N marks)" so
+ms_total_rows' bare-word x>600 anchor does not fire — block bottoms
+still resolve by the last-inked-row rule; crop widths 1056 on
+1241x1754 pages; under-render guard green (9/9 emitted).
+
+Inertness proofs at the same head: re-render 2019-06/WMA12-01 ms = 35
+rows byte-identical vs shipped (file/page/sha256/bytes/width/height/
+kind); 2021-10/WMA11-01 qp = 32 rows byte-identical. Reproduction:
+rendering the swapped repo ms.pdf re-emits the staging INDEX
+byte-identical.
+
+Visual checks (4 crops read): cover identification fields clean
+("Mark Scheme (Results) January 2022 ... F1 (WFM01/01)"); the q1 base
+crop = full table + Notes rows with the Q-number cell and marks column
+kept; the q9 base crop = the complete recovered induction scheme 9(a)
+B1/M1/M1/A1/A1 (5), 9(b) B1/M1/M1/A1 (4), 9(c) start; the q1_p09 cont =
+the "Question | Scheme | Marks" header strip (shipped-strip parity).
+
+### Proposed append-wave execution (awaits operator ratify)
+
+1-dir MS placement wave into the imageless dir: create
+`images/INDEX.jsonl` (30 rows, staging INDEX byte-verbatim) +
+`images/ms/` (30 PNGs) from the staging tree at head `86e49759e2`
+(src.repo `syllabai-pastpapers@86e49759e2`; source_pdf sha256
+`a7848d93...`/511421 B vs the on-disk ms.pdf), single images commit,
+then the 10-gate QA (census, INDEX==tree, full rehash + dims,
+naming/page-field, chain 1..9, page order, schema parity vs the shipped
+WMA12-01 ms rows (no-marks keyset) + the shipped 2023-01 WFM01-01 ms
+attestation, provenance, isolation vs qp.pdf/er.pdf/manifest/other
+dirs). The QP side remains a separate candidate wave (its own per-dir
+forensics pending; the docs qp-only option stands).
+
+Base `86e49759`.
