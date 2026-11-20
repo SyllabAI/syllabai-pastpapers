@@ -1365,3 +1365,54 @@ dirs). The QP side remains a separate candidate wave (its own per-dir
 forensics pending; the docs qp-only option stands).
 
 Base `86e49759`.
+
+## MS append wave executed: 2022-01/WFM01-01 images (Task 46 addendum 8, 2026-11-20)
+
+Operator directive: *"Execute"* (2026-11-20, ratifying the addendum-7
+proposed 1-dir MS append wave; the QP side stays a separate candidate).
+
+### Placement (two-phase executor, mutation confined to the lane)
+
+Created `2022-01/WFM01-01/images/INDEX.jsonl` (30 rows, staging INDEX
+byte-verbatim, sha-equal to the staging tree) + `images/ms/` (30 PNGs)
+from the staging tree at lib head `86e49759e2`; single images commit
+(`e61d25d1`); source_pdf provenance chain manifest == disk ms.pdf ==
+INDEX `a7848d93...`/511,421 B (the `b8dba8ba` official swap). 30 rows =
+7 page + 23 question-crops = 9 base + 8 header-strip conts + 5 real
+conts + 1 trailing copyright cont (`q9_p22_cont` 594x60); chain COMPLETE
+1..9 (bases q1 p8, q2 p9, q3 p11, q4 p12, q5 p14, q6 p16, q7 p17, q8
+p18, q9 p20); no-marks keyset {bbox,cont,q,trim}; crop widths 1056 on
+1241x1754 pages; render_kind 'question-crop' / 'page', parsed.question
+str digits / null — all per the shipped conventions.
+
+### QA (gate-by-gate, 0 failures)
+
+Two-phase executor aborted-on-first-bug with zero mutation on 4
+probe-gate fixes (render_kind convention, parsed.question str type, two
+probe-script typos, zero-padded attestation pattern), then re-ran clean;
+the 10-gate QA passed with 0 failures: git census (1 INDEX + 30 png
+confined to the dir), INDEX byte-verbatim vs staging + INDEX==tree (30
+rows), full rehash + dims (30/30 sha256+bytes+width+height),
+naming/page-field + cont/base integrity, chain 1..9 (base pages
+8/9/11/12/14/16/17/18/20), ms block page order monotonic, schema parity
+vs shipped WMA12-01 ms rows (no-marks keyset) + shipped 2023-01
+WFM01-01 `q9_p25_cont` trailing-cont attestation, provenance
+(src.repo `syllabai-pastpapers@86e49759e2`; source_pdf sha256/bytes ==
+disk == manifest), isolation (qp.pdf/er.pdf/manifest.yaml
+byte-identical vs HEAD; reference INDEXes untouched; untracked set =
+31 lane-images files only).
+
+Visual spot checks 3/3: the cover identification fields ("Mark Scheme
+(Results) January 2022 — Further Pure Mathematics F1 (WFM01/01)"), the
+q1 base crop (det M table + Notes rows, Q-number cell and marks column
+kept), the q9 base crop (the complete recovered induction scheme 9(a)
+B1/M1/M1/A1/A1 (5) + 9(b) B1/M1/M1/A1 (4) + 9(c) start).
+
+### Status
+
+2022-01/WFM01-01 MS side is now imaged — the lane wave-8 defect (q9
+rows absent / MS run max 8 vs QP expected 9) is fully discharged.
+Remaining candidates: the dir's QP side (separate candidate wave; its
+own per-dir forensics pending) and the lane-wide QP-only option.
+
+Base `86e49759`.
