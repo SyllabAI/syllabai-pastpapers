@@ -1483,3 +1483,68 @@ manifest/other dirs). The manifest identification-note upgrade stays a
 separate candidate.
 
 Base `86e49759`.
+
+## QP append-wave execution: 2022-01/WFM01-01 (Task 46 addendum 10, 2026-11-21)
+
+Operator directive: *"ratify"* (2026-11-21) of the addendum-9 placement
+proposal. Execution record — note the sandbox recycled between the
+proposal and this ratify; recovery and full re-proof were performed
+before any placement.
+
+### Recovery and staging re-proof (pre-placement, zero repo mutation)
+
+- Repo recovered to origin/main = `4fb19292` (addendum 9) after the
+  recycle reset the checkout to a stale pre-Task-46 HEAD; sparse
+  checkout re-armed (no-cone).
+- The `/tmp` staging tree from the proposal session did not survive the
+  recycle; staging was REBUILT from the frozen lib
+  (`scripts/pp_2121_trim_lib.py` verified blob-identical between
+  origin/main and `86e49759e2`) with sides=('qp',), ref_check='text'
+  passing on the printed cover: staging QA 43 passes / 0 failures,
+  reproducing every addendum-9 invariant (36 rows = 1 page + 35 crops;
+  chain COMPLETE 1..9; bases p2/p4/p8/p12/p16/p20/p24/p28/p32 + 26
+  conts; marks 5/8/5/8/8/8/9/10/14 sum 75 on the block-last conts;
+  keyset parity vs the shipped 2023-01 qp rows; crop band 1113, heights
+  1472-1589) and the three sibling inertness proofs (2023-01/WFM01-01
+  qp 32 + 2021-10/WMA11-01 qp 32 + 2019-06/WMA12-01 ms 35 rows
+  byte-identical vs shipped). The durable staging backup now lives
+  outside the repo (`wfm01_qp_stage_backup/`) so a future recycle
+  cannot lose it again. Visual spot checks on the rebuilt staging 3/3
+  (cover identification fields incl. the printed "WFM01/01" paper
+  reference + "total mark for this paper is 75" + P71099A; q1 base =
+  matrix M + "(5)"; q9 block-end cont = "Question 9 continued" +
+  Leave-blank gutter + Q9 footer).
+
+### Placement (two-phase executor `wfm01_qp_append_wave.py`)
+
+- Phase A (staging forensics, zero mutation): 0 failures first run —
+  census 36 = 1 page + 9 base + 26 cont; INDEX==tree; full rehash+dims;
+  naming/page-field qp_pNN/qp_qNN_pNN[_cont]; chain 1..9 with exact
+  block pages; page order monotonic; marks once-per-question on each
+  block's last cont; schema parity (top-level + base/cont entry
+  keysets) vs the shipped 2023-01/WFM01-01 qp rows; provenance
+  b0f64505/1,028,971 with manifest == disk qp.pdf == INDEX source_pdf,
+  src.repo @86e49759e2, src.paper_json
+  wave2121_trim/2022-01_WFM01-01/paper.json; repo invariants (HEAD
+  4fb19292, lib-base ancestor, lane images/ = HEAD INDEX 30 rows +
+  30 ms PNGs byte-identical).
+- Phase B (placement): `images/INDEX.jsonl` merge-appended
+  byte-verbatim (HEAD's 30 ms lines + 36 staging qp lines, diff +36/-0,
+  66 rows, kinds 30 ms + 36 qp) + `images/qp/` 36 PNGs; placed-tree QA
+  green (INDEX bytes == HEAD prefix + staging suffix; full rehash of
+  the 36 placed PNGs; the 30 ms PNGs re-verified byte-identical vs
+  HEAD blobs); isolation green (only tracked change =
+  images/INDEX.jsonl; untracked confined to images/qp/ 36 files;
+  qp.pdf/er.pdf/manifest.yaml and the 2019-06/WMA12-01 +
+  2023-01/WFM01-01 reference INDEXes byte-identical vs HEAD); git add
+  36 adds + 1 modify; images commit `afc21e6d` on top of `4fb19292`;
+  QA gate 10 checks 0 failures.
+
+Status: 2022-01/WFM01-01 QP side imaged — the dir is complete at 66
+rows (qp 36 + ms 30), the wave-8 defect now discharged on both sides.
+Remaining dir candidate: the manifest identification-note upgrade (the
+"no text layer" claim is wrong for this InDesign source) — a separate
+manifest-fix decision, not an images wave. Lane-wide QP-only option
+unchanged.
+
+Base `86e49759`.
