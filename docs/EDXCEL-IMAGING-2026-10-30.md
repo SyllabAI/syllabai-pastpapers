@@ -1664,3 +1664,49 @@ Status: proposal awaiting operator ratify. No lane file mutated in this
 phase (forensics reads only).
 
 Base `2f508129`.
+
+## Manifest identification-note upgrade: execution (Task 46 addendum 12, 2026-11-21)
+
+Operator directive: *"ratify"* (2026-11-21) of the addendum-11 proposal.
+Execution record.
+
+### Phase B (executor `scripts/wfm01_manifest_note_fix.py`)
+
+- First run aborted pre-mutation on one probe (first-fail-stop, tree
+  untouched): the docs↔manifest cross-proof compared the addendum-11
+  fenced block including its YAML "- " list-dash prefix while the
+  manifest scalar excludes it. Stripped, the blocks cross-proof
+  byte-exact — old block == `notes[0]` (382 chars), new block == the
+  ratified 1,072-char note used as the single source of truth for the
+  patch text.
+- Second run: **16 checks, 0 fail** — pre-mutation invariants (HEAD ==
+  origin/main == `d8b41678`, worktree clean); both anchors byte-exact ×1
+  (the full notes line anchored, never the "no text layer" substring —
+  the substring also occurs in the untouched historical
+  `operator_ratification.scope`); surgical byte replacement (no YAML
+  re-dump), `manifest.yaml` 4,971 → 5,665 bytes; field-level semantic
+  diff vs the pre-edit parse == exactly {identification.confidence_rank,
+  identification.notes} with every other scalar equal (materials
+  provenance, series, ingestion, methods, operator_ratification all
+  byte-verbatim); notes single plain scalar (no ": " breakage);
+  provenance re-proof manifest sha/bytes == fresh disk rehash (qp
+  `b0f64505`/1,028,971 + ms `a7848d93`/511,421 + er `4960b33f`/332,943);
+  isolation `git status` == single " M manifest.yaml" and `diff
+  --name-only HEAD` == manifest.yaml only; lane INDEX still 66 rows.
+- Manifest-fix commit `9be9d6a2` on top of `d8b41678` (1 file changed,
+  2 insertions, 2 deletions): `identification.confidence_rank: 3 → 1`
+  (printed ref via text layer, the AUDIT rank-1 class) + `notes[0]`
+  replaced wholesale with the print-verified upgrade note superseding
+  the wave-8 "no text layer / CMap issue" reading; the 2026-09-15
+  operator ratification stands unchanged as content-independent.
+
+Status: 2022-01/WFM01-01 fully discharged — identification upgraded to
+the print-verified rank-1 class, the wave-8 defect closed on every side
+(QP imaged 36 rows, MS replaced + imaged 30 rows, identification note
+upgraded); the dir is complete at 66 rows with no open images
+candidates. Remaining candidates, both awaiting separate operator
+directives: the sibling 2023-01/WFM01-01 manifest-fix (identical wave-8
+note; its QP cover likewise prints "WFM01/01" extractably — evidence in
+addendum 11) and the lane-wide QP-only option.
+
+Base `9be9d6a2`.
