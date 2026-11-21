@@ -1548,3 +1548,119 @@ manifest-fix decision, not an images wave. Lane-wide QP-only option
 unchanged.
 
 Base `86e49759`.
+
+## Manifest identification-note upgrade: proposal (Task 46 addendum 11, 2026-11-21)
+
+Operator directive: *"Manifest identification-note upgrade"* (2026-11-21)
+of the addendum-10 remaining candidate. Zero-mutation forensics plus an
+exact two-line diff proposal, **awaiting operator ratify** — the lane
+`manifest.yaml` is untouched in this phase; this docs addendum is the
+only commit.
+
+### Sandbox recovery (pre-forensics, third recycle)
+
+- The checkout was rolled back to a stale pre-Task-46 HEAD (`ab92cee6`,
+  Task-37 era) with sparse-checkout lost, ~55k ghost-staged deletions and
+  the local `origin/main` ref rolled back with it — a deeper rollback than
+  the addendum-10 recycle.
+- Recovery per the established recipe: the six sparse patterns re-armed
+  (no-cone), `git fetch` (`ab92cee6..2f508129 main`), `git reset --hard
+  origin/main`. Post-recovery: HEAD == origin/main == `2f508129`, worktree
+  clean, lane re-verified (INDEX 66 rows, images/qp 36 + images/ms 30
+  PNGs, qp/ms/er PDFs present). Nothing was lost — the tip was pushed
+  before the recycle.
+
+### Forensics (script `scripts/wfm01_manifest_forensics.py` — reads only, 22 checks, 0 fail)
+
+- Provenance gate: manifest sha256/size_bytes == disk for all three
+  materials — qp.pdf `b0f64505...`/1,028,971 B, ms.pdf `a7848d93...`/
+  511,421 B, er.pdf `4960b33f...`/332,943 B.
+- QP cover text layer: `pdftotext` p1 recovers the printed **"Paper
+  reference WFM01/01"**, the unit title **"Further Pure Mathematics F1"**,
+  "are 9 questions in this question paper. The total mark for this paper
+  is 75", and the InDesign product code **P71099**; `pdffonts` shows an
+  embedded font table with ToUnicode maps (no CMap defect); all 36 pages
+  extract (p2 = the q1 base, "Leave blank … 1. M = [3x 7; 4x+1 2−x] …
+  determinant …").
+- **VERDICT claim-A**: the wave-8 identification note "cover does not
+  expose a readable paper reference (no text layer / CMap issue)" is
+  **FALSE** for this source — identity (unit + paper number) is
+  print-verifiable from the QP cover itself, consistent with
+  `printed_references_seen: [WFM01/01]`.
+- **VERDICT claim-B**: `series.printed` "(not printed on cover; session
+  from source catalog)" is **TRUE** — "January" is absent from the cover
+  text (the only 2022 on p1 is the copyright line "©2022 Pearson
+  Education Ltd."), so `series.printed` / `series.source:
+  catalog_fallback` stay unchanged.
+- Official companions corroborate the session: ms.pdf p1 prints "Mark
+  Scheme (Results) January 2022 … Further Pure Mathematics F1
+  (WFM01/01)"; er.pdf p1 prints "January 2022 … (WFM01/01)".
+- Rank-scale precedent (AUDIT-2026-09-12): rank 0 = full print
+  verification including session (the lane's 2019-06/WMA12-01 and
+  2021-10/WMA11-01 — both session-printed, both rank 0); **rank 1 =
+  "printed ref via text layer"** (AUDIT wave-10/11 identity class list);
+  rank 2/3 = scan covers / partner inference; rank 5 = date_rule. This
+  dir (ref printed + extractable, session catalog-fallback) is the
+  rank-1 class.
+- Addendum-7 pre-authorization stands: "the rank-3 identification can be
+  upgraded on this printed evidence; the ratified attribution itself
+  stands, being content-independent of the MS defect".
+- Sibling finding (evidence only, **out of scope**): 2023-01/WFM01-01
+  carries the identical wave-8 note, and its QP cover likewise prints
+  "WFM01/01" extractably ("January" absent there too, so its
+  `series.printed` stays) — a separate sibling manifest-fix candidate
+  for a future directive.
+
+### Proposed diff (2022-01/WFM01-01/manifest.yaml — surgical, two lines)
+
+1. `identification.confidence_rank: 3` → `identification.confidence_rank: 1`
+2. `identification.notes[0]` replaced wholesale (old line preserved
+   verbatim below and in git history; `operator_ratification` untouched
+   — historical record):
+
+   old:
+
+   ```
+   - no printed session; catalog session Jan 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3
+   ```
+
+   new:
+
+   ```
+   - identification upgraded (Task-46 addendum 11, 2026-11-21, forensic re-read of the QP cover text layer; supersedes the wave-8 reading that this cover "does not expose a readable paper reference (no text layer / CMap issue)") — the QP cover PRINTS Paper reference WFM01/01 and unit title Further Pure Mathematics F1 in a fully extractable text layer (pdftotext p1 recovers both, embedded fonts carry ToUnicode maps, all 36 pages extract — no CMap defect in this InDesign source P71099A), so identity (unit + paper number) is print-verified from the QP cover itself and confidence_rank upgrades 3 -> 1 (printed ref via text layer, the AUDIT rank-1 class) on the addendum-7 pre-authorization; the operator ratification of 2026-09-15 stands unchanged as content-independent of the wave-8 MS defect; session remains NOT printed on the QP cover (the only 2022 on p1 is the copyright line 2022 Pearson Education Ltd.) so series.printed stays catalog-based, corroborated by the official companions ms.pdf and er.pdf (both covers print January 2022 with WFM01/01); methods unchanged
+   ```
+
+Everything else byte-verbatim: `materials[]` provenance (all three
+sha256/size_bytes), `operator_ratification` (historical decision record),
+`series`, `ingestion`, `identification.methods` (pdf_text +
+partner_inference — both remain true statements; the note explains the
+upgrade). Unique anchors verified: `confidence_rank: 3` ×1 and the full
+old notes line ×1 — the "no text layer" substring also occurs in the
+historical `operator_ratification.scope`, so the patch anchors the full
+line and never the substring.
+
+### Phase-B plan (executor `wfm01_manifest_note_fix.py`, on operator "ratify")
+
+Surgical byte-level replacement (no YAML re-dump), then a QA gate adapted
+from the 10-gate discipline:
+
+1. pre-mutation repo invariants — HEAD == origin/main, worktree clean,
+   expected base;
+2. both anchors byte-exact and unique before edit;
+3. post-edit `yaml.safe_load` parses; field-level semantic diff vs the
+   pre-edit parse shows exactly the two intended changes and every other
+   scalar equal;
+4. provenance re-proof — manifest sha256/size_bytes == fresh disk rehash
+   for all three PDFs;
+5. the new note parses as a single plain-scalar list item (no ": "
+   breakage);
+6. isolation — `git status` shows `manifest.yaml` as the only tracked
+   change; qp.pdf/er.pdf/images/** byte-identical vs HEAD;
+7. lane INDEX still 66 rows, untouched;
+8. single manifest-fix commit (house message) + docs addendum 12 record;
+9. push, origin/main == new HEAD.
+
+Status: proposal awaiting operator ratify. No lane file mutated in this
+phase (forensics reads only).
+
+Base `2f508129`.
