@@ -61,12 +61,12 @@ identification:
   methods:
   - pdf_text
   - partner_inference
-  confidence_rank: 3
+  confidence_rank: 1
   printed_references_seen:
   - WFM01/01
   stray_prints: []
   notes:
-  - no printed session; catalog session Jan 2022 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3
+  - identification upgraded (Task-46 addendum 11, 2026-11-21, forensic re-read of the QP cover text layer; supersedes the wave-8 reading that this cover "does not expose a readable paper reference (no text layer / CMap issue)") — the QP cover PRINTS Paper reference WFM01/01 and unit title Further Pure Mathematics F1 in a fully extractable text layer (pdftotext p1 recovers both, embedded fonts carry ToUnicode maps, all 36 pages extract — no CMap defect in this InDesign source P71099A), so identity (unit + paper number) is print-verified from the QP cover itself and confidence_rank upgrades 3 -> 1 (printed ref via text layer, the AUDIT rank-1 class) on the addendum-7 pre-authorization; the operator ratification of 2026-09-15 stands unchanged as content-independent of the wave-8 MS defect; session remains NOT printed on the QP cover (the only 2022 on p1 is the copyright line 2022 Pearson Education Ltd.) so series.printed stays catalog-based, corroborated by the official companions ms.pdf and er.pdf (both covers print January 2022 with WFM01/01); methods unchanged
 operator_ratification:
   status: ratified
   decided_by: Nawaf Al Hussain Khondokar <nkhondokar2420136@bscse.uiu.ac.bd>
