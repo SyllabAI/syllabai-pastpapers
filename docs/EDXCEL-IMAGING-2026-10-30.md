@@ -1710,3 +1710,100 @@ note; its QP cover likewise prints "WFM01/01" extractably — evidence in
 addendum 11) and the lane-wide QP-only option.
 
 Base `9be9d6a2`.
+
+## Sibling manifest identification-note upgrade: proposal (Task 46 addendum 13, 2026-11-21)
+
+Operator directive: *"Sibling manifest-fix"* (2026-11-21) — the
+addendum-12 remaining candidate applied to **2023-01/WFM01-01**, whose
+manifest carries the identical wave-8 identification note. Zero-mutation
+forensics plus an exact two-line diff proposal, **awaiting operator
+ratify** — the 2023-01 `manifest.yaml` is untouched in this phase; this
+docs addendum is the only commit.
+
+### Sandbox recovery (pre-forensics, fourth recycle)
+
+- Same corruption signature as the third recycle: checkout rolled back to
+  the Task-37-era snapshot (`ab92cee6`), ~55k ghost-staged deletions,
+  sparse patterns and the local `origin/main` ref rolled back with it,
+  and the 2023-01 lane absent from the worktree.
+- Recovery per the established recipe: six sparse patterns re-armed,
+  `git fetch` (`ab92cee6..92a4de37`), `git reset --hard origin/main` —
+  HEAD == origin/main == `92a4de37`, worktree clean, both lanes
+  re-verified (2022-01: 66 rows; 2023-01: 65 rows = 32 qp + 33 ms PNGs,
+  qp/ms/er PDFs present). Nothing was lost.
+
+### Forensics (script `scripts/wfm01_2301_manifest_forensics.py` — reads only, 25 checks, 0 fail)
+
+- Provenance gate: manifest sha256/size_bytes == disk for all three
+  materials — qp.pdf `8095abfc...`/567,633 B, ms.pdf `b6654768...`/
+  395,544 B, er.pdf `c3e5e19b...`/243,881 B.
+- QP cover text layer: `pdftotext` p1 recovers the printed **"Paper
+  reference WFM01/01"** and the unit title **"Further Pure Mathematics
+  F1"**; InDesign product code **P72464A**; `pdffonts` shows an embedded
+  font table with ToUnicode maps; **all 32 pages extract** (p2 = the q1
+  base, "… determine the matrix AB … det(AB) = 0"); `series.printed`
+  "(not printed on cover; session from source catalog)" is **TRUE** —
+  "January" is absent and **no "2023" token appears anywhere on the
+  cover**: the only year is the production-year copyright line "©2022
+  Pearson Education Ltd." (January-2023 sittings carry a 2022 copyright
+  year).
+- **VERDICT claim-A**: the wave-8 note "cover does not expose a readable
+  paper reference (no text layer / CMap issue)" is **FALSE** for this
+  source — identity is print-verifiable from the QP cover itself,
+  consistent with `printed_references_seen: [WFM01/01]`.
+- Official companions corroborate the session: ms.pdf p1 prints "Mark
+  Scheme (Results) January 2023 … Further Pure Mathematics F1 (WFM01)";
+  er.pdf p1 prints "January 2023 …".
+- Precedent: the identical 2022-01/WFM01-01 upgrade (addendum 12, commit
+  `9be9d6a2`) — same note template, same wave-8 family, same rank-1
+  class (printed ref via text layer, AUDIT wave-10/11 identity class
+  list; the lane's fully-print-verified dirs sit at rank 0 with session
+  printed, which this dir is not).
+- Anchors: `  confidence_rank: 3` ×1 and the full old notes line ×1 —
+  the "no text layer / CMap issue" substring also occurs in the
+  historical `operator_ratification.scope` (2026-09-15 ratification),
+  so the patch anchors the full line and never the substring.
+- Images state (must stay untouched): INDEX 65 rows, images/qp/ 32 PNGs,
+  images/ms/ 33 PNGs.
+
+### Proposed diff (2023-01/WFM01-01/manifest.yaml — surgical, two lines)
+
+1. `identification.confidence_rank: 3` → `identification.confidence_rank: 1`
+2. `identification.notes[0]` replaced wholesale (old line preserved
+   verbatim below and in git history; `operator_ratification` untouched —
+   historical record):
+
+   old:
+
+   ```
+   - no printed session; catalog session Jan 2023 cover does not expose a readable paper reference (no text layer / CMap issue); identity (unit + paper number) taken from the Paperlords source listing for this file; corroborated by the unit->code mapping established for 2019+ sessions (e.g. Paperlords U1..U6 == WBI11..16) and by sibling print-verified files in the same session; rank 3
+   ```
+
+   new:
+
+   ```
+   - identification upgraded (Task-46 addendum 13, 2026-11-21, forensic re-read of the QP cover text layer; supersedes the wave-8 reading that this cover "does not expose a readable paper reference (no text layer / CMap issue)") — the QP cover PRINTS Paper reference WFM01/01 and unit title Further Pure Mathematics F1 in a fully extractable text layer (pdftotext p1 recovers both, embedded fonts carry ToUnicode maps, all 32 pages extract — no CMap defect in this InDesign source P72464A), so identity (unit + paper number) is print-verified from the QP cover itself and confidence_rank upgrades 3 -> 1 (printed ref via text layer, the AUDIT rank-1 class) on the identical 2022-01/WFM01-01 upgrade precedent (Task-46 addendum 12 commit 9be9d6a2); the operator ratification of 2026-09-15 stands unchanged as content-independent; session remains NOT printed on the QP cover — no 2023 token appears at all and the only year is the production-year copyright line 2022 Pearson Education Ltd. (January-2023 sittings carry a 2022 copyright year) — so series.printed stays catalog-based, corroborated by the official companions ms.pdf and er.pdf (both covers print January 2023 with WFM01/01); methods unchanged
+   ```
+
+Everything else byte-verbatim: `materials[]` provenance, `series`,
+`ingestion`, `identification.methods`, `operator_ratification`.
+
+### Phase-B plan (executor `wfm01_2301_manifest_note_fix.py`, on operator "ratify")
+
+Mirror of the addendum-11/12 Phase-B discipline, with sibling inertness:
+surgical byte replacement (no YAML re-dump); gates — pre-mutation
+invariants (HEAD == origin/main, clean, base `92a4de37`); anchors
+byte-exact ×1 with the addendum-13 docs blocks cross-proofed byte-exact
+vs the manifest (YAML "- " prefix stripped, as learned in addendum 12);
+field-level semantic diff == exactly the two intended changes; provenance
+re-proof vs fresh disk rehash; new note single plain scalar; isolation —
+`git status` == single " M manifest.yaml", qp/ms/er PDFs + images/**
+byte-identical vs HEAD, **2022-01/WFM01-01 manifest (rank 1 + upgraded
+note) and both INDEXes byte-identical**; INDEX still 65 rows; single
+manifest-fix commit (house message) + docs addendum 14 record; push,
+origin/main == new HEAD.
+
+Status: proposal awaiting operator ratify. No lane file mutated in this
+phase (forensics reads only).
+
+Base `92a4de37`.
