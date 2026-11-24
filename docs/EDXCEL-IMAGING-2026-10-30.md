@@ -1807,3 +1807,67 @@ Status: proposal awaiting operator ratify. No lane file mutated in this
 phase (forensics reads only).
 
 Base `92a4de37`.
+
+## Sibling manifest identification-note upgrade: execution (Task 46 addendum 14, 2026-11-25)
+
+Operator directive: *"ratify"* (2026-11-25) of the addendum-13 proposal.
+Execution record.
+
+### Phase B (executor `scripts/wfm01_2301_manifest_note_fix.py`)
+
+- Three runs, two probe fixes (first-fail-stop discipline; the ratified
+  patch text was never altered):
+  - Run 1 aborted pre-mutation at gate3-pre — the write is guarded by
+    that check, so the tree stayed untouched. Probe defect: the
+    expected-size arithmetic counted Unicode characters instead of
+    UTF-8 bytes; the ratified note carries 4 em-dashes, so its manifest
+    line is 1,212 bytes over 1,204 chars and the true delta is +825
+    bytes (4,120 → 4,945), not +817. (The 2022-01 precedent behaves the
+    same way: its ratified note is 1,072 chars = 1,076 bytes.)
+  - Run 2 mutated and passed gates 3–6 (the patch itself verified
+    clean) but failed the read-only sibling-inertness probe: its
+    `startswith` assertion expected the 2022-01 note to cite
+    "addendum 12" while the note actually cites "addendum 11" — the
+    proposal number under which its forensics ran, not the manifest
+    commit number. The run-2 mutation was restored to HEAD byte-exact
+    (`git restore`) before the clean re-run.
+  - Run 3 from a clean tree: **18 checks, 0 fail**.
+- The passing run: pre-mutation invariants (HEAD == origin/main ==
+  `b37252d0`, worktree clean); both anchors byte-exact ×1 — the full
+  notes line anchored, never the "no text layer / CMap issue" substring
+  (count 2: `notes[0]` + the untouched historical
+  `operator_ratification.scope`); the addendum-13 fenced old/new blocks
+  cross-proofed byte-exact vs the manifest modulo the YAML "- " prefix
+  (old block == `notes[0]`, 382 chars; new block = the ratified
+  1,199-char note as the single source of truth for the patch text);
+  surgical byte replacement (no YAML re-dump), `manifest.yaml`
+  4,120 → 4,945 bytes; field-level semantic diff vs the pre-edit parse
+  == exactly {identification.confidence_rank, identification.notes}
+  with every other scalar equal (materials provenance, series,
+  ingestion, methods, operator_ratification all byte-verbatim); notes
+  single plain scalar (no ": " breakage); provenance re-proof manifest
+  sha/bytes == fresh disk rehash (qp `8095abfc`/567,633 +
+  ms `b6654768`/395,544 + er `c3e5e19b`/243,881); isolation
+  `git status` == single " M manifest.yaml" and `diff --name-only HEAD`
+  == manifest.yaml only; 2023-01 INDEX still 65 rows; sibling 2022-01
+  inert (rank 1 + addendum-11 upgraded note + INDEX 66 rows), both
+  INDEXes byte-identical vs HEAD.
+- Manifest-fix commit `7538364d` on top of `b37252d0` (1 file changed,
+  2 insertions, 2 deletions): `identification.confidence_rank: 3 → 1`
+  (printed ref via text layer, the AUDIT rank-1 class) + `notes[0]`
+  replaced wholesale with the print-verified upgrade note superseding
+  the wave-8 "no text layer / CMap issue" reading; `series.printed`
+  stays catalog-based (no "January" and no 2023 token anywhere on the
+  QP cover — only the 2022 production-year copyright line) and the
+  2026-09-15 operator ratification stands unchanged as
+  content-independent.
+
+Status: the addendum-12 remaining candidate discharged — 2023-01/
+WFM01-01 identification upgraded to the print-verified rank-1 class,
+images state untouched (65 rows = 32 qp + 33 ms). Both sibling dirs
+(2022-01 + 2023-01) now carry the identical rank-1 print-verified
+identification, closing the wave-8 "no text layer / CMap issue" defect
+on every side. Remaining lane candidate, awaiting a separate operator
+directive: the lane-wide QP-only option.
+
+Base `7538364d`.
