@@ -2090,3 +2090,129 @@ census + route work); 2015-06/4PH0-1PR (source gap); the math lane
 MS-ONLY-SOURCE dirs (source gaps). No manifest/pdf changes.
 
 Base `ed090ad5`.
+
+## 2016-06/4PH0-1P QP instrumentation route: root cause + generalization (Task 46 addendum 17, 2026-11-27)
+
+Operator directive: *"Proceed with next"* (2026-11-27) — opening the
+recorded queue's next item: the 2016-06/4PH0-1P QP TrimError
+marker-detection class (the addendum-15/16 leftover), per the
+frozen-standard instrumentation discipline (the addendum-2 route:
+per-dir root cause → generalization → gold re-proof → staging
+projections → proposal; **placement awaits operator ratify**). No lane
+file is mutated in this phase: the lib generalization commit + this
+docs addendum are the only commits, and the lib change is
+behavior-neutral by proof (below).
+
+### Sandbox recovery (pre-work, eighth recycle)
+
+- Same harsh signature as recycle 7: the entire `.git` rolled back to
+  the clone-era snapshot — worktree empty (nothing materialized), HEAD
+  and the `origin/main` tracking ref both reset to the Task-37-era
+  `ab92cee6`, object store truncated (the addendum-14-era
+  `7538364d`/`879e3c05` shas invalid locally; every object after
+  `ab92cee6` gone).
+- `git ls-remote origin main` probe confirmed GitHub main at `957329f7`
+  (the addendum-16 tip, pushed 2026-11-26); `git fetch origin main`
+  restored the tracking ref (`ab92cee6..957329f7`); lean sparse re-arm
+  (`docs/**` + `scripts/pp_2121_trim_lib.py`) + `reset --hard` →
+  HEAD == origin/main == `957329f7`, clean. The route/reference/gold
+  blobs (9, then +21) materialized via batched `read-tree -mu HEAD`
+  under temporary sparse patterns — the established anti-hang method
+  for the blob:none promisor clone. All executor/proof scripts live
+  outside the repo and survived; new Phase-A scripts written there too
+  (`scripts/task46_1620_{instrument,worker,proofs}.py`,
+  `task46_1620_backup/` for the pristine lib, `task46_1620_stage_backup/`
+  for staging trees + reports).
+
+### Root cause (reproduced first on the frozen routes, then instrumented)
+
+- Reproduction on the exact addendum-16 frozen routes (`render_session(
+  sides=('qp',), ref_check='text', body_extent_mode='widest-family',
+  qp_text_source='pdf', qp_scan='off')` on lib blob `08a27c896` ==
+  `86e49759e2`'s blob, re-verified at HEAD): `TrimError: QP: run max 5
+  != expected 12` — exact.
+- Gutter census (all 36 pages; wide-window word scan with per-gate
+  classification, report `task46_1620_stage_backup`-adjacent
+  `/tmp/task46_1620/instrument_report.json`): 11 of 12 markers detect
+  cleanly at `frame.x0+7.5` (x0 42.48/42.58, MyriadPro-Bold, size 12.0)
+  but **q6 on p14 prints at x0 55.32 = `frame.x0+20.34`** — 0.34pt
+  beyond the `qp_markers` zone high side (`frame.x0+20`), rejected by
+  the x-window gate. The DP chain then runs 1,2,3,4,5,7,8,9,10,11,12 →
+  not a valid 1..n run → longest-1..k-prefix trim (expected_runs mode,
+  trailing-stray path) → first run maxes at 5 vs the footer-derived
+  expected `[12]` → the refusal.
+- p14 is a continued-table first-row page (q5's table continues above;
+  q6 opens at p14 top) — the QP-side analogue of the MS family-A
+  continued-table first-row shift (addendum 2), on the HIGH side
+  (+20.34 vs the siblings' +7.5; the MS family shifted LEFT of the
+  window). Everything else about the dir is healthy: printed-footer
+  structure `[12]` (12 numbered footers p3..p33), marks
+  3+8+9+9+14+10+14+6+15+9+11+12 = 120, and the printed cover carries
+  "The total mark for this paper is 120".
+
+### Generalization (`1580a83d`): `qp_markers` mode `'legacy24'`
+
+Default behavior bit-for-bit unchanged. `mode='legacy24'` widens the
+zone high side `+20 → +24` (mirroring the MS `legacy24` low-side −24
+precedent, addendum 2); threaded `render_session(qp_marker_mode=…) →
+render_qp → qp_markers`. Every other gate unchanged (x1 cap
+`frame.x0+36`, frame y-span, size 10.5–12.6, Bold, cover-span, regex,
+DP 1..N + expected-run arbitration). Lib blob
+`83ca46bdfb881fec8da0405c1a78e738e98b643e`.
+
+### Proof battery (`scripts/task46_1620_proofs.py`; 32 checks, 0 fail)
+
+- **G1 4MA1 2020-06 1H gold A/B**: old-lib (`08a27c896`) default ==
+  new-lib default == new-lib legacy24 — all 30 files byte-identical
+  (INDEX bytes + every PNG sha256) per pairwise tree-sha comparison.
+- **G2 shipped-dir inertness**: 2016-01/4PH0-1P + the 5 addendum-16
+  dirs, qp side re-rendered under BOTH modes — v3 qp rows
+  byte-verbatim vs shipped INDEX lines: 27/31/30/26/33/27 rows (the
+  addendum-16 census exactly; re-proves Task-46 wave reproducibility
+  after the recycle).
+- **G3 zone census**: legacy24 candidate delta +0 on all 6 reference
+  dirs and **+1 exactly on the route dir** (the p14 q6).
+
+### Staging projections (`task46_1620_proofs.py route 1580a83d04…`)
+
+The route dir on the frozen routes + `qp_marker_mode='legacy24'`
+(provenance head = the lib commit, shipped convention; paper_code dash
+form `4PH0-1P` per the addendum-16 executor convention):
+
+| dir | rows (page+crop) | chain | marks sum |
+|---|---|---|---|
+| 2016-06/4PH0-1P | 32 (2+30) | COMPLETE 1..12 | 120 |
+
+Three fresh-interpreter renders byte-identical (INDEX sha `8cf6a749…`,
+33 files); marks exactly-once-per-question 3/8/9/9/14/10/14/6/15/9/
+11/12; block page order non-decreasing; schema parity vs the shipped
+2016-01 v3 qp rows (row/render/question keysets incl. the ±`marks`
+entry variants) — all green. Provenance: `src.repo
+syllabai-pastpapers@1580a83d04`, `source_pdf` sha `0809498228d2…` ==
+manifest qp.pdf row (352,244 B). Visual spot checks 3/3: q6 base crop
+(p14 comet/Earth diagram, part markers + right-margin marks, clean
+white-outs, no footer); q7 base crop (tick/cross table complete);
+cover page row ("Paper Reference 4PH0/1P", "The total mark for this
+paper is 120").
+
+### Proposed execution (awaits operator ratify)
+
+1. **1-dir QP append wave** (2016-06/4PH0-1P): per-dir staging
+   re-render byte-exact vs this addendum's projections, merge-append
+   byte-verbatim (shipped topical 49 + v3 ms 34 rows preserved; INDEX
+   83 → 115, +32/−0), single images commit, the addendum-16 10-gate QA
+   suite per dir (census, INDEX==tree, rehash+dims, naming/page-field,
+   chain 1..12, marks 120 exactly-once, block page order, schema parity
+   vs the shipped 2016-01 v3 qp rows, provenance at the lib head
+   `1580a83d04`, isolation: everything else byte-identical vs HEAD),
+   docs addendum 18 record, push.
+2. **Recorded, unchanged** (not in this wave): the 22 2-series dirs
+   (own scope directive + census + route work); 2015-06/4PH0-1PR (no QP
+   PDF in the DAM — source gap); the math lane MS-ONLY-SOURCE dirs
+   (source gaps).
+
+Status: proposal awaiting operator ratify. No lane file mutated in this
+phase (the lib generalization commit is behavior-neutral by proof; the
+only writes are the staging trees + JSON reports outside the repo).
+
+Base `1580a83d`.
