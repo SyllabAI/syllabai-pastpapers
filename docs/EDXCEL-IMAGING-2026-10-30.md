@@ -2216,3 +2216,62 @@ phase (the lib generalization commit is behavior-neutral by proof; the
 only writes are the staging trees + JSON reports outside the repo).
 
 Base `1580a83d`.
+## 2016-06/4PH0-1P QP append wave: the instrumentation-route dir closed (Task 46 addendum 18, 2026-11-27)
+
+Operator directive: *"Ratify"* (2026-11-27) — the addendum-17 proposal
+executed as proposed, unchanged: the 1-dir QP append wave placing the
+route dir's 32 v3 qp rows, closing the last of the six addendum-3
+marker-refusal dirs (the five addendum-16 dirs + this instrumentation
+route).
+
+### Execution (two-phase executor `scripts/task46_1620_wave_exec.py`)
+
+- **Phase A (zero mutation)**: repo-state gates (HEAD == origin/main ==
+  `41e6f195` clean; lib blob `83ca46bd` frozen-identical at HEAD, at the
+  lib commit `1580a83d04`, and in the worktree; 2016-01 reference ground
+  truth self-check OK); two fresh-subprocess renders on the frozen routes
+  + `qp_marker_mode='legacy24'` byte-identical (INDEX 76,039 B + 32 PNGs,
+  **INDEX sha `8cf6a749…` reproducing the addendum-17 recorded anchor**
+  — full reproducibility across the recycles); staging QA vs the
+  projection table (32 rows = 2 page + 30 crops, 12 bases + 18 conts,
+  chain COMPLETE 1..12, marks 120 exactly-once
+  3/8/9/9/14/10/14/6/15/9/11/12, block page order non-decreasing,
+  rehash+dims, naming/page-field, schema parity vs the shipped 2016-01
+  v3 qp rows, provenance `src.repo syllabai-pastpapers@1580a83d04` +
+  manifest == blob == source_pdf `0809498228d2…`/352,244 B); HEAD
+  prestate gates (INDEX 83 rows = ms 53 + topical qp 30, v3 ms 34,
+  topical non-v3 49, no prior `qp/qp_` rows, INDEX==tree, trailing
+  newline). Staging under `task46_1620_wave_stage_backup/` (outside the
+  repo). 0 failures.
+- **Phase B**: third fresh render byte-exact vs the Phase A staging;
+  merge-append placement (INDEX prefix byte-verbatim, +32/−0, 83 → 115
+  rows; 32 PNGs beside the untouched topical crops); placed-tree QA +
+  whole-dir INDEX==tree (committed tree | 32 new names, exactly);
+  isolation (only the 1 `images/INDEX.jsonl` modified, 32 untracked
+  confined to `images/qp/`, status otherwise clean);
+  `git add --sparse <rel>/images` (32 adds + 1 modify, numstat +32/−0).
+  0 failures.
+- **Visual spot checks 3/3** on the placed files: q6 base crop (p14
+  comet/Earth diagram, part markers + right-margin marks, clean
+  white-outs, no footer), q7 base crop (tick/cross table complete),
+  cover page row (printed "Paper Reference 4PH0/1P" + "The total mark
+  for this paper is 120").
+
+### Result
+
+- Images commit `470f6df7` (33 files: 32 `images/qp/qp_*.png` adds +
+  the INDEX edit, +32/−0). No manifest/pdf changes; every ms/ + topical
+  file byte-identical vs `41e6f195`.
+- The 4PH0 1-series QP side is now complete across all six former
+  marker-refusal dirs plus 2016-01 (shipped) — the marker-detection
+  class is closed; the `legacy24` mode remains opt-in and every other
+  dir's default rendering is bit-for-bit unchanged.
+- Recorded, unchanged (not in this wave): the 22 2-series dirs (own
+  scope directive + census + route work); 2015-06/4PH0-1PR (no QP PDF
+  in the DAM — source gap); the math lane MS-ONLY-SOURCE dirs (source
+  gaps).
+
+Status: wave executed on the ratified addendum-17 proposal; no
+discrepancies — every recorded invariant reproduced exactly.
+
+Base `470f6df7`.
