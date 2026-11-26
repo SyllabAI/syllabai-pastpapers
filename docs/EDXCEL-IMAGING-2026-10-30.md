@@ -1871,3 +1871,116 @@ on every side. Remaining lane candidate, awaiting a separate operator
 directive: the lane-wide QP-only option.
 
 Base `7538364d`.
+
+## Lane-wide QP-only option: census + proposal (Task 46 addendum 15, 2026-11-25)
+
+Operator directive: *"Proceed"* (2026-11-25) — opening the lane-wide
+QP-only option, the last remaining Task-46 candidate. Zero-mutation
+census plus staging projections plus a scoped proposal, **awaiting
+operator ratify** — no lane file is mutated in this phase; this docs
+addendum is the only commit.
+
+### Sandbox recovery (pre-census, fifth recycle)
+
+- Same corruption signature as recycles 3–4: checkout rolled back to the
+  Task-37-era snapshot (`ab92cee6`), ~55k ghost-staged deletions, sparse
+  patterns lost, docs/lane dirs absent. The local `origin/main` ref had
+  survived this time (`879e3c05`, the addendum-14 tip, pushed earlier).
+- Recovery per the established recipe: six sparse patterns re-armed,
+  `git reset --hard origin/main` — HEAD == origin/main == `879e3c05`,
+  worktree clean. Nothing lost.
+- Clone physics note: this is a **blob:none partial clone** — two census
+  runs hung on lazy promisor fetches (`ls-tree -l` sizes and per-blob
+  `cat-file` on non-materialized PNG/PDF blobs; a plain `git fetch` also
+  timed out once). The final method materializes only the small census
+  blobs (below) and never touches sizes.
+
+### Census (script `scripts/task46_lane_qp_census.py` — reads only, 18 checks, 0 fail)
+
+- Method: `git ls-tree -r` (no `-l`) against HEAD + one batched
+  promisor fetch materializing `**/images/INDEX.jsonl` and
+  `**/manifest.yaml` under both lanes (~526 small blobs) via temporary
+  sparse patterns, then patterns restored + `read-tree -mu HEAD` —
+  worktree clean, zero residue. Scope covers **both readings of
+  "lane-wide"**: mathematics-2018 (291 dirs) and the Task-46 original
+  wave set `4ph0` (44 dirs = the 22 in-scope 1-series + the 22 2-series).
+- **mathematics-2018: 15,201 INDEX rows (0 topical), ZERO imaging gaps**
+  — every dir is fully imaged on every side whose PDF exists: BOTH 279 +
+  QP-ONLY-SOURCE 5 (2020-06 WFM01/02/03 + WST02/03 — no MS exists) +
+  MS-ONLY-SOURCE 6 (2019-06/WME01-01, 2020-10/WFM01-01, 2020-10/
+  WFM02-01, 2020-10/WFM03-01, 2020-10/WST03-01, 2022-06/WFM02-02 — no
+  qp.pdf on disk; two more than the redo record's four, which counted
+  only the redo-placed set) + NO-PDFS 1 (2020-10/WME03-01, the excluded
+  empty dir). **The lane-wide QP-only option is vacant for the math
+  lane.**
+- **4ph0: 2,723 INDEX rows (1,569 topical)**, classes BOTH 15 +
+  MS-ONLY-SOURCE 1 (`2015-06/4PH0-1PR` — no qp.pdf, the recorded DAM
+  gap) + **28 GAP-QP**, exactly: the **6 addendum-3 MS-imaged
+  marker-refusal 1-series dirs** (2014-01/1P, 2014-06/1PR, 2016-06/1P,
+  2017-01/1P, 2017-06/1P, 2018-01/1P — MS rows 36/31/34/32/30/20
+  shipped, QP sides never rendered) and the **22 2-series dirs**
+  (2P/2PR — out of the 4SC0 wave scope by the recorded decision,
+  unimaged on **both** sides: topical rows only).
+- Reference assertions all green: 2022-01/WFM01-01 66 rows (qp 36 = 1
+  page + 35 crops, ms 30, chain 1..9, marks 75); 2023-01 65 (32+33,
+  marks 75); 2019-06/WMA12-01 46 (11+35, chain 1..10); 2021-10/WMA11-01
+  qp 32 (+ms 36); 4ph0 2016-01/4PH0-1P **qp 27 rows, chain 1..12, marks
+  120** — matching the addendum-4 record's "27 shipped rows" (the
+  32-row quotes in the docs belong to 2021-10/WMA11-01 and
+  2013-06/4PH0-1P; a census-probe misattribution of those quotes was
+  fixed, no record erratum). Integrity: every INDEX parses; INDEX ==
+  tree file-set equality holds on every dir with rows.
+- Probe note: every gap-QP cover probes text-layer (311–401 words on
+  p1–2); `ref_found=None` is the census regex's `/0\d` artifact (the
+  `/1P` `/2P` suffix form), not evidence of absence — the pipeline's
+  own `ref_check='text'` gate is authoritative.
+
+### Staging projections (script `scripts/task46_4ph0_qp_staging.py` — /tmp only, zero repo mutation)
+
+The six 1-series gap QPs on the ratified routes
+(`render_session(sides=('qp',), ref_check='text',
+body_extent_mode='widest-family')`, frozen lib `86e49759e2` —
+blob-identical at HEAD re-verified):
+
+| dir | rows (page+crop) | chain | marks sum |
+|---|---|---|---|
+| 2014-01/4PH0-1P | 31 (3+28) | COMPLETE 1..13 | 120 |
+| 2014-06/4PH0-1PR | 30 (3+27) | COMPLETE 1..9 | 120 |
+| 2016-06/4PH0-1P | **REFUSES** — `TrimError: QP: run max 5 != expected 12` | — | — |
+| 2017-01/4PH0-1P | 26 (2+24) | COMPLETE 1..13 | 120 |
+| 2017-06/4PH0-1P | 33 (3+30) | COMPLETE 1..11 | 120 |
+| 2018-01/4PH0-1P | 27 (2+25) | COMPLETE 1..14 | 120 |
+
+5/6 green; the literal page-1/2 reference gate passes in all five (same
+template family as the ratified 12-dir widest-family wave). The
+2016-06/1P refusal is a **new QP-side marker-detection class** on this
+dir — per the frozen-standard protocol it is not improvised.
+
+### Proposed execution (awaits operator ratify)
+
+1. **5-dir QP append wave** (the five green dirs): per-dir staging
+   re-render byte-exact vs the addendum-15 projections, merge-append
+   byte-verbatim (shipped topical + ms rows preserved), single images
+   commit, 10-gate QA per dir (census, INDEX==tree, rehash+dims,
+   naming/page-field, chains, block page order, schema parity vs the
+   shipped 12-dir QP rows, provenance at the lib head, isolation:
+   everything else byte-identical vs HEAD), docs addendum 16 record,
+   push.
+2. **2016-06/4PH0-1P stays queued** for the instrumentation route
+   (per-dir QP marker root cause → generalization → 4MA1 gold re-proof
+   → separate operator ratification), exactly the addendum-2
+   discipline.
+3. **Recorded, awaiting separate directives** (not in this wave): the
+   22 2-series dirs (both sides unimaged; the 4SC0 wave's recorded
+   scope decision excluded them; their QP covers probe text-layer,
+   rank 0 except the rank-3 2013-06/2PR scan, and their MS sides are
+   untested on this template family — imaging them would need its own
+   scope directive + census + route work); 2015-06/4PH0-1PR (no QP PDF
+   exists in the DAM — source gap); the math lane MS-ONLY-SOURCE dirs
+   (no qp.pdf exists — source gaps, nothing to render).
+
+Status: proposal awaiting operator ratify. No lane file mutated in this
+phase (census + staging reads only; the only writes are /tmp staging
+trees and the JSON report outside the repo).
+
+Base `879e3c05`.
