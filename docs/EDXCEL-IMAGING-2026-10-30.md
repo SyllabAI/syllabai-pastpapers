@@ -2396,3 +2396,53 @@ phase (census + staging reads only; the only writes are the STAGE trees +
 JSON report outside the repo; worktree clean).
 
 Base `3f4b6318`.
+
+## 2-series Wave A executed: 19-dir QP append wave (Task 46 addendum 20, 2026-11-27)
+
+Operator directive: *"Ratify"* (2026-11-27) — the addendum-19 proposal
+executed unchanged, Wave A first of the three ratified single-side append
+waves: the 19 frozen-route QP dirs of the 22 4PH0-2P/2PR set (+332 PNGs;
+2013-06/2PR QP belongs to Wave B, 2015-06/2PR QP and 2018-01/2P QP to the
+instrumentation queue).
+
+### Execution (two-phase executor `scripts/task46_2series_wave_exec.py`)
+
+- Phase A, 0 failures (zero repo mutation): repo-state gates
+  HEAD==origin/main==`770211e1` clean, lib blob `83ca46bd` frozen-identical
+  at HEAD == the lib commit `1580a83d04` == worktree; per dir two
+  fresh-subprocess renders on the frozen routes (`qp_marker_mode='task44'`,
+  provenance head = the lib commit) byte-identical to each other AND
+  byte-exact vs the addendum-19 staging projections; staging QA vs the
+  projection table (rows = 2–3 page + 13–17 crops), chains COMPLETE
+  1..6..1..9, schema parity vs the shipped 2016-01 v3 qp rows, provenance
+  @1580a83d04 manifest==blob==source_pdf, HEAD prestate gates
+  (topical-only INDEX, v3 = 0, INDEX==tree, no `qp/qp_` / `ms/ms_`
+  collisions).
+- The new marks == printed-total gate (per dir): detected footer marks
+  sum == printed cover "The total mark for this paper is 60" (exactly one
+  token across pages 1–2) == 60, each question's marks detected exactly
+  once.
+- Phase B, 0 failures: third fresh render per dir byte-exact vs the
+  Phase A staging; temporary sparse materialization of the 19
+  `images/INDEX.jsonl` (lean sparse bytes backed up and restored; the
+  appended file patterns drop cone matching for the duration only);
+  merge-append +N/−0 byte-verbatim (24→42, 24→39, 30→49, 31→51, 25→45,
+  23→40, 28→44, 27→45, 22→37, 28→48, 26→44, 25→43, 23→40, 21→36, 23→40,
+  23→40, 25→43, 24→40, 26→44); 332 PNGs placed under `images/qp/`;
+  placed-tree QA + whole-dir INDEX==tree; isolation: only the 19 INDEX
+  modified + 332 untracked confined to `images/qp/`, every ms/ + topical
+  file untouched; `git add --sparse`, numstat +N/−0 ×19.
+- Visual ratification: 19/19 cover renders (printed "Paper Reference
+  4PH0/2P" / "4PH0/2PR" boxes, session/date lines, no furniture) + 6/6
+  question crops (right-margin marks, clean white-outs, no strips) —
+  contact sheets built from the Phase-A staging
+  (`task46_2series_stage/visual/A_covers.png`, `A_crops.png`).
+- Images commit `f80cbcb2` (351 files: 332 PNGs + 19 INDEX edits,
+  +332/−0), pushed (HEAD == origin/main).
+
+Recorded, unchanged (remaining ratified waves): Wave C (MS append, 17
+dirs, +331 PNGs) and Wave B (2013-06/2PR QP raster/OCR, +18 PNGs) — next;
+the 7 instrumentation dir-sides, 2015-06/4PH0-1PR and the math
+MS-ONLY-SOURCE gaps unchanged.
+
+Base `770211e1`.
