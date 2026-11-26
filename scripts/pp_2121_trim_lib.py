@@ -513,7 +513,7 @@ def qp_sweep_bounds(pv, scan_mode=False):
     return top, bot
 
 
-def qp_markers(pv, scan_mode=False):
+def qp_markers(pv, scan_mode=False, mode="task44"):
     """Candidate question-number markers: [(q, y0, y1, x0, x1, font)] gutter.
 
     Word-based (a number can be merged into one span with its text); the
@@ -534,11 +534,18 @@ def qp_markers(pv, scan_mode=False):
     waived — the route dir's printed gutter digits are regular weight
     (OCR ink 0.208-0.341, straddling the 4PH0-calibrated 0.30 proxy), and
     the zone/size/regex gates alone admitted exactly the 1..10 chain with
-    zero false candidates there (junk fails size or window)."""
+    zero false candidates there (junk fails size or window).
+    mode='legacy24' (Task-46 QP instrumentation route): the zone high
+    side widens +20->+24 — the 2016-06/4PH0-1P continued-table first-row
+    '6' prints at frame.x0+20.34 (its sibling markers sit at +7.5) and
+    missed the default cap by 0.34pt, truncating the DP chain at q5
+    (TrimError run max 5 != expected 12; footers expect 1..12). The QP-
+    side analogue of the MS family-A continued-table first-row shift
+    (addendum 2), on the high side; every other gate unchanged."""
     spans = spans_of(pv)
     try:
         fr, _fw = qp_frame_rect(pv)
-        zx0, zx1 = fr.x0 - 14.0, fr.x0 + 20.0
+        zx0, zx1 = fr.x0 - 14.0, fr.x0 + (24.0 if mode == "legacy24" else 20.0)
         xx1 = fr.x0 + 36.0
         zy0, zy1 = fr.y0 - 2.0, fr.y1 + 2.0
     except TrimError:
@@ -549,7 +556,7 @@ def qp_markers(pv, scan_mode=False):
             except TrimError:
                 fr = None
         if fr is not None:
-            zx0, zx1 = fr.x0 - 14.0, fr.x0 + 20.0
+            zx0, zx1 = fr.x0 - 14.0, fr.x0 + (24.0 if mode == "legacy24" else 20.0)
             xx1 = fr.x0 + 36.0
             zy0, zy1 = fr.y0 - 2.0, fr.y1 + 2.0
         else:
@@ -709,19 +716,23 @@ def qp_footer_structure(doc):
 
 
 def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal",
-              scan_mode=False):
+              scan_mode=False, qp_marker_mode="task44"):
     """Render QP side. Returns (rows, files) — or (rows, files, runs) with
     return_runs=True (runs = the validated DP marker runs, used by the
     session driver as the MS-side expected structure when the QP footers
     are the anonymous math form). body_extent_mode passes through to
     qp_body_extent_all ('modal' default = ratified gold standard).
     scan_mode (Task-46 scan route) threads the raster-frame synthesis
-    through markers/sweep/body-extent; for pure-scan QPs only."""
+    through markers/sweep/body-extent; for pure-scan QPs only.
+    qp_marker_mode passes through to qp_markers ('task44' default;
+    'legacy24' = Task-46 QP instrumentation route, zone high side
+    +20->+24, default behavior bit-for-bit unchanged)."""
     rows, files = [], {}
     n_pages = len(doc)
 
     # ---- markers per page + DP chain
-    per_page = {p: qp_markers(page_view(doc[p]), scan_mode)
+    per_page = {p: qp_markers(page_view(doc[p]), scan_mode,
+                              mode=qp_marker_mode)
                 for p in range(n_pages)}
     footer_by_page = {p: qp_footers(page_view(doc[p])) for p in range(n_pages)}
     # expected QP run structure from the printed footers; used only when
@@ -1700,7 +1711,7 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                    repo_dir, head_sha, out_dir, sides=("qp", "ms"),
                    ref_check="text", body_extent_mode="modal",
                    ms_marker_mode="task44", qp_text_source="pdf",
-                   qp_scan="off"):
+                   qp_scan="off", qp_marker_mode="task44"):
     """Render one paper dir -> images/INDEX.jsonl + qp/ ms/ PNGs under out_dir.
 
     sides: which PDFs exist for this dir ('qp', 'ms' — qp-only cancelled /
@@ -1787,7 +1798,8 @@ def render_session(qp_path, ms_path, manifest, session, paper_code,
                 rows, files, qp_runs = render_qp(
                     d, paper_meta, return_runs=True,
                     body_extent_mode=body_extent_mode,
-                    scan_mode=(qp_scan == "raster"))
+                    scan_mode=(qp_scan == "raster"),
+                    qp_marker_mode=qp_marker_mode)
             finally:
                 if qp_text_source == "ocr":
                     detach_ocr_text(d)
