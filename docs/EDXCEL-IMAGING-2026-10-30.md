@@ -2275,3 +2275,124 @@ Status: wave executed on the ratified addendum-17 proposal; no
 discrepancies — every recorded invariant reproduced exactly.
 
 Base `470f6df7`.
+## 2-series scope opened: 4PH0-2P/2PR Phase-A census + route feasibility (Task 46 addendum 19, 2026-11-27)
+
+Operator directive: *"Proceed with remaining work"* (2026-11-27) — opening
+the recorded queue's next item: the 22 2-series dirs (recorded at
+addenda 15–18 as "own scope directive + census + route work"; out of the
+4SC0-wave scope by the recorded decision, unimaged on both sides). This
+phase is Phase A only, zero repo mutation: the 22 dirs' blobs were
+materialized under temporary sparse patterns, copied to
+`task46_2series_stage/` (outside the repo), the lean sparse state restored
+exactly, and every probe/render read the STAGE copies (worktree verified
+clean before and after; the lib at HEAD blob `83ca46bd` == the lib commit
+`1580a83d04`, re-verified per run).
+
+### Census (`scripts/task46_2series_phaseA.py` mat/census; 22 dirs)
+
+- Materials: **all 22 dirs carry qp.pdf + ms.pdf — no source gaps in the
+  2-series** (16 × 4PH0-2P 2011-06..2019-01 + 6 × 4PH0-2PR); INDEX rows
+  topical only (v3 = 0; 21–31 rows per dir, ms+qp topical mix), consistent
+  with the addendum-14 census at the current tree.
+- QP text layer on all 22 (p1–2 word counts 320–380). 2013-06/2PR is the
+  recorded rank-3 scan-era cover (partial text layer, literal reference
+  not machine-readable, series_printed None); every other cover probes
+  rank 0.
+- Marker census (both modes on the QP, task44 on the MS): 20 dirs detect
+  6–9 QP markers (task44 == legacy24 everywhere in this set — no high-side
+  TrimError-class candidates); **2018-01/4PH0-2P detects 0 QP markers in
+  BOTH modes across 20 pages** (anomaly, below); MS markers 6–14 per dir.
+
+### Staging projections (frozen routes; fresh interpreter per render)
+
+QP side — `render_session(sides=('qp',), ref_check='text',
+body_extent_mode='widest-family', qp_text_source='pdf', qp_scan='off',
+qp_marker_mode='task44')`, provenance head = the lib commit:
+
+- **19/22 GREEN** — chains COMPLETE 1..6..1..9, and the new Phase-A
+  marks-vs-printed audit: detected marks == printed "total mark for this
+  paper is 60" exactly-once per question in every green dir.
+- **2013-06/2PR** refuses the literal text gate (scan-era cover) and is
+  GREEN on the opt-in Task-46 raster/OCR route (`qp_text_source='ocr'`,
+  `qp_scan='raster'`, `ref_check='ratified'`): 18 rows (2+16), chain 1..7,
+  marks 60 — **first-execution candidate** for that route.
+- **2015-06/2PR** renders chain-complete 1..7 but marks 48 != printed 60:
+  q5's question-total token is absent from the text layer (only part
+  marks "(1)/(2)/(4)…" print across its five pages; the sibling totals
+  "(6)"/"(9)" print normally) — a marks-token instrumentation class.
+- **2018-01/2P** refuses by lib **TypeError** — `sorted(marker_by_page…)`
+  comparing a None-coordinate marker tuple (lib line 798) — with the
+  census detecting 0 markers on all 20 pages: a marker-geometry anomaly
+  plus a robustness gap (crash instead of clean TrimError refusal). Not
+  improvised; instrumentation class.
+
+MS side — `sides=('ms',)`, default `modal` extent (the 4SC0-wave MS
+convention), `ref_check='text'` first then `'ratified'` on the recorded
+slash-form refusal:
+
+- **2014-06/2PR passes the literal text gate** (unique in the set).
+- **16 dirs GREEN on `'ratified'`** (21 rows/2+22 max, chains complete
+  1..6..1..9; MS rows carry no marks entries — the shipped convention,
+  chain-complete is the invariant). Per-dir visual cover ratification to
+  be recorded at execution, as the 4SC0 wave did.
+- **5 MS marker-run refusals** (the recorded continued-table/page-top
+  first-row family, the addendum-2 lineage): 2012-01/2P [missing 5],
+  2013-06/2PR [missing 6], 2016-06/2P [missing 7], 2017-01/2P
+  [missing 5], 2019-01/2P [missing 5] — run shapes
+  [1,2,3,4,6,7] / [1,2,3,4,5,7] / [1,2,3,4,5,6,8] / [1,2,3,4,5,7] /
+  [1,2,3,4,6,7,8,9].
+
+### Proposal (awaits operator ratify) — three single-side append waves
+
+Topical rows preserved byte-verbatim everywhere; merge-append +N/−0; the
+addendum-16 10-gate QA suite per dir **plus** the new marks ==
+printed-total gate on every QP dir; provenance head = the lib commit at
+execution; staging re-render byte-exact (multi-render determinism per
+dir); single images commit per wave; docs record per wave; push.
+
+| dir | idx now | QP rows | MS rows |
+|---|---|---|---|
+| 2011-06/4PH0-2P | 24 | a18 | c21 |
+| 2012-01/4PH0-2P | 24 | a15 | — |
+| 2012-06/4PH0-2P | 30 | a19 | c24 |
+| 2013-01/4PH0-2P | 31 | a20 | c24 |
+| 2013-06/4PH0-2P | 25 | a20 | c15 |
+| 2013-06/4PH0-2PR | 31 | b18 | — |
+| 2014-01/4PH0-2P | 23 | a17 | c21 |
+| 2014-06/4PH0-2P | 28 | a16 | c17 |
+| 2014-06/4PH0-2PR | 27 | a18 | c15 |
+| 2015-01/4PH0-2P | 22 | a15 | c19 |
+| 2015-06/4PH0-2P | 28 | a20 | c22 |
+| 2015-06/4PH0-2PR | 24 | — | c18 |
+| 2016-01/4PH0-2P | 26 | a18 | c22 |
+| 2016-06/4PH0-2P | 25 | a18 | — |
+| 2016-06/4PH0-2PR | 23 | a17 | c19 |
+| 2017-01/4PH0-2P | 21 | a15 | — |
+| 2017-06/4PH0-2P | 23 | a17 | c17 |
+| 2017-06/4PH0-2PR | 23 | a17 | c18 |
+| 2018-01/4PH0-2P | 24 | — | c18 |
+| 2018-06/4PH0-2P | 25 | a18 | c20 |
+| 2018-06/4PH0-2PR | 24 | a16 | c21 |
+| 2019-01/4PH0-2P | 26 | a18 | — |
+
+1. **Wave A — QP append, 19 frozen-route dirs** (a-rows: +332 PNGs; per
+   dir merge-append into the topical INDEX, e.g. 2011-06 24 → 42).
+2. **Wave C — MS append, 17 dirs** (c-rows: +331 PNGs; 1 literal-text +
+   16 ratified with recorded visual cover checks).
+3. **Wave B — QP append, 2013-06/2PR** on the opt-in raster/OCR route
+   (+18 PNGs; first execution of that route → instrumentation-grade proof
+   battery first: gold A/B vs the task44-era path, determinism ×3, visual
+   cover ratification of the scanned cover).
+4. **Queued for the instrumentation routes (7 dir-sides):** 2018-01/2P QP
+   (None-coordinate marker geometry + clean-refusal robustness fix),
+   2015-06/2PR QP (q5 marks token absent from the text layer; OCR-route
+   candidate), and the 5 MS marker-run dirs — per-dir root cause →
+   generalization → gold re-proof, each with its own ratification.
+5. **Recorded, unchanged:** 2015-06/4PH0-1PR (no QP PDF in the DAM) and
+   the math lane MS-ONLY-SOURCE dirs — source gaps, nothing to render.
+
+Status: proposal awaiting operator ratify. No lane file mutated in this
+phase (census + staging reads only; the only writes are the STAGE trees +
+JSON report outside the repo; worktree clean).
+
+Base `3f4b6318`.
