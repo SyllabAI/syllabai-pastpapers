@@ -1984,3 +1984,109 @@ phase (census + staging reads only; the only writes are /tmp staging
 trees and the JSON report outside the repo).
 
 Base `879e3c05`.
+
+## 5-dir QP append wave executed (Task 46 addendum 16, 2026-11-26)
+
+Operator directive: *"Ratify"* (2026-11-26) of the addendum-15 proposal
+item 1. Execution record — note the sandbox recycled BETWEEN the proposal
+push and this ratify (seventh recycle, harsher signature); recovery and
+full re-proof were performed before any placement.
+
+### Sandbox recovery (pre-render, seventh recycle)
+
+- New signature: this time the recycle rolled the ENTIRE `.git` back to
+  the clone-era snapshot — checkout at the Task-37-era `ab92cee6`, ~55k
+  ghost-staged deletions, sparse patterns lost, AND the object store
+  truncated to clone-era objects (`cat-file -t 7d7b9341` = invalid
+  object; the addendum-15-era blobs gone locally), and the `origin/main`
+  tracking ref itself reset to `ab92cee6` (recycles 3–5 had left the
+  tracking ref intact).
+- Recovery: a `git ls-remote origin main` probe confirmed GitHub main at
+  `7d7b9341` (the addendum-15 push had survived; only the local mirror
+  was damaged); `git fetch origin` restored the tracking ref
+  (`ab92cee6..7d7b9341`); a LEAN sparse re-arm (`docs/**` +
+  `scripts/pp_2121_trim_lib.py` only — the full recovery set would have
+  lazy-fetched the 4 math dirs' PNG/PDF blobs against the truncated
+  object store) + `reset --hard origin/main` → HEAD == origin/main ==
+  `7d7b9341`, clean; then the wave's 16 blobs (5× qp.pdf + 5×
+  manifest.yaml + 5× images/INDEX.jsonl + the 2016-01 reference INDEX)
+  materialized in ONE batched `read-tree -mu HEAD` via temporary sparse
+  patterns. The two-phase executor scripts live outside the repo and
+  survived untouched.
+
+### Phase A (renders + staging QA + prestate — zero repo mutation)
+
+- Frozen routes per the proposal: `render_session(sides=('qp',),
+  ref_check='text', body_extent_mode='widest-family',
+  qp_text_source='pdf', qp_scan='off')` on `scripts/pp_2121_trim_lib.py`
+  (HEAD blob == `86e49759e2`'s blob, re-verified per run); provenance
+  head = the lib commit (rows carry `src.repo
+  syllabai-pastpapers@86e49759e2` — the shipped convention). Note: the
+  addendum-15 projection script had passed `official_reference` in the
+  `paper_code` arg; the projection-table invariants are paper_code-
+  independent and are reproduced exactly, while the placed rows use the
+  dash-form `paper_code` (`4PH0-1P`/`4PH0-1PR` = unit_code +
+  `paper_number_variant`) so schema parity + provenance hold against the
+  shipped 2016-01/2022-01 rows.
+- The addendum-15 `/tmp` staging trees did not survive the recycle; the
+  byte-exactness proof is (a) every projection-table invariant
+  reproduced exactly and (b) THREE fresh renders per dir byte-identical
+  (INDEX bytes + all PNG bytes; fresh interpreter each). The durable
+  staging backup now lives outside the repo
+  (`task46_4ph0_qp_stage_backup/`).
+- Census vs the addendum-15 projections, all exact: 2014-01/1P 31 rows
+  (3 page + 28 crops = 13 bases + 15 conts), chain COMPLETE 1..13, marks
+  120; 2014-06/1PR 30 (3+27 = 9+18), 1..9, 120; 2017-01/1P 26 (2+24 =
+  13+11), 1..13, 120; 2017-06/1P 33 (3+30 = 11+19), 1..11, 120;
+  2018-01/1P 27 (2+25 = 14+11), 1..14, 120. The literal page-1/2
+  reference gate passed inside every render (no ratified bypass).
+- Gates per dir: staging INDEX==tree; rehash+dims (sha256+bytes+width+
+  height, format PNG) on every row; naming/page-field
+  `qp_pNN`/`qp_qNN_pNN[_cont]`; chain + marks exactly-once-per-question
+  + sum 120; page order non-decreasing; schema parity vs the shipped 27
+  v3 qp rows of 2016-01/4PH0-1P (row/render/src/parsed/source_pdf
+  keysets + question-entry variants with/without `marks`; the gate logic
+  itself first validated against that reference's chain 1..12 + marks
+  120 ground truth); provenance (`src.repo` `@86e49759e2`, `src.path`,
+  `paper_json`, `source_pdf` == manifest materials == disk blob:
+  `eb2bada5`/2014-01, `5e36eb3f`/2014-06, `d3aa26ac`/2017-01,
+  `30a08ce6`/2017-06, `eeb91ac4`/2018-01); HEAD prestate (INDEX
+  row/class counts, v3-ms rows 36/31/32/30/20, zero prior `qp/qp_` rows,
+  whole-dir INDEX==tree). **0 failures.**
+
+### Phase B (placement — mutation confined to the 5 images/ dirs)
+
+- Third fresh render per dir byte-compared vs the Phase A staging (the
+  proposal's "staging re-render byte-exact" gate) — identical.
+- Merge-append byte-verbatim: INDEX +31/+30/+26/+33/+27, −0 each
+  (84→115, 85→115, 71→97, 76→109, 61→88); 147 PNGs placed under
+  `images/qp/` beside the untouched topical crops. Whole-dir INDEX==tree
+  (legacy topical + v3 ms + new v3 qp) plus placed-tree
+  rehash+dims+naming+chains+marks+page order all green.
+- Isolation: only the 5 `images/INDEX.jsonl` modified; 147 untracked
+  confined to the 5 `images/qp/` dirs; every ms/ + topical file
+  byte-identical vs HEAD; the 2016-01 reference, the 4 math dirs and
+  docs untouched. Staging via `git add --sparse` (the new files sit
+  outside the sparse patterns by design — a pattern-wide
+  `images/qp/**` would lazy-fetch the remote legacy PNG blobs and hang);
+  staged set = 147 adds + 5 modifies, numstat +N/−0 each. **0 failures.**
+- Visual spot checks 3/3: 2014-01 cover page (printed "Paper Reference
+  4PH0/1P" + "The total mark for this paper is 120" — the marks-sum gate
+  corroborated from the cover itself); 2018-01 q1 base crop (part
+  markers (a)/(b)/(i)/(ii) + right-margin marks, question-number gutter
+  white-out clean, dotted answer rules intact, no footer); 2017-06 q11
+  cont crop (generator diagram + (i)/(ii) marks + numbered answer lines,
+  rounded frame corners per the trim-v3 standard, no footer).
+
+### Disposition
+
+Images commit `ed090ad5` (152 files changed, 147 insertions: 147 PNGs +
+5 INDEX edits). The 5 of 6 addendum-3 marker-refusal 1-series dirs now
+carry both sides (topical + v3 ms + v3 qp). Remaining open items,
+unchanged from addendum 15: 2016-06/4PH0-1P QP (the `TrimError` marker-
+detection class — instrumentation route, separate operator
+ratification); the 22 2-series dirs (both sides — own scope directive +
+census + route work); 2015-06/4PH0-1PR (source gap); the math lane
+MS-ONLY-SOURCE dirs (source gaps). No manifest/pdf changes.
+
+Base `ed090ad5`.
