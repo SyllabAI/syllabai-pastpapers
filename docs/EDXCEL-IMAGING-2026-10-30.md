@@ -2446,3 +2446,52 @@ the 7 instrumentation dir-sides, 2015-06/4PH0-1PR and the math
 MS-ONLY-SOURCE gaps unchanged.
 
 Base `770211e1`.
+
+## 2-series Wave C executed: 17-dir MS append wave (Task 46 addendum 21, 2026-11-27)
+
+Operator directive: *"Ratify"* (2026-11-27) — the addendum-19 proposal
+executed unchanged, Wave C second of the three ratified single-side append
+waves: the 17 MS append dirs (+331 PNGs; 2014-06/2PR on the literal text
+gate, the unique pass in the set; the other 16 on `ref_check='ratified'`,
+the 4SC0-wave MS convention after the recorded slash-form paper-ref
+refusal). The 5 MS marker-run refusal dirs (2012-01/2P, 2013-06/2PR,
+2016-06/2P, 2017-01/2P, 2019-01/2P) stay queued for the instrumentation
+routes.
+
+### Execution (same executor, `--wave C`)
+
+- Phase A, 0 failures: repo-state gates HEAD==origin/main==`414b4c02`
+  (post-Wave-A) clean, lib blob `83ca46bd` frozen-identical; per dir two
+  fresh renders on the frozen MS routes byte-identical to each other AND
+  byte-exact vs the addendum-19 staging projections; staging QA vs the
+  projection table (rows = 2–3 page + 12–22 crops), chains COMPLETE
+  1..6..1..9, MS rows carry **no marks entries** (the shipped convention —
+  chain-complete is the invariant), schema parity vs the shipped 2016-01
+  v3 ms rows (27-row reference), provenance @1580a83d04
+  manifest==blob==source_pdf (`ms.pdf`), HEAD prestate gates re-anchored
+  post-Wave-A (v3 rows == the Wave-A qp counts exactly, no `ms/ms_`
+  collisions).
+- Side-aware prestate fix recorded for the lane: the addendum-16 prestate
+  gate's blanket "no prior v3 rows" guard was generalized to the
+  side-aware form (Wave C forbids prior v3 **ms** rows only and requires
+  the tree's `qp/qp_` count == the dir's Wave-A count exactly).
+- Phase B, 0 failures: third fresh render per dir byte-exact; temporary
+  sparse materialization (lean bytes backed up/restored); merge-append
+  +N/−0 byte-verbatim (42→63, 49→73, 51→75, 45→60, 40→61, 44→61, 45→60,
+  37→56, 48→70, 24→42, 44→66, 40→59, 40→57, 40→58, 24→42, 43→63, 40→61);
+  331 PNGs placed under `images/ms/`; placed-tree QA + whole-dir
+  INDEX==tree; isolation: only the 17 INDEX modified + 331 untracked
+  confined to `images/ms/`, every qp/ + topical file untouched;
+  `git add --sparse`, numstat +N/−0 ×17.
+- Visual cover ratification recorded per dir (17/17): "Mark Scheme
+  (Results)/(Final)" covers with the correct session (June 2011 …
+  Summer 2018) and variant (Paper 2P / 2PR), clean renders — contact
+  sheet `task46_2series_stage/visual/C_covers.png`.
+- Images commit `aff3fc36` (348 files: 331 PNGs + 17 INDEX edits,
+  +331/−0), pushed (HEAD == origin/main).
+
+Recorded, unchanged: Wave B (2013-06/2PR QP raster/OCR, +18 PNGs) — next;
+the 7 instrumentation dir-sides, 2015-06/4PH0-1PR and the math
+MS-ONLY-SOURCE gaps unchanged.
+
+Base `f80cbcb2`.
