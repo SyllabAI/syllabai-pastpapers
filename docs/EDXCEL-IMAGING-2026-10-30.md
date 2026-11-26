@@ -2495,3 +2495,60 @@ the 7 instrumentation dir-sides, 2015-06/4PH0-1PR and the math
 MS-ONLY-SOURCE gaps unchanged.
 
 Base `f80cbcb2`.
+
+## 2-series Wave B executed: 2013-06/2PR QP on the raster/OCR route (Task 46 addendum 22, 2026-11-27)
+
+Operator directive: *"Ratify"* (2026-11-27) — the addendum-19 proposal
+executed unchanged, Wave B third and last of the three ratified
+single-side append waves: the opt-in Task-46 raster/OCR route
+(`qp_text_source='ocr'`, `qp_scan='raster'`, `ref_check='ratified'`) on
+the recorded rank-3 scan-era cover dir 2013-06/4PH0-2PR (+18 PNGs, chain
+1..7, marks 60) — **first execution of that route**.
+
+### Instrumentation-grade proof battery (before placement)
+
+- **Gold A/B vs the task44-era path**, re-demonstrated at execution
+  (`scripts/task46_2series_waveB_ab.py`, fresh interpreter): the frozen
+  Wave-A text route refuses with the recorded TrimError "page-1/2 text
+  does not carry the paper reference"; the raster/OCR route is the only
+  green path for this dir.
+- **Determinism ×4**: two Phase-A renders byte-identical AND byte-exact
+  vs the addendum-19 staging scan projection (the recorded Phase-A
+  render = 4-way agreement across the recycles); third fresh render
+  byte-exact at placement.
+- **The marks == printed-total gate in its OCR variant** (new for the
+  scan route): the printed total is image-only text, so the gate runs
+  tesseract over the rendered cover — "The total mark for this paper is
+  60" recovered exactly once == the detected footer marks sum 60
+  exactly-once per question (1..7).
+- **Visual cover ratification of the scanned cover**: crisp render —
+  "Edexcel International GCSE Physics Unit: 4PH0 Paper: 2PR, Wednesday
+  5 June 2013 – Afternoon, Paper Reference 4PH0/2PR", the total-mark
+  line legible; 2 crops clean (radioactivity MCQs, friction table +
+  graph grid) — sheets `B_cover.png` / `B_crops.png`.
+
+### Placement (Phase B, 0 failures)
+
+Repo gates HEAD==origin/main==`3a6b0aa5` clean, lib blob `83ca46bd`
+frozen-identical; INDEX merge-append +18/−0 byte-verbatim (31→49); 18
+PNGs placed under `images/qp/`; schema parity vs the shipped 2016-01 v3
+qp rows; provenance @1580a83d04 manifest==blob==source_pdf `b4f85b480b`;
+whole-dir INDEX==tree; isolation: only the 1 INDEX modified + 18
+untracked confined to `images/qp/`; `git add --sparse`, numstat
++18/−0. Images commit `178f28a7` (19 files), pushed (HEAD ==
+origin/main).
+
+### 2-series status after the three ratified waves
+
+20 of the 22 dirs now carry both sides (QP and MS) beside their topical
+crops: the 16 4PH0-2P dirs (both sides except the 5 queued MS dirs carry
+QP only… see the ledger below) and the 2PR dirs. **Still queued for the
+instrumentation routes (7 dir-sides, each with its own ratification):**
+2018-01/4PH0-2P QP (0-marker geometry anomaly + clean-refusal
+robustness), 2015-06/4PH0-2PR QP (q5 marks token absent from the text
+layer; OCR-route candidate), and the 5 MS marker-run dirs 2012-01/2P,
+2013-06/2PR, 2016-06/2P, 2017-01/2P, 2019-01/2P (the continued-table
+first-row family). **Recorded, unchanged:** 2015-06/4PH0-1PR (no QP PDF
+in the DAM) and the math lane MS-ONLY-SOURCE dirs — source gaps.
+
+Base `aff3fc36`.
