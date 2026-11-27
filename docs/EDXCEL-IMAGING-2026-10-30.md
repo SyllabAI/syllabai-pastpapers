@@ -2726,3 +2726,49 @@ E and F the 2-series ledger closes at 22/22 dirs imaged on both sides.
 Recorded, unchanged: 2015-06/4PH0-1PR + math MS-ONLY-SOURCE source gaps.
 
 Base `dc9d63e0`.
+
+## 2-series Wave E executed: 2015-06/2PR QP footer-tolerance append (Task 46 addendum 25, 2026-11-27)
+
+Operator directive: *"ratify"* (2026-11-27) — the addendum-23 proposal
+executed unchanged, Wave E second (first execution of the
+footer-tolerance route; the route IS the frozen task44 text route on the
+lib commit `dc9d63e0`, whose FOOTER_RE tolerance `(?:is|=)\s*` closes
+the fused-token class).
+
+**Phase A 0 failures** (HEAD==origin/main==`130d9928` clean, lib blob
+`c19d1a01` @HEAD/commit/worktree): two fresh renders byte-identical AND
+the addendum-23 probe projection equality after the two recorded
+substitutions (provenance head `1580a83d04`→`dc9d63e0f1`; the probe
+drivers' bare paper_code `2PR` → shipped dash-form `4PH0-2PR` —
+parsed.paper + src.paper_json only, PNG bytes byte-exact vs the probe
+staging `qp2015tol/r1`); 19 rows (3+16), chain COMPLETE 1..7, **marks
+60 == printed 60** (the q5 footer `(Total for Question 5 =12 marks)`
+admitted by the tolerance; the printed-total gate green on the text
+route: footer marks sum == printed cover 'The total for this paper is
+60' exactly-once == 60); schema parity vs the shipped 2016-01 v3 qp
+rows with the marks convention made explicit (the ONE optional entry
+key: an int exactly on footer-bearing entries, absent otherwise —
+attested on the reference dir itself, 12 int / 13 absent); provenance
+manifest==blob==source_pdf `adc25448c6`; HEAD prestate 42 rows == the
+addendum-23 idx-now table.
+
+**Phase B 0 failures**: third fresh render byte-exact, INDEX
+merge-append +19/−0 byte-verbatim (42→61), 19 PNGs placed under
+images/qp/, placed QA + whole-dir INDEX==tree, isolation only the 1
+INDEX modified + 19 untracked confined to images/qp/, numstat +19/−0.
+
+**Instrumentation-grade battery** (first execution of the route): gold
+A/B inertness ×3 re-proven at the lib commit (patched == baseline probe
+digests, whole-tree); determinism ×4 (two Phase-A renders byte-identical
++ probe projection equality + third render byte-exact at placement);
+marks == printed-total on the text route; **visual cover ratification**
+(`E_cover_crops.png`): crisp cover ('Physics Unit: 4PH0 Paper: 2PR,
+Friday 12 June 2015 – Afternoon, Paper Reference 4PH0/2PR, The total
+for this paper is 60 marks'), q1 start crop with right-margin marks,
+q5 tail cont crop carrying the recovered marks 12 — clean, no furniture.
+
+Images commit `a9227ddc` (20 files: 19 PNGs + 1 INDEX edit, +19/−0)
+pushed. Wave F (2018-01/2P QP size13 +18, first execution) next — after
+it the 2-series ledger closes at 22/22 dirs imaged on both sides.
+
+Base `130d9928`.
