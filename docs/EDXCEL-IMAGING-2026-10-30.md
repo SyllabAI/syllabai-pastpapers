@@ -2772,3 +2772,57 @@ pushed. Wave F (2018-01/2P QP size13 +18, first execution) next — after
 it the 2-series ledger closes at 22/22 dirs imaged on both sides.
 
 Base `130d9928`.
+
+## 2-series Wave F executed + the ledger closes at 22/22 (Task 46 addendum 26, 2026-11-27)
+
+Operator directive: *"ratify"* (2026-11-27) — the addendum-23 proposal
+executed unchanged, Wave F third and last (2018-01/2P QP on the size13
+route; first execution of that route).
+
+**Phase A 0 failures** (HEAD==origin/main==`ca4b1cb8` clean, lib blob
+`c19d1a01` @HEAD/commit/worktree): **the TypeError A/B recorded at
+execution** — a fresh interpreter on the un-widened task44 route refuses
+cleanly with TrimError "QP marker chain empty" where the frozen lib
+crashed with the recorded TypeError (`'<' not supported between
+instances of 'int' and 'NoneType'` at the `p < first_marker_page`
+comparison; OCR never produces the q5 gutter token on p11, so the
+broken-CMap route is not a disposition); two fresh renders on the size13
+route byte-identical AND the addendum-23 probe projection equality after
+the two recorded substitutions (provenance head `1580a83d04`→
+`dc9d63e0f1`; bare paper_code `2P` → shipped dash-form `4PH0-2P` —
+parsed.paper + src.paper_json only, PNG bytes byte-exact vs the probe
+staging `qp2018s13/r1`); 18 rows (2+16), chain COMPLETE 1..7, **marks 60
+== printed 60** (the printed-total gate green on the text route); schema
+parity vs the shipped 2016-01 v3 qp rows; provenance
+manifest==blob==source_pdf `33a4414a53`; HEAD prestate 42 rows == the
+addendum-23 idx-now table.
+
+**Phase B 0 failures**: third fresh render byte-exact, INDEX
+merge-append +18/−0 byte-verbatim (42→60), 18 PNGs placed under
+images/qp/, placed QA + whole-dir INDEX==tree, isolation only the 1
+INDEX modified + 18 untracked confined to images/qp/, numstat +18/−0.
+
+**Instrumentation-grade battery** (first execution of the route): gold
+A/B inertness ×3 re-proven at the lib commit; determinism ×4; the
+task44 clean-refusal A/B recorded; marks == printed-total; **visual
+cover ratification** (`F_cover_crops.png`): crisp cover ('Physics Unit:
+4PH0 Paper: 2P, Thursday 18 January 2018 – Afternoon, Paper Reference
+4PH0/2P, The total mark for this paper is 60'), the q5 start crop (the
+size-13.0 gutter page — bell-jar diagrams, right-margin marks, no
+furniture), the q7 tail cont crop.
+
+Images commit `afc91c0c` (19 files: 18 PNGs + 1 INDEX edit, +18/−0)
+pushed.
+
+### The 2-series ledger closes at 22/22 dirs imaged on both sides
+
+Post-Wave-F verification over the committed INDEXes (16 × 4PH0-2P
+2011-06..2019-01 + 6 × 4PH0-2PR): every dir carries v3 qp AND v3 ms
+rows — 387 v3 qp + 438 v3 ms = 825 rows across the 22 dirs. The three
+ratified waves (addenda 20–22) + Waves D/E/F (addendum 23 proposal,
+executed addenda 24–26) close every recorded 2-series candidate.
+**Recorded, unchanged** (source gaps, outside this lane's control):
+2015-06/4PH0-1PR (no QP PDF in the DAM) and the math lane
+MS-ONLY-SOURCE dirs.
+
+Base `ca4b1cb8`.
