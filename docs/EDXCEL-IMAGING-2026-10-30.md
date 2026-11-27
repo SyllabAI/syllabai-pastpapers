@@ -2552,3 +2552,120 @@ first-row family). **Recorded, unchanged:** 2015-06/4PH0-1PR (no QP PDF
 in the DAM) and the math lane MS-ONLY-SOURCE dirs — source gaps.
 
 Base `aff3fc36`.
+
+## 2-series instrumentation routes: root causes + wave proposal (Task 46 addendum 23, 2026-11-27)
+
+Operator directive: *"Proceed"* (2026-11-27) — opening the recorded
+queue's next item: the 7 instrumentation dir-sides left after the three
+ratified 2-series waves (addenda 20–22). Phase A only, zero repo
+mutation. The sandbox-recycled session was reconstructed first (local
+clone fast-forwarded `ab92cee`→`013565a3` == origin/main; the sparse-lean
+state re-armed from the recorded backup patterns `/*`, `!/*/`, `/docs/`,
+`/scripts/`; worktree verified clean, status 0), the frozen lib
+re-verified (worktree `pp_2121_trim_lib.py` blob == `83ca46bd` == the lib
+commit `1580a83d04`), and every probe below ran on STAGE copies outside
+the repo: the 5 queued `_ms.pdf` and 3 reference `_qp.pdf` blobs were
+fetched from origin/main objects and sha-verified against the
+addendum-19 census report before use (probe drivers
+`/home/z/my-project/scripts/probe_task46_23*.py` — the addenda 11–22
+executors were worktree-only and are to be re-materialized at execution,
+the Task 42-R precedent).
+
+### Per-dir root cause (all 7 dir-sides located and gate-classified)
+
+1. **The 5 MS marker-run dirs — the addendum-2 family, closed by the
+   ratified `legacy24` mode, no new machinery.** task44 refusals
+   reproduced exactly ([1,2,3,4,6,7] / [1,2,3,4,5,7] / [1,2,3,4,5,6,8] /
+   [1,2,3,4,5,7] / [1,2,3,4,6,7,8,9]); `ms_marker_mode='legacy24'` flips
+   all five GREEN on the frozen MS route (`ref_check='ratified'`, default
+   modal extent): 2012-01/2P 22 rows (2+20) chain 1..7, 2013-06/2PR 24
+   (2+22) 1..7, 2016-06/2P 20 (3+17) 1..8, 2017-01/2P 18 (3+15) 1..7,
+   2019-01/2P 23 (3+20) 1..9 — determinism ×2 per dir (whole-render byte
+   digests equal), chains complete and equal to the QP sides' question
+   counts, MS rows carry no marks entries (the shipped convention).
+
+2. **2015-06/2PR QP — a footer-tokenization class, not a missing print.**
+   The q5 footer line EXISTS in both the text and OCR layers as
+   `(Total for Question 5 =12 marks)` — the print spacing fuses `=` and
+   `12` into one token (every sibling prints `= 12`), and FOOTER_RE's
+   hard space (`(?:is|=) (\d+)`) misses it: chain complete 1..7 but marks
+   48 != printed 60 (reproduced; the broken-CMap OCR route does NOT
+   recover it — OCR reproduces the fused token, marks 48, determinism
+   ×2). Disposition: FOOTER_RE whitespace tolerance `(?:is|=)\s*(\d+)`.
+   Prototype render: **19 rows (3+16), chain 1..7, marks 60**,
+   determinism ×2 (the projection moves 20→19 rows because the recovered
+   footer closes q5's region before q6 opens).
+
+3. **2018-01/2P QP — a size-gate class + a robustness gap.** The gutter
+   question numbers print at size 13.0 (MyriadPro-Bold; x0 77.1 inside
+   the zone, regex+bold pass) — above the 12.6 size-gate cap, so all
+   seven are killed: 0 markers on 20 pages in both modes (census
+   reproduced), the DP chain is empty, and `render_qp` crashes with
+   TypeError at the `p < first_marker_page` comparison
+   (`first_marker_page` is None on an empty chain) instead of refusing —
+   the recorded TypeError root-caused to the empty-chain path, not to a
+   None coordinate. The broken-CMap OCR route is NOT the disposition:
+   OCR recovers 1,2,3,4,6,7 but never produces a q5 gutter token on p11
+   (candidate dump empty), refusing [1,2,3,4,6,7]. Disposition: a
+   mode-gated size widening (`qp_marker_mode='size13'`: size cap
+   12.6→13.5, every other gate unchanged — the zone already excludes the
+   bottom page-number digits at x0 97.8 / y 912.6) plus the empty-chain
+   clean-refusal robustness fix. Prototype render: **18 rows (2+16),
+   chain 1..7, marks 60**, determinism ×2 (tall-page geometry, frame
+   y1 906.3, renders cleanly).
+
+### Gold A/B (prototype routes; frozen-lib renders byte-identical)
+
+- FOOTER_RE tolerance: 2016-01/2P (18 rows, 1..9, marks 60), 2018-06/2P
+  (18 rows, 1..8, 60), 4MA1 2020-06 1H gold (29 rows, 1..25, marks 100) —
+  patched vs baseline whole-render digests equal ×3.
+- size13: the same three dirs — equal ×3.
+- Inertness by construction: the tolerance only admits the fused
+  spelling; the widening only admits gutter candidates in
+  12.6<size≤13.5 (none in any gold dir); the robustness fix only changes
+  the empty-chain path green renders never reach.
+
+### Proposal (awaits operator ratify) — lib commit + three single-side append waves
+
+Provenance head = the new lib commit at execution; staging re-renders
+byte-exact vs the probe projections above (determinism ×2 here, ×3 at
+execution); the addendum-16 10-gate QA suite per dir **plus** the
+marks == printed-total gate on both QP dirs (60 == 60); merge-append
++N/−0 byte-verbatim; single images commit per wave; docs record per
+wave; push; visual cover ratification per dir (wave-C convention).
+
+| dir | side | route | idx now | rows appended |
+|---|---|---|---|---|
+| 2012-01/4PH0-2P | MS | legacy24 | 39 | +22 |
+| 2013-06/4PH0-2PR | MS | legacy24 | 49 | +24 |
+| 2016-06/4PH0-2P | MS | legacy24 | 43 | +20 |
+| 2017-01/4PH0-2P | MS | legacy24 | 36 | +18 |
+| 2019-01/4PH0-2P | MS | legacy24 | 44 | +23 |
+| 2015-06/4PH0-2PR | QP | footer-tolerance | 42 | +19 |
+| 2018-01/4PH0-2P | QP | size13 + robustness | 42 | +18 |
+
+(+144 PNGs total; idx-now from the addenda 20–22 merge-append chains.)
+
+1. **Lib commit**: FOOTER_RE tolerance + `size13` QP marker mode +
+   empty-chain clean refusal (TrimError), each with its gold A/B above
+   re-proven at execution; `task44`/`legacy24` and all MS paths
+   bit-for-bit unchanged (MS-side inertness re-proof on two shipped
+   dirs).
+2. **Wave D — MS append, the 5 legacy24 dirs** (+107 PNGs).
+3. **Wave E — QP append, 2015-06/2PR on the footer-tolerance route** (+19
+   PNGs; first execution of that route → instrumentation-grade battery:
+   gold A/B ×3, determinism ×3, marks == printed-total on the text
+   route, visual cover ratification).
+4. **Wave F — QP append, 2018-01/2P on the size13 route** (+18 PNGs;
+   first execution → same battery; the frozen-lib TypeError A/B
+   recorded: the fixed lib refuses cleanly with the text route
+   un-widened and renders green on `size13`).
+5. **Recorded, unchanged:** 2015-06/4PH0-1PR (no QP PDF in the DAM) and
+   the math lane MS-ONLY-SOURCE dirs — source gaps. After D/E/F the
+   2-series ledger closes at 22/22 dirs imaged on both sides.
+
+Status: proposal awaiting operator ratify. No lane file mutated in this
+phase (blob fetches to STAGE + probe renders outside the repo; worktree
+verified clean before and after).
+
+Base `013565a3`.
