@@ -98,7 +98,13 @@ NOTE_STR = (
 )
 
 FOOTER_RE = re.compile(
-    r"\(Total for Question (\d+) (?:is|=) (\d+) marks?\)")
+    r"\(Total for Question (\d+) (?:is|=)\s*(\d+) marks?\)")
+# Task-46 instrumentation: the (?:is|=) connector's hard space became
+# \s* — the 2015-06/4PH0-2PR q5 footer prints the fused spelling
+# '(Total for Question 5 =12 marks)' (print spacing fuses '=' and '12'
+# into one token), which the hard space missed (marks 48 != printed 60).
+# The tolerance only admits the fused spelling; every healthy sibling
+# prints '= 12' and matches identically (gold A/B byte-identical).
 # math-lane footer form: '(Total 4 marks)' — no question number; the line
 # closes the currently-open question positionally (first footer line below
 # the question's marker). fullmatch on the stripped line text so body-text
@@ -541,7 +547,15 @@ def qp_markers(pv, scan_mode=False, mode="task44"):
     missed the default cap by 0.34pt, truncating the DP chain at q5
     (TrimError run max 5 != expected 12; footers expect 1..12). The QP-
     side analogue of the MS family-A continued-table first-row shift
-    (addendum 2), on the high side; every other gate unchanged."""
+    (addendum 2), on the high side.
+    mode='size13' (Task-46 QP instrumentation route): the size-window
+    cap widens 12.6->13.5 — the 2018-01/4PH0-2P gutter digits print at
+    size 13.0 (MyriadPro-Bold, x0 77.1 inside the zone, regex+bold pass)
+    and missed the 12.6 cap, leaving 0 markers on 20 pages (empty DP
+    chain). Every other gate unchanged (the zone already excludes the
+    bottom page-number digits at x0 97.8 / y 912.6); the widening only
+    admits candidates in 12.6<size<=13.5, none in any gold dir.
+    Both modes: default 'task44' behavior bit-for-bit unchanged."""
     spans = spans_of(pv)
     try:
         fr, _fw = qp_frame_rect(pv)
@@ -578,7 +592,8 @@ def qp_markers(pv, scan_mode=False, mode="task44"):
                 break
         if cover is None:
             continue
-        if not (10.5 <= cover["size"] <= 12.6):
+        if not (10.5 <= cover["size"] <=
+                (13.5 if mode == "size13" else 12.6)):
             continue
         if "Bold" not in cover["font"] and not scan_mode:
             continue
@@ -725,8 +740,9 @@ def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal",
     scan_mode (Task-46 scan route) threads the raster-frame synthesis
     through markers/sweep/body-extent; for pure-scan QPs only.
     qp_marker_mode passes through to qp_markers ('task44' default;
-    'legacy24' = Task-46 QP instrumentation route, zone high side
-    +20->+24, default behavior bit-for-bit unchanged)."""
+    'legacy24' = zone high side +20->+24, 'size13' = size-window cap
+    12.6->13.5 — Task-46 QP instrumentation routes, mode-gated, default
+    behavior bit-for-bit unchanged)."""
     rows, files = [], {}
     n_pages = len(doc)
 
@@ -740,6 +756,15 @@ def render_qp(doc, paper_meta, return_runs=False, body_extent_mode="modal",
     expected_qp = qp_footer_structure(doc)
     runs = _dp_runs(per_page, qp_dp_chain, "QP", expected_runs=expected_qp)
     all_marks = [c for run in runs for c in run]
+    if not all_marks:
+        # Task-46 robustness: an empty DP chain used to crash with TypeError
+        # at the p < first_marker_page comparison below (2018-01/4PH0-2P,
+        # 0 admitted markers on 20 pages in both modes). Refuse cleanly
+        # instead — green dirs never reach this path (chains complete 1..N).
+        raise TrimError(
+            "QP marker chain empty: no gutter markers admitted by the "
+            "zone/size/regex/DP gates — refusing rather than rendering "
+            "furniture-only output")
     n_q = len(all_marks)
 
     marker_by_page = {}
