@@ -2826,3 +2826,123 @@ executed addenda 24–26) close every recorded 2-series candidate.
 MS-ONLY-SOURCE dirs.
 
 Base `ca4b1cb8`.
+
+## Source-gap closure proposal — 6 sources found + 1 gap dissolved (Task 46 addendum 27, 2026-11-27)
+
+Operator directive: *"Find and fix the source gap"* (2026-11-27, gateway
+trace `1a21b9019c02d2a9`) — zero-repo-mutation source hunt over the full
+recorded gap set (2015-06/4PH0-1PR QP + the math lane MS-ONLY-SOURCE 6).
+**All 7 recorded gaps resolved: 6 sources found and print-verified, 1
+dissolved as a corpus artifact.** No lane file mutated in this phase
+(downloads and verification ran in outside-repo staging
+`/home/z/my-project/srcgap-staging/` only; sparse worktree untouched).
+
+### Findings, per dir
+
+1. **2015-06/4PH0-1PR (physics, missing qp.pdf)** — source found: PMT
+   CDN `download/Physics/GCSE/Past-Papers/Edexcel-IGCSE/Paper-1/`
+   `June 2015 (R) QP - Paper 1P Edexcel Physics IGCSE.pdf` (sha256
+   `06ccccea7abfc2e1…`, 343,340 bytes, 36 pp). Cover print-verified:
+   "Physics, Unit: 4PH0, Paper: 1PR, Wednesday 20 May 2015 – Afternoon,
+   Time: 2 hours, Paper Reference 4PH0/1PR, Total Marks 120"; footer
+   barcode block `*P44265A0136*` (P-code P44265A); PDF metadata title
+   `p44265a.pdf`. Content corroboration: Q1 (nuclear-fission diagram,
+   "daughter nucleus") ↔ the dir's official DAM MS
+   (`4PH0_1PR_msc_20150819.pdf`) Q1 answer "(producing 2) daughter
+   nuclei; must be plural; reject 'daughter cells'". **Re-adjudication
+   of the wave-10 sweep exclusion** (`na:pmt-mislabeled`): the PMT
+   *title* says "Paper 1P" but the *content* is the regional paper — the
+   REPAIR-2026-09-25 "PMT serves some R files under C titles" class,
+   misread at wave-10 as content-mislabeled. The recorded DAM absence
+   (4SC0 wave) stands: this is a third-party-archive source.
+2. **2019-06/WME01-01** — PMT CDN
+   `download/Maths/A-level/M1/Papers-Edexcel/June 2019 (IAL) QP - M1
+   Edexcel.pdf` (sha `9bf1933e5e544fad…`, 180,469 bytes, 28 pp). Cover:
+   "Monday 3 June 2019 … Paper Reference WME01/01 … 8 questions … total
+   75". Cross-check vs the dir's MS: Q1 CLM answer `6mu + 8mu = 3mu +
+   2mv`, impulse `I = 3mu` ↔ QP Q1 (3m/2m particles at 2u/4u, P's speed
+   halved and reversed). Resolves the sweep's `na:pmt-not-listed`
+   (PMT's page listing omits the June 2019 QP; the CDN file exists).
+3.–6. **2020-10/WFM01-01, WFM02-01, WFM03-01, WST03-01** — the October
+   2020 sitting **reused the printed-for-summer-2020 papers** (covers
+   carry May/June 2020 dates). Proven end-to-end: (a) Q1 content of each
+   QP ↔ that dir's October 2020 MS answers (WFM01: f(1.4) = −0.435673 /
+   f(1.5) = 0.598356 Newton–Raphson from 1.4; WFM02: d³y/dx³ + 3·dy/dx +
+   3x·d²y/dx² = −2 sin x; WFM03: sinh 3x ≡ 4 sinh³ x + 3 sinh x; WST03:
+   E(2X̄) = 1 + α ≠ α, α̂ = 2x̄ − 1 = 11 from the exact sample); (b)
+   **Pearson's own DAM October-dated files are byte-identical to the
+   summer papers**: `wfm03-01-que-20201016.pdf` == the corpus
+   2020-06/WFM03-01 qp.pdf (sha `e86b6c8609a1d1cb…`) and
+   `wst03-01-que-20201013.pdf` == 2020-06/WST03-01 qp.pdf (sha
+   `9d09e3b116e6283e…`); (c) the corpus already ships this class:
+   2020-10/WME01-01's qp.pdf prints "Thursday 14 May 2020" with manifest
+   `series.printed: "October 2020; June 2020"`. Sources: DAM
+   `wfm03-01-que-20201016.pdf` and `wst03-01-que-20201013.pdf`
+   (official bytes) for WFM03/WST03; XtremePapers
+   `Questionpaper-Unit1(WFM01)-October2020.pdf` (sha `27fb036c8fcccb97…`,
+   481,809 B, 32 pp; cover Mon 11 May 2020, WFM01/01) and
+   `Questionpaper-Unit2(WFM02)-October2020.pdf` (sha `5b9b1474f6d2c59a…`,
+   429,792 B, 28 pp; cover Fri 15 May 2020, WFM02/01) for WFM01/WFM02 —
+   the DAM has no public WFM01/WFM02 que files (swept May/June 2020 and
+   Oct 1–31 2020 dates), and the xrs class is exactly the one already
+   accepted for the shipped WME01-01 Oct 2020 qp.
+7. **2022-06/WFM02-02 — NOT a source gap; a spurious dir (corpus
+   artifact)** — the dir's ms.pdf (paperlords
+   `IAL_MATHS_2022_MayJune_FP2_MS.pdf`, sha `fc455bee96d5f246…`) is
+   **byte-identical to Pearson's own DAM
+   `wfm02-01-rms-20220818.pdf`** (fetched at proposal time, sha match)
+   and **byte-identical to the WFM02-01 dir's ms.pdf**. That official
+   /01 MS's cover prints "Paper 02" while its printed publications code
+   `WFM02_01_2206_MS` and its "Question Paper Log number P72402A" line
+   are the /01 paper's (P72402A is printed on every page of the /01 QP),
+   and its Q1 answer grid marks the /01 QP's questions exactly (A = 1,
+   B = −1, the r = 5..n sum identity). The official /01 QP = DAM
+   `wfm02-01-que-20220608.pdf` (sha `0f8e6a1fea33a418…`) == the corpus
+   WFM02-01 qp.pdf. No `wfm02-02-que-*` / `wfm02-02-rms-*` exists on the
+   public DAM (swept May 9–31, June 1–30, July and August 2022 dates);
+   no archive carries a WFM02/02 QP (PMT / xrs / paperlords /
+   savemyexams / exam-mate hold only the /01 QP — PMT pairs its /01 QP
+   with the same "Paper 02"-covered MS); the 2026 provisional timetable
+   lists only `WFM02/01` per series. The dir was minted by the wave-8
+   pair-completeness from the MS cover's "Paper 02" line and its
+   identity was ratified at wave-17 on visual cover evidence reading
+   "Paper 02" as the ref — that line is a cover artifact on the /01 MS,
+   not a separate paper. One WFM02 paper exists in Summer 2022 and it is
+   already in WFM02-01 (qp and ms both byte-identical to the DAM
+   originals).
+
+### Proposed execution (awaits operator ratify) — placement + corrections, no rendering
+
+1. **6-dir qp.pdf placement**: add qp.pdf to 2015-06/4PH0-1PR,
+   2019-06/WME01-01, 2020-10/WFM01-01, 2020-10/WFM02-01,
+   2020-10/WFM03-01, 2020-10/WST03-01, each with a manifest materials
+   block (type question-paper; sha256/size/original_filename; source
+   block with archive, source_url, collected_by, note) and identification
+   notes updated — the 2020-10 dirs record the reuse ("cover carries the
+   summer-2020 sitting date; the October 2020 sitting reused the printed
+   paper; DAM October-dated que bytes identical where applicable;
+   cross-ref to the 2020-06 dir's copy"), `series.printed` gains the
+   cover date per the shipped WME01-01 record, and the physics dir's
+   "QP not present in Pearson's DAM" note gains the re-adjudication
+   addendum. INDEXes and images: NOT touched (placement only).
+2. **2022-06/WFM02-02 retirement**: remove the dir (manifest.yaml +
+   ms.pdf + its INDEX + its images/) on the record that it describes a
+   paper that does not exist (the ms.pdf is a byte-duplicate of
+   WFM02-01's); WFM02-01's manifest gains a correction note. Census
+   effect: mathematics-2018 MS-ONLY-SOURCE 6 → 0 and 4ph0
+   MS-ONLY-SOURCE 1 → 0 — **both lanes reach zero source gaps**.
+   Alternative (if the operator prefers no deletion): keep the dir with
+   a corrected manifest note + census class NO-PAPER; recommendation:
+   full retirement.
+3. **Ledger updates**: `docs/ledger/file-gap-sweep.csv` rows for the 7
+   gaps re-statused (6 `normalized` with the new sources recorded; the
+   WFM02-02 row re-classified as a corpus artifact; the 4ph0/1PR PMT
+   row's `na:pmt-mislabeled` re-adjudicated with this evidence).
+4. **Docs**: this proposal committed as addendum 27; on execution the
+   record addendum updates every "source gap" line recorded across
+   addenda 15–26 and the census tables.
+5. **Explicitly out of scope**: imaging the 6 newly-placed QP sides
+   (own proposal + route probes after placement, per the
+   frozen-standard discipline); no INDEX/images changes anywhere.
+
+Base `3722ff36`.
