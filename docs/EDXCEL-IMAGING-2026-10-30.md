@@ -2669,3 +2669,60 @@ phase (blob fetches to STAGE + probe renders outside the repo; worktree
 verified clean before and after).
 
 Base `013565a3`.
+
+## 2-series Wave D executed: 5-dir MS legacy24 append wave (Task 46 addendum 24, 2026-11-27)
+
+Operator directive: *"ratify"* (2026-11-27) — the addendum-23 proposal
+executed unchanged, Wave D first (the 5 queued MS marker-run dirs on the
+ratified `legacy24` mode; the lib commit preceded this wave).
+
+**Lib commit first** (`dc9d63e0`, blob `c19d1a01`): FOOTER_RE whitespace
+tolerance (`(?:is|=)\s*` — the 2015-06/2PR q5 fused `=12` token),
+mode-gated `qp_marker_mode='size13'` (cap 12.6→13.5), and the empty-chain
+clean refusal (TrimError "QP marker chain empty" where render_qp crashed
+with the recorded TypeError). Its proof battery
+(`task46_23_lib_validate.py`, 13/13, stage renders outside the repo,
+head frozen to the outgoing lib commit for comparability) reproduced
+every addendum-23 probe projection whole-tree byte-exact: the 5 MS
+legacy24 digests, 2015-06/2PR tolerance `fdbcdb8c25a2e40c` (19 rows
+(3+16) chain 1..7 marks 60), 2018-01/2P size13 `fbc3982d9674b43e` (18
+rows (2+16) chain 1..7 marks 60), the task44 clean-refusal A/B, gold
+inertness ×3 (2016-01/2P `5889fd6e0b5ba98d`, 2018-06/2P
+`ff52cdc7463b9537`, 4MA1 2020-06 1H `fd785aa536faff92`), and MS-side
+inertness ×2 (2016-01/2P + 2018-06/2P MS whole-tree byte-identical vs
+the wave-C frozen-lib execution staging, dash-form paper_code).
+
+**Wave D Phase A 0 failures** (HEAD==origin/main==`dc9d63e0` clean, lib
+blob `c19d1a01` @HEAD/commit/worktree, reference self-checks qp 27 rows
+chain 1..12 marks 120 + ms 27 rows no-marks): per dir two fresh renders
+byte-identical AND the addendum-23 probe projection equality after the
+two recorded substitutions — (a) provenance head `1580a83d04`→
+`dc9d63e0f1` (rows carry src.repo syllabai-pastpapers@dc9d63e0f1 per the
+ratified proposal), (b) the probe drivers' bare paper_code `2P`/`2PR` →
+the shipped dash-form `4PH0-2P`/`4PH0-2PR` (parsed.paper + src.paper_json
+only; PNG bytes unaffected and byte-exact vs the probe staging) — chains
+COMPLETE 1..7 / 1..7 / 1..8 / 1..7 / 1..9 (equal to the QP sides'
+question counts; the task44 refusal runs closed by the ratified
+legacy24 mode), 22/24/20/18/23 rows (2+20 / 2+22 / 3+17 / 3+15 / 3+20),
+MS rows carry no marks entries (shipped convention), schema parity vs
+the shipped 2016-01 v3 ms rows, provenance manifest==blob==source_pdf,
+HEAD prestate 39/49/43/36/44 rows == the addendum-23 idx-now table.
+
+**Wave D Phase B 0 failures**: third fresh render byte-exact, INDEX
+merge-append +N/−0 byte-verbatim (39→61, 49→73, 43→63, 36→54, 44→67),
+107 PNGs placed under images/ms/, placed QA + whole-dir INDEX==tree,
+isolation only the 5 INDEX modified + 107 untracked confined to
+images/ms/, `git add --sparse` numstat +N/−0 ×5.
+
+**Visual cover ratification 5/5** (wave-C convention, contact sheet
+`D_covers.png`): Mark Scheme (Results) covers with correct session
+January 2012 / Summer 2013 / Summer 2016 / January 2017 / January 2019
+and variant 2P/2PR, crisp renders.
+
+Images commit `528e1451` (112 files: 107 PNGs + 5 INDEX edits, +107/−0)
+pushed. Wave E (2015-06/2PR QP footer-tolerance +19, first execution)
+next; Wave F (2018-01/2P QP size13 +18, first execution) after. After
+E and F the 2-series ledger closes at 22/22 dirs imaged on both sides.
+Recorded, unchanged: 2015-06/4PH0-1PR + math MS-ONLY-SOURCE source gaps.
+
+Base `dc9d63e0`.
